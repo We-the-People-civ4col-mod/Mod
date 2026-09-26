@@ -1135,6 +1135,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]marchandises[COLOR_REVERT] européennes vers les colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Die Eingeborenen in den Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] aus Europa so begeistert, dass Seine Majestät Euch befiehlt, der dominante Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Новый Свет. Его Величество повелевает вам стать лидером рынка этого товара.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első Európából induló [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] szállítmányokat a gyarmatokra. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TRADE_GOODS_FAILED</Tag>
@@ -1143,6 +1144,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]marchandises[COLOR_REVERT] venues d'Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] aus Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Новый Свет.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Tag>
@@ -1151,6 +1153,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]marchandises[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] aus Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Новый Свет!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk az európai [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TRADE_GOODS_DONE</Tag>
@@ -1159,6 +1162,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le grossiste dominant de [COLOR_FONT_GOLD]marchandises[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] aus Europa geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Новый Свет. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, teljesítettük Őfelsége parancsát, és a [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] piac fő beszállítójává váltunk. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_START</Tag>
@@ -1167,6 +1171,7 @@
 		<French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]voiles[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]vitorlavászon[COLOR_REVERT] piac vezető szerepéért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_START</Tag>
@@ -1175,6 +1180,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]voiles[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальной [COLOR_FONT_GOLD]парусины[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták a [COLOR_FONT_GOLD]vitorlavászon[COLOR_REVERT] szállítmányt a gyarmatokról. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SAILCLOTH_FAILED</Tag>
@@ -1183,6 +1189,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]voiles[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]vitorlavászon[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_DONE</Tag>
@@ -1191,6 +1198,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]voiles[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]парусины[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]vitorlavászon[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SAILCLOTH_DONE</Tag>
@@ -1199,6 +1207,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]voiles[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Segeltuch[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]парусины[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, teljesítettük Őfelsége parancsát, és a [COLOR_FONT_GOLD]vitorlavászon[COLOR_REVERT] piac fő beszállítójává váltunk. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TOOLS_START</Tag>
@@ -1207,6 +1216,7 @@
 		<French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]outils[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Eisenwaren[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TOOLS_START</Tag>
@@ -1215,6 +1225,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d'[COLOR_FONT_GOLD]outils[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Eisenwaren[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]инструментов[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első gyarmatokról származó [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] szállítmányokat. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_TOOLS_FAILED</Tag>
@@ -1223,6 +1234,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]outils[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen den europäischen Markt für [COLOR_FONT_GOLD]Eisenwaren[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_TOOLS_DONE</Tag>
@@ -1231,6 +1243,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]outils[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenwaren[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]инструментов[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_TOOLS_DONE</Tag>
@@ -1239,6 +1252,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d'[COLOR_FONT_GOLD]outils[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Eisenwaren[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, teljesítettük Őfelsége parancsát, és a [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] piac fő beszállítójává váltunk. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BLADES_START</Tag>
@@ -1247,6 +1261,7 @@
 		<French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]lames[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]kard[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BLADES_START</Tag>
@@ -1255,6 +1270,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons des [COLOR_FONT_GOLD]lames[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]клинков[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első gyarmatokról származó [COLOR_FONT_GOLD]kard[COLOR_REVERT] szállítmányokat. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_BLADES_FAILED</Tag>
@@ -1263,6 +1279,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]lames[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen den europäischen Markt für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]kard[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_BLADES_DONE</Tag>
@@ -1271,6 +1288,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]lames[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]клинков[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]kard[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_BLADES_DONE</Tag>
@@ -1279,6 +1297,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]lames[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]клинков[COLOR_REVERT]. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsára mi lettünk a [COLOR_FONT_GOLD]kard[COLOR_REVERT] piac vezető kereskedője. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MUSKETS_START</Tag>
@@ -1287,6 +1306,7 @@
 		<French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]puska[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MUSKETS_START</Tag>
@@ -1295,6 +1315,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d'[COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első gyarmatokról származó [COLOR_FONT_GOLD]puska[COLOR_REVERT] szállítmányokat. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_MUSKETS_FAILED</Tag>
@@ -1303,6 +1324,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]puska[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MUSKETS_DONE</Tag>
@@ -1311,6 +1333,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]puska[COLOR_REVERT] piac vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MUSKETS_DONE</Tag>
@@ -1319,6 +1342,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d' [COLOR_FONT_GOLD]armes à feu[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Schusswaffen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, teljesítettük Őfelsége parancsát, és a [COLOR_FONT_GOLD]puska[COLOR_REVERT] piac fő beszállítójává váltunk. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CANNONS_START</Tag>
@@ -1327,6 +1351,7 @@
 		<French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]canons[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny az [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CANNONS_START</Tag>
@@ -1335,6 +1360,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]canons[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]пушек[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első gyarmatokról származó [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] szállítmányokat. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CANNONS_FAILED</Tag>
@@ -1343,6 +1369,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]canons[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]ágyú[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CANNONS_DONE</Tag>
@@ -1351,6 +1378,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]canons[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]пушек[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk az [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CANNONS_DONE</Tag>
@@ -1359,6 +1387,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]canons[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, teljesítettük Őfelsége parancsát, és az [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] piac fő beszállítójává váltunk. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROPE_START</Tag>
@@ -1367,6 +1396,7 @@
 		<French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]cordes[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des europäischen Marktes für [COLOR_FONT_GOLD]Seile[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]kötél[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROPE_START</Tag>
@@ -1375,6 +1405,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons de [COLOR_FONT_GOLD]cordes[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]канатов[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első gyarmatokról származó [COLOR_FONT_GOLD]kötél[COLOR_REVERT] szállítmányokat. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_ROPE_FAILED</Tag>
@@ -1383,6 +1414,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]cordes[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Seile[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]kötél[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROPE_DONE</Tag>
@@ -1391,6 +1423,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]cordes[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]канатов[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]kötél[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROPE_DONE</Tag>
@@ -1399,6 +1432,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]cordes[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Seilen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]канатов[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, teljesítettük Őfelsége parancsát, és a [COLOR_FONT_GOLD]kötél[COLOR_REVERT] piac fő beszállítójává váltunk. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SILVER_START</Tag>
@@ -1407,6 +1441,7 @@
 		<French>La course pour dominer le marché européen de l'[COLOR_FONT_GOLD]argent[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny az [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SILVER_START</Tag>
@@ -1415,6 +1450,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d' [COLOR_FONT_GOLD]argent[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Silber[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]серебра[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első gyarmatokról származó [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] szállítmányokat. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_SILVER_FAILED</Tag>
@@ -1423,6 +1459,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché de l'[COLOR_FONT_GOLD]argent[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_SILVER_DONE</Tag>
@@ -1431,6 +1468,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché de l'[COLOR_FONT_GOLD]argent[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]серебра[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk az [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_SILVER_DONE</Tag>
@@ -1439,6 +1477,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d'[COLOR_FONT_GOLD]argent[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk az [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOLD_START</Tag>
@@ -1447,6 +1486,7 @@
 		<French>La course pour dominer le marché européen de l'[COLOR_FONT_GOLD]or[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny az [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOLD_START</Tag>
@@ -1455,6 +1495,7 @@
 		<French>Sa Majesté et ses sujets en Europe sont ravis avec les premières livraisons d'[COLOR_FONT_GOLD]or[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gold[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]золота[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és az anyaföld lakói örömmel fogadták az első gyarmatokról származó [COLOR_FONT_GOLD]arany[COLOR_REVERT] szállítmányokat. Őfelsége ezt követően megbíz téged azzal, hogy válj a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GOLD_FAILED</Tag>
@@ -1463,6 +1504,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché de l'[COLOR_FONT_GOLD]or[COLOR_REVERT]en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]arany[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOLD_DONE</Tag>
@@ -1471,6 +1513,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché de l'[COLOR_FONT_GOLD]or[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]золота[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a világ első számú [COLOR_FONT_GOLD]arany[COLOR_REVERT] kereskedői.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOLD_DONE</Tag>
@@ -1479,6 +1522,7 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant d'[COLOR_FONT_GOLD]or[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk az [COLOR_FONT_GOLD]arany[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEMS_START</Tag>
@@ -1487,6 +1531,7 @@
 		<French>La course pour dominer le marché européen des [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] a été lancée.</French>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEMS_START</Tag>
@@ -1495,6 +1540,7 @@
 		<French>Sa Majesté et ses plus riches sujets en Europe sont subjugués par les [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] des colonies. Sa majesté vous ordonne de devenir maitre de ce marché.</French>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelsteinen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és gazdagabb alattvalói el vannak ragadtatva a gyarmatokról érkező [COLOR_FONT_GOLD]drágakövektől[COLOR_REVERT]. Őfelsége azt akarja, hogy te legyél a drágakő piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GEMS_FAILED</Tag>
@@ -1503,6 +1549,7 @@
 		<French>Sire, une autre colonie est devenue maitre du marché des [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] en Europe.</French>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GEMS_DONE</Tag>
@@ -1511,6 +1558,7 @@
 		<French>Sire, nous sommes devenus les maitres du marché des [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT] en Europe.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GEMS_DONE</Tag>
@@ -1519,13 +1567,15 @@
 		<French>Sire, nous avons répondu aux ordres de sa Majesté, devenant le fournisseur dominant de [COLOR_FONT_GOLD]pierres précieuses[COLOR_REVERT]. Sa Majesté est d'humeur généreuse et veut nous récompenser.</French>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteinen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk a [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_FRUITS_DONE</Tag>
-		<English>Milord, we are now the leader trading [COLOR_FONT_GOLD]cocoa pods[COLOR_REVERT] with Europe.</English>
+		<English>Milord, we are now the leading trader in [COLOR_FONT_GOLD]cocoa pods[COLOR_REVERT] with Europe.</English>
 		<Portuguese>Milorde, agora somos líderes no comércio de [COLOR_FONT_GOLD]sápsulas de cacau[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakaofrüchten[COLOR_REVERT] aus Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]плодов какао[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]kakaóbab[COLOR_REVERT] európai piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_START</Tag>
@@ -1533,6 +1583,7 @@
 		<Portuguese>A corrida para ser líder de mercado de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]какао[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCOA_START</Tag>
@@ -1540,6 +1591,7 @@
 		<Portuguese>Sua Majestade e Seus súditos na Europa estão maravilhados em obter [COLOR_FONT_GOLD]cacau[COLOR_REVERT] das colônias. Sua Majestade ordena assim que você se torne o líder do mercado de cacau.</Portuguese>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]какао[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és európai alattvalói nagy örömmel fogadják a gyarmatokról érkező [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] szállítmányt. Őfelsége ezért elrendeli, hogy te legyél a kakaópiac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COCOA_FAILED</Tag>
@@ -1547,6 +1599,7 @@
 		<Portuguese>Milorde, outra nação colonial agora domina o mercado europeu de [COLOR_FONT_GOLD]cacau[COLOR_REVERT].</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]какао[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COCOA_DONE</Tag>
@@ -1554,6 +1607,7 @@
 		<Portuguese>Milorde, agora dominamos o comércio de [COLOR_FONT_GOLD]cacau[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]какао[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COCOA_DONE</Tag>
@@ -1561,6 +1615,7 @@
 		<Portuguese>Milorde, cumprindo as ordens de Sua Majestade, somos agora líderes de mercado em [COLOR_FONT_GOLD]cacau[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk a [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_START</Tag>
@@ -1568,6 +1623,7 @@
 		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]café[COLOR_REVERT] começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]кофе[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]kávé[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COFFEE_START</Tag>
@@ -1575,6 +1631,7 @@
 		<Portuguese>Sua Majestade e Seus súditos na Europa estão maravilhados em receber [COLOR_FONT_GOLD]café[COLOR_REVERT] das colônias. Sua Majestade ordena que você se torne o maior comerciante de café.</Portuguese>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониального [COLOR_FONT_GOLD]кофе[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és európai alattvalói nagy örömmel fogadják a gyarmatokról érkező [COLOR_FONT_GOLD]kávé[COLOR_REVERT] szállítmányt. Őfelsége ezért elrendeli, hogy te legyél a kávépiac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_COFFEE_FAILED</Tag>
@@ -1582,6 +1639,7 @@
 		<Portuguese>Milorde, outra nação colonial agora domina o mercado europeu de [COLOR_FONT_GOLD]café[COLOR_REVERT].</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]кофе[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]kávé[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COFFEE_DONE</Tag>
@@ -1589,6 +1647,7 @@
 		<Portuguese>Milorde, agora negociamos mais [COLOR_FONT_GOLD]café[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]кофе[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]kávé[COLOR_REVERT] legnagyobb kereskedői.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COFFEE_DONE</Tag>
@@ -1596,6 +1655,7 @@
 		<Portuguese>Milorde, cumprindo as ordens de Sua Majestade, somos agora líderes de mercado em [COLOR_FONT_GOLD]café[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk a [COLOR_FONT_GOLD]kávé[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CIGARS_START</Tag>
@@ -1603,6 +1663,7 @@
 		<Portuguese>Começou a corrida para ser líder de mercado em [COLOR_FONT_GOLD]charutos[COLOR_REVERT].</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]сигар[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]szivar[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CIGARS_START</Tag>
@@ -1610,6 +1671,7 @@
 		<Portuguese>Sua Majestade e Seus súditos na Europa ficam encantados com os [COLOR_FONT_GOLD]charutos[COLOR_REVERT] das colônias. Sua Majestade ordena que você se torne o principal fornecedor de charutos.</Portuguese>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальных [COLOR_FONT_GOLD]сигар[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és európai alattvalói nagy örömmel fogadják a gyarmatokról érkező [COLOR_FONT_GOLD]szivar[COLOR_REVERT] szállítmányt. Őfelsége ezért elrendeli, hogy te legyél a szivarpiac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CIGARS_FAILED</Tag>
@@ -1617,6 +1679,7 @@
 		<Portuguese>Milorde, outra nação colonial agora domina o mercado europeu de [COLOR_FONT_GOLD]charutos[COLOR_REVERT].</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]сигар[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]szivar[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CIGARS_DONE</Tag>
@@ -1624,6 +1687,7 @@
 		<Portuguese>Milorde, dominamos o comércio de [COLOR_FONT_GOLD]charutos[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]сигар[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]szivar[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CIGARS_DONE</Tag>
@@ -1631,6 +1695,7 @@
 		<Portuguese>Milorde, cumprindo as ordens de Sua Majestade, somos agora líderes de mercado em [COLOR_FONT_GOLD]charutos[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Zigarren[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]сигар[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk a [COLOR_FONT_GOLD]szivar[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WOOL_CLOTH_START</Tag>
@@ -1638,6 +1703,7 @@
 		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]tecidos de lã[COLOR_REVERT] começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Wollstoffe[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]шерстяной ткани[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]gyapjúkelme[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WOOL_CLOTH_START</Tag>
@@ -1645,14 +1711,15 @@
 		<Portuguese>Sua Majestade e Seus súditos na Europa estão satisfeitos com os [COLOR_FONT_GOLD]tecidos de lã[COLOR_REVERT] coloniais. Sua Majestade ordena que você se torne o líder do mercado de tecidos de lã.</Portuguese>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wollstoffen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальной [COLOR_FONT_GOLD]шерстяной ткани[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és európai alattvalói nagy örömmel fogadják a gyarmatokról érkező [COLOR_FONT_GOLD]gyapjúkelme[COLOR_REVERT] szállítmányt. Őfelsége ezért elrendeli, hogy te legyél a gyapjúkelme piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WOOL_CLOTH_FAILED</Tag>
 		<English>Milord, another colonial nation now dominates the European market for [COLOR_FONT_GOLD]wool cloth[COLOR_REVERT].</English>
 		<Portuguese>Milorde, outra nação colonial agora domina o mercado europeu de [COLOR_FONT_GOLD]tecidos de lã[COLOR_REVERT].</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Wollstoffe[COLOR_REVERT] zu beherrschen.</German>
-		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]шерстяной ткани[COLOR_REVERT].
-		</Russian>
+		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]шерстяной ткани[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]gyapjúkelme[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE</Tag>
@@ -1660,6 +1727,7 @@
 		<Portuguese>Milorde, agora somos o principal comerciante de [COLOR_FONT_GOLD]tecidos de lã[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wollstoffen[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]шерстяной ткани[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]gyapjúkelme[COLOR_REVERT] piac vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WOOL_CLOTH_DONE</Tag>
@@ -1667,6 +1735,7 @@
 		<Portuguese>Milorde, cumprindo as ordens de Sua Majestade, somos agora líderes de mercado em [COLOR_FONT_GOLD]tecidos de lã[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Wollstoffen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]шерстяной ткани[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk a [COLOR_FONT_GOLD]gyapjúkelme[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CLOTH_START</Tag>
@@ -1674,6 +1743,7 @@
 		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]tecidos[COLOR_REVERT] começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Stoffe[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]ткани[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]kelme[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CLOTH_START</Tag>
@@ -1681,6 +1751,7 @@
 		<Portuguese>Sua Majestade e Seus súditos na Europa estão encantados em receber [COLOR_FONT_GOLD]tecidos[COLOR_REVERT] das colônias. Sua Majestade ordena que você se torne o principal fornecedor de tecidos.</Portuguese>
 		<German>Seine Majestät und die Bürger des Heimatlandes sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] aus den Kolonien begeistert. Seine Majestät befiehlt Euch daher, der Marktführer für diese Ware zu werden.</German>
 		<Russian>Его Величество и граждане метрополии в восторге от первых поставок колониальной [COLOR_FONT_GOLD]ткани[COLOR_REVERT]. Его Величество приказывает вам стать лидером рынка.</Russian>
+		<Hungarian>Őfelsége és európai alattvalói nagy örömmel fogadják a gyarmatokról érkező [COLOR_FONT_GOLD]kelme[COLOR_REVERT] szállítmányt. Őfelsége ezért elrendeli, hogy te legyél a kelmepiac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CLOTH_FAILED</Tag>
@@ -1688,6 +1759,7 @@
 		<Portuguese>Milorde, outra nação colonial agora domina o mercado europeu de [COLOR_FONT_GOLD]tecidos[COLOR_REVERT].</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den europäischen Markt für [COLOR_FONT_GOLD]Stoffe[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке [COLOR_FONT_GOLD]ткани[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]kelme[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CLOTH_DONE</Tag>
@@ -1695,6 +1767,7 @@
 		<Portuguese>Milorde, agora dominamos o comércio de [COLOR_FONT_GOLD]tecidos[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]ткани[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, piacvezetők lettünk a [COLOR_FONT_GOLD]kelme[COLOR_REVERT] kereskedelemben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CLOTH_DONE</Tag>
@@ -1702,6 +1775,7 @@
 		<Portuguese>Milorde, cumprindo as ordens de Sua Majestade, somos agora líderes de mercado em [COLOR_FONT_GOLD]tecidos[COLOR_REVERT]. Sua Majestade está de bom humor e quer nos recompensar.</Portuguese>
 		<German>Milord, es ist uns gelungen, die Befehle Seiner Majestät zu erfüllen. Wir sind nun der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] geworden. Seine Majestät will uns dafür belohnen.</German>
 		<Russian>Милорд, мы выполнили приказ Его Величества, став основным поставщиком [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Европу. Его Величество в прекрасном расположении духа и желает наградить нас.</Russian>
+		<Hungarian>Uram, Őfelsége parancsát teljesítve mi vagyunk a [COLOR_FONT_GOLD]kelme[COLOR_REVERT] piac vezetői. Őfelsége nagylelkű hangulatban van és meg akar jutalmazni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_COLOURED_CLOTH_START</Tag>
@@ -1709,6 +1783,7 @@
 		<Portuguese>A corrida para ser líder de mercado em [COLOR_FONT_GOLD]tecidos coloridos[COLOR_REVERT] está aberta.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in Europa für [COLOR_FONT_GOLD]Gefärbte Stoffe[COLOR_REVERT] hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]цветной ткани[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a [COLOR_FONT_GOLD]festett kelme[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_COLOURED_CLOTH_START</Tag>
