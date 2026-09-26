@@ -24482,12 +24482,82 @@ CIBOLA_DONE_MARKER = "[[WTP_CIBOLA_DONE=1]]"
 CIBOLA_CONQUISTADOR_ID_PREFIX = "[[WTP_CIBOLA_CONQUISTADOR_ID="
 CIBOLA_CONQUISTADOR_ID_SUFFIX = "]]"
 
+CIBOLA_MAIN_COLONY_ID_PREFIX = "[[WTP_CIBOLA_MAIN_COLONY_ID="
+CIBOLA_MAIN_COLONY_ID_SUFFIX = "]]"
+
+
+def _setCibolaMainColonyID(player, iCityID):
+	if player.isNone():
+		return
+
+	szData = player.getScriptData()
+
+	if szData is None:
+		szData = ""
+
+	iStart = szData.find(CIBOLA_MAIN_COLONY_ID_PREFIX)
+
+	if iStart != -1:
+		iEnd = szData.find(CIBOLA_MAIN_COLONY_ID_SUFFIX, iStart)
+
+		if iEnd != -1:
+			iEnd += len(CIBOLA_MAIN_COLONY_ID_SUFFIX)
+			szData = szData[:iStart] + szData[iEnd:]
+
+	szData += "%s%d%s" % (
+		CIBOLA_MAIN_COLONY_ID_PREFIX,
+		iCityID,
+		CIBOLA_MAIN_COLONY_ID_SUFFIX
+	)
+
+	player.setScriptData(szData)
+
+
+def _getCibolaMainColonyID(player):
+	if player.isNone():
+		return -1
+
+	szData = player.getScriptData()
+
+	if szData is None or szData == "":
+		return -1
+
+	iStart = szData.find(CIBOLA_MAIN_COLONY_ID_PREFIX)
+
+	if iStart == -1:
+		return -1
+
+	iStart += len(CIBOLA_MAIN_COLONY_ID_PREFIX)
+
+	iEnd = szData.find(CIBOLA_MAIN_COLONY_ID_SUFFIX, iStart)
+
+	if iEnd == -1:
+		return -1
+
+	try:
+		return int(szData[iStart:iEnd])
+	except:
+		return -1
+
 
 def _getCibolaMainColony(player):
 	if player.isNone():
 		return None
 
-	(city, iter) = player.firstCity(True)
+	iCityID = _getCibolaMainColonyID(player)
+
+	if iCityID != -1:
+		city = player.getCity(iCityID)
+
+		if city is not None and not city.isNone():
+			return city
+
+	(city, iter) = player.firstCity(False)
+
+	if city is None or city.isNone():
+		return None
+
+	_setCibolaMainColonyID(player, city.getID())
 	return city
 
 
@@ -24765,6 +24835,11 @@ def applyCibolaRumorsAccept(argsList):
 	if _hasCibolaMarker(player, CIBOLA_DONE_MARKER):
 		return
 
+	mainColony = _getCibolaMainColony(player)
+
+	if mainColony is None or mainColony.isNone():
+		return
+
 	plot = gc.getMap().plot(
 		kTriggeredData.iPlotX,
 		kTriggeredData.iPlotY
@@ -24782,6 +24857,7 @@ def applyCibolaRumorsAccept(argsList):
 	if unit is None or unit.isNone():
 		return
 
+	_setCibolaMainColonyID(player, mainColony.getID())
 	_setCibolaConquistadorID(player, unit.getID())
 	_addCibolaMarker(player, CIBOLA_ACTIVE_MARKER)
 
