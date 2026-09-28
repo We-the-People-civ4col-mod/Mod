@@ -341,7 +341,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_REMARKABLE_MOUNTAIN</Tag>
-		<English>remarkable high mountain</English>
+		<English>Remarkable high mountain</English>
 		<Portuguese>
 			<Text>Montanha Intransponível</Text>
 			<Gender>Female</Gender>
@@ -353,13 +353,14 @@
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
-		<Russian>Непроходимые горы</Russian>
+		<Russian>Высокогорный пик</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_REMARKABLE_MOUNTAIN_PEDIA</Tag>
 		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Remarkable high mountains[COLOR_REVERT] are steep and icy and a road definitely needs some time to be built on it. They can be climbed only by expert mountaineers. However, the mountain does contain some interesting mineral resources.</English>
 		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Montanhas intransponíveis[COLOR_REVERT] são muito íngremes e geladas para que qualquer caminho seja cortado ou suspenso em torno dos pontos difíceis. Eles só podem ser escalados por montanhistas experientes e são uma barreira absoluta ao comércio.</Portuguese>
 		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Außergewöhnlich hohe Berge[COLOR_REVERT] sind sehr steil und eisig, ein Weg um die heiklen Stellen herum bedarf besonders viel Zeit. Sie können nur von erfahrenen Bergsteigern erklommen werden. Der Berg bietet jedoch einige interessante Rohstoffe.</German>
+		<Russian>[BOLD]Стратегия:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Высокогорные пики[COLOR_REVERT] отличаются крутыми склонами и обилием льда, поэтому на их покорение или прокладку дороги потребуется немало времени. Подняться на них под силу лишь опытным альпинистам. Тем не менее, эти горы таят в себе интересные запасы полезных ископаемых.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>
