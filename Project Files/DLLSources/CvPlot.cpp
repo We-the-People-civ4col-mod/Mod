@@ -6978,6 +6978,16 @@ int CvPlot::calculateImprovementYieldChange(ImprovementTypes eImprovement, Yield
 		}
 	}
 
+	FeatureTypes eFeature = getFeatureType();
+
+	if (eFeature != NO_FEATURE)
+	{
+		if (GC.getFeatureInfo(eFeature).getYieldChange(eYield) > 0)
+		{
+			iYield += GC.getImprovementInfo(eImprovement).getFeatureYieldIncrease(eFeature);
+		}
+	}
+
 	if (GC.getImprovementInfo(eImprovement).getYieldIncrease(eYield) != 0)
 	{
 		TeamTypes eTeam = NO_TEAM;

@@ -2508,6 +2508,7 @@ public:
 	int* getHillsYieldChangeArray();
 	bool getTerrainMakesValid(int i) const;
 	bool getFeatureMakesValid(int i) const;
+	int getFeatureYieldIncrease(int i) const;
 
 	int getRouteYieldChanges(int i, int j) const;
 	int* getRouteYieldChangesArray(int i);				// For Moose - CvWidgetData XXX
@@ -2580,6 +2581,7 @@ protected:
 	int* m_aiHillsYieldChange;
 	bool* m_abTerrainMakesValid;
 	bool* m_abFeatureMakesValid;
+	int* m_aiFeatureYieldIncrease;
 	std::vector<int*> m_aaiRouteYieldChanges;
 	CvImprovementBonusInfo* m_paImprovementBonus;
 };

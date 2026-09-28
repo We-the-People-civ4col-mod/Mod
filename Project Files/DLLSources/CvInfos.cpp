@@ -8521,6 +8521,7 @@ m_aiRiverSideYieldChange(NULL),
 m_aiHillsYieldChange(NULL),
 m_abTerrainMakesValid(NULL),
 m_abFeatureMakesValid(NULL),
+m_aiFeatureYieldIncrease(NULL),
 m_paImprovementBonus(NULL)
 {
 }
@@ -8539,6 +8540,7 @@ CvImprovementInfo::~CvImprovementInfo()
 	SAFE_DELETE_ARRAY(m_aiHillsYieldChange);
 	SAFE_DELETE_ARRAY(m_abTerrainMakesValid);
 	SAFE_DELETE_ARRAY(m_abFeatureMakesValid);
+	SAFE_DELETE_ARRAY(m_aiFeatureYieldIncrease);
 	SAFE_DELETE_ARRAY(m_paImprovementBonus);
 	for (uint iI=0;iI<m_aaiRouteYieldChanges.size();iI++)
 		{
@@ -8827,6 +8829,12 @@ bool CvImprovementInfo::getFeatureMakesValid(int i) const
 	FAssertMsg(i > -1, "Index out of bounds");
 	return m_abFeatureMakesValid ? m_abFeatureMakesValid[i] : false;
 }
+int CvImprovementInfo::getFeatureYieldIncrease(int i) const
+{
+	FAssertMsg(i < GC.getNumFeatureInfos(), "Index out of bounds");
+	FAssertMsg(i > -1, "Index out of bounds");
+	return m_aiFeatureYieldIncrease ? m_aiFeatureYieldIncrease[i] : 0;
+}
 int CvImprovementInfo::getRouteYieldChanges(int i, int j) const
 {
 	FAssertMsg(i < GC.getNumRouteInfos(), "Index out of bounds");
@@ -8942,6 +8950,9 @@ void CvImprovementInfo::read(FDataStreamBase* stream)
 	SAFE_DELETE_ARRAY(m_abFeatureMakesValid);
 	m_abFeatureMakesValid = new bool[GC.getNumFeatureInfos()];
 	stream->Read(GC.getNumFeatureInfos(), m_abFeatureMakesValid);
+	SAFE_DELETE_ARRAY(m_aiFeatureYieldIncrease);
+	m_aiFeatureYieldIncrease = new int[GC.getNumFeatureInfos()];
+	stream->Read(GC.getNumFeatureInfos(), m_aiFeatureYieldIncrease);
 	SAFE_DELETE_ARRAY(m_paImprovementBonus);
 	m_paImprovementBonus = new CvImprovementBonusInfo[GC.getNumBonusInfos()];
 	for (int i = 0; i < GC.getNumBonusInfos(); i++)
@@ -9017,6 +9028,7 @@ void CvImprovementInfo::write(FDataStreamBase* stream)
 	stream->Write(NUM_YIELD_TYPES, m_aiHillsYieldChange);
 	stream->Write(GC.getNumTerrainInfos(), m_abTerrainMakesValid);
 	stream->Write(GC.getNumFeatureInfos(), m_abFeatureMakesValid);
+	stream->Write(GC.getNumFeatureInfos(), m_aiFeatureYieldIncrease);
 	int i;
 	for (i = 0; i < GC.getNumBonusInfos(); i++)
 	{
@@ -9086,6 +9098,7 @@ bool CvImprovementInfo::read(CvXMLLoadUtility* pXML)
 
 	pXML->SetVariableListTagPair(&m_abTerrainMakesValid, "TerrainMakesValids", GC.getNumTerrainInfos(), false);
 	pXML->SetVariableListTagPair(&m_abFeatureMakesValid, "FeatureMakesValids", GC.getNumFeatureInfos(), false);
+	pXML->SetVariableListTagPair(&m_aiFeatureYieldIncrease, "FeatureYieldIncreases", GC.getNumFeatureInfos(), 0);
 	if (gDLL->getXMLIFace()->SetToChildByTagName(pXML->GetXML(),"BonusTypeStructs"))
 	{
 		// call the function that sets the bonus booleans

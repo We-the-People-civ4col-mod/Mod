@@ -2516,6 +2516,20 @@
 					<bMakesValid>0</bMakesValid>
 				</FeatureMakesValid>
 			</FeatureMakesValids>
+			<FeatureYieldIncreases>
+				<FeatureYieldIncrease>
+					<FeatureType>FEATURE_REMARKABLE_MOUNTAIN1</FeatureType>
+					<iFeatureYieldIncrease>2</iFeatureYieldIncrease>
+				</FeatureYieldIncrease>
+				<FeatureYieldIncrease>
+					<FeatureType>FEATURE_REMARKABLE_MOUNTAIN2</FeatureType>
+					<iFeatureYieldIncrease>2</iFeatureYieldIncrease>
+				</FeatureYieldIncrease>
+				<FeatureYieldIncrease>
+					<FeatureType>FEATURE_REMARKABLE_MOUNTAIN3</FeatureType>
+					<iFeatureYieldIncrease>2</iFeatureYieldIncrease>
+				</FeatureYieldIncrease>
+			</FeatureYieldIncreases>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_IRON</BonusType>
@@ -5018,6 +5032,20 @@
 			<bOutsideBorders>0</bOutsideBorders>
 			<TerrainMakesValids/>
 			<FeatureMakesValids/>
+			<FeatureYieldIncreases>
+				<FeatureYieldIncrease>
+					<FeatureType>FEATURE_REMARKABLE_MOUNTAIN1</FeatureType>
+					<iFeatureYieldIncrease>3</iFeatureYieldIncrease>
+				</FeatureYieldIncrease>
+				<FeatureYieldIncrease>
+					<FeatureType>FEATURE_REMARKABLE_MOUNTAIN2</FeatureType>
+					<iFeatureYieldIncrease>3</iFeatureYieldIncrease>
+				</FeatureYieldIncrease>
+				<FeatureYieldIncrease>
+					<FeatureType>FEATURE_REMARKABLE_MOUNTAIN3</FeatureType>
+					<iFeatureYieldIncrease>3</iFeatureYieldIncrease>
+				</FeatureYieldIncrease>
+			</FeatureYieldIncreases>
 			<BonusTypeStructs>
 				<BonusTypeStruct>
 					<BonusType>BONUS_IRON</BonusType>

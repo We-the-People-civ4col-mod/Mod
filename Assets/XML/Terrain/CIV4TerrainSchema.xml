@@ -467,6 +467,14 @@
 	<ElementType name="FeatureMakesValids" content="eltOnly">
 		<element type="FeatureMakesValid" minOccurs="0" maxOccurs="*"/>
 	</ElementType>
+	<ElementType name="iFeatureYieldIncrease" content="textOnly" dt:type="int"/>
+	<ElementType name="FeatureYieldIncrease" content="eltOnly">
+		<element type="FeatureType"/>
+		<element type="iFeatureYieldIncrease"/>
+	</ElementType>
+	<ElementType name="FeatureYieldIncreases" content="eltOnly">
+		<element type="FeatureYieldIncrease" minOccurs="0" maxOccurs="*"/>
+	</ElementType>
 	<ElementType name="iCulture" content="textOnly" dt:type="int"/>
 	<ElementType name="iCultureRange" content="textOnly" dt:type="int"/>
 	<ElementType name="iPlotVisibilityChange" content="textOnly" dt:type="int"/>
@@ -517,6 +525,7 @@
 		<element type="bOutsideBorders"/>
 		<element type="TerrainMakesValids"/>
 		<element type="FeatureMakesValids"/>
+		<element type="FeatureYieldIncreases" minOccurs="0"/>
 		<element type="BonusTypeStructs" maxOccurs="*"/>
 		<element type="ImprovementPillage"/>
 		<element type="ImprovementUpgrade"/>
