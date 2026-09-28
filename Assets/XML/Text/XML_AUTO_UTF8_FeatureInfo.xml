@@ -340,8 +340,8 @@
 		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Meteoritenkrater[COLOR_REVERT] sind Orte, an denen Meteoriten auf den Boden aufgeschlagen sind. Sie sind selten. Die meisten Weltraumbrocken verglühen in der Erdatmosphäre, anders als auf dem Mond, der von häufigen Einschlägen übersät ist. Krater haben oft Seen in der Mitte.</German>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN</Tag>
-		<English>Impassable Mountain</English>
+		<Tag>TXT_KEY_FEATURE_REMARKABLE_MOUNTAIN</Tag>
+		<English>remarkable high mountain</English>
 		<Portuguese>
 			<Text>Montanha Intransponível</Text>
 			<Gender>Female</Gender>
@@ -349,17 +349,17 @@
 		</Portuguese>
 		<French>Montagne infranchissable</French>
 		<German>
-			<Text>Unpassierbarer Berg</Text>
+			<Text>Außergewöhnlich hoher Berg</Text>
 			<Gender>Female</Gender>
 			<Plural>0</Plural>
 		</German>
 		<Russian>Непроходимые горы</Russian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_FEATURE_IMPASSABLE_MOUNTAIN_PEDIA</Tag>
-		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Impassable mountains[COLOR_REVERT] are too steep and icy for any path to be cut or cantilevered around the tricky spots. They can be climbed only by expert mountaineers, and are an absolute barrier to commerce.</English>
+		<Tag>TXT_KEY_FEATURE_REMARKABLE_MOUNTAIN_PEDIA</Tag>
+		<English>[BOLD]Strategy :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Remarkable high mountains[COLOR_REVERT] are steep and icy and a road definitely needs some time to be built on it. They can be climbed only by expert mountaineers. However, the mountain does contain some interesting mineral resources.</English>
 		<Portuguese>[BOLD]Estratégia:[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Montanhas intransponíveis[COLOR_REVERT] são muito íngremes e geladas para que qualquer caminho seja cortado ou suspenso em torno dos pontos difíceis. Eles só podem ser escalados por montanhistas experientes e são uma barreira absoluta ao comércio.</Portuguese>
-		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Unpassierbare Berge[COLOR_REVERT] sind zu steil und eisig, als dass ein Weg um die heiklen Stellen herum angelegt werden könnte. Sie können nur von erfahrenen Bergsteigern erklommen werden und sind ein absolutes Hindernis für den Handel.</German>
+		<German>[BOLD]Strategie :[\BOLD][PARAGRAPH:1][COLOR_HIGHLIGHT_TEXT]Außergewöhnlich hohe Berge[COLOR_REVERT] sind sehr steil und eisig, ein Weg um die heiklen Stellen herum bedarf besonders viel Zeit. Sie können nur von erfahrenen Bergsteigern erklommen werden. Der Berg bietet jedoch einige interessante Rohstoffe.</German>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_FEATURE_ROCK_FORMATIONS_DESERT</Tag>

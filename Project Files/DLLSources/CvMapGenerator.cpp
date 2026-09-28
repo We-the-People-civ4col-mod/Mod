@@ -764,9 +764,9 @@ void CvMapGenerator::addImpassableMountains()
 {
 	PROFILE_FUNC();
 
-	const FeatureTypes eMountain1 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_IMPASSABLE_MOUNTAIN1");
-	const FeatureTypes eMountain2 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_IMPASSABLE_MOUNTAIN2");
-	const FeatureTypes eMountain3 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_IMPASSABLE_MOUNTAIN3");
+	const FeatureTypes eMountain1 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_REMARKABLE_MOUNTAIN1");
+	const FeatureTypes eMountain2 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_REMARKABLE_MOUNTAIN2");
+	const FeatureTypes eMountain3 = (FeatureTypes)GC.getInfoTypeForString("FEATURE_REMARKABLE_MOUNTAIN3");
 
 	if (eMountain1 == NO_FEATURE || eMountain2 == NO_FEATURE || eMountain3 == NO_FEATURE)
 	{

@@ -12065,7 +12065,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=7,y=207
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -13298,7 +13298,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=8,y=205
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -14575,7 +14575,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=9,y=208
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -15551,7 +15551,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=159
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -15826,7 +15826,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=10,y=204
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -16766,7 +16766,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=150
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -16808,7 +16808,7 @@ EndPlot
 BeginPlot
 	x=11,y=157
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -17108,7 +17108,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=11,y=206
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -18021,7 +18021,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=144
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -18143,7 +18143,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=167
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -18353,7 +18353,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=12,y=202
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -19361,7 +19361,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=155
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -19663,7 +19663,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=13,y=206
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -20524,7 +20524,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=142
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -20835,7 +20835,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=194
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -20864,7 +20864,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=199
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -20886,7 +20886,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=14,y=203
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -21871,7 +21871,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=15,y=153
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -23438,7 +23438,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=16,y=197
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -24508,7 +24508,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=166
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -24547,7 +24547,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=173
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -24558,7 +24558,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=175
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -24624,7 +24624,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=186
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -24646,7 +24646,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=190
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -24700,7 +24700,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=199
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -24737,7 +24737,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=17,y=205
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -25625,13 +25625,13 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=145
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
 BeginPlot
 	x=18,y=146
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -25653,7 +25653,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=150
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -25728,7 +25728,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=164
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -25752,7 +25752,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=168
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -25842,7 +25842,7 @@ BeginPlot
 	x=18,y=179
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -25929,7 +25929,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=194
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -25940,7 +25940,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=196
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -25951,7 +25951,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=18,y=198
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -26945,7 +26945,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=148
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -27077,7 +27077,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=169
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -27178,7 +27178,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=187
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_TAIGA
 	PlotType=0
 EndPlot
@@ -27195,7 +27195,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=19,y=190
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -27277,7 +27277,7 @@ BeginPlot
 	x=19,y=204
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -28224,7 +28224,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=152
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -28281,7 +28281,7 @@ BeginPlot
 	x=20,y=162
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -28344,7 +28344,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=173
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -28479,7 +28479,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=195
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -28502,7 +28502,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=20,y=199
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -29483,7 +29483,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=147
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -29501,7 +29501,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=150
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -29634,7 +29634,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=171
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -29663,7 +29663,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=176
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -29686,7 +29686,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=180
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -29732,7 +29732,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=21,y=188
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -30611,7 +30611,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=124
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -30766,7 +30766,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=152
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -30794,7 +30794,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=157
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -30943,7 +30943,7 @@ BeginPlot
 	x=22,y=183
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -31000,7 +31000,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=22,y=193
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -31820,7 +31820,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=121
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -32203,7 +32203,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=23,y=189
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -33290,7 +33290,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=151
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -33312,7 +33312,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=24,y=155
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -36876,7 +36876,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=27,y=111
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -48482,7 +48482,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=36,y=107
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS_FERTILE
 	PlotType=0
 EndPlot
@@ -49936,7 +49936,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=37,y=139
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -55109,7 +55109,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=41,y=142
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -56407,7 +56407,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=42,y=148
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -60471,7 +60471,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=45,y=211
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -62588,7 +62588,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=155
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -62989,7 +62989,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=47,y=210
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_SNOW
 	PlotType=0
 EndPlot
@@ -63854,7 +63854,7 @@ BeginPlot
 	x=48,y=157
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -64639,7 +64639,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=81
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -65151,7 +65151,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=49,y=161
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -65914,7 +65914,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=77
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -65927,7 +65927,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=50,y=79
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -68396,7 +68396,7 @@ BeginPlot
 	x=52,y=76
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -68452,7 +68452,7 @@ BeginPlot
 	x=52,y=82
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -68500,7 +68500,7 @@ BeginPlot
 	isNOfRiver
 	RiverWEDirection=3
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -69738,7 +69738,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=86
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -69778,7 +69778,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=53,y=93
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -71434,7 +71434,7 @@ BeginPlot
 	x=54,y=167
 	RiverNSDirection=2
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -72085,7 +72085,7 @@ BeginPlot
 	x=55,y=69
 	RiverNSDirection=0
 	isWOfRiver
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -73298,7 +73298,7 @@ BeginPlot
 	x=56,y=66
 	isNOfRiver
 	RiverWEDirection=1
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -73896,7 +73896,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=56,y=169
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -74531,7 +74531,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=70
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -74756,7 +74756,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=57,y=94
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=0
 EndPlot
@@ -75911,7 +75911,7 @@ EndPlot
 BeginPlot
 	x=58,y=63
 	ImprovementType=IMPROVEMENT_GOODY_HUT5
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -75932,7 +75932,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=58,y=67
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_GRASS
 	PlotType=0
 EndPlot
@@ -77177,7 +77177,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=61
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -77439,7 +77439,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=59,y=96
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_SAVANNAH
 	PlotType=0
 EndPlot
@@ -78195,7 +78195,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=12
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_TUNDRA
 	PlotType=0
 EndPlot
@@ -78308,7 +78308,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=60,y=32
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -79513,7 +79513,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=61,y=34
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -80766,7 +80766,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=38
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -80878,7 +80878,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=62,y=59
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -82043,7 +82043,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=42
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -82084,7 +82084,7 @@ EndPlot
 BeginPlot
 	x=63,y=49
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -82101,7 +82101,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=52
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -82113,7 +82113,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=63,y=54
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -83307,7 +83307,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=45
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN3, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN3, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -83318,7 +83318,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=64,y=47
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -84539,7 +84539,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=43
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -84599,7 +84599,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=65,y=54
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -85777,7 +85777,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=46
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -85795,7 +85795,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=49
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN2, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN2, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -85846,7 +85846,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=66,y=58
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot
@@ -87147,7 +87147,7 @@ BeginPlot
 	RiverNSDirection=0
 	isWOfRiver
 	ImprovementType=IMPROVEMENT_GOODY_HUT
-	FeatureType=FEATURE_IMPASSABLE_MOUNTAIN1, FeatureVariety=0
+	FeatureType=FEATURE_REMARKABLE_MOUNTAIN1, FeatureVariety=0
 	TerrainType=TERRAIN_PLAINS
 	PlotType=0
 EndPlot

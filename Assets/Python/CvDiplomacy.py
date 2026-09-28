@@ -1331,7 +1331,7 @@ class CvDiplomacy:
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_BRIBE_PIRATES, diploScreen.getData(), -1)
 			diploScreen.closeScreen()
 			
-		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_NOT_ACQUIRE_PIRATESS")):
+		elif (self.isComment(eComment, "USER_DIPLOCOMMENT_NOT_ACQUIRE_PIRATES")):
 			diploScreen.diploEvent(DiploEventTypes.DIPLOEVENT_CREATE_ENEMY_PIRATES, -1, -1)
 			diploScreen.closeScreen()
 		# RaR, ray, Pirates
