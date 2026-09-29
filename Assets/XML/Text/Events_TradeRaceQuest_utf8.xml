@@ -3031,6 +3031,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]suínos[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]свиней[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]disznó[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIGS_START</Tag>
@@ -3038,6 +3039,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]suínos[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]свиней[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]disznó[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PIGS_FAILED</Tag>
@@ -3045,6 +3047,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]porcos[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schweine[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]свиней[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]disznó[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIGS_DONE</Tag>
@@ -3052,6 +3055,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]suínos[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]свиней[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]disznó[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOATS_START</Tag>
@@ -3059,6 +3063,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]cabras[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]коз[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]kecske[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOATS_DONE</Tag>
@@ -3066,6 +3071,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]cabras[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]коз[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]kecske[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOATS_START</Tag>
@@ -3073,6 +3079,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]cabras[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]коз[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]kecske[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GOATS_FAILED</Tag>
@@ -3080,6 +3087,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]cabras[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]коз[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]kecske[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOATS_DONE</Tag>
@@ -3087,6 +3095,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]cabras[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]коз[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]kecske[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_OLIVES_START</Tag>
@@ -3094,6 +3103,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]azeitonas[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]оливок[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]olajbogyó[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_OLIVES_DONE</Tag>
@@ -3101,6 +3111,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]azeitonas[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]оливок[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk az [COLOR_FONT_GOLD]olajbogyó[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_OLIVES_START</Tag>
@@ -3108,6 +3119,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]azeitonas[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]оливок[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]olajbogyó[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_OLIVES_FAILED</Tag>
@@ -3115,6 +3127,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]azeitonas[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]оливок[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]olajbogyó[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_OLIVES_DONE</Tag>
@@ -3122,6 +3135,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]azeitonas[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Oliven[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]оливок[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk az [COLOR_FONT_GOLD]olajbogyó[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_START</Tag>
@@ -3129,6 +3143,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]canola[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]repce[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_DONE</Tag>
@@ -3136,6 +3151,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]canola[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Raps[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]repce[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_START</Tag>
@@ -3143,6 +3159,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]repce[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RAPE_FAILED</Tag>
@@ -3150,6 +3167,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]canola[COLOR_REVERT] nas colônias com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Raps[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]repce[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_DONE</Tag>
@@ -3157,6 +3175,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]canola[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Raps[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]рапса[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]repce[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WILD_FEATHERS_START</Tag>
@@ -3164,6 +3183,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]penas de aves selvagens[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]перьев диких птиц[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]vadmadár toll[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_WILD_FEATHERS_DONE</Tag>
@@ -3171,6 +3191,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]penas de aves selvagens[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]перьев диких птиц[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]vadmadár toll[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WILD_FEATHERS_START</Tag>
@@ -3178,6 +3199,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]penas de aves selvagens[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]перьев диких птиц[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]vadmadár toll[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_WILD_FEATHERS_FAILED</Tag>
@@ -3185,6 +3207,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]penas de aves selvagens[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]перьев диких птиц[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]vadmadár toll[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_WILD_FEATHERS_DONE</Tag>
@@ -3192,6 +3215,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]penas de aves selvagens[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Vogelfedern[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]перьев диких птиц[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]vadmadár toll[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MILK_START</Tag>
@@ -3199,6 +3223,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]leite[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Milch[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]молока[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]tej[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_MILK_DONE</Tag>
@@ -3206,6 +3231,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]leite[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Milch[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]молока[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]tej[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MILK_START</Tag>
@@ -3213,6 +3239,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]leite[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Milch[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]молока[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]tej[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_MILK_FAILED</Tag>
@@ -3220,6 +3247,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]leite[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Milch[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]молока[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]tej[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_MILK_DONE</Tag>
@@ -3227,6 +3255,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]leite[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Milch[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]молока[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]tej[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDES_START</Tag>
@@ -3234,6 +3263,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]peles de cabra[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Ziegenfelle[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]козьих шкур[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]kecskebőr[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDES_DONE</Tag>
@@ -3241,6 +3271,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]peles de cabra[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegenfellen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]козьих шкур[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]kecskebőr[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDES_START</Tag>
@@ -3248,6 +3279,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]peles de cabra[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Ziegenfellen[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]козьих шкур[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]kecskebőr[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_GOAT_HIDES_FAILED</Tag>
@@ -3255,6 +3287,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]peles de cabra[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Ziegenfelle[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]козьих шкур[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]kecskebőr[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_GOAT_HIDES_DONE</Tag>
@@ -3262,6 +3295,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]peles de cabra[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ziegenfellen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]козьих шкур[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]kecskebőr[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIG_SKIN_START</Tag>
@@ -3269,6 +3303,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]peles de porco[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schweinehäute[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]свиной кожи[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]disznóbőr[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_PIG_SKIN_DONE</Tag>
@@ -3276,6 +3311,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]peles de porco[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinehäuten[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]свиной кожи[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]disznóbőr[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIG_SKIN_START</Tag>
@@ -3283,6 +3319,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]peles de porco[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Schweinehäuten[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]свиной кожи[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]disznóbőr[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_PIG_SKIN_FAILED</Tag>
@@ -3290,6 +3327,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]peles de porco[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schweinehäute[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]свиной кожи[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]disznóbőr[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_PIG_SKIN_DONE</Tag>
@@ -3297,6 +3335,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]peles de porco[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schweinehäuten[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]свиной кожи[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]disznóbőr[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_DOWNS_START</Tag>
@@ -3304,6 +3343,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias [COLOR_FONT_GOLD]abaixo[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пуха[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]pehelytoll[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_DOWNS_DONE</Tag>
@@ -3311,6 +3351,7 @@
 		<Portuguese>Milorde, agora somos o maior trader [COLOR_FONT_GOLD]abaixo[COLOR_REVERT] da Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пуха[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]pehelytoll[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_DOWNS_START</Tag>
@@ -3318,6 +3359,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]down[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]пуха[COLOR_REVERT] на рынки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]pehelytoll[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DOWNS_FAILED</Tag>
@@ -3325,6 +3367,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias para [COLOR_FONT_GOLD]abaixo[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пуха[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]pehelytoll[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_DOWNS_DONE</Tag>
@@ -3332,6 +3375,7 @@
 		<Portuguese>Milorde, agora somos o maior trader [COLOR_FONT_GOLD]abaixo[COLOR_REVERT] da Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Daunen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пуха[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]pehelytoll[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROASTED_PEANUTS_START</Tag>
@@ -3339,6 +3383,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]amendoins torrados[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]geröstete Erdnüsse[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]жаренного арахиса[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]pörkölt mogyoró[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_ROASTED_PEANUTS_DONE</Tag>
@@ -3346,6 +3391,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]amendoim torrado[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gerösteten Erdnüssen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]жаренного арахиса[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]pörköltmogyoró[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROASTED_PEANUTS_START</Tag>
@@ -3353,6 +3399,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]amendoins torrados[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]gerösteten Erdnüssen[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]жаренного арахиса[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]pörkölt mogyoró[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_ROASTED_PEANUTS_FAILED</Tag>
@@ -3360,6 +3407,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]amendoins torrados[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]geröstete Erdnüsse[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]жаренного арахиса[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]pörköltmogyoró[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_ROASTED_PEANUTS_DONE</Tag>
@@ -3367,6 +3415,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]amendoim torrado[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]gerösteten Erdnüssen[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]жаренного арахиса[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]pörköltmogyoró[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHEESE_START</Tag>
@@ -3374,6 +3423,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]queijo[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Käse[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]сыра[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]sajt[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHEESE_DONE</Tag>
@@ -3381,6 +3431,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]queijo[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Käse[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]сыра[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]sajt[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHEESE_START</Tag>
@@ -3388,6 +3439,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]queijo[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Käse[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]сыра[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]sajt[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CHEESE_FAILED</Tag>
@@ -3395,6 +3447,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]queijo[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Käse[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]сыра[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]sajt[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHEESE_DONE</Tag>
@@ -3402,41 +3455,47 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]queijo[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Käse[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]сыра[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]sajt[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_YERBA_TEA_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Europe has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Europe has begun.</English>
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] nas colônias com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]чая[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Europe.</English>
+		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Europe.</English>
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]чая[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_YERBA_TEA_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Europe.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Europe.</English>
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]tea[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_YERBA_TEA_FAILED</Tag>
-		<English>Milord, another colonial nation was the first to corner the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Europe.</English>
+		<English>Milord, another colonial nation was the first to corner the market in the colonies for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Europe.</English>
 		<Portuguese>Milord, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Europe.</English>
+		<English>Milord, we're now the top trader in [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Europe.</English>
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]чая[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHOCOLATE_START</Tag>
@@ -3444,6 +3503,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]chocolate[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]шоколада[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]csokoládé[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_CHOCOLATE_DONE</Tag>
@@ -3451,6 +3511,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]chocolate[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]шоколада[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]csokoládé[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHOCOLATE_START</Tag>
@@ -3458,6 +3519,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]chocolate[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]шоколада[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]csokoládé[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_CHOCOLATE_FAILED</Tag>
@@ -3465,6 +3527,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]chocolate[COLOR_REVERT] nas colônias com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]шоколада[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]csokoládé[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_CHOCOLATE_DONE</Tag>
@@ -3472,6 +3535,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]chocolate[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schokolade[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]шоколада[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]csokoládé[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RUM_START</Tag>
@@ -3479,6 +3543,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]rum[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]рома[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]rum[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RUM_DONE</Tag>
@@ -3486,6 +3551,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]rum[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]рома[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]rum[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RUM_START</Tag>
@@ -3493,6 +3559,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]rum[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]rum[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RUM_FAILED</Tag>
@@ -3500,6 +3567,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]rum[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Rum[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]рома[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]rum[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RUM_DONE</Tag>
@@ -3507,6 +3575,7 @@
 		<Portuguese>Milorde, agora somos o maior negociante de [COLOR_FONT_GOLD]rum[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rum[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]рома[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]rum[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HOOCH_START</Tag>
@@ -3514,6 +3583,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_HOOCH_DONE</Tag>
@@ -3521,6 +3591,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HOOCH_START</Tag>
@@ -3528,6 +3599,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_HOOCH_FAILED</Tag>
@@ -3535,6 +3607,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_HOOCH_DONE</Tag>
@@ -3542,6 +3615,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_OLIVE_OIL_START</Tag>
@@ -3549,6 +3623,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]azeite[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]оливкового масла[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]olivaolaj[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_OLIVE_OIL_DONE</Tag>
@@ -3556,6 +3631,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]azeite[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]оливкового масла[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk az [COLOR_FONT_GOLD]olivaolaj[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_OLIVE_OIL_START</Tag>
@@ -3563,6 +3639,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros embarques de [COLOR_FONT_GOLD]azeite[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]оливкового масла[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]olivaolaj[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_OLIVE_OIL_FAILED</Tag>
@@ -3570,6 +3647,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]azeite[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]оливкового масла[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]olivaolaj[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_OLIVE_OIL_DONE</Tag>
@@ -3577,6 +3655,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]azeite[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Olivenöl[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]оливкового масла[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk az [COLOR_FONT_GOLD]olivaolaj[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_START</Tag>
@@ -3584,6 +3663,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]repceolaj[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_DONE</Tag>
@@ -3591,6 +3671,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]repceolaj[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_START</Tag>
@@ -3598,6 +3679,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]repceolaj[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_RAPE_OIL_FAILED</Tag>
@@ -3605,6 +3687,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]repceolaj[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_RAPE_OIL_DONE</Tag>
@@ -3612,6 +3695,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]óleo de canola[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rapsöl[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]рапсового масла[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]repceolaj[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_START</Tag>
@@ -3619,6 +3703,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]roupas de uso diário[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]повседневной одежды[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]hétköznapi ruha[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_DONE</Tag>
@@ -3626,6 +3711,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]roupas do dia a dia[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на европейском рынке [COLOR_FONT_GOLD]повседневной одежды[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]hétköznapi ruha[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_START</Tag>
@@ -3633,6 +3719,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com as primeiras remessas de [COLOR_FONT_GOLD]roupas de uso diário[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung von [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] mit Europa begeistert.</German>
 		<Russian>Жители Европы в восторге от первых поставок [COLOR_FONT_GOLD]повседневной одежды[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Európával kereskedett [COLOR_FONT_GOLD]hétköznapi ruha[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_FAILED</Tag>
@@ -3640,6 +3727,7 @@
 		<Portuguese>Milorde, outra nação colonial foi a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]roupas do dia a dia[COLOR_REVERT] com a Europa.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] mit Europa zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на европейском рынке поставок [COLOR_FONT_GOLD]повседневной одежды[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az európai [COLOR_FONT_GOLD]hétköznapi ruha[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPE_TRADE_QUEST_EVERYDAY_CLOTHES_DONE</Tag>
@@ -3647,6 +3735,7 @@
 		<Portuguese>Milorde, agora somos o maior comerciante de [COLOR_FONT_GOLD]roupas do dia a dia[COLOR_REVERT] na Europa.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Alltagskleidung[COLOR_REVERT] in Europa zu werden.</German>
 		<Russian>Милорд, мы лидируем на европейском рынке [COLOR_FONT_GOLD]повседневной одежды[COLOR_REVERT]!</Russian>
+		<Hungarian>Uram, mi vagyunk a [COLOR_FONT_GOLD]hétköznapi ruha[COLOR_REVERT] piac Európai vezető kereskedője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_START</Tag>
@@ -3654,6 +3743,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]roupas festivas[COLOR_REVERT] com a Europa já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]elegante Kleider[COLOR_REVERT] mit Europa hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на европейском рынке [COLOR_FONT_GOLD]праздничной одежды[COLOR_REVERT].</Russian>
+		<Hungarian>Megkezdődött a verseny a gyarmatokon az európai [COLOR_FONT_GOLD]ünnepi ruha[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_EUROPE_TRADE_QUEST_FESTIVE_CLOTHES_DONE</Tag>
