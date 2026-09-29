@@ -2321,7 +2321,7 @@
 		<Portuguese>Gostaríamos de agradecer respeitosamente a Vossa Majestade e agradecemos o Seu apoio. Podemos afirmar humildemente que necessitamos urgentemente de recursos para construir as nossas colônias?</Portuguese>
 		<French>Nous tenons à remercier respectueusement Sa Majesté et nous apprécions son soutien. Pouvons-nous faire état que nos colonies manquent cruellement de ressources pour leur construction ?</French>
 		<German>Wir danken Eurer Majestät und nehmen die wohlfeile Hilfe gerne an. Wenn wir demütigst einen Wunsch äußern dürften: Rohstoffe für den Aufbau unserer Kolonie kämen uns sehr gelegen.</German>
-		<Russian>Мы хотели бы со всем почтением поблагодарить Ваше Величество и сказать, что мы ценим Вашу поддержку. Можем ли мы со смирением заявить, что остро нуждаемся в ресурсах для создания наших колоний?</Russian>
+		<Russian>Мы хотели бы со всем почтением поблагодарить Ваше Величество и сказать, что мы ценим Вашу поддержку. Можем ли мы со смирением заявить, что остро нуждаемся в транспорте для организации сообщения между колониями?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SECONDCOLONY_2</Tag>
@@ -2329,7 +2329,7 @@
 		<Portuguese>Majestade, se me permite reconsiderar... A protecção da nossa colônia contra animais selvagens e invasores nativos é ainda mais importante.</Portuguese>
 		<French>Votre Majesté, sauf votre respect, la protection de notre colonie contre les  animaux sauvages et les raids indigènes est encore plus prioritaire.</French>
 		<German>Eure Majestät, wichtiger noch als der Aufbau unserer Kolonie ist ihr Schutz vor den Gefahren der Wildnis. Bestien und Eingeborene lauern uns allerorten auf.</German>
-		<Russian>Ваше Величество, защита нашей колонии от опасностей дикой природы важнее, чем строительство. Дикие звери и не менее дикие туземцы подстерегают нас повсюду.</Russian>
+		<Russian>Ваше Величество, защита нашей колонии от опасностей дикой природы важнее всего. Дикие звери и не менее дикие туземцы подстерегают нас повсюду.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THIRDCOLONY_1</Tag>
