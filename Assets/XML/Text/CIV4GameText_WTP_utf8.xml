@@ -399,7 +399,7 @@
 		<Tag>TXT_KEY_COMMAND_DETACH_LEADER_HELP</Tag>
 		<English>Detach the General or Lieutenant from this unit.</English>
 		<German>Beruft den General oder Leutnant von dieser Einheit ab.</German>
-		<Russian>Отзовите генерала или лейтенанта из этого подразделения</Russian>
+		<Russian>Отзовите генерала, капитана или лейтенанта из этого подразделения</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_YIELD_PRICE_COMPACT_EU</Tag>

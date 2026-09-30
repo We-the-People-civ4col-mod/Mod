@@ -2434,8 +2434,7 @@
 		<German>[SPACE]</German>
 		<Italian>near [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Italian>
 		<Spanish>near %s1</Spanish>
-		<!--<Russian>из [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>-->
-		<Russian>возвращаясь в Европу</Russian>
+		<Russian>недалеко от [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT]</Russian>
 		<Hungarian>[SPACE]</Hungarian>
 	</TEXT>
 	<TEXT>

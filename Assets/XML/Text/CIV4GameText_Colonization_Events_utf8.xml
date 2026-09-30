@@ -1478,7 +1478,7 @@
 		<Portuguese>Não permitiremos que criminosos nos chantageiem. A única coisa que eles recebem de nós é a morte.</Portuguese>
 		<French>Nous ne subirons pas le chantage. La seule chose qu'ils recevront, c'est du plomb.</French>
 		<German>Wir lassen uns nicht von Kriminellen erpresssen. Das einzige was sie von uns bekommen werden ist ihr eigener Tod.</German>
-		<Russian>Мы не позволим преступникам шантажировать нас. Единственное, что они получают от нас, это смерть.</Russian>
+		<Russian>Мы не позволим преступникам шантажировать нас. Единственное, что они получат, это петлю на шею. Взять их!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_DEFENDED_BUT_RAIDED</Tag>
@@ -1922,7 +1922,7 @@
 		<German>Die [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Bergleute sind auf Jadevorkommen gestoßen.</German>
 		<Italian>I minatori [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] hanno trovato dei depositi di giada.</Italian>
 		<Spanish>Los mineros [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han dado con depósitos de jade.</Spanish>
-		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] горняки обнаружили залежи нефрита.</Russian>
+		<Russian>Горняки [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружили залежи нефрита.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_JADE_1</Tag>
