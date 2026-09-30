@@ -4549,6 +4549,7 @@
 		<Portuguese>Milorde, conseguimos dominar o comércio de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]arany[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Tag>
@@ -4556,6 +4557,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]arany[COLOR_REVERT] szállítmánytól. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezető szereplőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GOLD_FAILED</Tag>
@@ -4563,6 +4565,7 @@
 		<Portuguese>Milorde, outra nação colonial conquistou o mercado nas colônias de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]arany[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Tag>
@@ -4570,6 +4573,7 @@
 		<Portuguese>Milorde, agora lideramos o comércio de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está encantado.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, mi uraljuk a Port Royal-i [COLOR_FONT_GOLD]arany[COLOR_REVERT] kereskedelmet. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Tag>
@@ -4577,6 +4581,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]joias[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
@@ -4584,6 +4589,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar líderes no comércio de [COLOR_FONT_GOLD]joias[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Tag>
@@ -4591,6 +4597,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]joias[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] szállítmánytól. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezető szereplőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GEMS_FAILED</Tag>
@@ -4598,6 +4605,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado de [COLOR_FONT_GOLD]joias[COLOR_REVERT] nas colônias com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
@@ -4605,6 +4613,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]joias[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está muito feliz.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] kereskedelmét. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Tag>
@@ -4612,13 +4621,15 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
-		<English>One nation now leads the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
+		<English>One nation now dominates [COLOR_FONT_GOLD]furniture[COLOR_REVERT] trading with Port Royal.</English>
 		<Portuguese>Uma nação agora lidera o comércio de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Tag>
@@ -4626,6 +4637,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com as primeiras remessas de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]bútor[COLOR_REVERT] szállítmánytól. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezető szereplőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_FAILED</Tag>
@@ -4633,13 +4645,15 @@
 		<Portuguese>Milord, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
-		<English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+		<English>Milord, we have managed to become the leading trader of[COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está extremamente satisfeito.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Tag>
@@ -4647,6 +4661,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]café[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
@@ -4654,6 +4669,7 @@
 		<Portuguese>Uma nação agora domina o comércio de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Tag>
@@ -4661,6 +4677,7 @@
 		<Portuguese>Nossos colonos estão aproveitando os primeiros carregamentos de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COFFEE_FAILED</Tag>
@@ -4668,6 +4685,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
@@ -4675,6 +4693,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal encontra-se energizado.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Tag>
@@ -4682,6 +4701,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
@@ -4689,6 +4709,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar líderes no comércio de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Tag>
@@ -4696,6 +4717,7 @@
 		<Portuguese>Nossos colonos estão aproveitando os primeiros carregamentos de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCOA_FAILED</Tag>
@@ -4703,6 +4725,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado colonial do [COLOR_FONT_GOLD]cacau[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
@@ -4710,6 +4733,7 @@
 		<Portuguese>Milorde, agora somos líderes no comércio de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] de Port Royal. O Conselho de Capitães de Port Royal está bastante satisfeito.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] Port Royal-i piacán. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Tag>
@@ -4717,6 +4741,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
@@ -4724,6 +4749,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Tag>
@@ -4731,6 +4757,7 @@
 		<Portuguese>Nossos colonos trabalham incansavelmente acompanhando os primeiros carregamentos de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_FAILED</Tag>
@@ -4738,6 +4765,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
@@ -4745,6 +4773,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está entusiasmado.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] kereskedelmét. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Tag>
@@ -4752,6 +4781,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
@@ -4759,6 +4789,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Tag>
@@ -4766,6 +4797,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_WINE_FAILED</Tag>
@@ -4773,6 +4805,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado colonial do [COLOR_FONT_GOLD]vinho[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
@@ -4780,6 +4813,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] de Port Royal. O Conselho de Capitães de Port Royal está feliz e descontraído.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
@@ -4787,6 +4821,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]madeiras nobres[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
@@ -4794,6 +4829,7 @@
 		<Portuguese>Milorde, agora somos líderes no comércio de [COLOR_FONT_GOLD]madeiras nobres[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
@@ -4801,6 +4837,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_FAILED</Tag>
@@ -4808,6 +4845,7 @@
 		<Portuguese>Milord, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
@@ -4815,6 +4853,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
@@ -4822,6 +4861,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
@@ -4829,6 +4869,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar líderes no comércio de [COLOR_FONT_GOLD]comida[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
@@ -4836,6 +4877,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]comida[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]élelem[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FOOD_FAILED</Tag>
@@ -4843,6 +4885,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]comida[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
@@ -4850,6 +4893,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
@@ -4857,13 +4901,15 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
-		<English>Milord, we are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
+		<English>Milord, we are now the leading trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Milorde, agora somos o principal comerciante de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]kő[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
@@ -4871,6 +4917,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]kő[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_STONE_FAILED</Tag>
@@ -4878,6 +4925,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
@@ -4885,6 +4933,7 @@
 		<Portuguese>Milorde, agora somos o principal comerciante de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]kő[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
@@ -4892,6 +4941,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
@@ -4899,6 +4949,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
@@ -4906,6 +4957,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_LUMBER_FAILED</Tag>
@@ -4913,6 +4965,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] nas colônias com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
@@ -4920,6 +4973,7 @@
 		<Portuguese>Milorde, agora somos o principal comerciante de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők az [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
@@ -4927,6 +4981,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
@@ -4934,13 +4989,15 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
+		<English>Our colonists are happy with the first shipments of [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]agyag[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CLAY_FAILED</Tag>
@@ -4948,6 +5005,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
@@ -4955,6 +5013,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
@@ -4962,6 +5021,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
@@ -4969,6 +5029,7 @@
 		<Portuguese>Milorde, agora somos o comerciante líder em [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők az [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
@@ -4976,6 +5037,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_FAILED</Tag>
@@ -4983,6 +5045,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
@@ -4990,6 +5053,7 @@
 		<Portuguese>Uma nação é agora o principal negociante em [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
@@ -4997,6 +5061,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
@@ -5004,6 +5069,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
@@ -5011,6 +5077,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]sör[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BEER_FAILED</Tag>
@@ -5018,6 +5085,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
@@ -5025,20 +5093,23 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
 		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal has begun.</English>
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>		
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
-		<English>W are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] from PortRoyal.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] from Port Royal.</English>
 		<Portuguese>Somos agora o maior negociante de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] de PortRoyal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Mi vagyunk a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
@@ -5046,6 +5117,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HOOCH_FAILED</Tag>
@@ -5053,6 +5125,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] de PortRoyal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
@@ -5060,41 +5133,47 @@
 		<Portuguese>Um país é agora o principal comerciante de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal has begun.</English>
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]tea[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_FAILED</Tag>
-		<English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
@@ -5102,6 +5181,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
@@ -5109,6 +5189,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
@@ -5116,6 +5197,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
@@ -5123,6 +5205,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] nas colônias com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
@@ -5130,6 +5213,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
@@ -5137,6 +5221,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
@@ -5144,6 +5229,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
@@ -5151,6 +5237,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]rizs[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_RICE_FAILED</Tag>
@@ -5158,6 +5245,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
@@ -5165,6 +5253,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Tag>
@@ -5172,6 +5261,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]mandioca[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]manióka[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
