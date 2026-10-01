@@ -6436,6 +6436,13 @@
 		<German>Der Priester ist gerade von seiner Pilgerreise zurück und bereit wieder in die Wildnis zu ziehen.</German>
 		<Russian>[COLOR_SELECTED_TEXT]Священник вернулся из паломничества[COLOR_REVERT] и готов нести Слово Божье дикарям.</Russian>
 	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_5</Tag>
+		<English>Leave me alone with that sort of thing; I’ve got other things on my mind at the moment.</English>
+		<Portuguese>Deixa-me em paz com esse tipo de coisas; tenho outras coisas em que pensar neste momento.</Portuguese>
+		<German>Lasst mich mit sowas in Ruhe, ich habe gerade andere Sorgen.</German>
+		<Russian/>
+	</TEXT>
  	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_CLASSIC_COOLDOWN_HELP</Tag>
 		<English>[ICON_BULLET]The chance of this event occurring again is [COLOR_NEGATIVE_TEXT]after this event significantly reduced for %d1 turns.[COLOR_REVERT]</English>

@@ -39852,6 +39852,7 @@
 				<Event>EVENT_FAILED_MISSIONARY_1</Event>
 				<Event>EVENT_FAILED_MISSIONARY_2</Event>
 				<Event>EVENT_FAILED_MISSIONARY_3</Event>
+				<Event>EVENT_FAILED_MISSIONARY_5</Event>
 			</Events>
 			<PrereqEvents/>
 			<bPrereqEventPlot>0</bPrereqEventPlot>

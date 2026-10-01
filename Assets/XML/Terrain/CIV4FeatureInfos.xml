@@ -1143,11 +1143,11 @@
 			<YieldChanges>
 				<YieldIntegerPair>
 					<YieldType>YIELD_ORE</YieldType>
-					<iValue>2</iValue>
+					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_GEMS</YieldType>
-					<iValue>1</iValue>
+					<iValue>0</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_COTTON</YieldType>
@@ -1251,7 +1251,7 @@
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_GOLD</YieldType>
-					<iValue>3</iValue>
+					<iValue>2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_STONE</YieldType>
@@ -1405,7 +1405,7 @@
 			<YieldChanges>
 				<YieldIntegerPair>
 					<YieldType>YIELD_ORE</YieldType>
-					<iValue>3</iValue>
+					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_GEMS</YieldType>
@@ -1505,11 +1505,11 @@
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_COAL</YieldType>
-					<iValue>2</iValue>
+					<iValue>0</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_SILVER</YieldType>
-					<iValue>3</iValue>
+					<iValue>2</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_GOLD</YieldType>
@@ -1667,11 +1667,11 @@
 			<YieldChanges>
 				<YieldIntegerPair>
 					<YieldType>YIELD_ORE</YieldType>
-					<iValue>0</iValue>
+					<iValue>1</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_GEMS</YieldType>
-					<iValue>3</iValue>
+					<iValue>0</iValue>
 				</YieldIntegerPair>
 				<YieldIntegerPair>
 					<YieldType>YIELD_COTTON</YieldType>
