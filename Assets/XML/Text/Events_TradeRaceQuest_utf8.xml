@@ -4549,6 +4549,7 @@
 		<Portuguese>Milorde, conseguimos dominar o comércio de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]arany[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_START</Tag>
@@ -4556,6 +4557,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]arany[COLOR_REVERT] szállítmánytól. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezető szereplőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GOLD_FAILED</Tag>
@@ -4563,6 +4565,7 @@
 		<Portuguese>Milorde, outra nação colonial conquistou o mercado nas colônias de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]arany[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GOLD_DONE</Tag>
@@ -4570,6 +4573,7 @@
 		<Portuguese>Milorde, agora lideramos o comércio de [COLOR_FONT_GOLD]ouro[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está encantado.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gold[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]золота[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, mi uraljuk a Port Royal-i [COLOR_FONT_GOLD]arany[COLOR_REVERT] kereskedelmet. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Tag>
@@ -4577,6 +4581,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]joias[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
@@ -4584,6 +4589,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar líderes no comércio de [COLOR_FONT_GOLD]joias[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_START</Tag>
@@ -4591,6 +4597,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]joias[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] szállítmánytól. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezető szereplőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_GEMS_FAILED</Tag>
@@ -4598,6 +4605,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado de [COLOR_FONT_GOLD]joias[COLOR_REVERT] nas colônias com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_GEMS_DONE</Tag>
@@ -4605,6 +4613,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]joias[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está muito feliz.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Edelsteine[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]драгоценных камней[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]drágakő[COLOR_REVERT] kereskedelmét. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Tag>
@@ -4612,13 +4621,15 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
-		<English>One nation now leads the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal.</English>
+		<English>One nation now dominates [COLOR_FONT_GOLD]furniture[COLOR_REVERT] trading with Port Royal.</English>
 		<Portuguese>Uma nação agora lidera o comércio de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_START</Tag>
@@ -4626,6 +4637,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com as primeiras remessas de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]bútor[COLOR_REVERT] szállítmánytól. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezető szereplőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FURNITURE_FAILED</Tag>
@@ -4633,13 +4645,15 @@
 		<Portuguese>Milord, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FURNITURE_DONE</Tag>
-		<English>Milord, we have managed to become dominant in the trade of [COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
+		<English>Milord, we have managed to become the leading trader of[COLOR_FONT_GOLD]furniture[COLOR_REVERT] with Port Royal. The Captains' Council of Port Royal is extremely satisfied.</English>
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]móveis[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está extremamente satisfeito.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Möbel[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]мебели[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]bútor[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Tag>
@@ -4647,6 +4661,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]café[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
@@ -4654,6 +4669,7 @@
 		<Portuguese>Uma nação agora domina o comércio de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_START</Tag>
@@ -4661,6 +4677,7 @@
 		<Portuguese>Nossos colonos estão aproveitando os primeiros carregamentos de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COFFEE_FAILED</Tag>
@@ -4668,6 +4685,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COFFEE_DONE</Tag>
@@ -4675,6 +4693,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]café[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal encontra-se energizado.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffee[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]кофе[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Tag>
@@ -4682,6 +4701,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
@@ -4689,6 +4709,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar líderes no comércio de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_START</Tag>
@@ -4696,6 +4717,7 @@
 		<Portuguese>Nossos colonos estão aproveitando os primeiros carregamentos de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCOA_FAILED</Tag>
@@ -4703,6 +4725,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado colonial do [COLOR_FONT_GOLD]cacau[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCOA_DONE</Tag>
@@ -4710,6 +4733,7 @@
 		<Portuguese>Milorde, agora somos líderes no comércio de [COLOR_FONT_GOLD]cacau[COLOR_REVERT] de Port Royal. O Conselho de Capitães de Port Royal está bastante satisfeito.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kakao[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]какао[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] Port Royal-i piacán. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Tag>
@@ -4717,6 +4741,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kakaó[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
@@ -4724,6 +4749,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_START</Tag>
@@ -4731,6 +4757,7 @@
 		<Portuguese>Nossos colonos trabalham incansavelmente acompanhando os primeiros carregamentos de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_COCA_LEAVES_FAILED</Tag>
@@ -4738,6 +4765,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
@@ -4745,6 +4773,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal está entusiasmado.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] kereskedelmét. A Port Royal-i Kapitányok Tanácsa nagyon elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Tag>
@@ -4752,6 +4781,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
@@ -4759,6 +4789,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_START</Tag>
@@ -4766,6 +4797,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] com Port Royal. O Conselho de Capitães de Port Royal pede-nos que nos tornemos líderes de mercado.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal begeistert. Der Kapitänsrat von Port Royal fordert uns auf, der Marktführer zu werden.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT]. Совет капитанов Порт Ройала просит нас стать доминирующим лидером рынка.</Russian>
+		<Hungarian>Gyarmatositónk örülnek az első Port Royal-i [COLOR_FONT_GOLD]kávé[COLOR_REVERT] szállítmányoknak. A Port Royal-i Kapitányok Tanácsa arra kér minket, hogy váljunk a piac vezetőjévé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_WINE_FAILED</Tag>
@@ -4773,6 +4805,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado colonial do [COLOR_FONT_GOLD]vinho[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_WINE_DONE</Tag>
@@ -4780,6 +4813,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]vinho[COLOR_REVERT] de Port Royal. O Conselho de Capitães de Port Royal está feliz e descontraído.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Wein[COLOR_REVERT] mit Port Royal zu werden. Der Kapitänsrat von Port Royal ist äusserst zufrieden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]вина[COLOR_REVERT] в Порт Ройал! Совет капитанов Порт Ройала очень доволен.</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]bor[COLOR_REVERT] kereskedelem vezetők legyünk. A Port Royal-i Kapitányok Tanácsa rendkívül elégedett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
@@ -4787,6 +4821,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]madeiras nobres[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
@@ -4794,6 +4829,7 @@
 		<Portuguese>Milorde, agora somos líderes no comércio de [COLOR_FONT_GOLD]madeiras nobres[COLOR_REVERT] de Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_START</Tag>
@@ -4801,6 +4837,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HARDWOOD_FAILED</Tag>
@@ -4808,6 +4845,7 @@
 		<Portuguese>Milord, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HARDWOOD_DONE</Tag>
@@ -4815,6 +4853,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
@@ -4822,6 +4861,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
@@ -4829,6 +4869,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar líderes no comércio de [COLOR_FONT_GOLD]comida[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_START</Tag>
@@ -4836,6 +4877,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]comida[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]élelem[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_FOOD_FAILED</Tag>
@@ -4843,6 +4885,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]comida[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_FOOD_DONE</Tag>
@@ -4850,6 +4893,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrungsmittel[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]élelem[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
@@ -4857,13 +4901,15 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
-		<English>Milord, we are now the lead trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
+		<English>Milord, we are now the leading trader of [COLOR_FONT_GOLD]stone[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Milorde, agora somos o principal comerciante de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]kő[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_START</Tag>
@@ -4871,6 +4917,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]kő[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_STONE_FAILED</Tag>
@@ -4878,6 +4925,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_STONE_DONE</Tag>
@@ -4885,6 +4933,7 @@
 		<Portuguese>Milorde, agora somos o principal comerciante de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]kő[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
@@ -4892,6 +4941,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
@@ -4899,6 +4949,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_START</Tag>
@@ -4906,6 +4957,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_LUMBER_FAILED</Tag>
@@ -4913,6 +4965,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] nas colônias com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_LUMBER_DONE</Tag>
@@ -4920,6 +4973,7 @@
 		<Portuguese>Milorde, agora somos o principal comerciante de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bauholz[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők az [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
@@ -4927,6 +4981,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
@@ -4934,13 +4989,15 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
+		<English>Our colonists are happy with the first shipments of [COLOR_FONT_GOLD]clay[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]agyag[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CLAY_FAILED</Tag>
@@ -4948,6 +5005,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CLAY_DONE</Tag>
@@ -4955,6 +5013,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]argila[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Lehm[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]глины[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]agyag[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
@@ -4962,6 +5021,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
@@ -4969,6 +5029,7 @@
 		<Portuguese>Milorde, agora somos o comerciante líder em [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők az [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] Port Royal-i piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_START</Tag>
@@ -4976,6 +5037,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_FAILED</Tag>
@@ -4983,6 +5045,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BAKERY_GOODS_DONE</Tag>
@@ -4990,6 +5053,7 @@
 		<Portuguese>Uma nação é agora o principal negociante em [COLOR_FONT_GOLD]provisões[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Proviant[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]провианта[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]ellátmány[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
@@ -4997,6 +5061,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
@@ -5004,6 +5069,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_START</Tag>
@@ -5011,6 +5077,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]sör[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BEER_FAILED</Tag>
@@ -5018,6 +5085,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BEER_DONE</Tag>
@@ -5025,20 +5093,23 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]cerveja[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Bier[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пива[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]sör[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
 		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] with Port Royal has begun.</English>
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal hat begonnen.</German>
-		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>		
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
-		<English>W are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] from PortRoyal.</English>
+		<English>We are now the top trader in [COLOR_FONT_GOLD]fruit brandy[COLOR_REVERT] from Port Royal.</English>
 		<Portuguese>Somos agora o maior negociante de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] de PortRoyal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Mi vagyunk a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_START</Tag>
@@ -5046,6 +5117,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_HOOCH_FAILED</Tag>
@@ -5053,6 +5125,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] de PortRoyal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_HOOCH_DONE</Tag>
@@ -5060,41 +5133,47 @@
 		<Portuguese>Um país é agora o principal comerciante de [COLOR_FONT_GOLD]conhaque de frutas[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schnaps[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]фруктового бренди[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]gyümölcspárlat[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal has begun.</English>
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]tea[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_YERBA_TEA_FAILED</Tag>
-		<English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>Milord, another colonial nation is the first to corner the market in the colonies for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_YERBA_TEA_DONE</Tag>
-		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba-maté[COLOR_REVERT] with Port Royal.</English>
+		<English>One nation is now the top trader for [COLOR_FONT_GOLD]yerba maté[COLOR_REVERT] with Port Royal.</English>
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]erva-mate[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Mate-Tee[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]чая[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]tea[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
@@ -5102,6 +5181,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] nas colônias com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
@@ -5109,6 +5189,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_START</Tag>
@@ -5116,6 +5197,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
@@ -5123,6 +5205,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] nas colônias com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
@@ -5130,6 +5213,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
@@ -5137,6 +5221,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
@@ -5144,6 +5229,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_START</Tag>
@@ -5151,6 +5237,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]rizs[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_RICE_FAILED</Tag>
@@ -5158,6 +5245,7 @@
 		<Portuguese>Milorde, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_RICE_DONE</Tag>
@@ -5165,6 +5253,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]arroz[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Reis[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]риса[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]rizs[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Tag>
@@ -5172,6 +5261,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]mandioca[COLOR_REVERT] com Port Royal já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Megkezdődött a verseny a Port Royal-i [COLOR_FONT_GOLD]manióka[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
@@ -5179,6 +5269,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]mandioca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]manióka[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_START</Tag>
@@ -5186,6 +5277,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]mandioca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal begeistert.</German>
 		<Russian>Джентельмены удачи в восторге от первых поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT].</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Port Royallal kereskedett [COLOR_FONT_GOLD]manióka[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_CASSAVA_FAILED</Tag>
@@ -5193,6 +5285,7 @@
 		<Portuguese>Milord, outra nação colonial é a primeira a monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]mandioca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett a Port Royal-i [COLOR_FONT_GOLD]manióka[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PORTROYAL_TRADE_QUEST_CASSAVA_DONE</Tag>
@@ -5200,6 +5293,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]mandioca[COLOR_REVERT] com Port Royal.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Maniok[COLOR_REVERT] mit Port Royal zu werden.</German>
 		<Russian>Милорд, мы лидируем на рынке поставок [COLOR_FONT_GOLD]маниоки[COLOR_REVERT] в Порт Ройал!</Russian>
+		<Hungarian>Egy másik ország uralja a Port Royal-i [COLOR_FONT_GOLD]manióka[COLOR_REVERT] kereskedelmét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_START</Tag>
@@ -5208,6 +5302,7 @@
 		<French>Nous suivrons les ordres de sa Majesté !</French>
 		<German>Wir werden den Wünschen Seiner Majestät nachkommen!</German>
 		<Russian>Мы выполним приказ Его Величества!</Russian>
+		<Hungarian>Teljesítjük Őfelsége parancsait!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_1</Tag>
@@ -5215,6 +5310,7 @@
 		<Portuguese>Pela glória e riqueza de nossas colônias! Ouro, preços mais altos e ainda mais prestígio junto a Sua Majestade. Não existe nada melhor do que isso!</Portuguese>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Gold, höhere Verkaufspreise und auch noch ein höheres Ansehen bei Seiner Majestät. Besser geht es fast nicht mehr!</German>
 		<Russian>Во славу и богатство наших колоний! Золото, более высокие цены - в глазах Его Величества мы будем примером для в всех! Лучше этого и не придумать!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Arany, magasabb árak és még nagyobb tekintély Őfelségének. Ennél jobb már nem is lehet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_2</Tag>
@@ -5222,6 +5318,7 @@
 		<Portuguese>Pela glória e riqueza de nossas colônias! Diz-se que os nativos africanos são trabalhadores esforçados!</Portuguese>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Die afikanischen Eingeborenen sollen sehr fleißig sein!</German>
 		<Russian>Во славу и богатство наших колоний! Говорят, что аборигены Африки очень трудолюбивы. Мы проверим это на практике.</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Az afrikai bennszülöttekről azt mondják, hogy szorgalmasak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_3</Tag>
@@ -5229,13 +5326,15 @@
 		<Portuguese>Pela glória e riqueza de nossas colônias! Ah, mulatos! Vamos ver para que servem...</Portuguese>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Oha, Mulatten! Mal sehen, für was die gut sind...</German>
 		<Russian>Во славу и богатство наших колоний! Мулаты. Посмотрим, на что они годятся...</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Á, mulattok! Lássuk csak, mire jók...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_4</Tag>
-		<English>For the Glory and Wealth of our colonies! Of course we need slave overseers!</English>
+		<English>For the glory and wealth of our colonies! Of course we need slave overseers!</English>
 		<Portuguese>Pela Glória e Riqueza de nossas colônias! É claro que precisamos de superintendentes de escravos!</Portuguese>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Natürlich brauchen wir Sklavenaufseher!</German>
 		<Russian>Во славу и богатство наших колоний! Надсмотрщики за рабами пригодятся на наших плантациях.</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Természetesen szükségünk van rabszolgafelügyelőkre!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_5</Tag>
@@ -5243,34 +5342,39 @@
 		<Portuguese>Pela glória e riqueza de nossas colônias! Os caçadores de escravos certamente serão úteis!</Portuguese>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Sklavenjäger könnten auch nützlich sein!</German>
 		<Russian>Во славу и богатство наших колоний! Охотники за рабами наверняка пригодятся!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Természetesen szükségünk van rabszolgafelügyelőkre!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_6</Tag>
-		<English>For the Glory and Wealth of our colonies! Capable field workers are always welcome!</English>
+		<English>For the glory and wealth of our colonies! Capable field workers are always welcome!</English>
 		<Portuguese>Pela Glória e Riqueza de nossas colônias! Trabalhadores de campo capacitados são sempre bem-vindos!</Portuguese>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Fähige Feldarbeiter sind immer willkommen!</German>
 		<Russian>Во славу и богатство наших колоний! Мы всегда рады умелым работникам.</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! A tehetséges mezőgazdasági munkásokat mindig szívesen látjuk!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_DONE_7</Tag>
-		<English>For the Glory and Wealth of our colonies! Finally we can safely ship our slaves to the New World!</English>
+		<English>For the glory and wealth of our colonies! Finally we can safely ship our slaves to the New World!</English>
 		<Portuguese>Pela Glória e Riqueza de nossas colônias! Finalmente podemos enviar nossos escravos com segurança para o Novo Mundo!</Portuguese>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Endlich können wir unsere Sklaven sicher in die Neue Welt schippern!</German>
 		<Russian>Во славу и богатство наших колоний! Наконец-то мы сможем безопасно переправить наших рабов в Новый Свет!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Végre biztonságosan szállíthatjuk rabszolgáinkat az Újvilágba!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
-		<English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
+		<English>Trade this quantity of goods with Africa [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can:[NEWLINE]%D1_amount %F2_yield</English>
 		<Portuguese>Negocie esta quantidade de bens com a África [COLOR_FONT_GOLD]antes que qualquer outra nação [COLOR_REVERT]consiga:[NEWLINE]%D1_amount %F2_yield</Portuguese>
 		<German>Liefert die folgende Warenmenge nach Afrika [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
 		<Russian>Купите или продайте следующее количество товаров в Африке [COLOR_FONT_GOLD]прежде, чем другая нация сможет это[COLOR_REVERT] сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
+		<Hungarian>Kereskedj ezzel a mennyiségű áruval Afrikával [COLOR_FONT_GOLD]mielőtt bármely más nemzet [COLOR_REVERT]megtehetné :[NEWLINE]%D1_amount %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
-		<English>Trade the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield</English>
+		<English>Trade the following quantity of goods to the colonies [COLOR_FONT_GOLD]before any other nation [COLOR_REVERT]can:[NEWLINE]%D1_amount %F2_yield</English>
 		<Portuguese>Negocie a seguinte quantidade de mercadorias com as colônias [COLOR_FONT_GOLD]antes que qualquer outra nação [COLOR_REVERT]possa:[NEWLINE]%D1_amount %F2_yield</Portuguese>
 		<German>Liefert die folgende Warenmenge in die Kolonien [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
 		<Russian>Продайте в колониях следующее количество товаров из Африки [COLOR_FONT_GOLD]прежде, чем другая нация сможет это[COLOR_REVERT] сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
+		<Hungarian>Kereskedj ezzel a mennyiségű áruval a gyarmatokkal [COLOR_FONT_GOLD]mielőtt bármely más nemzet [COLOR_REVERT]megtehetné :[NEWLINE]%D1_amount %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_FOOD_START</Tag>
@@ -5278,6 +5382,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
@@ -5285,6 +5390,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] com África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
+		 <Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_FOOD_START</Tag>
@@ -5292,6 +5398,7 @@
 		<Portuguese>Nossos colonos acolhem com satisfação os primeiros carregamentos de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink üdvözlik az első Afrikai [COLOR_FONT_GOLD]élelem[COLOR_REVERT] szállítmányt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_FOOD_FAILED</Tag>
@@ -5299,6 +5406,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]comida[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_FOOD_DONE</Tag>
@@ -5306,6 +5414,7 @@
 		<Portuguese>Uma nação é hoje o maior comerciante de [COLOR_FONT_GOLD]alimentos[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Nahrung[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]еды[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]élelem[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LUMBER_START</Tag>
@@ -5313,6 +5422,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] nas colônias com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Holz[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LUMBER_DONE</Tag>
@@ -5320,6 +5430,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] africana.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy az Afrikai [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LUMBER_START</Tag>
@@ -5327,6 +5438,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Holz[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_LUMBER_FAILED</Tag>
@@ -5334,6 +5446,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Holz[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LUMBER_DONE</Tag>
@@ -5341,6 +5454,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]madeira[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Holz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пиломатериалов[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]épületfa[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_STONE_START</Tag>
@@ -5348,6 +5462,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_STONE_DONE</Tag>
@@ -5355,6 +5470,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante do comércio africano de [COLOR_FONT_GOLD]pedras[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_STONE_START</Tag>
@@ -5362,6 +5478,7 @@
 		<Portuguese>Nossos colonos estão ocupados com os primeiros carregamentos de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink üdvözlik az első Afrikai [COLOR_FONT_GOLD]kő[COLOR_REVERT] szállítmányt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_STONE_FAILED</Tag>
@@ -5369,6 +5486,7 @@
 		<Portuguese>Milorde, outra nação colonial agora controla o mercado nas colônias de [COLOR_FONT_GOLD]pedra[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Steine[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_STONE_DONE</Tag>
@@ -5376,6 +5494,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]pedras[COLOR_REVERT] africanas.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Steinen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]камня[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kő[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HORSES_START</Tag>
@@ -5383,6 +5502,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]cavalos[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]ló[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
@@ -5390,13 +5510,15 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]cavalos[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]ló[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HORSES_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of African [COLOR_FONT_GOLD]horses[COLOR_REVERT].</English>
+		<English>Our colonists are thrilled with the first shipments of African [COLOR_FONT_GOLD]horses[COLOR_REVERT], especially the Arabians.</English>
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]cavalos[COLOR_REVERT] africanos.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]ló[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_HORSES_FAILED</Tag>
@@ -5404,6 +5526,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado nas colônias para [COLOR_FONT_GOLD]cavalos[COLOR_REVERT] africanos.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]ló[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HORSES_DONE</Tag>
@@ -5411,6 +5534,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]cavalos[COLOR_REVERT] africanos.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Pferden[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]лошадей[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]ló[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_ORE_START</Tag>
@@ -5418,6 +5542,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]minério[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Erze[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]érc[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_ORE_DONE</Tag>
@@ -5425,6 +5550,7 @@
 		<Portuguese>Milorde, lideramos o comércio de [COLOR_FONT_GOLD]minério[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, mi vezetjük az Afrikai [COLOR_FONT_GOLD]érc[COLOR_REVERT] kereskedelmi piacot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_ORE_START</Tag>
@@ -5432,6 +5558,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]minério[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Uram, mi vezetjük az Afrikai [COLOR_FONT_GOLD]érc[COLOR_REVERT] kereskedelmi piacot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_ORE_FAILED</Tag>
@@ -5439,6 +5566,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]minério[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Erze[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]érc[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_ORE_DONE</Tag>
@@ -5446,6 +5574,7 @@
 		<Portuguese>Uma nação é agora o maior negociante de [COLOR_FONT_GOLD]minério[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erzen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]руды[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]érc[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SILVER_START</Tag>
@@ -5453,6 +5582,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]prata[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SILVER_DONE</Tag>
@@ -5460,6 +5590,7 @@
 		<Portuguese>Milorde, agora somos os primeiros no comércio de[COLOR_FONT_GOLD]prata[COLOR_REVERT] africana.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, mi vezetjük az Afrikai [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] kereskedelmi piacot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SILVER_START</Tag>
@@ -5467,6 +5598,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]prata[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_SILVER_FAILED</Tag>
@@ -5474,6 +5606,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu primeiro dominar o mercado nas colônias de [COLOR_FONT_GOLD]prata[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Silber[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SILVER_DONE</Tag>
@@ -5481,6 +5614,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]prata[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Silber[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]серебра[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]ezüst[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CATTLE_START</Tag>
@@ -5488,6 +5622,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias para o [COLOR_FONT_GOLD]gado[COLOR_REVERT] africano já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Rinder[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]marha[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CATTLE_DONE</Tag>
@@ -5495,6 +5630,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]gado[COLOR_REVERT] em África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]marha[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CATTLE_START</Tag>
@@ -5502,6 +5638,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]gado[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]marha[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CATTLE_FAILED</Tag>
@@ -5509,6 +5646,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias para o [COLOR_FONT_GOLD]gado[COLOR_REVERT] africano.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Rinder[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]marha[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CATTLE_DONE</Tag>
@@ -5516,6 +5654,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]gado[COLOR_REVERT] africano.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Rindern[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]коров[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]marha[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SHEEP_START</Tag>
@@ -5523,6 +5662,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]ovelhas[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Schafe[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]juh[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SHEEP_DONE</Tag>
@@ -5530,6 +5670,7 @@
 		<Portuguese>Uma nação é agora o principal negociante no comércio de [COLOR_FONT_GOLD]ovelhas[COLOR_REVERT] africanas.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]juh[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SHEEP_START</Tag>
@@ -5537,6 +5678,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]ovelhas[COLOR_REVERT] africanas.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]juh[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_SHEEP_FAILED</Tag>
@@ -5544,6 +5686,7 @@
 		<Portuguese>Milorde, outra nação colonial conquistou agora o mercado nas colônias de [COLOR_FONT_GOLD]ovelhas[COLOR_REVERT] africanas.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Schafe[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]juh[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SHEEP_DONE</Tag>
@@ -5551,6 +5694,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante do comércio de [COLOR_FONT_GOLD]ovelhas[COLOR_REVERT] africanas.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schafen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]овец[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]juh[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TOOLS_START</Tag>
@@ -5558,6 +5702,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]ferramentas[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Werkzeuge[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TOOLS_DONE</Tag>
@@ -5565,6 +5710,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]ferramentas[COLOR_REVERT] com África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_TOOLS_START</Tag>
@@ -5572,6 +5718,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com as primeiras remessas de [COLOR_FONT_GOLD]ferramentas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_TOOLS_FAILED</Tag>
@@ -5579,6 +5726,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]ferramentas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Werkzeuge[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_TOOLS_DONE</Tag>
@@ -5586,6 +5734,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]ferramentas[COLOR_REVERT] com África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Werkzeugen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]инструментов[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]szerszám[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_GUNS_START</Tag>
@@ -5593,6 +5742,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]armas[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]puska[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_GUNS_DONE</Tag>
@@ -5600,6 +5750,7 @@
 		<Portuguese>Uma nação é hoje o maior comerciante de [COLOR_FONT_GOLD]armas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]puska[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_GUNS_START</Tag>
@@ -5607,6 +5758,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]armas[COLOR_REVERT] africanas.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]puska[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_GUNS_FAILED</Tag>
@@ -5614,6 +5766,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]armas[COLOR_REVERT] africanas.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]puska[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_GUNS_DONE</Tag>
@@ -5621,6 +5774,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar o líder no comércio de [COLOR_FONT_GOLD]armas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schußwaffen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мушкетов[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy az Afrikai [COLOR_FONT_GOLD]puska[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CLOTH_START</Tag>
@@ -5628,6 +5782,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]tecidos[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Stoffe[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kelme[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CLOTH_DONE</Tag>
@@ -5635,6 +5790,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante do comércio de [COLOR_FONT_GOLD]tecidos[COLOR_REVERT] africanos.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kelme[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CLOTH_START</Tag>
@@ -5642,6 +5798,7 @@
 		<Portuguese>Nossos colonos resplandecem com os primeiros carregamentos de [COLOR_FONT_GOLD]tecidos[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]kelme[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CLOTH_FAILED</Tag>
@@ -5649,6 +5806,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]tecidos[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Stoffe[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kelme[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CLOTH_DONE</Tag>
@@ -5656,6 +5814,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]tecidos[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Stoffen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]ткани[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kelme[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SALT_START</Tag>
@@ -5663,6 +5822,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]sal[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]só[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SALT_DONE</Tag>
@@ -5670,6 +5830,7 @@
 		<Portuguese>Uma nação é hoje o maior comerciante de [COLOR_FONT_GOLD]sal[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]só[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SALT_START</Tag>
@@ -5677,6 +5838,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]sal[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]só[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_SALT_FAILED</Tag>
@@ -5684,6 +5846,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]sal[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Salz[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]só[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SALT_DONE</Tag>
@@ -5691,6 +5854,7 @@
 		<Portuguese>Uma nação é hoje o maior comerciante de [COLOR_FONT_GOLD]sal[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Salz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]соли[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]só[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SPICES_START</Tag>
@@ -5698,6 +5862,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]especiarias[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]fűszer[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_SPICES_DONE</Tag>
@@ -5705,6 +5870,7 @@
 		<Portuguese>Uma nação é agora o maior comerciante de [COLOR_FONT_GOLD]especiarias[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]fűszer[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SPICES_START</Tag>
@@ -5712,6 +5878,7 @@
 		<Portuguese>Nossos colonos estão maravilhados com os primeiros carregamentos de [COLOR_FONT_GOLD]especiarias[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]fűszer[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_SPICES_FAILED</Tag>
@@ -5719,6 +5886,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu primeiro dominar o mercado nas colônias de [COLOR_FONT_GOLD]especiarias[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Gewürze[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]fűszer[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_SPICES_DONE</Tag>
@@ -5726,6 +5894,7 @@
 		<Portuguese>Milorde, conseguimos nos tornar dominantes no comércio de [COLOR_FONT_GOLD]especiarias[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Gewürzen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]специй[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, sikerült elérnünk, hogy az Afrikai [COLOR_FONT_GOLD]fűszer[COLOR_REVERT] kereskedelem vezetők legyünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_START</Tag>
@@ -5733,13 +5902,15 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
-		<English>One nation is now dominant in the African [COLOR_FONT_GOLD]coca leaves[COLOR_REVERT] trade.</English>
+		<English>One nation is now dominant in the African [COLOR_FONT_GOLD]coca[COLOR_REVERT] trade.</English>
 		<Portuguese>Uma nação é agora dominante no comércio africano de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT].</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_START</Tag>
@@ -5747,6 +5918,7 @@
 		<Portuguese>Nossos colonos estão intoxicados com os primeiros carregamentos de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von den ersten Lieferungen von [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COCA_LEAVES_FAILED</Tag>
@@ -5754,6 +5926,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für [COLOR_FONT_GOLD]Coca-Blätter[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCA_LEAVES_DONE</Tag>
@@ -5761,41 +5934,47 @@
 		<Portuguese>Uma nação domina agora o comércio de [COLOR_FONT_GOLD]folhas de coca[COLOR_REVERT] com África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Coca-Blättern[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]листьев коки[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kokalevél[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TRADINGGOODS_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa has begun.</English>
+		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] with Africa has begun.</English>
 		<Portuguese>A corrida para dominar o mercado nas colônias para o [COLOR_FONT_GOLD]comércio de mercadorias[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes in den Kolonien für [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE</Tag>
-		<English>One nation controls the market of [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
+		<English>One nation controls the market of [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] with Africa.</English>
 		<Portuguese>Uma nação controla o mercado de [COLOR_FONT_GOLD]comércio de bens[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_TRADINGGOODS_START</Tag>
-		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
+		<English>Our colonists are thrilled with the first shipments of [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] with Africa.</English>
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]mercadorias comerciais[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind vom ersten Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_TRADINGGOODS_FAILED</Tag>
-		<English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
+		<English>Milord, another colonial nation has cornered the market in the colonies for [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] with Africa.</English>
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias para [COLOR_FONT_GOLD]comercializar mercadorias[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt in den Kolonien für afrikanische [COLOR_FONT_GOLD]Handelsgüter[COLOR_REVERT] zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_TRADINGGOODS_DONE</Tag>
-		<English>Milord, we are now the leader handling [COLOR_FONT_GOLD]trading goods[COLOR_REVERT] with Africa.</English>
+		<English>Milord, we are now the leader handling [COLOR_FONT_GOLD]trade goods[COLOR_REVERT] with Africa.</English>
 		<Portuguese>Milorde, agora somos os líderes no [COLOR_FONT_GOLD]comércio de mercadorias[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit afrikanischen [COLOR_FONT_GOLD]Handelsgütern[COLOR_REVERT] zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]мануфактуры[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők a [COLOR_FONT_GOLD]dísztárgy[COLOR_REVERT] Afrikai piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_START</Tag>
@@ -5803,6 +5982,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]algodão[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]gyapot[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
@@ -5810,6 +5990,7 @@
 		<Portuguese>Uma nação é agora dominante no comércio de [COLOR_FONT_GOLD]algodão[COLOR_REVERT] com África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]gyapot[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_START</Tag>
@@ -5817,6 +5998,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]algodão[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]gyapot[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COTTON_FAILED</Tag>
@@ -5824,6 +6006,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]algodão[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]gyapot[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COTTON_DONE</Tag>
@@ -5831,6 +6014,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]algodão[COLOR_REVERT] com África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Baumwolle[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]хлопка[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]gyapot[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_INDIGO_START</Tag>
@@ -5838,6 +6022,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]índigo[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]indigó[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
@@ -5845,6 +6030,7 @@
 		<Portuguese>Uma nação é o principal comerciante de [COLOR_FONT_GOLD]índigo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]indigó[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_INDIGO_START</Tag>
@@ -5852,6 +6038,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]índigo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]indigó[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_INDIGO_FAILED</Tag>
@@ -5859,6 +6046,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]índigo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]indigó[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_INDIGO_DONE</Tag>
@@ -5866,6 +6054,7 @@
 		<Portuguese>Milorde, somos agora o principal comerciante de [COLOR_FONT_GOLD]índigo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Indigo[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]индиго[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, mi vagyunk a vezetők az [COLOR_FONT_GOLD]indigó[COLOR_REVERT] Afrikai piacán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_START</Tag>
@@ -5873,6 +6062,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]pau-campeche[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kékfa[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
@@ -5880,6 +6070,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]pau-campeche[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kékfa[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_START</Tag>
@@ -5887,6 +6078,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]pau-campeche[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] на рынки Африки.</Russian>
+<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]kékfa[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_LOGWOOD_FAILED</Tag>
@@ -5894,6 +6086,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]pau-campeche[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kékfa[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_LOGWOOD_DONE</Tag>
@@ -5901,6 +6094,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]pau-campeche[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Blauholz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кампеша[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kékfa[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_START</Tag>
@@ -5908,6 +6102,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]cochonilha[COLOR_REVERT] nas colônias com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Cochenille-Schildläuse[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]bíbortetű[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
@@ -5915,6 +6110,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]cochonilha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]bíbortetű[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_START</Tag>
@@ -5922,6 +6118,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]cochonilha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Cochenille-Schildläuse[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]bíbortetű[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COCHINEAL_FAILED</Tag>
@@ -5929,6 +6126,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu monopolizar o mercado de [COLOR_FONT_GOLD]cochonilha[COLOR_REVERT] nas colônias com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Cochenille-Schildläuse[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]bíbortetű[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COCHINEAL_DONE</Tag>
@@ -5936,6 +6134,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]cochonilha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Cochenille-Schildläusen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кошенили[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]bíbortetű[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_START</Tag>
@@ -5943,6 +6142,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]bagas de café[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kávébab[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
@@ -5950,6 +6150,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]bagas de café[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kávébab[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_START</Tag>
@@ -5957,6 +6158,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]bagas de café[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]kávébab[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_COFFEE_BERRIES_FAILED</Tag>
@@ -5964,6 +6166,7 @@
 		<Portuguese>Milorde, outra nação colonial conquistou o mercado nas colônias de [COLOR_FONT_GOLD]bagas de café[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kávébab[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_COFFEE_BERRIES_DONE</Tag>
@@ -5971,6 +6174,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]bagas de café[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kaffeebeeren[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кофейных ягод[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kávébab[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_START</Tag>
@@ -5978,6 +6182,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]amendoins[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]mogyoró[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
@@ -5985,6 +6190,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]amendoins[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]mogyoró[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_START</Tag>
@@ -5992,6 +6198,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]amendoins[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]mogyoró[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_PEANUTS_FAILED</Tag>
@@ -5999,6 +6206,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu monopolizar o mercado nas colônias de [COLOR_FONT_GOLD]amendoins[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]mogyoró[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_PEANUTS_DONE</Tag>
@@ -6006,6 +6214,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]amendoins[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Erdnüsse[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]арахиса[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]mogyoró[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_START</Tag>
@@ -6013,6 +6222,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]pimenta vermelha[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]roten Pfeffer[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]chilipaprika[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
@@ -6020,6 +6230,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]pimenta vermelha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]chilipaprika[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_START</Tag>
@@ -6027,6 +6238,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]pimenta vermelha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]chilipaprika[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_RED_PEPPER_FAILED</Tag>
@@ -6034,6 +6246,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu dominar o mercado nas colônias de [COLOR_FONT_GOLD]pimenta vermelha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]roten Pfeffer[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]chilipaprika[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_RED_PEPPER_DONE</Tag>
@@ -6041,6 +6254,7 @@
 		<Portuguese>Uma nação é agora o comerciante dominante de [COLOR_FONT_GOLD]pimenta vermelha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]rotem Pfeffer[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]красного перца[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]chilipaprika[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_START</Tag>
@@ -6048,6 +6262,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]baunilha[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]grüne Vanilleschoten[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]zöld vaníliabab[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
@@ -6055,6 +6270,7 @@
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]baunilha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]zöld vaníliabab[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_START</Tag>
@@ -6062,6 +6278,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]baunilha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]grüner Vanilleschoten[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]zöld vaníliabab[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_VANILLA_PODS_FAILED</Tag>
@@ -6069,6 +6286,7 @@
 		<Portuguese>Milorde, outra nação colonial conquistou o mercado nas colônias de [COLOR_FONT_GOLD]baunilha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]grüne Vanilleschoten[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]zöld vaníliabab[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_VANILLA_PODS_DONE</Tag>
@@ -6076,20 +6294,23 @@
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]baunilha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]grünen Vanilleschoten[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]стручков ванили[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]zöld vaníliabab[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
-		<English>The race to dominate the market in the colonies for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa has begun.</English>
+		<English>The race to dominate the market in the colonies for African [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] has begun.</English>
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]xarope de bordo[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]juharszirup[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
-		<English>One nation is now the top trader for [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT] with Africa.</English>
+		<English>One nation is now the top trader for African [COLOR_FONT_GOLD]maple syrup[COLOR_REVERT].</English>
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]xarope de bordo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]juharszirup[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_START</Tag>
@@ -6097,6 +6318,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]xarope de bordo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]juharszirup[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_MAPLE_SIRUP_FAILED</Tag>
@@ -6104,6 +6326,7 @@
 		<Portuguese>Milorde, outra nação colonial conquistou o mercado nas colônias de [COLOR_FONT_GOLD]xarope de bordo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]juharszirup[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_MAPLE_SIRUP_DONE</Tag>
@@ -6111,6 +6334,7 @@
 		<Portuguese>Um país é hoje o principal comerciante de [COLOR_FONT_GOLD]xarope de bordo[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Ahornsirup[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]кленового сиропа[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]juharszirup[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_START</Tag>
@@ -6118,6 +6342,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]borracha[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kaucsuk[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
@@ -6125,6 +6350,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]borracha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kaucsuk[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_START</Tag>
@@ -6132,6 +6358,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]borracha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]kaucsuk[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_KAUTSCHUK_FAILED</Tag>
@@ -6139,6 +6366,7 @@
 		<Portuguese>Milorde, outra nação colonial conseguiu monopolizar o mercado de [COLOR_FONT_GOLD]borracha[COLOR_REVERT] nas colônias com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kaucsuk[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_KAUTSCHUK_DONE</Tag>
@@ -6146,6 +6374,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]borracha[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kautschuk[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]каучука[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kaucsuk[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_START</Tag>
@@ -6153,6 +6382,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]madeiras nobres[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
@@ -6160,6 +6390,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]madeiras nobres[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_START</Tag>
@@ -6167,6 +6398,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_HARDWOOD_FAILED</Tag>
@@ -6174,6 +6406,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]madeira nobre[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_HARDWOOD_DONE</Tag>
@@ -6181,6 +6414,7 @@
 		<Portuguese>Uma nação é hoje o principal comerciante de [COLOR_FONT_GOLD]madeiras nobres[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Hartholz[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]твёрдой древесины[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]keményfa[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
@@ -6188,6 +6422,7 @@
 		<Portuguese>A corrida para dominar o mercado de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] nas colônias com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
@@ -6195,6 +6430,7 @@
 		<Portuguese>Uma nação é hoje o maior comerciante de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_START</Tag>
@@ -6202,6 +6438,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLACK_POWDER_FAILED</Tag>
@@ -6209,6 +6446,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] nas colônias com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLACK_POWDER_DONE</Tag>
@@ -6216,6 +6454,7 @@
 		<Portuguese>Uma nação é hoje o maior comerciante de [COLOR_FONT_GOLD]pólvora[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Schwarzpulver[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пороха[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]puskapor[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_START</Tag>
@@ -6223,6 +6462,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]lâminas[COLOR_REVERT] com a África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]kard[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
@@ -6230,6 +6470,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]lâminas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kard[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_START</Tag>
@@ -6237,6 +6478,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]lâminas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]kard[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_BLADES_FAILED</Tag>
@@ -6244,6 +6486,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]lâminas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]kard[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_BLADES_DONE</Tag>
@@ -6251,6 +6494,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]lâminas[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Klingenwaffen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]клинков[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]kard[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_START</Tag>
@@ -6258,6 +6502,7 @@
 		<Portuguese>A corrida para dominar o mercado nas colônias de [COLOR_FONT_GOLD]canhões[COLOR_REVERT] com África já começou.</Portuguese>
 		<German>Das Rennen zur Beherrschung des Marktes für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika hat begonnen.</German>
 		<Russian>Началось состязание за доминирование на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Megkezdődött a verseny az Afrikai [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] piac uralmáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLD_EVENTTRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
@@ -6265,6 +6510,7 @@
 		<Portuguese>Uma nação é agora o principal comerciante de [COLOR_FONT_GOLD]canhões[COLOR_REVERT] com a África.</Portuguese>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Одна из европейских наций стала лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_START</Tag>
@@ -6272,6 +6518,7 @@
 		<Portuguese>Nossos colonos estão entusiasmados com os primeiros carregamentos de [COLOR_FONT_GOLD]canhões[COLOR_REVERT] com a África.</Portuguese>
 		<German>Die Bürger unserer Kolonien sind von der ersten Lieferung [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika begeistert.</German>
 		<Russian>Жители наших колоний в восторге от первых поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] на рынки Африки.</Russian>
+		<Hungarian>Gyarmatosítóink izgatottak az első Afrikával kereskedett [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] szállítmánytól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_CANNONS_FAILED</Tag>
@@ -6279,6 +6526,7 @@
 		<Portuguese>Milorde, outra nação colonial monopolizou o mercado nas colônias de [COLOR_FONT_GOLD]canhões[COLOR_REVERT] com a África.</Portuguese>
 		<German>Milord, dem Gouverneur einer anderen Kolonialmacht ist es zuerst gelungen, den Markt für [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] mit Afrika zu beherrschen.</German>
 		<Russian>Милорд, другая колониальная нация первой доминировала на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az Afrikai [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] piac vezetője.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AFRICA_TRADE_QUEST_CANNONS_DONE</Tag>
@@ -6287,6 +6535,7 @@
 		<French>Une nation européenne est devenue le premier vendeur de [COLOR_FONT_GOLD]canons[COLOR_REVERT] en Afrique.</French>
 		<German>Es ist einer Nation gelungen, der Marktführer im Handel mit [COLOR_FONT_GOLD]Kanonen[COLOR_REVERT] in Afrika zu werden.</German>
 		<Russian>Милорд, нам удалось стать лидером на рынке поставок [COLOR_FONT_GOLD]пушек[COLOR_REVERT] в Африку!</Russian>
+		<Hungarian>Egy ország az Afrikai [COLOR_FONT_GOLD]ágyu[COLOR_REVERT] piac vezetője lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_QUEST_REWARD_SHIP_HELP</Tag>
