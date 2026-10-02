@@ -1366,6 +1366,7 @@
 		<German>Für wie dumm haltet Ihr mich eigentlich, [CT_NAME]?</German>
 		<Italian>Credi che sia una persona così ingenua, [CT_NAME]?</Italian>
 		<Spanish>¿Tan inconsciente creéis que soy, [CT_NAME]?</Spanish>
+		<Russian>Ты считаешь меня настолько глупым, [CT_NAME]?</Russian>
 		<Hungarian>Szerinted ennyire ostoba vagyok, [CT_NAME]?</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -8750,7 +8751,7 @@
 		<German>Wie Ihr beliebt, Eure Majestät ! (Krieg wird beendet, Diplomaten werden entsendet)</German>
 		<Italian>Come desiderate, Vostra Maestà! (Guerra è finita, diplomatici vengono inviati)</Italian>
 		<Spanish>¡Como desee, Su Majestad! (Se termina la guerra, se envían diplomáticos)</Spanish>
-		<Russian>Как пожелаете, Ваше Величество! (Война заканчивается, в колонии отправлены дипломаты)</Russian> 
+		<Russian>Как пожелаете, Ваше Величество! (Война заканчивается, в колонии отправлены дипломаты)</Russian>
 		<Hungarian>Ahogy óhajtja, Felség! (A háború véget ér, diplomaták küldése)</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -9480,8 +9481,8 @@
 		<Portuguese>A guerra com [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] continua. Foi mais sensato não envolvermos os nativos neste conflito para evitar derramamento de sangue desnecessário.</Portuguese>
 		<French>La guerre avec [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] se poursuit. Il nous semblait plus sage de ne pas enrôler les indigènes dans ce conflit pour éviter des effusions de sang.</French>
 		<German>Der Krieg mit [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] geht weiter. Um unötiges Blutvergießen zu verhindern haben wir uns aber entschieden die Ureinwohner nicht in diesen Konflikt hineinzuziehen.</German>
-		<Russian>Война с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] продолжается. Нам было разумнее не втягивать туземцев в этот конфликт, чтобы избежать ненужного кровопролития.</Russian> 
-		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] elleni háború folytatódik. Bölcsen tettük, hogy nem vontuk be az őslakosokat ebbe a konfliktusba és ezzel elkerültük a felesleges vérontást.</Hungarian> 
+		<Russian>Война с [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] продолжается. Нам было разумнее не втягивать туземцев в этот конфликт, чтобы избежать ненужного кровопролития.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] elleni háború folytatódik. Bölcsen tettük, hogy nem vontuk be az őslakosokat ebbe a konfliktusba és ezzel elkerültük a felesleges vérontást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_COLONIES_AND_NATIVE_ALLIES_WAR_ACCEPTED</Tag>

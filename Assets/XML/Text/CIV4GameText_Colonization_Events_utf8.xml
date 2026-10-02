@@ -1209,7 +1209,7 @@
 		<Portuguese>Atraídos pelas perspectivas de ganhos ricos, nativos hostis atacaram uma de suas [COLOR_UNIT_TEXT]carruagens[COLOR_REVERT]. Eles estão atirando flechas flamejantes! Proteja-se e salve o que pode ser salvo!</Portuguese>
 		<French>Alléché par le butin potentiel, un groupe d'Indiens a attaqué un [COLOR_UNIT_TEXT]voiture[COLOR_REVERT]. Ils décochent des flèches de feu. À couvert, et sauvons ce que nous pouvons !</French>
 		<German>Angelockt von den Aussichten auf reiche Beute hat ein feindlicher Indianer-Trupp eines Eurer [COLOR_UNIT_TEXT]Gespanne[COLOR_REVERT] angegriffen. Sie schießen mit Brandpfeilen! Jetzt heißt es in Deckung gehen und retten was zu retten ist.</German>
-		<Russian>Соблазнившись перспективой богатой добычи, отряд злобных индейцев напал на [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT]. Они стреляют зажигательными стрелами! Все в укрытие! Спасайтесь!</Russian>
+		<Russian>Соблазнившись перспективой богатой добычи, отряд злобных индейцев напал на [COLOR_UNIT_TEXT]обоз[COLOR_REVERT]. Они стреляют зажигательными стрелами! Все в укрытие! Спасайтесь!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_1</Tag>
@@ -6441,7 +6441,7 @@
 		<English>Leave me alone with that sort of thing; I’ve got other things on my mind at the moment.</English>
 		<Portuguese>Deixa-me em paz com esse tipo de coisas; tenho outras coisas em que pensar neste momento.</Portuguese>
 		<German>Lasst mich mit sowas in Ruhe, ich habe gerade andere Sorgen.</German>
-		<Russian/>
+		<Russian>Не тратьте моё время по пустякам, пусть служители Церкви разбираются с этим неудачником сами.</Russian>
 	</TEXT>
  	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_CLASSIC_COOLDOWN_HELP</Tag>
@@ -6747,7 +6747,7 @@
 		<English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] treasure column was attacked by a roving band. Can the militiamen defend it?</English>
 		<Portuguese>Um boato está se espalhando: uma coluna de tesouro [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] foi atacada por um bando itinerante. Os milicianos podem defendê-lo?</Portuguese>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Schatzkolonne wurde von einer vagabundierenden Bande angegriffen. Ob die Miliz ihn verteidigen kann?</German>
-		<Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обоз с сокровищами подверглась нападению бродячей банды. Смогут ли ополченцы защитить его?</Russian>
+		<Russian>Ходят слухи, что обоз с сокровищами, принадлежащий [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], подвергся нападению бродячей банды. Смогли ли ополченцы защитить его?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
@@ -8631,14 +8631,14 @@
 		<English>A customs dispute with a European power has arisen.</English>
 		<Portuguese>Surgiu uma disputa alfandegária com uma potência europeia.</Portuguese>
 		<German>Ein Zollstreit mit einer europäischen Macht ist entbrannt.</German>
-		<Russian>Возник таможенный спор с одной из европейских держав.</Russian>
+		<Russian>Таможенный спор между двумя европейскими державами.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_CUSTOMS</Tag>
 		<English>Customs officials have stopped a foreign trading party in %s2_city and demanded payment of the required duties. The traders claim to be under the protection of a European colonial power, but are unable to pay the fees demanded.</English>
 		<Portuguese>Os funcionários aduaneiros detiveram um grupo comercial estrangeiro em %s2_city e exigiram o pagamento dos direitos exigidos. Os comerciantes afirmam estar sob a protecção de uma potência colonial europeia, mas não conseguem pagar as taxas exigidas.</Portuguese>
 		<German>Zollbeamte haben in %s2_city einen fremden Handelstreck aufgehalten und die Zahlung ordnungsgemäßer Abgaben verlangt. Die Händler berufen sich auf den Schutz einer europäischen Kolonialmacht, können die geforderten Gebühren jedoch nicht entrichten.</German>
-		<Russian>Таможенники задержали иностранную торговую группу в городе %s2_city и потребовали уплаты необходимых пошлин. Торговцы утверждают, что находятся под защитой европейской колониальной державы, но не в состоянии оплатить требуемые сборы.</Russian>
+		<Russian>Таможенники задержали иностранных купцов в городе %s2_city и потребовали уплаты необходимых пошлин. Торговцы не желают оплачивать требуемые сборы, заявляя, что находятся под защитой другой европейской колониальной державы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_EUROPEAN_EVENTS_BORDER_DISPUTE</Tag>

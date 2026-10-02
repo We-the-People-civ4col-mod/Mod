@@ -3713,7 +3713,7 @@
 		<English>If they cannot pay the King’s duties, their cargo shall be seized and placed in the warehouses of %s1_city.</English>
 		<Portuguese>Caso não consigam pagar os deveres do Rei, a sua carga será apreendida e colocada nos armazéns de %s1_city.</Portuguese>
 		<German>Wenn sie die Abgaben an die Krone nicht entrichten können, wird ihre Ladung beschlagnahmt und in die Lagerhäuser von %s1_city verbracht.</German>
-		<Russian>Если они не смогут уплатить королевские пошлины, их груз будет конфискован и помещен на склады города %s1_city.</Russian>
+		<Russian>Если они не уплатят Королевские пошлины, их груз будет конфискован и помещен на склады города %s1_city.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_CUSTOMS_DISPUTE_1_HELP</Tag>
@@ -3727,7 +3727,7 @@
 		<English>Let them pass. No chest of goods is worth provoking another governor.</English>
 		<Portuguese>Deixe-os passar. Nenhum baú de mercadorias vale a pena provocar outro governador.</Portuguese>
 		<German>Lasst sie passieren. Keine Warenkiste ist es wert, einen anderen Gouverneur zu erzürnen.</German>
-		<Russian>Пусть проходят. Никакой сундук с товаром не стоит того, чтобы навлекать на себя гнев еще одного губернатора.</Russian>
+		<Russian>Отпустите их. Никакие сундуки с товарами не стоят ссоры с нашими добрыми соседями.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_CUSTOMS_DISPUTE_2_HELP</Tag>
@@ -3741,7 +3741,7 @@
 		<English>Charge a reasonable duty and let them go on their way as soon as they can pay it.</English>
 		<Portuguese>Cobrar uma taxa razoável e deixá-los seguir seu caminho assim que puderem pagá-la.</Portuguese>
 		<German>Erhebt eine maßvolle Abgabe und lasst sie weiterziehen, sobald sie sie aufbringen können.</German>
-		<Russian>Взимайте разумную пошлину и отпускайте их с миром, как только они смогут её уплатить.</Russian>
+		<Russian>Стребуйте с них хотя бы половину положенных платежей и пусть идут себе с миром.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPEAN_CUSTOMS_DISPUTE_3_HELP</Tag>
