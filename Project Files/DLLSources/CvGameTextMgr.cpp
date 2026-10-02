@@ -9460,7 +9460,7 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - START
 	// just if condition added
-	if (eYieldType != YIELD_HAPPINESS && eYieldType != YIELD_UNHAPPINESS && eYieldType != YIELD_CRIME)
+	if (eYieldType != YIELD_HAPPINESS && eYieldType != YIELD_UNHAPPINESS && eYieldType != YIELD_LAW && eYieldType != YIELD_CRIME)
 	{
 		int iRebelMod = kCity.getRebelPercent() * GC.getMAX_REBEL_YIELD_MODIFIER() / 100;
 		if (0 != iRebelMod)
@@ -9470,21 +9470,21 @@ int CvGameTextMgr::setCityYieldModifierString(CvWStringBuffer& szBuffer, YieldTy
 			iBaseModifier += iRebelMod;
 		}
 
-		// R&R, ray, Health - START
-		int iHealthMod = kCity.getCityHealth();
-		if (0 != iHealthMod)
-		{
-			szBuffer.append(NEWLINE);
-			szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_HEALTH", iHealthMod, info.getChar()));
-			iBaseModifier += iHealthMod;
-		}
-		// R&R, ray, Health - END
-
 		// WTP, ray, Happiness - START
 		// YIELD Modifier Helptext would be here - currently not planned
 
 	}
 	// WTP, ray, trying to fix Rebel Rate Modifier on Happiness for Balancing - END
+
+	// R&R, ray, Health - START
+	int iHealthMod = kCity.getCityHealth();
+	if (0 != iHealthMod)
+	{
+		szBuffer.append(NEWLINE);
+		szBuffer.append(gDLL->getText("TXT_KEY_MISC_HELP_YIELD_HEALTH", iHealthMod, info.getChar()));
+		iBaseModifier += iHealthMod;
+	}
+	// R&R, ray, Health - END
 
 	// WTP, ray, Improvements give Bonus to their City - START
 	if (eYieldType == YIELD_CROSSES)

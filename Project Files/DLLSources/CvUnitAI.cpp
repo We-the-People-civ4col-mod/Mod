@@ -14225,7 +14225,6 @@ bool CvUnitAI::AI_anyAttack(int iRange, int iOddsThreshold, int iMinStack, bool 
 								if (bCanBombard)
 								{
 									CvCity* pCity = bombardTarget(pLoopPlot);
-									FAssert(pCity != NULL);
 									if (pCity != NULL)
 									{
 										int iValue = getGroup()->AI_attackOdds(pCity->plot(), true);

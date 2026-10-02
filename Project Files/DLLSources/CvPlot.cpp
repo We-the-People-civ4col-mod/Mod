@@ -7943,11 +7943,12 @@ void CvPlot::changeVisibilityCount(TeamTypes eTeam, int iChange, InvisibleTypes 
 		bOldVisible = isVisible(eTeam, false);
 
 		m_em_iVisibilityCount.add(eTeam, iChange);
-		FAssert(getVisibilityCount(eTeam) >= 0);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - start
 		if(m_em_iVisibilityCount.get(eTeam) < 0)
 			m_em_iVisibilityCount.set(eTeam, 0);
 		//R&R mod, vetiarvind, bug fix for visibilty going below zero. - end
+
+		FAssert(getVisibilityCount(eTeam) >= 0);
 
 		if (eSeeInvisible != NO_INVISIBLE)
 		{
