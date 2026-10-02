@@ -605,6 +605,9 @@ void CvCity::read(CvSavegameReader reader)
 		}
 	}
 
+	GC.getMap().offsetGlobeviewCoordinates(m_coord);
+	GC.getMap().offsetGlobeviewCoordinates(m_rallyCoordinates);
+
 	// BUG WORKAROUND. Reset any yield, which stores negative amount
 	// ideally this shouldn't be here, but it makes the asserts and error message
 	// trigger when the bug triggers again rather than triggering if the bug happened prior to saving
