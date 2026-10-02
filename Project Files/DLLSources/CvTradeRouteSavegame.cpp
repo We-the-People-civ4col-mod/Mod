@@ -71,7 +71,10 @@ void CvTradeRoute::read(CvSavegameReader reader)
 		case TradeRouteSave_SourceCity: reader.Read(m_kSourceCity); break;
 		case TradeRouteSave_DestinationCity: reader.Read(m_kDestinationCity); break;
 		case TradeRouteSave_Yield : reader.Read(m_eYield); break;
-
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 	

@@ -1052,6 +1052,10 @@ void CvPlayer::read(CvSavegameReader reader)
 			// This will make it adapt to changed xml settings.
 			CivEffect().rebuildCivEffectCache();
 			break;
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 		}
 	}
 

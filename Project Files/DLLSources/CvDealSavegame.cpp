@@ -80,7 +80,10 @@ void CvDeal::read(CvSavegameReader reader)
 		case DealSave_SecondPlayer: reader.Read(m_eSecondPlayer); break;
 		case DealSave_firstTrades: reader.Read(m_firstTrades); break;
 		case DealSave_secondTrades: reader.Read(m_secondTrades); break;
-		
+		default:
+			FAssertMsg(false, "Unhandled savegame enum");
+			bContinue = false;
+			break;
 
 		}
 		
