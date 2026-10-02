@@ -162,6 +162,10 @@ CvSavegameReader::CvSavegameReader(CvSavegameReaderBase& readerBase)
 			// read the class enum sizes
 			byte iSize;
 			Read(iSize);
+			if (iSize > NUM_SAVEGAME_CLASS_TYPES)
+			{
+				iSize = NUM_SAVEGAME_CLASS_TYPES;
+			}
 			for (int i = 0; i < iSize; ++i)
 			{
 				Read(enumByteSize[i]);
