@@ -534,7 +534,7 @@
 		<Portuguese>A Marinha Real devolveu nosso navio de guerra, um tanto desgastado, embora com uma generosa parte do saque em seu porão!</Portuguese>
 		<French>La Marine Royale nous a rendu notre frégate, il est vrai un endommagé, mais avec un joli butin dans sa soute !</French>
 		<German>Die Royal Navy hat uns unser Kriegschiff wieder zurückgegeben. Sie ist zwar etwas mitgenommen, aber im Frachtraum findet sich als Ausgleich ein großzügiger Anteil an der Beute.</German>
-		<Russian>Королевский флот вернул наш фрегат, немного потрепанный, но с щедрой долей добычи в трюме!</Russian>
+		<Russian>Королевский флот наконец-то вернул наш корабль! Капитан ожидает дальнейших указаний в доках Европы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COMMANDEERED_RETURN_HELP</Tag>
@@ -1464,7 +1464,7 @@
 		<Portuguese>Árvores sagradas? Devemos chamar imediatamente um missionário para expulsar tais crenças diabólicas.</Portuguese>
 		<French>Des arbres sacrés ? Nous devons appeler nos missionnaires pour les détourner de ces croyances païennes et les guider vers la lumière du Christ.</French>
 		<German>Heilige Bäume ? Wir müssen nach einem Missionar schicken lassen, der diesen teuflischen Glauben austreibt.</German>
-		<Russian>Священные деревья? Мы должны немедленно призвать миссионера, чтобы изгнать такие дьявольские верования.</Russian>
+		<Russian>Священные деревья? Нам срочно нужен миссионер, способный изгнать подобные дьявольские мысли из голов этих заблудших!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HOLY_GIANT_TREES_3</Tag>
@@ -1472,7 +1472,7 @@
 		<Portuguese>Lamentamos muito, mas a árvore foi cortada e nada que possamos fazer irá reverter isso.</Portuguese>
 		<French>Nous sommes sincèrement désolé, mais ces arbres ont été abattus maintenant et nous ne pouvons plus rien faire contre ça.</French>
 		<German>Wir bedauern, aber der Baum wurde bereits gefällt und wir können das leider nicht rückgängig machen.</German>
-		<Russian>Нам очень жаль, но дерево было срублено, и мы ничего не можем сделать, чтобы исправить это.</Russian>
+		<Russian>Дерево уже срублено и мы никак не можем это исправить. Передайте вождю, что мы очень сожалеем и... давайте вернемся к делам насущным.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HORSETHIEF_1</Tag>

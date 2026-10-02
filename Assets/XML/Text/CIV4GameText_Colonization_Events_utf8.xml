@@ -1454,7 +1454,7 @@
 		<Portuguese>Um boato está se espalhando: a pacífica cidade de [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] está sendo chantageada por criminosos.</Portuguese>
 		<French>Selon une rumeur, la paisible ville de [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] est sous un chantage de criminels.</French>
 		<German>Ein Gerücht macht die Runde: Die friedliche Stadt [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] wird von Kriminellen erpresst.</German>
-		<Russian>Распространяется слух: преступники шантажируют мирный город [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Russian>Ходят слухи, что преступники шантажируют мирный город [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY_1</Tag>
