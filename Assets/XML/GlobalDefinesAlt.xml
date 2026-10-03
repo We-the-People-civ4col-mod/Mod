@@ -1376,6 +1376,11 @@
 		<DefineName>PEAK_EXTRA_MOVEMENT</DefineName>
 		<iDefineIntVal>4</iDefineIntVal>
 	</Define>
+	<!-- Faster Ships game option: additional movement points for all sea units. -->
+	<Define>
+		<DefineName>FASTER_SHIPS_EXTRA_MOVES</DefineName>
+		<iDefineIntVal>10</iDefineIntVal>
+	</Define>
 	<Define>
 		<DefineName>ENABLE_NEW_HARBOUR_SYSTEM</DefineName>
 		<iDefineIntVal>1</iDefineIntVal>

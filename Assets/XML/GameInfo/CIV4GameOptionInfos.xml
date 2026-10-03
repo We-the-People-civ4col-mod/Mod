@@ -191,6 +191,13 @@
 			<bVisible>1</bVisible>
 		</GameOptionInfo>
 		<GameOptionInfo>
+			<Type>GAMEOPTION_FASTER_SHIPS</Type>
+			<Description>TXT_KEY_GAMEOPTION_FASTER_SHIPS</Description>
+			<Help>TXT_KEY_GAMEOPTION_FASTER_SHIPS_HELP</Help>
+			<bDefault>0</bDefault>
+			<bVisible>1</bVisible>
+		</GameOptionInfo>
+		<GameOptionInfo>
 			<Type>GAMEOPTION_REMOVE_WORLD_BUILDER</Type>
 			<Description>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Description>
 			<Help>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER_HELP</Help>

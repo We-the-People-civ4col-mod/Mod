@@ -9645,10 +9645,18 @@ int CvUnit::baseMoves() const
 	iBaseMoves += getExtraMoves();
 	iBaseMoves += GET_PLAYER(getOwnerINLINE()).getUnitMoveChange(getUnitClassType());
 
-	if(getProfession() != NO_PROFESSION)
+	if (getProfession() != NO_PROFESSION)
 	{
 		iBaseMoves += GET_PLAYER(getOwnerINLINE()).getProfessionMoveChange(getProfession());
 	}
+
+	// WTP, Faster Ships game option - START
+	// Adds the configurable movement bonus to all sea units when the game option is enabled.
+	if (getDomainType() == DOMAIN_SEA && GC.getGameINLINE().isOption(GAMEOPTION_FASTER_SHIPS))
+	{
+		iBaseMoves += GC.getDefineINT("FASTER_SHIPS_EXTRA_MOVES");
+	}
+	// WTP, Faster Ships game option - END
 
 	return iBaseMoves;
 }

@@ -385,6 +385,16 @@
 		<Russian>Уменьшает минимальное расстояние до других колоний на 1 клетку.</Russian>
 	</TEXT>
 	<TEXT>
+		<Tag>TXT_KEY_GAMEOPTION_FASTER_SHIPS</Tag>
+		<English>Faster Ships</English>
+		<German>Schnellere Schiffe</German>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_GAMEOPTION_FASTER_SHIPS_HELP</Tag>
+		<English>Increases the movement range of all ships. Recommended for large maps. The range can be configured in GlobalDefinesAlt.xml.</English>
+		<German>Erhöht die Bewegungsreichweite aller Schiffe. Besonders für große Karten empfohlen. Reichweitere kann in der GlobalDefinesAlt.xml eingestellt werden.</German>
+	</TEXT>
+	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Tag>
 		<English>Remove World Builder</English>
 		<Portuguese>Remover Construtor de Mundo</Portuguese>
