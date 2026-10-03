@@ -392,11 +392,13 @@
 		<Tag>TXT_KEY_GAMEOPTION_FASTER_SHIPS</Tag>
 		<English>Faster Ships</English>
 		<German>Schnellere Schiffe</German>
+		<Russian>Быстрые корабли</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_FASTER_SHIPS_HELP</Tag>
 		<English>Increases the movement range of all ships. Recommended for large maps. The range can be configured in GlobalDefinesAlt.xml.</English>
 		<German>Erhöht die Bewegungsreichweite aller Schiffe. Besonders für große Karten empfohlen. Reichweitere kann in der GlobalDefinesAlt.xml eingestellt werden.</German>
+		<Russian>Увеличивает дальность передвижения всех кораблей. Рекомендуется для больших карт. Диапазон можно настроить в GlobalDefinesAlt.xml.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_GAMEOPTION_REMOVE_WORLD_BUILDER</Tag>
