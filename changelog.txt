@@ -43,6 +43,11 @@ The REF now makes sure that it maintains a minimum number of suitable ships for 
 
 This means that the royal fleet also evolves over the course of a longer game instead of permanently consisting of ship types that have long since become historically obsolete.
 
+Faster Ships
+- Added a new optional game setting to increase the movement range of all ships.
+- The option is especially useful for large maps, where the standard ship movement can make long-distance naval travel very time-consuming.
+- The additional movement is configurable and preserves the existing speed differences between individual ship types.
+
 NEW SYSTEM FOR SLAVES AND OTHER UNFREE UNITS
 
 The handling of slaves and other unfree units has been significantly expanded.
@@ -472,6 +477,11 @@ Auch die Royal Expeditionary Force wurde an das neue Schiffssystem angepasst.
 Die REF achtet nun darauf, eine Mindestanzahl geeigneter Schiffe für ihre Truppen vorzuhalten. Werden im Verlauf des Spiels modernere Schiffstypen verfügbar, kann ihre Flotte entsprechend aktualisiert werden.
 
 Damit entwickelt sich auch die königliche Flotte im Verlauf einer längeren Partie weiter und besteht nicht dauerhaft aus Schiffstypen, die historisch längst überholt sind.
+
+Schnellere Schiffe
+- Eine neue optionale Spieleinstellung wurde hinzugefügt, mit der die Bewegungsreichweite aller Schiffe erhöht werden kann.
+- Die Option ist besonders für große Karten gedacht, auf denen weite Seewege mit den normalen Bewegungswerten sehr viel Zeit benötigen können.
+- Der zusätzliche Bewegungswert ist konfigurierbar und die bestehenden Geschwindigkeitsunterschiede zwischen den einzelnen Schiffstypen bleiben erhalten.
 
 NEUES SYSTEM FÜR SKLAVEN UND ANDERE UNFREIE EINHEITEN
 
