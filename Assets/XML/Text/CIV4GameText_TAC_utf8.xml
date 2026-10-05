@@ -1758,7 +1758,7 @@
 		<Portuguese>[COLOR_POSITIVE_TEXT]Um colono livre sobreviveu a combates suficientes para agora ser um [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_POSITIVE_TEXT]Un colon libre a gagné suffisamment d'expérience pour devenir [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</French>
 		<German>[COLOR_POSITIVE_TEXT]Ein Freier Kolonist hat im Kampf genug Erfahrung gesammelt, um jetzt als [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT][COLOR_POSITIVE_TEXT] zu gelten.[COLOR_REVERT]</German>
-		<Russian>[COLOR_POSITIVE_TEXT]Свободный колонист набрал достаточно опыта в боях, чтобы стать [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</Russian>
+		<Russian>[COLOR_POSITIVE_TEXT]Свободный колонист набрал в боях достаточно опыта, чтобы стать [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT]</Russian>
 		<Hungarian>[COLOR_POSITIVE_TEXT]Egy szabad telepes elég tapasztalatot szerzett a harcok során ahhoz, hogy [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_expert[COLOR_REVERT] legyen.</Hungarian>
 	</TEXT>
 	<TEXT>

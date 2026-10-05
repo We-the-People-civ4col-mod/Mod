@@ -2072,7 +2072,7 @@
 		<Portuguese>Em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] os cavalos fugiram para o deserto.</Portuguese>
 		<French>Des chevaux de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se sont enfuits dans la nature.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Pferde entlaufen und in die Wildnis geflohen.</German>
-		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] несчастье - лошади из местной конюшни сбежали в пустошь.</Russian>
+		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] несчастье - из местной конюшни пропали лошади.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RUNAWAY_1</Tag>
@@ -2080,14 +2080,14 @@
 		<Portuguese>Em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] cavalos galoparam para o deserto. Nossos [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] vizinhos em [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] são suspeitos de roubar os cavalos.</Portuguese>
 		<French>Des chevaux de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se sont enfuits dans la nature. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] à [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suscpéctés d'avoir capturé les chevaux.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Pferde entlaufen und in die Wildnis geflohen. Unsere [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] werden verdächtigt, die Pferde eingefangen zu haben.</German>
-		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] лошади ускакали в пустошь. Наши [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] соседи из [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] подозреваются в угоне лошадей.</Russian>
+		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пропал табун лошадей. В их краже подозреваются наши соседи [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUNAWAY_3</Tag>
 		<English>Accept the loss, but insist on fair compensation.</English>
 		<Portuguese>Aceite a perda, mas insista em uma compensação justa.</Portuguese>
 		<German>Den Verlust hinnehmen, aber auf angemessene Entschädigung bestehen.</German>
-		<Russian>Примите поражение, но настаивайте на справедливой компенсации.</Russian>
+		<Russian>Лошадей уже не вернуть, но эти дикари должны выплатить нам компенсацию.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUNAWAY_3_HELP</Tag>
