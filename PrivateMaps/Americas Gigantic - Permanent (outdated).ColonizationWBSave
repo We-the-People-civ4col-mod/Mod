@@ -1,6 +1,6 @@
 Version=11
 BeginGame
-	Description=TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC
+	Description=TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_FIXED
 	ModPath=
 	WBNorthAmericanNative=1
 	WBSouthAmericanNative=1
@@ -1560,8 +1560,8 @@ BeginMap
 	sealevel=SEALEVEL_MEDIUM
 	num plots written=34816
 	num signs written=0
-	Randomize Features=true
-	Randomize Resources=true
+	Randomize Features=false
+	Randomize Resources=false
 	Randomize Goodies=true
 EndMap
 

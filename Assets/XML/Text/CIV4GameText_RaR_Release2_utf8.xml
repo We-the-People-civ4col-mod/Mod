@@ -17,15 +17,26 @@
 		<Hungarian>Amerayca (Gigantikus, 110x215): Sem földrajzilag, sem történelmileg nem helyes.</Hungarian>
 	</TEXT>
 	<TEXT>
-		<Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC</Tag>
-		<English>Americas (Gigantic, 136x256): Map of the Americas, faithful map with historical locations of Natives and resources</English>
-		<Portuguese>Américas (Gigantesco, 136x256): Mapa das Américas, mapa fiel com localizações históricas de nativos e recursos</Portuguese>
-		<French>Amériques (Gigantesque, 136x256): Carte des Amériques, représentation fidèle, avec distribution historique des indigènes et des ressources</French>
-		<German>Amerika (Gigantisch,  136x256): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
-		<Italian>Americhe (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni storiche dei nativi e delle risorse</Italian>
-		<Spanish>Américas (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones históricas de nativos y recursos</Spanish>
+		<Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_FIXED_NEW</Tag>
+		<English>Americas (Gigantic, 136x256): Map of the Americas, faithful map with historical locations of Natives and resources (beta)</English>
+		<Portuguese>Américas (Gigantesco, 136x256): Mapa das Américas, mapa fiel com localizações históricas de nativos e recursos (beta)</Portuguese>
+		<French>Amériques (Gigantesque, 136x256): Carte des Amériques, représentation fidèle, avec distribution historique des indigènes et des ressources (beta)</French>
+		<German>Amerika (Gigantisch,  136x256): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen (beta)</German>
+		<Italian>Americhe (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni storiche dei nativi e delle risorse (beta)</Italian>
+		<Spanish>Américas (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones históricas de nativos y recursos (beta)</Spanish>
 		<Russian>Americas (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
-		<Hungarian>Amerika (Gigantikus, 136x256): Amerika térképe, hű térkép az Indiánok és az erőforrások történelmi helyeivel</Hungarian>
+		<Hungarian>Amerika (Gigantikus, 136x256): Amerika térképe, hű térkép az Indiánok és az erőforrások történelmi helyeivel (beta)</Hungarian>
+	</TEXT>
+	<TEXT>
+		<Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_FIXED</Tag>
+		<English>Americas (Gigantic, 136x256): Map of the Americas, faithful map with historical locations of Natives and resources (outdated)</English>
+		<Portuguese>Américas (Gigantesco, 136x256): Mapa das Américas, mapa fiel com localizações históricas de nativos e recursos (outdated)</Portuguese>
+		<French>Amériques (Gigantesque, 136x256): Carte des Amériques, représentation fidèle, avec distribution historique des indigènes et des ressources (outdated)</French>
+		<German>Amerika (Gigantisch,  136x256): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen (outdated)</German>
+		<Italian>Americhe (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni storiche dei nativi e delle risorse (outdated)</Italian>
+		<Spanish>Américas (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones históricas de nativos y recursos (outdated)</Spanish>
+		<Russian>Americas (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
+		<Hungarian>Amerika (Gigantikus, 136x256): Amerika térképe, hű térkép az Indiánok és az erőforrások történelmi helyeivel (outdated)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDBUILDER_RAR_AMERICAS_GIGANTIC_RANDOM</Tag>
