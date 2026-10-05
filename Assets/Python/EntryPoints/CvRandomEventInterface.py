@@ -3841,6 +3841,14 @@ def canTriggerRunAway(argsList):
 	if city.getYieldStored(iYield) < -quantity*2:
 		return False
 
+	# Check the pre-conditions for the third event option
+	eEvent3 = gc.getInfoTypeForString("EVENT_RUNAWAY_3")
+	event3 = gc.getEventInfo(eEvent3)
+	iCompensation = event3.getGenericParameter(2)
+
+	if player2.getGold() < iCompensation:
+		return False
+
 	return True
  
 def applyRunAway1(argsList):
@@ -3880,8 +3888,8 @@ def getHelpRunAway1(argsList):
 	quantity = quantity * Speed.getStoragePercent()/100
 	szHelp = ""
 	if event.getGenericParameter(1) <> 0 :
-		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity,  gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
-		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_GAIN", (-quantity,  gc.getYieldInfo(iYield).getChar(), nativecity.getNameKey()))
+		szHelp = localText.getText("TXT_KEY_EVENT_YIELD_LOOSE", (quantity, gc.getYieldInfo(iYield).getChar(), city.getNameKey()))
+		szHelp += "\n" + localText.getText("TXT_KEY_EVENT_YIELD_GAIN", (-quantity, gc.getYieldInfo(iYield).getChar(), nativecity.getNameKey()))
 	return szHelp
 
 
@@ -3890,6 +3898,14 @@ def canDoRunAway3(argsList):
 	eEvent = argsList[1]
 	event = gc.getEventInfo(eEvent)
 
+	player = gc.getPlayer(kTriggeredData.ePlayer)
+	if player.isNone():
+		return False
+
+	city = player.getCity(kTriggeredData.iCityId)
+	if city.isNone():
+		return False
+
 	player2 = gc.getPlayer(kTriggeredData.eOtherPlayer)
 	if player2.isNone():
 		return False
@@ -3897,7 +3913,15 @@ def canDoRunAway3(argsList):
 	if not player2.isNative():
 		return False
 
+	iYield = gc.getInfoTypeForString("YIELD_HORSES")
+	iAmount = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	iAmount = iAmount * Speed.getStoragePercent()/100
 	iCompensation = event.getGenericParameter(2)
+
+	# Player city must have enough horses
+	if city.getYieldStored(iYield) < iAmount:
+		return False
 
 	# Native tribe must be able to afford compensation
 	if player2.getGold() < iCompensation:
@@ -3924,8 +3948,11 @@ def applyRunAway3(argsList):
 
 	iYield = gc.getInfoTypeForString("YIELD_HORSES")
 	iAmount = event.getGenericParameter(1)
+	Speed = gc.getGameSpeedInfo(CyGame().getGameSpeedType())
+	iAmount = iAmount * Speed.getStoragePercent()/100
 	iCompensation = event.getGenericParameter(2)
 
+	# Re-check the event pre-conditions
 	if city.getYieldStored(iYield) < iAmount:
 		return
 
