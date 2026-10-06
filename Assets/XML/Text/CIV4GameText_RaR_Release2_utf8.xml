@@ -13,7 +13,7 @@
 		<German>Amerayca (Gigantisch, 110x215): Optimiert für das Spielen des Mods. Weder geographisch noch historisch korrekt.</German>
 		<Italian>Amerayca (Gigantesca, 110x215): Non è corretto né geograficamente né storicamente.</Italian>
 		<Spanish>Amerayca (Gigante, 110x215): Ni geográfica ni históricamente correcto.</Spanish>
-		<Russian>Amerayca (110x215): Не верно ни географически, ни исторически..</Russian>
+		<Russian>Amerayca (110x215): Не верно ни географически, ни исторически...</Russian>
 		<Hungarian>Amerayca (Gigantikus, 110x215): Sem földrajzilag, sem történelmileg nem helyes.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -24,7 +24,7 @@
 		<German>Amerika (Gigantisch,  136x256): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen (beta)</German>
 		<Italian>Americhe (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni storiche dei nativi e delle risorse (beta)</Italian>
 		<Spanish>Américas (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones históricas de nativos y recursos (beta)</Spanish>
-		<Russian>Americas (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
+		<Russian>Америка (136x256): точная карта Америки с историческим местами проживания индейцев и расположением ресурсов (бета-версия).</Russian>
 		<Hungarian>Amerika (Gigantikus, 136x256): Amerika térképe, hű térkép az Indiánok és az erőforrások történelmi helyeivel (beta)</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -35,7 +35,7 @@
 		<German>Amerika (Gigantisch,  136x256): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen (outdated)</German>
 		<Italian>Americhe (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni storiche dei nativi e delle risorse (outdated)</Italian>
 		<Spanish>Américas (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones históricas de nativos y recursos (outdated)</Spanish>
-		<Russian>Americas (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
+		<Russian>Америка (136x256): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов (устаревшая версия).</Russian>
 		<Hungarian>Amerika (Gigantikus, 136x256): Amerika térképe, hű térkép az Indiánok és az erőforrások történelmi helyeivel (outdated)</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -46,7 +46,7 @@
 		<German>Amerika - Random (Gigantisch, 136x256): Karte von Amerika, genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
 		<Italian>Americhe - Random (Gigantesca, 136x256): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
 		<Spanish>Américas - Random (Gigante, 136x256): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
-		<Russian>Americas - Random (68x128): точная карта Америки со случайным расположением индейцев, ресурсов и стартовых локаций для европейцев.</Russian>
+		<Russian>Америка - Random (136x256): точная карта Америки со случайным расположением индейцев, ресурсов и стартовых локаций для европейцев.</Russian>
 		<Hungarian>Amerika - Véletlenszerű (Gigantikus, 136x256): Amerika térképe, hű térkép az Indiánok véletlenszerű elhelyezkedésével, erőforrásokkal és az európaiak kiindulási helyeivel</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -57,7 +57,7 @@
 		<German>Amerika (Huge, 68x128): Karte von Amerika, genaue Karte mit korrekten Ressourcen und historischen Siedlungsgebieten der Eingeborenen</German>
 		<Italian>Americhe (Huge, 68x128): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni iniziali degli europei.</Italian>
 		<Spanish>Américas (Huge, 68x128): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
-		<Russian>Americas (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
+		<Russian>Америка (68x128): точная карта Америки с историческими местами проживания индейцев и расположением ресурсов.</Russian>
 		<Hungarian>Amerika (Hatalmas, 68x128): Amerika térképe, hű térkép az Indiánok és az erőforrások történelmi helyeivel</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -68,7 +68,7 @@
 		<German>Amerika - Random (Riesig, 68x128): Karte von Amerika, genaue Karte mit zufälligen Ressourcen und Siedlungsgebieten der Eingeborenen sowie Startplätzen für die Europäer</German>
 		<Italian>Americhe - Random (Enorme, 68x128): Mappa delle Americhe, mappa fedele con le posizioni casuali dei nativi, le risorse e le posizioni di partenza degli europei.</Italian>
 		<Spanish>Américas - Random (Enorme, 68x128): Mapa de las Américas, mapa fiel con ubicaciones aleatorias de los nativos, recursos y ubicaciones iniciales para los europeos</Spanish>
-		<Russian>Americas - Random (68x128): точная карта Америки со случайным расположением индейцев, ресурсов и стартовых локаций для европейцев.</Russian>
+		<Russian>Америка - Random (68x128): точная карта Америки со случайным расположением индейцев, ресурсов и стартовых локаций для европейцев.</Russian>
 		<Hungarian>Amerika - Véletlenszerű (Hatalmas, 68x128): Amerika térképe, hű térkép az Indiánok véletlenszerű elhelyezkedésével, erőforrásokkal és az európaiak kiindulási helyeivel</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -167,7 +167,7 @@
 		<German>Die Neue Welt (Gigantisch, 110x215): Geographisch korrekte Karte der Neuen Welt mit historischen Siedlungsgebieten der Eingeborenen.</German>
 		<Italian>Il Nuovo Mondo (Gigantesca, 110x215): Mappa geograficamente corretta del Nuovo Mondo with historical locations of Natives and resources.</Italian>
 		<Spanish>El Nuevo Mundo (Gigante, 110x215): Mapa geográficamente correcto del Nuevo Mundo with historical locations of Natives and resources.</Spanish>
-		<Russian>Новый Свет (Гигантская, 110x215): географически точная карта Нового Света с историческим расположением поселений коренных народов и ресурсов.</Russian>
+		<Russian>Новый Свет (110x215): географически точная карта Нового Света с историческим расположением поселений коренных народов и ресурсов.</Russian>
 		<Hungarian>Az Újvilág (Gigantikus, 110x215): Az Újvilág földrajzilag helyes térképe.</Hungarian>
 	</TEXT>
 	<TEXT>
