@@ -170,6 +170,7 @@ public:
 	void setCultureRangeForts(PlayerTypes ePlayer, int iNewValue);
 	void changeCultureRangeForts(PlayerTypes ePlayer, int iChange);
 	bool isWithinFortCultureRange(PlayerTypes ePlayer) const;
+	int getFortCultureStrength(PlayerTypes ePlayer) const;
 	void changeCultureRangeFortsWithinRange(PlayerTypes ePlayer, int iChange, int iRange, bool bUpdate);
 	void doImprovementCulture();
 	// Super Forts end

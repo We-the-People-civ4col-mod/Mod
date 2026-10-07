@@ -6383,8 +6383,8 @@
 			<ImprovementUpgrade>IMPROVEMENT_LARGE_FORT</ImprovementUpgrade>
 			<RouteYieldChanges/>
 			<bGraphicalOnly>0</bGraphicalOnly>
-			<iCulture>2</iCulture>
-			<iCultureRange>1</iCultureRange>
+			<iCulture>3</iCulture>
+			<iCultureRange>2</iCultureRange>
 			<iUnitVisibilityChange>2</iUnitVisibilityChange>
 			<iSeeFrom>1</iSeeFrom>
 			<iUnique>2</iUnique>

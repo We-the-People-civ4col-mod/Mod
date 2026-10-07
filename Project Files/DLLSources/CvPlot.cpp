@@ -3106,6 +3106,57 @@ bool CvPlot::isWithinFortCultureRange(PlayerTypes ePlayer) const
 	return (getCultureRangeForts(ePlayer) > 0);
 }
 
+int CvPlot::getFortCultureStrength(PlayerTypes ePlayer) const
+{
+	if (!isWithinFortCultureRange(ePlayer))
+	{
+		return 0;
+	}
+
+	int iBestStrength = 0;
+	int iMaxRange = 0;
+
+	for (int iI = 0; iI < GC.getNumImprovementInfos(); ++iI)
+	{
+		CvImprovementInfo& kImprovement = GC.getImprovementInfo((ImprovementTypes)iI);
+
+		if (kImprovement.isActsAsCity())
+		{
+			iMaxRange = std::max(iMaxRange, kImprovement.getCultureRange());
+		}
+	}
+
+	for (int iDX = -iMaxRange; iDX <= iMaxRange; ++iDX)
+	{
+		for (int iDY = -iMaxRange; iDY <= iMaxRange; ++iDY)
+		{
+			CvPlot* pLoopPlot = plotXY(getX_INLINE(), getY_INLINE(), iDX, iDY);
+
+			if (pLoopPlot != NULL && pLoopPlot->getOwnerINLINE() == ePlayer)
+			{
+				ImprovementTypes eImprovement = pLoopPlot->getImprovementType();
+
+				if (eImprovement != NO_IMPROVEMENT)
+				{
+					CvImprovementInfo& kImprovement = GC.getImprovementInfo(eImprovement);
+
+					if (kImprovement.isActsAsCity())
+					{
+						int iCultureRange = kImprovement.getCultureRange();
+
+						if (plotDistance(0, 0, iDX, iDY) <= iCultureRange)
+						{
+							iBestStrength = std::max(iBestStrength, kImprovement.getCulture());
+						}
+					}
+				}
+			}
+		}
+	}
+
+	return iBestStrength;
+}
+
 void CvPlot::changeCultureRangeFortsWithinRange(PlayerTypes ePlayer, int iChange, int iRange, bool bUpdate)
 {
 	CvPlot* pLoopPlot;
@@ -3928,6 +3979,7 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 	}
 
 	int iBestCulture = 0;
+	int iBestFortStrength = 0;
 	PlayerTypes eBestPlayer = NO_PLAYER;
 
 	//calculate who deserves to own this plot
@@ -3935,26 +3987,60 @@ PlayerTypes CvPlot::calculateCulturalOwner() const
 	{
 		if (GET_PLAYER((PlayerTypes)iI).isAlive())
 		{
-			int iCulture = getCulture((PlayerTypes)iI);
+			PlayerTypes ePlayer = (PlayerTypes)iI;
+			int iCulture = getCulture(ePlayer);
+			int iFortStrength = getFortCultureStrength(ePlayer);
 
-			if (iCulture > 0)
+			if (iCulture > 0 || iFortStrength > 0)
 			{
 				// Super Forts begin *culture* - modified if statement
-				if (isWithinCultureRange((PlayerTypes)iI) || isWithinFortCultureRange((PlayerTypes)iI))
+				if (isWithinCultureRange(ePlayer) || isWithinFortCultureRange(ePlayer))
 				//if (isWithinCultureRange((PlayerTypes)iI)) - Original Code
 				// Super Forts end
 				{
-					if (eBestPlayer != NO_PLAYER && GET_PLAYER(eBestPlayer).isNative() && GET_PLAYER((PlayerTypes)iI).getDominateNativeBordersCount() > 0)
+					if (eBestPlayer != NO_PLAYER)
+					{
+						int iCurrentFortStrength = iFortStrength;
+						int iCurrentBestFortStrength = iBestFortStrength;
+
+						// Limit Territorial Influence:
+						// Fort dominance is ignored only between a native player and
+						// a non-native player who has released this plot.
+						if (GET_PLAYER(eBestPlayer).isNative() && !GET_PLAYER(ePlayer).isNative() && isNotCulture(ePlayer))
+						{
+							iCurrentFortStrength = 0;
+						}
+						else if (!GET_PLAYER(eBestPlayer).isNative() && GET_PLAYER(ePlayer).isNative() && isNotCulture(eBestPlayer))
+						{
+							iCurrentBestFortStrength = 0;
+						}
+
+						if (iCurrentFortStrength > iCurrentBestFortStrength)
+						{
+							iBestCulture = iCulture;
+							iBestFortStrength = iFortStrength;
+							eBestPlayer = ePlayer;
+							continue;
+						}
+						else if (iCurrentFortStrength < iCurrentBestFortStrength)
+						{
+							continue;
+						}
+					}
+
+					if (eBestPlayer != NO_PLAYER && GET_PLAYER(eBestPlayer).isNative() && GET_PLAYER(ePlayer).getDominateNativeBordersCount() > 0)
 					{
 						iBestCulture = iCulture;
-						eBestPlayer = ((PlayerTypes)iI);
+						iBestFortStrength = iFortStrength;
+						eBestPlayer = ePlayer;
 					}
-					else if (eBestPlayer == NO_PLAYER || GET_PLAYER(eBestPlayer).getDominateNativeBordersCount() == 0 || !GET_PLAYER((PlayerTypes)iI).isNative())
+					else if (eBestPlayer == NO_PLAYER || GET_PLAYER(eBestPlayer).getDominateNativeBordersCount() == 0 || !GET_PLAYER(ePlayer).isNative())
 					{
 						if ((iCulture > iBestCulture) || ((iCulture == iBestCulture) && (getOwnerINLINE() == iI)))
 						{
 							iBestCulture = iCulture;
-							eBestPlayer = ((PlayerTypes)iI);
+							iBestFortStrength = iFortStrength;
+							eBestPlayer = ePlayer;
 						}
 					}
 				}
