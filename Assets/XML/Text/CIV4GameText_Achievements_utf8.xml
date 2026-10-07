@@ -175,6 +175,7 @@
 		<French>Il y a peu, votre explorateur perdit son regard dans le lointain. Par delà la plage, une étendue d'eau sans fin s'étirait sous l'horizon. Une Mer aussi vaste que les cieux. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Il avait raison,[COLOR_REVERT]" murmura-t-il, "[COLOR_SELECTED_TEXT]le gouverneur avait raison.[COLOR_REVERT]" Il y a une route maritime vers l'Ouest, partant du Nouveau Monde, dans l'infinie étendue d'un nouvel océan.[NEWLINE][NEWLINE] Un océan dont le calme clapotis semble si apaisé, comme si les tempêtes n'étaient qu'un cauchemar de vieux marin. "[COLOR_SELECTED_TEXT]Ce sera donc "l'Océan Pacifique". Le 'Pacifique'![COLOR_REVERT]"[NEWLINE][NEWLINE]</French>
 		<German>Ungläubig starrt Euer Entdecker in die Ferne. Jenseits der Küstenlinie dehnt sich eine schier endlose Wasserfläche bis zum Horizont. Ein Meer, so weit wie der Himmel.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er hatte recht,[COLOR_REVERT]" murmelt er, "[COLOR_SELECTED_TEXT]der Gouverneur hatte recht.[COLOR_REVERT]" Es gibt einen Seeweg, der von der Neuen Welt aus Richtung Westen führt, hinaus in die endlose Weite eines neuen Ozeans.[NEWLINE][NEWLINE]Ein Ozean, dessen ruhiger Wellengang so friedlich wirkt, als wäre der Gedanke an Unwetter nur Seemannsgarn. "[COLOR_SELECTED_TEXT]Der 'Stille Ozean' soll er heißen. Der 'Pacificus'![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Не так давно ваш исследователь недоверчиво вглядывался вдаль. За береговой линией до самого горизонта простиралась бесконечная водная гладь. Море такое же широкое, как небо.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Он был прав,[COLOR_REVERT] – бормочет он, – [COLOR_SELECTED_TEXT]губернатор был прав.[COLOR_REVERT]" Морской путь ведет на запад от Нового Света, в бескрайние просторы нового океана.[NEWLINE][NEWLINE]Океан, чьи спокойные волны кажутся такими умиротворяющими, как будто мысли о штормах были просто сказкой старого моряка. "[COLOR_SELECTED_TEXT]Какой же он спокойный. Тихий океан![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Nem is olyan régen a felfedeződ hitetlenkedve nézett a távolba. A tengerparton túl végtelen vízfelület húzódott a horizontig. Egy olyan széles tengert látott, mint az égbolt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igaza volt,[COLOR_REVERT]" - mormogta, "[COLOR_SELECTED_TEXT]a kormányzónak igaza volt.[COLOR_REVERT]" Az Újvilágtól nyugatra vezet egy tengeri útvonal, ki egy új óceán végtelenjébe.[NEWLINE][NEWLINE]Egy óceánba, amelynek nyugodt hullámai olyan békésnek tűnnek, mintha a viharok gondolata csak egy öreg tengerész meséje lenne. "[COLOR_SELECTED_TEXT]A neve legyen 'Csendes-óceán'. A 'Csendes'![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ATLANTIC</Tag>
@@ -185,6 +186,7 @@
 		<Italian>Un sogno di fama e gloria</Italian>
 		<Spanish>Un sueño de fama y gloria</Spanish>
 		<Russian>Мечта об известности и славе</Russian>
+		<Hungarian>Egy álom a hírnévről és dicsőségről</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ATLANTIC_HEAD</Tag>
@@ -195,6 +197,7 @@
 		<Italian>Un sogno di fama e gloria</Italian>
 		<Spanish>Un sueño de fama y gloria</Spanish>
 		<Russian>Мечта об известности и славе</Russian>
+		<Hungarian>Egy álom a hírnévről és dicsőségről</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ATLANTIC_TEXT</Tag>
@@ -203,6 +206,7 @@
 		<French>À l'instant, vous étiez assis à votre bureau éclairé à la bougie, repassant sur de vieux parchemins qui évoquent une terre inconnue aux rivages lointains.[NEWLINE][NEWLINE]Une vision vous assaille. Les bruits et les images du quotidien s'effacent. Le silence et l'obscurité profonde de la nuit assoment vos sens.[NEWLINE][NEWLINE] Vous vous voyez sur une côte loin de vos foyer. Vous vous dressez entouré de vos hommes. Vous entendez votre voix revendiquer ces terres sauvages comme les vôtres.[NEWLINE][NEWLINE]Un porte-drapeau plante votre drapeau dans le sol de ce Nouveau Monde, et un prélât dévôt remercie le Seigneur pour cette découverte.NEWLINE][NEWLINE]Vous réalisez que cette voie vous est prédestinée. Cette voie qui gardera votre nom gravé dans les annales,qui fera que pour les siècles et les millénaires, les enfants citeront votre nom comme une marque de hardiesse et de courage.[NEWLINE][NEWLINE]Alors que cette vision s'estompe, vous savez ce que vous devz faire le lendemain.[NEWLINE][NEWLINE]</French>
 		<German>Eben habt Ihr noch bei Kerzenschein an Eurem Schreibtisch gesessen und über alten Pergamenten gebrütet, die von einem unbekanntem Land an fernen Gestaden raunen.[NEWLINE][NEWLINE]Da sucht Euch eine Vision heim. Licht und Lärm des Lebens verstummen, nachtschwarze Dunkelheit und Stille betäuben Eure Sinne. Dann seht Ihr Euch selbst, an einer Küste fern der Heimat.[NEWLINE][NEWLINE]Ihr steht im Kreise Eurer Männer. Ihr hört Eure Stimme, wie sie diese Wildnis als Euer Eigen beansprucht.[NEWLINE][NEWLINE]Ein Fähnrich pflanzt Eure Flagge in das Erdreich dieser Neuen Welt, und ein frommer Kirchenmann dankt dem Schöpfer, dass er Euch sie entdecken ließ.[NEWLINE][NEWLINE]Ihr erkennt, dass dies der Euch vorherbestimmte Pfad ist. Der Weg, der Euren Namen in die Annalen schreiben wird, auf dass er noch im nächsten Millennium als Symbol für Wagemut und Tapferkeit jedem Kind bekannt ist.[NEWLINE][NEWLINE]Als Eure Vision erlischt, wisst Ihr, was Ihr am nächsten Morgen zu tun habt.[NEWLINE][NEWLINE]</German>
 		<Russian>Всего минуту назад вы сидели за письменным столом при свете свечи и корпели над старыми пергаментами, своими записями шептавшими вам о неведомой земле за бескрайней водной гладью на западе.[NEWLINE][NEWLINE]И тут вас посещает видение. Свет и шум жизни умолкают, кромешная тьма и тишина ошеломляют ваши чувства.[NEWLINE][NEWLINE]А потом вы видите себя на каком-то берегу, вдали от дома. Вы стоите в окружении своих людей, слышите свой голос, объявляющий эту дикую местность своей собственностью.[NEWLINE][NEWLINE]Знаменосец водружает ваш флаг на небольшом песчаном холме новой земли, а благочестивый священник благодарит Создателя за то, что тот открыл его слуге путь к Новому миру.[NEWLINE][NEWLINE]Вы понимаете, что это путь, предначертанный вам. Путь, который впишет ваше имя в анналы истории, чтобы еще тысячу лет каждый ребенок видел в вас символ смелости и отваги.[NEWLINE][NEWLINE]По мере того, как ваше видение угасает, вы начинаете понимать, чем должны будете заняться следующим утром.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az imént még az íróasztalod gyertyafényénél ültél és régi pergameneket böngésztél, amelyek a távoli partokon egy ismeretlen földről szólnak.[NEWLINE][NEWLINE]Egy látomás jelenik meg. A mindennapi élet látványai és hangjai elhalványulnak. Éjfekete sötétség és csend kábítja érzékeidet.[NEWLINE][NEWLINE]Magadat látod egy tengerparton, távol az otthonodtól. Az embereid körülötted állnak. Hallod a hangodat, amely ezt a vadont a magadénak vallja.[NEWLINE][NEWLINE]Egy zászlóhordozó kitűzi lobogódat ennek az Újvilágnak a földjébe, és az egyház egyik képviselője megköszöni a Teremtőnek, hogy felfedezhetted.[NEWLINE][NEWLINE]Rájössz, hogy ez a számodra kijelölt út. Az út, amely beírja a nevedet a történelemkönyvekbe, hogy ezer éven át minden gyermek a merészség és bátorság szimbólumaként lásson téged.[NEWLINE][NEWLINE][NEWLINE]Ahogy a látomásod elhalványul, már tuod, hogy mit kell tenned másnap reggel.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LANDFALL</Tag>
@@ -211,6 +215,7 @@
 		<French>« Terre en vue ! »</French>
 		<German>"Land in Sicht!"</German>
 		<Russian>"Земля-я-я-я!"</Russian>
+		<Hungarian>"Szárazföld!"</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LANDFALL_HEAD</Tag>
@@ -219,6 +224,7 @@
 		<French>« Terre en vue ! »</French>
 		<German>Eine Neue Welt</German>
 		<Russian>Новый Мир</Russian>
+		<Hungarian>Az Újvilág</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LANDFALL_TEXT</Tag>
@@ -227,6 +233,7 @@
 		<French>« [COLOR_SELECTED_TEXT]Terre en vue ![COLOR_REVERT] » C'est le cri poussé par le gabier du haut de la vigie un beau matin, et vos hommes se ruent sur le pont.[NEWLINE][NEWLINE] À l'horizon, vous distinguez au loin une silhouette. Enfin! Après de longues semaines en mer, vous avez atteint une terre qu'aucun fidèle chrétien n'avait encore foulée.[NEWLINE][NEWLINE]Un Nouveau Monde s'ouvre à vous pour que vous le soumettiez. Quelles merveilles, quelles horreurs vous y attendent?[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Land in Sicht![COLOR_REVERT]" erschallt eines Morgens der Ruf aus dem Krähennest, und Eure Männer stürzen an Deck.[NEWLINE][NEWLINE]Ihr erspäht am Horizont einen grauen Schattenriss. Endlich! Nach langen Wochen auf See habt Ihr ein Land entdeckt, auf das noch kein frommer Christenmensch seinen Fuß gesetzt hat.[NEWLINE][NEWLINE]Eine Neue Welt wartet darauf, dass Ihr sie Euch untertan macht. Welche Wunder und welche Schrecknisse werden Euch erwarten?[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Земля, йо-хо![COLOR_REVERT]" — раздается однажды утром крик наблюдателя из вороньего гнезда и ваши люди выбегают на палубу.[NEWLINE][NEWLINE]На горизонте видны очертания суши. Наконец-то! После долгих недель в море вы достигли земли, где еще не ступала нога набожного христианина.[NEWLINE][NEWLINE]Новый мир ждет своих исследователей и покорителей. Какие чудеса и какие ужасы ждут вас? Неизвестность пугает и манит. Вперед![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Szárazföld![COLOR_REVERT]" - hangzik egy reggel az árbóckosárból, és az embereid a fedélzetre sietnek.[NEWLINE][NEWLINE]A horizonton egy távoli sziluettet veszel észre. Végre! Hosszú tengeri hetek után olyan földet értél el, ahová még soha egyetlen hívő keresztény ember sem tette be a lábát.[NEWLINE][NEWLINE]Egy Újvilág várja, hogy meghódítsd. Milyen csodák és milyen borzalmak várnak rád itt?[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUNDING</Tag>
@@ -235,6 +242,7 @@
 		<French>Votre première colonie</French>
 		<German>Eure erste Siedlung</German>
 		<Russian>Ваша первая колония</Russian>
+		<Hungarian>Az első kolóniád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUNDING_HEAD</Tag>
@@ -243,6 +251,7 @@
 		<French>Pendaison de crémaillère</French>
 		<German>Richtfest</German>
 		<Russian>Новоселье</Russian>
+		<Hungarian>Házavató</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUNDING_TEXT</Tag>
@@ -251,6 +260,7 @@
 		<French>Les charpentiers posent leurs marteaux, et vous ouvrez le dernier tonneau de liqueur de votre pays d'origine.[NEWLINE][NEWLINE]Épuisés mais contents, vos gens regardent le camp de départ qu'ils ont établi. Il n'est pas bien gros, mais c'est un bon début.[NEWLINE][NEWLINE] Vous avez là votre première colonie dans le nouveau monde. Les terres seront défrichées; les plus fertiles seront cultivées.[NEWLINE][NEWLINE] Vous vous éclaircissez la gorge et regardez à la ronde. Tous s'inclinent, et vous prononcez fort et clair l'action de grâce pour le Seigneur qui vous regarde.[NEWLINE][NEWLINE]</French>
 		<German>Die Zimmerleute legen ihre Hämmer beiseite, und Ihr lasst das letzte Fässchen Branntwein öffnen, das Ihr aus der alten Heimat mitgebracht habt.[NEWLINE][NEWLINE]Erschöpft und zufrieden blicken Eure Leute auf das erste Lager, das sie errichtet haben. Es ist nicht groß, aber es ist ein Anfang.[NEWLINE][NEWLINE]Ihr habt nun Eure erste Niederlassung in der Neuen Welt. Das Gestrüpp wird gerodet, das fruchtbare Land bestellt werden.[NEWLINE][NEWLINE]Ihr räuspert Euch und blickt in die Runde. Die Köpfe senken sich, und Ihr erhebt Eure Stimme zu einem Dankgebet an den Herrn, der über Euch wacht.[NEWLINE][NEWLINE]</German>
 		<Russian>Плотники отложили в сторону молотки и вы открыли последнюю бочку с бренди, которую привезли с собой из Европы.[NEWLINE][NEWLINE]Измученные и довольные, ваши люди смотрят на своё поселение. Оно небольшое, но это только начало.[NEWLINE][NEWLINE]Теперь у вас есть первое поселение в Новом Свете. Заросли будут расчищены, плодородная земля будет возделана.[NEWLINE][NEWLINE]Вы оглядываете своих спутников. Склоняются головы и вы произносите молитвы, благодаря Господа, который охраняет и направляет вас на этом полном опасностей пути.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az ácsok félreteszik a kalapácsokat, te pedig kinyitod az utolsó hordó pálinkát, amit az Óhazából hoztál.[NEWLINE][NEWLINE]Kimerülten és elégedetten nézik az embereid az első tábort, amit felállítottak. Nem nagy, de kezdetnek megteszi.[NEWLINE][NEWLINE]Most már megvan az első településed az Újvilágban. A bozótot kiirtod, a termőföldet megműveled.[NEWLINE][NEWLINE]Megköszörülöd a torkod és körülnézel. Fejet hajtotok, és hálaadásként az Úrnak énekeltek, aki vigyáz rátok.[NEWLINE][NEWLINE][NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_COLONIES</Tag>
@@ -259,6 +269,7 @@
 		<French>Votre deuxième colonie</French>
 		<German>Eure zweite Siedlung</German>
 		<Russian>Ваша вторая колония</Russian>
+		<Hungarian>A második kolóniád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_HEAD</Tag>
@@ -267,6 +278,7 @@
 		<French>Un voyage qui perdure.</French>
 		<German>Weiterfahrt</German>
 		<Russian>Долгое путешествие</Russian>
+		<Hungarian>Meghosszabbított Utazás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_COLONIES_TEXT</Tag>
@@ -275,6 +287,7 @@
 		<French>Des cris étouffés résonnent, suivi d'une cavalcade gravissant l'escalier étroits, et une foule d'enfants dépenaillés en guenilles déboulent sur le pont du navire.[NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Du calme ![COLOR_REVERT] » bougonne gentiment le capitaine.[NEWLINE][NEWLINE] Leurs parents arrivent, la mère se tordant les mains, et le père avec la mine renfrognée, comme s'il venait de manger un mauvais gruau. «[COLOR_SELECTED_TEXT]Jésus, Marie, Joseph ! [COLOR_REVERT] » crie-t-il quand il voit le village côtier pourtant si proche s'éloigner; le navire est en train de le doubler, «[COLOR_SELECTED_TEXT] Pourquoi vous ne nous débarquez pas ?[COLOR_REVERT] » [NEWLINE][NEWLINE] Son visage se crispe immédiatement de défiance et de peur. « [COLOR_SELECTED_TEXT] Vous cherchez une baie discrète pour nous vendre aux pirates ou quoi ?[COLOR_REVERT] » [NEWLINE][NEWLINE] Le capitaine se met alors à rire, de si bon coeur que les enfants en gloussent.[NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT] Ne vous faites pas de souci, mon brave! Regardez au loin sur la côte, et voyez ces panaches de fumée à l'horizon. Notre cher gouverneur revendique depuis longtemps cette deuxième colonie comme l'une des siennes. Votre nouveau foyer sera là-bas.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>Verblüffte Schreie erschallen, dann klappert es die schmale Stiege herauf, und eine zerlumpte Schar Auswandererkinder in Holzschuhen purzelt auf das Achterdeck.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Immer mit der Ruhe![COLOR_REVERT]", brummt der Kapitän freundlich.[NEWLINE][NEWLINE]Ihre Eltern folgen, die Mutter ringt die Hände, und der Vater blickt so empört, als habe man ihm in die Morgengrütze gespuckt. "[COLOR_SELECTED_TEXT]Jesses, Maria und Josef![COLOR_REVERT]", ruft er und zeigt auf das nahe Küstendorf, an dem das Schiff vorbeisegelt, "[COLOR_SELECTED_TEXT]warum bringt Ihr uns nicht an Land?[COLOR_REVERT]"[NEWLINE][NEWLINE]Misstrauen und Angst stehen ihm plötzlich ins Gesicht geschrieben. "[COLOR_SELECTED_TEXT]Wollt Ihr uns vielleicht in einer entlegenen Bucht an die Piraten verkaufen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Da lacht der Kapitän, so herzhaft, dass die Kinder mitkichern müssen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Keine Sorge, guter Mann! Schaut mal die Küste entlang und blickt auf die Rauchfahnen am Horizont. Der gute Gouverneur nennt längst eine zweite Siedlung sein Eigen, und dort werdet Ihr Eure neue Heimat finden.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Раздаются громкие крики, затем слышится топот башмаков по узкой лестнице и на мостике корабля появляется пёстрая толпа эмигрантских детей.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тихо, вы, успокойтесь![COLOR_REVERT]" — дружелюбно ворчит капитан.[NEWLINE][NEWLINE]За детьми появляются их родители. Мать заламывает руки, а отец выглядит таким возмущенным, как будто он съел недоваренную кашу. "[COLOR_SELECTED_TEXT]Иисус, Мария и Иосиф![COLOR_REVERT] – кричит он, указывая на какую-то прибрежную деревушку, мимо которой проплывает корабль. – [COLOR_SELECTED_TEXT]Почему бы вам не высадить нас на берег в этом месте?[COLOR_REVERT]"[NEWLINE][NEWLINE] На его лице внезапно появляются недоверие и страх. "[COLOR_SELECTED_TEXT]Вы ищете удаленную бухту, чтобы продать нас пиратам?![COLOR_REVERT]"[NEWLINE][NEWLINE]После этих слов капитан начинает смеяться так искренне, что дети начинают хихикать.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Не волнуйся, добрый человек! Посмотри чуть дальше вдоль берега и увидишь вон те клубы дыма на горизонте. Этот второй поселок, который добрый губернатор приказал заложить на теперь уже нашей земле. Там вы найдете свой новый дом.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Döbbent kiáltások hallatszanak, aztán csattogás a keskeny lépcsőn és a hajóhídra rongyos, klumpás kivándorló gyerekek tömege zúdul.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nyugalom![COLOR_REVERT]" - morogja a kapitány barátságosan."[NEWLINE][NEWLINE]A szüleik követik őket, az anya a kezét tördeli, az apa pedig olyan felháborodottan néz, mintha rossz kását evett volna. "[COLOR_SELECTED_TEXT]Jézus, Mária és Szent József![COLOR_REVERT]" - kiáltja, a közeli tengerparti falura mutatva, amely mellett a hajó elhalad, "[COLOR_SELECTED_TEXT]Miért nem visznek ki minket a partra?[COLOR_REVERT]"[NEWLINE][NEWLINE]A bizalmatlanság és a félelem az arcára van írva. "[COLOR_SELECTED_TEXT]Egy távoli öblöt keresel, hogy eladj minket a kalózoknak?[COLOR_REVERT]"[NEWLINE][NEWLINE]Ekkor a kapitány felnevet, olyan szívből, hogy a gyerekek kuncogni kezdenek.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ne aggódj, jóember! Nézz le a partra, és vedd észre azokat a füstfelhőket a horizonton. A jó kormányzó már régóta a sajátjának nevezi ezt a második települést. Ott fogod megtalálni az új otthonodat.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES</Tag>
@@ -283,6 +296,7 @@
 		<French>Votre quatrième colonie</French>
 		<German>Eure vierte Siedlung</German>
 		<Russian>Ваша четвертая колония</Russian>
+		<Hungarian>A negyedik kolóniád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_HEAD</Tag>
@@ -291,6 +305,7 @@
 		<French>Ce pays est donc béni !</French>
 		<German>Dieses Land ist gesegnet</German>
 		<Russian>Благословенная земля</Russian>
+		<Hungarian>Áldott ez a föld</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUR_COLONIES_TEXT</Tag>
@@ -299,6 +314,7 @@
 		<French>Une voie forte résonne à travers la place devant votre austère manoir de gouverneur. Vous marchez devant l'étroite fenêtre et baissez votre regard vers la foule entourant le crieur public. [NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT] Cette terre est bénie.[COLOR_REVERT]» L'homme annonce d'un timbre clair «[COLOR_SELECTED_TEXT]Dans les terres sauvages, nous avons fondés la quatrième de nos colonies. Les champs féconds seront labourés, des maisons solides construites, et des enfants sains mis au monde, et la parole du Seigneur sera louée.[NEWLINE][NEWLINE]Sans doute, nous devons ceci à la bienveillance et aux bons soins du Tout-Puissant; mais aussi à la sagesse et aux bons conseils de notre chef.[COLOR_REVERT]»[NEWLINE][NEWLINE]La foule approuve en hochant.[NEWLINE][NEWLINE]</French>
 		<German>Eine laute Stimme erschallt über den Platz vor Eurem schmucklosen Gouverneurspalast. Ihr schreitet zum schmalen Fenster und blickt hinunter auf die Menge, die den Ausrufer umringt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dieses Land ist gesegnet[COLOR_REVERT]", verkündet der Mann mit klarer Stimme. "[COLOR_SELECTED_TEXT]Ein Stück weiter die Wildnis herab wurde in der vergangenen Woche die vierte unserer Siedlungen errichtet. Fruchtbare Äcker werden bestellt, feste Häuser gebaut, gesunde Kinder geboren und das Wort des Herrn verkündet werden.[NEWLINE][NEWLINE]Zweifellos verdanken wir dies nicht nur unserem Fleiß und dem Wohlwollen des Allmächtigen. Sondern auch der Klugheit und Umsicht unseres Anführers.[COLOR_REVERT]"[NEWLINE][NEWLINE]Die Menge nickt beifällig.[NEWLINE][NEWLINE]</German>
 		<Russian>Громкий голос разносится по площади перед вашим строгим особняком губернатора. Вы подходите к узкому окну и смотрите на толпу, окружавшую глашатая.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да благословит Господь эту землю![COLOR_REVERT]" — отчетливо объявляет мужчина. "[COLOR_SELECTED_TEXT]На прошлой неделе в глуши было основано четвертое наше поселение.Будут строиться крепкие дома, возделываться плодородные поля, рождаться здоровые дети и благодать Господа нашего защитит детей Его от невзгод и бед.[NEWLINE][NEWLINE]Несомненно, этим мы обязаны не только нашему усердию и благосклонности Всевышнего, но и мудрости и благоразумию нашего лидера.[COLOR_REVERT]"[NEWLINE][NEWLINE]Толпа одобрительно кивает.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Egy harsány kiáltás visszhangzik az egyszerű kormányzói kúria előtti téren. A keskeny ablakhoz sétálsz, és lenézel a kiabáló embert körülvevő tömegre.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ez a föld áldott[COLOR_REVERT]" - jelenti be a férfi tiszta hangon. "[COLOR_SELECTED_TEXT]Kint a pusztában a negyedik településünket is megalapítottuk az elmúlt héten. Termőföldeket művelünk, erős házakat építünk, egészséges gyermekeink születnek, és hirdetjük az Úr igéjét."[NEWLINE][NEWLINE]Kétségtelen, hogy ezt nemcsak a mi szorgalmunknak és a Mindenható jóindulatának köszönhetjük; hanem vezetőnk bölcsességének és megfontoltságának is."[COLOR_REVERT][NEWLINE][NEWLINE]A tömeg elismerően bólogat.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_COLONIES</Tag>
@@ -307,6 +323,7 @@
 		<French>Votre sixième colonie</French>
 		<German>Eure sechste Siedlung</German>
 		<Russian>Ваша шестая колония</Russian>
+		<Hungarian>A hatodik kolóniád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_HEAD</Tag>
@@ -315,6 +332,7 @@
 		<French>L'oracle</French>
 		<German>Das Orakel</German>
 		<Russian>Оракул</Russian>
+		<Hungarian>A jós</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_COLONIES_TEXT</Tag>
@@ -323,6 +341,7 @@
 		<French>Le conseil garde un silence respectueux alors que le vieil homme aveugle entre dans leur cercle. Le devin se tient à son bâton, le dos vouté, sa voix basse et épuisée.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] J'ai présenté vos inquiétudes aux dieux. Vous craignez que ces nouveaux colons ne puissent pas comprendre votre monde. Ils créent ville après ville, comme s'ils avaient besoin de se fuir les un les autres.[NEWLINE][NEWLINE] J'ai posé la question qui vous brûle au plus profond. Devons-nous tuer tous les colons? Et bien, voici la réponse des dieux...[COLOR_REVERT]» Tendu, l'homme se penche vers l'avant.[NEWLINE][NEWLINE]</French>
 		<German>Ehrfürchtig schweigt der Rat, als der blinde Alte den Kreis betritt. Der Orakelpriester stützt sich auf einen Stab, sein Rücken ist krumm, die Stimme leise und erschöpft.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich habe den Göttern Eure Sorgen vorgetragen. Eure Furcht, dass der Weiße Mann sich nicht fügen will in unsere Welt. Er gründet ein Dorf nach dem nächsten und nimmt mehr Platz, als ihm zusteht.[NEWLINE][NEWLINE]Ich habe den Göttern die Frage gestellt, die Euch im Herzen brennt. Sollen wir die Weißen töten? Nun, dies ist die Antwort der Götter ...[COLOR_REVERT]" Gespannt beugen sich die Männer vor.[NEWLINE][NEWLINE]</German>
 		<Russian>Совет старейшин почтительно молчит, когда старый слепой шаман входит в круг. Провидец опирается на посох, спина сгорбилась, голос низкий и усталый.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я рассказал ваши опасения богам. Вы опасаетесь, что эти пришельцы не смогут понять наш мир. Бледнолицые создают деревню за деревней, как будто они хотят убежать друг от друга. Наши воины насчитали уже шесть поселений.[NEWLINE][NEWLINE]Я задал Богам вопрос, который горит в вашем сердце: стоит ли убить ли всех чужаков? Что ж, вот, что ответили Боги...[COLOR_REVERT]" Над поляной Совета повисло напряженное молчание, все склонились к старцу.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A tanács tiszteletteljesen elhallgat, amikor a vak öregember belép a körbe. A látnok egy botra támaszkodik, háta görnyedt, hangja mély és kimerült.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az istenek elé terjesztettem aggodalmaitokat. Attól tartotok, hogy ezek az új telepesek nem értik meg a világunkat. Egymás után hozzák létre a falvakat, mintha menekülniük kellene egymás elől.[NEWLINE][NEWLINE]Feltettem az isteneknek a kérdést, ami a szívetekben ég. Öljük meg az összes telepest? Nos, ez az istenek válasza ...[COLOR_REVERT]" Feszülten, a férfiak előre hajoltak.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES</Tag>
@@ -331,6 +350,7 @@
 		<French>Votre huitième colonie</French>
 		<German>Eure achte Siedlung</German>
 		<Russian>Ваша восьмая колония</Russian>
+		<Hungarian>A nyolcadik kolóniád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES_HEAD</Tag>
@@ -339,6 +359,7 @@
 		<French>La réponse des dieux</French>
 		<German>Die Antwort der Götter</German>
 		<Russian>Ответ богов</Russian>
+		<Hungarian>Az istenek válasza</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_COLONIES_TEXT</Tag>
@@ -347,6 +368,7 @@
 		<French>« [COLOR_SELECTED_TEXT]Devons nous tuer tous les colons ? C'est ce que vous vouliez savoir[COLOR_REVERT] », dit le vieil aveugle de sa voix eraillée. « [COLOR_SELECTED_TEXT]J'ai interrogé les dieux, ceci est leur réponse...[COLOR_REVERT]»[NEWLINE][NEWLINE]Les membres de conseil indigène se penchent. Alors que l'oracle continue, sa voix dont le timbre capte l'attention tranche le silence respectueux tel une lame d'acier.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Coupez la tête du serpent, et trois nouvelles repousseront. Jetez ce serpent au feu, et cinq nouveaux émergeront des océans pour grouiller en votre sein. Servez ce serpent et nourrissez-le, il pondra dix oeufs.[NEWLINE][NEWLINE]Vos actions comme vos abstentions n'auront aucun poids dans l'avenir de ce monde.[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Sollen wir die Weißen töten? Dies wolltet ihr wissen[COLOR_REVERT]", sagt der blinde Alte mit brüchiger Stimme, "[COLOR_SELECTED_TEXT]ich habe die Götter gefragt. Dies ist ihre Antwort ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Gespannt beugen sich die indianischen Ratsmitglieder vor. Als der Orakelpriester weiterredet, überrascht der Klang seiner stählernen Stimme, die wie ein Schwert durch die andächtige Stille schneidet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Schlagt dieser Schlange den Kopf ab, und drei neue Köpfe werden nachwachsen. Werft die Schlange ins Feuer, und fünf neue Schlangen werden aus dem Meer heranschwimmen und in Eure Mitte kriechen. Dient der Schlange und füttert sie, und sie wird zehn Eier legen.[NEWLINE][NEWLINE]Euer Tun und Euer Lassen sind ohne Belang für die Zukunft dieser Welt.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Убить ли пришельцев из-за Великой воды? Это то, что вы хотели знать[COLOR_REVERT]" — прерывающимся голосом говорит слепой старик. "[COLOR_SELECTED_TEXT]Я спросил богов. Вот их ответ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Члены Совета индейцев напряженно наклоняются вперед. По мере того как оракул продолжает, звук его стального голоса, пронзающего, как меч, благоговейную тишину, приковывает к себе внимание.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Отрежьте этой змее голову и отрастут три новые головы. Бросьте змею в огонь и пять новых змей выйдут из моря и приползут к вам. Служите змее, кормите ее и она отложит десять яиц.[NEWLINE][NEWLINE]Ваши действия или бездействие не имеют значения для будущего этого мира.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Megöljük az összes telepest? Ezt akartátok tudni[COLOR_REVERT]" - mondja törékeny hangon a vak öregember. "[COLOR_SELECTED_TEXT]Az isteneket kérdeztem. Ez a válaszuk ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Feszülten hajolnak előre az Indián tanács tagjai. A jós folytatja, acélos hangja, amely kardként vág át a tiszteletteljes csöndön, lebilincselően hat.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vágjátok le ennek a kígyónak a fejét, és három új fej nő vissza. Dobjátok a kígyót a tűzbe, és öt új kígyó úszik ki a tengerből, hogy közétek kússzon. Szolgáljátok a kígyót, etessétek meg, és az tíz tojást fog rakni.[NEWLINE][NEWLINE]Tetteitek és mulasztásaitok nem számítanak e világ jövője szempontjából.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_COLONIES</Tag>
@@ -355,6 +377,7 @@
 		<French>Votre dixième colonie</French>
 		<German>Eure zehnte Siedlung</German>
 		<Russian>Ваша десятая колония</Russian>
+		<Hungarian>A tizedik kolóniád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_COLONIES_HEAD</Tag>
@@ -363,6 +386,7 @@
 		<French>La terre promise</French>
 		<German>Das Gelobte Land</German>
 		<Russian>Земля обетованная</Russian>
+		<Hungarian>Az ígéret földje</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_COLONIES_TEXT</Tag>
@@ -371,6 +395,7 @@
 		<French>La lumière de la bougie chancèle. Vous vous penchez et aplatissez la carte. Vous y mesure la distance avec un compas.[NEWLINE][NEWLINE]Il y a une bien longue route entre le siège du gouverneur et cette nouvelle ville que vous avez fondée. La moitié de la terre les sépare.[NEWLINE][NEWLINE]Vous avez maintenant dix oolonies. Vos citoyens ont abattus les forêts, creusé des mines, construit des routes, et amené Dieu aux indigène.[NEWLINE][NEWLINE]Dix villes! Humblement, vous regardez la croix en argent pendue au mur. «[COLOR_SELECTED_TEXT] Vraiment,[COLOR_REVERT]  » vous dites doucement «[COLOR_SELECTED_TEXT] en vérité, ceci est la Terre Promise.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>Das Licht der Kerze flackert. Ihr beugt Euch vor und glättet die Karte. Mit einem Zirkel messt Ihr die Entfernung.[NEWLINE][NEWLINE]Von Eurem Gouverneurssitz bis zu der neuen Stadt, die Ihr habt gründen lassen, ist es weit. Ein halber Erdkreis spannt sich dazwischen.[NEWLINE][NEWLINE]Zehn Gemeinden sind es jetzt. Eure Bürger haben Wälder gerodet, Minen in Berge getrieben, Straßen gebaut und die Wilden das Wort Gottes gelehrt.[NEWLINE][NEWLINE]Zehn Städte! Demütig blickt Ihr zu dem silbernen Kreuz, das an der Wand hängt. "[COLOR_SELECTED_TEXT]Fürwahr,[COLOR_REVERT]" sprecht Ihr leise, "[COLOR_SELECTED_TEXT]fürwahr, dies ist das Gelobte Land.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>В мерцающем свете свечи вы наклоняетесь к рабочему столу и разглаживаете карту, расстеленную на нем. Взяв в руки циркуль, вы измеряете расстояние.[NEWLINE][NEWLINE]От особняка губернатора в первой колонии до нового города, который вы недавно основали, путь неблизкий. Он находится на самом краю изведанной разведчиками земли.[NEWLINE][NEWLINE]Но теперь у нас десять поселений. Ваши граждане вырубали леса, прорубались сквозь горы, строили дороги и несли Слово Божье туземцам.[NEWLINE][NEWLINE]Десять городов! Вы с благоговением смотрите на висящий на стене серебряный крест. "[COLOR_SELECTED_TEXT]Воистину,[COLOR_REVERT] — мягко говорите вы — [COLOR_SELECTED_TEXT]воистину, это Земля Обетованная.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A gyertya fénye pislákol. A térkép fölé hajolsz és végigsimítod rajta az kezed. A távolságot az iránytűvel méregeted.[NEWLINE][NEWLINE]Hosszú az út a kormányzói székhelyedtől az általad alapított új városig. A fél Föld fekszik köztük.[NEWLINE][NEWLINE]Már tíz településed van. Polgáraid erdőket irtottak ki, bányákat hoztak létre a hegyekben, utakat építettek, és elhozták Isten Igéjét az Indiánoknak.[NEWLINE][NEWLINE]Tíz város! Alázatosan a falon lógó ezüstkeresztre nézel. "[COLOR_SELECTED_TEXT]Bizony,[COLOR_REVERT]" - mondod halkan - "[COLOR_SELECTED_TEXT]Bizony, ez az Ígéret Földje.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES</Tag>
@@ -379,6 +404,7 @@
 		<French>Votre quinzième colonie</French>
 		<German>Eure fünfzehnte Siedlung</German>
 		<Russian>Ваша пятнадцатая колония</Russian>
+		<Hungarian>A tizenötödik kolóniád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES_HEAD</Tag>
@@ -387,6 +413,7 @@
 		<French>Une nation qui grandit</French>
 		<German>Eine Nation erblüht</German>
 		<Russian>Зарождающаяся нация</Russian>
+		<Hungarian>Egy növekvő nemzet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTEEN_COLONIES_TEXT</Tag>
@@ -395,6 +422,7 @@
 		<French>Une fois de plus, une nouvelle colonie rejoint votre empire florissant.[NEWLINE][NEWLINE]Les forêts laissent la place aux champs. Les routes quadrillent les terres sauvages, de plus en plus de villes surgissent et couvrent le pays.[NEWLINE][NEWLINE]Une nouvelle nation est née. Une nation assez forte pour se battre pour son indépendance.[NEWLINE][NEWLINE]</French>
 		<German>Schon wieder zählt eine neue Siedlung zu Eurem erblühenden Reich.[NEWLINE][NEWLINE]Aus Wäldern werden Felder. Straßen durchziehen die Wildnis. Immer mehr Städte ersprießen und überziehen das Land.[NEWLINE][NEWLINE]Eine neue Nation entsteht. Eine Nation, stark genug, ihre Unabhängigkeit zu erstreiten.[NEWLINE][NEWLINE]</German>
 		<Russian>Новое поселение присоединяется к вашей цветущей империи.[NEWLINE][NEWLINE]Густые леса превращаются в пышные поля. В непроходимых пустошах появляются дороги. Как грибы после дождя, растут на новой земле фермы, посёлки, города.[NEWLINE][NEWLINE]Рождается новая нация. Страна, достаточно сильная, чтобы бороться за свою независимость.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Ismét egy újabb település csatlakozik virágzó birodalmadhoz.[NEWLINE][NEWLINE]Az erdőkből mezők lesznek. Utak szelik át a vadont. Egyre több város bukkan fel és borítja be a földet.[NEWLINE][NEWLINE]Egy új nemzet születik. Egy nemzet, amely elég erős ahhoz, hogy harcoljon a függetlenségéért.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH</Tag>
@@ -403,6 +431,7 @@
 		<French>La première demeure de Dieu</French>
 		<German>Euer erstes Gotteshaus</German>
 		<Russian>Ваша первая церковь</Russian>
+		<Hungarian>Az első templomod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_HEAD</Tag>
@@ -411,15 +440,17 @@
 		<French>La demeure de Dieu</French>
 		<German>Das Haus Gottes</German>
 		<Russian>Божий дом</Russian>
+		<Hungarian>Isten háza</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHURCH_TEXT</Tag>
-		<English>Windows that float high up under the ceiling. Windows through which a ray of sunlight falls at the first devotion, onto your face.[NEWLINE][NEWLINE]The faithful murmur. The Lord God may watch over his heavenly kingdom and over the hereafter but here, in the New World, you are His representative. And you have given this House to your subjects.[NEWLINE][NEWLINE]The first house of God in this half of the earth. May it bring glory to God and glory to you![NEWLINE][NEWLINE]</English>
+		<English>Windows that float high up under the ceiling. Windows through which a ray of sunlight falls at the first devotion, onto your face.[NEWLINE][NEWLINE]The faithful murmur. The Lord God may watch over his heavenly kingdom and the hereafter, but here in the New World you are His representative. And you have given this House to your subjects.[NEWLINE][NEWLINE]The first House of God in this half of the earth. May it bring glory to God and glory to you![NEWLINE][NEWLINE]</English>
 		<Portuguese>Janelas que flutuam bem alto, sob o teto. Janelas por onde incide um raio de sol, na primeira devoção, sobre seu rosto.[NEWLINE][NEWLINE]O murmúrio fiel. O Senhor Deus pode zelar pelo seu reino celestial e pela vida futura, mas aqui, no Novo Mundo, você é Seu representante. E você deu esta casa aos seus súditos.[NEWLINE][NEWLINE]A primeira casa de Deus nesta metade da terra. Que isso traga glória a Deus e glória a você![NEWLINE][NEWLINE]</Portuguese>
 		<French>De hauts vitraux qui s'accrochent haut sous le plafond; vitraux qui laissent passer un rai de lumière sur votre visage, lors des matines.[NEWLINE][NEWLINE]
 		Les fidèles chuchotent. Le Seigneur-Dieu règne en son royaume céleste et pour l'éternité, mais ici bas, dans le Nouveau Monde, vous êtes Son représntant. Et vous avez donné cette demeure de Dieu à vos sujets.[NEWLINE][NEWLINE]La première dans cette partie du monde. Qu'elle rendre gloire à Dieu, et aussi gloire à vous ![NEWLINE][NEWLINE]  </French>
 		<German>Fenster, die hoch oben unter der Decke schweben. Fenster, durch die bei der ersten Andacht ein Sonnenstrahl herabfällt, Euch direkt ins Gesicht.[NEWLINE][NEWLINE]Die Gläubigen raunen. Gott, der Herr, mag über sein Himmelsreich wachen und über das Jenseits. Doch hier, in der Neuen Welt, seid Ihr sein Stellvertreter. Und Ihr habt Euren Schutzbefohlenen dieses Haus geschenkt.[NEWLINE][NEWLINE]Das erste Gotteshaus in diesem Teil des Erdkreises. Möge es Gott zur Ehre und Euch zum Ruhme gereichen![NEWLINE][NEWLINE]</German>
 		<Russian>Окна, парящие высоко под потолком. Окна, через которые первый луч солнечного света падает на ваше лицо во время утренней молитвы.[NEWLINE][NEWLINE]Шёпот молящихся. Господь Бог может наблюдать за своим Царством небесным и за грядущей жизнью. Но здесь, в Новом Свете, вы его представитель. И именно вы подарили своим подданным возможность собраться всем в одном святом месте.[NEWLINE][NEWLINE]Первая церковь в этой части мира. Да принесёт она славу Господу и славу вам![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Ablakok, amelyek magasan a mennyezet alatt lebegnek. Ablakok, melyeken át az első áhítatnál egy napsugár vetül az arcodra.[NEWLINE][NEWLINE]A hívek imádkoznak. Az Úristen vigyáz mennyei országára és a túlvilágra, de itt, az Újvilágban te vagy az Ő képviselője. És te adtad ezt a házat alattvalóidnak.[NEWLINE][NEWLINE]Isten első háza a földnek ezen a felén. Hozzon dicsőséget Istennek és dicsőséget neked![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES</Tag>
@@ -428,6 +459,7 @@
 		<French>Votre deuxième église</French>
 		<German>Zwei Gotteshäuser</German>
 		<Russian>Две церкви</Russian>
+		<Hungarian>A második templomod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_HEAD</Tag>
@@ -436,6 +468,7 @@
 		<French>Loué soit le Seigneur</French>
 		<German>Lobet den Herrn</German>
 		<Russian>Хвала Господу</Russian>
+		<Hungarian>Dicsérjük az Urat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_CHURCHES_TEXT</Tag>
@@ -444,6 +477,7 @@
 		<French>Une deuxième église a été consacré au Tout-Puissant. Un autre lieu de recueillement se dresse dans cette partie du monde « [COLOR_SELECTED_TEXT]Loué soit le Seigneur ![COLOR_REVERT]» s'exclament les fidèles. « [COLOR_SELECTED_TEXT]Loué soit le Seigneur au plus haut des cieux ! Et loué soit notre gouverneur, qui a fait construire ces églises magnifiques en l'honneur de Dieu.[COLOR_REVERT] » [NEWLINE][NEWLINE]</French>
 		<German>Wieder wurde ein frommes Richtfest gefeiert. Ein weiteres Gotteshaus steht nun in diesem Teil der Welt. "[COLOR_SELECTED_TEXT]Lobet den Herrn![COLOR_REVERT]" murmelt das Volk. "[COLOR_SELECTED_TEXT]Lobet den Herrn im Himmel! Und den Herrn Gouverneur, der Gott zu Ehren diese prachtvollen Kirchen errichten lässt.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Уже вторая ваша церковь. Еще одно место поклонения теперь стоит в этой части мира. "[COLOR_SELECTED_TEXT]Слава Господу Богу![COLOR_REVERT]" — кричат верующие. "[COLOR_SELECTED_TEXT]Слава Господу на небесах! И хвала Губернатору, который построил эти великолепные церкви в честь Бога.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A második templomodat a Mindenhatónak szentelted. Egy újabb istentiszteleti hely áll most a világnak ezen a részén. "[COLOR_SELECTED_TEXT]Dicsértessék az Úr![COLOR_REVERT]" - kiáltják a hívek. "[COLOR_SELECTED_TEXT]Dicsérjétek az Urat a Mennyben! És dicsérjétek az Úr kormányzóját, aki Isten tiszteletére építette ezeket a csodálatos templomokat.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES</Tag>
@@ -452,6 +486,7 @@
 		<French>Votre troisième église</French>
 		<German>Drei Gotteshäuser</German>
 		<Russian>Три церкви</Russian>
+		<Hungarian>A harmadik templomod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_HEAD</Tag>
@@ -460,6 +495,7 @@
 		<French>Le gouverneur fervent</French>
 		<German>Die Gottesfurcht des Gouverneurs</German>
 		<Russian>Благочестивый губернатор</Russian>
+		<Hungarian>Az Istenfélő Kormányzó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_CHURCHES_TEXT</Tag>
@@ -468,6 +504,7 @@
 		<French>Les citoyens baissent la tête avec déférence quand vous passez. Votre ferveur est devenue légendaire.[NEWLINE][NEWLINE] Vous avez bâti trois églises dans ce monde étrange. De nombreux gens commencent à penser que leur gouverneur est un saint homme.[NEWLINE][NEWLINE]</French>
 		<German>Ehrfürchtig senken die Bürger die Häupter, wenn Sie Euch erblicken. Eure Gottesfurcht ist zur Legende geworden.[NEWLINE][NEWLINE]Drei Gotteshäuser habt Ihr nun bereits in dieser fremden Welt errichten lassen. Es gibt viele Bürger, die überzeugt sind, dass Ihr ein heiliger Mann seid.[NEWLINE][NEWLINE]</German>
 		<Russian>Горожане почтительно склоняют головы, когда видят вас. Ваша набожность стал легендой.[NEWLINE][NEWLINE]В этом новом для всех мире вы построили уже три храма. Многие горожане убеждены, что вы святой человек.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A polgárok tiszteletteljesen lehajtják a fejüket, amikor meglátnak téged. Istenfélelmed legendává vált.[NEWLINE][NEWLINE]Már három imaházat építettél ebben az idegen világban. Sok polgár meg van győződve arról, hogy te egy szent ember vagy.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL</Tag>
@@ -484,6 +521,7 @@
 		<French>Votre première cathédrale</French>
 		<German>Eure erste Kathedrale</German>
 		<Russian>Шпили до небес</Russian>
+		<Hungarian>Az első katedrálisod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CATHEDRAL_TEXT</Tag>
@@ -492,6 +530,7 @@
 		<French>La ferveur du gouverneur a déplacé des montagnes! Ou peut-être ce sont les tailleurs de pierres inspirés par notre Sainte Mère l(Église ? Les braves citoyens ne le saurant jamais.[NEWLINE][NEWLINE]Cette immense cathérale, pourtant ... très haut audessus des toits de la ville, ses tours blanches brillent sous le soleil tels des miroirs et lancent leurs ombres loind ans le Nouveau monde.[NEWLINE][NEWLINE]L'évêque est venu pour célébrer la messe dans cette nouveau lieu de prière et il prononce solannellement son prêche devant ses ouailles, les missionnaires et les soeurs du monastère local, partent de nouveau pour délivrer les jeunes incroyants du diable et les ramener dans le giron de l'église.[NEWLINE][NEWLINE]Les tours de cette cathédrale grandiose les guideront comme un phare.[NEWLINE][NEWLINE]</French>
 		<German>Die Gottesfurcht des Gouverneurs hat es Wirklichkeit werden lassen! Oder war es doch eher der weltliche Einfluss von Mutter Kirche? Dies werden die braven Bürger wohl nie erfahren.[NEWLINE][NEWLINE]Die riesige Kathedrale jedoch... Hoch über den Dächern der Stadt strahlen ihre weißen Türme im Sonnenschein und werfen Ihre Schatten bis weit in die Neue Welt hinein.[NEWLINE][NEWLINE]Der Bischof ist gekommen, um das neue Gotteshaus mit einer Messe zu feiern und spricht bereits die ersten feierlichen Worte zu seinen Schäfchen, bevor diese, d.h. die Missionare und die Nonnen des örtlichen Klosters, wieder aufbrechen, um die Heidenkinder vom Teufel zu befreien und in den Schoß der Kirche zu führen.[NEWLINE][NEWLINE]Die Türme der riesigen Kathedrale werden ihnen den Weg weisen...[NEWLINE][NEWLINE]</German>
 		<Russian>Набожность губернатора сделала это реальностью! Или это было влияние Святой Церкви? Добропорядочные граждане никогда этого не узнают.[NEWLINE][NEWLINE]Однако огромный собор... Его белые башни, возвышаясь над крышами домов, отражают солнечный свет и отбрасывают свои тени далеко-далеко.[NEWLINE][NEWLINE]Епископ приехал отпраздновать открытие нового места богослужения мессой и уже говорит первые торжественные слова своей пастве перед тем, как миссионеры и монахини местного монастыря вновь отправятся в далёкие земли нести Слово Божье язычникам, спасать их от Дьявола и вести их в лоно Святой Церкви.[NEWLINE][NEWLINE]Башни огромного собора укажут им путь...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A Kormányzó istenfélelme tette ezt valósággá! Vagy inkább az Anyaszentegyház világi befolyása? A jó polgárok soha nem fogják megtudni.[NEWLINE][NEWLINE]A hatalmas katedrális azonban... Magasan a város háztetői fölött, fehér tornyai visszaverik a napsütést, és árnyékukat messze az Újvilágra vetik. [NEWLINE][NEWLINE]A püspök eljött, hogy misével ünnepelje az új imahelyet, és már mondja is az első ünnepélyes szavakat nyájához, mielőtt ők, a misszionáriusok és a helyi kolostor apácái ismét elindulnak, hogy megszabadítsák a pogány gyermekeket az ördögtől, és az egyház kebelébe vezessék őket.[NEWLINE][NEWLINE]A hatalmas katedrális tornyai mutatják majd nekik az utat...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS</Tag>
@@ -500,6 +539,7 @@
 		<French>Votre troisième scierie</French>
 		<German>Drei Sägewerke in Städten</German>
 		<Russian>Три лесопилки</Russian>
+		<Hungarian>A harmadik fűrészmalmod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_HEAD</Tag>
@@ -508,6 +548,7 @@
 		<French>Votre troisième scierie</French>
 		<German>Holzverarbeitung vom Feinsten</German>
 		<Russian>Деревообработка в лучшем виде</Russian>
+		<Hungarian>Fafeldolgozás a javából</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_LUMBERMILLS_TEXT</Tag>
@@ -516,14 +557,16 @@
 		<French>Les choses bougent dans vos colonies! Les braves gens qui s'y trouvent possèdent trois scieries.[NEWLINE][NEWLINE]Dieu merci le gouverneur s'est montré prévoyant, car le flot de colons qui arrivera aura besoin d'une quantité gargantuesques de planches et ce pour un bon moment.[NEWLINE][NEWLINE]</French>
 		<German>Es geht voran in den Kolonien! Drei Sägewerke nennen die braven Bürger in den Kolonien nun schon ihr Eigen.[NEWLINE][NEWLINE]Gott sei es gedankt, dass der Gouverneur so umsichtig war, denn die Flut der Siedler wird auch in Zukunft Bauholz in Mengen benötigen.[NEWLINE][NEWLINE]</German>
 		<Russian>Дела в колониях движутся вперед! У добропорядочных граждан колоний теперь есть три лесопилки.[NEWLINE][NEWLINE]Слава Богу, что губернатор был так предусмотрителен, потому что этому потоку поселенцев в будущем понадобится огромное количество древесины.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A dolgok haladnak előre a kolóniákon! A gyarmatok jó polgárainak már három fűrészmalom van a tulajdonukban.[NEWLINE][NEWLINE]Hála Istennek, hogy a kormányzó ilyen megfontolt volt, mert a telepesek áradatának még a távoli jövőben is hatalmas mennyiségű fára lesz szüksége.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER</Tag>
-		<English>Your first Cathedral of the Archbishop</English>
+		<English>Your Cathedral of the Archbishop</English>
 		<Portuguese>Sua primeira Catedral do Arcebispo</Portuguese>
 		<French>La Cathédrale de l'Archevêché</French>
 		<German>Eure erste Kathedrale des Erzbishofs</German>
 		<Russian>Ваш первый кафедральный собор</Russian>
+		<Hungarian>Az első Érseki Székesegyház</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER_HEAD</Tag>
@@ -532,6 +575,7 @@
 		<French>La Cathédrale de l'Archevêché</French>
 		<German>Die Kathedrale des Erzbishofs</German>
 		<Russian>Влияние Святой Церкви</Russian>
+		<Hungarian>Az Érseki Székesegyház</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MINSTER_TEXT</Tag>
@@ -540,6 +584,7 @@
 		<French>You avec construit votre Cathédrale d'Archevêché. L'Archevêque est venu pour bénir ce monument magnifique, Dieu, la Saint-Eglise... et bien sûr son nouveau pouvoir ![NEWLINE][NEWLINE]</French>
 		<German>Große Ereignisse werfen ihre Schatten voraus. Eines der gewaltigsten Bauwerke in der Neuen Welt ist errichtet worden.[NEWLINE][NEWLINE]Was für Mauern, was für Türme! Die Kathedrale des Erzbischofs zeigt auch dem letzten zweifelnden Indio, zu welch' großartigen Leistungen der Herrgott die Menschen bewegen kann.[NEWLINE][NEWLINE]Der Erzbischof ist gekommen, um seine neue Wirkungsstätte mit einer heiligen Messe zu feiern und mit seinen Glaubensbrüdern Gott für dieses Gotteshaus zu danken. Wo könnte man die Macht Gottes besser erkennen als hier unter diesen Türmen, die bis in die Wolken hineinragen?[NEWLINE][NEWLINE]Dass dieses riesige Bauwerk jedoch im Grunde nur durch allzu weltliches Handeln von den braven Bürgern der Kolonien bezahlt wurde und der Gouverneur erst durch massivem Druck von Mutter Kirche zu diesem Bau "überredet" werden konnte, verschweigt der Erzbischof in seiner Predigt dann doch lieber. Außerdem war es nur recht und billig, dass die Bürger dieser Gemeinde ihrem Pfarrer ein standesgemäßes Gotteshaus errichten. Wie sonst sollte der Herrgott von seiner Ergebenheit überzeugt werden, als durch diese Kathedrale...?![NEWLINE][NEWLINE]</German>
 		<Russian>Великие события всегда окутаны тайнами и интригами. Построено одно из самых массивных сооружений в Новом Свете.[NEWLINE][NEWLINE]Какие стены, какие башни! Кафедральный собор показывает даже последнему индейцу-язычнику, как Господь Бог вдохновляет людей на великие свершения.[NEWLINE][NEWLINE]Сам Кардинал прибыл отпраздновать открытие нового Храма Господа святой мессой и вместе со своими единоверцами возблагодарить Бога за этот центр поклонения. Где лучше познать силу Божию, как не здесь, под этими башнями, уходящими в облака?[NEWLINE][NEWLINE]Однако в проповеди Кардинал предпочёл не упоминать, что добропорядочные граждане колоний заплатили за это возвышающееся здание своими мирскими делами и что губернатора удалось "убедить" построить его только после сильного давления со стороны Святой Церкви. Кроме того, было правильно и справедливо, что горожане должны были показать свою любовь к своему местному священнику, построив великолепный храм. Как еще мог Господь Бог убедиться в его преданности, как не через этот собор...?![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A nagy események előre vetítik árnyékukat. Az Újvilág egyik leghatalmasabb építménye épült fel.[NEWLINE][NEWLINE]Micsoda falak, micsoda tornyok! Az Érseki Székesegyház még az utolsó pogány Indiánnak is megmutatja, hogy az Úristen hogyan inspirálja az embereket nagy teljesítményekre.[NEWLINE][NEWLINE]Az Érsek azért jött, hogy szentmisével ünnepelje új munkahelyét, és hívőtársaival együtt hálát adjon Istennek ezért az istentiszteleti központért. Hol lehetne jobban felismerni Isten hatalmát, mint itt, e felhőkig érő tornyok alatt?[NEWLINE][NEWLINE]Az Érsek prédikációjában azonban inkább nem említi, hogy a gyarmatok jó polgárai világi tetteikkel fizettek ezért a hatalmas épületért, és hogy a kormányzót csak az Anyaszentegyház erős nyomására lehetett "rávenni" a megépítésére. Különben is, csak helyes és helyénvaló volt, hogy a polgárok egy pompás imaház építésével mutassák ki szeretetüket plébánosuk iránt. Hogyan másképp lehetne meggyőződni az Úristen odaadásáról, mint ezen a katedrálison keresztül...?![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE</Tag>
@@ -548,6 +593,7 @@
 		<French>Votre première école</French>
 		<German>Eure erste Schule</German>
 		<Russian>Ваша первая школа</Russian>
+		<Hungarian>Az első iskolád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE_HEAD</Tag>
@@ -556,6 +602,7 @@
 		<French>Triple buse</French>
 		<German>Holzkopf</German>
 		<Russian>Болван</Russian>
+		<Hungarian>Tökfej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_SCHOOLHOUSE_TEXT</Tag>
@@ -564,6 +611,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Nous avons déjà une église. Je ne comprends pourquoi on a besoin d'une autre grande bâtisse avec tous ces bancs et une chaire [COLOR_REVERT] » le bûcheron se pose sur sa hache grossière, l'air perplexe.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Ce n'est pas une chaire, mais une estrade pour le professeur ! Là, je pourrai apprendre à votre garçon à lire les Saintes Écritures par lui même. IL apprendra bien des choses utiles pour qu'il prenne sa propre place dans la colonie, il saura faire la part des choses ! [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Mon père, sauf votre respect, mon fils sera un bûcheron ![COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Si Dieu le veut, il pourra apprendre à forger s'il en a le talent et la volonté. Regardez votre vieille hache. Je ne distingue plus la lame du manche tant elle est usée. [COLOR_REVERT] »[NEWLINE][NEWLINE] </French>
 		<German>"[COLOR_SELECTED_TEXT]Also ne Kirch ham wa doch, also ich versteh das nich, was brauchn wa noch so´n riesen Kasten mit die ganze Bänke und ner Kanzel?[COLOR_REVERT]" Ratlos stützt sich der vierschrötige Mann auf seine grobschlächtige Axt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nicht Kanzel, Katheder! Hier werde ich deinem Buben beibringen, die Heilige Schrift zu lesen. Später lernt er dann alles, was es braucht, um an der rechten Stelle in der Kolonie mit Verstand anzupacken![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr Pfarrer, bei allm Respekt, aba mein Jung wird Holzfäller![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So Gott will, vielleicht besser ein brauchbarer Schmied und Werkzeugmacher. Sieh dir dein altes Beil doch an, ich erkenne nicht, auf welcher Seite die Schneide einst war![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]У нас уже есть церковь. Я не понимаю, зачем нам еще одно большое здание со всеми этими скамейками и кафедрой?[COLOR_REVERT]" Озадаченный лесоруб опирается на свой грубый топор.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это не кафедра, а учительская трибуна! Здесь я могу показать вашему мальчику, как самому читать Священное Писание. Он выучит все необходимое, чтобы занять свое место в колонии и будет знать, что к чему![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Святой отец, при всем уважении, мой мальчик будет лесорубом![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Бог даст, так он сможет выучиться и на кузнеца, если у него будут талант и воля. Посмотри на свой старый топор. Я не могу сказать, с какой стороны было его лезвие![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nekünk már van templomunk. Nem értem, miért van szükségünk még egy nagy épületre, ennyi paddal és szószékkel?"[COLOR_REVERT]" A favágó tanácstalanul támaszkodik durva fejszéjére.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nem szószék, hanem tanári emelvény! Itt megmutathatom a fiadnak, hogyan olvassa ő maga a Szentírást. Megtanul mindent, ami ahhoz szükséges, hogy elfoglalja a megfelelő helyét a kolónián, és tudni fogja, mi micsoda![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Atyám, minden tiszteletem az öné, de a fiamból favágó lesz![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ha Isten is úgy akarja, tanulhat helyette kovácsnak, ha van hozzá tehetsége és akarata. Nézd meg a régi fejszédet! Nem tudom megmondani, melyik oldalán volt az éle![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE</Tag>
@@ -572,6 +620,7 @@
 		<French>Votre première palissade</French>
 		<German>Euer erstes Verteidigungswerk</German>
 		<Russian>Ваше первое укрепление</Russian>
+		<Hungarian>Az első sáncod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_HEAD</Tag>
@@ -580,6 +629,7 @@
 		<French>Enfin protégés !</French>
 		<German>Ausgesperrt</German>
 		<Russian>Наконец-то безопасно</Russian>
+		<Hungarian>Végre biztonságban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_STOCKADE_TEXT</Tag>
@@ -588,6 +638,7 @@
 		<French>Une ombre s'abat le sur pas de la porte, bloquant le crépuscule.[NEWLINE][NEWLINE]La femme sursaute lorsque l'ombre la touche - mais elle lève les yeux et sourit.[NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT]Une soirée magnifique, ma chérie [COLOR_REVERT] » dit aimablement l'homme. Une femme s'approche appeurée d'un soldat : «[COLOR_SELECTED_TEXT]Mon fils est parti pourchassé un poulet et ne le retrouve plus, je crains pour sa sécurité ![COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]N'ayez aucune crainte[COLOR_REVERT] », lui répond le soldat, «[COLOR_SELECTED_TEXT]avec notre nouvelle défense, les loups n'erreront plus dans nos rues.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>Ein Schatten steht plötzlich im Türrahmen und verdeckt die Abendsonne. Die Frau erschrickt, als sie der Schatten berührt - doch als sie aufsieht, lächelt sie. "[COLOR_SELECTED_TEXT]Guten Abend, Eheweib[COLOR_REVERT]", brummt der Mann freundlich. "[COLOR_SELECTED_TEXT]Wo steckt denn unser Kleiner?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Spielt er denn nicht vor der Tür mit den Hühnern?[COLOR_REVERT]" fragt sie zurück und ist erneut besorgt. "[COLOR_SELECTED_TEXT]Beruhige dich, Weib. Wir sind heute mit dem Verteidigungswerk fertig geworden. Kein Wolf wird mehr zwischen den Häusern umherstreifen, auf der Suche nach einem Huhn. Oder etwas Größerem.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Внезапно тень заполняет дверной проем, закрывая собой вечернее солнце.[NEWLINE][NEWLINE]Женщина вздрагивает, когда тень касается ее, но потом поднимает взгляд и улыбается.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Добрый вечер, дорогая.[COLOR_REVERT]" – дружелюбно говорит мужчина. "[COLOR_SELECTED_TEXT]Где наш малыш?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Разве он не играет с цыплятами за дверью?[COLOR_REVERT] – снова обеспокоенно спрашивает она.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Успокойся. Сегодня мы закончили ставить частокол. Ни один волк не будет рыскать вокруг наших домов в поисках курицы. Или чего-то большего.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Hirtelen egy árnyék fedi be az ajtónyílást, eltakarva a késő délutáni napfényt.[NEWLINE][NEWLINE]A nő megijed, amikor az árnyék megérinti - de aztán felnéz és elmosolyodik.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Szép estét, kedvesem,[COLOR_REVERT]" - mondja a férfi barátságosan. "[COLOR_SELECTED_TEXT]Hol van a kicsikénk?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nem a csirkékkel játszik az ajtó előtt?"[COLOR_REVERT]" kérdezi a nő, ismét aggódva.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nyugodj meg! Ma fejeztük be a sánc felállítását. Egy farkas sem fog a házunk körül ólálkodni, csirkét keresve. Vagy valami nagyobbat.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE</Tag>
@@ -596,6 +647,7 @@
 		<French>Votre troisième palissade</French>
 		<German>Einige Verteidigungswerke (3)</German>
 		<Russian>Несколько укреплений (3)</Russian>
+		<Hungarian>Számos erődítmény (3)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_HEAD</Tag>
@@ -604,6 +656,7 @@
 		<French>Protégez votre peuple</French>
 		<German>Beschützer und Beschützte</German>
 		<Russian>Защита ваших людей</Russian>
+		<Hungarian>Az embereid védelme</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_STOCKADE_TEXT</Tag>
@@ -612,6 +665,7 @@
 		<French>Des troncs d'arbres bien droits et bien solides, écorcés et ancrés au sol, cernent et protègent vos colonies. Des tours de garde, depuis lesquelles des yeux vigilants surveillent avec circonspection la campagne aux alentours, se dressent au dessus des maison.[NEWLINE][NEWLINE]Les défenses que vous faites ériger protègent vos citoyens, et vous en accorde le respect.[NEWLINE][NEWLINE</French>
 		<German>Gerade, feste Baumstämme, entrindet und im Erdgrund verankert, umschließen und beschirmen die Siedlungen. Wachtürme, von denen aufmerksame Augenpaare misstrauisch das Umland mustern, erheben sich über den Häusern.[NEWLINE][NEWLINE]Die Verteidigungswerke, die Ihr in Euren Städten errichten lasst, bringen Euren Bürgern Schutz - und Euch den Respekt Eurer Untertanen.[NEWLINE][NEWLINE]</German>
 		<Russian>Прямые, прочные стволы деревьев, очищенные от коры и закрепленные в земле, ограждают и защищают ваши поселения. Над домами возвышаются сторожевые башни, с которых дозорные осматривают окрестности.[NEWLINE][NEWLINE]Защитные сооружения, которые вы возводите в своих городах, защищают ваших граждан и успокаивают ваших подданных.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Egyenes, tömör fatörzsek, kéregtelenítve és a talajba rögzítve, körülveszik és védik településeidet. A házak fölé őrtornyok emelkednek, amelyekből éber szemek gyanakodva vizsgálják a környező vidéket.[NEWLINE][NEWLINE]A városokban felhúzott védelmi rendszerekkel véded polgáraidat - és kivívod alattvalóid tiszteletét.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE</Tag>
@@ -620,6 +674,7 @@
 		<French>Huit Palissades</French>
 		<German>Viele Verteidigungswerke (8)</German>
 		<Russian>Множество укреплений (8)</Russian>
+		<Hungarian>Sok erődítmény (8)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_HEAD</Tag>
@@ -628,14 +683,16 @@
 		<French>Paix sur la terre</French>
 		<German>Frieden auf Erden</German>
 		<Russian>Мир на земле</Russian>
+		<Hungarian>Békesség a földön</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_STOCKADE_TEXT</Tag>
-		<English>Defence works of stout timber surround your settlements. Your people are thankful that they can live in peace.[NEWLINE][NEWLINE]In more and more of your cities, solid walls and watchtowers protect your citizens.[NEWLINE][NEWLINE]Truly, only God can take care of human happiness in the hereafter. But for this world you, the governor, are here.[NEWLINE][NEWLINE]You give your subjects peace on earth.[NEWLINE][NEWLINE]May your happiness never arouse the envy of others![NEWLINE][NEWLINE]Especially not the envy of a tyrant well known to you, who poses as your sovereign...[NEWLINE][NEWLINE]</English>
+		<English>Defence works of stout timber surround your settlements. Your people are thankful that they can live in peace.[NEWLINE][NEWLINE]In more and more of your cities, solid walls and watchtowers protect your citizens.[NEWLINE][NEWLINE]In the hereafter only God can promise human happiness but in this world you, the governor, are here.[NEWLINE][NEWLINE]You give your subjects peace on earth.[NEWLINE][NEWLINE]May your happiness never arouse the envy of others![NEWLINE][NEWLINE]Especially not the envy of a tyrant well known to you, who poses as your sovereign...[NEWLINE][NEWLINE]</English>
 		<Portuguese>Obras de defesa de madeira robusta cercam suas colônias. Seu povo está grato por poder viver em paz.[NEWLINE][NEWLINE]Em cada vez mais cidades, muros sólidos e torres de vigia protegem seus cidadãos.[NEWLINE][NEWLINE]Verdadeiramente, somente Deus pode cuidar da felicidade humana no futuro. Mas para este mundo você, o governador, está aqui.[NEWLINE][NEWLINE]Você dá aos seus súditos paz na terra.[NEWLINE][NEWLINE]Que sua felicidade nunca desperte a inveja dos outros![NEWLINE][NEWLINE]Especialmente não a inveja de um tirano bem conhecido por você, que se apresenta como seu soberano...[NEWLINE][NEWLINE]</Portuguese>
 		<French>Des défenses en bois robuste encerclent vos colonies. Votre peuple est reconnaissant de pouvoir vivre en paix.[NEWLINE][NEWLINE]Dans des cités toujours plus nombreuses, des murs solides et des tours de guet protègent vos citoyens.[NEWLINE][NEWLINE]Vraiment, Dieu seul est maitre du bonheur des âmes dans l'au-delà. Mais dans ce monde, vous, le gouverneur, vous en chargez.[NEWLINE][NEWLINE] Vous donnez à vos sujets paix sur la terre.[NEWLINE][NEWLINE] Que votre bonheur n'éveille jamais l'avidité des autres[NEWLINE][NEWLINE] Surtout pas la jalousie d'un tyran que vous connaissez si bien, qui se fait passer pour votre souverian...[NEWLINE][NEWLINE]</French>
 		<German>In immer mehr Eurer Städte sorgen feste Mauern und Wachtürme für den Schutz Eurer Bürger.[NEWLINE][NEWLINE]Fürwahr, für das Menschenglück im Jenseits kann nur Gott sorgen. Doch für das Diesseits seid Ihr, der Gouverneur, da.[NEWLINE][NEWLINE]Ihr schenkt Euren Untertanen Frieden auf Erden.[NEWLINE][NEWLINE]Möge Euer Glück niemals den Neid anderer wecken![NEWLINE][NEWLINE]Insbesondere nicht die Missgunst eines Euch wohlbekannten Tyrannen, der sich als Euer Landesherr aufspielt ...[NEWLINE][NEWLINE]</German>
 		<Russian>Ваши поселения окружены оборонительными сооружениями из крепкого дерева. Ваш народ благодарен за то, что они могут жить в мире и спокойствии.[NEWLINE][NEWLINE]Прочные стены и сторожевые башни защищают ваших жителей во всё большем количестве ваших городов.[NEWLINE][NEWLINE]Поистине, только Бог может позаботиться о человеческом счастье в загробной жизни. Но в этом мире нужен тот, кто сделает это здесь и сейчас и это вы, губернатор.[NEWLINE][NEWLINE]Вы даруете своим подданным мир на этой земле.[NEWLINE][NEWLINE]Пусть ваше счастье никогда не вызывает зависти окружающих![NEWLINE][NEWLINE]Тем более не на зависть хорошо известному вам тирану, выдающему себя за вашего государя...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Erős fából készült védőművek veszik körül településeidet. Néped hálás, hogy békében élhet.[NEWLINE][NEWLINE]Egyre több városodban szilárd falak és őrtornyok védik polgáraidat.[NEWLINE][NEWLINE]Valóban, csak Isten gondoskodhat az emberi boldogságról a túlvilágon. De e világ számára te, a kormányzó, itt vagy.[NEWLINE][NEWLINE]Te adsz békét alattvalóidnak a földön.[NEWLINE][NEWLINE]Boldogságod soha ne keltse fel mások irigységét![NEWLINE][NEWLINE]Különösen ne egy általad jól ismert zsarnok irigységét, aki uralkodódnak adja ki magát...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION</Tag>
@@ -644,6 +701,7 @@
 		<French>Votre premier grand bastion</French>
 		<German>Eure erste Große Bastion</German>
 		<Russian>Ваш первый большой бастион</Russian>
+		<Hungarian>Az első nagy bástyád</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_HEAD</Tag>
@@ -652,14 +710,16 @@
 		<French>Une forteresse imprenable</French>
 		<German>Eine uneinnehmbare Festung</German>
 		<Russian>Неприступная крепость</Russian>
+		<Hungarian>Egy bevehetetlen erőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_BASTION_TEXT</Tag>
-		<English>The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks confidently of the fortress impregnability.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first great bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens to the gun salutes.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>The workmen lay aside their tools, the priest blesses the walls, the new guard marches up and the commander speaks confidently of the fortress impregnability.[NEWLINE][NEWLINE]Towering high above the city, proud and mighty - the first great bastion gives this fortress a truly majestic appearance.[NEWLINE][NEWLINE]From a distance, the governor listens as the gun salutes echo.[NEWLINE][NEWLINE]His wife asks, "[COLOR_SELECTED_TEXT]Can we honestly feel safe now? Might not such a large fortress provoke our neighbours more?[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>Os trabalhadores deixam de lado suas ferramentas, o padre abençoa as muralhas, a nova guarda marcha e o comandante fala com confiança sobre a inexpugnabilidade da fortaleza.[NEWLINE][NEWLINE]Elevando-se bem acima da cidade, orgulhoso e poderoso - o primeiro grande bastião dá a esta fortaleza uma aparência verdadeiramente majestosa.[NEWLINE][NEWLINE]À distância, o governador ouve as saudações de tiro.[NEWLINE][NEWLINE]Sua esposa pergunta: "[COLOR_SELECTED_TEXT]Podemos honestamente nos sentir seguros agora? Uma fortaleza tão grande não poderia provocar mais nossos vizinhos?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<French>Les artisans rangent leurs outils, le prêtre apporte sa bénédiction aux nouveaux murs, la nouvelle garde arrive et le commandant se vante de l'inviolabilité de la forteresse.[NEWLINE][NEWLINE]Surplombant la ville, le premier Grand Bastion de votre nation, domine avec puissance et majesté.[NEWLINE][NEWLINE]Au loin, alors que le gouverneur fait tirer la salve d'honneur. Sa femme lui glisse à l'oreille : «[COLOR_SELECTED_TEXT]Espérons que cet ouvrage suscite chez nos voisins davantage de craintes que de convoitises [COLOR_REVERT] ».[NEWLINE][NEWLINE]</French>
 		<German>Die Handwerker legen ihre Werkzeuge beiseite, der Pfarrer segnet die Mauern, die neue Wache zieht auf und der Kommandeur spricht von der Uneinnehmbarkeit dieser Festung.[NEWLINE][NEWLINE]Hoch über der Stadt ragt sie auf, stolz und mächtig - die erste Große Bastion dieser Festung verleiht ihr ein wahrlich majestätisches Aussehen.[NEWLINE][NEWLINE]Aus der Ferne lauscht der Gouverneur den Salutschüssen.[NEWLINE][NEWLINE]Seine Frau meint fragend zu ihm: "[COLOR_SELECTED_TEXT]Ob wir uns nun wirklich sicherer fühlen können? Wird eine so große Festung unsere Nachbarn nicht vielleicht doch eher provozieren?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Рабочие откладывают инструменты, священник освящает стены, выдвигается новая стража и командир с уверенностью говорит о неприступности новой крепости.[NEWLINE][NEWLINE]Возвышающийся над городом, гордый и могучий - первый большой бастион придает этой крепости поистине величественный вид.[NEWLINE][NEWLINE]Губернатор издалека наблюдает за салютом в честь нового укрепления.[NEWLINE][NEWLINE]Его жена спрашивает: "[COLOR_SELECTED_TEXT]Можем ли мы теперь чувствовать себя в безопасности? Не может ли такая большая крепость еще больше спровоцировать наших соседей?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A munkások félreteszik szerszámaikat, a pap megáldja a falakat, az új őrség felvonul, a parancsnok pedig magabiztosan beszél az erőd bevehetetlenségéről.[NEWLINE][NEWLINE]A város fölé magasodva, büszkén és hatalmasan az első nagy bástya valóban fenséges külsőt kölcsönöz az erődnek.[NEWLINE][NEWLINE]A kormányzó távolról hallgatja a díszlövéseket.[NEWLINE][NEWLINE]A felesége megkérdezi: "[COLOR_SELECTED_TEXT]Most már tényleg biztonságban érezhetjük magunkat? Vajon nem provokálja-e még jobban a szomszédainkat egy ilyen nagy erődítmény?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS</Tag>
@@ -668,6 +728,7 @@
 		<French>Cinquante cloches par tour</French>
 		<German>Viele Freiheitsglocken (50)</German>
 		<Russian>Много колоколов свободы (50)</Russian>
+		<Hungarian>Sok szabadságharang (50)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_HEAD</Tag>
@@ -676,6 +737,7 @@
 		<French>Un soupçon de liberté</French>
 		<German>Eine Ahnung von Freiheit</German>
 		<Russian>Намек на свободу</Russian>
+		<Hungarian>Egy csipetnyi szabadság</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTY_BELLS_TEXT</Tag>
@@ -684,6 +746,7 @@
 		<French>De plus en plus fréquemment, vos citoyens sonnent les cloches des assemblées, annonçant leur désir de liberté.[NEWLINE][NEWLINE] Vous hochez faiblement la tête. Vous comptez sur le plaisir de votre roi. Dans les terres sauvages rôdent des prédateurs sur deux ou quatres pattes.[NEWLINE][NEWLINE]Vos sujets craignent pour leur vie dès qu'ils mettent le pied hors de leur colonies si bien prtoégées.[NEWLINE][NEWLINE]Seuls  ceux qui vivent en paix ont la force de conquérir leur liberté[NEWLINE][NEWLINE]Voys savez avoir besoin de patience et de longueur de temps, qui font plus que force ni que rage.</French>
 		<German>Immer häufiger lassen Eure Bürger die Glocken ihrer Versammlungshalle läuten und verleihen damit ihrem Wunsch nach Freiheit Ausdruck.[NEWLINE][NEWLINE]Ihr schüttelt milde Euer Haupt. Noch braucht Ihr das Wohlwollen Eures Königs. In der Wildnis verstecken sich Raubtiere, solche auf vier - und solche auf zwei Beinen.[NEWLINE][NEWLINE]Noch müssen Eure Untertanen um ihr Leben bangen, wenn sie den Schutz der Siedlungen verlassen.[NEWLINE][NEWLINE]Nur wer im Frieden lebt, hat die Kraft, für die Freiheit in den Krieg zu ziehen.[NEWLINE][NEWLINE]Ihr wisst, Ihr braucht Geduld und einen langen Atem.[NEWLINE][NEWLINE]</German>
 		<Russian>Все чаще и чаще ваши граждане звонят в колокола актового зала, заявляя о своем стремлении к свободе.[NEWLINE][NEWLINE]Ты осторожно качаешь головой. Вы все еще полагаетесь на добрую волю своего короля. В пустыне прячутся хищники, кто на четырех ногах, кто на двух.[NEWLINE][NEWLINE]Ваши подданные по-прежнему должны опасаться за свою жизнь, когда покидают укреплённые поселения.[NEWLINE][NEWLINE]Только у тех, кто живет в мире, есть силы, чтобы вступить в войну за свою свободу.[NEWLINE][NEWLINE]Вы знаете, что вам нужно терпение и упорство.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Polgáraid egyre gyakrabban kongatják meg a gyűléstermi harangokat, hirdetve szabadságvágyukat.[NEWLINE][NEWLINE]Szelíden megrázod a fejed. Még mindig a királyod jóindulatában bízol. A vadonban ragadozók leselkednek, némelyik négy-, némelyik kétlábú.[NEWLINE][NEWLINE]Alattvalóid még mindig féltik az életüket, amikor a védelmező településeken kívülre merészkednek.[NEWLINE][NEWLINE]Csak azoknak van erejük háborúzni a szabadságért, akik békében élnek.[NEWLINE][NEWLINE]Tudod, hogy türelemre és kitartásra van szükséged.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS</Tag>
@@ -692,6 +755,7 @@
 		<French>Deux cent cloches par tour</French>
 		<German>Sehr viele Freiheitsglocken (200)</German>
 		<Russian>Очень много колоколов свободы (200)</Russian>
+		<Hungarian>Nagyon sok szabadságharang (200)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_HEAD</Tag>
@@ -700,6 +764,7 @@
 		<French>La liberté trépigne</French>
 		<German>Flammende Sehnsucht</German>
 		<Russian>С нетерпением жду свободы</Russian>
+		<Hungarian>Türelmetlen szabadságvágy</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWOHUNDRED_BELLS_TEXT</Tag>
@@ -708,6 +773,7 @@
 		<French>De plus en plus de gens sonnent les cloches des assemblées pour sonner l'appel à la liberté. Leur clameur résonne à travers le pays, à travers le Nouveau Monde - et même à travers l'océan[NEWLINE][NEWLINE]Vous avez que le roi si distant a entendu leur battement[NEWLINE][NEWLINE] La colère monte. L'heure s'approche où il va envoyer ses généraux pour préparer la guerre[NEWLINE][NEWLINE] Et vius , gouverneur, vous n'entendrez plus le son de ces cloches, mais la fureur des combats.[NEWLINE][NEWLINE]</French>
 		<German>Immer mehr Bürger lassen die Glocken ihrer Versammlungshallen läuten, um ein Zeichen für die Freiheit zu setzen. Ihr Klang erschallt durchs ganze Land, durch die ganze Neue Welt - sogar über den Ozean hinweg.[NEWLINE][NEWLINE]Der ferne König vernimmt ihr Schwingen, dessen seid Ihr Euch bewusst.[NEWLINE][NEWLINE]Sein Zorn wächst. Die Zeit ist nicht mehr fern, in der er seine Marschälle kommen lässt, um einen Krieg zu planen.[NEWLINE][NEWLINE]Und Ihr, Gouverneur, Ihr werdet dann nicht mehr Glockengeläute, sondern Schlachtenlärm hören.[NEWLINE][NEWLINE]</German>
 		<Russian>Все больше и больше людей звонят в колокола своих актовых залов, чтобы подать сигнал к свободе. Их шум разносится по всей земле, по всему Новому Свету и даже за океан.[NEWLINE][NEWLINE]Даже Король, сидящий далеко-далеко, слышит их. Вы знаете об этом.[NEWLINE][NEWLINE]Его гнев растет. Не за горами время, когда он пошлет за своими генералами, чтобы начать планировать карательную экспедицию.[NEWLINE][NEWLINE]А ты, губернатор, будешь слушать не колокольный звон, а шум битвы.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Egyre többen kongatják meg gyülekezeti termük harangjait, hogy a szabadság hangjának jelét adják. Kiáltásuk visszhangzik az egész országban, az egész Újvilágban - még az óceánon túl is.[NEWLINE][NEWLINE]A távoli király hallja a harangzúgásukat. Tisztában vagy vele.[NEWLINE][NEWLINE]A haragja egyre nő. Nincs már messze az idő, amikor hadvezérekért küldet, hogy megtervezze a háborút.[NEWLINE][NEWLINE]És te, kormányzó, már nem a harangok csilingelését fogod hallani, hanem a csata zaját.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS</Tag>
@@ -716,6 +782,7 @@
 		<French>Trois cents cloches par tour</French>
 		<German>Sehr viele Freiheitsglocken (300)</German>
 		<Russian>Очень много колоколов свободы (300)</Russian>
+		<Hungarian>Nagyon sok szabadságharang (300)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS_HEAD</Tag>
@@ -724,6 +791,7 @@
 		<French>Conjuration</French>
 		<German>Verschwörung</German>
 		<Russian>Заговор</Russian>
+		<Hungarian>Összeesküvés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREEHUNDRED_BELLS_TEXT</Tag>
@@ -732,6 +800,7 @@
 		<French>Au dessus des toits de vos villes les cloches carillonnent de plus en plus souvent, sonnant l'appel à la liberté d'une nation nouvelle.[NEWLINE][NEWLINE] Les colons, de leur côté, préparent la révolution en cachettes - après tout, ce n'(est rien moins que de la trahison.[NEWLINE][NEWLINE] des conjurés se rencontre dans l'arrière salle des tavernes, décidant d'un plan de movilisation en cas de guerre contre le roi, se procurant argent et nourriture pour la nouvelle armée continentale... [NEWLINE][NEWLINE]  </French>
 		<German>Während über den Dächern der Städte immer öfter die Glocken für die Freiheit einer neuen Nation läuten, treffen die Menschen in den Kolonien die Vorbereitungen für die Revolution jedoch im Verborgenen - schließlich handelt es sich hierbei um nichts weniger als Hochverrat.[NEWLINE][NEWLINE]Konspirative Treffen in den Hinterzimmern der Kneipen, Ausarbeitung geheimer Pläne für eine Mobilmachung im Falle eines Krieges gegen den König, Beschaffung von Geld und Waffen für die neue kontinentale Armee...[NEWLINE][NEWLINE]</German>
 		<Russian>Над крышами городов всё чаще и чаще разносится звон колоколов, взывая к свободе новой нации.[NEWLINE][NEWLINE]Колонисты, однако, готовятся к революции тайно — ведь это не что иное, как измена.[NEWLINE][NEWLINE]Собрания заговорщиков в подсобках пабов, составление секретных планов мобилизации на случай войны против короля, закупка денег и оружия для новой континентальной армии...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A városok háztetőin egyre gyakrabban szólalnak meg a harangok, egy új nemzet szabadságáért kiáltva.[NEWLINE][NEWLINE]A telepesek azonban titokban végzik forradalmi előkészületeiket - elvégre ez nem más, mint árulás.[NEWLINE][NEWLINE]Összeesküvések a kocsmák hátsó szobáiban, titkos mozgósítási tervek kidolgozása a király elleni háború esetére, pénz és fegyverek beszerzése az új kontinentális hadsereg számára...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_CROSSES</Tag>
@@ -740,6 +809,7 @@
 		<French>Des prédicateurs zélés</French>
 		<German>Eifrige Prediger</German>
 		<Russian>Десять крестов за ход</Russian>
+		<Hungarian>Buzgó prédikátorok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_HEAD</Tag>
@@ -748,6 +818,7 @@
 		<French>Prier en toute liberté</French>
 		<German>Bete in Freiheit</German>
 		<Russian>Право на молитву</Russian>
+		<Hungarian>Szabad imádkozás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_CROSSES_TEXT</Tag>
@@ -756,6 +827,7 @@
 		<French>Non seulement Dieu est respecté, mais aussi la liberté du Verbe. Ici des hommes tenus au silence dans leur terre d'origine peuvent prêcher librement[NEWLINE][NEWLINE]Là bas, le souverain entêté opprimait activement leur foi[NEWLINE][NEWLINE]On se passe le mot dans l'ancien monde. De plus en plus de gens se pressent sur le quais pour une place sur un bateau en partance.[NEWLINE][NEWLINE]</French>
 		<German>Nicht nur Gott wird in Eurer Kirche Achtung gezollt, sondern auch der Freiheit des Wortes. Hier dürfen Männer frei predigen, die in ihrer alten Heimat schweigen mussten.[NEWLINE][NEWLINE]Ihre Konfession war dem sturen Landesherrn nicht erwünscht.[NEWLINE][NEWLINE]Das spricht sich zu Hause herum. Immer mehr Menschen drängeln auf den Hafenkais, um einen Platz auf einem Auswandererschiff zu finden.[NEWLINE][NEWLINE]</German>
 		<Russian>В вашей церкви есть уважение не только к Богу, но и к свободе слова. Здесь могут свободно проповедовать люди, которые должны были хранить молчание на своей старой родине.[NEWLINE][NEWLINE]Упрямому правителю не нужна была ваша религия.[NEWLINE][NEWLINE]Слухи о свободе вероисповедания быстро распространяются по всему Старому свету. Все больше и больше людей толпятся на пристани в поисках места на кораблях, идущих к новым землям.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Nemcsak Istent tisztelik, hanem az Ige szabadságát is. Itt szabadon prédikálhatnak azok az emberek, akiknek a régi hazájukban hallgatniuk kellett.[NEWLINE][NEWLINE]Ott a makacs uralkodó aktívan elnyomta a hitüket.[NEWLINE][NEWLINE]Az Óhazában elterjedt ennek híre. Egyre többen tolonganak a kikötői rakpartokon, helyet keresve egy kivándorlóhajón.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_CROSSES</Tag>
@@ -764,6 +836,7 @@
 		<French>Davantage de crois par tour</French>
 		<German>Sehr eifrige Prediger</German>
 		<Russian>Множество крестов за ход</Russian>
+		<Hungarian>Több buzgó prédikátor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_HEAD</Tag>
@@ -772,14 +845,16 @@
 		<French>Des nouvelles croyances en concurrence</French>
 		<German>Wähle deinen Herrn</German>
 		<Russian>Конкуренция конфессий</Russian>
+		<Hungarian>Új hitek terjednek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_CROSSES_TEXT</Tag>
-		<English>Again and again during the Sunday devotions men get to their feet and stride to the pulpit. They praise God - and they also praise you, the governor, who allows them to choose for themselves whichever denomination will offer true salvation.[NEWLINE][NEWLINE]The news that in the New World everyone can worship in his own way, that he is allowed to determine for himself the rules by which he wants to live - this news finds open ears in the Old World.[NEWLINE][NEWLINE]</English>
+		<English>Again and again during the Sunday devotions men get to their feet and stride to the pulpit. They praise God - and they also praise you, the governor who allows them to choose for themselves whichever denomination will offer true salvation.[NEWLINE][NEWLINE]The news that in the New World everyone can worship in his own way, that he is allowed to determine for himself the rules by which he wants to live - this news finds open ears in the Old World.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Repetidamente, durante as devoções dominicais, os homens se levantam e sobem ao púlpito. Eles louvam a Deus - e também louvam a você, o governador, que permite que eles escolham por si mesmos qualquer denominação que ofereça a verdadeira salvação.[NEWLINE][NEWLINE]A notícia de que no Novo Mundo todos podem adorar à sua maneira, que ele tem permissão para determinar por si mesmo as regras pelas quais deseja viver - esta notícia encontra ouvidos abertos no Velho Mundo.[NEWLINE][NEWLINE]</Portuguese>
 		<French>Encore et encore, durant les dévotions du dimanche des hommes se lèvent et vont au chapitre. Ils rendent louange à Dieu - et aussi à vous le gouverneur, qui leur pemet de choisir la foi qui leur apportera le salut éternel[NEWLINE][NEWLINE] Les nouvelles selon lesquelle le nouveau monde permet à chaucun de vénérer à sa façon, de déterminer pour lui même ses règles de vies sont très attentivement accueillies dans l'ancien monde. [NEWLINE][NEWLINE]  </French>
 		<German>Immer wieder stehen während der sonntäglichen Andachten Männer auf und schreiten auf die Kanzel. Sie preisen Gott - und sie rühmen auch Euch, den Gouverneur, der es Ihnen gestattet, selbst die Konfession zu wählen, in der sie ihr Seelenheil finden möchten.[NEWLINE][NEWLINE]Die Kunde, dass in der Neuen Welt ein jeder in der ihm eigenen Weise den Gottesdienst feiern kann, dass er die Regeln, nach denen er leben will, selber bestimmen darf - diese Kunde findet in der Alten Welt offene Ohren.[NEWLINE][NEWLINE]</German>
 		<Russian>Снова и снова во время воскресных богослужений мужчины встают и идут к кафедре. Они восхваляют Бога — и они также восхваляют тебя, правителя, который позволяет им выбрать для себя любое вероисповедание, которое предложит истинное спасение.[NEWLINE][NEWLINE]Новость о том, что в Новом Свете каждый может поклоняться по-своему, что ему позволено самому определять правила, по которым он хочет жить, - эта новость находит отклик в Старом Свете.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A vasárnapi áhítatok alatt a férfiak újra és újra felállnak és a szószékre lépnek. Dicsérik Istent - és dicsérnek téged is, a kormányzót, aki megengeded nekik, hogy maguk válasszák ki, melyik felekezet kínálja az igazi üdvösséget.[NEWLINE][NEWLINE]A hír, hogy az Újvilágban mindenki a maga módján imádkozhat, hogy mindenki maga határozhatja meg, milyen szabályok szerint akar élni - ez a hír nyitott fülekre talál az Óvilágban.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EDUCATION</Tag>
@@ -788,6 +863,7 @@
 		<French>De nombreux étudiants</French>
 		<German>Viele Schüler</German>
 		<Russian>Множество обучающихся</Russian>
+		<Hungarian>Sok diák</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EDUCATION_HEAD</Tag>
@@ -796,6 +872,7 @@
 		<French>Rêver est encouragé</French>
 		<German>Träumen erlaubt</German>
 		<Russian>Поощрение мечтаний</Russian>
+		<Hungarian>Bátor álmok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EDUCATION_TEXT</Tag>
