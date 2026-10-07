@@ -130385,8 +130385,7 @@ BeginPlot
 EndPlot
 BeginPlot
 	x=81,y=130
-	BonusType=BONUS_TIMBER
-	TerrainType=TERRAIN_MARSH
+TerrainType=TERRAIN_MARSH
 	PlotType=0
 	TeamReveal=10,
 EndPlot
