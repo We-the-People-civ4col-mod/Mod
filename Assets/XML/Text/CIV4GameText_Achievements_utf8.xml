@@ -881,6 +881,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Que vois tu dans tes révasseries ? [COLOR_REVERT] »[NEWLINE][NEWLINE]L'étudiant est surpris. Alors qu'il regarde oar la fenêtre, le maitre d'école apparait d'un coup juste à côté de lui et le prend doucement par l'épaule.[NEWLINE][NEWLINE] «[COLOR_SELECTED_TEXT]Euh, ben.... [COLOR_REVERT] » Il bégaie en cherchant les mots pour se tirer de là.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]J'admirais la splendeur de ce nouveau monde. Et je méditais sur la beauté du monde tel que Dieu le créa. Je pensais à la nature de l'homme, né libre et sujet de personne. Aucun roi ne saurait exiger l'obéissance, seulement Dieu. [COLOR_REVERT] » [NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Très bien, très bien. [COLOR_REVERT] » répond le maitre en souriant : «[COLOR_SELECTED_TEXT]Je crois que nous avons le même rêve. [COLOR_REVERT] »</French>
 		<German>"[COLOR_SELECTED_TEXT]Erzähl uns doch mal, was du siehst, du Träumer![COLOR_REVERT]"[NEWLINE][NEWLINE]Erschrocken fährt der Student zusammen. Gerade hatte er noch aus dem Fenster geschaut, da steht unvermittelt die Dozentin neben ihm und rüttelt sanft an seiner Schulter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Äh, tja ...[COLOR_REVERT]", stammelt er und sucht nach einem Einfall, der ihn rettet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hinaus in die Lieblichkeit dieser Neuen Welt blickte ich. Und sann über die Natur nach, wie Gott sie erschaffen hat. Und über die Natur des Menschen. Dass er frei geboren ist und nicht als Untertan.[NEWLINE][NEWLINE]Und dass kein König von ihm Gehorsam verlangen sollte, sondern nur Gott.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]So, so[COLOR_REVERT]", erwidert die Dozentin und muss lächeln, "[COLOR_SELECTED_TEXT]da haben wir wohl den gleichen Traum.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Расскажи нам, что ты видишь, мечтатель![COLOR_REVERT]"[NEWLINE][NEWLINE]Ученик вздрогнул. Пока он смотрит в окно, рядом с ним внезапно появляется лектор и слегка трясет его за плечо.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну...[COLOR_REVERT]" - запинается он, пытаясь найти идею, которая его спасет.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я любовался великолепием Нового Света. И размышлял о природе, какой ее создал Бог. Думал о природе человека, о том, как он рождается свободным, никому не подчиняющимся.[NEWLINE] [NEWLINE]Ни один король не должен требовать от него повиновения, а только Бог.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну-ну,[COLOR_REVERT]" — улыбаясь, отвечает лектор — [COLOR_SELECTED_TEXT]Похоже, у нас одна и та же мечта.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mondd el, mit látsz, álmodozó![COLOR_REVERT]"[NEWLINE][NEWLINE]A diák megdöbbent. Miközben az ablakon bámult ki, hirtelen megjelent mellette az előadó, és gyengéden megrázta a vállát.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ööö, hát...[COLOR_REVERT]" dadogja, keresve a mentő ötletet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csodáltam ennek az Újvilágnak a pompáját. És elmélkedtem a természetről, ahogy Isten teremtette. Az ember természetén gondolkodva, hogy szabadnak született, senkinek sem alárendelve.[NEWLINE][NEWLINE]Senki király nem követelhet tőle engedelmességet, csak Isten.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lám, lám,[COLOR_REVERT]" - válaszol	mosolyogva az előadó - "[COLOR_SELECTED_TEXT]Azt hiszem, ugyanaz az álmunk.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT</Tag>
@@ -889,6 +890,7 @@
 		<French>Contact avec des européens</French>
 		<German>Erste Europäer getroffen</German>
 		<Russian>Первая встреча с европейцами</Russian>
+		<Hungarian>Első találkozás Európaiakkal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_HEAD</Tag>
@@ -897,6 +899,7 @@
 		<French>Une autre puissance coloniale</French>
 		<German>Nicht allein in der Fremde</German>
 		<Russian>Не один в чужих краях</Russian>
+		<Hungarian>Ismerősök egy idegen világban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EURO_CONTACT_TEXT</Tag>
@@ -905,6 +908,7 @@
 		<French>Vos hommes vous regardent, stupéfaits. ILs ne sont pas habitués à vous entendre jurer, et certainement pas avec un énorme blasphème aussi grossier.[NEWLINE][NEWLINE]Une femme de chambre baisse le regard et se signe en silence.[NEWLINE][NEWLINE]Mais vous ne vous souciez que de ce que vous avez vu au loin. Un drapeau familier. Un drapeau d'un roi -- et pas le vôtre.[NEWLINE][NEWLINE]Vos craintes se sont avérées. D'autres puissances ont envoyés des navires, des colons et des éclaireur pour soumettre ce Nouveau Monde.[NEWLINE][NEWLINE]Vous vous mettez à trembler, et resserrez le manteau sur vous.[NEWLINE][NEWLINE]</French>
 		<German>Erschrocken blicken Eure Männer Euch an. Sie sind nicht gewohnt, dass Ihr Gouverneur flucht. Und erst recht nicht so derbe, so gotteslästerlich.[NEWLINE][NEWLINE]Eine Magd blickt zu Boden und bekreuzigt sich stumm.[NEWLINE][NEWLINE]Doch Euch kümmert nur das, was Ihr in der Ferne erspäht habt. Eine altbekannte Flagge. Die Flagge eines Königs - und es ist nicht der Eure.[NEWLINE][NEWLINE]Eure Befürchtungen sind wahrgeworden. Auch andere Mächte haben Schiffe, Siedler und Späher entsandt, um sich diese Neue Welt untertan zu machen.[NEWLINE][NEWLINE]Plötzlich fröstelt Euch und Ihr zieht Euch den Umhang fester um die Schultern.[NEWLINE][NEWLINE]</German>
 		<Russian>Ваши люди смотрят на вас с изумлением. Они не привыкли, чтобы их губернатор ругался; и уж точно не так грубо.[NEWLINE][NEWLINE]Служанка опускает глаза и молча крестится.[NEWLINE][NEWLINE]Но вас волнует только то, что вы увидели вдалеке. Знакомый флаг. Флаг Короля - и не вашего.[NEWLINE][NEWLINE]Ваши опасения подтвердились. Другие державы также послали корабли, поселенцев и разведчиков, чтобы покорить  Новый Свет.[NEWLINE][NEWLINE]Внезапно вы вздрагиваете и плотнее натягиваете плащ на плечи.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az embereid megdöbbenve néznek rád. Nem szoktak hozzá, hogy a kormányzójuk szitkozódik; és főleg nem ilyen durván, ilyen káromkodva.[NEWLINE][NEWLINE]Egy szobalány lesüti a szemét, és némán keresztet vet.[NEWLINE][NEWLINE]De téged csak az érdekel, amit a távolban kiszúrtál. Egy ismerős zászló. Egy király zászlaja - és bizony nem a te Királyodé.[NEWLINE][NEWLINE]Félelmeid valóra váltak. Más hatalmak is küldtek hajókat, telepeseket és felderítőket, hogy meghódítsák ezt az Újvilágot.[NEWLINE][NEWLINE]Hirtelen összerezzensz, és szorosabbra húzod a köpenyedet a válladon.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT</Tag>
@@ -913,6 +917,7 @@
 		<French>Trois nations européennes contactées</French>
 		<German>Drei europäische Konkurrenten getroffen</German>
 		<Russian>Встреча трёх европейских соперников</Russian>
+		<Hungarian>Találkozás három másik Európai hatalommal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_HEAD</Tag>
@@ -921,14 +926,16 @@
 		<French>Réunion de famille outre-mer</French>
 		<German>Familientreffen in Übersee</German>
 		<Russian>Воссоединение семьи за морем</Russian>
+		<Hungarian>Családegyesítés a tengerentúlon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_EURO_CONTACT_TEXT</Tag>
-		<English>Friendly, the foreign officer waves his hat with the bobbing peacock feather. You wave your own hat, just as friendly.[NEWLINE][NEWLINE]But your smile is only a masquerade. Once again you have encountered a foreign patrol. Once again you have encountered other Europeans who, like you, have set out for foreign lands.[NEWLINE][NEWLINE]This continent once seemed so infinitely large to you ...[NEWLINE][NEWLINE]</English>
+		<English>Friendly, the foreign officer waves his hat with the bobbing peacock feather. You wave your own hat, just as friendly.[NEWLINE][NEWLINE]But your smile is only a masquerade. Once again you have encountered a foreign patrol. Once again you have encountered other Europeans who, like you, have set out for these new lands.[NEWLINE][NEWLINE]This continent once seemed so infinitely large to you ...[NEWLINE][NEWLINE]</English>
 		<Portuguese>Amigável, o oficial estrangeiro agita seu chapéu com a pena de pavão balançando. Você agita seu próprio chapéu, igualmente amigável.[NEWLINE][NEWLINE]Mas seu sorriso é apenas uma máscara. Mais uma vez você encontrou uma patrulha estrangeira. Mais uma vez você encontrou outros europeus que, como você, partiram para terras estrangeiras.[NEWLINE][NEWLINE]Este continente já lhe pareceu tão infinitamente grande...[NEWLINE][NEWLINE]</Portuguese>
 		<French>Gracieusement, l'officier étranger vous salue de son chapeau orné d'une plume de paon. Vous faites chapeau bas en retour tout aussi gracieusement.[NEWLINE][NEWLINE]Mais votre sourire n'est que de façade. Une fois de plus vous avez rencontré une patrouille étrangère. Une fois de plus vous avez reonctré d'autres Européens qui comme vous cherchent à se saisir de terres étrangères.[NEWLINE][NEWLINE]Ce continent vous paraissait à l'origine si immensément vaste...[NEWLINE][NEWLINE]</French>
 		<German>Freundlich schwenkt der fremde Offizier seinen Hut mit der wippenden Pfauenfeder. Und ebenso freundlich winkt Ihr mit Eurem Hut zurück.[NEWLINE][NEWLINE]Doch Euer Lächeln ist nur Maskerade. Wieder seid Ihr einer fremden Patrouille begegnet. Erneut seid Ihr auf andere Europäer gestoßen, die wie Ihr in die Fremde gezogen seid.[NEWLINE][NEWLINE]So unendlich weit schien Euch dieser Kontinent einst zu sein ...[NEWLINE][NEWLINE]</German>
 		<Russian>Иностранный офицер дружелюбно машет вам шляпой с плюмажем из павлиньих перьев. Вы машете своей шляпой в ответ, так же дружелюбно.[NEWLINE][NEWLINE]Но ваша улыбка всего лишь маскарад. Вы снова столкнулись с иностранным патрулем. Очередная встреча с другими европейцами, которые, как и вы, отправились в чужие земли.[NEWLINE][NEWLINE]Когда-то этот континент казался вам таким бесконечно большим...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Barátságosan, a külföldi tiszt meglengeti a kalapját a billegő pávatollal. Te is meglengeted a saját kalapodat, ugyanolyan barátságosan.[NEWLINE][NEWLINE]De a mosolyod csak álca. Ismét egy idegen járőrrel találkoztál. Újra más európaiakkal találkoztál, akik hozzád hasonlóan idegen földekre indultak.[NEWLINE][NEWLINE]Ez a kontinens egykor oly végtelenül nagynak tűnt számodra...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT</Tag>
@@ -937,6 +944,7 @@
 		<French>Sept nations européennes contactées</French>
 		<German>Sieben europäische Konkurrenten</German>
 		<Russian>Встреча семи европейских соперников</Russian>
+		<Hungarian>Találkozás hét másik Európai hatalommal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT_HEAD</Tag>
@@ -945,14 +953,16 @@
 		<French>Quelle promiscuité</French>
 		<German>Es wird eng</German>
 		<Russian>Здесь становится тесновато</Russian>
+		<Hungarian>Kezd zsúfolttá válni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ALL_EURO_CONTACT_TEXT</Tag>
-		<English>This continent once seemed so infinitely large to you. Now you have discovered seven other European powers that also settled in the New World.[NEWLINE][NEWLINE]Do you want to maintain good trade relations with them, trade with them and thereby fill our coffers? Or do you want to plunder their colonies and annex them to your colonial empire?[NEWLINE][NEWLINE]In any case, you should re-examine your military strength and, if necessary, ask the King for more troops.[NEWLINE][NEWLINE]You never know what those other powers might be up to...[NEWLINE][NEWLINE]</English>
+		<English>This continent once seemed so infinitely large to you. Now you have discovered seven other European powers that also settled in the New World.[NEWLINE][NEWLINE]Do you want to maintain good business relations with them, trade with them and thereby fill our coffers? Or do you want to plunder their colonies and annex them to your colonial empire?[NEWLINE][NEWLINE]In either case you need to re-examine your military strength and, if necessary, ask the King for more troops.[NEWLINE][NEWLINE]You never know what those other powers might be up to...[NEWLINE][NEWLINE]</English>
 		<Portuguese>Este continente já pareceu infinitamente grande para você. Agora você descobriu outras sete potências europeias que também se estabeleceram no Novo Mundo.[NEWLINE][NEWLINE]Você quer manter boas relações comerciais com elas, negociar com elas e, assim, encher nossos cofres? Ou você quer saquear suas colônias e anexá-las ao seu império colonial?[NEWLINE][NEWLINE]Em qualquer caso, você deve reexaminar sua força militar e, se necessário, pedir mais tropas ao rei.[NEWLINE][NEWLINE]Você nunca sabe o que essas outras potências podem estar fazendo...[NEWLINE][NEWLINE]</Portuguese>
 		<French>Ce continent vous paraissait à l'origine si immensément vaste. Là vous avez découvert sept autres puissances européennes qui ont aussi mis pied dans le Nouveau Monde.[NEWLINE][NEWLINE]Allez-vous entretenir des relations commerciales cordiales avec eux, faire du commerce et remplir vos coffres dans la foulée ? Ou voulez vous piller ces colonies et les annexer à votre empire colonial ?[NEWLINE][NEWLINE]Dans tous les cas, vous devriez revoir votre armée, et, si nécessaire, demander plus de troupe à votre roi.[NEWLINE][NEWLINE]Vous ne savez jamais ce que les autres puissances mijotent.[NEWLINE][NEWLINE]</French>
 		<German>So unendlich weit schien Euch dieser Kontinent einst zu sein, aber jetzt habt Ihr bereits sieben weitere europäische Mächte entdeckt, die sich ebenfalls in die Neue Welt aufgemacht haben.[NEWLINE][NEWLINE]Ihr solltet einmal Eure Strategie überdenken, Gouverneur! Wollt Ihr mit ihnen gute Beziehungen pflegen, mit ihnen Handel treiben und dadurch unsere Kassen füllen? Oder wollt Ihr ihre Kolonien plündern und sie Eurem Kolonialreich einverleiben?[NEWLINE][NEWLINE]Auf jeden Fall solltet Ihr Euch einen Überblick über Eure militärische Stärke verschaffen, damit Ihr gegebenenfalls den König um weitere Truppen bitten könnt.[NEWLINE][NEWLINE]Man weiß ja nie, wass die anderen Mächte im Schilde führen...[NEWLINE][NEWLINE]</German>
 		<Russian>Когда-то этот континент казался вам таким бесконечно большим. Теперь вы повстречали семь других европейских держав, также обосновавшихся в Новом Свете.[NEWLINE][NEWLINE]Хотите поддерживать с ними хорошие торговые отношения, торговать, пополняя тем самым нашу казну? Или вы желаете разграбить их колонии и присоединить к своей колониальной империи?[NEWLINE][NEWLINE]В любом случае вам следует проинспектировать свои войска и, если необходимо, попросить короля прислать подкрепление.[NEWLINE][NEWLINE]Никогда не знаешь, на что способны и готовы пойти другие государства...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Ez a kontinens egykor olyan végtelenül nagynak tűnt számodra. Most felfedeztél hét másik európai hatalmat, amelyek szintén letelepedtek az Újvilágban.[NEWLINE][NEWLINE]Jó kapcsolatokat akarsz fenntartani és kereskedni akarsz velük, és így akarod megtölteni a kincstárunkat? Vagy ki akarod fosztani a gyarmataikat és a te tiédhez csatolni őket?[NEWLINE][NEWLINE]Mindenesetre újra át kell vizsgálnod a katonai erődet és ha szükséges, a királytól több csapatot kell kérned.[NEWLINE][NEWLINE]Sosem tudhatod, mire készül a többi hatalom...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT</Tag>
@@ -961,6 +971,7 @@
 		<French>First Native met</French>
 		<German>Erster Stamm getroffen</German>
 		<Russian>Первое туземное племя</Russian>
+		<Hungarian>Találkozás az első Indián törzzsel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_HEAD</Tag>
@@ -969,6 +980,7 @@
 		<French>Cette terre est donc habitée !</French>
 		<German>Erste Wilde getroffen</German>
 		<Russian>Первая встреча с индейцами</Russian>
+		<Hungarian>Találkozás az első Indiánokkal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_NATIVE_CONTACT_TEXT</Tag>
@@ -977,6 +989,7 @@
 		<French>Des enfants joyeux aux faces brun sale. De jeunes gens avec arcs et lances, aux faces peintes et une curiosité soupçonneuse.[NEWLINE][NEWLINE]De jeunes femmes broient du grain dans des jarres en terre e, en vous lançant des regards furtifs. Des vieillards édentés cahotent vers vous en toute confiance.[NEWLINE][NEWLINE]Vous supectiez que cette terre étrangère tenait en son sein merveilles et dangers. Mais vous n'aviez jamais pensé qu'il était possible qu'il y ait tant de fils païens sans Dieu vivant ici, sans rien savoir de Jésus.[NEWLINE][NEWLINE]Dans les semaines qui viennent, vous allez leur parler du salut pour leur âme de pêcheurs que leur apportera la seule vrai foi chrétienne.[NEWLINE][NEWLINE]Et sans doute pourriez vous les sauver de l'avarice avec les trésors qu'ils cachent, l'or que vos hommes espèrent prendre de ce monde inconnu.[NEWLINE][NEWLINE]</French>
 		<German>Fröhliche Augen in braunen, schmutzigen Gesichtern. Junge Männer mit Speeren und Bögen, bemalten Gesichtern und einem kindlichen Staunen. Junge Frauen, die in Tonkrügen Körner mahlen und Euch verstohlen anblicken. Zahnlose Alte, die zutraulich heranhumpeln.[NEWLINE][NEWLINE]Ihr ahntet, dass dieses fremde Land Wunder und Gefahren birgt. Doch dass hier so viele gottlose Heidenkinder hausen, ohne Kenntnis von der Barmherzigkeit Jesu, das hättet Ihr nicht für möglich gehalten.[NEWLINE][NEWLINE]Ihr werdet Ihnen in den nächsten Wochen von der Erlösung berichten, die der wahre christliche Glaube ihren mit Sünde beladenen Seelen schenken wird.[NEWLINE][NEWLINE]Und vielleicht könnt Ihr sie auch tatsächlich erlösen - von den Schätzen, die sie gewisslich verstecken, dem Gold, das Eure Männer in diesem Teil der Welt zu erbeuten hoffen.[NEWLINE][NEWLINE]</German>
 		<Russian>Веселые дети с грязными коричневыми лицами. Молодые люди с копьями и луками, разрисованными лицами и осторожным любопытством.[NEWLINE][NEWLINE]Молодые женщины перемалывают зерно в глиняных кувшинах, украдкой поглядывая на вас. К вам доверчиво ковыляют беззубые старики.[NEWLINE][NEWLINE]Вы подозревали, что эта чужая земля таит в себе чудеса и опасности. Но вы даже и подумать не могли, что здесь живет так много безбожных языческих детей, не знающих милости Иисуса.[NEWLINE][NEWLINE]В ближайшие время вы расскажете им о спасении, которое истинная христианская вера подарит их обремененным грехом душам.[NEWLINE][NEWLINE]И, возможно, вы действительно сможете спасти их от жадности до сокровищ, которые они наверняка скрывают, и золота, которое ваши люди надеются получить в подарок от этого неизвестного мира.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Barnabörű, piszkos arcú vidám gyerekek szaladgálnak. Fiatal férfiak lándzsával és íjjal felfegyverkezve, festett arccal és óvatos kíváncsisággal tekintenek rád.[NEWLINE][NEWLINE]Fiatal nők agyagedényekben gabonát őrölnek, miközben lopva rád pillantanak. Fogatlan öregemberek bicegnek bizalommal feléd.[NEWLINE][NEWLINE]Sejtetted, hogy ez az idegen föld csodákat és veszélyeket rejt. De nem gondoltad volna, hogy ennyi istentelen pogány gyermek él itt, akik nem ismerik Jézus kegyelmét.[NEWLINE][NEWLINE]Az elkövetkező hetekben mesélni fogsz nekik a megváltásról, amelyet az igaz keresztény hit ad a bűnnel terhelt lelküknek.[NEWLINE][NEWLINE]És talán valóban megmentheted őket a mohóságtól azokért a kincsekért, amelyeket rejtegetnek, és az aranyért, amelyet embereid remélnek megszerezni ebből az ismeretlen világból.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT</Tag>
@@ -985,6 +998,7 @@
 		<French>Trois peuples indigènes</French>
 		<German>Drei Stämme getroffen</German>
 		<Russian>Три туземных племени</Russian>
+		<Hungarian>Találkozás három Indián törzzsel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_HEAD</Tag>
@@ -993,6 +1007,7 @@
 		<French>L'or des indigènes</French>
 		<German>Das Gold der Wilden</German>
 		<Russian>Золото индейцев</Russian>
+		<Hungarian>Indiánok aranya</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_NATIVE_CONTACT_TEXT</Tag>
@@ -1001,6 +1016,7 @@
 		<French>Des indigènes approchent avec le sourire. Ils tendent leur main ouverte[NEWLINE][NEWLINE] Sous le soleil du midi brillent les amulettes d'argent, les anneaux dorés et les masques-totem sertis de pierres précieuses qu'ils vous offrent.[NEWLINE][NEWLINE] Un trappeur qui a passé l'hiver dernier avec ces païens traduit le discours de leur chef, qui sohaite en échange trois marteaux en fer, un sac en chanvre remplis de clous, un tonnelet d'eau de vie et une arquebuse.[NEWLINE][NEWLINE] Vous en avez le sourire. Vous pouvez peut-être prendre les trésors de cette terre sans avoir à payer le prix du sang de vos hommes.[NEWLINE][NEWLINE]</French>
 		<German>Mit einem Lächeln nähern sich die Eingeborenen. Sie öffnen ihre Hände.[NEWLINE][NEWLINE]Im Mittagslicht der Sonne glitzern die silbernen Amulette, die Goldringe und edelsteingeschmückten Totemmasken, die sie Euch anbieten.[NEWLINE][NEWLINE]Ein Trapper, der den letzten Winter bei den Heiden verbracht hat, übersetzt die Worte ihres Häuptlings. Drei Eisenhämmer erbittet der Wilde im Tausch, ein Hanfsäckcken mit Nägeln, ein Fässchen Branntwein und eine Donnerbüchse.[NEWLINE][NEWLINE]Ihr müsst schmunzeln. Vielleicht könnt Ihr diesem fremden Land seine Schätze nehmen, ohne dafür mit dem Blut Eurer Männer zu zahlen.[NEWLINE][NEWLINE]</German>
 		<Russian>Некоторые туземцы подходят с улыбкой. Они раскрывают руки.[NEWLINE][NEWLINE]В полуденном солнечном свете серебряные амулеты, золотые кольца и украшенные драгоценными камнями тотемные маски, которые они вам предлагают, сияют.[NEWLINE][NEWLINE]Зверолов, проведший прошлую зиму с язычниками, переводит слова их вождя, который взамен хочет три железных молота, пеньковый мешок с гвоздями, бочку бренди и мушкетон.[NEWLINE][NEWLINE]Улыбка озаряет ваше лицо. Возможно, вы сможете забрать сокровища этой чужой земли, не заплатив за них кровью своих людей.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Néhány Indián mosolyogva közeledik. Kitárják a karjukat.[NEWLINE][NEWLINE]A déli napfényben megcsillannak az ezüst amulettek, az aranygyűrűk és a drágakövekkel díszített totemmaszkok, amelyeket kínálnak neked.[NEWLINE][NEWLINE]Egy prémvadász, aki a múlt telet a pogányoknál töltötte, fordítja a főnökük szavait, aki cserébe három vaskalapácsot, egy szögekkel teli kenderszsákot, egy hordó pálinkát és egy puskát kér.[NEWLINE][NEWLINE]Muszáj mosolyognod. Talán el tudod venni ennek az idegen földnek a kincseit anélkül, hogy az embereid vérével fizetnél érte[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT</Tag>
@@ -1009,14 +1025,16 @@
 		<French>Cinq peuples indigènes</French>
 		<German>Fünf Stämme getroffen</German>
 		<Russian>Пять туземных племён</Russian>
+		<Hungarian>Találkozás öt Indián törzzsel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_HEAD</Tag>
-		<English>There are other people here</English>
+		<English>Many people are already here</English>
 		<Portuguese>Há outras pessoas aqui</Portuguese>
 		<French>Vous avez rencontré cinq peuples indigènes</French>
 		<German>Dieses Land gehört uns nicht alleine</German>
 		<Russian>Здесь есть другие люди</Russian>
+		<Hungarian>Vannak itt mások is</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_CONTACT_TEXT</Tag>
@@ -1025,6 +1043,7 @@
 		<French>Un soupir vous échappe. La fumée des feux de camps vrille au loin dans le ciel. Vous rencontrez une tribu de ces sauvages qui tiennent ces terres fertiles et prétendent que leurs ancêtres les leur ont confiées.[NEWLINE][NEWLINE]Mais vous  faites la part des choses. Seul ceux capables de défendre ce droit le tiennent pour de bon.[NEWLINE][NEWLINE] Vous ordonnez à vos hommes de charger leur fusil et au prêtre de vous bénir.[NEWLINE][NEWLINE]</French>
 		<German>Ein Seufzen entschlüpft Eurer Brust. Wieder kräuselt in der Ferne der Rauch von Lagerfeuern in den Himmel. Wieder trefft Ihr auf einen Stamm dieser Wilden, die dieses fruchtbare Land in Beschlag nehmen und behaupten, ihre Ahnen hätten es ihnen vermacht.[NEWLINE][NEWLINE]Doch Ihr wisst es besser. Nur derjenige erhebt einen Anspruch zu Recht, der dieses Recht auch durchzusetzen vermag.[NEWLINE][NEWLINE]Ihr befehlt Euren Männern, ihre Gewehre zu laden, und dem Priester, Euch zu segnen.[NEWLINE][NEWLINE]</German>
 		<Russian>Вздох вырывается из твоей груди. Снова вдалеке вьется дым костров. Вы снова встречаете племя этих дикарей, которые захватывают эту плодородную землю и утверждают, что их предки завещали ее им.[NEWLINE][NEWLINE]Но вам-то лучше знать. Только тот, кто может реализовать это право, может требовать его.[NEWLINE][NEWLINE]Вы приказываете своим людям зарядить ружья, а священнику благословить вас.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Egy sóhaj hagyja el a szívedet. A távolban ismét tábortüzek füstje kanyarog az égbe. Ismét találkozol e vad törzzsekkel, akik elfoglalják ezt a termékeny földet azt állítva, hogy az őseik hagyták örökül nekik.[NEWLINE][NEWLINE]De te jobban tudod. Csak az tarthat igényt rá, aki érvényt szerezhet ennek a jognak.[NEWLINE][NEWLINE]Megparancsolod az embereidnek, hogy töltsék meg a puskáikat, a pap pedig áldjon meg téged.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT</Tag>
@@ -1033,6 +1052,7 @@
 		<French>Vingt peuples indigènes</French>
 		<German>Zwanzig Stämme getroffen</German>
 		<Russian>Двадцать туземных племён</Russian>
+		<Hungarian>Találkozás húsz Indián törzzsel</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_HEAD</Tag>
@@ -1041,6 +1061,7 @@
 		<French>Beaucoup de tribus indigènes</French>
 		<German>Indianische Vielfalt</German>
 		<Russian>Краснокожие, они повсюду</Russian>
+		<Hungarian>Sok Indián nemzet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_NATIVE_CONTACT_TEXT</Tag>
@@ -1049,6 +1070,7 @@
 		<French> Vous avez sur votre carte vingt tribus différentes. Combien y en a-t-il de plus encore?[NEWLINE][NEWLINE] Si vous imagniez cette terre inhabitée, vos éclaireurs vous ont démenti.[NEWLINE][NEWLINE] Qu'apportera le contact avec ces cultures? La guerre ou la paix? Du commerce? L'Église arrivera-t-elle à les débarrasser de leur superstition et à en faire de bons chrétiens, ou devrons nous les passer par l'épée?[NEWLINE][NEWLINE] Ce qui est sûr, c'est qu'une tâche de vaste ampleur vous attend....[NEWLINE][NEWLINE]</French>
 		<German>Zwanzig verschiedene Stämme habt Ihr nun bereits auf Eurer Landkarte verzeichnet. Wieviele werden wohl noch hinzukommen?[NEWLINE][NEWLINE]Wenn Ihr gedacht habt, dieses weite Land sei im Wesentlichen unbesiedelt, haben Euch Eure Scouts mittlerweile eines Besseren belehrt.[NEWLINE][NEWLINE]Was wird der Kontakt mit diesen unterschiedlichen Kulturen wohl bringen? Krieg oder Frieden? Handel? Wird die Kirche sie von ihrem Aberglauben befreien und sie mit der Bibel in der Hand zu guten Christenmenschen machen oder müsst Ihr dafür Euer Schwert einsetzen?[NEWLINE][NEWLINE]Es liegt noch viel Arbeit vor Euch, soviel ist jedenfalls sicher...[NEWLINE][NEWLINE]</German>
 		<Russian>На наших картах отмечено по меньшей мере двадцать индейских племён. Как вы думаете, сколько их еще может быть?[NEWLINE][NEWLINE]Если вы думали, что эта обширная земля практически необитаема, ваши разведчики доказали, что вы ошибались.[NEWLINE][NEWLINE]Что принесет знакомство с этими необычными культурами? Войну или мир? Возможности для торговли? Сможет ли Церковь избавить их от суеверий и сделать хорошими христианами с Библией в руках или нам придется использовать свой меч?[NEWLINE][NEWLINE]Один факт неоспорим - впереди еще много работы...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Már húsz különböző törzs van rajta a térképeden. Mit gondolsz, hányan lehetnek még?[NEWLINE][NEWLINE]Ha azt képzelted, hogy ez a hatalmas föld lényegében lakatlan, a felderítőid bebizonyították, hogy tévedtél.[NEWLINE][NEWLINE]Mit hoz majd a kapcsolatfelvétel ezekkel a különböző kultúrákkal? Háborút vagy békét? Kereskedelmet? Az Egyház megszabadítja őket a babonáiktól és jó keresztényekké teszi őket a Bibliával a kezükben, vagy a kardot kell majd használnod?[NEWLINE][NEWLINE]Még sok munka áll előtted, annyi biztos...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_TRADE</Tag>
@@ -1057,6 +1079,7 @@
 		<French>Premier échange commercial</French>
 		<German>Eurer erstes Handelsgeschäft</German>
 		<Russian>Ваш первый торговый договор</Russian>
+		<Hungarian>Az első kereskedelmi ügyleted</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_HEAD</Tag>
@@ -1065,6 +1088,7 @@
 		<French>Premier échange commercial</French>
 		<German>Der erste Handelskontrakt</German>
 		<Russian>Зарождение торговли</Russian>
+		<Hungarian>Az első kereskedelmi ügyleted</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_TRADE_TEXT</Tag>
@@ -1073,6 +1097,7 @@
 		<French>Le capitaine de votre navire sort une bourse en cuir gonflée de pièces d'or sur le comptoir de la maison de commerce.[NEWLINE][NEWLINE]Le marchand timoré ne sourcille pas, pour lui de telles transactions sont aussi monnaie courante qu'une tartine à la graisse d'oie pour le déjeuner.[NEWLINE][NEWLINE]Pour votre capitaine, c'est une autre paire de manches. L'or n'est certes plus un souci, mais il doit ramener cette précieuse marchandise.[NEWLINE][NEWLINE][NEWLINE][NEWLINE]Si le pavillon noir à la tête de mort apparaît à l'horizon, le voyage pourrait être en vain.[NEWLINE][NEWLINE]</French>
 		<German>Einen Lederbeutel, prall gefüllt mit Goldmünzen, legt Euer Schiffskapitän auf den Tresen des Kontors.[NEWLINE][NEWLINE]Der feiste Kaufmann zuckt mit keiner Wimper. Für ihn sind solche Geschäfte so alltäglich wie der Gänseschmalz auf seinem Mittagsbrot.[NEWLINE][NEWLINE]Für Euren Kapitän dagegen sind sie eine Last. Die Verantwortung für das Gold ist er los, doch nun gilt es, mit der kostbaren Fracht wieder unbeschadet heimzukommen.[NEWLINE][NEWLINE]Taucht eine Totenkopfflagge am Horizont auf, könnte die Reise vergeblich gewesen sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Капитан вашего корабля кладёт на прилавок торгового дома кожаный мешочек, набитый золотыми монетами.[NEWLINE][NEWLINE]Толстый торговец и глазом не моргнул. Для него такие сделки так же обыденны, как гусиный жир на бутерброде за обедом.[NEWLINE][NEWLINE]Однако для вашего капитана они в тягость. Он избавился от ответственности за золото, но теперь важно благополучно добраться до дома с драгоценным грузом.[NEWLINE][NEWLINE] И если на горизонте появится флаг с черепом и скрещенными костями, возможно, путешествие было напрасным.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A hajóskapitányod egy aranypénzektől duzzadó bőrzacskót tesz a kereskedőház pultjára.[NEWLINE][NEWLINE]A félénk kereskedőnek a szemöldöke sem rebben. Számára az ilyen ügyletek olyan hétköznapiak, mint a libazsír a szendvicsén.[NEWLINE][NEWLINE]A kapitányod számára viszont teher. Lehet, hogy az arany már nem az ő felelőssége, de most vissza kell vinnie az értékes rakományt.[NEWLINE][NEWLINE]Ha egy halálfejes zászló jelenik meg a horizonton, lehet, hogy hiába volt az út.[NEWLINE][NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE</Tag>
@@ -1081,6 +1106,7 @@
 		<French>1.000 biens échangés</French>
 		<German>1.000 Waren gehandelt</German>
 		<Russian>Продано 1000 товаров</Russian>
+		<Hungarian>1.000 áru eladva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_HEAD</Tag>
@@ -1089,6 +1115,7 @@
 		<French>Un millier d'échanges commerciaux</French>
 		<German>Tausend Waren gehandelt</German>
 		<Russian>Первые дивиденды</Russian>
+		<Hungarian>Ezer áru eladva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THOUSAND_TRADE_TEXT</Tag>
@@ -1097,6 +1124,7 @@
 		<French>Le brouhaha sur les bancs de l'église s'estompe. Le prêtre s'avance et commence à déclamer d'une voie forte portant sa ferveur le Notre Père.[NEWLINE][NEWLINE]Vous sorteez les mains des poches de votre manteau et les pliez pour la prière. La foule se met à murmurer. Le prêtre d'arrête. Ses yeux suivent les regards des citoyens. Ils sont rivés sur une gemme étincelante, sertie sur un anneau doré. Votre main le montre sans l'exposer aux fidèle.[NEWLINE][NEWLINE]Le prêtre secoue la tête en réprobation.[NEWLINE][NEWLINE]Vous souriez doucement en retour, car vous ne faites que révéler la richesse que vos talents de commerçant vous a apportée.[NEWLINE][NEWLINE]</French>
 		<German>Das Tuscheln auf den Kirchenbänken verstummt. Der Prediger schreitet nach vorne und beginnt mit fester und frommer Stimme das Vaterunser.[NEWLINE][NEWLINE]Ihr zieht Eure Hände aus den Westentasche und faltet sie zum Gebet.[NEWLINE][NEWLINE]Ein Raunen geht durch die Menge. Der Prediger stutzt und folgt mit den Augen den Blicken der Bürger. Sie kleben an einem funkelnden Edelstein, groß wie ein Augapfel. Ein goldener Ring fasst ihn ein, Eure zum Gebet erhobene Hand zeigt ihn beiläufig den Gläubigen.[NEWLINE][NEWLINE]Der Prediger schüttelt missbilligend sein Haupt.[NEWLINE][NEWLINE]Ihr lächelt gelassen zurück, im Wissen, nur den Wohlstand zu offenbaren, den Euer Handelsgeschick Euch eingetragen hat.[NEWLINE][NEWLINE]</German>
 		<Russian>Шепот на скамьях стихает. Проповедник выходит вперед и начинает молитву «Отче наш» твердым и благочестивым голосом.[NEWLINE][NEWLINE]Вы вытаскиваете руки из карманов жилета и складываете их в молитве.[NEWLINE][NEWLINE]По толпе проносится ропот. Проповедник замолкает и переводит свой взгляд туда, куда обращёны взоры всех прихожан. Они устремлены к большому сверкающему самоцвету, заключённому в золотое кольцо. Поднятая в молитве рука небрежно показывает его верующим.[NEWLINE][NEWLINE]Священник неодобрительно качает головой. [NEWLINE][NEWLINE]Вы безмятежно улыбаетесь в ответ, зная, что это лишь малая часть того, что принесли вам ваши торговые навыки.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A suttogás a padsorokban elhallgat. A prédikátor előre lép, és határozott, jámbor hangon elkezdi a Miatyánkot.[NEWLINE][NEWLINE]Kihúzza a kezét a mellényzsebéből, és imára kulcsolja.[NEWLINE][NEWLINE]Zúgás fut végig a tömegen. A prédikátor szünetet tart. Tekintete követi a polgárok tekintetét és egy aranygyűrűvel körülvett, csillogó drágakövön állapodik meg. Imára emelt kezed lazán megmutatod a híveknek.[NEWLINE][NEWLINE]A prédikátor rosszallóan megrázza a fejét.[NEWLINE][NEWLINE]Nyugodtan visszamosolyogsz, tudva, hogy ezzel csak a gazdagságot mutatod meg, amit a kereskedői képességeid szereztek neked.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE</Tag>
@@ -1105,6 +1133,7 @@
 		<French>3.000 biens échangés</French>
 		<German>3.000 Waren gehandelt</German>
 		<Russian>Продано 3000 товаров</Russian>
+		<Hungarian>3.000 áru eladva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_HEAD</Tag>
@@ -1113,6 +1142,7 @@
 		<French>Trois mille échanges commerciaux</French>
 		<German>Dreitausend Waren gehandelt</German>
 		<Russian>Скучать совсем некогда</Russian>
+		<Hungarian>Háromezer áru eladva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TENTHOUSAND_TRADE_TEXT</Tag>
@@ -1121,6 +1151,7 @@
 		<French>« [COLOR_SELECTED_TEXT]Encore ?[COLOR_REVERT] » Le vieil homme hausse ses sourcils broussailleux «[COLOR_SELECTED_TEXT] N'étiez-vous pas ici le mois dernier ?[COLOR_REVERT] »[NEWLINE][NEWLINE]Votre secrétaire approuve de la tête. «[COLOR_SELECTED_TEXT] Et vous en avez encore besoin d'un de plus ?[COLOR_REVERT] » demande le boutiquier «[COLOR_SELECTED_TEXT] Qu'est-il arrivé au livre de compte que je vous ai vendu ?[COLOR_REVERT] »[NEWLINE][NEWLINE]Votre secrétaire sourit. «[COLOR_SELECTED_TEXT]Notre maître l'a déjà rempli. Les affaires du gouverneur marchent très bien.[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Schon wieder?[COLOR_REVERT]" Der alte Mann hebt seine buschigen Brauen. "[COLOR_SELECTED_TEXT]Wart Ihr nicht vergangenen Monat das letzte Mal hier?[COLOR_REVERT]"[NEWLINE][NEWLINE]Euer Sekretär nickt gelassen. "[COLOR_SELECTED_TEXT]Und jetzt braucht Ihr erneut eines?[COLOR_REVERT]", fragt der Ladenbesitzer. "[COLOR_SELECTED_TEXT]Was ist mit dem Kontobuch geschehen, das ich Euch verkauft hatte?[COLOR_REVERT]"[NEWLINE][NEWLINE]Euer Sekretär lächelt. "[COLOR_SELECTED_TEXT]Mein Herr hat es vollgeschrieben. Die Geschäfte des Gouverneurs gehen gut.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Опять вы?[COLOR_REVERT]" Старик поднимает кустистые брови. "[COLOR_SELECTED_TEXT]Разве не вы были здесь в прошлом месяце?[COLOR_REVERT]"[NEWLINE][NEWLINE]Ваш секретарь спокойно кивает. "[COLOR_SELECTED_TEXT]И сейчас она опять нужна вам?[COLOR_REVERT]" — удивлённо спрашивает продавец. "[COLOR_SELECTED_TEXT]А что случилось с предыдущей бухгалтерской книгой, которую я вам продал?[COLOR_REVERT]"[NEWLINE][NEWLINE]Ваш секретарь улыбается. "[COLOR_SELECTED_TEXT]Она закончилась. Дела губернатора идут хорошо.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Már megint?[COLOR_REVERT]" Az öregember felvonja bozontos szemöldökét. "[COLOR_SELECTED_TEXT]Nem voltál itt a múlt hónapban is?[COLOR_REVERT]"[NEWLINE][NEWLINE]A titkárnőd nyugodtan bólogat. "[COLOR_SELECTED_TEXT]És most megint kell egy?[COLOR_REVERT]" - kérdezi a boltos. "[COLOR_SELECTED_TEXT]Mi történt a számlakönyvvel, amit eladtam neked?"[COLOR_REVERT]"[NEWLINE][NEWLINE]A titkárnőd elmosolyodik. "[COLOR_SELECTED_TEXT]A gazdám teleírta. A kormányzó üzletei jól mennek.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE</Tag>
@@ -1129,6 +1160,7 @@
 		<French>Dix mille échanges commerciaux</French>
 		<German>10.000 Waren gehandelt</German>
 		<Russian>Продано 10'000 товаров</Russian>
+		<Hungarian>10.000 áru eladva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_HEAD</Tag>
@@ -1137,6 +1169,7 @@
 		<French>Dix mille biens échangés</French>
 		<German>Zehntausend Waren gehandelt</German>
 		<Russian>Дел невпроворот</Russian>
+		<Hungarian>Tízezer áru eladva</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDREDTHOUSAND_TRADE_TEXT</Tag>
@@ -1145,6 +1178,7 @@
 		<French>Le carrosse de six cheveux, construit dans l'acajou le plus fin, avance au pas dans le boulevard très fréquenté vers le palais du gouvernement. Une jeune vendeuse hèle un des soldats de la garnison chevauchant à côté du carrosse.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] Qui a donc tant d'importance[COLOR_REVERT] » lui demande-t-elle «[COLOR_SELECTED_TEXT] Pour que Monsieur le gouverneur envoie son carrosse privé le chercher au port ? [COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] C'est un marchand d'Europe » répond le soldat «[COLOR_SELECTED_TEXT]Il tient à faire affaire avec le gouverneur [COLOR_REVERT] » Il se baisse en restant sur sa selle et murmure en confidence «[COLOR_SELECTED_TEXT]Ce Jakob Fugger est l'un des hommes les plus riche au monde. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] Il peut bien l'être » rétorque la magasinière en souriant, «[COLOR_SELECTED_TEXT]Mais il n'est sans doute au plus que le deuxième homme le plus riche au monde. »[NEWLINE][NEWLINE]</French>
 		<German>Sechsspännig ist die Kutsche aus edelstem Mahagoni, die im Schritttempo den belebten Boulevard zum Regierungspalast hinaufrollt. Ein junges Marktweib wendet sich voller Neugierde an einen der Garnisonssoldaten, der hoch zu Ross das Gefährt begleitet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wer ist denn so bedeutsam[COLOR_REVERT]", fragt sie ihn, "[COLOR_SELECTED_TEXT]dass der Hohe Herr seine private Kutsche schickt, ihn vom Hafen abzuholen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Es ist ein Kaufmann aus Europa[COLOR_REVERT]", ruft der Soldat zurück, "[COLOR_SELECTED_TEXT]er will mit dem Gouverneur Geschäfte machen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er beugt sich herab vom Sattel und raunt vertraulich "[COLOR_SELECTED_TEXT]Dieser Jakob Fugger soll einer der reichsten Männer der Welt sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Er könnte[COLOR_REVERT]", gibt die Marketenderin lächelnd zurück, "[COLOR_SELECTED_TEXT]aber er wird wohl höchstens der zweitreichste der Welt sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Коляска из лучшего красного дерева, запряжённая шестёркой прекрасных лошадей, неспешно едет по оживленному бульвару к правительственному дворцу. Преисполненная любопытства, молодая торговка окликает одного из солдат гарнизона, сопровождающего повозку верхом.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что за важная персона,[COLOR_REVERT] – спрашивает она – [COLOR_SELECTED_TEXT]что наш Губернатор посылает свою личную карету, чтобы забрать его из гавани?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это торговец из Европы.[COLOR_REVERT]" - отвечает солдат. "[COLOR_SELECTED_TEXT]Он хочет вести дела с Губернатором.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он наклоняется и доверительно шепчет: "[COLOR_SELECTED_TEXT]Этот Джейкоб Фуггер считается одним из самых богатых людей в мире.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Может быть,[COLOR_REVERT]" – с улыбкой говорит соседний торговец – [COLOR_SELECTED_TEXT]но, скорее всего, скоро он станет всего лишь вторым в этом списке.[COLOR_REVERT]"[NEWLINE] [NEWLINE]</Russian>
+		<Hungarian>A hatlovas hintó, amelyet a legfinomabb mahagóniból készítettek, sétatempóban halad a forgalmas körúton a kormányzói palota felé. Egy fiatal kereskedőnő kíváncsian szólítja meg a kocsin utazó egyik helyőrségi katonát.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ki ilyen fontos,[COLOR_REVERT]", kérdezi tőle, "[COLOR_SELECTED_TEXT]hogy a Nagyúr a magánhintóját küldi érte a kikötőbe?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Egy kereskedő Európából,[COLOR_REVERT]" - szól vissza a katona. "[COLOR_SELECTED_TEXT]Üzletet akar kötni a kormányzóval."[COLOR_REVERT]"[NEWLINE][NEWLINE]Lehajol a nyeregből, és bizalmasan mormogja: "[COLOR_SELECTED_TEXT]Ez a Jakob Fugger állítólag a világ egyik leggazdagabb embere. [COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lehet,[COLOR_REVERT]" - viszonozza mosolyogva a kereskedőnő, "[COLOR_SELECTED_TEXT]de valószínűleg csak a második leggazdagabb a világon.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY</Tag>
@@ -1153,6 +1187,7 @@
 		<French>Votre première victoire</French>
 		<German>Euer erstes gewonnenes Gefecht</German>
 		<Russian>Ваша первая военная победа</Russian>
+		<Hungarian>Az első katonai győzelmed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY_HEAD</Tag>
@@ -1161,6 +1196,7 @@
 		<French>Une vie contre une autre</French>
 		<German>Ein Leben gegen das andere</German>
 		<Russian>Вкус битвы</Russian>
+		<Hungarian>Lőporfüst</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_VICTORY_TEXT</Tag>
@@ -1169,6 +1205,7 @@
 		<French>Une rafale de vent passe tel un soupir du paradis. La fumée des fusils se dissippe.[NEWLINE][NEWLINE]Vous avez une vue claire de la déconfiture de l'ennemi, qui fait votre propre bonheur. La première bataille est gagnée.[NEWLINE][NEWLINE]Vous retirez votre chapeau à large bord et baissez la tête en remerciement.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Notre Père[COLOR_REVERT] » dites-vous, «[COLOR_SELECTED_TEXT]Notre Père qui est aux cieux, que Ton Nom soit sanctifié...[COLOR_REVERT] »{NEWLINE][NEWLINE]</French>
 		<German>Ein Windstoß fährt heran, so plötzlich, als habe jemand im Himmel einen Seufzer getan. Der Pulverrauch verfliegt.[NEWLINE][NEWLINE]Ihr habt nun freie Sicht auf das Unglück des Feindes, dass Euer Glück ist. Das erste Gefecht ist gewonnen![NEWLINE][NEWLINE]Ihr nehmt Euren breitkrempigen Hut ab und senkt dankbar das Haupt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vater unser[COLOR_REVERT]", sprecht Ihr, "[COLOR_SELECTED_TEXT]Vater unser im Himmel, geheiligt werde dein Name ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Внезапный порыв ветра освежил разгоряченное боем лицо. Дым от мушкетных выстрелов постепенно рассеивается.[NEWLINE][NEWLINE]Теперь вы ясно видите плачевную ситуацию врага, которая является вашей собственной удачей. Первое сражение на просторах Нового Света выиграно![NEWLINE][NEWLINE]Вы снимаете широкополую шляпу и благодарно склоняете голову.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Отче наш,[COLOR_REVERT]" - шепчите вы - "[COLOR_SELECTED_TEXT]Отец наш на Небесах, да святится имя Твое...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Egy széllökés támadt, olyan váratlanul, mintha valaki az égben felsóhajtott volna. A lőporfüst elillant.[NEWLINE][NEWLINE]Most már tisztán látod az ellenség balsorsát, ami a te szerencséd. Az első csatát megnyerted![NEWLINE][NEWLINE]Leveszed széles karimájú kalapodat, és hálából fejet hajtasz.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mi Atyánk,[COLOR_REVERT]" - mondod, "[COLOR_SELECTED_TEXT]Mi Atyánk, ki vagy a Mennyekben, szenteltessék meg a Te neved...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_VICTORY</Tag>
@@ -1177,6 +1214,7 @@
 		<French>Votre dixième victoire militaire</French>
 		<German>Euer zehntes gewonnenes Gefecht</German>
 		<Russian>Ваша десятая военная победа</Russian>
+		<Hungarian>A tizedik katonai győzelmed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_HEAD</Tag>
@@ -1185,6 +1223,7 @@
 		<French>Dix victoires</French>
 		<German>Zehn siegreiche Gefechte</German>
 		<Russian>Дым сражений</Russian>
+		<Hungarian>Tíz győzelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_VICTORY_TEXT</Tag>
@@ -1193,6 +1232,7 @@
 		<French>Le messager, sale et en sueur, descend sans grâce de son cheval. Les gardes l'interceptent alors qu'il trébuche.«[COLOR_SELECTED_TEXT]Où est le gouverneur ? [COLOR_REVERT] », demande le messager en sueur, «[COLOR_SELECTED_TEXT]J'ai un courrier de ses officiers. [COLOR_REVERT] ».[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je vous amène à lui.[COLOR_REVERT] » répondit le sergent de la garde du palais, un viel homme sec à la barbe grise.[NEWLINE][NEWLINE]Il ne peut s'empêcher de poser la question : «[COLOR_SELECTED_TEXT]Dites-moi...Nous avons gagné la bataille ? [COLOR_REVERT] ». Le messager sourit, «[COLOR_SELECTED_TEXT]Serais-je ici autrement ? [COLOR_REVERT] »[NEWLINE][NEWLINE]Le soleil de midi illumine son visage.[NEWLINE][NEWLINE]</French>
 		<German>Staubig und verschwitzt ist der Bote. Er springt vom Pferd, stolpert, die Wachen können ihn gerade noch stützen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wo ist der Gouverneur?[COLOR_REVERT]" keucht der junge Mann. "[COLOR_SELECTED_TEXT]Ich habe eine Botschaft von seinen Offizieren.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich bringe dich zu ihm[COLOR_REVERT]", sagt der Feldwebel der Palastwache, ein graubärtiger, sehniger Alter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sag mir,[COLOR_REVERT]" spricht er bereits im Gehen, "[COLOR_SELECTED_TEXT]haben wir die Schlacht gewonnen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Bote schmunzelt. "[COLOR_SELECTED_TEXT]Wäre ich sonst hier?[COLOR_REVERT]"[NEWLINE][NEWLINE]Die Mittagssonne lacht ihn an.[NEWLINE][NEWLINE]</German>
 		<Russian>Гонец, запыленный и уставший, неуклюже соскальзывает с лошади. Охранники еле успевают подхватить его, когда он спотыкается.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Где губернатор?[COLOR_REVERT]" - выдыхает молодой человек. "[COLOR_SELECTED_TEXT]У меня сообщение от его офицеров.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я отведу вас к нему.[COLOR_REVERT]" – говорит сержант стражи, седобородый, мускулистый старик.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Скажите мне,[COLOR_REVERT] – говорит он на ходу – [COLOR_SELECTED_TEXT]мы выиграли битву?[COLOR_REVERT]"[NEWLINE][NEWLINE]Гонец усмехается. "[COLOR_SELECTED_TEXT]Иначе ты бы меня здесь не увидел.[COLOR_REVERT]"[NEWLINE][NEWLINE]Полуденное солнце ласково улыбалось победителям недавнего сражения.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A küldönc porosan és izzadtan, ügyetlenül csúszott le a lováról. Az őrök elkapták, mikor megtántorodott.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hol van a kormányzó?"[COLOR_REVERT]" - zihált a fiatalember. "[COLOR_SELECTED_TEXT]Üzenetet hoztam a tisztjeitől.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Elviszlek hozzá,[COLOR_REVERT]" - mondta a kormányzói palotaőrség őrmestere, egy ősz szakállú, inas öregember. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mondd csak,[COLOR_REVERT]" - szólalt meg menet közben beszélve - "[COLOR_SELECTED_TEXT]megnyertük a csatát?"[COLOR_REVERT][NEWLINE][NEWLINE]A hírnök elmosolyodott. "[COLOR_SELECTED_TEXT]Máskülönben itt lennék?"[COLOR_REVERT][NEWLINE][NEWLINE]A déli nap rámosolygott arcára.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY</Tag>
@@ -1201,6 +1241,7 @@
 		<French>Votre quarantième victoire militaire</French>
 		<German>Euer vierzigstes gewonnenes Gefecht</German>
 		<Russian>Ваша сороковая военная победа</Russian>
+		<Hungarian>A negyvenedik katonai győzelmed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_HEAD</Tag>
@@ -1209,6 +1250,7 @@
 		<French>Rouge sang</French>
 		<German>Blutrot</German>
 		<Russian>Кроваво красный рассвет</Russian>
+		<Hungarian>Vérvörös</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FORTY_VICTORY_TEXT</Tag>
@@ -1217,6 +1259,7 @@
 		<French>Le soleil cramoisit sur l'horizon, colorant la prairie du couchant en rouge. En silence, votre cavalerie chevauche à tarvers la pleine.[NEWLINE][NEWLINE]Vos hommes sont insensible à la beauté du pausage. Ils calculent dans une colère froide leur chevauchée du lendemain dès l'aube vers la ville ennemie.[NEWLINE][NEWLINE]Sans remparts, loin du champ de btaille, elle se pensait à l'abri des horreurs lointaines de la guerre.[NEWLINE][NEWLINE] Mais votre cavalerie sème la mort aux qautre coins du Nouveau Monde - dont la beauté et les richesses ne doivent appartenir qu'à un seul maître ... vous.[NEWLINE][NEWLINE]</French>
 		<German>Die Sonne verglüht am Horizont, ihr sterbendes Licht entflammt die Steppe. Schweigend reitet Euer Kavallerietrupp durch die Ebene.[NEWLINE][NEWLINE]Die Männer haben kein Auge für den Liebreiz der Landschaft. Sie denken bereits voller kaltem Grimm an den nächsten Morgen, in dessen Dämmerlicht sie in die Stadt des Feindes einreiten werden.[NEWLINE][NEWLINE]Durch keine Wälle geschützt, liegt sie im Hinterland und glaubt sich sicher vor den weit entfernten Schrecken des Krieges.[NEWLINE][NEWLINE]Doch mit Eurer Kavallerie entsendet Ihr den Tod in alle Winkel der Neuen Welt - deren Schönheit und Reichtum nur einem Herren gehören sollte ... Euch.[NEWLINE][NEWLINE]</German>
 		<Russian>Солнце догорает на горизонте, окрашивая закатную прерию в алый цвет. Ваши конные отряды неспешно едут по степной дороге.[NEWLINE][NEWLINE]Но мужчины не замечают красоту пейзажей. Они уже с холодной яростью думают о грядущем рассвете, в лучах которого ворвутся во вражеский город.[NEWLINE][NEWLINE]Незащищенный крепостными стенами, он расположен в глубине страны, считая себя в безопасности от ужасов войны.[NEWLINE][NEWLINE]Но со своей конницей вы рассылаете смерть во все уголки Нового Света, красота и богатство которого должны принадлежать только одному господину... Вам.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A nap a távoli horizonton izzik, vörösre festve a prérit a naplementében. Csendben üget a lovasságod a síkságon.[NEWLINE][NEWLINE]Az embereid nem vesznek tudomást a táj szépségéről. Hideg dühvel gondolnak már a közelgő hajnalra, amikor az ellenséges város ellen fognak vágtázni.[NEWLINE][NEWLINE]Bástyák védelme nélkül, távol a csatatéren, biztonságban gondolja magát a háború távoli borzalmaitól az ember.[NEWLINE][NEWLINE]De lovasságoddal a halált küldöd az Újvilág minden szegletébe - amelynek szépsége és gazdagsága csak egyetlen úré lehet ... a tiéd.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY</Tag>
@@ -1225,6 +1268,7 @@
 		<French>Votre soixante-dizième victoire militaire</French>
 		<German>Euer siebzigstes gewonnenes Gefecht</German>
 		<Russian>Ваша семидесятая военная победа</Russian>
+		<Hungarian>A hetvenedik katonai győzelmed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_HEAD</Tag>
@@ -1233,6 +1277,7 @@
 		<French>Jouant aux héros</French>
 		<German>Den Helden spielen</German>
 		<Russian>Игра в героев</Russian>
+		<Hungarian>Hőst játszani</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVENTY_VICTORY_TEXT</Tag>
@@ -1241,6 +1286,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Qu'a-t-il d'honorable à cela ?[COLOR_REVERT] » dem [NEWLINE][NEWLINE] chuchote le jeune soldat dégouté au vétéran à ses côtés. «[COLOR_SELECTED_TEXT]Embusquer le train de bagages ennemi et massacrer l'escorte - ce n'est jamais ce dont j'avais rêvé quand je me suis enrôlé. [COLOR_REVERT] »[NEWLINE][NEWLINE] l'homme à la barbe demi-sel le fixe du regard, sans une once d'humour. «[COLOR_SELECTED_TEXT]Si l'ennemi tombe à court de vivres et de munitions, cela sauvera la vie à bien des nôtres - et sans doute la tienne, bleusaille. Si tu veux jouer aux héros, retourne à la maison et à tes soldats de plomb. [COLOR_REVERT] »[NEWLINE][NEWLINE]  </French>
 		<German>"[COLOR_SELECTED_TEXT]Was soll denn daran ehrenhaft sein?[COLOR_REVERT]", raunt der junge Soldat angewidert dem Veteranen an seiner Seite zu. "[COLOR_SELECTED_TEXT]Den Tross des Feindes aus dem Hinterhalt zu überfallen und dessen wehrlose Eskorte abzuschlachten - von solchen Heldentaten hatte ich nicht geträumt, als ich mich freiwillig zu den Waffen meldete.[COLOR_REVERT]"[NEWLINE][NEWLINE]Grimmig mustert ihn der Graubart. "[COLOR_SELECTED_TEXT]Wenn dem Feind Proviant und Munition ausgehen, dann wird das so manchem in unseren Reihen das Leben retten - vielleicht auch dir, Bürschchen. Wenn du lieber den Helden spielen willst, dann geh nach Hause und misch dich unter deine Zinnsoldaten.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Что в этом почетного?[COLOR_REVERT]" — с отвращением бормочет молодой солдат ветерану рядом с ним."[COLOR_SELECTED_TEXT]Устроить засаду на вражеские фургоны и перебить их слабовооружённый эскорт - о таких подвигах я и не мечтал, когда добровольцем брался за оружие.[COLOR_REVERT]"[NEWLINE][NEWLINE]Седобородый мрачно смотрит на него в ответ. "[COLOR_SELECTED_TEXT]Если у врага закончатся провизия и боеприпасы, это спасет жизни многим людям в наших рядах - возможно, тебе тоже, приятель. Ну а если ты хочешь быть героем, то иди домой и играй со своими оловянными солдатиками.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mi ebben a becsületes?"[COLOR_REVERT] - mormogja undorodva a fiatal katona az oldalán álló veteránnak. "[COLOR_SELECTED_TEXT]Az ellenség szekerein lesből rajtaütni, és lemészárolni védtelen kíséretüket - ilyen hőstettekről nem is álmodtam, amikor önként jelentkeztem a harcra.[COLOR_REVERT]"[NEWLINE][NEWLINE]Az őszszakállú komoran néz vissza rá. "[COLOR_SELECTED_TEXT]Ha az ellenségnek elfogy az élelme és a lőszere, az sok ember életét megmenti a sorainkban - talán a tiédet is, legényke. Ha hősködni akarsz, menj haza, és játssz a bádogkatonáiddal![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY</Tag>
@@ -1249,6 +1295,7 @@
 		<French>Centième victoire militaire</French>
 		<German>Euer hundertstes gewonnenes Gefecht</German>
 		<Russian>Ваша сотая военная победа</Russian>
+		<Hungarian>A századik katonai győzelmed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_HEAD</Tag>
@@ -1257,6 +1304,7 @@
 		<French>Centième victoire militaire</French>
 		<German>Im Schatten des Krieges</German>
 		<Russian>Тени войны</Russian>
+		<Hungarian>A háború árnyéka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDRED_VICTORY_TEXT</Tag>
@@ -1267,6 +1315,7 @@
 		<Italian>You have won your hundredth military victory.[NEWLINE][NEWLINE]</Italian>
 		<Spanish>You have won your hundredth military victory.[NEWLINE][NEWLINE]</Spanish>
 		<Russian>Зимой солнце рано погружается в свою могилу и луна долгое время стоит на страже пустынного небосвода.[NEWLINE][NEWLINE]Солдат устало взбирается на холм позади фермы своих родителей.[NEWLINE][NEWLINE]Командир батальона отпустил его домой. На морозе снег скрипит под его ногами и он чувствует озноб, когда достигает гребня.[NEWLINE][NEWLINE]Там стоит одинокий каменный крест. Солдат снимает с плеча винтовку и мгновение стоит неподвижно и безмолвно, как вечерняя звезда.[NEWLINE][NEWLINE]Спустя вечность он сглатывает и шепчет: "[COLOR_SELECTED_TEXT]Ты вернулся домой с войны раньше меня, брат.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Korán van, amikor a téli nap ismét sírjába süllyed, és a hold őrködik a kihalt égbolt felett.[NEWLINE][NEWLINE]Fáradtan mászik fel a katona a szülei tanyája mögötti dombra.[NEWLINE][NEWLINE]Zászlóaljparancsnoka engedélyezte a hazautazást. A férfi léptei ropognak a hóban, és fázik, amikor felér a hegytetőre.[NEWLINE][NEWLINE]Ott áll egy magányos kőkereszt. A katona lecsatolja a puskáját, és egy pillanatra megáll, mozdulatlanul és némán, mint az esthajnalcsillag.[NEWLINE][NEWLINE]Egy örökkévalóság után nyel egyet, és azt suttogja: "[COLOR_SELECTED_TEXT]Előttem jöttél haza a háborúból, testvér.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY</Tag>
@@ -1275,6 +1324,7 @@
 		<French>Your tenth military victory at sea</French>
 		<German>Euer zehntes gewonnenes Seegefecht</German>
 		<Russian>Ваше десятое победоносное морское сражение</Russian>
+		<Hungarian>A tizedik katonai győzelmed a tengeren</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY_HEAD</Tag>
@@ -1283,6 +1333,7 @@
 		<French>Your tenth military victory at sea</French>
 		<German>Zehn siegreiche Seegefechte</German>
 		<Russian>Солёный вкус победы</Russian>
+		<Hungarian>Tíz győzedelmes tengeri akció</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_SEAVICTORY_TEXT</Tag>
@@ -1291,6 +1342,7 @@
 		<French>Les sabords sont défoncés, les voiles déchirées, et des hommes sont tombés. Le prix de la victoire fut une fois de plus bien trop élevé, songea le capitaine.[NEWLINE][NEWLINE] Et pourtant la victoire est bien plus douce que l'échec. Le navire capturé plaira à l'Amiral, et les dommages seront bien vite réparés au chantier naval.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Double ration de rhum pour tout le monde! [COLOR_REVERT] » lance-t-il au bosco à travers le pont.[NEWLINE][NEWLINE] Les hommes exultent? Qu'il est facile de plaire à ces braves gars, pense le capitaine en se retirant dans sa cabine.[NEWLINE][NEWLINE]</French>
 		<German>Holz ist zersplittert, Segel wurden zerfetzt, Männer sind gefallen. Der Preis für den Sieg war wieder einmal viel zu hoch, denkt sich der Captain.[NEWLINE][NEWLINE]Und doch schmeckt der Erfolg wahrlich besser als der Misserfolg. Die eroberte Prise wird dem Admiral gut gefallen und die Schäden können in der Werft leicht behoben werden.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine Extraration Rum für die Männer![COLOR_REVERT]" brüllt er dem Bootsmann über das Deck entgegen.[NEWLINE][NEWLINE]Die Männer jubeln. Wie leicht diese armen Teufel doch zufrieden zu stellen sind, denkt der Captain und verschwindet in seiner Kabine.[NEWLINE][NEWLINE]</German>
 		<Russian>Планширы расколоты, паруса разорваны в клочья, погибли люди. Цена победы снова оказалась слишком высока, думает про себя капитан.[NEWLINE][NEWLINE]И все же успех действительно вкуснее поражения. Захваченный корабль понравится адмиралу, а повреждения можно будет устранить на верфи по возвращении в порт.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Дополнительная порция рома для всей команды![COLOR_REVERT]" - командует он боцману.[NEWLINE][NEWLINE]Матроссы встречают это распоряжение радостными возгласами. Как легко угодить этим бедолагам, думает капитан и исчезает в своей каюте.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az ágyúszárak széttöredeztek, a vitorlák darabokra szakadtak, emberek estek el. A győzelem ára ismét túl magas volt, gondolja magában a kapitány.[NEWLINE][NEWLINE]Pedig a siker valóban jobb ízű, mint a kudarc. Az elfogott hajó tetszeni fog az admirálisnak, a károkat pedig könnyen kijavíthatják a hajógyárban.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Egy extra adag rumot az embereknek![COLOR_REVERT]" - kiáltja a fedélzeten keresztül a hajómesternek.[NEWLINE][NEWLINE]Az emberek ujjonganak. Milyen könnyű ezeknek a szegény ördögöknek a kedvében járni, gondolja a kapitány, és eltűnik a kabinjában.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRTY_SEAVICTORY</Tag>
@@ -1299,6 +1351,7 @@
 		<French>Votre trentième victoire navale</French>
 		<German>Euer dreißigstes gewonnenes Seegefecht</German>
 		<Russian>Ваше тридцатое победоносное морское сражение</Russian>
+		<Hungarian>A harmincadik katonai győzelmed a tengeren</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRTY_SEAVICTORY_HEAD</Tag>
