@@ -1360,6 +1360,7 @@
 		<French>Trente victoires en mer</French>
 		<German>Dreißig siegreiche Seegefechte</German>
 		<Russian>Цена побед</Russian>
+		<Hungarian>Harminc tengeri győzelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRTY_SEAVICTORY_TEXT</Tag>
@@ -1368,6 +1369,7 @@
 		<French> Les nouvelles épaulettes brillent sous le soleil. Content de lui même, le capitaine regarde la petite escadrille qu'il commande.[NEWLINE][NEWLINE]Les hauts-gradé de l'amirauté ont été généreux. Après tout, en mer il a provoqué la crainte de Dieu au sein de l'ennemi.[NEWLINE][NEWLINE] Mais cela en valait-il le coût? Sous ses ordres, tant de marins, tant de soldats, ont déjà péri. Et avec la guerre à l'horizon, ils y aurait encore plus de victimes.[NEWLINE][NEWLINE]Rien n'est jamais gratuit.[NEWLINE][NEWLINE] Même la mort d'un autre, si elle vient au prix de sa propre vie, pense le capitaine alors qu'il invite ses officiers à diner pour célébrer leur dernière victoire.</French>
 		<German>Die neue Epaulette auf der Schulter glänzt im Sonnenlicht. Selbstzufrieden blickt der Captain über sein kleines Geschwader, das er nunmehr kommandiert.[NEWLINE][NEWLINE]Die Herren Admiräle waren großzügig. Aber schließlich war er es ja auch, der die Gegner auf See das Fürchten gelehrt hat.[NEWLINE][NEWLINE]Aber war es das wert? Zuviele Matrosen und Seesoldaten sind unter seinem Kommando schon gefallen. Und bei dem heraufziehenden Kampf dürften es sogar noch mehr werden.[NEWLINE][NEWLINE]Aber was soll's. Schließlich gibt es nichts umsonst.[NEWLINE][NEWLINE]Nicht einmal den Tod, denn der kostet das Leben, denkt sich der Captain und lädt seine Offiziere zum Dinner, um den neuesten Sieg gebührend zu feiern.[NEWLINE][NEWLINE]</German>
 		<Russian>Новый эполет ярко блестит на солнце. Довольный собой, капитан смотрит на небольшую эскадру, которой он теперь командует.[NEWLINE][NEWLINE]Лорды адмиралтейства наконец-то расщедрились. И это была заслуженная награда, ведь именно он вселял в сердца вражеских капитанов смертельный ужас.[NEWLINE][NEWLINE]Но стоило ли оно того? Слишком много морских пехотинцев и простых моряков уже погибло под его командованием. А в приближающейся войне их, вероятно, будет еще больше.[NEWLINE][NEWLINE]Да какого черта. Ведь бесплатно никогда ничего не бывает. [NEWLINE][NEWLINE]Даже смерть стоит собственной жизни, думает про себя капитан, приглашая своих офицеров на обед, чтобы отпраздновать их последнюю победу.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az új váll lap csillog a napfényben. A kapitány önelégülten néz végig a kis hajórajon, amelynek most ő parancsol.[NEWLINE][NEWLINE]Az admiralitás urai nagylelkűek voltak. De végül is a tengeren mégiscsak istenfélelmet keltett az ellenségben.[NEWLINE][NEWLINE]Megérte? Az ő parancsnoksága alatt már túl sok tengerész és tengerészgyalogos esett el. És a háború közeledtével valószínűleg még többen lesznek.[NEWLINE][NEWLINE]De a fenébe is. Elvégre semmi sincs ingyen.[NEWLINE][NEWLINE]Még a halál sem, mert az a saját életébe kerül, gondolja magában a kapitány, miközben vacsorára hívja a tisztjeit, hogy megünnepeljék a legutóbbi győzelmüket.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTY_SEAVICTORY</Tag>
@@ -1376,6 +1378,7 @@
 		<French>Votre cinquantième victoire militaire en mer</French>
 		<German>Euer fünfzigstes gewonnenes Seegefecht</German>
 		<Russian>Ваше пятидесятое победоносное морское сражение</Russian>
+		<Hungarian>Az ötvenedik katonai győzelmed a tengeren</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTY_SEAVICTORY_HEAD</Tag>
@@ -1384,6 +1387,7 @@
 		<French>Votre cinquantième victoire militaire en mer</French>
 		<German>Fünfzig siegreiche Seegefechte</German>
 		<Russian>Властелин морей</Russian>
+		<Hungarian>Ötven győzelem a tengeren</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTY_SEAVICTORY_TEXT</Tag>
@@ -1392,6 +1396,7 @@
 		<French>Quelle flotte glorieuse ![NEWLINE][NEWLINE] Sachant que la maitrise des mer est la clé du succès au nouveau monde, vous avez construit une flotte sans pareil.[NEWLINE][NEWLINE] Assez forte pour vous protéger des corsaires et des pirates, assez puissante pour défier vos voisins.[NEWLINE][NEWLINE] Mais elle assez forte pour tenir tête à la flotte royale si nécessaire ?[NEWLINE][NEWLINE] Bien, le jour où vous le découvrirez est plus proche que vous ne le croyiez.[NEWLINE][NEWLINE]</French>
 		<German>Was für eine Flotte![NEWLINE][NEWLINE]Wohlwissend, daß die Herrschaft über die See der Schlüssel zum Erfolg in der Neuen Welt ist, habt Ihr Euch eine Flotte aufgebaut, die ihresgleichen sucht.[NEWLINE][NEWLINE]Stark genug, um Eure Kolonien vor Piraten und Freibeutern zu schützen, mächtig genug, um Euren Nachbarn zu trotzen.[NEWLINE][NEWLINE]Aber wird sie auch kampfkräftig genug sein, um es notfalls mit der Flotte des Königs aufzunehmen?[NEWLINE][NEWLINE]Nun, der Tag an dem Ihr das herausfinden werdet, ist nicht mehr so fern wie Ihr vielleicht denkt.[NEWLINE][NEWLINE]</German>
 		<Russian>Какой великолепный флот![NEWLINE][NEWLINE]Зная, что господство на море — ключ к успеху в Новом Свете, вы построили флот, которому нет равных.[NEWLINE][NEWLINE]Достаточно силен, чтобы защитить свои колонии от пиратов и каперов, достаточно силен, чтобы бросить вызов своим соседям.[NEWLINE][NEWLINE]Но будет ли достаточно его мощи, чтобы сразиться с королевским флотом, если потребуется?[NEWLINE][NEWLINE]Что ж, день, когда вы это узнаете, не так уж и далек, как вы думаете.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Micsoda dicsőséges flotta![NEWLINE][NEWLINE]Tudván, hogy a tengerek uralma a siker kulcsa az Újvilágban, te olyan haditengerészetet építettél, amely felülmúlhatatlan.[NEWLINE][NEWLINE]Elég erős ahhoz, hogy megvédd a kalózoktól és a kalózoktól a településeidet, elég erős ahhoz, hogy szembeszállj a szomszédaiddal. [NEWLINE][NEWLINE]De vajon elég erős lesz-e ahhoz, hogy szükség esetén felvegye a harcot a király flottájával?[NEWLINE][NEWLINE]Nos, a nap, amikor ez kiderül, nincs olyan messze, mint gondolnád.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WAR_GALLEON</Tag>
@@ -1442,6 +1447,7 @@
 		<French>Votre premier Galion</French>
 		<German>Eure erste Galeone</German>
 		<Russian>Ваш первый галеон</Russian>
+		<Hungarian>Az első Galleonod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_HEAD</Tag>
@@ -1450,6 +1456,7 @@
 		<French>Un géant des mers</French>
 		<German>Ein schwimmender Riese</German>
 		<Russian>Плавающий гигант</Russian>
+		<Hungarian>Egy lebegő óriás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GALLEON_TEXT</Tag>
@@ -1458,6 +1465,7 @@
 		<French>Les badauds regardent avec stupeur les hommes de mains monter sur le ponton encore et encore. Sur leur dos courbés, ils hissent à bord des balots, des caisses et des tonneaux.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Combien peut contenir un galion ? [COLOR_REVERT] » demande un petit garçon curieux. Un matelot grisonnant se penche. «[COLOR_SELECTED_TEXT]Autant que ce que nous pouvons y placer. [COLOR_REVERT]» répond-il gentiment.[NEWLINE][NEWLINE]  </French>
 		<German>Ungläubig stehen die Schaulustigen Spalier, als wieder und wieder Lastenträger über den Laufsteg das Schiff erklimmen. Auf ihren gebeugten Rücken schleppen sie Ballen, Kisten und Fässer.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wieviel passt denn in eine Galeone rein?[COLOR_REVERT]" kräht ein kleiner Junge neugierig.[NEWLINE][NEWLINE]Ein graubärtiger Maat beugt sich herab. "[COLOR_SELECTED_TEXT]Soviel, wie muss[COLOR_REVERT]", sagt er freundlich.[NEWLINE][NEWLINE]</German>
 		<Russian>Зеваки в порту недоверчиво наблюдают, как носильщики снова и снова взбираются по трапу на корабль. На своих согнутых спинах они таскают тюки и ящики, катят бочки.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]А сколько груза может вместить в себя галеон?[COLOR_REVERT]" - с любопытством спрашивает маленький мальчик.[NEWLINE][NEWLINE]Седой помощник капитана наклоняется к нему. "[COLOR_SELECTED_TEXT]Столько, сколько мы захотим погрузить в него.[COLOR_REVERT]" — улыбаясь говорит он.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A bámészkodók hitetlenkedve nézik, ahogy a hordárok újra és újra felmennek a hajó rámpáján. Hajlott hátukon bálákat, ládákat és hordókat cipelnek.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mennyit bír egy galleon?[COLOR_REVERT]" - kiáltja kíváncsian egy kisfiú.[NEWLINE][NEWLINE]Egy girhes matróz lehajol. "[COLOR_SELECTED_TEXT]Annyit, amennyit bele tudunk rakni,[COLOR_REVERT]" - válaszolja kedvesen[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_GALLEON</Tag>
@@ -1466,6 +1474,7 @@
 		<French>Trois Galions</French>
 		<German>Drei Galeonen</German>
 		<Russian>Три галеона</Russian>
+		<Hungarian>Három Galleon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_HEAD</Tag>
@@ -1474,6 +1483,7 @@
 		<French>Une forêt en mer</French>
 		<German>Wald und Wasser</German>
 		<Russian>От леса до моря</Russian>
+		<Hungarian>Az erdőktől a tengerig</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_GALLEON_TEXT</Tag>
@@ -1482,6 +1492,7 @@
 		<French>Soudain, le monde tremble. Effrayé, l'écureuil volant saute et plane vers un autre arbre.[NEWLINE][NEWLINE] Le tronc sur lequel il était accroché, tremble, se fend et s'abat dans un fracas. À son pied, le bucheron sourit.[NEWLINE][NEWLINE] Plus de planches et de poutres pour le chantier naval du coin. Du bois bien robuste, pour des ponts solide et une quille dure - pour le prochain galion.[NEWLINE][NEWLINE]</French>
 		<German>Plötzlich wackelt die Welt. Erschrocken springt das Flughörnchen ab und segelt hinüber zum nächsten Baum.[NEWLINE][NEWLINE]Der Stamm, an dem es eben noch hing, erzittert, dann neigt er sich und fällt krachend um. Zu seinen Füßen feixen die Waldarbeiter.[NEWLINE][NEWLINE]Etliche Klafter Holz mehr für die Werft in der nahen Stadt. Gutes Bauholz für feste Planken und einen strammen Kiel - für die nächste Galeone.[NEWLINE][NEWLINE]</German>
 		<Russian>Внезапно мир сотрясается. Испугавшись, белка-летяга спрыгивает со своего дерева и планирует к другому.[NEWLINE][NEWLINE]Ствол дерева, на котором она сидела, дрожит, трещит и с грохотом падает. Лесорубы, стоящие у огромного пня, ухмыляются.[NEWLINE][NEWLINE]Больше досок и балок для ближайшей верфи. Прочная древесина для прочных палуб и прочный киль для следующего галеона.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Hirtelen megremeg a világ. A repülő mókus ijedtében leugrik, és átvitorlázik a következő fához.[NEWLINE][NEWLINE]A fatörzs, amin csüngött, megrázkódik, majd kettéhasad és egy csattanással lezuhan. A tönknél a favágók vigyorognak.[NEWLINE][NEWLINE]Újabb deszkák és gerendák a közeli hajógyár számára. Erős faanyag a szilárd fedélzethez és egy erős gerinchez - a következő galleonhoz.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN</Tag>
@@ -1490,6 +1501,7 @@
 		<French>Votre premier navire des Indes Occidentales</French>
 		<German>Euer erster Westindienfahrer</German>
 		<Russian>Ваш первый корабль Вест-Индской компании</Russian>
+		<Hungarian>Az első Indiamanod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN_HEAD</Tag>
@@ -1498,6 +1510,7 @@
 		<French>Quelle classe, ce navire</French>
 		<German>Ein neuer Schiffstyp</German>
 		<Russian>Новый тип корабля</Russian>
+		<Hungarian>Egyedülálló kategória</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WESTINDIANMAN_TEXT</Tag>
@@ -1506,6 +1519,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Gros temps à l'horizon, filant droit sur nous. J'espère que nous allons atteindre la colonie avant que la tempête ne nous touche, bosco. notre cale est remplie à ras bord de ce que l'Ancien Monde a de mieux à nous offrir[NEWLINE][NEWLINE] Faites monter le hunier, que nous ne perdions rien des profits de Monsieur en haute mer. [COLOR_REVERT]» Dit le capitaine à son maitre de manoeuvre en regardant nerveusement le mur de nuages d'approcher. [NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Oui mon commandant [COLOR_REVERT] » répond le maitre de maoeyvre avec un demi sourire alors qu'il pensaie pour lui même «[COLOR_SELECTED_TEXT]Les Profits de monsieur? Ouais, bien je peux voir que tu en as déjà pris ta part, l'ami, avec toutes ces boites dans la cabine de poupe.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Hoffen wir, dass wir die Kolonie noch vor dem nächsten Sturm erreichen, Bootsmann, unsere Laderäume sind so groß wie eine Kiche und randvoll mit den besten Waren aus der Alten Welt.[NEWLINE][NEWLINE]Lassen Sie die Toppsegel setzen, damit wir den Profit der hohen Herren nicht doch noch im Meer versenken[COLOR_REVERT]", meint der Käpt'n zu seinem Bootsmann und blickt sorgenvoll zu der achteraus aufziehenden Wolkenbank.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir,[COLOR_REVERT]" gibt der Boostmann milde lächelnd zurück und denkt sich "[COLOR_SELECTED_TEXT]Den Profit der hohen Herren? Na, du wirst dir davon doch sicher auch eine schöne Scheibe abschneiden, Freundchen, wenn ich so an die Kisten in der Achterkajüte denke...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Шторм за кормой быстро приближается. Будем надеяться, что мы доберемся до колонии до того, как буря нанесет удар, боцман. Наш огромный трюм до краев заполнен лучшим, что может предложить Старый Свет.[NEWLINE][NEWLINE]Установите марсели, чтобы мы не потеряли прибыль Лордов Парламента в глубоком море.[COLOR_REVERT]" – говорит капитан своему боцману, нервно поглядывая на преследующую их гряду черных облаков.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, да, сэр,[COLOR_REVERT]" отвечает боцман с легкой улыбкой, думая про себя."[COLOR_SELECTED_TEXT]Лорды Парламента? Что ж, дружище, я думаю, ты тоже видел листок из их книги, выпавшей при погрузке из какого-то ящика в кормовой каюте...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]A vihar hátul gyorsan közeledik. Reméljük, hogy elérjük a kolóniát, mielőtt lecsap, fedélzetmester. Hatalmas raktérünk csordultig megtöltve az Óvilág legjavával."[NEWLINE][NEWLINE]Húzzátok fel a csúcsvitorlákat, nehogy a tenger mélyére vesszen a Nagyurak haszna,[COLOR_REVERT]" - mondja a kapitány a matrózának, miközben idegesen nézi a közeledő felhőtömeget. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igenis, uram,[COLOR_REVERT]" - válaszol a matróz enyhe mosollyal, miközben magában elgondolkodik "[COLOR_SELECTED_TEXT]a Nagyurak haszna? Hát, ahogy látom, te is az ő könyvükből tanultál, barátom, azokkal a ládákkal a hátsó kabinban...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE</Tag>
@@ -1514,6 +1528,7 @@
 		<French>Votre premier brigantin</French>
 		<German>Eure erste Brigantine</German>
 		<Russian>Ваша первая бригантина</Russian>
+		<Hungarian>Az első Brigantinod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE_HEAD</Tag>
@@ -1522,6 +1537,7 @@
 		<French>Un navire marchand vaillant</French>
 		<German>Ein braver Handelsfahrer</German>
 		<Russian>Способный торговец</Russian>
+		<Hungarian>Egy ügyes kereskedő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BRIGANTINE_TEXT</Tag>
@@ -1530,6 +1546,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Bosco, tu en dis quoi ... [COLOR_REVERT] » demande le capitaine avec impatience «[COLOR_SELECTED_TEXT]C'est un cotre de nos douanes, ou un de ces damnés corsaires ? La compagnie m'en voudrait si je venais à perdre ce bâteau magnifique contre les pirates des ma première course à son bord. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Désolé, capitaine, je ne peux rien en dire. On voit juste la pointe des voiles au dessus de l'horizon. [COLOR_REVERT] » répond nerveusement le maitre de manoeuvre.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Grimpe au mat, alors, bosco - tout en haut, au nid-de-pie. Tu devrais voir leur coque de la haut. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Affirmatif, capitaine. [COLOR_REVERT] » conclut le maitre de manoeuvre, portant la main au chapeau, et gardant cette pensée pour lui : «[COLOR_SELECTED_TEXT]On le saura dans dix minutes de toute manière. Nous sommes trop chargés, on ne pourra pas s'échapper. [COLOR_REVERT] »[NEWLINE][NEWLINE] </French>
 		<German>"[COLOR_SELECTED_TEXT]Könnt Ihr irgend etwas erkennen, Bootsmann...[COLOR_REVERT]" fragt der Käpt'n aufgeregt, "[COLOR_SELECTED_TEXT]ist es ein verdammter Kaperer oder einer von unseren Zollkuttern? Die Kompanie würde es mir sehr übelnehmen, wenn ich dieses wunderbare neue Schiff gleich bei unserer ersten Fahrt an die Piraten verliere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich kann leider nichts erkennen, Sir. Die Segel sind noch nicht weit genug über der Kimm[COLOR_REVERT]", gibt der Bootsmann nervös zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dann rauf mit Euch in den Mast, Bootsmann - bis ganz nach oben. Von dort oben solltet Ihr den Rumpf eigentlich bereits erkennen können.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir[COLOR_REVERT]", gibt der Bootsmann pflichtschuldig zurück und denkt sich "[COLOR_SELECTED_TEXT]In 10 Minuten wissen wir sowieso Bescheid. Entkommen können wir mit diesem Kahn eh' nicht mehr, dafür haben wir zu schwer geladen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вы можете что-нибудь разобрать, боцман?[COLOR_REVERT]" - взволнованно спрашивает капитан."[COLOR_SELECTED_TEXT]Это чертов капер или один из наших таможенных катеров? В компании будут очень недовольны, если я потеряю этот замечательный новый корабль из-за пиратов во время нашего первого рейса.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Боюсь, я ничего не могу разобрать, сэр. Лишь множество парусов на горизонте.[COLOR_REVERT]" – нервно отвечает боцман.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тогда поднимитесь на мачту, боцман, до самого верха. Оттуда вы должны будете увидеть очертания корпуса.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Есть, есть, сэр![COLOR_REVERT]" - отвечает боцман, дергая кепку и думая про себя: "[COLOR_SELECTED_TEXT]На кой чёрт это нужно? Через несколько часов нас всё равно догонят. Наш корабль настолько загружен, что нас сейчас и на шлюпке можно обойти.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Ki tudsz venni valamit, hajómester...[COLOR_REVERT]" - kérdezi izgatottan a kapitány - "[COLOR_SELECTED_TEXT]egy átkozott kalózhajó vagy az egyik kutterünk? A társaság nagyon neheztelne, ha ezt a csodálatos új hajót már az első utunkon elveszíteném a kalózok miatt.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Attól tartok, nem látok semmit, uram. A vitorlák csak részben vannak a horizont fölött,[COLOR_REVERT]" - válaszol idegesen a hajómester.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Akkor fel az árbocra, hajómester - egészen a csúcsig! Onnan fentről látnod kell a hajótestet.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igenis, uram[COLOR_REVERT]" - válaszol a hajómester levéve a sapkáját, és magában arra gondol: "Tíz perc múlva úgyis megtudjuk. Ez a hajó nem tud elmenekülni. Túlságosan meg vagyunk terhelve."[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT</Tag>
@@ -1538,6 +1555,7 @@
 		<French>Votre deuxième bateau de pêche</French>
 		<German>Euer zweites Fischerboot</German>
 		<Russian>Ваша вторая рыбацкая лодка</Russian>
+		<Hungarian>A második halászhajód</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT_HEAD</Tag>
@@ -1546,6 +1564,7 @@
 		<French>Poisson frais sur la table</French>
 		<German>Frischer Fisch auf den Tisch</German>
 		<Russian>Свежая рыба на столе</Russian>
+		<Hungarian>Friss hal az asztalon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_FISHINGBOAT_TEXT</Tag>
@@ -1554,6 +1573,7 @@
 		<French>Les pêcheurs peuvent à peine croire à leur coup de chance, alors qu'ils tirent une morue dodue l'une après l'autres des eaux.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je vous l'avais bien dit, ces nouveaux chalutiers sortis droits de nos chantiers allait nous rendre riche. [COLOR_REVERT] » Les travailleurs dans le petit bateau se réjouisseny. «[COLOR_SELECTED_TEXT]Près des côtes, il y a déjà bien trop de concurrence entre nous pêcheurs, mais en haute mer, c'est comme une terre de lait et miel - je devrais dire une mer de cabillaud et de hareng. Vous pouvez levez les bras... et le poisson sautera droit dans vos mains. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]et mon poing va sauter sur ton nez si tu n'arrêtes pas de déblatérer et que nous n'avons toute la prise à bord bientôt. [COLOR_REVERT] » gueule le timonier de l'arrière «[COLOR_SELECTED_TEXT]Nous devons retourner au port avant que le marché n'ouvre, sinon tu devras manger tout seul toute notre prise. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>Die Fischer können ihr Glück kaum fassen, einen dicken Brocken nach dem anderen ziehen sie aus dem Wasser.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich hab's doch gleich gesagt, die neuen Fischerboote aus unser Werft werden uns reich machen,[COLOR_REVERT]" frohlockt der Fischer des kleinen Fischerbootes. "[COLOR_SELECTED_TEXT]An der Küste sind wir einfach zu viele Fischer, aber hier draußen ist es wie im Schlaraffenland. Man braucht nur die Hand aufzuhalten und schon springen einem die Fische in die Hände.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Deine Nase springt auch gleich in meine Faust,[COLOR_REVERT]" brüllt der Steuermann von hinten, "[COLOR_SELECTED_TEXT]wenn Du nicht aufhörst, zu schwätzen, und der Fang nicht bald eingebracht ist. Wir müssen wieder im Hafen sein, bevor der Markt öffnet, sonst kannst Du den ganzen schönen Kabeljau alleine essen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Рыбаки с трудом верят своему счастью, вытаскивая из воды одну упитанную треску за другой.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я сразу сказал вам, что новые рыбацкие лодки с нашей верфи сделают нас богатыми![COLOR_REVERT]" – радуется молодой рабочий в маленькой лодке. "[COLOR_SELECTED_TEXT]У побережья слишком много рыбаков, но здесь все как в стране молока и меда - я имею в виду треску и сельдь. Стоит только вытянуть руки... и рыба прыгает прямо в них.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Твой нос вот-вот прыгнет в мой сжатый кулак![COLOR_REVERT]" - ревет сзади рулевой. "[COLOR_SELECTED_TEXT]Если ты не перестанешь болтать и не займёшься уловом. Мы должны вернуться в гавань до открытия рынка, иначе ты сам съешь всю эту треску.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A halászok alig hisznek a szemüknek, ahogy egyik nagy tőkehalat a másik után húzzák ki a vízből.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Már az elején megmondtam, hogy a hajógyárunk új halászhajói gazdaggá tesznek minket[COLOR_REVERT]" - örvendezik a halász a kis csónakban. "[COLOR_SELECTED_TEXT]A tengerparton egyszerűen túl sokan vagyunk mi, halászok, de itt kint olyan, mint a tejjel-mézzel folyó Kánaán - mármint a tőkehallal és a heringgel. Csak ki kell nyújtani a kezünket... és a halak rögtön beleugranak.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az orrod fog mindjárt beleugrik az öklömbe,[COLOR_REVERT]" - üvölt hátulról a kormányos - "[COLOR_SELECTED_TEXT]ha nem hagyod abba a fecsegést, és nem lesz hamarosan fogásunk! Vissza kell érnünk a kikötőbe, mielőtt kinyit a piac, különben te magad eszed meg az összes tőkehalat![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALING_BOAT</Tag>
@@ -1562,6 +1582,7 @@
 		<French>Premier navire baleinier</French>
 		<German>Euer erster Walfänger</German>
 		<Russian>Ваш первый китобойный корабль</Russian>
+		<Hungarian>Az első Bálnavadász Hajód</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALING_BOAT_HEAD</Tag>
@@ -1570,6 +1591,7 @@
 		<French>Les jouvanceaux contre les baleines grises</French>
 		<German>Von Grünschnäbeln und Grauwalen</German>
 		<Russian>Молодёжь и серые киты</Russian>
+		<Hungarian>A csíkos és szürke bálnákról</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALING_BOAT_TEXT</Tag>
@@ -1578,6 +1600,7 @@
 		<French> «[COLOR_SELECTED_TEXT]Bande des marins d'eau douce avariés, qui n'a jamais marché sur le pont d'un bâteau ? [COLOR_REVERT] »  Le marin mal rasé les fixe de son regard gris dans la lueur de l'aube.[NEWLINE][NEWLINE]En face de lui, hirsutes et sales, tout une bande de jeunes gens se demandant ce qu'ils ont bien pu ingurgiter la veille, et là où ils se trouvent tout suite.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] Je vois le genre. [COLOR_REVERT] » Une chique noire de tabac s'écrase sur le pont auprès d'un des jeunes tremblotant. «[COLOR_SELECTED_TEXT]On va tout passer en revue. Bande d'échalas, vous avez déjà vu un de ces engins ? [COLOR_REVERT] »[NEWLINE][NEWLINE]Il flanque la hampe en bois d'un harpon monstrueux devant lui. Les visage palôts, virent au vert, et en finissent blêmes.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Tenez vous prêts, car nous allons faire un tour en enfer. Vous avez déjà quittés les jupons de vos mères pour voir qu'il y avait de plus gros bestiaux que des rats et des puces ?[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Wer von euch abgetakelten Belegnägeln hatte schon mal Planken unter den Füßen?[COLOR_REVERT]" Der stoppelbärtige Maat stiert mit seinen grauen Augen durch das erste Licht des Tages.[NEWLINE][NEWLINE]Vor ihm stehen mehr schlecht als recht eine Handvoll junger Burschen, die sich vor allem fragen, wo sie sind und was sie gestern getrunken haben.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich seh schon[COLOR_REVERT]", ein schwarzer Strahl Tabaksaft landet vor einem zitternden Jüngling auf dem Deck, "[COLOR_SELECTED_TEXT]hier muss ich weit ausholen, also, habt ihr dürren Heringe so was schon mal gesehen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Er pflanzt den Holzschaft einer monströsen Harpune vor sich auf, bleiche Gesichter werden grün, grüne Gesichter aschfahl.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, hol mich der Teufel, weiß irgendeiner von euch Muttersöhnchen überhaupt, dass es größeres Viehzeuch auf der Welt gibt als Ratten und Flöhe?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Кто-нибудь из вас, чёрт побери, когда-нибудь выходил в море?[COLOR_REVERT]" Помощник капитана с густой щетиной на скулах смотрит серыми глазами на людей перед собой.[NEWLINE][NEWLINE]Перед ним стоит кучка молодых парней, растрепанных и грязных, в основном не понимающих, где они и что вчера пили.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вижу,[COLOR_REVERT]" - черная капля табачного сока падает на палубу перед дрожащими юношами - "[COLOR_SELECTED_TEXT]здесь мне придется кое-что пояснить. Вы когда-нибудь видели что-нибудь подобное, тощие прищепки?[COLOR_REVERT]"[NEWLINE][NEWLINE]Он ставит перед собой деревянное древко чудовищного гарпуна. Бледные лица становятся зелеными, зеленые лица пепельными.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Готовьтесь, вас ждет ад. Кто-нибудь из вас, маменькины сынки, вообще знает, что на свете есть твари покрупнее крыс и блох?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Melyikőtök érezte már a deszkákat a lába alatt?[COLOR_REVERT]" A szakállas ember szürke szemével a hajnali fénybe bámul.[NEWLINE][NEWLINE]Előtte, ziláltan és koszosan egy maroknyi fiatal legény áll zavarodottan a tegnap megivott lőrétől. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Látom,[COLOR_REVERT]" mondja, miközben egy pataknyi fekete dohánylé csapódik a fedélzetre egy reszkető ifjú előtt, "[COLOR_SELECTED_TEXT]pontosabban kell fogalmaznom. Láttatok - ti véznák - már ilyet?[COLOR_REVERT]"[NEWLINE][NEWLINE]Egy hatalmas szigony fából készült szárát teszi maga elé. A sápadt arcok elzöldülnek, a zöld arcok hamuszürkévé válnak.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Készüljetek, mert a pokol vár rátok. Tudja egyáltalán valamelyikőtök anyámasszony katonája, hogy a patkányoknál és a bolháknál nagyobb állatok is vannak a világon?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SMUGGLING_SHIP</Tag>
@@ -1586,6 +1609,7 @@
 		<French>Alors comme ça on se lance dans la contrebande ?</French>
 		<German>Ihr seid unter die Schmuggler gegangen!</German>
 		<Russian>Ваш первый контрабандистский корабль</Russian>
+		<Hungarian>Most már egy csempész vagy!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SMUGGLING_SHIP_HEAD</Tag>
@@ -1594,6 +1618,7 @@
 		<French>Contrebande sur la plage</French>
 		<German>Verhandlung am Strand</German>
 		<Russian>Прибрежная торговля</Russian>
+		<Hungarian>Tengeri üzlet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SMUGGLING_SHIP_TEXT</Tag>
@@ -1602,6 +1627,7 @@
 		<French>«[COLOR_SELECTED_TEXT]800[COLOR_REVERT] », propose le trésorier de la ville.[NEWLINE][NEWLINE]- «[COLOR_SELECTED_TEXT]Non 1000[COLOR_REVERT] », répond le contrebandier au navire ancré sur le rivage. «[COLOR_SELECTED_TEXT]Regardez donc la qualité de nos produits, vous croyez qu'on se les est procurés comment ?[COLOR_REVERT] »[NEWLINE][NEWLINE]- «[COLOR_SELECTED_TEXT]D'accord, 900, mais pas plus, sinon autant payer les taxes plutôt que d'avoir recours à vos services[COLOR_REVERT] » rétorque l'agent du gouverneur.[NEWLINE][NEWLINE]- «[COLOR_SELECTED_TEXT]Dépêchez-vous, on va se faire pincer par la patrouille ![COLOR_REVERT] » intervient le milicien embusqué en train de guetter.[NEWLINE][NEWLINE]- «[COLOR_SELECTED_TEXT]Bon, ok pour 900[COLOR_REVERT] », répond le capitaine, «[COLOR_SELECTED_TEXT]Ravi de faire des affaires avec vous [COLOR_REVERT] », en empochant la bourse en cuir rebondie. «[COLOR_SELECTED_TEXT]Allez les gars, on met les voiles[COLOR_REVERT], dit-il à ses hommes, on a la même dans une heure plus loin.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]", wagt sich der Stadtkämmerer vor.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nein, 1000[COLOR_REVERT]", gibt der Käpt'n des Schmugglers zurück, der unmittelbar vor der Küste Anker geworfen hat. "[COLOR_SELECTED_TEXT]Seht euch diese kostbaren Waren an, was glaubt ihr denn, wo die herkommen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also gut, 900, sonst hätten wir ja gleich die Steuern bezahlen können[COLOR_REVERT]", meint der Stellvertreter des Gouverneurs.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ihr solltet euch besser beeilen, sonst entdecken uns die Dragoner![COLOR_REVERT]" ruft der Miliz-Offizier nervös dazwischen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also gut,[COLOR_REVERT]" gibt sich der Käpt'n geschlagen, "[COLOR_SELECTED_TEXT]schön mit Euch Geschäfte zu machen[COLOR_REVERT]", und nimmt den prall gefüllten Lederbeutel entgegen. "[COLOR_SELECTED_TEXT]Hau'n wir ab, Jungs,[COLOR_REVERT]" ruft er seinen Männern zu, "[COLOR_SELECTED_TEXT]in einer Stunde haben wir schon die nächste Verabredung.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]" — предлагает городской казначей.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Нет, 1000[COLOR_REVERT]" - отвечает капитан контрабандистского корабля, стоящего на якоре у берега. "[COLOR_SELECTED_TEXT]Посмотрите на эти драгоценности! Как вы думаете, откуда мы их взяли?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хорошо, 900, иначе мы могли бы напрямую платить налоги, вместо того, чтобы нанимать вас и ваш корабль[COLOR_REVERT]" - возражает агент губернатора.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Поторопись! Драгуны могут нас заметить![COLOR_REVERT]" - нервно кричит из тени офицер ополчения.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ваша взяла.[COLOR_REVERT]" - соглашается капитан - "[COLOR_SELECTED_TEXT]Было приятно иметь с вами дело.[COLOR_REVERT]"  - и берет пухлую кожаную сумку с монетами. "[COLOR_SELECTED_TEXT]Давайте убираться отсюда, ребята.[COLOR_REVERT] – зовет он своих людей – [COLOR_SELECTED_TEXT]У нас еще одна встреча через час.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]800[COLOR_REVERT]" - ajánlotta a város kincstárnoka.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nem, 1000[COLOR_REVERT]" - válaszolta az öbölben horgonyzó csempészhajó kapitánya. "[COLOR_SELECTED_TEXT]Nézd meg ezt a csodálatos árut! Mit gondolsz, honnan szereztük?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]"Rendben, 900, máskülönben befizethettük volna az adót is ahelyett, hogy felbéreltük volna magát és a hajóját[COLOR_REVERT]" érvelt a kormányzó megbízottja.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gyerünk! Különben a dragonyosok mindannyiunkat elkaphatnak![COLOR_REVERT]" kiáltotta idegesen a polgárőrség tisztje az árnyékban.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Rendben, megegyeztünk![COLOR_REVERT]" értett egyet a kapitány, és átvette a pénzzel töltött táskát a megbízottól. "[COLOR_SELECTED_TEXT]Gyerünk fiúk, vár ránk a következő munka!"[COLOR_REVERT][NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP</Tag>
@@ -1610,6 +1636,7 @@
 		<French>Votre premier sloup</French>
 		<German>Eure erste Sloop</German>
 		<Russian>Ваш первый шлюп</Russian>
+		<Hungarian>Az első Szlúpod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP_HEAD</Tag>
@@ -1618,6 +1645,7 @@
 		<French>Votre premier sloup</French>
 		<German>Eure erste Sloop</German>
 		<Russian>Морской шпион</Russian>
+		<Hungarian>Az első Szlúpod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLOOP_TEXT</Tag>
@@ -1626,6 +1654,7 @@
 		<French>Vous regardez le port depuis la fenêtre de la salle à manger alors que le soleil se lève - et un nouveau type de bateau s'est amarré.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Un sloup, sire [COLOR_REVERT] » vous informe votre secrétaire «[COLOR_SELECTED_TEXT]Elle filerait 12 noeuds, mais elle est petite en taille et en cale. [COLOR_REVERT] » [NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Qu'allons nous faire alors de ce machin ? L'amirauté ne nous adonc rien donné que des babioles inutiles ? Ils ne savent donc pas en Europe que nous avons besoin avec une large cale pour emporter autant de colons et de biens que possible ? [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Euh .. Humm.. Sire, le sloup est une navire de reconnaissance rapide qui peut espionner les autres colonies et débusquer les repaires de pirates. Avec son faible tirant d'eau, elle peut se cacher en eaux peu profondes, dans des baies étroites, et même remonter de grande rivières. Il nous sera bien utile à coup sur. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Aha, très bien ... où est donc la facture pour ce sloup? Ils s'attendent à ce que nous les payions pour ce navire ? [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>Ihr blickt aus dem Fenster Eures Dienstzimmers auf den Hafen hinunter, über dem gerade die Sonne aufgeht - Und schon wieder hat ein Schiff am Kai festgemacht.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine Sloop, Herr Gouverneur[COLOR_REVERT]" wie Euch Euer Sekretär dienstbeflissen berichtet. "[COLOR_SELECTED_TEXT]Sie soll glatte 12 Knoten laufen, Herr Gouverneur, obwohl sie nicht sehr groß ist und auch nicht viele Waren transportieren kann.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was sollen wir dann mit dem Ding? Hat uns die Admiralität wieder nur unnützes Zeug zuerkannt? Wissen die denn da in Europa nicht, dass wir hier Schiffe brauchen, die möglichst viele Versorgungsgüter und Siedler herschaffen können?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm...ähm...Herr Gouverneur, die Sloop ist ein schneller Aufklärer, die Piratennester und andere Kolonien hervorragend ausspionieren kann. Aufgrund ihres geringen Tiefgangs kann sie auch kleine Buchten anlaufen und sogar in größere Flüsse einlaufen. Sie wird uns sicher gute Dienste leisten, Herr Gouverneur.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aha, na dann ... her mit der Faktura für diese Sloop. Man wird uns doch sicher trotzdem dafür bezahlen lassen wollen?![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>На рассвете из окна своей столовой вы смотрите на гавань, где у причала только что пришвартовался еще один корабль.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Шлюп, сэр.[COLOR_REVERT]" – официально говорит вам секретарь. "[COLOR_SELECTED_TEXT]Говорят, судно плавает со скоростью целых 12 узлов, сэр. Хотя оно не очень большое и не может перевозить много грузов.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тогда что мы будем делать с этой штукой? Адмиралтейство снова не дало нам ничего, кроме бесполезного хлама? Разве в Европе не знают, что нам нужны корабли, чтобы доставлять как можно больше припасов и поселенцев?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Кхм... эм... сэр, шлюп — быстроходный разведывательный корабль, который может шпионить за укрытиями пиратов и...или другими колониями. Благодаря небольшой осадке он может прятаться в небольших бухтах и даже заходить в большие реки. Безусловно, он сослужит нам хорошую службу, сэр.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ага, тогда... где бумаги на этот шлюп? Неужели они хотят заставить нас платить за него?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az ebédlő ablakából letekintesz a kikötőre, ahogy a nap felkel - és egy újabb hajó köt ki a rakparton.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Egy Szlúp, uram,[COLOR_REVERT]" - közli veled a titkárnőd bizalmasan. "[COLOR_SELECTED_TEXT]Állítólag simán megy 12 csomóval, uram, bár nem túl nagy, és sok árut sem tud szállítani.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Akkor mit fogunk ezzel a vacakkal csinálni? Az Admiralitás megint csak haszontalan dolgot adott nekünk? Nem tudják Európában, hogy szükségünk van hajókra, hogy minél több ellátmányt és telepest hozhassunk?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm... ööö... uram, a Szlúp egy gyors felderítő hajó, amivel kalózok rejtekhelyeit vagy más kolóniákat kémlelhetünk ki. Sekély merülésével el tud rejtőzni kisebb öblökben, és akár nagyobb folyókba is be tud menni. Bizonyára jó szolgálatot tesz majd nekünk, uram.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aha, nos akkor ... hol van ennek a Szlúpnak a számlája? Biztosan ki akarják majd fizettetni velünk.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WAR_CARAVEL</Tag>
@@ -1657,6 +1686,7 @@
 		<French>Votre première corvette</French>
 		<German>Euer erster Piratenjäger</German>
 		<Russian>Ваш первый корвет</Russian>
+		<Hungarian>Az első Korvetted</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CORVETTE_HEAD</Tag>
@@ -1665,6 +1695,7 @@
 		<French>Prêt pour la chasse</French>
 		<German>Die Jagd kann beginnen</German>
 		<Russian>К охоте готов</Russian>
+		<Hungarian>Az első Korvetted</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CORVETTE_TEXT</Tag>
@@ -1672,6 +1703,7 @@
 		<Portuguese>Radiante de alegria, o gerente do estaleiro lhe entrega os papéis. "[COLOR_SELECTED_TEXT]Finalmente temos um navio de guerra que pode enfrentar esses velozes corsários para que nossos navios mercantes possam se aventurar no mar novamente, senhor.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Acredito que você esteja certo. Mas você está nos cobrando muito dinheiro,[COLOR_REVERT]" você diz ao gerente, meio brincando.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Por favor senhor, esta classe é o melhor e mais atualizado navio que podemos construir,[COLOR_REVERT]"protesta o projetista com firmeza. "[COLOR_SELECTED_TEXT]Rápido, manobrável, bem armado e liderado, aposto, por um bom capitão; superior a qualquer um desses malditos navios piratas.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Esperemos que você esteja certo. Caso contrário, nosso governo poderá ter que pensar em contratar outro estaleiro.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem...,[COLOR_REVERT]" o gerente responde calmamente, "[COLOR_SELECTED_TEXT]nosso estaleiro ainda é o único na colônia capaz de construir neste nível.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Freudestrahlend übergibt euch der Werftdirektor die Papiere. "[COLOR_SELECTED_TEXT]Endlich haben wir ein Schiff, dass es mit diesen schnellen und wendigen Kaperschiffen aufnehmen kann, so daß sich unsere Handelsfahrer können sich wieder aufs Meer wagen können, Herr Gouverneur.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das will ich meinen. Aber dafür berechnet Ihr uns ja auch den Höchstpreis,[COLOR_REVERT]" entgegnet Ihr dem Werftdirektor mit einem Schmunzeln.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aber Herr Gouverneur, diese Schiffsklasse ist das Beste, was wir zurzeit bauen können[COLOR_REVERT]", protestiert der Wertfdirektor entschieden. "[COLOR_SELECTED_TEXT]Schnell, wendig und gut bewaffnet und von einem guten Käpt'n geführt - da gehe ich jede Wette ein - jedem dieser stinkenden Piratenschiffe überlegen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hoffen wir das Beste, ansonsten könnte die Regierung es sich vielleicht überlegen, eine andere Werft zu beauftragen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun...,[COLOR_REVERT]" entgegnet der Werftdirektor gelassen, "[COLOR_SELECTED_TEXT]noch ist unsere Werft die einzige in dieser Kolonie, die solche Qualität herzustellen vermag. Es bliebe Euch dann nur Europa.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Сияя от радости, управляющий верфи вручает вам документы. "[COLOR_SELECTED_TEXT]Наконец-то у нас есть боевой корабль, способный противостоять этим чёртовым каперам. Теперь наши торговые суда могут выйти в море, сэр.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Думаю, вы правы. Однако за строительство вы взяли с нас довольно большие деньги.[COLOR_REVERT]" – полушутя говорите вы управляющему.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ни в коем случае, сэр! Это же самый лучший и самый современный корабль, который мы можем построить.[COLOR_REVERT]" — решительно возражает тот. "[COLOR_SELECTED_TEXT]Быстрый, маневренный, хорошо вооруженный и, держу пари, под командованием отличного капитана. Он превосходит любой из этих вонючих пиратских кораблей.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Будем надеяться, что вы правы. В противном случае нашему правительству придется подумать о заключении контракта с другой верфью.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну...[COLOR_REVERT]" – спокойно отвечает управляющий – "[COLOR_SELECTED_TEXT]Наша верфь по-прежнему единственная в колониях, которая может строить корабли такого уровня. Единственной приемлемой альтернативой для вас будет Европа...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A hajógyár vezetője sugárzik az örömtől, amikor átadja a papírokat. "[COLOR_SELECTED_TEXT]Végre van egy hadihajónk, ami felveheti a harcot ezekkel a száguldó kalózokkal, hogy a kereskedőink újra a tengerre merészkedhessenek, uram.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Azt hiszem, igaza van. De önök nagyon sokat kérnek tőlünk,[COLOR_REVERT]" - mondod félig tréfásan az igazgatónak.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Kérem uram, ez a hajóosztály a legjobb, legmodernebb, amit építeni tudunk,[COLOR_REVERT]" - tiltakozik határozottan a tervező. "[COLOR_SELECTED_TEXT]Gyors, manőverezőképes, jól felfegyverzett, és fogadni mernék, hogy ha egy jó kapitány irányítja; bármelyik büdös kalózhajónál jobb.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Reméljük, igaza van. Különben a kormányunknak el kell gondolkodnia azon, hogy szerződést kössön egy másik hajógyárral.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos...[COLOR_REVERT]" - válaszol nyugodtan az igazgató - "[COLOR_SELECTED_TEXT]a mi hajógyárunk még mindig az egyetlen a kolóniában, amelyik képes ilyen szinten hajókat építeni. Az önök egyetlen alternatívája Európa lenne.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FRIGATES</Tag>
@@ -1680,6 +1712,7 @@
 		<French>Cinq frégates</French>
 		<German>Fünf Fregatten</German>
 		<Russian>Пять фрегатов</Russian>
+		<Hungarian>Öt Fregatt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FRIGATES_HEAD</Tag>
@@ -1688,6 +1721,7 @@
 		<French>Tueur de loups</French>
 		<German>Wolfsjagd</German>
 		<Russian>Волкодавы</Russian>
+		<Hungarian>Farkaskutyák</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FRIGATES_TEXT</Tag>
@@ -1696,6 +1730,7 @@
 		<French>Vous abritez vos yeux de la main et visez l'embouchure du port. Un navire de guerre vous y attend. Sa coque étroite va fendre les mers à toute vitesse. Les ponts sont bardés de canon. La sainte-barbe regorge de tonnelets de poudre. De plus petits vaisseaux marchand arrivent de l'est et de l'ouest, des proies faciles pour un tel chien de mer.[NEWLINE][NEWLINE]Mais ces bateaux passent sans sourciller, car leurs capitaines ont compris depuis bien longtemps qu'il ne s'agissait que d'une de vos frégates - un chien-berger de haute mer gardant les moutons contre les loups.[NEWLINE][NEWLINE]</French>
 		<German>Ihr verschattet die Augen mit Eurer Hand und späht hinaus auf die Hafeneinfahrt. Ein Kriegsschiff liegt dort auf der Lauer. Sein Rumpf ist schmal, damit es schnell über die See fliegen kann. Die Decks starren vor Kanonen, in der Waffenkammer stapeln sich gewiß die Pulverfässer. Von Ost und West nähern sich kleinere Handelsschiffe, eine leichte Beute für einen solchen Jäger.[NEWLINE][NEWLINE]Doch die Boote gleiten unbesorgt näher, denn die Kapitäne haben längst erkannt, dass sie sich einer Eurer Fregatten nähern - den Schäferhunden, die die Lämmer vor den Wölfen schützen.[NEWLINE][NEWLINE]</German>
 		<Russian>Ты прикрываешь глаза рукой от слепящего солнца и смотришь на вход в гавань. Там стоит военный корабль. Его узкий корпус позволяет быстро лететь по морю. Палубы ощетинелись пушками; в оружейной сложен запас бочек с порохом. Небольшие торговые суда, прибывающие с востока и запада, легкая добыча для такого воителя.[NEWLINE][NEWLINE]Но торговцы беспечно скользят мимо, ибо капитаны уже давно знают, что приближаются к одному из ваших фрегатов - овчарок, охраняющих ягнят от волков.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A kezeddel leárnyékolod a szemed, és a kikötő bejáratán át nézel kifelé. Egy hadihajó várakozik ott. A hajótest keskeny, hogy gyorsan át tudjon suhanni a tengeren. A fedélzeten ágyúk sorakoznak; a fegyvertárban puskaporos hordók vannak felhalmozva. Keletről és nyugatról kisebb kereskedelmi hajók érkeznek, könnyű prédák egy ilyen hadihajó számára.[NEWLINE][NEWLINE]De a hajók gondtalanul siklanak el mellettük, mert a kapitányok már rég megtanulták, hogy az egyik Fregattod felé közelednek - a pásztorkutyáid felé, akik a bárányokat védik a farkasoktól.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE</Tag>
@@ -1704,6 +1739,7 @@
 		<French>Votre premier navire de ligne</French>
 		<German>Euer erstes Linienschiff</German>
 		<Russian>Ваш первый линейный корабль</Russian>
+		<Hungarian>Az első Sorhajód</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE_HEAD</Tag>
