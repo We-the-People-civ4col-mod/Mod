@@ -136,6 +136,8 @@ void EventTriggeredData::read(CvSavegameReader& reader)
 		}
 
 	}
+
+	GC.getMap().offsetGlobeviewCoordinates(m_iPlotX, m_iPlotY);
 }
 
 void EventTriggeredData::write(CvSavegameWriter& writer) const
@@ -168,6 +170,7 @@ void EventTriggeredData::readVanilla(CvSavegameReader& reader)
 	reader.Read(m_iCityId);
 	reader.Read(m_iPlotX);
 	reader.Read(m_iPlotY);
+	GC.getMap().offsetGlobeviewCoordinates(m_iPlotX, m_iPlotY);
 	reader.Read(m_iUnitId);
 	reader.Read(m_eOtherPlayer);
 	reader.Read(m_iOtherPlayerCityId);

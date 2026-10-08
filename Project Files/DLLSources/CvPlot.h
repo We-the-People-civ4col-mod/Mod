@@ -275,6 +275,10 @@ public:
 	{
 		return m_coord;
 	}
+	void setCoordinates(int iX, int iY)
+	{
+		m_coord.set(iX, iY);
+	}
 	bool at(int iX, int iY) const;
 	bool at(Coordinates coord) const;
 	int getIndex() const;
