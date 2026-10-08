@@ -1748,6 +1748,7 @@
 		<French>Une forteresse flottante</French>
 		<German>Eine schwimmende Festung</German>
 		<Russian>Гроза морей</Russian>
+		<Hungarian>Egy lebegő erőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SHIP_OF_THE_LINE_TEXT</Tag>
@@ -1756,6 +1757,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Voile à l'horizon [COLOR_REVERT] » rugit la vigie vers le pont.[NEWLINE][NEWLINE]Ses camarades s'étirent le coup. «[COLOR_SELECTED_TEXT]Enfin du butin, [COLOR_REVERT] » s'écrie le capitaine pirate, un colosse à la mine patibulaire. Il lève haut son sabre en l'air.  «[COLOR_SELECTED_TEXT]Les gars, on dirait un navure marchand droit devant! [COLOR_REVERT] »[NEWLINE][NEWLINE]À ce moment, le cuistot du navire le tire par la manche. «[COLOR_SELECTED_TEXT]Capitaine, [COLOR_REVERT] » s'écrie-t-il, «[COLOR_SELECTED_TEXT]Regardez ! [COLOR_REVERT] » D'une main tremblante il pointe au dessus de la rembarde.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Notre cible change de course - il fonce droit sur nous ! [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Segel in Sicht![COLOR_REVERT]" brüllt der Ausguck über das Deck.[NEWLINE][NEWLINE]Seine Kameraden recken die Köpfe. "[COLOR_SELECTED_TEXT]Endlich wieder Beute[COLOR_REVERT]", lacht der Kapitän der Seeräuber, ein Hüne mit grimmigem Blick. Er stößt den Säbel in die Luft.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Männer! Dort kreuzt ein Handelschiff unseren Kurs![COLOR_REVERT]"[NEWLINE][NEWLINE]Da zupft der Smutje an seinem Ärmel. "[COLOR_SELECTED_TEXT]Käpt'n![COLOR_REVERT]" stottert er, "[COLOR_SELECTED_TEXT]seht![COLOR_REVERT]" Mit zitterndem Arm zeigt er über die Reling.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Prise ändert ihren Kurs - sie hält direkt auf uns zu![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Паруса на горизонте![COLOR_REVERT]" — раздаётся крик вахтенного.[NEWLINE][NEWLINE]Его товарищи вытягивают головы в указанную сторону. "[COLOR_SELECTED_TEXT]Наконец-то, снова добыча![COLOR_REVERT]" — смеется капитан пиратов, огромный мужчина с мрачным взглядом, размахивая своей саблей в воздухе.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Парни! Похоже, что впереди лавирует торговый корабль![COLOR_REVERT]"[NEWLINE][NEWLINE]В этот момент корабельный повар дернул его за рукав. "[COLOR_SELECTED_TEXT]Капитан![COLOR_REVERT]" — бормочет кок - "[COLOR_SELECTED_TEXT]Смотрите![COLOR_REVERT]" Он дрожащей рукой указывает на леер.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Приз меняет курс - он направляется прямо к нам![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Vitorla a láthatáron![COLOR_REVERT]" - üvölt a hajóőr a fedélzeten.[NEWLINE][NEWLINE]Társai felkapják a fejüket. "[COLOR_SELECTED_TEXT]Végre ismét zsákmány,[COLOR_REVERT]" - nevet a kalózkapitány, egy óriási, komor tekintetű férfi. A levegőben megvillantja szablyáját.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Emberek! Úgy tűnik, egy kereskedőhajó van előttünk![COLOR_REVERT]"[NEWLINE][NEWLINE]Épp ekkor a hajó szakácsa idegesen megrángatja az ingujját. "[COLOR_SELECTED_TEXT]Kapitány![COLOR_REVERT]" - fröcsögi, "[COLOR_SELECTED_TEXT]nézze![COLOR_REVERT]". Remegő karral a korláton át mutat.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A zsákmány irányt változtat - egyenesen felénk tart!"[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE</Tag>
@@ -1764,6 +1766,7 @@
 		<French>Six navires de ligne</French>
 		<German>Sechs Linienschiffe</German>
 		<Russian>Шесть линейных кораблей</Russian>
+		<Hungarian>Hat Sorhajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_HEAD</Tag>
@@ -1772,6 +1775,7 @@
 		<French>Majestueux</French>
 		<German>Majestätisch</German>
 		<Russian>Величие и спокойствие</Russian>
+		<Hungarian>Fenséges</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_SHIPS_OF_THE_LINE_TEXT</Tag>
@@ -1780,6 +1784,7 @@
 		<French>Le soleil couchant embrase le firmament alors qu'il somnre dans l'océan.[NEWLINE][NEWLINE]Fourbus, les gens rentrent chez eux de leur journée de travil. Les paysans quittent les champs, les bûcherons leur forêts, les charpentiers leurs ateliers.[NEWLINE][NEWLINE]Avant de rentrer chez eux, ils regardent vers l'océan abasourdis. Ce n'est pas le coucher de soleil qui les captive - mais ce puissant vaisseau de ligne voguant près de la côte dans un calme majestueux. Un des six navires de guerres qui font de vous, gouverneur, le maître de cette côte.[NEWLINE][NEWLINE]</French>
 		 <German>Der Glutball der Abendsonne entflammt das Firmament, bevor er in den Fluten versinkt.[NEWLINE][NEWLINE]Ermattet schreiten die Menschen vom vollbrachten Tagewerk nach Hause. Die Bauern verlassen die Felder, die Holzfäller den Forst, die Zimmermänner ihre Werkstätten.[NEWLINE][NEWLINE]Bevor sie ihre Heime betreten, werfen sie einen ehrfurchtsvoll staunenden Blick aufs Meer. Doch ist es nicht der Weltenbrand am Himmel, der sie bannt - es ist vielmehr der Anblick eines mächtigen Linienschiffes, das in majestätischer Ruhe die Küste entlang gleitet. Einem von nunmehr sechs Schlachtschiffen, mit denen Ihr, der Gouverneur, Euch zum Herrscher dieser Gestade aufschwingt.[NEWLINE][NEWLINE]</German>
 		<Russian>Светящийся шар вечернего солнца освещает небосвод огнем, погружаясь в океан.[NEWLINE][NEWLINE]Усталые люди бредут домой после рабочего дня. Крестьяне уходят с полей, дровосеки — из леса, плотники — из мастерской.[NEWLINE][NEWLINE]Перед тем как войти в свои дома, они с благоговением смотрят на море. Но привлекает их не сияющее небо, а могучий военный корабль, в величественном спокойствии скользящий вдоль побережья: один из шести Линейных кораблей, которые делают вас, губернатор, правителем этих берегов.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az esti nap izzó gömbje lángra lobbantja az égboltot, amint az óceánba süllyed.[NEWLINE][NEWLINE]Az emberek fáradtan, a napi munkából hazafelé igyekeznek. A földművesek elhagyják a földeket, a favágók az erdőt, az ácsok a műhelyüket.[NEWLINE][NEWLINE]Mielőtt belépnének otthonukba, áhítatos pillantást vetnek a tenger felé. Nem a ragyogó égbolt ragadja meg őket - hanem a hatalmas hadihajó, amely fenséges nyugalomban siklik a partok mentén: a hat csatahajó egyike, melyek téged, a kormányzót, e partok urává tesznek.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE</Tag>
@@ -1788,6 +1793,7 @@
 		<French>Douze navires de ligne</French>
 		<German>Zwölf Linienschiffe</German>
 		<Russian>Двенадцать линейных кораблей</Russian>
+		<Hungarian>Tizenkettő Sorhajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_HEAD</Tag>
@@ -1796,6 +1802,7 @@
 		<French>Chasse à l'ours</French>
 		<German>Bärenjagd</German>
 		<Russian>Охота на медведя</Russian>
+		<Hungarian>Medvevadászat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWELVE_SHIPS_OF_THE_LINE_TEXT</Tag>
@@ -1804,14 +1811,16 @@
 		<French>«[COLOR_SELECTED_TEXT]Ce navire de ligne est plus petit que le nôtre ! [COLOR_REVERT] » Le capitaine de la marine royale baisse son télescope. «[COLOR_SELECTED_TEXT]Mais une meute de loup peut mettre à mal un ours. [COLOR_REVERT] »[NEWLINE][NEWLINE]Il se détourne de la rembarde et regarde son espion, qui a mené l'enquête sur toutes les colonies côtières ces dernières semaines.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Vous dites qu'ils ont déjà paré douze navires de ligne de la même classe ? Sa Majesté ne va pas aimer cette nouvelle. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Dieses Linienschiff ist kleiner als die unsrigen![COLOR_REVERT]" Stirnrunzelnd setzt der Kapitän der Königlichen Marine sein Fernrohr ab. "[COLOR_SELECTED_TEXT]Aber viele Füchse können einem Bären gefährlich werden.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er dreht sich von der Reling weg und mustert seinen Spion, der in den letzten Wochen in den Küstenstädten der Kolonie die Ohren gespitzt hatte.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ihr sagtet, sie hätten bereits zwölf dieser Linienschiffe vom Stapel laufen lassen? Nun, das wird Seine Majestät nicht gerne vernehmen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Этот линейный корабль меньше нашего![COLOR_REVERT]" Нахмурившись, капитан Королевского флота опускает подзорную трубу. "[COLOR_SELECTED_TEXT]Но стая волков может быть опасна даже для медведя.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он отворачивается от перил и видит своего шпиона, который последние несколько недель подслушивал всё, что происходит в прибрежных городах колонии.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Так значит, вы утверждаете, что они уже ввели в строй двенадцать линейных кораблей? Его Величеству это не понравится.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Az a sorhajó kisebb, mint a miénk![COLOR_REVERT]" A Királyi Haditengerészet kapitánya homlokát ráncolva leteszi a távcsövét. "[COLOR_SELECTED_TEXT]De sok farkas veszélyes lehet egy medvére.[COLOR_REVERT]"[NEWLINE][NEWLINE]Elfordul a korlátról, és meglátja kémjét, aki az elmúlt hetekben mindent lehallgatott a gyarmatok parti városaiban.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Azt mondta, hogy már tizenkét ilyen sorhajót állítottak szolgálatba? Ezt Őfelsége nem fogja szívesen hallani.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR</Tag>
-		<English>Your first first-rate ship of the line</English>
+		<English>Your first man-o'-war</English>
 		<Portuguese>Seu primeiro navio de linha de primeira linha</Portuguese>
 		<French>Votre premier vaisseau de guerre</French>
 		<German>Euer erstes Linienschiff 1. Klasse</German>
 		<Russian>Ваш первый военный корабль</Russian>
+		<Hungarian>Az első elsőrendű hajód</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR_HEAD</Tag>
@@ -1820,14 +1829,16 @@
 		<French>Votre premier trois-ponts</French>
 		<German>Euer erster Dreidecker</German>
 		<Russian>Плавающая крепость</Russian>
+		<Hungarian>Az első háromszintes hajód</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MAN_O_WAR_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]A truly magnificent and powerful ship, Admiral. 100 guns, 950 crew, thick oak planks, a veritable fortress at sea. We can protect our colonies with this, sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Maybe so, Colonel. But the ship is new and the crew is not yet very familiar with her. I'll have the captain practice with the guns every day, starting today and on all three decks.[NEWLINE][NEWLINE]Have your officers drill the marines vigorously. We'll know in a month's time whether we have the most powerful ship in these waters. Before that we have a lot of work to do![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir. We will begin training the marines immediately.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]A truly magnificent and powerful ship, Admiral. 100 guns, 950 crew, thick oak planks, a veritable fortress at sea. We can protect our colonies with this, sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Maybe so, Colonel. But the ship is new and the crew is not yet very familiar with her. I'll have the Captain practice with the guns every day, starting today and on all three decks.[NEWLINE][NEWLINE]Have your officers drill the marines vigorously. We'll know in a month's time whether we have the most powerful ship in these waters. Until then we have a lot of work to do![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, aye, sir. We will begin training the marines immediately.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Um navio verdadeiramente magnífico e poderoso, almirante. 100 canhões, 950 tripulantes, grossas pranchas de carvalho, uma verdadeira fortaleza no mar. Podemos proteger nossas colônias com isso, senhor![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Talvez, coronel. Mas o navio é novo e a tripulação ainda não está muito familiarizada com ele. Vou fazer o capitão praticar com os canhões todos os dias dia, começando hoje e em todos os três conveses.[NEWLINE][NEWLINE]Faça com que seus oficiais treinem os fuzileiros navais vigorosamente. Dentro de um mês saberemos se temos o navio mais poderoso nessas águas![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sim, sim, senhor. imediatamente.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<French>«[COLOR_SELECTED_TEXT]Un navire puissant et magnifique, amiral. Cent canons, 950 hommes, des planches en chêne massif, une véritable fortersse des mer. Nous pouvons protéger nos olonies avec ceci, monsieur! [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Sans doute, colonel. Mais ce navire est neuf, et les hommes n'y sont pas familiers. Je veux que le capitaine lance l'entraînement à la canonnade quotidiennement, dès aujourd'hui et sur les trois ponts.[NEWLINE][NEWLINE]Vos officiers doivent mener à l'exercice nos soldats de marine avec la plus grande rigueur. Nous saurons dans un mois si ce navire nous permet de dominer ces eaux. Mais avant, nous avons du pain sur planche ![COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Affirmatif ! Nous lançons l'entrainement de nos marins tout de suite. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Ein wahrlich herrliches und mächtiges Schiff, Admiral. 100 Kanonen, 950 Mann Besatzung, Planken so dick wie Eichen. Eine wahre Festung auf See. Damit können wir unsere Kolonien beschützen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mag sein, Colonel. Aber das Schiff ist neu und die Mannschaft ist noch nicht sehr vertraut mit ihr. Ich lasse den Kapitän ab heute täglich mit den Kanonen üben und zwar auf allen drei Decks.[NEWLINE][NEWLINE]Lassen Sie Ihre Offiziere die Seesoldaten ebenfalls kräftig drillen. In einem Monat sehen wir weiter, dann haben wir vielleicht das kampfkräftigste Schiff in diesen Gewässern. Aber vorher haben wir noch eine Menge Arbeit vor uns![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aye, Aye, Sir. Wir werden sofort mit der Ausbildung der Seesoldaten beginnen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Поистине великолепный и мощный корабль, адмирал. 100 орудий, 950 человек экипажа, толстые дубовые доски, настоящая крепость на море. С ним мы сможем защитить наши колонии, сэр![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Возможно, полковник. Но корабль новый и экипаж с ним еще не очень знаком. Я прикажу капитану тренироваться с орудиями каждый день, начиная с сегодняшнего дня, и на всех трех палубах.[NEWLINE][NEWLINE]Поручите вашим офицерам усердно тренировать морских пехотинцев. Через месяц мы узнаем, есть ли у нас самый мощный корабль в этих водах. А до этого нам предстоит много работы![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, да, сэр. Мы немедленно приступим к обучению морских пехотинцев.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Egy igazán csodálatos és erős hajó, Admirális. 100 ágyú, 950 fős legénység, vastag tölgyfa deszkák, valóságos erőd a tengeren. Ezzel megvédhetjük a kolóniáinkat, uram![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Talán így van, Ezredes. De a hajó új és a legénység még nem nagyon ismeri. Megkérem a kapitányt, hogy mától kezdve minden nap gyakorlatozzon az ágyúkkal, mindhárom fedélzeten.[NEWLINE][NEWLINE]A tisztjei keményen gyakorlatoztassák a tengerészgyalogosokat. Egy hónap múlva tudni fogjuk, hogy a miénk-e a legerősebb hajó ezeken a vizeken. Előtte még rengeteg dolgunk van![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igenis, uram. Azonnal megkezdjük a tengerészgyalogosok kiképzését.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER</Tag>
@@ -1836,6 +1847,7 @@
 		<French>Votre premier corsaire</French>
 		<German>Euer erstes Kaperschiff</German>
 		<Russian>Ваш первый капер</Russian>
+		<Hungarian>Az első kalózhajód</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER_HEAD</Tag>
@@ -1846,6 +1858,7 @@
 		<Italian>Jolly Roger</Italian>
 		<Spanish>Jolly Roger</Spanish>
 		<Russian>Веселый Роджер</Russian>
+		<Hungarian>Halálfejes Lobogó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PRIVATEER_TEXT</Tag>
@@ -1854,6 +1867,7 @@
 		<French>«[COLOR_SELECTED_TEXT] Messieurs, [COLOR_REVERT] » annonce le capitaine «[COLOR_SELECTED_TEXT]l 'heure est venue. [COLOR_REVERT] »[NEWLINE][NEWLINE]Il hisse le petit coffre sur la table des cartes dans sa cabines. Les officiers regardent avec attention quand il brise le sceau. «[COLOR_SELECTED_TEXT] Dès que notre port n'est plus en vue, nous devons ouvrir ceci. Ce sont les ordres du gouverneur. [COLOR_REVERT]»[NEWLINE][NEWLINE]Il fait basculer le couvercle et en sourit. «[COLOR_SELECTED_TEXT] Messieurs, voici le pavillon que nous hisserons . [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Meine Herren[COLOR_REVERT]", verkündet der Kapitän, "[COLOR_SELECTED_TEXT]es ist soweit.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er hievt die kleine Truhe auf den Kartentisch seiner Kajüte. Neugierig schauen die Offiziere zu, wie er das Siegel zerbricht. "[COLOR_SELECTED_TEXT]Sobald unser Hafen nicht mehr in Sicht ist, sollen wir dies öffnen. So lautet der Befehl des Gouverneurs.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er klappt den Deckel auf und muss grinsen. "[COLOR_SELECTED_TEXT]Meine Herren, dies soll wohl an den Flaggenmast.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Господа,[COLOR_REVERT]" — объявляет капитан - "[COLOR_SELECTED_TEXT]время пришло.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он достаёт небольшой сундучок и ставит его на штурманский стол в своей каюте. "[COLOR_SELECTED_TEXT]Как только наш порт скроется из виду, мы должны открыть его. Это приказ губернатора.[COLOR_REVERT]" Офицеры с любопытством наблюдают, как он ломает печать.[NEWLINE][NEWLINE]Открыв крышку, капитан улыбается. "[COLOR_SELECTED_TEXT]Господа, вот что будет развеваться на нашем флагштоке.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Uraim,[COLOR_REVERT]" - közli a kapitány - "[COLOR_SELECTED_TEXT]eljött az idő.[NEWLINE][NEWLINE]A kabinjában lévő térképasztalra emeli a kis ládát. A tisztek kíváncsian figyelik, ahogy feltöri a pecsétet. "[COLOR_SELECTED_TEXT]Amint a kikötőnk látótávolságon kívülre kerül, ezt ki kell nyitnunk. Ez a kormányzó parancsa.[COLOR_REVERT]"[NEWLINE][NEWLINE]Felcsapja a fedelet, és kénytelen mosolyogni. "[COLOR_SELECTED_TEXT]Uraim, íme, ami a zászlórúdon lesz.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER</Tag>
@@ -1862,6 +1876,7 @@
 		<French>Trois corsaires</French>
 		<German>Drei Kaperschiffe</German>
 		<Russian>Три капера</Russian>
+		<Hungarian>Három kalózhajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER_HEAD</Tag>
@@ -1870,6 +1885,7 @@
 		<French>Les loups de mer chassent en meute</French>
 		<German>Das Rudel jagt</German>
 		<Russian>Волчья стая на охоте</Russian>
+		<Hungarian>A farkasfalka vadászik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PRIVATEER_TEXT</Tag>
@@ -1878,6 +1894,7 @@
 		<French>Empli de crainte, le regard du capitaine soupèse le navire étranger pourchassant son navire marchand. Il est toutes voiles dehors, mais le corsaire gagne la course contre lui.[NEWLINE][NEWLINE]Il se tourne vers la proue et regarde à l'avant. Le banc de brouillard dans lequel il veut cacher son lourd vaisseau se rapproche.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Nous pouvons y arriver [COLOR_REVERT] » murmure-t-il. Soudain, un autre navire surgit des brumes, avec le pavillon noir au sommet.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Bande de loups affamés ![COLOR_REVERT] » hurle le capitaine de dépit et de rage impuissante.[NEWLINE][NEWLINE]</French>
 		<German>Mit angstvollem Blick taxiert der Kapitän das fremde Schiff, das seinen Handelskahn jagt. Vollzeug hat er setzen lassen, dennoch holt der Kaperfahrer auf.[NEWLINE][NEWLINE]Er dreht sich gen Bug und blickt voraus. Die Nebelbank, in der er seinen Pott verstecken will, rückt näher. "[COLOR_SELECTED_TEXT]Wir können es schaffen[COLOR_REVERT]", murmelt er.[NEWLINE][NEWLINE]Doch urplötzlich bricht ein anderes Schiff aus dem Nebel, und auch dieses führt die Totenkopfflagge am Mast. "[COLOR_SELECTED_TEXT]Ihr Wölfe![COLOR_REVERT]", schreit der Kapitän in hilfloser Wut hinüber.[NEWLINE][NEWLINE]</German>
 		<Russian>Испуганным взглядом оценивает капитан незнакомый корабль, преследующий его купеческое судно. Поставлены полные паруса , но капер все равно настигает его.[NEWLINE][NEWLINE]Капитан обращает свой взгляд вперед, по ходу судна. Гряда тумана, в которой он хочет спрятать свой тяжелый корабль, все ближе."[COLOR_SELECTED_TEXT]Мы сможем это сделать.[COLOR_REVERT]" – бормочет он.[NEWLINE][NEWLINE]Но вдруг из тумана показывается силуэт еще одиного корабля, на мачте которого также проглядывается Весёлый Роджер. "[COLOR_SELECTED_TEXT]Вы, волки, ненавижу![COLOR_REVERT]" — кричит капитан в беспомощной ярости.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A kapitány rémült tekintettel vizsgálja a kereskedőhajóját üldöző idegen hajót. Teljes vitorlázatot bontott, de a kalózhajó így is utoléri.[NEWLINE][NEWLINE]Az orr felé fordul, és előre néz. A ködfátyol, amelyben el akarja rejteni nehéz hajóját, egyre közelebb kerül. "[COLOR_SELECTED_TEXT]Meg tudjuk csinálni,[COLOR_REVERT]" - mormolja.[NEWLINE][NEWLINE]De hirtelen egy másik hajó tör ki a ködből, és annak is Halálfejes Lobogó van az árbocán. "[COLOR_SELECTED_TEXT]Farkasok![COLOR_REVERT]" - kiáltja tehetetlen dühében a kapitány.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER</Tag>
@@ -1886,6 +1903,7 @@
 		<French>Cinq corsaires</French>
 		<German>Fünf Kaperschiffe</German>
 		<Russian>Пять каперов</Russian>
+		<Hungarian>Öt kalózhajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER_HEAD</Tag>
@@ -1894,6 +1912,7 @@
 		<French>Des proies dodues</French>
 		<German>Fette Beute</German>
 		<Russian>Жирная добыча</Russian>
+		<Hungarian>Egy kövér zsákmány</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_PRIVATEER_TEXT</Tag>
@@ -1902,6 +1921,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Une proie dodue [COLOR_REVERT] » crie le harponneur aux marins rameurs. «[COLOR_SELECTED_TEXT]Nous aurons cette baleine dans un instant. Souquez ferme, les gars! [COLOR_REVERT] »[NEWLINE][NEWLINE]D'un coup, les rameurs laissent tomber leur rames. Pâles d'effroi, ils pointent au dessus de l'épaule du harponneur. Celui-ci se retourne et déglutit.[NEWLINE][NEWLINE]Un corsaire s'approche, vif comme un faucon. Les pirates à bord sont à la rembarde et sourient supérieurement.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Ne vous arrêtez pas de bosser pour nous, les gars ![COLOR_REVERT] » gueule l'un d'entre eux, rigolard. «[COLOR_SELECTED_TEXT]On ne fera pas main basse sur votre bateu tant que ses cales ne seront pas remplies de gras de baleine. Ca nous fera une proie bien dodue. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Eine fette Beute![COLOR_REVERT]", ruft der Harpunier den Matrosen an den Riemen zu. "[COLOR_SELECTED_TEXT]Gleich haben wir den Wal. Pullt, Männer, pullt![COLOR_REVERT]"[NEWLINE][NEWLINE]Doch plötzlich lassen die Ruderer die Blätter fallen. Schreckensbleich zeigen sie über die Schulter des Harpuniers. Der dreht sich um - und schluckt.[NEWLINE][NEWLINE]Ein Kaperschiff gleitet heran, geschwind wie ein Falke. Die Piraten stehen an der Reling und grinsen herab.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lasst Euch nicht bei der Arbeit stören, Jungs![COLOR_REVERT]", ruft einer und lacht. "[COLOR_SELECTED_TEXT]Wir nehmen Euch das Schiff erst weg, wenn ihr seinen Bauch mit Speck gefüllt habt. Das soll eine fette Beute geben![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Жирная добыча![COLOR_REVERT]" — кричит гарпунщик матросам на веслах. "[COLOR_SELECTED_TEXT]Кит будет у нас через минуту. Тяните, парни, тяните![COLOR_REVERT]"[NEWLINE][NEWLINE]Но вдруг гребцы роняют вёсла. Бледные от испуга, они указывают через плечо гарпунщика. Он оборачивается и нервно сглатывает.[NEWLINE][NEWLINE]Капер скользит вперед быстро, как ястреб. Пираты стоят у перил и ухмыляются.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Мы не станем прерывать вашу работу, парни![COLOR_REVERT]" - кричит один из них и смеется. "[COLOR_SELECTED_TEXT]Мы не отберем у вас корабль, пока вы не наполните его брюхо жиром до самых краёв. Это будет жирная добыча![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Egy kövér zsákmány![COLOR_REVERT]" - kiáltja a szigonyos az evezőknél álló matrózoknak. "[COLOR_SELECTED_TEXT]Mindjárt megvan a bálna. Húzzátok, emberek, húzzátok![COLOR_REVERT]"[NEWLINE][NEWLINE]De az evezősök hirtelen eldobják a lapátjaikat. A rémülettől sápadtan mutogatnak a szigonyozó válla fölé. Az megfordul - és nyel egyet.[NEWLINE][NEWLINE]Egy kalózhajó siklik előre, fürgén, akár egy sólyom. A kalózok a korlátnál állnak és vigyorogva néznek lefelé.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ne hagyjátok, hogy megzavarjuk a munkátokat, fiúk![COLOR_REVERT] - kiáltja egyikük és felnevet. "[COLOR_SELECTED_TEXT]Nem vesszük el tőletek a hajót, amíg meg nem töltitek a gyomrát olajjal. Abból aztán kövér zsákmány lesz![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_SHIP</Tag>
@@ -1910,6 +1930,7 @@
 		<French>Des Pirates, la racaille des océans, sont sous vos ordres</French>
 		<German>Piraten, den Abschaum der Meere, habt Ihr nun unter Eurem Befehl</German>
 		<Russian>Пираты, отбросы морских просторов, теперь под вашим командованием. (Ваш первый пиратский фрегат)</Russian>
+		<Hungarian>Kalózok, a tengerek mocskai, mostantól a te parancsnokságod alatt állnak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_SHIP_HEAD</Tag>
@@ -1918,10 +1939,11 @@
 		<French>Sur les traces de Barbe-Noire</French>
 		<German>Auf den Spuren Blackbeards</German>
 		<Russian>По стопам Черной Бороды</Russian>
+		<Hungarian>Feketeszakáll nyomdokaiban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_SHIP_TEXT</Tag>
-		<English>Once our colony was founded, many spoke of freedom, prosperity and a better life in the New World. It was a dream of paradise beyond the ocean, a place where honest men might begin anew. Yet the years have taught us that this world is not ruled by hope alone. Far from the laws of Europe and beyond the reach of the Crown, power belongs to those bold enough to seize it.[NEWLINE][NEWLINE]What began as a refuge for adventurers and outcasts has become a haven for pirates, smugglers and desperate men. They know no law but profit, no loyalty but fear, and no command but their own ambition.[NEWLINE][NEWLINE]Perhaps this is the true face of the New World: not innocence, but struggle; not paradise, but a game of power and gold. If others bend the rules to survive, then so shall we. Our colony will no longer merely endure this grim reality — it will learn to master it.</English>
+		<English>When our colony was founded many spoke of freedom, prosperity and a better life in the New World. It was a dream of paradise beyond the ocean, a place where honest men might begin anew. Yet the years have taught us that this world is not ruled by hope alone. Far from the laws of Europe and beyond the reach of the Crown, power belongs to those bold enough to seize it.[NEWLINE][NEWLINE]What began as a refuge for adventurers and outcasts has become a haven for pirates, smugglers and desperate men. They know no law but profit, no loyalty but fear, and no command but their own ambition.[NEWLINE][NEWLINE]Perhaps this is the true face of the New World: not innocence, but struggle; not paradise, but a game of power and gold. If others bend the rules to survive, then so shall we. Our colony will no longer merely endure this grim reality — it will learn to master it.</English>
 		<Portuguese>Assim que a nossa colônia foi fundada, muitos falaram de liberdade, prosperidade e uma vida melhor no Novo Mundo. Era um sonho de paraíso além do oceano, um lugar onde homens honestos pudessem começar de novo. No entanto, os anos ensinaram-nos que este mundo não é governado apenas pela esperança. Longe das leis da Europa e fora do alcance da Coroa, o poder pertence àqueles que são corajosos o suficiente para tomá-lo.[NEWLINE][NEWLINE]O que começou como um refúgio para aventureiros e párias tornou-se um refúgio para piratas, contrabandistas e homens desesperados. Eles não conhecem lei além do lucro, nenhuma lealdade além do medo, e nenhum comando além de sua própria ambição.[NEWLINE][NEWLINE]Talvez esta seja a verdadeira face do Novo Mundo: não a inocência, mas a luta; não o paraíso, mas um jogo de poder e ouro. Se outros violarem as regras para sobreviver, nós também o faremos. A nossa colônia não irá mais apenas suportar esta dura realidade – aprenderá a dominá-la.</Portuguese>
 		<German>Als unsere Kolonie gegründet wurde, sprachen viele von Freiheit, Wohlstand und einem besseren Leben in der Neuen Welt. Es war der Traum von einem Paradies jenseits des Ozeans, einem Ort, an dem ehrliche Männer neu beginnen konnten. Doch die Jahre haben uns gelehrt, dass diese Welt nicht allein von Hoffnung regiert wird.[NEWLINE][NEWLINE]Fern der Gesetze Europas und jenseits der Reichweite der Krone gehört die Macht denen, die kühn genug sind, sie an sich zu reißen. Was als Zuflucht für Abenteurer und Ausgestoßene begann, ist zu einem Hort für Piraten, Schmuggler und verzweifelte Männer geworden. Sie kennen kein Gesetz außer dem Gewinn, keine Treue außer der Furcht und keinen Befehl außer dem eigenen Ehrgeiz.[NEWLINE][NEWLINE]Vielleicht ist dies das wahre Gesicht der Neuen Welt: nicht Unschuld, sondern Kampf; nicht Paradies, sondern ein Spiel um Macht und Gold. Wenn andere die Regeln beugen, um zu überleben, dann werden auch wir es tun. Unsere Kolonie wird diese abgründige Realität nicht länger nur ertragen — sie wird lernen, sie zu beherrschen.</German>
 		<Russian>Когда наша колония только зарождалась, многие грезили о свободе, процветании и лучшей жизни в Новом Свете. Это была мечта о Рае за океаном, месте, где честные люди могли бы начать все с чистого листа. Но годы научили нас: этот мир живет не одними лишь надеждами. Здесь, вдали от европейских законов и досягаемости Короны, власть принадлежит тем, у кого хватает дерзости ее захватить.[NEWLINE][NEWLINE]То, что начиналось как пристанище для искателей приключений и изгоев, превратилось в логово пиратов, контрабандистов и отчаянных людей. Они не знают иных законов, кроме жажды наживы; не ведают иной верности, кроме страха; и не подчиняются ничему, кроме собственных амбиций.[NEWLINE][NEWLINE]Возможно, таков истинный лик Нового Света: не невинность, а борьба; не Рай, а битва за власть и золото. Если другие ради выживания идут наперекор правилам, то так поступим и мы. Наша колония больше не станет просто мириться с этой суровой реальностью — она научится ею управлять.</Russian>
@@ -1947,6 +1969,7 @@
 		<French>Vous étiez un gentilhomme avant. Et là ? Aux commandes d'un bateau pirate ? [NEWLINE][NEWLINE]Regardez-moi cette racaille, gouverneur. Êtes-vous sur que vous voulez suivre cette route et mener ces gens?[NEWLINE][NEWLINE]Sure terre, vous livreriez chacun d'eux à la milice sur le champ ou, mieux, vous les pendriez à l'arbre le plus proche[NEWLINE][NEWLINE]D'un autre côté, ce sont des beaux profits en perspective que d'envoyer un équipage qui ne craint ni Dieu ni Diable et qui vous restera loyal tant que le rhum coule à flot...[NEWLINE][NEWLINE]</French>
 		<German>Früher waren Sie ein Gentleman. Und jetzt untersteht Euch eines der mächtigsten Piratenschiffe der Region?[NEWLINE][NEWLINE]Seht Euch diesen Abschaum genau an, Gouverneur! Seid Ihr sicher, dass Ihr diesen Weg gehen und diese Leute anführen wollt?[NEWLINE][NEWLINE]An Land würdet Ihr jeden von denen sofort der Miliz übergeben oder besser gleich am nächsten Baum aufhängen.[NEWLINE][NEWLINE]Andererseits verspricht es gute Gewinne, eine Mannschaft aufs Meer hinaus zu jagen, die weder Tod noch Teufel fürchtet und Euch treu ergeben ist, solange der Rum in Strömen fließt...[NEWLINE][NEWLINE]</German>
 		<Russian>Раньше ты был джентльменом. А сейчас? Командир пиратского корабля?[NEWLINE][NEWLINE]Внимательно посмотрите на эту сволочь, губернатор! Вы уверены, что хотите пойти по этому пути и повести за собой этих людей?[NEWLINE][NEWLINE]На суше любого из них вы бы сразу сдали ополченцам, а еще быстрее повесили бы на ближайшем дереве.[NEWLINE][NEWLINE]С другой стороны, иметь под рукой команду, которая не боится ни смерти, ни дьявола и верна вам, пока ром льется рекой, сулит хорошую прибыль...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Korábban úriember voltál. És most? Egy kalózhajó parancsnoka?[NEWLINE][NEWLINE]Nézze meg jól ezt a söpredéket, Kormányzó! Biztos, hogy ezen az úton akarja vezetni ezeket az embereket?[NEWLINE][NEWLINE]A szárazföldön mindegyiket azonnal átadná a katonaságnak, vagy ami még jobb, felakasztaná őket a legközelebbi fára.[NEWLINE][NEWLINE]Másrészt viszont jó haszonnal kecsegtet, ha olyan legénységet küld ki, amely nem fél sem a haláltól, sem az ördögtől, és hűséges önhöz, amíg a rum folyik...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE</Tag>
@@ -1955,6 +1978,7 @@
 		<French>Vous êtes à vous seul deux des Frères de la Côtes - vous semez la crainte et la terreur avec trois frégates pirates !</French>
 		<German>Bruder der Küste dürft Ihr euch nun nennen - mit drei Piratenfregatten verbreitet Ihr Angst und Schrecken!</German>
 		<Russian>Три пиратских фрегата</Russian>
+		<Hungarian>A Partvidék Testvére, akinek mostantól nevezheted magad - három kalózfregattoddal félelmet és rettegést keltesz!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE_HEAD</Tag>
@@ -1963,6 +1987,7 @@
 		<French>Frères de la Côte</French>
 		<German>Brüder der Küste</German>
 		<Russian>Береговое братство</Russian>
+		<Hungarian>A Partvidék Testvérei</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PIRATE_FRIGATE_TEXT</Tag>
@@ -1971,6 +1996,7 @@
 		<French>«[COLOR_SELECTED_TEXT]15 hommes sur le coffre du mort, oh oh oh et une bouteille de rhum. [COLOR_REVERT] » chantonne le capitaine. Depuis qu'il a levé les voile ce metin, cet air de marin joue dans sa tête comme une scie. Il regarde à travers sa lunette à la recherche du pirate qui a poursuivi avec entêtement tout ce matin son navire marchand chargé à plein.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Encore quelques encablures, et nous serons  tous saufs. [COLOR_REVERT] »[NEWLINE][NEWLINE]Mais là bas, qu'est ce que c'est ? Deux voiles de plus, loin, au vent![NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Nous sommes perdus. [COLOR_REVERT] » dit le capitaine en pleur. «[COLOR_SELECTED_TEXT]Cachez vos bourses et vos femmes sous le pont ! [COLOR_REVERT] »[NEWLINE][NEWLINE]Les Frères de la Côte sont là.[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Fünfzehn Mann auf des Totenmann's Kiste, johoo. Fünfzehn Mann auf des Totenmann's Kiste, johoo...und ne Buddel voll Rum[COLOR_REVERT]" summt der Käpt'n vor sich hin. Der Shanty vom Segelsetzen heute morgen will ihm einfach nicht aus dem Kopf. Nervös blickt er durch sein Fernrohr auf der Suche nach dem schwarzen Segel, dass sein voll beladenes Handelsschiff schon seit der Morgenwache hartnäckig verfolgt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ein Schlag noch, dann sind wir sicher.[COLOR_REVERT]"[NEWLINE][NEWLINE]Doch da...was ist das? Zwei weitere Segel in Luv![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wir sind alle verloren[COLOR_REVERT]" schreit der Käpt'n angstvoll auf, "[COLOR_SELECTED_TEXT]versteckt Geldbeutel und Frauen unter Deck![COLOR_REVERT]"[NEWLINE][NEWLINE]Die Brüder der Küste schlagen wieder zu...[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Пятнадцать человек на сундук мертвеца, йо-хо-хо и бутылка рома[COLOR_REVERT]" — напевает себе под нос капитан. С тех пор, как сегодня утром он отплыл, мысль о трактире нет-нет, да возвращается в его голову. Он нервно осматривает горизонт в подзорную трубу в поисках черного паруса, который все утро упрямо следовал за его полностью загруженным торговым судном.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Еще немного и мы будем в безопасности.[COLOR_REVERT]"[NEWLINE][NEWLINE]Но... что это? Еще два паруса против ветра![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Мы все пропали![COLOR_REVERT]" – в ужасе кричит капитан. "[COLOR_SELECTED_TEXT]Прячьте кошельки и женщин под палубой![COLOR_REVERT]"[NEWLINE][NEWLINE]Береговые братья здесь...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Tizenöt ember a halott ember ládáján, ho ho ho és egy üveg rum[COLOR_REVERT]" - dúdolja magában a kapitány. Mióta ma reggel kihajózott, a dalocska egyszerűen nem akar kimenni a fejéből. Idegesen néz a távcsövén keresztül azt a fekete vitorlát keresve, amely egész délelőtt kitartóan követte teljesen megrakott kereskedőhajóját.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Még egy csapás, és biztonságban leszünk.[COLOR_REVERT]"[NEWLINE][NEWLINE]De ott... mi az? Még két vitorlát szélirányba![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mindnyájan elveszünk,[COLOR_REVERT]" - kiáltja a kapitány rémülten. "[COLOR_SELECTED_TEXT]Rejtsétek az erszényeket és a nőket a fedélzet alá![COLOR_REVERT]"[NEWLINE][NEWLINE]Itt vannak a Partvidék Testvérei...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR</Tag>
@@ -1979,6 +2005,7 @@
 		<French>Votre premier mortier</French>
 		<German>Euer erster Mörser</German>
 		<Russian>Ваша первая мортира</Russian>
+		<Hungarian>Az első mozsárágyúd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR_HEAD</Tag>
@@ -1987,14 +2014,16 @@
 		<French>Votre premier mortier est prêt</French>
 		<German>Euer erster Mörser steht bereit</German>
 		<Russian>Горе осаждённым</Russian>
+		<Hungarian>Az első mozsárágyúd készen áll</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MORTAR_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Milord, the colonial army is now in possession of a truly terrifying weapon, previously used only in Europe. Our troops now have a mortar at their disposal. A siege gun that can shoot explosive projectiles across walls and crush anything within those walls. Any siege of a fortress will be shortened by this.[COLOR_REVERT]" The general is eager to make this weapon palatable to you.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]It is a persuasive way to make our case,[COLOR_REVERT]" you agree, nodding your head. "[COLOR_SELECTED_TEXT]We'll test it at the next opportunity.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Milord, the colonial army is now in possession of a truly terrifying weapon, previously used only in Europe. Our troops now have a mortar at their disposal. A siege gun that can shoot explosive projectiles across walls and crush anything inside. This will demoralize any resisting fortress.[COLOR_REVERT]" How eager the general is to make this you want this weapon![NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]It is a persuasive way to make our case,[COLOR_REVERT]" you agree, nodding your head. "[COLOR_SELECTED_TEXT]We'll test it at the next opportunity.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Senhor, o exército colonial agora possui uma arma verdadeiramente aterrorizante, anteriormente usada apenas na Europa. Nossas tropas agora têm um morteiro à sua disposição. Uma arma de cerco que pode disparar projéteis explosivos através das paredes e esmagar qualquer coisa dentro dessas paredes. Qualquer cerco a uma fortaleza será encurtado por isso.[COLOR_REVERT]" O general está ansioso para tornar esta arma palatável para você.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]É uma maneira persuasiva de defender nosso caso,[COLOR_REVERT]" você concorda, balançando a cabeça. "[COLOR_SELECTED_TEXT]Vamos testá-lo na próxima oportunidade.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<French>«[COLOR_SELECTED_TEXT] Sire, l'armée coloniale dispose maintenant d'une arme terrifiante, jusque là utilisée uniquement en Europe. Nos troupes disposent maintenant d'un mortier, un canon capable d'envoyer des projectiles explosives à travers les murs et de réduire en charpie ce que ces murs protégeaient. Les forteresses tomberont beaucoup plus vite avec un tel engin. [COLOR_REVERT] »[NEWLINE][NEWLINE]le général s'empresse pour rendre son nouveau jouet accpetable a vos yeux. «[COLOR_SELECTED_TEXT]C'est un argument de poids dans nos discussions futures avec nos voisins. [COLOR_REVERT] » souligezn vous en approuvant. «[COLOR_SELECTED_TEXT]On en usera dès que l'occasion se présente. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Milord, unsere Armee ist nun im Besitz einer wahrlich schreckenerregenden Waffe, wie sie bislang nur in Europa verwendet wurde: unseren Truppen steht nun ein Mörser zur Verfügung. Ein Belagerungsgeschütz, dass Sprengstoffgeschosse über Mauern hinweg schießen kann und alles zermalmt, was sich innerhalb dieser Mauern befindet. Die Belagerung einer Festung oder eines Forts wird damit erheblich verkürzt,[COLOR_REVERT]" versucht der General Euch den Einsatz dieser Waffe schmackhaft zu machen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hm, auf jeden Fall lassen sich damit unsere Argumente wirklich hervorragend vertreten,[COLOR_REVERT]" stimmt Ihr dem General kopfnickend zu. "[COLOR_SELECTED_TEXT]Wir werden das bei nächster Gelegenheit einmal testen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Милорд, колониальная армия теперь обладает поистине ужасающим оружием, ранее использовавшимся только в Европе. Наши войска теперь имеют в своем распоряжении мортиру. Это осадное орудие, способное стрелять разрывными снарядами по стенам и разрушать все, что находится внутри этих стен. Это ускорит осаду любой крепости. [COLOR_REVERT]" Генерал явно пытается заставить вас поскорее испытать новое оружие.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это убедительный способ изложить свою позицию,[COLOR_REVERT]" — соглашаетесь вы, кивая. "[COLOR_SELECTED_TEXT]Проверим при первой же возможности.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Uram, a gyarmati hadsereg most egy igazán félelmetes, eddig csak Európában használt fegyver birtokába jutott. Csapatainknak mostantól egy mozsárágyú áll a rendelkezésükre. Egy ostromfegyver, amely képes robbanó lövedékeket lőni a falakon túlra, és összezúzni mindent, ami ott belül van. Bármely erődítmény ostroma lerövidül ezzel.[COLOR_REVERT]" A tábornok buzgón igyekszik ezt a fegyvert szimpatikussá tenni számodra.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Meggyőzően tudunk ezzel érvelni,[COLOR_REVERT]" egyetértesz, és bólintasz. "[COLOR_SELECTED_TEXT]A legközelebbi alkalommal kipróbáljuk.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CANNON</Tag>
@@ -2003,6 +2032,7 @@
 		<French>Premier régiment de canon lourd</French>
 		<German>Eure erste Schwere Artillerie</German>
 		<Russian>Ваша первая тяжёлая артиллерия</Russian>
+		<Hungarian>Az első nehéztüzérséged</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_HEAD</Tag>
@@ -2011,6 +2041,7 @@
 		<French>Artillerie lourde</French>
 		<German>Erste Schwere Artillerie</German>
 		<Russian>Повод для беспокойства</Russian>
+		<Hungarian>Nehéztüzérség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CANNON_TEXT</Tag>
@@ -2019,6 +2050,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Que nous veut-il donc ? [COLOR_REVERT] » demande le secrétaire aux affaires étrangères, pris de court en entendant le message. «[COLOR_SELECTED_TEXT]Sommes-nous donc une menace pour cette homme ? Est-il si apeuré qu'il éprouve le besoin de se protéger de la sorte? [COLOR_REVERT] » [NEWLINE][NEWLINE]Il sursaute si brusquement que sa perruque poudrée glisse de son front, et un petit nuage blanc s'en élève. «[COLOR_SELECTED_TEXT]Ou veut-il ques nous ayons peur de lui ? [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Was will er bloß damit?[COLOR_REVERT]", fragt der fremde Gouverneur entgeistert, als er die Botschaft vernommen hat. "[COLOR_SELECTED_TEXT]Sind wir diesem Mann eine Bedrohung? Fürchtet er sich so sehr vor uns, dass er glaubt, sich auf diese Weise schützen zu müssen?[COLOR_REVERT]"[NEWLINE][NEWLINE]Dann springt er so abrupt auf, dass ihm die gepuderte Perücke in die Stirn rutscht und ein weißes Wölkchen aufsteigt. "[COLOR_SELECTED_TEXT]Oder will er, dass wir uns vor ihm fürchten?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Что он хочет этим сказать?[COLOR_REVERT]" — спрашивает ошеломленный министр иностранных дел, услышав сообщение. "[COLOR_SELECTED_TEXT]Мы представляем угрозу для этого человека? Он так боится нас, что думает таким образом защищать себя?[COLOR_REVERT]"[NEWLINE][NEWLINE]Затем он вскакивает так резко, что его напудренный парик соскальзывает ему на лоб и поднимает белое облако пудры. "[COLOR_SELECTED_TEXT]Или он хочет, чтобы мы боялись его?![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mit akar ezzel?[COLOR_REVERT]" - kérdezi döbbenten a külügyminiszter, amikor meghallja az üzenetet. "[COLOR_SELECTED_TEXT]Fenyegetést jelentünk ennek az embernek? Annyira fél tőlünk, hogy úgy érzi, így kell megvédenie magát?[COLOR_REVERT]"[NEWLINE][NEWLINE]Aztán olyan hirtelen ugrik fel, hogy a púderezett parókája lecsúszik a homlokáról és egy fehér felhő száll fel. "[COLOR_SELECTED_TEXT]Vagy azt akarja, hogy féljünk tőle?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CANNON</Tag>
@@ -2027,6 +2059,7 @@
 		<French>Six régiments de canon lourd</French>
 		<German>Sechs Schwere Artillerie</German>
 		<Russian>Шесть тяжёлых артиллерий</Russian>
+		<Hungarian>Hat nehéztüzérség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CANNON_HEAD</Tag>
@@ -2035,6 +2068,7 @@
 		<French>Comment obtenir ce que nous voulons</French>
 		<German>Wünsche</German>
 		<Russian>Весомый аргумент</Russian>
+		<Hungarian>Hogyan érjük el, amit akarunk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CANNON_TEXT</Tag>
@@ -2043,6 +2077,7 @@
 		<French>L'envoyé étranger essaie de se donner bonne figure alors qu'il est assis dans votre salle de réception. Mais ses oreilles rougies trahissent son excitation.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Gouverneur [COLOR_REVERT] » Commence-t-il «[COLOR_SELECTED_TEXT]nous avons appris que vous avez six batteries d'artillerie lourde sous votre commendement. Nous souhaiterions ...[COLOR_REVERT] »[NEWLINE][NEWLINE]Vous l'interrompez d'un geste de la main. «[COLOR_SELECTED_TEXT]Vous savez pour les canons. Vous savez donc qu'il est l'heure pour moi de présenter mes propres souhaits.[COLOR_REVERT] »[NEWLINE][NEWLINE]L'envoyé commence à suer à grosses gouttes.[NEWLINE][NEWLINE]</French>
 		<German>Der fremde Gesandte versucht, blasiert aus der Wäsche zu schauen, als er in Eurem Empfangszimmer sitzt. Doch seine roten Ohren verraten, wie aufgeregt er ist.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr Gouverneur[COLOR_REVERT]", hebt er an, "[COLOR_SELECTED_TEXT]wir haben gehört, dass Ihr Euch sechs Batterien Schwere Artillerie beschafft habt. Wir wünschen ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Mit einer Handbewegung unterbrecht Ihr ihn. "[COLOR_SELECTED_TEXT]Ihr wünscht etwas?[COLOR_REVERT]", fragt Ihr mit mildem Spott, "[COLOR_SELECTED_TEXT]wohlan, Ihr wisst von den Geschützen. Also wisst Ihr auch, dass nun die Zeit gekommen ist, dass ich meine eigenen Wünsche vortrage.[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Gesandte beginnt zu schwitzen...[NEWLINE][NEWLINE]</German>
 		<Russian>Иностранный посол пытается выглядеть уверенно, сидя в вашей приемной. Но его красные уши говорят о том, насколько сильно он взволнован.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Губернатор,[COLOR_REVERT] – начинает он – [COLOR_SELECTED_TEXT]мы слышали, что вы приобрели шесть батарей тяжелой артиллерии. Мы желаем...[COLOR_REVERT]"[NEWLINE][NEWLINE]Вы прерываете его взмахом руки. "[COLOR_SELECTED_TEXT]Вы чего-то желаете?[COLOR_REVERT]" — иронично спрашиваете вы. "[COLOR_SELECTED_TEXT]Что же, про пушки вы теперь знаете, хорошо. Исходя из этого я считаю, что настало время мне представить свои собственные пожелания.[COLOR_REVERT]"[NEWLINE][NEWLINE]Посланник начинает потеть...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A külföldi követ igyekszik magabiztosnak látszani, miközben a fogadószobádban ül. De vörös fülei elárulják, mennyire izgatott.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Kormányzó úr,[COLOR_REVERT]" - kezdi - [COLOR_SELECTED_TEXT]hallottuk, hogy ön hat nehéztüzérséget szerzett be. Szeretnénk...[COLOR_REVERT]"[NEWLINE][NEWLINE]Egy kézmozdulattal félbeszakítod. "[COLOR_SELECTED_TEXT]Szeretnének valamit?[COLOR_REVERT]" - kérdezed ironikusan. "[COLOR_SELECTED_TEXT]Tehát tud a fegyverekről. Ezért aztán azt is tudja, hogy itt az ideje, hogy én is elmondjam a saját kívánságaimat.[COLOR_REVERT]"[NEWLINE][NEWLINE]A követ izzadni kezd...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS</Tag>
@@ -2051,6 +2086,7 @@
 		<French>Dix artilleries légères</French>
 		<German>Zehn Leichte Artillerie</German>
 		<Russian>Десять лёгких артиллерий</Russian>
+		<Hungarian>Tíz könnyűtüzérség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS_HEAD</Tag>
@@ -2059,14 +2095,16 @@
 		<French>Attentifs</French>
 		<German>Achtsam</German>
 		<Russian>Лёгкое дыхание смерти</Russian>
+		<Hungarian>Figyelemre méltó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_LIGHT_CANNONS_TEXT</Tag>
-		<English>Dawn is approaching. The stranger sneaks from trunk to trunk, then crouches. Here the edge of the forest reaches closest to the rampart.[NEWLINE][NEWLINE]He studies the battlement - and is startled when the first ray of the rising sun reflects back with a silvery glint.[NEWLINE][NEWLINE]Light artillery now watches over the settlement. Alert, the soldiers observe the surrounding countryside.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Darn it![COLOR_REVERT]" murmurs the scout. "[COLOR_SELECTED_TEXT]My people won't find any easy prey here ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>Dawn is approaching. The stranger sneaks from trunk to trunk, then crouches. Here the edge of the forest reaches closest to the rampart.[NEWLINE][NEWLINE]He studies the battlement - and is startled when the first ray of the rising sun reflects back with a silvery glint.[NEWLINE][NEWLINE]Light artillery now watches over the settlement. Alert, the soldiers observe the surrounding countryside.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dammit![COLOR_REVERT]" murmurs the scout. "[COLOR_SELECTED_TEXT]My people won't find easy prey here ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>O amanhecer está se aproximando. O estranho foge de tronco em tronco e depois se agacha. Aqui, a borda da floresta chega mais perto da muralha.[NEWLINE][NEWLINE]Ele estuda a ameia - e se assusta quando o primeiro raio do sol nascente reflete de volta com um brilho prateado.[NEWLINE][NEWLINE]A artilharia leve agora vigia a colônia. Alerta, os soldados observam a paisagem circundante.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Droga![COLOR_REVERT]" murmura o batedor. "[COLOR_SELECTED_TEXT]Meu povo não encontrará nenhuma presa fácil aqui...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<French>L'aube se lève. L'étranger se faufile de tronc en tronc, puis s'aplatit. À la lisière de la forêt, à proximité des remparts.[NEWLINE][NEWLINE]Il examine le camp - et est surpris quand le premier rayon de soleil lui renvoie une lueur métallique.[NEWLINE][NEWLINE]De l'artillerie légère protège maintenant cette colonie. Les soldats aux aguets surveillent la campagne aux alentours.[NEWLINE][NEWLINE]« Malheur ! » murmure l'eclaireur. « Mon peuple ne trouvera pas une cible facile ici... » [NEWLINE][NEWLINE]</French>
 		<German>Der Morgen graut heran. Geduckt huscht der Fremde von Stamm zu Stamm, bis er sich fallen lässt. Der Waldrand reicht hier bis dicht an den Wall.[NEWLINE][NEWLINE]Aufmerksam späht er hinauf zur Zinne - und erschrickt, als der erste Strahl der aufgehenden Sonne mit einem silbrigen Funkeln erwidert wird.[NEWLINE][NEWLINE]Leichte Artillerie wacht über die Siedlung. Aufmerksam spähen die Soldaten ins Umland.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Verflixt![COLOR_REVERT]", murmelt der Kundschafter. "[COLOR_SELECTED_TEXT]Leichte Beute werden meine Leute hier keine finden ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Близится рассвет. Незнакомец крадется по лесу, переходя от ствола к стволу, и вскоре приседает. Здесь опушка леса ближе всего подходит к крепостному валу.[NEWLINE][NEWLINE]Он смотрит на зубчатую стену и вздрагивает, когда первый луч восходящего солнца пробегает по жерлу орудия...[NEWLINE][NEWLINE]В поселении установлены орудия лёгкой артиллерии. Солдаты бдительно наблюдают за окружающей местностью.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Чёрт бы их всех побрал![COLOR_REVERT]" — бормочет разведчик. "[COLOR_SELECTED_TEXT]Теперь мои люди не найдут здесь легкой добычи...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Közeledik a hajnal. Az idegen ládától ládáig lopakodik, majd leguggol. Az erdő széle itt ér a legközelebb a városfalhoz.[NEWLINE][NEWLINE]Tanulmányozza a mellvédet - és megriad, amikor a felkelő nap első sugara ezüstös csillogással verődik vissza.[NEWLINE][NEWLINE]A könnyűtüzérség most a település felett őrködik. A katonák éberen figyelik a környező vidéket.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A fenébe![COLOR_REVERT]" - mormolja a felderítő. "[COLOR_SELECTED_TEXT]Az embereim nem fognak itt könnyű prédára találni...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC</Tag>
@@ -2075,6 +2113,7 @@
 		<French>Cinq mercenaires indiens</French>
 		<German>Fünf indianische Söldner</German>
 		<Russian>Пять индейских наёмников</Russian>
+		<Hungarian>Öt Indián Zsoldos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC_HEAD</Tag>
@@ -2083,6 +2122,7 @@
 		<French>Discrets et mortels</French>
 		<German>Nicht viel Federlesen</German>
 		<Russian>Тихий и смертоносный</Russian>
+		<Hungarian>Csendesek és halálosak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_NATIVE_MERC_TEXT</Tag>
@@ -2091,6 +2131,7 @@
 		<French>«[COLOR_SELECTED_TEXT]... Et là ils repartent en volant de leurs ailes d'aigle, frlrlrllll! [COLOR_REVERT] » Riarde, la jeune recrue titube autour du feu de camp, une plume de poulet à la main.[NEWLINE][NEWLINE]Un soldat lacéré tire l'ivrogne d'un coup vers le sol. «[COLOR_SELECTED_TEXT]Ferme-la, jeune crétin, t'as aucune idée, t'en moques pas ![COLOR_REVERT] » rétorque-t-il.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]À la Corne-cassée, ils ont pris une des batteries ennemies, à cinq seulement! Un seul coup a été tiré, leur signal que nous pouvions passer. [COLOR_REVERT] »[NEWLINE][NEWLINE]Le vétéran agrippe le jeune soldat d'une main, de l'autre main il lui caresse doucement la gorge avec la plume de poulet. »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Un seul coup de feu, comme signal, sinon c'était le silence de la mort du début à la fin. [COLOR_REVERT] »[NEWLINE][NEWLINE]La recrue sourit à ses camarades en se forçant un peu. Personne ne lui retourne son sourire.[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]... und dann flattern sie davon mit ihren Adlerschwingen, gurruuh![COLOR_REVERT]" Lachend torkelt der junge Rekrut um das Lagerfeuer, eine Hühnerfeder in der Hand.[NEWLINE][NEWLINE]Da reißt ein vernarbter Soldat den Trunkenbold zu Boden. "[COLOR_SELECTED_TEXT]Still, du Narr, spotte nicht, du hast ja keine Ahnung![COLOR_REVERT]", schnauzt er ihn an.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Damals am Gebrochenen Horn, da haben sie eine Geschützstellung des Feindes ausgeschaltet, zu fünft! Dabei fiel nur ein einziger Schuss, ihr Signal, dass die Luft jetzt rein ist.[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Veteran drückt den Blassgewordenen mit einer Hand fest hinunter, hebt mit der anderen die Hühnerfeder auf und streicht mit ihr langsam über die Kehle des Jungen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nur ein Schuss, ansonsten Stille.[COLOR_REVERT]" Unsicher schaut der Rekrut zu den Kameraden, niemand erwidert sein schwaches Lächeln.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]... а затем они улетают на своих орлиных крыльях, фррррр![COLOR_REVERT]" Смеясь и пошатываясь, молодой рекрут идет вокруг костра с куриным пером в руке.[NEWLINE][NEWLINE]И тут солдат в шрамах сбивает пьяницу на землю. "[COLOR_SELECTED_TEXT]Тише, дурак, уймись, ты понятия не имеешь, о чем мелешь![COLOR_REVERT]" — рявкает он на него.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Возвратившись к Брокен-Хорну, они уничтожили одну из вражеских огневых точек, пять человек! Был произведен только один выстрел, сигнал о том, что берег свободен.[COLOR_REVERT]"[NEWLINE][NEWLINE]Одной рукой ветеран крепко держит молодого солдата, другой берет куриное перо и медленно проводит им по горлу парня.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Всего один выстрел, и потом снова тишина.[COLOR_REVERT]"[NEWLINE][NEWLINE]Новобранец неуверенно смотрит на своих товарищей; на его слабую улыбку никто не отвечает.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]... és aztán elrepülnek sasszárnyaikon, gurruuh![COLOR_REVERT]" A fiatal újonc nevetve tántorog a tábortűz körül, kezében egy csirketollal.[NEWLINE][NEWLINE]Éppen ekkor egy sebhelyes katona rántja le a földre a részeget. "[COLOR_SELECTED_TEXT]Csitt, te bolond, ne gúnyolódj, fogalmad sincs róla![COLOR_REVERT]" - csattan rá.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Még a Törött Szarvnál kiiktatták az ellenség egyik ágyúállását, öt ember! Csak egy lövést adtak le, ez volt a jelük, hogy most már tiszta a terep.[COLOR_REVERT]"[NEWLINE][NEWLINE]A veterán egyik kezével szorosan tartja a fiatal katonát, a másikkal felkapja a csirketollat, és lassan végigsimít vele a fiú torkán. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csak egy lövés, különben csend az elejétől a végéig.[COLOR_REVERT]"[NEWLINE][NEWLINE]Az újonc bizonytalanul néz a bajtársaira; erőtlen mosolyát senki sem viszonozza.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH</Tag>
@@ -2099,6 +2140,7 @@
 		<French>Première diligence</French>
 		<German>Eure erste Postkutsche</German>
 		<Russian>Первый дилижанс</Russian>
+		<Hungarian>Első postakocsi</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH_HEAD</Tag>
@@ -2107,6 +2149,7 @@
 		<French>Trompe-la-mort</French>
 		<German>Schneller als der Tod</German>
 		<Russian>Быстрее, чем смерть</Russian>
+		<Hungarian>A halálnál is gyorsabb</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_STAGECOACH_TEXT</Tag>
@@ -2115,6 +2158,7 @@
 		<French>«[COLOR_SELECTED_TEXT]À quoi bon se presser de la sorte, bon sang, moi je ... [COLOR_REVERT] » Le reste se perd dans une quinte de toux du vieux paysan.[NEWLINE][NEWLINE]Son fils reprend fermement les rênes de la paire de boeufs et sourit sous son chapeau. La diligence les dépassant à toute allure disparait déjà dans la chaleur distante, avec un petit nuage de poussière flottant paresseusement après son passage.[NEWLINE][NEWLINE]Le garçon pousse doucement le tissu : «[COLOR_SELECTED_TEXT]Sans la diligence, le vieux docteur de la ville ne serait jamais venu sauver Mère à temps. Père, tu le sais aussi! [COLOR_REVERT] »[NEWLINE][NEWLINE]Le vieux fermier crache par-dessus les boeufs et grommèlent, «[COLOR_SELECTED_TEXT]Avec ce chariot de malheur, tu pourras chercher le prêtre quand je serai sur mon lit de mort. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT] Père, tu peux compter sur moi ! [COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Was ist das nur für ein sinnloses Hasten, Himmel noch eins, ich würde ...[COLOR_REVERT]", der Rest geht in einem heftigen Hustenanfall des alten Bauern unter.[NEWLINE][NEWLINE]Sein Sohn packt die Zügel des Ochsengespanns fester und grinst unter seinem Staubtuch. Die vorbei gedonnerte Postkutsche verschwindet bereits im fernen Hitzeflimmern der Straße, nur die aufgewirbelte Staubwolke hängt noch träge in der Luft.[NEWLINE][NEWLINE]Vorsichtig schiebt der Junge das Tuch nach unten: "[COLOR_SELECTED_TEXT]Ohne die Postkutsche hätte es der alte Doktor aus der Stadt nie rechtzeitig zu Mutter geschafft, das weißt du, Vater![COLOR_REVERT]"[NEWLINE][NEWLINE]Geräuschvoll spuckt der alte Bauer über seine Ochsen und brummt: "[COLOR_SELECTED_TEXT]Dank dieses vermaledeiten Wagens wirst du mir noch rechtzeitig nen Pfaffen ans Sterbebett holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Worauf du dich verlassen kannst, Vater![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]К чему вся эта бессмысленная спешка, бог его знает, я бы...[COLOR_REVERT]" — остальное теряется в приступе сильного кашля старого фермера.[NEWLINE][NEWLINE]Его сын крепче сжимает поводья воловьей упряжки и усмехается под шляпой. Прогремевший мимо дилижанс уже исчезает в далёком жарком мареве и лишь облако пыли еще лениво висит в воздухе.[NEWLINE][NEWLINE]Мальчик осторожно стягивает ткань: "[COLOR_SELECTED_TEXT]Без дилижанса старый городской доктор никогда бы не добрался до мамы вовремя. Ты это знаешь, папа![COLOR_REVERT]"[NEWLINE][NEWLINE]Старый фермер шумно плюет на своих волов и ворчит: "[COLOR_SELECTED_TEXT]Зато благодаря этой убогой повозке ты вовремя доставишь священника к моему смертному одру.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Отец, можешь на это рассчитывать![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mi ez a sok értelmetlen kapkodás, az ég tudja, én ...[COLOR_REVERT]" - a többit az öreg gazda heves köhögési rohama elnyomja.[NEWLINE][NEWLINE]A fia szorosabban markolja az ökrösszekér gyeplőjét, és vigyorog a kalapja alatt. Az elsuhanó postakocsi már eltűnőben van a távoli forróság homályában, csak a porfelhő száll még lustán a levegőben.[NEWLINE][NEWLINE]A fiú óvatosan lehajtja a kendőt: "[COLOR_SELECTED_TEXT]A postakocsi nélkül az öreg városi orvos nem jutott volna el időben anyához. Ezt te is tudod, apám![COLOR_REVERT]"[NEWLINE][NEWLINE]Az öreg gazda hangosan köpköd az ökrei fölött és morog: "[COLOR_SELECTED_TEXT]Ennek a nyomorult hintónak köszönhetően még időben eljut a pap a halálos ágyamhoz.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Számíthatsz rá, apám![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER</Tag>
@@ -2123,6 +2167,7 @@
 		<French>Premier transport de troupes</French>
 		<German>Euer erster Truppentransporter</German>
 		<Russian>Ваша первая конестогская повозка</Russian>
+		<Hungarian>Az első csapatszállítód</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER_HEAD</Tag>
@@ -2131,14 +2176,16 @@
 		<French>Haut les coeurs</French>
 		<German>Hoch zu Ochs'</German>
 		<Russian>Грубая езда</Russian>
+		<Hungarian>Rázós utazás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CARRIER_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]My brother, well, he's up north with the 52nd Mounted, so that's why I enlisted in the first place.[NEWLINE][NEWLINE]Chasing the enemy with lightning speed, bullets and sabre, and then back like the wind before they know what hit them.[COLOR_REVERT]"[NEWLINE][NEWLINE]The lanky lad scratches his clean-shaven chin. "[COLOR_SELECTED_TEXT]And now you're sitting here with four other greenhorns in a glorified oxcart bouncing over the road, that's what I call bad luck.[COLOR_REVERT]"[NEWLINE][NEWLINE]The sergeant is about to slap the young man on the back when the next pothole throws the uniformed crowd into confusion.[NEWLINE][NEWLINE]Cursing, the men sort out their badly battered limbs.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Keep him going like that,[COLOR_REVERT]" one of them yells, holding his bleeding nose, "[COLOR_SELECTED_TEXT]and he'll be roasting in the campfire tonight next to his oxen![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]My brother, well, he's up north with the 52nd Mounted, so that's why I enlisted in the first place.[NEWLINE][NEWLINE]Chasing the enemy with lightning speed, bullets and sabre, and then back like the wind before they know what hit them.[COLOR_REVERT]"[NEWLINE][NEWLINE]The lanky lad scratches his clean-shaven chin. "[COLOR_SELECTED_TEXT]And now you're bouncing along with four other greenhorns in a glorified oxcart, that's what I call bad luck.[COLOR_REVERT]"[NEWLINE][NEWLINE]The sergeant is about to slap the young man on the back when the next pothole throws the uniformed crowd into confusion.[NEWLINE][NEWLINE]Cursing, the men nurse their badly battered limbs.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]If the driver does that one more time,[COLOR_REVERT]" one of them yells, holding his bleeding nose, "[COLOR_SELECTED_TEXT] he'll be roasting in the campfire tonight along with his oxen![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Meu irmão, bem, ele está no norte com a 52ª Montada, então é por isso que me alistei em primeiro lugar.[NEWLINE][NEWLINE]Perseguir o inimigo com a velocidade da luz, balas e sabre, e depois voltar como o vento antes que eles saibam o que os atingiu.[COLOR_REVERT]"[NEWLINE][NEWLINE]O rapaz magro coça o queixo barbeado. "[COLOR_SELECTED_TEXT]E agora você está sentado aqui com outros quatro novatos em um carro de boi glorificado saltando pela estrada, isso é o que eu chamo de azar.[COLOR_REVERT]"[NEWLINE][NEWLINE]O sargento está prestes a dar um tapa nas costas do jovem quando o próximo buraco confunde a multidão uniformizada.[NEWLINE][NEWLINE]Amaldiçoando, os homens resolvem seus problemas membros machucados.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Continue assim,[COLOR_REVERT]" um deles grita, segurando o nariz sangrando, "[COLOR_SELECTED_TEXT]e ele estará assando na fogueira esta noite ao lado de seus bois![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<French>«[COLOR_SELECTED_TEXT]Mon frère, il est dans le nord avec le 52e de cavalerie, c'est pour ça que je me suis engagé.[NEWLINE][NEWLINE]Pourchasser l'ennemi en le sabre au clair, sous le feu, le frapper et revenir comme la foudre. [COLOR_REVERT] »[NEWLINE][NEWLINE]Le jeune homme maigre gratte son menton rasé de frais. «[COLOR_SELECTED_TEXT]Et maintenant on se retrouve avec quatre autres bleus, bringuebalés dans un char à boeuf amélioré, c'est pas de bol. [COLOR_REVERT] »[NEWLINE][NEWLINE]Le sergent est sur le point de gifler le jeune homme dans le dos quand un nid-de-poule fait valdinguer tous les militaires.[NEWLINE][NEWLINE]Les hommes se relèvent en comptant leur bleus et en jurant.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Qu'il arrête son char, [COLOR_REVERT] » dit l'un d'entre eux, «[COLOR_SELECTED_TEXT]ou il finira à la broche ce soir, avec ses boeufs. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Mein Bruder, also der ist im Norden bei den 52. Berittenen, also wegen dem hab ich mich überhaupt gemeldet.[NEWLINE][NEWLINE]Blitzschnell an den Feind jagen, mit Blei und Säbel drauf, und dann zurück wie der Wind, bevor die auch nur wissen, was sie da getroffen hat.[COLOR_REVERT]"[NEWLINE][NEWLINE]Versonnen kratzt der schmächtige Bursche sein glattrasiertes Kinn. "[COLOR_SELECTED_TEXT]Und nu sitzt du hier mit zwanzig anderen Grünschnäbeln im Ochsenkarren und wirst in der Etappe rumgeruckelt, das nenn ich Pech.[COLOR_REVERT]"[NEWLINE][NEWLINE]Tröstlich will der Feldwebel dem Jüngling auf den Rücken schlagen, als das nächste Schlagloch die uniformierte Schar durcheinander würfelt.[NEWLINE][NEWLINE]Fluchend sortieren die Männer ihre arg geschundenen Glieder.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Fahr er nur weiter so,[COLOR_REVERT]" brüllt einer, der sich die blutende Nase hält, "[COLOR_SELECTED_TEXT]und er brät heute im Lager neben seinen Zugtieren![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Мой брат, ну, он на севере в 52-м конном полку, поэтому я и записался в первую очередь.[NEWLINE][NEWLINE]Налетать на врага, как ураган, убивать пулями и саблями, а затем молнией возвращаться назад, прежде чем они узнают, что их поразило.[COLOR_REVERT]"[NEWLINE][NEWLINE]Долговязый парень чешет чисто выбритый подбородок. "[COLOR_SELECTED_TEXT]И теперь, когда ты сидишь здесь с двадцатью другими новичками в повозке и трясешься по дороге, вот это я и называю невезением.[COLOR_REVERT]"[NEWLINE][NEWLINE]Сержант уже был готов хлопнуть молодого человека по спине, но следующая большая выбоина производит в повозке эффект разорвавшегося снаряда.[NEWLINE][NEWLINE]Матерясь, мужчины осматривают свои изрядно потрепанные конечности.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Если поездка будет продолжаться в том же духе,[COLOR_REVERT]" — кричит один из них, зажав кровоточащий нос - "[COLOR_SELECTED_TEXT]то сегодня вечером возница будет жариться на костре рядом со своими волами![COLOR_REVERT][NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]A bátyám, nos, ő fent van északon az 52. lovasságnál, ezért is vonultam be elsősorban.[NEWLINE][NEWLINE]Villámgyorsan, golyókkal és szablyával üldözzük az ellenséget, aztán visszatérünk, mint a szél, mielőtt még azt is észrevennék, mi csapott le rájuk.[COLOR_REVERT]"[NEWLINE][NEWLINE]A vaskos legény megvakargatja simára borotvált állát. "[COLOR_SELECTED_TEXT]És most itt ülsz négy másik zöldfülűvel egy pompás ökrösszekéren, ami pattog az úton. Ezt nevezem én balszerencsének.[COLOR_REVERT]"[NEWLINE][NEWLINE]Az őrmester éppen hátba akarja csapni a fiatalembert, amikor a következő kátyú felborítja az egyenruhás társaságot. [NEWLINE][NEWLINE]A férfiak káromkodva rendezik el a csúnyán összeütődött végtagjaikat.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csak folytassa így tovább,[COLOR_REVERT]" - kiabálja egyikük, vérző orrát fogva, "[COLOR_SELECTED_TEXT]és ma este a tábortűzben fog sülni az ökrei mellett![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL</Tag>
@@ -2147,6 +2194,7 @@
 		<French>Premier général illustre</French>
 		<German>Euer erster Großer General</German>
 		<Russian>Ваш первый Великий Генерал</Russian>
+		<Hungarian>Az első Nagy Tábornokod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL_HEAD</Tag>
@@ -2155,6 +2203,7 @@
 		<French>L'épreuve de la grandeur</French>
 		<German>Wahre Größe</German>
 		<Russian>Размер не имеет значения</Russian>
+		<Hungarian>A nagyság próbája</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_GENERAL_TEXT</Tag>
@@ -2163,6 +2212,7 @@
 		<French>Vous tournez et retournez avec excitation la médaille dans vos mains. Le grand général va arriver. Peu après, un petit homme se tient devant vous, avec ses yeux humides, sa poignée de main douce et son uniforme tendu, ne correspond pas vraiment à l'image que vous vous faites d'un héros de guerre.[NEWLINE][NEWLINE]Vous vous ressaisissez et le félicitez ; après tout, c'est lui qui vous a mené à la victoire.[NEWLINE][NEWLINE]Après la remise des médailles, vous regardez par la fenêtre vers la foule en liesse, qui compte pourtant de nombreux blessés. Vous détournez le regard en secouant la tête.[NEWLINE][NEWLINE]Votre regard tombe sur la sacoche de l'officier, qu'il a du oublier, et vous réalisez pouquoi tant de ces hommes sont encore capables de se réjouir.[NEWLINE][NEWLINE]Vous ouvrez la fenêtre et rejoignez leurs acclamations.[NEWLINE][NEWLINE]</French>
 		<German>Aufgeregt spielt Ihr mit dem Orden in Euren Händen, gleich soll der allerorten gerühmte General eintreffen. Wenig später steht ein kleiner Mann vor euch, der mit wässrigem Blick, weichem Händedruck und am Bauch spannender Uniform nicht gerade Eurem Bild eines Kriegshelden entspricht.[NEWLINE][NEWLINE]Ihr reißt Euch zusammen und gratuliert, letztlich hat er doch Eure Sache zu einem siegreichen Ende geführt.[NEWLINE][NEWLINE]Nach der Ordensverleihung verfolgt Ihr vom Fenster seinen Gang durch die jubelnde Menge, in der auffällig viele Verwundete zu sehen sind. Kopfschüttelnd wendet Ihr Euch ab.[NEWLINE][NEWLINE]Da fällt Euer Blick auf die Wundarzttasche, die der Gepriesene wohl vergaß, und Euch wird klar, warum viele seiner Soldaten des Jubelns noch fähig sind.[NEWLINE][NEWLINE]Schnell öffnet Ihr das Fenster und stimmt in die Hochrufe mit ein.[NEWLINE][NEWLINE]</German>
 		<Russian>Вы взволнованно вертите в руках медаль. С минуты на минуту должен прибыть знаменитый генерал. Через некоторое время перед вами стоит невысокий человек, который своими слезящимися глазами, мягким рукопожатием и мундиром, утягивающим выдающийся живот, не совсем соответствует вашему образу героя войны.[NEWLINE][NEWLINE]Возьмите себя в руки и поздравьте его. В конце концов, это благодаря ему сегодня мы празднуем победу.[NEWLINE][NEWLINE]После церемонии награждения вы наблюдаете из окна, как он идет сквозь ликующую толпу, в которой заметно много раненых. Покачивая головой, вы отворачиваетесь.[NEWLINE][NEWLINE]И тут ваш взгляд падает на сумку хирурга, о которой, должно быть, забыл недавний посетитель и вы понимаете, почему многие из его солдат все еще способны аплодировать. [NEWLINE][NEWLINE]Резким движением вы открываете окно и присоединяетесь к аплодисментам.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Izgatottan forgatod a kezedben lévő érmet. A híres tábornok hamarosan megérkezik. Nem sokkal később egy apró ember áll előtted, aki könnyes szemével, lágy kézfogásával és feszes egyenruhájával nem éppen a háborús hősről alkotott elképzelésedhez hasonlít.[NEWLINE][NEWLINE]Összeszeded magad, és gratulálsz neki; elvégre sikerre vitte a sereged.[NEWLINE][NEWLINE]A díjátadás után az ablakból figyeled, ahogy végigsétál az éljenző tömegen, amelyben feltűnően sok a sebesült. A fejedet rázva elfordulsz.[NEWLINE][NEWLINE]Aztán a tekinteted a sebesült táskájára esik, amit bizonyára ottfelejtett, és rádöbbensz, hogy a katonái közül sokan miért képesek még mindig éljenezni.[NEWLINE][NEWLINE]Gyorsan kinyitod az ablakot, és csatlakozol az éljenzéshez.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_ADMIRAL</Tag>
@@ -2171,14 +2221,16 @@
 		<French>Votre premier Amiral illustre</French>
 		<German>Euer erster Großer Admiral</German>
 		<Russian>Ваш первый Великий Адмирал</Russian>
+		<Hungarian>Az első Nagy Admirálisod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_ADMIRAL_HEAD</Tag>
-		<English>Commander of the fleet</English>
+		<English>Commander of the Fleet</English>
 		<Portuguese>Comandante da frota</Portuguese>
 		<French>Commandant de la flotte</French>
 		<German>Der Befehlshaber der Flotte</German>
 		<Russian>Командующий флотом</Russian>
+		<Hungarian>A flotta parancsnoka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_GREAT_ADMIRAL_TEXT</Tag>
@@ -2187,6 +2239,7 @@
 		<French>Il est enfin arrivé, l'amiral promis depuis longtemps par la couronne, le nouveau commandeur de votre flotte![NEWLINE][NEWLINE]Peut-il transformer votre équipe de bras-cassés en marins bien entrainés, capable d'affronter les éléments, les pirates, et les flottes étrangères?[NEWLINE][NEWLINE]Vous l'espérez de tout votre coeur, parce que sans lien avec votre partie - sans flotte - cette aventure dans le Nouveau Monde pourrait tourner court.[NEWLINE][NEWLINE]</French>
 		<German>Endlich ist er eingetroffen! Der von der Krone lang' versprochene Admiral, der neue Befehlshaber Eurer Flotte![NEWLINE][NEWLINE]Ist er der richtige Mann, um aus Eurem zusammengewürfelten Haufen gut ausgebildete Seeleute zu machen, die gegen das Wetter, die Piraten und die Flotten fremder Herrscher bestehen zu können?[NEWLINE][NEWLINE]Ihr hofft es inständig, denn ohne Anbindung an die Heimat - ohne Flotte - wäre das Abenteuer in der Neuen Welt nur allzu schnell wieder beendet![NEWLINE][NEWLINE]</German>
 		<Russian>Наконец-то он приехал! Адмирал, давно обещанный Короной, станет новым командующим вашего флота![NEWLINE][NEWLINE]Сможет ли он превратить разношерстную компанию в хорошо обученных моряков, способных противостоять непогоде, пиратам и флотилиям иностранных правителей?[NEWLINE][NEWLINE]Вы искренне на это надеетесь, потому что без связи с домом — без флота — это приключение в Новом Свете закончится слишком быстро![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Végre megérkezett! A Korona által régóta ígért Admirális, a flottád új parancsnoka![NEWLINE][NEWLINE]Vajon képes lesz-e a szedett-vedett csapatodat jól képzett tengerészekké változtatni, akik képesek lesznek helytállni az időjárás, a kalózok és az idegen uralkodók flottái ellen?[NEWLINE][NEWLINE]Őszintén reméled, mert az otthonoddal való kapcsolat nélkül - flotta nélkül - ez a kaland az Újvilágban túl hamar véget ér![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN</Tag>
@@ -2195,6 +2248,7 @@
 		<French>Votre premier capitaine capable</French>
 		<German>Euer erster Fähiger Kapitän</German>
 		<Russian>Ваш первый способный капитан</Russian>
+		<Hungarian>Az első alkalmas kapitányod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN_HEAD</Tag>
@@ -2203,14 +2257,16 @@
 		<French>Un maître et un commandant</French>
 		<German>Ein Kapitän für Eure Schiffe</German>
 		<Russian>Почёт и уважение</Russian>
+		<Hungarian>Egy mester és parancsnok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CAPABLE_CAPTAIN_TEXT</Tag>
-		<English>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn the seamen's business, but not everyone has leadership qualities. Many a drunkard has set his ship on the nearest rock or bullied his crew. But here and now you could recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</English>
+		<English>Evey ship needs a captain. Today you were able to hire a particular experienced sailor![NEWLINE][NEWLINE]They say a ship is only as good as its captain. Many brave men learn seamanship, but few are leaders. Many a drunkard has set his ship on the nearest rock or bullied his crew.[NEWLINE][NEWLINE]Right now you have the opportunity to recruit a true expert of the sea. Pay him well before he changes sides![NEWLINE][NEWLINE]</English>
 		<Portuguese>Todo navio precisa de um capitão. Hoje você conseguiu contratar um marinheiro experiente![NEWLINE][NEWLINE]Dizem que um navio é tão bom quanto seu capitão. Muitos homens corajosos aprendem o ofício de marinheiro, mas nem todos possuem qualidades de liderança. Muitos bêbados colocaram seu navio na rocha mais próxima ou intimidaram sua tripulação. Mas aqui e agora você poderia recrutar um verdadeiro especialista do mar. Pague bem antes que ele mude de lado![NEWLINE][NEWLINE]</Portuguese>
 		<French>Tout navire a besoin de son capitaine. Aujourd'hui vous avez pu recruter un marin particulièrement expérimenté ![NEWLINE][NEWLINE]Il est dit qu'un navire n'est aussi bon que son capitaine. Beuacoup d'hommes braves peuvent être des marins, mais peu ont des qualités de meneur. Bien des ivrognes ont malmené leur équipage ou mené leur navire sur des récifs. Mais là vous avez pu recruter un vrai maitre des mers. Payez le à sa hauteur pour qu'il reste à vos côtés![NEWLINE][NEWLINE]</French>
 		<German>Jedes Schiff braucht einen Kapitän. Heute konntet ihr einen besonders erfahrenen Seemann verpflichten![NEWLINE][NEWLINE]Man sagt ein Schiff ist nur so gut wie sein Kapitän. Viele tapfere Männer erlernen das Seemandshandwerk, aber nicht jeder hat Führungspersöhnlichkeit. Schon so mancher Trunkenbold hat sein Schiff auf den nächstbesten Felsen gesetzt oder seine Mannschaft tyrannisiert. Aber hier und heute konntet ihr einen wahren Fachmann der See anwerben. Bezahlt ihn gut, bevor er die Seiten wechselt![NEWLINE][NEWLINE]</German>
 		<Russian>Каждому кораблю нужен капитан. Сегодня вы смогли нанять особенно опытного моряка![NEWLINE][NEWLINE]Говорят, что корабль хорош настолько, насколько хорош его капитан. Многие смельчаки учатся морскому делу, но не все обладают лидерскими качествами. Многие пьяницы сажали свой корабль на ближайшую скалу или издевались над своей командой. Но здесь и сейчас перед вами настоящй знаток моря. Определите ему достойное жалование, прежде чем он переметнется на другую сторону![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Minden hajónak szüksége van egy kapitányra. Ma sikerült egy különösen tapasztalt matrózt felfogadnod![NEWLINE][NEWLINE]Azt mondják, egy hajó csak annyira jó, mint a kapitánya. Sok bátor ember tanulja a tengerészmesterséget, de nem mindenki rendelkezik vezetői képességekkel. Sok részeges ütötte már a hajóját a közeli sziklára, vagy erőszakoskodott a legénységével. De itt és most egy igazi tengerészszakértőt lehetett toborozni. Fizesd meg jól, mielőtt átállna a másik oldalra![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT</Tag>
@@ -2219,6 +2275,7 @@
 		<French>Votre premier lieutenant courageux</French>
 		<German>Euer erster Mutiger Leutnant</German>
 		<Russian>Ваш первый храбрый лейтенант</Russian>
+		<Hungarian>Az első bátor hadnagyod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT_HEAD</Tag>
@@ -2227,14 +2284,16 @@
 		<French>Les chefs mènent en première ligne</French>
 		<German>Anführer führen von vorn</German>
 		<Russian>Лидеры всегда впереди</Russian>
+		<Hungarian>A vezetők élen járnak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BRAVE_LIEUTENANT_TEXT</Tag>
-		<English>A general is important for the right strategy and leadership of the army. He is the commander of the whole bunch. [NEWLINE][NEWLINE]But who takes care of everything and executes the orders? Who takes care of the company, the men, the ammunition and the rations? Who leads the way with the saber? Who honors his men after victory and who straightens the men after defeat? The lieutenant![NEWLINE][NEWLINE]</English>
+		<English>A general is essential for the strategy and leadership of the army. He commands overall. [NEWLINE][NEWLINE]But who takes care of everything and executes the orders? Who takes care of the company, the men, the ammunition, the rations? Who leads the way with the saber? Who honours his men after victory and encourages them after defeat? The lieutenant![NEWLINE][NEWLINE]</English>
 		<Portuguese>Um general é importante para a estratégia e liderança corretas do exército. Ele é o comandante de todo o grupo. [NEWLINE][NEWLINE]Mas quem cuida de tudo e executa as ordens? Quem cuida da companhia, dos homens, das munições e das rações? Quem lidera com o sabre? Quem honra os seus homens após a vitória e quem os endireita após a derrota? O tenente![NEWLINE][NEWLINE]</Portuguese>
 		<French>Un général est très important pour la stratégie et le commandement de l'armée. Il la dirige comme un bloc.[NEWLINE][NEWLINE]Mais qui s'occupe des détails et exécute les ordres ? Qui s'occupe de la compagnie, des hommes, des munitions et des rations? Qui mène sabre au clair ? Qui les flatte après la victoire et les remobilise après une défaite ? Le lieutenant![NEWLINE][NEWLINE]</French>
 		<German>Ein General ist wichtig für die richtige Strategie und die Führung der Armee. Er ist der Kommandeur der ganzen Horde. [NEWLINE][NEWLINE]Aber wer kümmert sich um alles und setzt die Befehle um? Wer kümmert sich um die Kompanie, um die Männer, die Munition und die Verpflegung? Wer geht mit dem Säbel voran? Wer ehrt seine Männer nach dem Sieg und wer richtet die Männer nach der Niederlage wieder auf? Der Leutnant![NEWLINE][NEWLINE]</German>
 		<Russian>Генерал важен для правильной стратегии и руководства армией. Он командир всей группировки.[NEWLINE][NEWLINE]Но кто обо всём заботится и выполняет приказы? Кто позаботится о роте, людях, боеприпасах и пайках? Кто идет вперед с саблей? Кто чествует своих людей после победы и кто приводит их в порядок после поражения? Лейтенант![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A tábornok fontos a hadsereg megfelelő stratégiája és vezetése szempontjából. Ő az egész sereg parancsnoka. [NEWLINE][NEWLINE]De ki gondoskodik mindenről és hajtja végre a parancsokat? Ki gondoskodik a századról, az emberekről, a lőszerről és az ellátmányról? Ki jár az élen a szablyával? Ki dícséri meg az embereit a győzelem után, és ki tartja a lelket az emberekben a vereség után? A hadnagy![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES</Tag>
@@ -2243,6 +2302,7 @@
 		<French>Trois entrepôts</French>
 		<German>Viele Lagerhallen (3)</German>
 		<Russian>Много складов (3)</Russian>
+		<Hungarian>Számos raktár (3)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES_HEAD</Tag>
@@ -2251,6 +2311,7 @@
 		<French>Plan de production</French>
 		<German>Eine Frage der Planung</German>
 		<Russian>Планирование производства</Russian>
+		<Hungarian>Termelés tervezés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_WAREHOUSES_TEXT</Tag>
@@ -2259,6 +2320,7 @@
 		<French>Étonné, le manutentionnaire en chef lève la tête. «[COLOR_SELECTED_TEXT]Où devons-nous placer les grumes, monsieur ? [COLOR_REVERT] » demande à nouveau le charretier. «[COLOR_SELECTED_TEXT]Où pensez vous qu'on peut les placer, mon brave ? [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]C'est ce que je vous demande, il y en a cinquante piles. Il nous a fallu huit camions pour les transporter. Si nous déchargeons, nous allons bloquer l'allée principale du village. [COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Bien [COLOR_REVERT] », répondit le manutentionnaire en chef, «[COLOR_SELECTED_TEXT]Pourquoi vous ne les posez pas dans l'aire d'entrepôt que nous avons construite avec votre chargement précédent ? [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>Erstaunt hebt der Verwalter den Kopf. "[COLOR_SELECTED_TEXT]Wo sollen wir das Bauholz lagern, mein Herr?[COLOR_REVERT]", wiederholt der Fuhrmann seine Frage. "[COLOR_SELECTED_TEXT]Na, wo wohl, guter Mann?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das frage ich Euch, es sind immerhin fünfzig Klafter. Acht Planwagen karrten ihn in unserem Tross heran. Wenn wir das abladen, versperrt der Stapel rasch die Hauptstraße dieses Dorfes.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun[COLOR_REVERT]", lächelt der Verwalter darob, "[COLOR_SELECTED_TEXT]dann schafft ihn doch in die Lagerhalle, die wir mit Eurer letzten Lieferung gebaut haben.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Управляющий удивленно поднимает голову. "[COLOR_SELECTED_TEXT]Так куда нам разгружать лес, милорд?[COLOR_REVERT]" — повторяет возчик свой вопрос. "[COLOR_SELECTED_TEXT]Ну, а ты сам как думаешь, мил человек?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вот я тебя и спрашиваю, пятьдесят укладок все-таки. Восемью повозками везли. Если мы всё тут разгрузим, куча перекроет главную улицу этой деревни.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну,[COLOR_REVERT]" - улыбается стюард - "[COLOR_SELECTED_TEXT]почему бы вам не отвезти груз на склад, который мы построили сразу после вашей последней поставки?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az intéző döbbenten felkapja a fejét. "[COLOR_SELECTED_TEXT]Hol fogjuk tárolni a fát, uram?[COLOR_REVERT]" - ismétli meg kérdését a kocsis. "[COLOR_SELECTED_TEXT]Nos, mit gondolsz, hol, jóember?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ezt kérdezem, mégiscsak ötven darabról van szó. Nyolc szekér kellett hozzá, hogy elszállítsák. Ha kirakodjuk, elzárja a falu főutcáját.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos,[COLOR_REVERT]" mosolyog az intéző, "[COLOR_SELECTED_TEXT]miért nem rakod be a raktárba, amit a legutóbbi szállítmányodból építettünk?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE</Tag>
@@ -2267,6 +2329,7 @@
 		<French>Première maison de tisserand</French>
 		<German>Euer erstes Weberhaus</German>
 		<Russian>Ваш первый дом ткача</Russian>
+		<Hungarian>Az első szővőde</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_HEAD</Tag>
