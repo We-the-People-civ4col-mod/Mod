@@ -9,6 +9,7 @@
 		<Italian>In sviluppo</Italian>
 		<Spanish>Creciente</Spanish>
 		<Russian>Развивающаяся</Russian>
+		<Hungarian>Fejlődő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_FLEDGLING</Tag>
@@ -19,6 +20,7 @@
 		<Italian>Principiante</Italian>
 		<Spanish>Incipiente</Spanish>
 		<Russian>Зарождающаяся</Russian>
+		<Hungarian>Kibontakozó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_INFLUENTIAL</Tag>
@@ -29,6 +31,7 @@
 		<Italian>Influente</Italian>
 		<Spanish>Influyente</Spanish>
 		<Russian>Влиятельная</Russian>
+		<Hungarian>Befolyásos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_LEGENDARY</Tag>
@@ -39,6 +42,7 @@
 		<Italian>Leggendaria</Italian>
 		<Spanish>Legendaria</Spanish>
 		<Russian>Легендарная</Russian>
+		<Hungarian>Legendás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_NONE</Tag>
@@ -49,6 +53,7 @@
 		<Italian>Nessuno</Italian>
 		<Spanish>Inexistente</Spanish>
 		<Russian>Обычная</Russian>
+		<Hungarian>Nincs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_POOR</Tag>
@@ -59,6 +64,7 @@
 		<Italian>Povero</Italian>
 		<Spanish>Pobre</Spanish>
 		<Russian>Слабая</Russian>
+		<Hungarian>Szegényes</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CULTURELEVEL_REFINED</Tag>
@@ -69,5 +75,6 @@
 		<Italian>Raffinato</Italian>
 		<Spanish>Refinada</Spanish>
 		<Russian>Изысканная</Russian>
+		<Hungarian>Kifinomult</Hungarian>
 	</TEXT>
 </Civ4GameText>
