@@ -9,6 +9,7 @@
 		<Italian>Continentale</Italian>
 		<Spanish>Rocoso</Spanish>
 		<Russian>Суровый</Russian>
+		<Hungarian>Sziklás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CLIMATE_TEMPERATE</Tag>
@@ -19,6 +20,7 @@
 		<Italian>Temperato</Italian>
 		<Spanish>Templado</Spanish>
 		<Russian>Умеренный</Russian>
+		<Hungarian>Mérsékelt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CLIMATE_TROPICAL</Tag>
@@ -29,5 +31,6 @@
 		<Italian>Tropicale</Italian>
 		<Spanish>Tropical</Spanish>
 		<Russian>Тропический</Russian>
+		<Hungarian>Trópusi</Hungarian>
 	</TEXT>
 </Civ4GameText>
