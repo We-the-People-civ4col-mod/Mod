@@ -2338,6 +2338,7 @@
 		<French>Travail à la pièce</French>
 		<German>Weberknecht</German>
 		<Russian>Сдельная работа</Russian>
+		<Hungarian>Darabbéres munka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_WEAVERS_HOUSE_TEXT</Tag>
@@ -2346,6 +2347,7 @@
 		<French>Sans répit, les mains et les yeux de ses cinq enfants suivent ses mouvements vifs et lestes de la navette sur le métier.[NEWLINE][NEWLINE]Le veuf montre fièrement la première balle de tissu fini.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Tout à fait correct! [COLOR_REVERT] » vous le félicitez. «[COLOR_SELECTED_TEXT]J'en obtiendrai un bon prix. Et vous en serez également bien payé. [COLOR_REVERT] » Le brave homme, dont la femme a été dévorée par les loups pendant une marche en forêt, vous regarde avec espoir.[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Le premier samedi du moi, vous pourrez vous arrêter plus tôt le soir pour vous recueillir sur la tombe de votre femme. [COLOR_REVERT] »[NEWLINE][NEWLINE]Le brave homme rayonne de reconnaissance envers vous.[NEWLINE][NEWLINE]En sortant, vos bottes heurtent par mégarde un gamin qui rampait sur le seuil et qui ne se doutait de rien. Peu importe.[NEWLINE][NEWLINE]</French>
 		<German>Unablässig huschen Hände und Augen seiner fünf Kinder hin und her, folgen den flinken Bewegungen des Webschiffs.[NEWLINE][NEWLINE]Der Witwer zeigt Euch stolz den ersten Ballen Stoff, der fertig wurde.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eine anständige Arbeit![COLOR_REVERT]" lobt Ihr. "[COLOR_SELECTED_TEXT]Dafür werde ich einen guten Preis erzielen. Und Euch soll es auch nicht zum Schaden gereichen.[COLOR_REVERT]" Erwartungsfroh blickt Euch der gute Herr, deren Gattin im letzten Winter beim Spazieren im nahen Wald von Wölfen angefallen wurde, an.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Jeden ersten Samstag im Monat sollt Ihr schon am frühen Abend mit der Arbeit aufhören können, um das Grab Eurer Frau zu pflegen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Dankbar strahlt Euch der wackere Weberknecht an.[NEWLINE][NEWLINE]Beim Hinausgehen zertreten Eure Stiefel beiläufig einen arglosen Weberknecht, der über die Türschwelle krabbelt. Es kümmert Euch nicht.[NEWLINE][NEWLINE]</German>
 		<Russian>Непрестанно руки и глаза его пятерых детей бегают туда-сюда, следя за проворными движениями на ткацком станке.[NEWLINE][NEWLINE]Вдовец с гордостью показывает вам первый тюк готовой ткани.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хорошая работа![COLOR_REVERT]" - поздравляете вы его. "[COLOR_SELECTED_TEXT]Я получу за это хорошую цену. И вам хорошо заплатят.[COLOR_REVERT]" Человек, жену которого загрызли волки прошлой зимой во время прогулки в ближайшем лесу, выжидающе смотрит на вас.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]В первую субботу каждого месяца вы сможете прекращать работу рано вечером, чтобы заняться могилой жены.[COLOR_REVERT]"[NEWLINE][NEWLINE]Мужчина с благодарностью улыбается вам.[NEWLINE][NEWLINE]На выходе ваши сапоги случайно задевают ничего не подозревающего мальчишку, переползающего через порог. Вам все равно.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Öt gyermekének kezei és szemei szüntelenül ide-oda cikáznak, követve fürge mozdulatait a szövőszéken.[NEWLINE][NEWLINE]Az özvegyember büszkén mutatja neked az első bála kész ruhát.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Szép munka![COLOR_REVERT]" - gratulálsz neki. "[COLOR_SELECTED_TEXT]Jó árat fogok érte kapni. És jól meg lesz fizetve.[COLOR_REVERT]" A derék ember, akinek a feleségét tavaly télen farkasok ölték meg, miközben a közeli erdőben sétált, várakozóan néz rád.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Minden hónap első szombatján kora este abbahagyhatod a munkát, hogy a feleséged sírját ápold. [COLOR_REVERT]"[NEWLINE][NEWLINE]A jóember hálásan tekint rád.[NEWLINE][NEWLINE]Kifelé menet a csizmáddal véletlenül belerúgsz egy gyanútlanul a küszöbön átkúszó sünbe. Nem törődsz vele[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE</Tag>
@@ -2362,6 +2364,7 @@
 		<French>Le marché du textile</French>
 		<German>Stoff für Geschichten</German>
 		<Russian>Текстильный бизнес</Russian>
+		<Hungarian>A textilüzlet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_WEAVERS_HOUSE_TEXT</Tag>
@@ -2369,6 +2372,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Aposto que ele vende o tecido para a Europa![COLOR_REVERT]" diz o primeiro e acena para a garçonete.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aposto que ele negocia o tecido com os selvagens e ganha pepitas de ouro por ele,[COLOR_REVERT]" o segundo rebate e arrota afirmativamente.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nenhum dos dois![COLOR_REVERT]" afirma o terceiro, "[COLOR_SELECTED_TEXT]ele tem velas costuradas e envia corsários para o mar! Isso é o que eu faria, de qualquer maneira, se eu fosse o governador![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mas você é não,[COLOR_REVERT]" a garçonete rechonchuda interrompe. "[COLOR_SELECTED_TEXT]Você é apenas um servo de um tecelão como seus companheiros de bebida. Mas posso lhe dizer para onde vai todo aquele tecido que você tem que fazer...[COLOR_REVERT]"[NEWLINE][NEWLINE]Os três se inclinam para frente com curiosidade.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nosso bom governador está mandando fazer anáguas com ele para mim![COLOR_REVERT]" Os tecelões riem e zombar.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Ich wette, er verkauft das Tuch nach Europa![COLOR_REVERT]", meint der Erste und winkt nach der Schankmaid.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Iwo, der tauscht den Stoff bei den Wilden ein und lässt sich Goldnuggets dafür geben[COLOR_REVERT]", hält der Zweite dagegen und rülpst bekräftigend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Weder noch![COLOR_REVERT]", behauptet der Dritte, "[COLOR_SELECTED_TEXT]er lässt Segel daraus nähen und schickt Kaperschiffe aufs Meer! So würde ich es jedenfalls tun, wenn ich der Gouverneur wäre![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bist du aber nicht[COLOR_REVERT]", fährt die dralle Kellnerin dazwischen. "[COLOR_SELECTED_TEXT]Du bist nur ein Weberknecht wie deine Saufkumpane. Aber ich kann euch sagen, wohin all das Tuch geht, dass ihr fertigen müsst ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Die drei beugen sich neugierig vor.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Der feine Herr Gouverneur lässt mir Unterröcke daraus schneidern![COLOR_REVERT]" Die Weber feixen und johlen.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Держу пари, он продает одежду в Европу![COLOR_REVERT]" – говорит первый и машет официантке.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Держу пари, он торгует тканью с дикарями и получает за нее золотые самородки![COLOR_REVERT]" - возражает второй и утвердительно рыгает.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ни то, ни другое![COLOR_REVERT]" - утверждает третий - "[COLOR_SELECTED_TEXT]Он шьёт из неё паруса и посылает каперов в море! Во всяком случае, я бы так и поступил, будь я губернатором![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Но это не так[COLOR_REVERT]" – вставляет подошедшая к столу пышногрудая официантка. "[COLOR_SELECTED_TEXT]Ты обычный слуга ткача, как и твои собутыльники. Но я могу сказать вам, куда девается вся эта ткань, которую вам приходится шить...[COLOR_REVERT]"[NEWLINE][NEWLINE]Вся троица с любопытством наклоняется к девушке.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Наш добрый губернатор заказал для меня нижние юбки![COLOR_REVERT]". Ткачи оглашают таверну громким хохотом.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Fogadok, hogy eladja a ruhát Európába![COLOR_REVERT]" - mondja az első és int a pultoslánynak.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Fogadok, hogy eladja a ruhát a vadaknak és aranyrögöket kap érte,[COLOR_REVERT]" - ellenkezik a második és helyeslően böfög. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Semmi esetre sem![COLOR_REVERT]" - bizonygatja a harmadik, "[COLOR_SELECTED_TEXT]vitorlákat varr belőle, és kalózokat küld a tengerre! Én legalábbis ezt tenném, ha én lennék a kormányzó![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De te nem vagy az,[COLOR_REVERT]" - vág közbe a dundi felszolgáló. "[COLOR_SELECTED_TEXT]Te is csak egy takács szolgája vagy, mint az ivócimboráid. De azt megmondhatom, hogy hová kerül az a sok rongy, amit neked kell készítened...[COLOR_REVERT]"[NEWLINE][NEWLINE]Mindhárman kíváncsian hajolnak előre.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A mi jó kormányzónk alsószoknyákat készíttet belőle nekem![COLOR_REVERT]". A takácsok nevetnek és élcelődnek.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE</Tag>
@@ -2377,6 +2381,7 @@
 		<French>Première distillerie</French>
 		<German>Eure erste Rumbrennerei</German>
 		<Russian>Ваш первый дом винокура</Russian>
+		<Hungarian>Az első szeszfőzdéd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE_HEAD</Tag>
@@ -2385,6 +2390,7 @@
 		<French>Au plus haut degré</French>
 		<German>Hochgeistiges</German>
 		<Russian>Тонкий вкус</Russian>
+		<Hungarian>Lepárlás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_DISTILLERS_HOUSE_TEXT</Tag>
@@ -2392,6 +2398,7 @@
 		<Portuguese>Você enxuga a testa suada. A fumaça quente enche o alambique e seus pulmões. Você se sente um pouco tonto, mas também alegre.[NEWLINE][NEWLINE]Um período de privação, às vezes de dificuldades, ficou para trás. Esta noite você será recompensado com uma pequena jarra do primeiro rum destilado caseiro da sua colônia.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ihr wischt Euch die schwitzige Stirn. Heiße Dämpfe füllen die Brennerei und Eure Lungen. Leichter Schwindel packt Euch, aber auch Heiterkeit.[NEWLINE][NEWLINE]Eine Zeit der Entbehrungen, bisweilen der Not, liegt hinter Euch. Heute abend werdet Ihr Euch mit einem kleinen Krug des ersten selbstgebrannten Rums Eurer Kolonie belohnen.[NEWLINE][NEWLINE]</German>
 		<Russian>Вы вытираете вспотевший лоб. Горячие пары наполняют перегонный аппарат и ваши легкие. Вы чувствуете легкое головокружение, но при этом бодры.[NEWLINE][NEWLINE]Время трудностей, а иногда и лишений, осталось позади. Сегодня вечером вы вознаградите себя небольшим кувшином первого домашнего рома в вашей колонии.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Megtörlöd izzadt homlokodat. Forró gőzök töltik meg a lepárlót és a tüdődet. Kissé szédülsz, de vidámnak is érzed magad.[NEWLINE][NEWLINE]A nélkülözés, olykor a megpróbáltatások időszaka áll mögötted. Ma este megjutalmazod magad a kolóniád első házilag párolt kis kupica rumjával.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE</Tag>
@@ -2400,6 +2407,7 @@
 		<French>Trois distilleries</French>
 		<German>Mehr Brennereien (3)</German>
 		<Russian>Три дома винокура</Russian>
+		<Hungarian>Számos szeszfőzde (3)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE_HEAD</Tag>
@@ -2408,13 +2416,15 @@
 		<French>Un succès énivrant</French>
 		<German>Rausch und Reibach</German>
 		<Russian>Опьяняющий успех</Russian>
+		<Hungarian>Mámorító siker</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_DISTILLERS_HOUSE_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]And so I announce,[COLOR_REVERT]" the crier sounds across the marketplace, "[COLOR_SELECTED_TEXT]that our patron, the governor, in order to preserve the fear of God and decency, issues the edict that all consumption of intoxicating beverages is forbidden until further notice.[COLOR_REVERT]"[NEWLINE][NEWLINE]The settlers respond with a loud grumble. Fists are shaken sporadically.[NEWLINE][NEWLINE]But the commotion dies down when a troop of uniformed cavalry trots into the square and looks menacingly down at the crowd from their saddles.[NEWLINE][NEWLINE]You smile mockingly and draw the curtain of the carriage from which you have been watching the spectacle.[NEWLINE][NEWLINE]How useful it is to be pious, you think, when Christian purity ensures that the home-brewed rum is not drunk in the colony but can be sold in Europe at a greater profit.[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]And so I announce,[COLOR_REVERT]" the crier sounds across the marketplace, "[COLOR_SELECTED_TEXT]that our patron, the governor, in order to preserve the fear of God and decency, issues the edict that all consumption of intoxicating beverages is forbidden until further notice.[COLOR_REVERT]"[NEWLINE][NEWLINE]The settlers respond with a loud grumble. Fists are shaken sporadically.[NEWLINE][NEWLINE]But the commotion dies down when a troop of uniformed cavalry trots into the square and looks menacingly down at the crowd from their saddles.[NEWLINE][NEWLINE]You smile and draw the curtain of the carriage, hiding the spectacle.[NEWLINE][NEWLINE]How useful it is to be pious, you think, when Christian purity ensures that the home-brewed rum is not drunk in the colony but can be sold in Europe at a greater profit.[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]E então eu anuncio,[COLOR_REVERT]", o pregoeiro soa em todo o mercado, "[COLOR_SELECTED_TEXT]que nosso patrono, o governador, a fim de preservar o temor de Deus e a decência, emite o decreto de que todo consumo de bebidas intoxicantes é proibido até novo aviso.[COLOR_REVERT]"[NEWLINE][NEWLINE]Os colonos respondem com um forte resmungo. Os punhos são agitados esporadicamente.[NEWLINE][NEWLINE]Mas a comoção diminui quando uma tropa de cavalaria uniformizada trota para a praça e olha ameaçadoramente para a multidão de suas selas.[NEWLINE][NEWLINE]Você sorri zombeteiramente e fecha a cortina da carruagem de onde estava assistindo ao espetáculo.[NEWLINE][NEWLINE]Como é útil ser piedoso, você pense, quando a pureza cristã garante que o rum caseiro não seja bebido na colônia, mas possa ser vendido na Europa com maior lucro.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Und so gebe ich kund[COLOR_REVERT]", tönt der Ausrufer über den Marktplatz, "[COLOR_SELECTED_TEXT]dass unser Schutzherr, der Gouverneur, zur Wahrung von Gottesfurcht und Anstand das Edikt erlässt, dass ein jeglicher Genuss berauschender Getränke bis auf weiteres untersagt ist.[COLOR_REVERT]"[NEWLINE][NEWLINE]Mit einem lauten Murren antworten die Siedler. Vereinzelt werden Fäuste geschüttelt.[NEWLINE][NEWLINE]Doch der Aufruhr verstummt, als ein Trupp Uniformierter auf den Platz trabt und drohend vom Sattel herunter in die Menge blickt.[NEWLINE][NEWLINE]Ihr lächelt spöttisch und zieht den Vorhang der Kutsche zu, von der aus Ihr das Spektakel betrachtet habt.[NEWLINE][NEWLINE]Wie nutzbringend es doch ist, fromm zu sein, denkt Ihr, wenn christliche Reinheit bewirkt, dass der selbstgebrannte Rum in der Kolonie nicht versoffen wird, sondern mit größerem Gewinn in Europa verkauft werden kann.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Итак, я объявляю,[COLOR_REVERT]" — слышен голос глашатай на рынке - "[COLOR_SELECTED_TEXT]что наш покровитель, губернатор, дабы сохранить благочестие и порядочность колонистов, издает указ о запрете всякого употребления опьяняющих напитков до особого распоряжения.[COLOR_REVERT]"[NEWLINE][NEWLINE]Поселенцы отвечают громким ворчанием. Время от времени воздух сотрясают кулаки.[NEWLINE][NEWLINE]Но шум стихает, когда на площадь выезжает отряд кавалеристов в военной форме и угрожающе смотрит на толпу.[NEWLINE][NEWLINE]Вы насмешливо улыбаетесь и задергиваете занавеску дилижанса, из которого наблюдали за зрелищем.[NEWLINE][NEWLINE]Вы думаете, как полезно быть благочестивым, когда христианская чистота гарантирует, что самогонный ром не пьют в колонии, а продают в Европу с большей прибылью.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]És így bejelentem,[COLOR_REVERT]" - hangzik a kikiáltó a piactéren - "[COLOR_SELECTED_TEXT]hogy pártfogónk, a kormányzó, az istenfélelem és a tisztesség megőrzése érdekében kiadja a rendeletet, hogy további intézkedésig minden bódító ital fogyasztása tilos.[COLOR_REVERT]"[NEWLINE][NEWLINE]A telepesek hangos morajlással válaszolnak. Szórványosan öklöket ráznak.[NEWLINE][NEWLINE]A felfordulás azonban elül, amikor egy egyenruhás lovascsapat vonul be a térre, és nyeregből fenyegetően tekintenek le a tömegre.[NEWLINE][NEWLINE]Gúnyosan elmosolyodsz, és elhúzod a kocsi függönyét, ahonnan eddig a látványosságot figyelted. [NEWLINE][NEWLINE]Milyen hasznos a jámborság, gondolod, amikor a keresztény tisztaság biztosítja, hogy a házi főzésű rumot ne a gyarmaton igyák, hanem nagyobb haszonnal eladhassák Európában.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE</Tag>
@@ -2423,6 +2433,7 @@
 		<French>Vos premiers cigares</French>
 		<German>Eure erste Zigarrenproduktion</German>
 		<Russian>Ваш первый табачно-чайный дом</Russian>
+		<Hungarian>Az első szivarkészítő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE_HEAD</Tag>
@@ -2431,6 +2442,7 @@
 		<French>Fumer pour sa santé</French>
 		<German>Rauchergeschichten</German>
 		<Russian>Курите на здоровье</Russian>
+		<Hungarian>Dohányzás az egészségért</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_TOBACCONIST_HOUSE_TEXT</Tag>
@@ -2438,6 +2450,7 @@
 		<Portuguese>Você acabou de inalar profundamente a fumaça e agora ela está saindo de sua boca e nariz. "[COLOR_SELECTED_TEXT]Nojento![COLOR_REVERT]" você pensa.[NEWLINE][NEWLINE]Talvez até antinatural? Afinal, supõe-se que a fumaça também saia das narinas de Satanás.[NEWLINE][NEWLINE]Você cheira. Não tem cheiro sulfuroso. Talvez, afinal, não seja Belzebu trabalhando.[NEWLINE][NEWLINE]Você se lembra do que o intérprete nativo lhe disse. "[COLOR_SELECTED_TEXT]O tabaco acalma todas as doenças e refresca o espírito[COLOR_REVERT]", afirmou. Talvez não seja uma história verdadeira, mas que desperta curiosidade.[NEWLINE][NEWLINE]Você decide contá-la aos comerciantes da Europa quando traz para eles os primeiros charutos do Novo Mundo.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Eben habt Ihr den Qualm tief eingeatmet, jetzt quillt er Euch aus Mund und Nase wieder aus dem Leib. "[COLOR_SELECTED_TEXT]Widerwärtig![COLOR_REVERT]" denkt Ihr.[NEWLINE][NEWLINE]Vielleicht auch widernatürlich? Immerhin soll auch Satan Rauch aus den Nüstern fahren.[NEWLINE][NEWLINE]Ihr schnuppert. Schwefelig riecht es nicht, vielleicht ist doch nicht der Beelzebub am Werke.[NEWLINE][NEWLINE]Ihr denkt daran, was Euch der eingeborene Dolmetscher erzählt hat. "[COLOR_SELECTED_TEXT]Tabak lindere jedes Leiden und erquicke den Geist[COLOR_REVERT]", hat er behauptet. Vielleicht keine wahre Geschichte, aber eine, die die Neugierde weckt.[NEWLINE][NEWLINE]Ihr beschließt, sie auch den Händlern in Europa zu erzählen, wenn Ihr ihnen die ersten Zigarren aus der Neuen Welt bringt.[NEWLINE][NEWLINE]</German>
 		<Russian>Вы только что глубоко вдохнули дым и теперь он вырывается изо рта и носа. "[COLOR_SELECTED_TEXT]Отвратительно![COLOR_REVERT]" — думаете вы.[NEWLINE][NEWLINE]Может быть, даже неестественно? Ведь дым должен идти из ноздрей Сатаны.[NEWLINE][NEWLINE]Пробуете понюхать. Запах не такой уж и едкий. Возможно, в конце концов, это не Вельзевул за работой.[NEWLINE][NEWLINE]Вы помните, что сказал вам индеец-переводчик. "[COLOR_SELECTED_TEXT]Табак успокаивает все недуги и освежает дух[COLOR_REVERT]" — заявил он. Может быть, история не настоящая, но вызывает любопытство.[NEWLINE][NEWLINE]Вы решаете рассказать её торговцам в Европе, когда привезете им первые сигары из Нового Света.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az imént mélyen belélegezted a füstöt, és most a szádból és az orrodból ömlik ki. "[COLOR_SELECTED_TEXT]Undorító![COLOR_REVERT]" - gondolod.[NEWLINE][NEWLINE]Talán még természetellenes is? Elvégre állítólag a sátán orrlyukaiból is füstnek kellene kijönnie.[NEWLINE][NEWLINE]Szippantasz egyet. Nem kénes illata van. Talán mégsem Belzebub műve.[NEWLINE][NEWLINE]Visszaemlékszel arra, amit az Indián tolmács mondott neked. "[COLOR_SELECTED_TEXT]A dohány minden betegséget enyhít, és felfrissíti a lelket[COLOR_REVERT]" - állította. Talán nem igaz történet, de kíváncsiságot ébreszt benned.[NEWLINE][NEWLINE]Elhatározod, hogy elmeséled az európai kereskedőknek, amikor elhozod nekik az első szivarokat az Újvilágból.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE</Tag>
@@ -2446,6 +2459,7 @@
 		<French>Plus de cigares</French>
 		<German>Mehr Zigarren</German>
 		<Russian>Три табачно-чайных дома</Russian>
+		<Hungarian>Több szivar</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE_HEAD</Tag>
@@ -2454,13 +2468,15 @@
 		<French>Un roi non-fumeur.</French>
 		<German>Ein Nichtraucher als König</German>
 		<Russian>Король осуждает курение</Russian>
+		<Hungarian>A Király elítéli a dohányzást</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TOBACCONIST_HOUSE_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Governor, we are selling more tobacco in Europe than ever before,[COLOR_REVERT]" your trade envoy reports.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]However, in England, the sanctimonious King James has now ascended the throne. He himself has written a pamphlet that is circulating everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]Frowning, you take the pamphlet from your trade envoy and study it.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]One hears that the smoke alleviates fever, reduces drowsiness, sharpens the mind, grants sleep.[NEWLINE][NEWLINE]One reads that the smoke flies up into the winding cavities of the brain.[NEWLINE][NEWLINE]Well, put away this madness at last! It is disgusting by smell, harmful to the brain, detrimental to the lungs. The fumes of black smoke are the symbol of the brooding of hell![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Governor, we are selling more tobacco in Europe than ever before,[COLOR_REVERT]" your trade envoy reports.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]However, in England, the sanctimonious King James has now ascended the throne. He himself has written a pamphlet that is circulating everywhere.[COLOR_REVERT]"[NEWLINE][NEWLINE]Frowning, you take the tract from your trade envoy and study it.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]One hears that the smoke alleviates fever, reduces drowsiness, sharpens the mind, grants sleep.[NEWLINE][NEWLINE]One reads that the smoke flies up into the winding cavities of the brain.[NEWLINE][NEWLINE]Well, put away this madness at last! It is disgusting by smell, harmful to the brain, detrimental to the lungs. Smoke fumes rise straight out of hell![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Governador, estamos vendendo mais tabaco na Europa do que nunca,[COLOR_REVERT]" relata seu enviado comercial.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]No entanto, na Inglaterra, o hipócrita Rei James agora ascendeu ao trono. Ele próprio escreveu um panfleto que está circulando por toda parte.[COLOR_REVERT]"[NEWLINE][NEWLINE]Carrancudo, você pega o panfleto do seu enviado comercial e estude-o.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ouve-se que a fumaça alivia a febre, reduz a sonolência, aguça a mente, concede sono.[NEWLINE][NEWLINE]Lê-se que a fumaça voa para as cavidades sinuosas do cérebro.[NEWLINE][NEWLINE]Bem, acabe com essa loucura finalmente! É nojento pelo cheiro, prejudicial ao cérebro, prejudiciais aos pulmões. Os vapores da fumaça preta são o símbolo da meditação do inferno![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Herr Gouverneur, wir verkaufen mehr Tabak in Europa als je zuvor[COLOR_REVERT]", berichtet Euer Handelsgesandter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Doch in England hat nun der sittenstrenge König Jacobus den Thron bestiegen. Er hat höchstselbst ein Pamphlet verfasst, das überall kursiert.[COLOR_REVERT]"[NEWLINE][NEWLINE]Stirnrunzelnd nehmt Ihr Eurem Handelsgesandten die Flugschrift ab und studiert sie.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Man hört, der Rauch lindere Fieber, vermindere Schlaffheit, schärfe den Geist, gewähre Schlaf.[NEWLINE][NEWLINE]Man liest, der Rauch fliege in die windungsreichen Höhlen des Gehirns hinauf.[NEWLINE][NEWLINE]Nun, legt endlich diese Tollheit ab! Sie ist dem Geruch nach ekelhaft, für das Hirn schädlich, für die Lunge nachteilig. Die Dünste des schwarzen Rauchs sind Sinnbild des Höllenbrodems![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Губернатор, мы продаем в Европе больше табака, чем когда-либо прежде[COLOR_REVERT]" — сообщает ваш торговый представитель.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Однако теперь в Англии на престоле ханжа Яков. Он сам написал брошюру, которая распространяется повсюду.[COLOR_REVERT]"[NEWLINE][NEWLINE]Нахмурившись, вы берете брошюру у торгового представителя и начинаете изучать ее.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Говорят, дым снимает лихорадку, снижает сонливость, обостряет ум, дарует сон.[NEWLINE][NEWLINE]Говорят, что дым поднимается в извилистые полости мозга.[NEWLINE][NEWLINE]Ну, бросьте же, наконец, это безумие! Отвратителен на запах, вреден для мозга, губителен для легких. Клубы черного дыма — символ ада![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kormányzó, több dohányt adunk el Európában, mint ezelőtt bármikor,[COLOR_REVERT]" - jelenti a kereskedelmi követed.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Angliában azonban most az álszent Jakab király került a trónra. Ő maga írt egy röpiratot, amely mindenfelé kering.[COLOR_REVERT]"[NEWLINE][NEWLINE]A homlokodat ráncolva elveszed a kereskedelmi követedtől a röpiratot, és tanulmányozod. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Azt hallja az ember, hogy a füst enyhíti a lázat, csökkenti az álmosságot, élesíti az elmét, biztosítja az alvást.[NEWLINE][NEWLINE]Azt olvasod, hogy a füst felszáll az agy kanyargós üregeibe.[NEWLINE][NEWLINE][NEWLINE]Hát tedd le végre ezt az őrültséget! Undorító a szaga, káros az agyra, káros a tüdőre. A fekete füst gőze a pokol bugyrainak jelképe![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE</Tag>
@@ -2469,6 +2485,7 @@
 		<French>Votre première maison du fourreur</French>
 		<German>Eure erste Pelzhändlerhütte</German>
 		<Russian>Ваш первый дом скорняка</Russian>
+		<Hungarian>Az első Prémboltod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE_HEAD</Tag>
@@ -2477,6 +2494,7 @@
 		<French>Le chapelier toqué</French>
 		<German>Nachruhm</German>
 		<Russian>Посмертная слава</Russian>
+		<Hungarian>Az őrült kalapos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_FUR_TRADERS_HOUSE_TEXT</Tag>
@@ -2485,6 +2503,7 @@
 		<French>Notre fourrier devient un chapelier toqué. Ses mains tremblent, il parle vite pour dire encore moins que d'habitude.[NEWLINE][NEWLINE]Les chapeaux, c'est son affaire plus que les manteaux, des hauts de forme à la monde pour les dignitaires et le grand monde. Il doit manipuler du mercure pour raidir convenablement ses tissus[NEWLINE][NEWLINE] Les vapeurs de mercure pourraient-elle expliquer son comportement étrange ?</French>
 		<German>Kaum vorstellbar, dass ein solch schöner Pelz vor kurzem noch ein solch hässliches Tier geschmückt hat.[NEWLINE][NEWLINE]Eines, das wie eine übergroße Wasserratte durch die Flüsse paddelt und sich mit seinen Füßchen Verstecke im Gestrüpp baut.[NEWLINE][NEWLINE]Dumm ist er wohl nicht, der Gevatter Biber. Aber nicht klug genug, als dass er sich von Euren Männern nicht die Haut abziehen lassen müsste.[NEWLINE][NEWLINE]Der Pelzhändler zeigt Euch den ersten Mantel, den er aus dem weichen Pelz gefertigt hat. Ihr nickt wohlwollend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wohlan, Herr Biber![COLOR_REVERT]" murmelt Ihr, "[COLOR_SELECTED_TEXT]Ich mache Euch in Europa berühmt![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Трудно представить, что такой красивый мех еще недавно украшал столь уродливого зверя.[NEWLINE][NEWLINE]Того, который плывет по рекам, как огромная водяная крыса и своими маленькими лапками строит укрытия в подлеске.[NEWLINE][NEWLINE]Возможно, бобер не глупый. Но недостаточно умен, чтобы ваши люди не смогли содрать с него кожу.[NEWLINE][NEWLINE]Скорняк показывает вам первое пальто, которое он сшил из мягкого меха. Вы благосклонно киваете.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Давай, мистер Бобер![COLOR_REVERT]" – бормочете вы - "[COLOR_SELECTED_TEXT]Я сделаю тебя знаменитым в Европе![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A szőrmekereskedőnk kezd megőrülni. Rángatózik a keze, gyorsan beszél, és a szavainak még a szokásosnál is kevesebb értelme van.[NEWLINE][NEWLINE]Most már inkább a kalapokkal foglalkozik, mint a kabátokkal, divatos cilinderekkel a méltóságok és a felsőbb körök számára. Higanyt kell használnia, hogy jó merev nemezanyagot tudjon készíteni.[NEWLINE][NEWLINE]A higanyból származó gőzök magyarázhatják furcsa viselkedését?[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE</Tag>
@@ -2493,6 +2512,7 @@
 		<French>Plusieurs maisons de fourreur (3)</French>
 		<German>Mehrere Pelzhändlerhütten (3)</German>
 		<Russian>Три дома скорняка</Russian>
+		<Hungarian>Három Prémbolt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE_HEAD</Tag>
@@ -2501,14 +2521,16 @@
 		<French>Des dieux cruels</French>
 		<German>Grausame Götter</German>
 		<Russian>Жестокие боги</Russian>
+		<Hungarian>Kegyetlen istenek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_FUR_TRADERS_HOUSE_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Grandfather,[COLOR_REVERT]" asks the Native boy, "[COLOR_SELECTED_TEXT]beavers build houses, they have families, and they have dexterous paws that are like hands. They are almost like us. Do they believe in gods too?[COLOR_REVERT]"[NEWLINE][NEWLINE]The old man takes a slow drag on his pipe. "[COLOR_SELECTED_TEXT]Hmm ... what do you think, little warrior?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I think they believe in a type of god who they see every day. There are many of these gods, and they are evil. They are all-powerful and cruel.[NEWLINE][NEWLINE]They kill the beavers by the hundreds, skin them and let their naked corpses float down the river.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Grandfather,[COLOR_REVERT]" asks the Native boy, "[COLOR_SELECTED_TEXT]beavers build houses, they have families, and they have dexterous paws that are like hands. They are almost like us. Do they believe in gods too?[COLOR_REVERT]"[NEWLINE][NEWLINE]The old man takes a slow drag on his pipe. "[COLOR_SELECTED_TEXT]Hmm ... what do you think, little warrior?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I think they believe in a type of god they see every day. These gods are evil, all-powerful and cruel.[NEWLINE][NEWLINE]They kill the beavers by the hundreds, skin them and leave their bloody carcasses to float down the river.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Avô,[COLOR_REVERT]" pergunta o menino nativo, "[COLOR_SELECTED_TEXT]os castores constroem casas, eles têm famílias e têm patas hábeis que são como mãos. Eles são quase como nós. Eles também acreditam em deuses?[COLOR_REVERT]"[NEWLINE][NEWLINE]O velho dá uma tragada lenta em seu cachimbo. "[COLOR_SELECTED_TEXT]Hmm... o que você acha, pequeno guerreiro?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Acho que eles acreditam em um tipo de deus que veem todos os dias. Existem muitos desses deuses, e eles são maus. Eles são todo-poderosos e cruéis.[NEWLINE][NEWLINE]Eles matam os castores às centenas, esfolam-nos e deixam seus cadáveres nus flutuarem pelo rio. rio.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<French>« [COLOR_SELECTED_TEXT]Grand-père,[COLOR_REVERT] » demande le jeune garçon indien, «[COLOR_SELECTED_TEXT]Les castors construisent des maisons, ils ont des familles, et des pattes agiles comme des mains. Ils nous ressemblent tant. Croient-ils en des dieux eux aussi ?[COLOR_REVERT] »[NEWLINE][NEWLINE]Le veil homme tire une longue bouffée de sa pipe. «Hummm ... Qu'en penses-tu, jeune guerrier? »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je pense qu'ils croient en un grenre de dieu qu'ils voient tous jours. Ils sont nombreux, et ils sont méchants. Ils sont tous puissants et cruels.[NEWLINE][NEWLINE] Ils tuent les castors par centaines et laissent leur cadavre dénudés descendre la rivière.[COLOR_REVERT] » </French>
 		<German>"[COLOR_SELECTED_TEXT]Großvater[COLOR_REVERT]", fragt der Indianerjunge, "[COLOR_SELECTED_TEXT]Biber bauen Häuser, sie haben Familien, und sie haben geschickte Pfoten, die wie Hände sind. Sie sind fast wie wir. Glauben auch sie an Götter?[COLOR_REVERT]"[NEWLINE][NEWLINE]Der alte Mann zieht gemächlich an seiner Pfeife. "[COLOR_SELECTED_TEXT]Hmm ... was meinst denn du, kleiner Krieger?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich glaube, dass sie an Götter glauben. Sie sehen sie jeden Tag. Es sind viele Götter, und sie sind böse. Sie sind allmächtig und grausam.[NEWLINE][NEWLINE]Sie töten die Biber zu Hunderten, ziehen ihnen die Haut ab und lassen die nackten Leichen den Fluss hinabtreiben.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Дедушка,[COLOR_REVERT]" — говорит индейский мальчик — [COLOR_SELECTED_TEXT]бобры строят дома, у них есть семьи и у них ловкие лапы, похожие на руки. Они почти как мы. Они тоже верят в богов? [COLOR_REVERT]"[NEWLINE][NEWLINE]Старик медленно затягивается трубкой. "[COLOR_SELECTED_TEXT]Хм... а что ты думаешь, маленький воин?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я думаю, что они верят в бога, которого видят каждый день. Этих богов много и они злые. Они всесильны и жестоки.[NEWLINE][NEWLINE]Они убивают бобров сотнями, снимают с них шкуры, а голые трупы спускают по реке.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nagyapa,[COLOR_REVERT]" - kérdezi az Indián fiú - "[COLOR_SELECTED_TEXT]a hódok házakat építenek, családjuk van, és olyan ügyes mancsaik vannak, mintha kezük lenne. Majdnem olyanok, mint mi. Ők is hisznek az istenekben?[COLOR_REVERT]"[NEWLINE][NEWLINE]Az öregember lassan beleszív a pipájába. "[COLOR_SELECTED_TEXT]Hmm ... mit gondolsz, kis harcos?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Szerintem ők egyfajta istenben hisznek, akit minden nap látnak. Sok ilyen isten van, és gonoszak. Mindenhatóak és kegyetlenek.[NEWLINE][NEWLINE]Százával ölik a hódokat, megnyúzzák őket, és hagyják, hogy a meztelen tetemek leússzanak a folyón.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BLACKSMITH_HOUSE</Tag>
