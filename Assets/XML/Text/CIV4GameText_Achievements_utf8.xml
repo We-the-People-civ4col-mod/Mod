@@ -2539,6 +2539,7 @@
 		<French>Votre premier atelier de forgeron</French>
 		<German>Eure erste Schmiede</German>
 		<Russian>Ваш первый дом кузнеца</Russian>
+		<Hungarian>Az első Kovácsműhelyed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BLACKSMITH_HOUSE_HEAD</Tag>
@@ -2547,13 +2548,15 @@
 		<French>Le bonheur des petites choses</French>
 		<German>Das Glück der kleinen Dinge</German>
 		<Russian>Радость маленьких вещей</Russian>
+		<Hungarian>Az apró dolgok örömei</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BLACKSMITH_HOUSE_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Here, Governor![COLOR_REVERT]" Reverently, the bearded man opens his calloused hand. Then he looks you in the face and smiles proudly.[NEWLINE][NEWLINE]You accept what the blacksmith has brought you - the first nail made in your colony.[NEWLINE][NEWLINE]You know that hundreds, thousands will follow, that your blacksmiths will make many more nails, bolts, rivets, staples.[NEWLINE][NEWLINE]But will any nail ever shine as beautifully as this first one? Certainly not.[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Here, Governor![COLOR_REVERT]" Reverently, the bearded man opens his calloused hand. He looks at you and smiles proudly.[NEWLINE][NEWLINE]You take what the blacksmith hands you - the first nail made in your colony.[NEWLINE][NEWLINE]You know that hundreds, thousands will follow, that your blacksmiths will make many more nails, bolts, rivets, staples.[NEWLINE][NEWLINE]But will any nail ever shine as beautifully as this first one? Certainly not.[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Aqui, Governador![COLOR_REVERT]" Reverentemente, o homem barbudo abre a mão calejada. Então ele olha para você e sorri com orgulho.[NEWLINE][NEWLINE]Você aceita o que o ferreiro trouxe para você - o primeiro prego feito em sua colônia.[NEWLINE][NEWLINE]Você sabe que centenas, milhares virão, que seus ferreiros farão muito mais pregos, parafusos, rebites, grampos.[NEWLINE][NEWLINE]Mas será que algum prego brilhará tão lindamente quanto este primeiro? Certamente não.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Hier, Herr Gouverneur![COLOR_REVERT]" Ehrerbietig öffnet der vierschrötige Mann seine schwielige Hand. Dann schaut er Euch ins Gesicht und lächelt stolz.[NEWLINE][NEWLINE]Ihr nehmt entgegen, was der Schmied Euch gebracht hat: den ersten in Eurer Kolonie gefertigten Nagel.[NEWLINE][NEWLINE]Ihr wisst, dass Hunderte, Tausende folgen werden, dass Eure Schmiede noch viele Nägel, Bolzen, Nieten, Klammern herstellen werden.[NEWLINE][NEWLINE]Doch wird jemals ein Nagel so wunderschön glänzen wie dieser erste? Sicher nicht.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вот, губернатор![COLOR_REVERT]" Бородатый мужчина благоговейно разжимает мозолистую руку. Затем он смотрит вам в лицо и гордо улыбается.[NEWLINE][NEWLINE]Вы принимаете то, что принес вам кузнец - первый гвоздь, сделанный в вашей колонии.[NEWLINE][NEWLINE]Вы знаете, что за ним последуют сотни, тысячи, что ваши кузнецы сделают еще много гвоздей, болтов, заклепок, скоб.[NEWLINE][NEWLINE]Но будет ли когда-нибудь гвоздь сиять так красиво, как этот первый? Конечно нет.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Tessék, kormányzó úr![COLOR_REVERT]" A szakállas férfi tiszteletteljesen kitárja kérges kezét. Aztán az arcodba néz és büszkén mosolyog.[NEWLINE][NEWLINE]Elfogadod, amit a kovács hozott neked - az első szöget, amit a kolóniádon készítettek.[NEWLINE][NEWLINE]Tudod, hogy több száz és több ezer fogja ezt követni. A kovácsaid még sok szöget, csavart, szegecset, kapcsot fognak készíteni.[NEWLINE][NEWLINE]De vajon lesz-e olyan szépen csillogó szög, mint ez az első? Biztos, hogy nem.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY</Tag>
@@ -2562,6 +2565,7 @@
 		<French>Votre première armurerie</French>
 		<German>Eure erste Waffenkammer</German>
 		<Russian>Ваша первая оружейная</Russian>
+		<Hungarian>Az első Fegyvertárad</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY_HEAD</Tag>
@@ -2570,6 +2574,7 @@
 		<French>Travail de classe mondiale</French>
 		<German>Wehrhaft</German>
 		<Russian>Работа мирового уровня</Russian>
+		<Hungarian>Világszínvonalú munka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_ARMORY_TEXT</Tag>
@@ -2577,6 +2582,7 @@
 		<Portuguese>Você pesa o mosquete nas mãos, puxa a vareta, apalpa o cadinho, sente o cheiro do saco de pólvora negra. Você acena com satisfação.[NEWLINE][NEWLINE]Este espécime é tão bom quanto as armas de casa, este primeiro mosquete feito aqui no Novo Mundo, em seu primeiro arsenal. Pois bem![NEWLINE][NEWLINE]</Portuguese>
 		<German>Ihr wiegt die Muskete in Euren Händen, zieht den Ladestock hervor, befühlt die Zündpfanne, riecht am Schwarzpulverbeutel. Ihr nickt befriedigt.[NEWLINE][NEWLINE]Dieses Probestück ist so gut wie die Waffen aus der Heimat, diese erste Muskete, die hier in der Neuen Welt gefertigt wurde, in Eurer ersten Waffenkammer. Na dann![NEWLINE][NEWLINE]</German>
 		<Russian>Вы взвешиваете мушкет в руках, вытаскиваете шомпол, ощупываете полку, чувствуете запах мешка с черным порохом. Вы удовлетворенно киваете.[NEWLINE][NEWLINE]Этот образец ничем не хуже европейского оружия, этот первый мушкет, сделанный здесь, в Новом Свете, в вашей первой оружейной. Прекрасно![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A kezedben méregeted a puskát, kihúzod a puskapálcát, érzed a gyutacsot, érzed a lőporzsák szagát. Elégedetten bólogatsz.[NEWLINE][NEWLINE]Ez a darab olyan jó, mint az otthoni fegyverek, ez az első puska, amit itt, az Újvilágban, az első fegyvertáradban készítettek. Nos így állunk![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE</Tag>
@@ -2585,6 +2591,7 @@
 		<French>Votre première raffinerie de blanc de baleine</French>
 		<German>Eure erste Trankocherei</German>
 		<Russian>Ваша первая фабрика ворвани</Russian>
+		<Hungarian>Az első bálnaolaj boltod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE_HEAD</Tag>
@@ -2593,14 +2600,16 @@
 		<French>Que la lumière soit!</French>
 		<German>Es werde Licht</German>
 		<Russian>Да будет свет</Russian>
+		<Hungarian>Legyen világosság</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_WHALE_OIL_HOUSE_TEXT</Tag>
-		<English>Gently turn the fine brass screw. The narrow wick lifts out of its socket and the small bluish flickering grows into a large bright yellow flame.[NEWLINE][NEWLINE]Mild and calm, it illuminates your writing room. Everything is bathed in a homely glow, from the papers on the table to the opposite wall.[NEWLINE][NEWLINE]Your gaze falls on the rough iron ring there and the soot-blackened planks behind it.[NEWLINE][NEWLINE]How long have you been wearing out your eyes in the flickering light of pine shavings?[NEWLINE][NEWLINE]Nimbly and effortlessly they now skim over letters and numbers, numbers that will soon tell of profits from the best lamp oil in Europe.[NEWLINE][NEWLINE]</English>
+		<English>Gently turn the fine brass screw. The narrow wick lifts out of its socket and the faint blue flicker grows into a bright yellow flame.[NEWLINE][NEWLINE]Mild and calming, it illuminates your writing room. Everything is bathed in a cozy glow, from the papers on the table to the opposite wall.[NEWLINE][NEWLINE]Your gaze falls on the rough iron ring and the soot-blackened planks behind it.[NEWLINE][NEWLINE]How long have you been damaging your eyes with the flickering light from pine shavings?[NEWLINE][NEWLINE]Now you can skim effortlessly over letters and numbers, numbers that will soon tell of profits from the best lamp oil in Europe.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Gire suavemente o parafuso de latão fino. O pavio estreito sai do encaixe e a pequena cintilação azulada se transforma em uma grande chama amarela brilhante.[NEWLINE][NEWLINE]Suave e calma, ela ilumina sua sala de escrita. Tudo é banhado por um brilho caseiro, desde os papéis na mesa até a parede oposta.[NEWLINE][NEWLINE]Seu olhar recai sobre o anel de ferro áspero ali e as tábuas enegrecidas de fuligem atrás dele.[NEWLINE][NEWLINE]Há quanto tempo você está desgastando seus olhos sob a luz bruxuleante das aparas de pinheiro?[NEWLINE][NEWLINE]Agilmente e sem esforço, eles agora folheiam letras e números, números que em breve irão falam dos lucros do melhor óleo para lâmpadas da Europa.[NEWLINE][NEWLINE]</Portuguese>
 		<French>Grâce à ce premier pressoir, vos colons sont en mesure de produire de l'huile de baleine.[NEWLINE][NEWLINE]</French>
 		<German>Behutsam dreht Ihr die feine Messingschraube. Der schmale Docht hebt sich aus seiner Fassung und das eben noch kleine bläuliche Geflacker wächst zu einer großen hellgelben Flamme.[NEWLINE][NEWLINE]Mild und ruhig beleuchtet sie Eure Schreibstube. Alles ist in einen heimeligen Schein getaucht, von den Papieren auf dem Tisch bis zur gegenüberliegenden Wand.[NEWLINE][NEWLINE]Euer Blick fällt auf den groben Eisenring dort und die rußgeschwärzten Bohlen dahinter.[NEWLINE][NEWLINE]Wie lange habt Ihr Euch die Augen im flackernden Licht von Kienspänen verdorben?[NEWLINE][NEWLINE]Flink und mühelos können sie nun über Buchstaben und Ziffern eilen, Ziffern, die auch bald schon von den Erlösen besten Lampenöls in Europa künden werden.[NEWLINE][NEWLINE]</German>
 		<Russian>Аккуратно поверните тонкий латунный винт. Узкий фитиль поднимается из гнезда и маленькое голубоватое мерцание превращается в большое ярко-желтое пламя.[NEWLINE][NEWLINE]Мягкое и спокойное, оно освещает вашу рабочую комнату. Все купается в тёплом сиянии, от бумаг на столе до противоположной стены.[NEWLINE][NEWLINE]Ваш взгляд падает на грубое железное кольцо и на почерневшие от копоти доски за ним.[NEWLINE][NEWLINE]Давно ли вы утомляли свои глаза мерцающим светом сосновой лучины?[NEWLINE][NEWLINE]Теперь они ловко и легко пробегают по буквам и цифрам, числам, которые скоро расскажут о прибылях от лучшего лампового масла в Европе.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Óvatosan elforgatod a vékony sárgaréz csavart. A keskeny kanóc kiemelkedik a foglalatából, és a kis kékes pislákolás nagy, élénksárga lánggá nő.[NEWLINE][NEWLINE]Enyhén és csendesen megvilágítja az írószobádat. Minden otthonos ragyogásban fürdik, az asztalon lévő papíroktól a szemközti falig.[NEWLINE][NEWLINE]Tekinteted az ott lévő durva vaskarikára és a mögötte lévő koromfekete deszkákra esik.[NEWLINE][NEWLINE]Mióta is fárasztod a szemedet a fenyőforgács pislákoló fényében?[NEWLINE][NEWLINE]Gyorsan és könnyedén suhan most a tekinteted a betűk és számok fölött, amelyek hamarosan Európa legjobb lámpaolajának nyereségéről árulkodnak.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_WHALE_OIL_HOUSE</Tag>
@@ -2609,21 +2618,24 @@
 		<French>Deux raffineries de blanc de baleine</French>
 		<German>Mehr Trankochereien (2)</German>
 		<Russian>Две фабрики ворвани</Russian>
+		<Hungarian>Több bálnaolaj bolt (2)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_WHALE_OIL_HOUSE_HEAD</Tag>
-		<English>A matter of air sovereignty</English>
+		<English>A matter of air quality</English>
 		<Portuguese>Uma questão de soberania aérea</Portuguese>
 		<French>Maitrise des embruns</French>
 		<German>Eine Frage der Lufthoheit</German>
 		<Russian>Воздух независимости</Russian>
+		<Hungarian>A levegő tisztaságának kérdése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_WHALE_OIL_HOUSE_TEXT</Tag>
-		<English>Admittedly, the fresh sea air is no longer as it was when you arrived in the New World.[NEWLINE][NEWLINE]Fumes from the rendering pots are a challenge for the nose when the wind blows onshore, and you start to grumble.[NEWLINE][NEWLINE]That should all be over soon. In front of you, the local quartermaster is stacking up barrels of the finest gun oil for the militia's rifles.[NEWLINE][NEWLINE]In the dim light of the warehouse you recognise earthen jars full of lamp oil, perfectly suited for evening Bible reading by puritan souls.[NEWLINE][NEWLINE]Those more inclined to worldly pleasures are not forgotten. Whalebone bodices hang by their strings from a beam. A crate full of ambergris for perfume awaits expert processing.[NEWLINE][NEWLINE]From pious to frivolous, everyone would take something suitable home with them tonight. Satisfied, you nod to the quartermaster.[NEWLINE][NEWLINE]</English>
+		<English>The sea air is no longer as fresh as it was when you arrived in the New World.[NEWLINE][NEWLINE]Rendering pots offend the nose whenever the wind blows onshore, and you grumble.[NEWLINE][NEWLINE]TSoon that should all be over. In front of you the local quartermaster stacks barrels of gun oil for the militia's rifles.[NEWLINE][NEWLINE]In the dim light of the warehouse you see earthen jars full of lamp oil, perfectly suited for puritan souls doing their evening Bible reading.[NEWLINE][NEWLINE]Those inclined to worldly pleasures are not forgotten. Whalebone corsets hang from a beam. Ambergris for perfume awaits expert processing.[NEWLINE][NEWLINE]From pious to frivolous, everyone can take something suitable home with them tonight. Satisfied, you nod to the quartermaster.[NEWLINE][NEWLINE]</English>
 		<Portuguese>É certo que o ar fresco do mar não é mais o mesmo de quando você chegou ao Novo Mundo.[NEWLINE][NEWLINE]A fumaça dos potes de renderização é um desafio para o nariz quando o vento sopra em terra firme e você começa a resmungar.[NEWLINE][NEWLINE]Isso tudo deve acabar em breve. À sua frente, o contramestre local está empilhando barris do melhor óleo para armas para os rifles da milícia.[NEWLINE][NEWLINE]Na penumbra do armazém, você reconhece potes de barro cheios de óleo de lamparina, perfeitamente adequados para a leitura noturna da Bíblia por almas puritanas.[NEWLINE][NEWLINE]Aqueles mais inclinados aos prazeres mundanos não são esquecidos. Corpetes de osso de baleia pendem de uma viga pelos cordões. Uma caixa cheia de âmbar cinza para perfume aguarda processamento especializado.[NEWLINE][NEWLINE]De piedosos a frívolos, todos levariam algo adequado para casa esta noite. Satisfeito, você acena para o intendente.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Zugegeben, die frische Seeluft ist nicht mehr so, wie sie noch bei Eurer Ankunft in der Neuen Welt war.[NEWLINE][NEWLINE]Vor allem die Dünste der Trankochereien sind bei auflandigem Wind eine Anfechtung für die Nase, man beginnt bereits zu murren.[NEWLINE][NEWLINE]Damit sollte bald Schluss sein. Vor Euch stapelt der hiesige Quartiermeister Fässchen feinsten Waffenöls für die Gewehre der Miliz auf.[NEWLINE][NEWLINE]Im schummrigen Licht der Lagerhalle erkennt Ihr irdene Krüge voll Lampenöl, vortrefflich geeignet zur abendlichen Bibellektüre puritanischer Seelen.[NEWLINE][NEWLINE]Auch an die eher den weltlichen Genüssen Zugeneigten ist gedacht. Fischbeinmieder hängen an ihren Schnüren von einem Balken, eine Kiste voll Ambrabrocken wartet auf kundige Weiterverarbeitung.[NEWLINE][NEWLINE]Von fromm bis frivol würde heute Abend ein jeder etwas Passendes mit nach Hause nehmen. Zufrieden nickt Ihr dem Quartiermeister zu.[NEWLINE][NEWLINE]</German>
 		<Russian>Правда, свежий морской воздух уже не тот, что был, когда вы приехали в Новый Свет.[NEWLINE][NEWLINE]Дым от котлов вытопки китового жира - это испытание для носа, особенно, когда ветер дует с моря и вы начинаете ворчать.[NEWLINE][NEWLINE]Надо побыстрее закончить тут дела. Местный интендант выставляет перед вами бочки с лучшим оружейным маслом для винтовок ополченцев.[NEWLINE][NEWLINE]В тусклом свете склада вы узнаете глиняные кувшины, полные лампадного масла, идеально подходящего для вечернего чтения Библии пуританскими душами.[NEWLINE][NEWLINE]Не забыты и те, кто более склонен к мирским удовольствиям. Корсажи из китового уса свисают на завязках с балки. Ящик, полный амбры для парфюмерии, ожидает обработки специалистом.[NEWLINE][NEWLINE]Все, от благочестивых до легкомысленных, сегодня вечером возьмут с собой что-нибудь подходящее. Удовлетворенный, вы киваете интенданту.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Igaz, a friss tengeri levegő már nem olyan, mint amikor az Újvilágba érkeztél.[NEWLINE][NEWLINE]A tetemtörlő edények füstje kihívást jelent az orrodnak, amikor a szél a part felé fúj, és morogni kezdesz.[NEWLINE][NEWLINE]Ennek hamarosan vége kell, hogy legyen! Előtted a helyi szállásmester a polgárőrség puskáihoz való legfinomabb fegyverolaj hordóit halmozza fel.[NEWLINE][NEWLINE]A raktár félhomályában felismered a lámpaolajjal teli agyagedényeket, amelyek tökéletesen alkalmasak a puritán lelkek esti bibliaolvasására.[NEWLINE][NEWLINE]A világi örömökre hajlamosabbakról sem feledkeznek meg. Bálnacsontmellények lógnak zsinórokon egy gerendáról. Egy láda tele parfümnek való borostyánnal várja szakszerű feldolgozását.[NEWLINE][NEWLINE]A jámboroktól a könnyűvérűekig mindenki hazavinne magával valami alkalmasat ma este. Elégedetten bólintasz a szállásmesternek[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE</Tag>
@@ -2632,6 +2644,7 @@
 		<French>De nombreux embarcadères</French>
 		<German>Viele Landungsstege (5)</German>
 		<Russian>Пять причалов</Russian>
+		<Hungarian>Sok kikötési hely (5)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE_HEAD</Tag>
@@ -2640,13 +2653,15 @@
 		<French>Bonne chance !</French>
 		<German>Petri Heil!</German>
 		<Russian>Удачи!</Russian>
+		<Hungarian>Jó szerencsét!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_LANDING_STAGE_TEXT</Tag>
-		<English>The shy light of the morning sun wakes you up, but you are by no means the first to start the day's work early.[NEWLINE][NEWLINE]You step to the window and look out over the water. Many narrow, pale-white spots dance across the waves or drift on the sea.[NEWLINE][NEWLINE]In all your coastal towns, the fishermen sail out. Their daily catch feeds the colonists everywhere.[NEWLINE][NEWLINE]</English>
+		<English>Wakened by the faint light of dawn, you are by no means the first to start the day's work.[NEWLINE][NEWLINE]Step to the window and look out across the water. Pale-white spots dance over waves or drift on the sea.[NEWLINE][NEWLINE]In all your coastal towns fishers sail out. Their daily catch feeds colonists everywhere.[NEWLINE][NEWLINE]</English>
 		<Portuguese>A luz tímida do sol da manhã acorda você, mas você não é de forma alguma o primeiro a começar o trabalho cedo.[NEWLINE][NEWLINE]Você vai até a janela e olha para a água. Muitas manchas estreitas e brancas dançam nas ondas ou flutuam no mar.[NEWLINE][NEWLINE]Em todas as suas cidades costeiras, os pescadores navegam. Sua captura diária alimenta os colonos em todos os lugares.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Das scheue Licht der Morgensonne weckt Euch, doch seid Ihr keineswegs der Erste, der zeitig sein Tagewerk beginnt.[NEWLINE][NEWLINE]Ihr tretet an die Fensterluke und seht aufs Wasser. Viele schmale, weißfahle Flecken tanzen auf den Wellen, treiben auf dem Meer.[NEWLINE][NEWLINE]In all Euren Küstenstädtchen segeln die Fischer hinaus. Ihr täglicher Fang nährt die Kolonisten allerorten.[NEWLINE][NEWLINE]</German>
 		<Russian>Мягкий свет утреннего солнца будит вас, но вы далеко не первый, кто рано начинает свой рабочий день.[NEWLINE][NEWLINE]Вы подходите к окну и смотрите на воду. Множество узких бледно-белых пятен танцуют на волнах или дрейфуют в море.[NEWLINE][NEWLINE]Во всех ваших прибрежных городах рыбаки выходят в море. Их ежедневный улов кормит колонистов повсюду.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A reggeli nap tompa fénye ébreszt, de korántsem te vagy az első, aki korán kezdi a napi munkát.[NEWLINE][NEWLINE]Az ablakhoz lépsz, és kinézel a vízre. Sok keskeny, halványfehér pont táncol a hullámokon, vagy sodródik a tengeren.[NEWLINE][NEWLINE]Az összes tengerparti városodból kihajóznak a halászok. A napi fogásukkal mindenhol táplálják a telepeseket.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_SCOUTS</Tag>
@@ -2655,6 +2670,7 @@
 		<French>Deux éclaireurs aguerris</French>
 		<German>Zwei Routinierte Späher</German>
 		<Russian>Два закалённых разведчика</Russian>
+		<Hungarian>Két Tapasztalt Felderítő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_SCOUTS_HEAD</Tag>
@@ -2663,6 +2679,7 @@
 		<French>Un très grand voyageur</French>
 		<German>Ein weitgereister Mann</German>
 		<Russian>Много путешествовавший человек</Russian>
+		<Hungarian>Egy világot látott ember</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWO_SCOUTS_TEXT</Tag>
@@ -2670,14 +2687,16 @@
 		<Portuguese>Você examina o homem da cabeça aos pés. Suas roupas de couro estão manchadas e seus sapatos cheios de buracos. Há poeira em seu cabelo e cautela em seus olhos.[NEWLINE][NEWLINE]Este batedor encontrou muitos perigos e sobreviveu a todos eles. Você sorri e estende a mão para ele. "[COLOR_SELECTED_TEXT]Bem-vindo ao meu serviço![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Von Kopf bis Fuß mustert Ihr den Mann. Fleckig ist seine lederne Kleidung und löchrig sein Schuhwerk. Staub liegt auf seinem Haar und Vorsicht in seinen Augen.[NEWLINE][NEWLINE]Dieser Scout ist vielen Gefahren begegnet und hat sie allesamt überlebt. Ihr lächelt und reicht ihm die Hand. "[COLOR_SELECTED_TEXT]Willkommen in meinen Diensten![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Вы осматриваете человека с ног до головы. Его кожаная одежда в пятнах, а сапоги в дырках. На его волосах пыль, а в глазах настороженность.[NEWLINE][NEWLINE]Этот разведчик сталкивался со многими опасностями и пережил их все. Вы улыбаетесь и протягиваете ему руку. "[COLOR_SELECTED_TEXT]Добро пожаловать! Я рад, что человек с таким опытом будет работать на благо наших колоний.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Tetőtől talpig megvizsgálod a férfit. A bőrruhája foltos, a cipője pedig tele van lyukakkal. A haja poros, a szeme pedig óvatosságot sugároz.[NEWLINE][NEWLINE]Ez a felderítő sok veszéllyel találkozott már, és mindet túlélte. Mosolyogva nyújtod felé a kezed. "[COLOR_SELECTED_TEXT]Üdvözöllek a szolgálatomban![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RANCHERS</Tag>
-		<English>Two Expert Ranchers</English>
+		<English>Two expert ranchers</English>
 		<Portuguese>Dois vaqueiros</Portuguese>
 		<French>Deux experts éleveurs</French>
 		<German>Zwei erfahrene Züchter</German>
 		<Russian>Два опытных пастуха</Russian>
+		<Hungarian>Két Szakértő Lótenyésztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RANCHERS_HEAD</Tag>
@@ -2686,6 +2705,7 @@
 		<French>Des moqueries gratuites</French>
 		<German>Unverdienter Spott</German>
 		<Russian>Незаслуженное издевательство</Russian>
+		<Hungarian>Érdemtelen Gúnyolódás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RANCHERS_TEXT</Tag>
@@ -2693,6 +2713,7 @@
 		<Portuguese>A risada sardônica de menino faz você se virar. De quem são aqueles dois pirralhos rindo?[NEWLINE][NEWLINE]Com os dedos estendidos, eles imitam o andar do homem, segurando a barriga enquanto gritam provocações grosseiras.[NEWLINE][NEWLINE]Enquanto isso, o homem que está sendo assediado caminha sobre suas pernas arqueadas, destemido, sem pestanejar.[NEWLINE][NEWLINE]Com alguns passos rápidos você atravessa a rua e agarre as orelhas dos texugos atrevidos.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Você não sabe quem é esse homem, o que devemos a ele?[NEWLINE][NEWLINE]Este vaqueiro é o criador de cavalos mais importante em nossas colônias. Sem ele, nossos soldados teriam que patrulhar o campo a pé![COLOR_REVERT]"[NEWLINE][NEWLINE]As crianças inclinam a cabeça em sinal de alerta vergonha.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Hämisches Jungenlachen lässt Euch herumfahren. Über wen gackern die beiden Gören da?[NEWLINE][NEWLINE]Mit ausgestreckten Fingern verfolgen sie den Gang des Mannes, halten sich die Bäuche und rufen so manches derbe Spottwort.[NEWLINE][NEWLINE]Der Geschmähte stapft indes auf seinen O-Beinen unverdrossen vorbei und verzieht keine Miene.[NEWLINE][NEWLINE]Mit ein paar geschwinden Schritten seid Ihr auf der anderen Straßenseite und zieht den Frechdachsen die Ohren lang.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wisst ihr denn nicht, wer dieser Mann ist, was wir ihm verdanken?[NEWLINE][NEWLINE]Dieser Züchter ist der wichtigste Pferdezüchter unserer Kolonien. Ohne ihn müssten unsere Soldaten zu Fuß durchs Umland patrouillieren![COLOR_REVERT]"[NEWLINE][NEWLINE]Beschämt neigen die Kinder die Köpfe.[NEWLINE][NEWLINE]</German>
 		<Russian>Сардонический мальчишеский смех заставляет вас обернуться. О ком эти два паренька кудахчут?[NEWLINE][NEWLINE]Растопырив пальцы, они копируют походку мужчины, держась за животы и выкрикивая грубые насмешки.[NEWLINE][NEWLINE]Тем временем измученный мужчина невозмутимо бредет на кривых ногах, даже глазом не моргнув.[NEWLINE][NEWLINE]Несколькими быстрыми шагами вы переходите улицу и хватаете за уши нахальных дразнил.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Разве вы не знаете, кто этот человек и чем мы ему обязаны?[NEWLINE][NEWLINE]Этот владелец ранчо – самый важный коневод в наших колониях. Без него нашим солдатам пришлось бы патрулировать сельскую местность пешком![COLOR_REVERT]"[NEWLINE][NEWLINE]От стыда у детей густо покраснели уши и они виновато склонили головы.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A szarkasztikus kisfiús nevetés arra késztet, hogy megfordulj. Ki az a két taknyos, aki ott gügyög?[NEWLINE][NEWLINE]Kinyújtott ujjakkal utánozzák a férfi járását, a hasukat fogva, miközben durva gúnyolódásokat kiabálnak.[NEWLINE][NEWLINE]Eközben a férfi, akit szemrebbenés nélkül halad a görbe lábain. [NEWLINE][NEWLINE]Néhány gyors lépéssel átvágsz az utcán, és megragadod a szemtelen kölykök füleit.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nem tudjátok, ki ez az ember, és mivel tartozunk neki?[NEWLINE][NEWLINE]Ez a farmer a legfontosabb lótenyésztő a kolóniáinkban. Nélküle a katonáinknak gyalog kellene járőrözniük a vidéken![COLOR_REVERT]"[NEWLINE][NEWLINE]A gyerekek szégyenkezve hajtják le a fejüket.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_MILITIAS</Tag>
@@ -2701,6 +2722,7 @@
 		<French>Vous avez levé trois milices coloniales</French>
 		<German>Ihr habt Eure dritte Siedler-Miliz aufgestellt</German>
 		<Russian>Три вооруженных колониста</Russian>
+		<Hungarian>Létrehoztad a harmadik telepes nemzetőrödet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_MILITIAS_HEAD</Tag>
@@ -2709,6 +2731,7 @@
 		<French>La milice coloniale</French>
 		<German>Die Siedler-Miliz</German>
 		<Russian>Одни из первых</Russian>
+		<Hungarian>A Nemzetőrség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_MILITIAS_TEXT</Tag>
@@ -2718,6 +2741,7 @@
 		<Italian>You have recruited some of your settlers for military service. Hopefully they are strong enough to parry the native raids and to protect the colony...[NEWLINE][NEWLINE]</Italian>
 		<Spanish>You have recruited some of your settlers for military service. Hopefully they are strong enough to parry the native raids and to protect the colony...[NEWLINE][NEWLINE]</Spanish>
 		<Russian>Качая головой, офицер ополчения стоит перед новобранцами. "[COLOR_SELECTED_TEXT]И вот этот сброд мне присылают тренировать... Как я должен защищать колонию с этими? Кто-то из вас когда-нибудь вообще стрелял из ружья или колол штыком краснокожих? Пожалуй, нет... На кой чёрт ты вызвался добровольцем?[COLOR_REVERT]" — рычит он на оборванцев, которых губернатор с гордостью называет "своим новым колониальным ополчением".[NEWLINE][NEWLINE]Новобранцы только благоговейно молчат.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Штыки, индейцы? Я думал, что у нас тут будет трехразовое питание, ночлег и много табака. Вербовщик ничего не говорил о борьбе с индейцами.[COLOR_REVERT]" — бормочет один из новобранцев своему товарищу...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A nemzetőr tiszt a fejét rázva áll az újoncok elé. "[COLOR_SELECTED_TEXT]És ezeket küldik hozzám kiképezni? Hogyan védjem meg ezzel a kolóniát? Ki sütött el közületek valaha is fegyvert, vagy szúrt már le szuronnyal valakit? Egyik sem, mi... Miért, csak úgy önként jelentkeztetek?[COLOR_REVERT]" üvölt a rongyos alakokra, akiket a kormányzó büszkén nevez "az új telepes nemzetőrségének".[NEWLINE][NEWLINE]Az újoncok részéről csak néma csend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Szurony? Azt hittem, itt napi háromszori étkezést, alvóhelyet és rengeteg dohányt kapunk. A toborzó tiszt nem mondott semmit az indiánok elleni harcról,[COLOR_REVERT]" - mormogja az egyik újonc a bajtársának...[NEWLINE][NEWLINE][NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CONTINENTAL_GUARD</Tag>
@@ -2726,6 +2750,7 @@
 		<French>Première garde continentale recrutée</French>
 		<German>Ihr habt Eure erste Kontinental-Garde aufgestellt</German>
 		<Russian>Первая континентальная гвардия</Russian>
+		<Hungarian>Az első Kontinentális Gárdista felfogadása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CONTINENTAL_GUARD_HEAD</Tag>
@@ -2734,14 +2759,16 @@
 		<French>Sur le champ de parade</French>
 		<German>Auf dem Exerzierplatz</German>
 		<Russian>На плацу</Russian>
+		<Hungarian>A dísztéren</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CONTINENTAL_GUARD_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Second line load, first line aim,[COLOR_REVERT]" the sergeant bellows at the new recruits. "[COLOR_SELECTED_TEXT]I'll make real guardsmen out of you yet if we have to practice all day and all night.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Same thing over and over, and I always thought guardsmen only had to stand guard and march on parades,[COLOR_REVERT]" the recruit murmurs to his comrade next to him.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Quiet there, or you'll never learn,[COLOR_REVERT]" snaps the sergeant.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Again and again, and again! Until you can do it all in your sleep![NEWLINE][NEWLINE]Pour your powder, drop in the bullet, tamp down with the ramrod, aim, fire, repeat powder, in goes the next bullet...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Second line load, first line aim,[COLOR_REVERT]" the sergeant bellows at the new recruits. "[COLOR_SELECTED_TEXT]I'll make real guardsmen out of you yet if we have to practice all day and all night.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Same thing over and over, and I always thought guardsmen only had to stand guard and march on parades,[COLOR_REVERT]" the recruit murmurs to his comrade.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Quiet there, or you'll never learn,[COLOR_REVERT]" snaps the sergeant.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Again and again, and again! Until you can do it all in your sleep![NEWLINE][NEWLINE]Pour your powder, drop in the bullet, tamp down with the ramrod, aim, fire, repeat powder, in goes the next bullet...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Carga de segunda linha, mira de primeira linha,[COLOR_REVERT]" o sargento grita para os novos recrutas. "[COLOR_SELECTED_TEXT]Eu ainda farei de vocês verdadeiros guardas se tivermos que praticar o dia todo e a noite toda.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A mesma coisa repetidamente, e sempre pensei que os guardas só precisavam ficar de guarda e marchar em desfiles,[COLOR_REVERT]" o recruta murmura para seu camarada ao lado ele.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Quieto aí, ou você nunca aprenderá,[COLOR_REVERT]" retruca o sargento.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De novo e de novo, e de novo! Até que você possa fazer tudo enquanto dorme![NEWLINE][NEWLINE]Despeje sua pólvora, coloque a bala, aperte com o vareta, mirar, atirar, repetir pólvora, entra a próxima bala...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<French>Vous êtes maintenant aux commandes de votre premier régiment de garde continentale.[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Zweite Reihe laden, erste Reihe anlegen,[COLOR_REVERT]" drillt der Sergeant die neuen Rekruten. "[COLOR_SELECTED_TEXT]Ich werde schon richtige Gardisten aus euch machen, und wenn wir den ganzen Tag und die ganze Nacht üben müssen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Immer und überall dasselbe und ich dachte immer, Gardisten müssen nur Wache schieben und auf Paraden marschieren,[COLOR_REVERT]" raunt der Rekrut seinem Kameraden neben ihm zu.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ruhe da, sonst lernt ihr's nie[COLOR_REVERT]", schnauzt der Sergeant.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Immer wieder, nochmal von vorne! Bis ihr die Abläufe im Schlaf könnt![NEWLINE][NEWLINE]Pulver und Kugel einfüllen, Ladestock ansetzen, Anlegen, Zielen, Feuern und mit der nächsten Kugel wieder von vorne...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вторая линия заряжается, первая линия прицеливается![COLOR_REVERT]" — кричит сержант новобранцам. "[COLOR_SELECTED_TEXT]Я сделаю из вас настоящих гвардейцев, даже если нам придется тренироваться весь день и всю ночь.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Постоянно одно и то же, а я всегда думал, что гвардейцы должны только стоять в карауле и маршировать на парадах.[COLOR_REVERT]" — бормочет новобранец своему товарищу рядом с ним.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тихо там, а то никогда не научишься![COLOR_REVERT]" — рявкает сержант.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Снова и снова и снова! Пока вы не сможете делать все это даже во сне![NEWLINE][NEWLINE]Насыпать порох, вставить пулю, прибить шомполом, прицелиться, выстрелить, прочистить! И еще раз - насыпать порох, вставить пулю...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Második sor tölts, első sor célozz,[COLOR_REVERT]" - harsogja az őrmester az újoncoknak. "[COLOR_SELECTED_TEXT]Igazi gárdistákat faragok belőletek, ha egész nap és egész éjjel gyakorolnunk is kell.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ugyanaz újra és újra, és én mindig azt hittem, hogy a gárdistáknak csak őrséget kell állniuk és felvonulni a parádékon,[COLOR_REVERT]" - mormogja az újonc a mellette ülő bajtársának. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csönd legyen, vagy soha nem tanulod meg,[COLOR_REVERT]" - csattan fel az őrmester.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Újra és újra, és újra! Amíg álmodban is meg tudod csinálni![NEWLINE][NEWLINE]Öntsd a puskaport, tedd bele a golyót, nyomd le a pálcával, célozz, lőj, újra puskapor és megy a következő golyó...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_RANGER</Tag>
@@ -2750,6 +2777,7 @@
 		<French>Trois gardes-forestiers</French>
 		<German>Ihr habe Euren dritten Ranger rekrutiert</German>
 		<Russian>Три рейнджера</Russian>
+		<Hungarian>Felfogadtad a harmadik Járőröd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_RANGER_HEAD</Tag>
@@ -2758,13 +2786,15 @@
 		<French>Attaques en embuscade</French>
 		<German>Angriff aus dem Hinterhalt</German>
 		<Russian>Атака из засады</Russian>
+		<Hungarian>Lesből támadás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_RANGER_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]I don't know, General,[COLOR_REVERT]" says the governor. "[COLOR_SELECTED_TEXT]When I look at these men they're certainly frightening, but I can smell their rancid leather jackets all the way from here, and their equipment is certainly not regulation. Knives, tomahawks, long-barreled rifles...and no discipline in their bodies, don't even salute their officers.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You're right, Governor. They're rough fellows. But if I'm being honest, I'd rather have one of them in the wilderness with me than ten of our guardsmen.[NEWLINE][NEWLINE]The rangers fight like Indians, read their tracks and you only notice that they've attacked when it's all over.[NEWLINE][NEWLINE]Our soldiers are trained to fight against other European troops. In the wilderness they are as good as helpless.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, if you say so, General. As long as they leave our women and rum alone...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]I don't know, General,[COLOR_REVERT]" says the governor. "[COLOR_SELECTED_TEXT]When I look at these men they're certainly frightening, but I can smell their rancid leather jackets all the way from here, and their equipment is certainly not regulation. Knives, tomahawks, long-barreled rifles...and no discipline in their bodies, don't even salute their officers.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]You're right, Governor. They're rough fellows. But if I'm being honest, I'd rather have one of them in the wilderness with me than ten of our guardsmen.[NEWLINE][NEWLINE]The rangers fight like Indians, read their tracks and you only notice that they've attacked when it's all over.[NEWLINE][NEWLINE]Our soldiers are trained to fight against other European troops. In the wilderness they're next to helpless.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, if you say so, General. As long as they leave our women and rum alone...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Não sei, General,[COLOR_REVERT]" diz o governador. "[COLOR_SELECTED_TEXT]Quando olho para esses homens, eles certamente são assustadores, mas posso sentir o cheiro de suas jaquetas de couro rançosas daqui, e seu equipamento certamente não é regulamentado. Facas, tomahawks, rifles de cano longo... e nenhuma disciplina em seus corpos, nem mesmo saúdam seus oficiais.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Você está certo, Governador. Eles são caras rudes. Mas, para ser honesto, prefiro ter um deles na selva comigo do que dez de nossos guardas.[NEWLINE][NEWLINE]Os guardas lutam como índios, lêem seus rastros e você só percebe que eles atacaram quando tudo acaba.[NEWLINE][NEWLINE]Nossos soldados são treinados para lutar contra outras tropas europeias. indefeso.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem, se você diz, General. Contanto que eles deixem nossas mulheres e rum em paz...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		 <German>"[COLOR_SELECTED_TEXT]Ich weiß nicht, General,[COLOR_REVERT]" meint der Gouverneur, "[COLOR_SELECTED_TEXT]wenn ich mir diese Kerle so ansehe. Furchteinflößend sind sie mit Sicherheit, aber ihre ranzigen Lederwämse kann ich bis hier riechen und ihre Ausrüstung ist sicher auch nicht vorschriftsmäßig. Messer, Tomahawks, langläufige Gewehre...und keine Disziplin im Leib, grüßen nicht mal ihre Offiziere.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sicher, Herr Gouverneur, es sind rauhe Gesellen. Aber wenn ich ehrlich bin, habe ich da draußen in der Wildnis lieber einen von denen dabei als zehn unserer Gardisten.[NEWLINE][NEWLINE]Die Ranger kämpfen wie die Indianer, lesen ihre Spuren, und dass sie angegriffen haben, merkt man erst, wenn alles längst vorbei ist.[NEWLINE][NEWLINE]Unsere Soldaten taugen nur gegen andere europäische Truppen. In der Wildnis sind sie so gut wie hilflos.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, wenn Ihr meint, General. Solange sie unsere Frauen und den Rum in Ruhe lassen...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Я не знаю, генерал...[COLOR_REVERT]" — говорит губернатор. "[COLOR_SELECTED_TEXT]Когда я смотрю на этих мужчин, они, безусловно, пугают. И я чувствовал запах их прогорклых кожаных курток на всем пути сюда, а их экипировка определенно не соответствует правилам. Ножи, томагавки, длинноствольные винтовки... и никакой дисциплины, даже не отдают честь своим офицерам.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вы правы, губернатор. Они грубые ребята. Но, если быть честным, я бы предпочел, чтобы один из них был со мной в глуши, чем десять наших гвардейцев.[NEWLINE][NEWLINE]Рейнджеры дерутся как индейцы, читают их следы и вы узнаете, что они напали только тогда, когда все кончено.[NEWLINE][NEWLINE]Наши солдаты обучены сражаться против других европейских войск. В глуши они почти беспомощны.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, если вы так считаете, генерал... Хорошо, пока они не трогают наших женщин и ром...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nem tudom, tábornok,[COLOR_REVERT]" - mondja a kormányzó. "[COLOR_SELECTED_TEXT]Ha ránézek ezekre az emberekre, bizonyára ijesztőek, de innen is érzem az áporodott bőrkabátjuk szagát, és a felszerelésük biztosan nem szabályos. Kések, tomahawkok, hosszú csövű puskák... és semmi fegyelem a testükben, még a tisztjeiknek sem tisztelegnek.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igaza van, kormányzó úr. Kemény fickók ezek. De ha őszinte akarok lenni, szívesebben tartanék egy ilyet a vadonban magam mellett, mint tíz gárdistánkat."[NEWLINE][NEWLINE][NEWLINE]A járőrök úgy harcolnak, mint az indiánok, olvasnak a nyomokban, és csak akkor veszed észre, hogy támadtak, amikor már az egésznek vége.[NEWLINE][NEWLINE]A mi katonáinkat arra képezték ki, hogy más európai csapatok ellen harcoljanak. A vadonban szinte tehetetlenek.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos, ha ön mondja, tábornok. Amíg békén hagyják a mi asszonyainkat és rumunkat...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN</Tag>
@@ -2773,6 +2803,7 @@
 		<French>Le Landgrave de Hesse-Kassel vous fournit des mercenaires hessiens supplémentaire</French>
 		<German>Der Landgraf von Hessen-Kassel stellt euch noch mehr hessische Söldner zur Verfügung (3)</German>
 		<Russian>Три гессенских наёмника</Russian>
+		<Hungarian>Hessen-Kassel tartománygrófja még több Hesseni Zsoldost biztosít (3)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN_HEAD</Tag>
@@ -2781,6 +2812,7 @@
 		<French>Trois mercenaires hessiens</French>
 		<German>Drei hessische Söldner-Regimenter</German>
 		<Russian>Три пули и штык</Russian>
+		<Hungarian>Három Hesseni Zsoldos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_HESSIAN_TEXT</Tag>
@@ -2788,6 +2820,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Não sei, General[COLOR_REVERT]", diz o governador. "[COLOR_SELECTED_TEXT]Precisamos de mais mercenários estrangeiros aqui? Já temos problemas suficientes para alimentar e manter nossas próprias tropas.[NEWLINE][NEWLINE]Tudo o que eles pensam é no pagamento. Se não pudermos pagá-los, eles se espalharão aos quatro ventos e possivelmente começarão a saquear. Também temos que pagar uma taxa ao Landgrave de Hesse-Kassel.[NEWLINE][NEWLINE]Admito que eles realmente sabem como lutar. Você ouviu o histórias mais fantásticas. Eles podem disparar três tiros por minuto e são bastante letais com a baioneta.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Ich weiß nicht, General,[COLOR_REVERT]" meint der Gouverneur, "[COLOR_SELECTED_TEXT]benötigen wir denn noch mehr ausländische Söldner bei uns? Wir können doch schon mehr schlecht als recht unsere eigenen Truppen ernähren und unterhalten.[NEWLINE][NEWLINE]Die denken doch nur an ihren Sold. Wenn wir den nicht aufbringen können, dann zerstreuen sie sich in alle Winde und fangen womöglich an, zu plündern. Und den Landgrafen von Hessen-Kassel müssen wir auch noch bezahlen.[NEWLINE][NEWLINE]Naja, wenigstens kämpfen können diese Kerle. Man hört ja die tollsten Geschichten. Sollen drei Schuss in der Minute abfeuern können und mit dem Bajonett sollen sie auch ganz flink sein.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Не знаю, генерал.[COLOR_REVERT]" — говорит губернатор. "[COLOR_SELECTED_TEXT]Нужны ли нам здесь еще иностранные наемники? У нас и так достаточно проблем с пропитанием и содержанием собственных войск.[NEWLINE][NEWLINE]Все, о чем они думают, так это о своём жаловании. Если мы не сможем им платить, они разбегутся на все четыре стороны и, возможно, начнут мародерствовать. А еще мы должны будем заплатить пошлину ландграфу Гессен-Кассельскому.[NEWLINE][NEWLINE]Хотя, я признаю, что они действительно умеют воевать. Мы слышим о них поистине фантастические истории. Они могут делать три выстрела в минуту, да и в штыковой атаке представляют смертельную опасность.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nem tudom, tábornok[COLOR_REVERT]" - mondja a kormányzó. "[COLOR_SELECTED_TEXT]Szükségünk van még több külföldi zsoldosra itt? Épp elég gondunk van a saját csapataink élelmezésével és fenntartásával.[NEWLINE][NEWLINE]Ők csak a fizetésükre gondolnak. Ha nem tudjuk őket kifizetni, szétszélednek a szélrózsa minden irányába, és esetleg fosztogatni kezdenek. A hessen-kasseli tartománygrófnak is fizetnünk kell.[NEWLINE][NEWLINE]Elismerem, hogy tényleg tudják, hogyan kell harcolni. A legfantasztikusabb történeteket hallani. Percenként három lövést is le tudnak adni, és a szuronnyal is halálosan bánnak[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_REFUGEE</Tag>
@@ -2796,6 +2829,7 @@
 		<French>Premier réfugié politique</French>
 		<German>Erster Politischer Flüchtling</German>
 		<Russian>Первый политический беженец</Russian>
+		<Hungarian>Az első politikai menekült</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_REFUGEE_HEAD</Tag>
