@@ -2838,6 +2838,7 @@
 		<French>Des libre-penseurs de partout!</French>
 		<German>Freidenker wohin das Auge blickt!</German>
 		<Russian>Куда ни глянь, вольнодумцы!</Russian>
+		<Hungarian>Szabadelvűek, amerre a szem ellát!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_REFUGEE_TEXT</Tag>
@@ -2846,14 +2847,16 @@
 		<French>«[COLOR_SELECTED_TEXT]Gouverneur, un réfugié politique est arrivé au nouveau monde.[NEWLINE][NEWLINE]On dit delui qu'il est éduqé et politiquement au fait. Vous pouvez également le nommer médecin ou administrateur.[NEWLINE][NEWLINE]Ce nouveau venu sera au mieux comme enseignant ou élève dans une école, un collège ou une université. Il apprendra très vite n'importe quel métier où vous aurez besoin de lui. Faites moi confiance[COLOR_REVERT] »</French>
 		<German>"[COLOR_SELECTED_TEXT]Gouverneur, es ist wieder ein politischer Flüchtling in der Neuen Welt angekommen.[NEWLINE][NEWLINE]Wie man hört, ist er ein gebildeter und politisch aufgeklärter Mann. Ihr solltet ihn eventuell als Verwaltungsbeamten oder auch als Doktor einsetzen.[NEWLINE][NEWLINE]Am besten dient dieser Fremde Eurer Kolonie jedoch, wenn Ihr ihn in eine Schule, Akademie oder Universität steckt. Er wird schnell einen Beruf erlernen, den Ihr derzeit in den Kolonien ganz besonders benötigt. Vertraut mir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Губернатор, политический беженец прибыл в Новый Свет.[NEWLINE][NEWLINE]Мы слышали, что это образованный и политически просвещенный человек. Возможно, вы захотите назначить его администратором или даже врачом.[NEWLINE][NEWLINE]Этот новичок лучше всего послужит вашей колонии, если вы отправите его в школу, колледж или университет. Он быстро выучит любую профессию, которая больше всего нужна в колонии. Доверьтесь мне![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kormányzó úr, egy politikai menekült érkezett az Újvilágba.[NEWLINE][NEWLINE]Úgy hallottuk, hogy művelt és politikailag felvilágosult ember. Talán kinevezhetné őt adminisztrátornak vagy akár orvosnak.[NEWLINE][NEWLINE]Ez az újonnan érkezett ember akkor fogja a legjobban szolgálni a kolóniáját, ha iskolába, főiskolára vagy egyetemre helyezi. Gyorsan megtanulja majd azt a szakmát, amelyre a legnagyobb szüksége van a kolóniának. Bízzon bennem![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_GOVERNOR</Tag>
-		<English>The king sends a vice-regent!</English>
+		<English>The King sends a vice-regent!</English>
 		<Portuguese>O rei envia um vice-regente!</Portuguese>
 		<French>Le roi envoie un vice-roi !</French>
 		<German>Der König entsendet einen Stellvertreter!</German>
 		<Russian>Король присылает наместника!</Russian>
+		<Hungarian>A király küld egy alkirályt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_GOVERNOR_HEAD</Tag>
@@ -2865,19 +2868,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_GOVERNOR_TEXT</Tag>
-		<English>His Majesty, your king, sovereign by the grace of God, has sent his representative to the New World to secure control over the colonies and to establish an orderly administration. So help us God![NEWLINE][NEWLINE]</English>
+		<English>His Majesty, your King, sovereign by the grace of God, has sent his representative to the New World to secure control over the colonies and to establish an orderly administration. So help us God![NEWLINE][NEWLINE]</English>
 		<Portuguese>Sua Majestade, o vosso rei, soberano pela graça de Deus, enviou o seu representante ao Novo Mundo para assegurar o controle das colônias e estabelecer uma administração ordenada. Então Deus nos ajude![NEWLINE][NEWLINE]</Portuguese>
 		<French>Sa Majesté, votre roi, souverain par la grâce de Dieu, a envoyé son représentant dans le Nouveau Monde pour s'assurer le contrôle des colonies et établir une administration ordonnée. Que Dieu nous aide ![NEWLINE][NEWLINE]</French>
 		<German>Seine Majestät, Euer König, Herrscher von Gottes Gnaden, hat seinen Stellvertreter in die Neue Welt gesandt, um die Kontrolle über die Kolonien zu sichern und um eine geordnete Verwaltung aufzubauen. So helfe uns Gott![NEWLINE][NEWLINE]</German>
 		<Russian>Его Величество, ваш Король, державный по милости Божией, прислал своего представителя в Новый Свет, дабы обеспечить контроль над колониями и установить справедливое управление. Боже, храни Короля![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Őfelsége, a királyod, aki Isten kegyelméből uralkodik, képviselőjét küldte az Újvilágba, hogy biztosítsa a gyarmatok feletti ellenőrzést, és rendezett közigazgatást hozzon létre. Isten segítsen minket![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_VETERANS</Tag>
-		<English>Three Veterans</English>
+		<English>Three veteran soldiers</English>
 		<Portuguese>Três veteranos</Portuguese>
 		<French>Trois officiers vétérans</French>
 		<German>Drei Offiziere</German>
 		<Russian>Три ветерана</Russian>
+		<Hungarian>Három Veterán</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_VETERANS_HEAD</Tag>
@@ -2886,21 +2891,24 @@
 		<French>L'épine dorsale de votre armée</French>
 		<German>Das Rückgrat der Armee</German>
 		<Russian>Костяк армии</Russian>
+		<Hungarian>A sereg gerince</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_VETERANS_TEXT</Tag>
-		<English>A deep roar makes you wince. It sounds like the roar of a wild bear. You stride to the window and peer out.[NEWLINE][NEWLINE]In the street, the citizens have stopped, staring open-mouthed at the spectacle before them.[NEWLINE][NEWLINE]Up the main street marches a troop of young recruits. Heavy marching packs bend their backs, sweat drips from their red faces. Behind them, a sergeant marches along, shouting incessantly at the young men.[NEWLINE][NEWLINE]Mothers at the side of the road cover their children's ears in fright, lest their tender souls be damaged by the officer's violent curses.[NEWLINE][NEWLINE]You smile with satisfaction, knowing that drill is the backbone of the army.[NEWLINE][NEWLINE]</English>
+		<English>A deep roar makes you wince. Is it a wild bear on the rampage? You stride to the window and peer out.[NEWLINE][NEWLINE]In the street, the citizens have stopped, staring open-mouthed at the spectacle before them.[NEWLINE][NEWLINE]Up the main street marches a troop of young recruits. Heavy marching packs bend their backs, sweat drips from their red faces. Behind them, a sergeant marches along, shouting incessantly at the young men.[NEWLINE][NEWLINE]Mothers at the side of the road cover their children's ears in fright, lest their tender souls be damaged by the officer's violent curses.[NEWLINE][NEWLINE]You smile with satisfaction, knowing that drill is the backbone of the army.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Um rugido profundo faz você estremecer. Parece o rugido de um urso selvagem. Você vai até a janela e espia para fora.[NEWLINE][NEWLINE]Na rua, os cidadãos pararam, olhando boquiabertos para o espetáculo diante deles.[NEWLINE][NEWLINE]Uma tropa de jovens recrutas marcha pela rua principal. Matilhas pesadas marchando dobram as costas, o suor escorre de seus rostos vermelhos. Atrás deles, um sargento marcha, gritando incessantemente com os jovens.[NEWLINE][NEWLINE]As mães na beira da estrada cobrem os ouvidos dos filhos com medo, para que suas ternas almas não sejam prejudicadas pelas maldições violentas do oficial.[NEWLINE][NEWLINE]Você sorri com satisfação, sabendo que o treinamento é a espinha dorsal do exército.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ein tiefes Brüllen lässt Euch zusammenzucken. Es klingt wie das Toben eines wilden Bären. Ihr schreitet zum Fenster und späht hinaus.[NEWLINE][NEWLINE]Auf der Straße sind die Bürger stehengeblieben, starren mit offenen Mündern auf das Spektakel, das sich ihnen bietet.[NEWLINE][NEWLINE]Die Hauptstraße herauf marschiert ein Trupp junger Rekruten. Schweres Marschgepäck beugt ihren Rücken, Schweiß tropft von ihren roten Gesichtern. Hinter ihnen stapft ein Mann her und schreit die jungen Burschen unentwegt an.[NEWLINE][NEWLINE]Mütter am Straßenrand halten ihren Kindern erschrocken die Ohren zu, damit deren zarte Seelen nicht am rauen Kommandoton und den Flüchen des Offiziers Schaden nehmen.[NEWLINE][NEWLINE]Ihr lächelt zufrieden, denn Ihr wisst, dass Drill das Rückgrat der Armee bildet.[NEWLINE][NEWLINE]</German>
 		<Russian>Низкий рев заставляет вас вздрогнуть. Это очень похоже на рев дикого медведя. Вы подходите к окну и выглядываете.[NEWLINE][NEWLINE]Горожане остановились на улице и с открытыми ртами глядят на происходящее перед ними.[NEWLINE][NEWLINE]Вверх по главной улице марширует отряд молодых новобранцев. Тяжелые походные вьюки сгибают спины, с их красных лиц капает пот. Позади них марширует сержант, беспрестанно крича на молодых людей.[NEWLINE][NEWLINE]Матери на обочине дороги в испуге затыкают уши своим детям, чтобы их нежные души не пострадали от яростных ругательств офицера.[NEWLINE][NEWLINE]Вы удовлетворенно улыбаетесь, зная, что муштра – основа любой армии.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Egy mély üvöltéstől összerándulsz. Úgy hangzik, mint egy vad medve üvöltése. Az ablakhoz lépsz, és kikukucskálsz.[NEWLINE][NEWLINE]Az utcán a polgárok megálltak, és tátott szájjal bámulják az eléjük táruló látványt.[NEWLINE][NEWLINE]A főutcán fiatal újoncok csapata vonul fel. A katonák háta meggörbül a nehéz meneteléstől, vörös arcukról csöpög az izzadság. Mögöttük egy őrmester menetel, aki szüntelenül kiabál a fiatalemberekkel.[NEWLINE][NEWLINE]Az út szélén álló anyák ijedtükben befogják gyermekeik fülét, nehogy a tiszt heves szitkozódásaival kárt tegyen a gyengéd lelkekben.[NEWLINE][NEWLINE]Elégedetten mosolyogsz, tudva, hogy a gyakorlatozás a sereg gerincét adja.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_VETERANS</Tag>
-		<English>Twenty Veterans</English>
+		<English>Twenty veterans</English>
 		<Portuguese>Vinte veteranos</Portuguese>
 		<French>Vingt vétérans</French>
 		<German>Zwanzig Offiziere</German>
 		<Russian>Двадцать ветеранов</Russian>
+		<Hungarian>Húsz Veterán</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_VETERANS_HEAD</Tag>
@@ -2909,21 +2917,24 @@
 		<French>Bataiile humide</French>
 		<German>Wasserschlacht</German>
 		<Russian>Влияние воды на артиллерию</Russian>
+		<Hungarian>Vízicsata</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_VETERANS_TEXT</Tag>
-		<English>The old reserve officer's chalk flashes across the slate. "[COLOR_SELECTED_TEXT]If we align the artillery at an angle of 30 degrees and ...[COLOR_REVERT]"[NEWLINE][NEWLINE]A wet sponge flies through the air and smacks the blackboard next to his writing hand, triggering startled murmurs from the back benches of the lecture hall at the military academy.[NEWLINE][NEWLINE]Calmly, the man who was nearly hit turns around: "[COLOR_SELECTED_TEXT]If the gentlemen in the upper rows had followed my presentation last week on the spin of projectiles, they would now face disciplinary proceedings.[NEWLINE][NEWLINE]Instead, due to their ballistic incompetence, they will merely be cleaning the shithouse.[COLOR_REVERT]"[NEWLINE][NEWLINE]He bends down. "[COLOR_SELECTED_TEXT]Incidentally, I had already missed the sponge. If we align the artillery ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>The old reserve officer's chalk flashes across the slate. "[COLOR_SELECTED_TEXT]If we align the artillery at an angle of 30 degrees and ...[COLOR_REVERT]"[NEWLINE][NEWLINE]A wet sponge flies through the air and smacks the blackboard next to his writing hand, triggering startled murmurs from the back benches of the lecture hall at the military academy.[NEWLINE][NEWLINE]Calmly, the man who was nearly hit turns around: "[COLOR_SELECTED_TEXT]If the gentlemen in the upper rows had followed my presentation last week on the spin of projectiles, they would now face disciplinary proceedings.[NEWLINE][NEWLINE]Instead, due to their ballistic incompetence, they will merely be cleaning the shithouse.[COLOR_REVERT]"[NEWLINE][NEWLINE]He bends down. "[COLOR_SELECTED_TEXT]Thank you. I needed this sponge. If we align the artillery ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>O giz do antigo oficial da reserva brilha na lousa. "[COLOR_SELECTED_TEXT]Se alinharmos a artilharia em um ângulo de 30 graus e ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Uma esponja molhada voa pelo ar e bate no quadro-negro próximo à sua mão que escreve, provocando murmúrios assustados nos bancos traseiros da sala de aula da academia militar.[NEWLINE][NEWLINE]Calmamente, o homem que quase foi atingido se vira: "[COLOR_SELECTED_TEXT]Se o os senhores nas fileiras superiores acompanharam minha apresentação na semana passada sobre o giro de projéteis, eles agora enfrentariam processos disciplinares.[NEWLINE][NEWLINE]Em vez disso, devido à sua incompetência balística, eles estarão apenas limpando a merda.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ele se abaixa. "[COLOR_SELECTED_TEXT]Aliás, eu já tinha perdido a esponja. Se alinharmos a artilharia...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Der Griffel des alten Reserve-Offiziers fliegt über die Schiefertafel. "[COLOR_SELECTED_TEXT]Wenn wir nun also die Artillerie im Winkel von 30 Grad ausrichten und ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Schmatzend klatscht der nasse Tafelschwamm neben die Schreibhand. Enttäuschtes Raunen ertönt aus den hinteren Bänken des Vorlesungssaals der Militärakademie.[NEWLINE][NEWLINE]Ruhig dreht sich der knapp Verfehlte um: "[COLOR_SELECTED_TEXT]Wenn die Herren in den oberen Reihen meiner Ausführung der letzten Woche über den Drall von Projektilen gefolgt wären, hätten sie jetzt ein Disziplinarverfahren am Hals.[NEWLINE][NEWLINE]So dürfen sie es ihrer ballistischen Unfähigkeit danken, dass sie lediglich die Reinigung des Scheißhauses übernehmen werden.[COLOR_REVERT]"[NEWLINE][NEWLINE]Er bückt sich. "[COLOR_SELECTED_TEXT]Im übrigen hatte ich den Schwamm bereits vermisst. Wenn wir nun also die Artillerie ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Мел старого офицера запаса мелькает по доске. "[COLOR_SELECTED_TEXT]Если мы выровняем артиллерию под углом 30 градусов и...[COLOR_REVERT]"[NEWLINE][NEWLINE]Влажная губка летит по воздуху и шлепает по доске рядом с его пишущей рукой, вызывая удивленный ропот на задних скамьях лекционного зала военной академии.[NEWLINE][NEWLINE]Человек, в которого чуть не попали, спокойно оборачивается: "[COLOR_SELECTED_TEXT]Если бы господа в верхних рядах на прошлой неделе следили за моей презентацией о вращении снарядов, их бы сейчас привлекли к дисциплинарной ответственности.[NEWLINE] [NEWLINE]Вместо этого, из-за своей баллистической некомпетентности, они будут просто чистить сортир.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он наклоняется. "[COLOR_SELECTED_TEXT]Кстати, я уже промахнулся по губке. Если мы настроим артиллерию...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az öreg tartalékos tiszt krétája megvillan a palatáblán. "[COLOR_SELECTED_TEXT]Ha a tüzérséget 30 fokos szögben állítjuk be, és ...[COLOR_REVERT]"[NEWLINE][NEWLINE]Egy nedves szivacs repül át a levegőben és az írást végző keze mellé csapódik a táblára, riadt morgást váltva ki a katonai akadémia előadótermének hátsó padjaiból.[NEWLINE][NEWLINE]Nyugodtan megfordul a férfi, akit majdnem eltaláltak: "[COLOR_SELECTED_TEXT]Ha a felső sorokban ülő urak követték volna a múlt heti, a lövedékek pörgéséről szóló előadásomat, most fegyelmi eljárásra számíthatnának.[NEWLINE][NEWLINE]Ehelyett ballisztikai hozzá nem értésük miatt csupán a szertárat fogják takarítani.[COLOR_REVERT]"[NEWLINE][NEWLINE]Lehajol. "[COLOR_SELECTED_TEXT]Mellesleg a szivacsot már hiányoltam. Ha összehangoljuk a tüzérséget ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_DISTILLERS</Tag>
-		<English>Three Master Distillers</English>
+		<English>Three master distillers</English>
 		<Portuguese>Três Destiladores Mestres</Portuguese>
 		<French>Trois maîtres distillateurs</French>
 		<German>Drei Meister-Rumbrenner</German>
 		<Russian>Три мастера винокура</Russian>
+		<Hungarian>Három Lepárlómester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_DISTILLERS_HEAD</Tag>
@@ -2932,6 +2943,7 @@
 		<French>Ba moin en ti bo!</French>
 		<German>Prosit!</German>
 		<Russian>Ваше здоровье!</Russian>
+		<Hungarian>Egészségünkre!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_DISTILLERS_TEXT</Tag>
@@ -2939,14 +2951,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Pai,[COLOR_REVERT]" a esposa do jovem burguês se dirige ao clérigo, "[COLOR_SELECTED_TEXT]por que você tolera essas criaturas em nossa pequena cidade?[COLOR_REVERT]" Ela balança a cabeça em frustração e desaprovação.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Esse sujeito é um bêbado. Ele fede a conhaque, peida como um boi e coça o corpo virilha como quiser.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pode ser,[COLOR_REVERT]" o homem de Deus explica gentilmente, "[COLOR_SELECTED_TEXT]mas ele dominou a arte de fermentar e destilar como nenhum outro.[NEWLINE][NEWLINE]O governador usou o ouro do envio de seu rum para a Europa para construir meu igreja.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Herr Pfarrer[COLOR_REVERT]", spricht die junge Bürgersfrau den Geistlichen an, "[COLOR_SELECTED_TEXT]warum duldet Ihr solche Gestalten in unserem Städtchen?[COLOR_REVERT]" Mit dem Kopf winkt sie verstohlen hinüber.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ein Trunkenbold ist dieser Kerl. Er stinkt nach Branntwein, bläst Darmwinde aus wie ein Ochse beim Weiden und kratzt sich im Schritt, wie es ihm beliebt.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das mag sein[COLOR_REVERT]", erklärt der Gottesmann freundlich, "[COLOR_SELECTED_TEXT]doch beherrscht er die Kunst des Fermentierens und Destillierens wie kein Zweiter.[NEWLINE][NEWLINE]Von dem Gold, das sein Rum in Europa einbringt, hat der Herr Gouverneur meine Kirche bauen lassen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Святой отец,[COLOR_REVERT] — обращается жена молодого горожанина к священнику — [COLOR_SELECTED_TEXT]почему вы терпите таких существ в нашем маленьком городке?[COLOR_REVERT]". Она с досадой и неодобрением качает головой.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Этот тип — пьяница. От него воняет бренди, он пукает, как вол, и чешет промежность, когда хочет.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Возможно,[COLOR_REVERT]" — любезно объясняет Божий человек — "[COLOR_SELECTED_TEXT]но он овладел искусством ферментации и дистилляции, как никто другой.[NEWLINE][NEWLINE]Губернатор использовал золото, полученное от доставки своего рома в Европу, для строительства моей церкви.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Atyám,[COLOR_REVERT]" - szólítja meg a fiatal polgár felesége a lelkészt - "[COLOR_SELECTED_TEXT]miért tűr meg ilyen teremtményeket a mi kis városunkban?[COLOR_REVERT]" Az asszony csalódottan és rosszallóan rázza a fejét.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ez a fickó egy részeg disznó. Bűzlik a pálinkától, fingik, mint egy ökör, és az ágyékát vakargatja.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az lehet,[COLOR_REVERT]" - magyarázza kedvesen az Isten embere, "[COLOR_SELECTED_TEXT]de az erjesztés és a szeszfőzés művészetét úgy elsajátította, mint senki más.[NEWLINE][NEWLINE]A kormányzó a rumjának Európába való szállításából származó aranyat a templomom építésére fordította[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WEAVERS</Tag>
-		<English>Three Master Weavers</English>
+		<English>Three master weavers</English>
 		<Portuguese>Três Mestres Tecelões</Portuguese>
 		<French>Trois maîtres tisserands</French>
 		<German>Drei Meister-Weberinnen</German>
 		<Russian>Три мастера ткача</Russian>
+		<Hungarian>Három Takácsmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WEAVERS_HEAD</Tag>
@@ -2955,6 +2969,7 @@
 		<French>Agile et affairée</French>
 		<German>Flink und fleißig</German>
 		<Russian>Ловкость и трудолюбие</Russian>
+		<Hungarian>Fürge és szorgalmas</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WEAVERS_TEXT</Tag>
@@ -2962,14 +2977,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]O que há para ver aqui?[COLOR_REVERT]" você grita e bate palmas. Os três meninos que entraram pela janela se viram assustados, reconhecem você e se dispersam. Você ri deles - e então se aproxima para arriscar uma olhada.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Impressionante![COLOR_REVERT]" você diz suavemente. "[COLOR_SELECTED_TEXT]Que mulher![COLOR_REVERT]" Com a boca aberta, você se maravilha com a destreza da jovem na cabana, ocupada em seu ofício.[NEWLINE][NEWLINE]De repente ela sente que está sendo observada e olha para cima.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Governador,[COLOR_REVERT]" ela diz com um sorriso, "[COLOR_SELECTED_TEXT]você nunca viu uma mulher tecendo?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Was gibt es denn hier zu sehen!?[COLOR_REVERT]", ruft Ihr und klatscht in die Hände. Die drei Buben, die durch das Fenster hineinstierten, drehen sich erschrocken um, erkennen Euch und stieben auseinander. Ihr lacht ihnen hinterher - und tretet dann neugierig näher, um selber einen Blick zu riskieren. "[COLOR_SELECTED_TEXT]Donnerlittchen![COLOR_REVERT]" entfährt es Euch leise. "[COLOR_SELECTED_TEXT]Was für ein Weib![COLOR_REVERT]" Mit offenem Mund staunt Ihr, welch fingerfertiges Geschick die junge Frau besitzt, die in der Hütte ihrem Handwerk nachgeht. Plötzlich bemerkt das Frauenzimmer, das es beobachtet wird, und blickt auf. "[COLOR_SELECTED_TEXT]Na na, Herr Gouverneur[COLOR_REVERT]", sagt es neckisch, "[COLOR_SELECTED_TEXT]habt Ihr denn noch nie einer Frau beim Weben zugesehen?[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]На что там можно посмотреть?[COLOR_REVERT]" — кричите вы и хлопаете в ладоши. Трое мальчишек, заглядывавших в окно, испуганно оборачиваются, узнают вас и разбегаются. Вы смеетесь им вслед, а затем подходите ближе, чтобы попробовать взглянуть самому.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Потрясающе![COLOR_REVERT]" – тихо говорите вы. "[COLOR_SELECTED_TEXT]Что за женщина![COLOR_REVERT]" Разинув рот, вы восхищаетесь ловкостью молодой женщины в хижине, занятой своим ремеслом.[NEWLINE][NEWLINE]Внезапно она чувствует, что за ней наблюдают и поднимает глаза.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Губернатор,[COLOR_REVERT] – с улыбкой говорит она – [COLOR_SELECTED_TEXT]вы никогда не видели женщину, которая плетет ткань?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mit lehet itt látni?[COLOR_REVERT]" - kiáltod és tapsolsz. A három fiú, akik az ablakon keresztül jöttek be, ijedtükben megfordulnak, felismernek téged, és szétszélednek. Utánuk nevetsz - majd közelebb lépsz, hogy megkockáztass egy pillantást magad is.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lenyűgöző![COLOR_REVERT]" - mondod halkan. "[COLOR_SELECTED_TEXT]Micsoda nő![COLOR_REVERT]" Tátott szájjal csodálod a kunyhóban a mesterségével foglalatoskodó fiatal nő ügyességét.[NEWLINE][NEWLINE]Hirtelen megérzi, hogy figyelik, és felnéz.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Kormányzó úr,[COLOR_REVERT]", mondja mosolyogva, "[COLOR_SELECTED_TEXT]nem látott még soha nőt szőni?[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TOBACCONISTS</Tag>
-		<English>Three Master Tobacconists</English>
+		<English>Three master tobacconists</English>
 		<Portuguese>Três Mestres Tabaqueiros</Portuguese>
 		<French>Trois maîtres cigariers</French>
 		<German>Drei Meister-Zigarrendreher</German>
 		<Russian>Три мастер табачника</Russian>
+		<Hungarian>Három Szivarkészítő Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TOBACCONISTS_HEAD</Tag>
@@ -2978,6 +2995,7 @@
 		<French>Des volutes bleutées</French>
 		<German>Blauer Dunst</German>
 		<Russian>Синяя дымка</Russian>
+		<Hungarian>Kékes Füst</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TOBACCONISTS_TEXT</Tag>
@@ -2985,14 +3003,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]O tabaco é um refresco para a mente e o corpo,[COLOR_REVERT]" o homem murmura enquanto fuma seu cachimbo. "[COLOR_SELECTED_TEXT]A fumaça refresca e relaxa e facilita a vida. Quando me levanto, acendo meu cachimbo, e só quando vou dormir é que apago.[NEWLINE][NEWLINE]Acredite, Governador, o uso do tabaco é ainda mais benéfico à saúde do que a sangria ou o amuleto de um santo![COLOR_REVERT]"[NEWLINE][NEWLINE]Você olha para a pele de pergaminho e os dentes marrons do mestre do charuto, cheire seu hálito e acene com a cabeça em aprovação.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Deus o abençoe, bom homem! ... Deus o abençoe.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Tabak ist ein Labsal für Geist und Körper[COLOR_REVERT]", raunt der Mann und schmaucht seine Pfeife. "[COLOR_SELECTED_TEXT]Sein Rauch erfrischt und entkrampft und lässt einen das Leben leichter nehmen. Wenn ich aufstehe, zünde ich mir mein Pfeifchen an, und erst wenn ich schlafen gehe, lösche ich es.[NEWLINE][NEWLINE]Glaubt mir, Herr Gouverneur, der Tabakgenuss dient der Gesundheit noch vortrefflicher als der Aderlass oder das Amulett eines Heiligen![COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr betrachtet die pergamentene Haut des Zigarrendrehers und seine braunen Zähne, riecht seinen Atem und nickt begütigend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gott schütze Euch, guter Mann! ... Gott schütze Euch.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Табак освежает разум и тело.[COLOR_REVERT]" — бормочет мужчина, куря трубку. "[COLOR_SELECTED_TEXT]Дым освежает, расслабляет и облегчает жизнь. Когда я встаю, я закуриваю свою трубку и только когда я ложусь спать, я тушу ее.[NEWLINE][NEWLINE]Поверьте мне, губернатор, употребление табака даже полезнее для здоровья, чем кровопускание или амулет святого![COLOR_REVERT]"[NEWLINE][NEWLINE]Вы смотрите на коричневые зубы мастера сигар и его кожу, похожую на кожуру апельсина, чувствуете его дыхание и одобрительно киваете.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да благословит тебя Бог, добрый человек! ... Да благословит тебя Бог.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]A dohány felüdülés testnek és léleknek[COLOR_REVERT]" - mormolja a férfi, miközben pipájába szív. "[COLOR_SELECTED_TEXT]A füst felfrissít, ellazít és megkönnyíti az életet. Amikor felkelek, meggyújtom a pipámat, és csak akkor oltom el, amikor lefekszem aludni.[NEWLINE][NEWLINE]Higgye el, kormányzó, a dohány használata még az érvágásnál és a szentek amulettjénél is jótékonyabb az egészségre! [COLOR_REVERT]"[NEWLINE][NEWLINE]Megnézed a szivarmester pergamenbőrét és barna fogait, megérzed a leheletét és helyeslően bólintasz.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isten áldja meg, jóember! ... Isten áldja meg![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FUR_TRADERS</Tag>
-		<English>Three Fur Traders</English>
+		<English>Three fur traders</English>
 		<Portuguese>Três comerciantes de peles</Portuguese>
 		<French>Trois fourreurs</French>
 		<German>Drei Meister-Pelzhändler</German>
 		<Russian>Три мастер скорняка</Russian>
+		<Hungarian>Három Kabátkészítő Mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FUR_TRADERS_HEAD</Tag>
@@ -3004,18 +3024,20 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FUR_TRADERS_TEXT</Tag>
-		<English>You look at him appraisingly. He was introduced on your inspection trip as the most important citizen of this small town.[NEWLINE][NEWLINE]Instead of a clergyman or a scholar you are meeting this merchant, a dandy with a shiny velvet waistcoat, carrying a walking stick with a golden handle and wearing a cloak of the finest fur - which, as you know, he tailored himself.[NEWLINE][NEWLINE]You take his hand and give this well-appointed gentleman a benevolent smile. "[COLOR_SELECTED_TEXT]Mr. Fur Trader,[COLOR_REVERT]" you say, "[COLOR_SELECTED_TEXT]thank you for increasing not only your own wealth with your splendid goods, but also that of our colonies.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>Carefully you appraise him. During your inspection he was introduced as the most important citizen of this small town.[NEWLINE][NEWLINE]Instead of a clergyman or a scholar you see this merchant, a dandy in a shiny velvet waistcoat, holding a walking stick with a gold handle and wearing a fine fur cloak - which as you know, he tailored himself.[NEWLINE][NEWLINE]You take his hand and give this well-appointed gentleman a benevolent smile. "[COLOR_SELECTED_TEXT]Mr. Fur Trader,[COLOR_REVERT]" you say, "[COLOR_SELECTED_TEXT]thank you for increasing not only your own wealth with your splendid goods, but also that of our colonies.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>Você olha para ele avaliativamente. Ele foi apresentado em sua viagem de inspeção como o cidadão mais importante desta pequena cidade.[NEWLINE][NEWLINE]Em vez de um clérigo ou um estudioso, você conhece este comerciante, um dândi com um colete de veludo brilhante, carregando uma bengala com cabo dourado e vestindo uma capa da mais fina pele - que, como você sabe, ele mesmo costurou.[NEWLINE][NEWLINE]Você pega a mão dele e dá a este cavalheiro bem equipado um sorriso benevolente. "[COLOR_SELECTED_TEXT]Sr. Comerciante de Peles,[COLOR_REVERT]" você diz, "[COLOR_SELECTED_TEXT]obrigado por aumentar não apenas sua própria riqueza com seus bens esplêndidos, mas também a de nossas colônias.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Abschätzend blickt Ihr ihn an. Als wichtigster Bürger dieses Städtchens wurde er Euch angekündigt bei Eurer Inspektionsreise.[NEWLINE][NEWLINE]Statt eines Geistlichen oder Gelehrten stellt man Euch nun diesen Händler vor. Einen Stutzer mit glänzender Samtweste, einem Spazierstock mit goldnem Griff und einem Umhang aus edelstem Pelzwerk - den er indes, wie Ihr wisst, selbst zugeschneidert hat.[NEWLINE][NEWLINE]Ihr ergreift seine Hand und schenkt diesem wohlbetuchten Herrn ein wohlwollendes Lächeln. "[COLOR_SELECTED_TEXT]Herr Pelzhändler[COLOR_REVERT]", sagt Ihr, "[COLOR_SELECTED_TEXT]habt Dank dafür, dass Ihr mit Euren feinen Waren nicht nur Euren Wohlstand mehrt, sondern auch den unserer Kolonien.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Вы оценивающе смотрите на человека перед собой. Во время вашей инспекционной поездки он был представлен, как самый важный гражданин этого маленького городка.[NEWLINE][NEWLINE]Вместо священника или ученого вы встречаете этого торговца, франта в блестящем бархатном жилете, с тростью с золотым набалдашником в руке и в плаще из тончайшего меха, который, как вы знаете, он сшил сам.[NEWLINE][NEWLINE]Вы пожимаете его руку и благосклонно улыбаетесь этому хорошо одетому джентльмену. "[COLOR_SELECTED_TEXT]Сэр,[COLOR_REVERT] – говорите вы – [COLOR_SELECTED_TEXT]спасибо за то, что вы увеличили не только свое собственное состояние, но и благосостояние наших колоний с помощью ваших великолепных товаров.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Értékelő tekintettel nézel rá. Az ellenőrző utadon úgy mutatták be, mint ennek a kisvárosnak a legfontosabb polgárát.[NEWLINE][NEWLINE]Lelkész vagy tudós helyett ezzel a kereskedővel találkozol, egy piperkőccel, aki fényes bársony mellényt visel, arany nyelű sétapálcát tart a kezében, és a legfinomabb szőrméből készült köpenyt viseli - amit, mint tudod, ő maga készített.[NEWLINE][NEWLINE]Megfogod a kezét, és jóindulatú mosolyt erőltetsz erre a jól szituált úriemberre. "[COLOR_SELECTED_TEXT]Kabátkészítő úr,[COLOR_REVERT]" - mondod - "[COLOR_SELECTED_TEXT]köszönöm, hogy pompás árujával nemcsak a saját vagyonát gyarapítja, hanem a gyarmatainkét is.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS</Tag>
-		<English>Two Train Oil Cookers</English>
+		<English>Two train oil cookers</English>
 		<Portuguese>Dois refinadores de óleo de baleia</Portuguese>
 		<French>Deux raffineurs d'huile</French>
 		<German>Zwei Meister-Trankocher</German>
 		<Russian>Два мастера вытопки ворвани</Russian>
+		<Hungarian>Kettő Bálnaolaj Főző</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS_HEAD</Tag>
@@ -3024,6 +3046,7 @@
 		<French>Une vie rondelette</French>
 		<German>Das pralle Leben</German>
 		<Russian>Пухлая жизнь</Russian>
+		<Hungarian>A teljes élet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WHALE_OIL_COOKERS_TEXT</Tag>
@@ -3031,14 +3054,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Se assim posso dizer, Governador, por tudo que é certo e apropriado, isso é o que eu chamo de uma moça esplêndida![COLOR_REVERT]"[NEWLINE][NEWLINE]Você se endireita e se vira. Um carpinteiro está atrás de você com os olhos arregalados e um sorriso atordoado.[NEWLINE][NEWLINE]Você segue o olhar dele até a esposa do cozinheiro...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eu só me pergunto,[COLOR_REVERT]" ele continua, "[COLOR_SELECTED_TEXT]por que esses açougueiros de baleias atraem as donzelas mais saborosas. Todos esses caras cheiram mal céu.[COLOR_REVERT]"[NEWLINE][NEWLINE]Agora é sua vez de sorrir. O bom carpinteiro não entende que a forma da bela dama, tão estimulante quanto antinatural, depende do espartilho feito com barbatana de baleia do marido.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Wenn Herr Gouverneur gestatten, also bei allem, was recht ist, das nenne ich ein prachtvolles Weibsbild![COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr fahrt zusammen und dreht Euch um. Ein Zimmerer steht breitbeinig hinter Euch und grinst unzweideutig.[NEWLINE][NEWLINE]Euer Blick folgte wohl etwas zu lange der Frau des Trankochers ...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ich frage mich nur[COLOR_REVERT]", fährt er fort, "[COLOR_SELECTED_TEXT]warum diese Walfleischer immer die knackigsten Maiden erringen. Die Kerle stinken doch zum Himmel.[COLOR_REVERT]"[NEWLINE][NEWLINE]Nun ist es an Euch zu lächeln. Dass die ebenso anregenden wie unnatürlichen Formen der holden Frau lediglich dem Fischbein ihres Gatten geschuldet sind, scheint dem braven Zimmermann nicht zu dämmern.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Если можно так сказать, губернатор, по всем правилам, это то, что я называю великолепной девкой![COLOR_REVERT]"[NEWLINE][NEWLINE]Удивившись, вы выпрямляетесь и поворачиваетесь. Позади вас стоит плотник с широко раскрытыми глазами и ошеломленно улыбается.[NEWLINE][NEWLINE]Вы проследили за его взглядом до жены вытопщика ворвани...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Мне просто интересно,[COLOR_REVERT] – продолжает он – [COLOR_SELECTED_TEXT]почему эти китовые мясники привлекают самых вкусных девиц. От этих парней вонь до небес.[COLOR_REVERT]"[NEWLINE][NEWLINE]Теперь ваша очередь улыбаться. Плотник не понимает, что форма прекрасной дамы, столь же возбуждающая, сколь и неестественная, зависит от корсета, сделанного из китового уса ее мужа.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Ha szabad így mondanom, Kormányzó, minden jóra és szépre való tekintettel, ezt nevezem én pompás szajhának![COLOR_REVERT]"[NEWLINE][NEWLINE]Felegyenesedsz és megfordulsz. Egy ács áll mögötted tágra nyílt szemmel, döbbent vigyorral.[NEWLINE][NEWLINE]Követed a tekintetét az olajfőző feleségére...[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csak azon tűnődöm,[COLOR_REVERT]" - folytatja - "[COLOR_SELECTED_TEXT]hogy ezek a bálnamészárosok miért vonzzák a legfinomabb leányokat. Azok a fickók mind pokolian büdösek.[COLOR_REVERT]"[NEWLINE][NEWLINE]Most rajtad a sor, hogy mosolyogj. A jó ács nem érti, hogy a szép hölgy formája, amennyire izgató, annyira természetellenes is, a férje bálnacsontból készült fűzője miatt.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_HUNTER</Tag>
-		<English>Five Expert Hunters</English>
+		<English>Five expert hunters</English>
 		<Portuguese>Cinco caçadores especialistas</Portuguese>
 		<French>Cinq chasseurs aguerris</French>
 		<German>Fünf erfahrene Jäger</German>
 		<Russian>Пять опытных охотников</Russian>
+		<Hungarian>Öt Tapasztalt Vadász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_HUNTER_HEAD</Tag>
@@ -3047,6 +3072,7 @@
 		<French>La chasse au piège, par les piégeurs</French>
 		<German>Fallensteller stellen Fallen</German>
 		<Russian>Охотники расставляют ловушки</Russian>
+		<Hungarian>A prémvadászok csapdákat állítanak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_HUNTER_TEXT</Tag>
@@ -3054,14 +3080,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Deixe-me ver,[COLOR_REVERT]" o caçador de cervos aponta para o rifle do caçador de focas. "[COLOR_SELECTED_TEXT]O que você usa?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Este é um rifle com um cano particularmente longo, é preciso em longas distâncias,[COLOR_REVERT]" ele responde e entrega sua arma ao caçador. "[COLOR_SELECTED_TEXT]Mas vejo que você tem outra arma boa aí.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Você com seu par de pistolas,[COLOR_REVERT]" sorri o caçador, "[COLOR_SELECTED_TEXT]Uma faca é suficiente para acabar com meu animais.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sim, uma vez que eles estão indefesos em suas armadilhas,[COLOR_REVERT]" o caçador desafia casualmente o caçador.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Chega dessa conversa,[COLOR_REVERT]" o estalajadeiro chama na porta. "[COLOR_SELECTED_TEXT]Venha sentar para comer uma lebre assada e uma cerveja bem servida![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Zeigt mal her,[COLOR_REVERT]" deutet der Jäger auf das Gewehr des Robbenjägers, "[COLOR_SELECTED_TEXT]was benutzt Ihr?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das ist ein Gewehr mit besonders langem Lauf, damit kann ich auf sehr weite Entfernung noch gut treffen[COLOR_REVERT]", erwidert dieser und reicht dem Jäger seine Waffe. "[COLOR_SELECTED_TEXT]Aber Eure sieht mir auch sehr treffsicher aus.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, Ihr mit Euren Schießprügeln,[COLOR_REVERT]" schmunzelt der Trapper, "[COLOR_SELECTED_TEXT]ich benutze grundsätzlich nur eins meiner Messer, um die Tiere zu erledigen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, nachdem Ihr Ihnen zuerst eine Eurer Fallen vor die Nase gesetzt habt,[COLOR_REVERT]" lacht der Jäger und zwinkert dem Trapper herausfordernd zu.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Schluss jetzt mit dem Geschwätz,[COLOR_REVERT]" ruft der Wirt zur Tür herein, "[COLOR_SELECTED_TEXT]setzt Euch und dann gibt es erst mal frischen Hasenbraten und dazu ein gut eingeschenktes Bier![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Можно я посмотрю,[COLOR_REVERT]" — трапер указывает на винтовку охотника на тюленей - "[COLOR_SELECTED_TEXT]чем ты пользуешься?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это карабин с особенно длинным стволом. Он очень точен на большом расстоянии.[COLOR_REVERT]" – отвечает охотник и передает свое оружие. "[COLOR_SELECTED_TEXT]Но я вижу, у тебя тоже есть хорошее ружье.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это на случай встречи с медведем.[COLOR_REVERT]" - ухмыляется охотник - "[COLOR_SELECTED_TEXT]Обычно я использую только один из своих ножей, чтобы прикончить животных.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, когда они беспомощны в твоих капканах.[COLOR_REVERT]" - смеется охотник и вызывающе подмигивает траперу.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Эй, спорщики![COLOR_REVERT]" - кричит трактирщик - "[COLOR_SELECTED_TEXT]Объявляйте перемирие - вас ждут жареный заяц и кружки с пивом![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Hadd nézzem,[COLOR_REVERT]" - mutat a szarvasvadász a fókavadász puskájára. "[COLOR_SELECTED_TEXT]Mit használsz?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ez egy különösen hosszú csövű puska, Nagy távolságra is pontos,[COLOR_REVERT]" - válaszol, és átadja a vadásznak a fegyverét. "[COLOR_SELECTED_TEXT]De látom, van ott még egy másik jó fegyvered is.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Te a pisztolytartóddal,[COLOR_REVERT]" vigyorog a vadász, "[COLOR_SELECTED_TEXT]Egy kés is elég ahhoz, hogy végezzek az állataimmal. [COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igen, ha már egyszer tehetetlenek lesznek a csapdáidban,[COLOR_REVERT]" - provokálja a vadász lazán a csapdaállítót.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Elég ebből a dumából,[COLOR_REVERT]" - kiált be a fogadós az ajtón. "[COLOR_SELECTED_TEXT]Gyertek, üljetek le egy kis nyúlsültre és egy jól csapolt sörre![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER</Tag>
-		<English>Three Expert Trappers</English>
+		<English>Three expert trappers</English>
 		<Portuguese>Três caçadores especialistas</Portuguese>
 		<French>Three Expert Trapper</French>
 		<German>Drei erfahrene Fallensteller</German>
 		<Russian>Три опытных зверолова</Russian>
+		<Hungarian>Három Tapasztalt Prémvadász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_HEAD</Tag>
@@ -3070,6 +3098,7 @@
 		<French>Une fourrure noble</French>
 		<German>Ein edler Pelz</German>
 		<Russian>Благородный мех</Russian>
+		<Hungarian>Három Tapasztalt Prémvadász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_TEXT</Tag>
@@ -3077,14 +3106,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Os caçadores vasculham a floresta em busca de todos os animais diferentes[COLOR_REVERT]", você pensa enquanto olha pela janela para a recente entrega das melhores peles de luxo, transportadas pelo grande rio até a cidade pelos caçadores.[NEWLINE][NEWLINE]Em breve não haverá mais castores, ursos e outros peludos nesta parte do mundo se o Velho Mundo continuar ansioso por isso luxos.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]O que estou pensando?[COLOR_REVERT]" você diz para si mesmo. "[COLOR_SELECTED_TEXT]A colônia precisa da receita agora.[COLOR_REVERT]" Seu remorso acabou. Você volta para o chá da tarde.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Fallensteller stellen Fallen, hier im Wald den Tieren allen...[COLOR_REVERT]" sinniert Ihr vor Euch hin, als Ihr bei einem Blick aus dem Fenster die neue Ladung feinster Felle ankommen seht, die die Trapper den großen Fluss hinunter in die Stadt gebracht haben.[NEWLINE][NEWLINE]Bald wird es in diesem Teil der Welt keine Bieber, Bären und andere Pelztiere mehr geben, wenn die Alte Welt weiterhin so begierig auf diese Luxusware sein sollte.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach was...[COLOR_REVERT]" denkt Ihr Euch, "[COLOR_SELECTED_TEXT]solange die Kolonie daran so gut verdient wie bisher.[COLOR_REVERT]" Und schon ist es mit den Gewissensbissen auch schon wieder vorbei und Ihr widmet Euch wieder Eurem Nachmittagstee.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Звероловы заполонили лес своими капканами.[COLOR_REVERT]" — размышляете вы про себя, глядя в окно на очередную доставку лучших мехов премиум-класса, доставленных охотниками по великой реке в город.[NEWLINE][NEWLINE]Скоро здесь не останется бобров, лис и других пушных зверей, если Старый Свет и дальше будет стремиться к такой роскоши.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]С другой стороны, ничего не поделаешь.[COLOR_REVERT]" — говорите вы себе. "[COLOR_SELECTED_TEXT]Колонии нужны доходы.[COLOR_REVERT]" Ваше раскаяние закончилось. Вы возвращаетесь к послеобеденному чаю.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]A prémvadászok átfésülik az erdőt a különböző állatok után[COLOR_REVERT]" - elmélkedsz magadban, miközben kinézel az ablakon, és a legfinomabb prémek legújabb szállítmányára pillantasz, amelyet a prémvadászok tutajjal szállítottak le a nagy folyón a városba. [NEWLINE][NEWLINE]Hamarosan nem lesz több hód, medve és más szőrmés állat a világnak ezen a részén, ha az Óvilág továbbra is ilyen fényűzésre vágyik.[NEWLINE][NEWLINE]"Mégis mit képzelek?[COLOR_REVERT]" - mondod magadban. "[COLOR_SELECTED_TEXT]A kolóniának most van szüksége a bevételre.[COLOR_REVERT]" A lelkiismeretfurdalásod elmúlt és visszatérsz a délutáni teádhoz.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUR_PIONEERS</Tag>
-		<English>Four Hardy Pioneers</English>
+		<English>Four hardy pioneers</English>
 		<Portuguese>Quatro pioneiros</Portuguese>
 		<French>Quatre pionniers endurcis</French>
 		<German>Vier Kühne Pioniere</German>
 		<Russian>Четыре отважных первопроходца</Russian>
+		<Hungarian>Négy Képzett Utász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUR_PIONEERS_HEAD</Tag>
@@ -3093,6 +3124,7 @@
 		<French>Auto-suffisant</French>
 		<German>Selbst ist der Mann</German>
 		<Russian>Самодостаточность</Russian>
+		<Hungarian>Önellátó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FOUR_PIONEERS_TEXT</Tag>
@@ -3100,14 +3132,16 @@
 		<Portuguese>O homem fica ali parado como um toco, examinando você da cabeça aos pés, em silêncio.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Talvez você não tenha me entendido muito bem da primeira vez,[COLOR_REVERT]" você diz do seu cavalo. "[COLOR_SELECTED_TEXT]Eu perguntei se você poderia dar um gole de água para um viajante.[COLOR_REVERT]"[NEWLINE][NEWLINE]O sujeito cospe. "[COLOR_SELECTED_TEXT]Quem quer saber?[COLOR_REVERT]" ele resmunga.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem, fui eu quem lhe deu a tarefa de abrir esta trilha no meio do mato; e de preparar este acampamento em frente ao qual você está.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ele hesita brevemente, então a compreensão brilha nos olhos do homem e ele sorri.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Perdoe meus modos, Governador. Não estou acostumado a estar entre pessoas.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Bärbeißig steht der Mann da, mustert Euch von Kopf bis Fuß - und schweigt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vielleicht habt Ihr mich beim ersten Mal nicht so recht verstanden[COLOR_REVERT]", sprecht Ihr von Eurem Pferd herab, "[COLOR_SELECTED_TEXT]ob Ihr einen Schluck Wasser für einen Reisenden übrig habt, fragte ich.[COLOR_REVERT]"[NEWLINE][NEWLINE]Der Kerl spuckt aus. "[COLOR_SELECTED_TEXT]Wer will das wissen?[COLOR_REVERT]", grummelt er.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun, ich bin derjenige, der Euch den Auftrag gab, diesen Weg durchs Dickicht zu schlagen. Und den Lagerplatz anzulegen, vor dem Ihr steht.[COLOR_REVERT]"[NEWLINE][NEWLINE]Kurz zögert er, dann glimmt Verständnis in den Augen des Manns auf und er lächelt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Verzeiht meine Umgangsformen, Herr Gouverneur, ich komme selten unter Menschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Угрюмый мужчина стоит, осматривая вас с ног до головы и ничего не говорит.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Возможно, вы не совсем поняли меня с первого раза[COLOR_REVERT]" — говорите вы, сидя на лошади. "[COLOR_SELECTED_TEXT]Я спросил, не могли бы вы уделить глоток воды путешественнику?[COLOR_REVERT]"[NEWLINE][NEWLINE]Мужчина сплёвывает себе под ноги. "[COLOR_SELECTED_TEXT]А кто ты вообще такой?[COLOR_REVERT]" — ворчит он.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, это я поручил проложить эту тропу сквозь заросли и разбить лагерь, перед которым вы стоите.[COLOR_REVERT]"[NEWLINE][NEWLINE]Он немного колеблется, затем в глазах мужчины вспыхивает понимание и он улыбается.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Прошу прощения за мои манеры, губернатор. Я очень много времени провожу в глуши и редко общаюсь с людьми.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A férfi úgy áll ott, mint egy tuskó, és tetőtől talpig csendben szemügyre vesz téged.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Talán nem egészen értett meg az első alkalommal,[COLOR_REVERT]" - szólalsz meg a lovadról. "[COLOR_SELECTED_TEXT]Azt kérdeztem, hogy tudnál-e egy korty vizet nélkülözni egy utazónak.[COLOR_REVERT]"[NEWLINE][NEWLINE]A fickó köp egyet. "[COLOR_SELECTED_TEXT]Ki akarja tudni?[COLOR_REVERT]" - morogja.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos, én vagyok az, aki megbízta magát, hogy vágja át ezt az ösvényt a bozóton; és hogy jelölje ki ezt a táborhelyet, amely előtt áll. [COLOR_REVERT]"[NEWLINE][NEWLINE]Rövid ideig habozik, aztán a férfi szemében felragyog a megértés, és elmosolyodik.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bocsássa meg a modoromat, kormányzó. Nem vagyok hozzászokva, hogy emberek között legyek.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_LUMBERJACKS</Tag>
-		<English>Many Lumberjacks (8)</English>
+		<English>Many lumberjacks (8)</English>
 		<Portuguese>Muitos Lenhadores (8)</Portuguese>
 		<French>Huit experts bûcherons</French>
 		<German>Viele erfahrene Holzfäller (8)</German>
 		<Russian>Восемь лесорубов</Russian>
+		<Hungarian>Sok Favágó (8)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_LUMBERJACKS_HEAD</Tag>
