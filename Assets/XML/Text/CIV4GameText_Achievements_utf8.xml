@@ -3908,6 +3908,7 @@
 		<French>Une place pour les malades</French>
 		<German>Ein Platz für die Kranken</German>
 		<Russian>Место для больных</Russian>
+		<Hungarian>Hely a betegeknek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MEDICAL_OFFICE_TEXT</Tag>
@@ -3916,14 +3917,16 @@
 		<French>Le premier cabinet médical de vos colonies vient de s'ouvrir. Cela devrait aider à améliorer la santé de vos colons.[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Herr Doktor, Sie kommen gerade rechtzeitig. Wir haben den Innenausbau Eurer neuen Praxis gerade abgeschlossen. Ist sie nicht wunderschön geworden?![NEWLINE][NEWLINE]Ein festes Haus aus Stein. Damit habt Ihr eines der besten Häuser in der Stadt. Aber sagt mal, ich habe immer diese Rückenschmerzen, habt Ihr nicht ein Mittel dagegen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun, vielen Dank für das Haus, es ist in der Tat wirklich sehr schön geworden.[NEWLINE][NEWLINE]Ich werde gleich morgen einziehen und meine Arztpraxis eröffnen. Kommt doch übermorgen noch einmal vorbei, dann habe ich auch die Kisten mit den Medikamenten ausgepackt![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Доктор, вы как раз вовремя. Мы только что закончили внутреннюю отделку вашей новой клиники. Красиво получилось?![NEWLINE][NEWLINE]Крепкий каменный дом. У вас один из лучших домов в городе. Кстати, доктор, у меня постоянно болит спина. Какое лекарство лучше всего помогает?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Спасибо вам большое за вашу работу над домом. Получилось действительно хорошо.[NEWLINE][NEWLINE]Завтра я первым делом перееду и займусь приготовлениями к приёму больных. Почему бы вам не вернуться послезавтра? Я как раз успею распаковать коробки с лекарствами.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Doktor úr, éppen időben érkezett. Befejeztük az új rendelőjének belső munkálatait. Hát nem lett gyönyörű?![NEWLINE][NEWLINE]Egy masszív kőház. Önnek van az egyik legjobb háza a városban. Egyébként, doktor úr, mindig fáj a hátam. Mi a legjobb orvosság rá?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos, köszönöm szépen a sok munkát, amit a házon végzett. Tényleg nagyon szép lett.[NEWLINE][NEWLINE]Holnap reggel az első dolgom lesz beköltözni, és megnyitom az orvosi praxisomat. Miért nem jön vissza holnapután? Addigra kipakolom a gyógyszeres dobozokat.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_CUTTER</Tag>
-		<English>First Pirate Cutter</English>
+		<English>First pirate cutter</English>
 		<Portuguese>Primeiro Cúter Pirata</Portuguese>
 		<French>Première cotre pirate</French>
 		<German>Erster Piratenkutter</German>
 		<Russian>Ваш первый пиратски катер</Russian>
+		<Hungarian>Az első kalóz Kutter</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_CUTTER_HEAD</Tag>
@@ -3932,6 +3935,7 @@
 		<French>Sur les pas de Barbe-Noire</French>
 		<German>Auf Blackbeard's Spuren</German>
 		<Russian>По следам Черной бороды</Russian>
+		<Hungarian>Feketeszakáll nyomában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_PIRATE_CUTTER_TEXT</Tag>
@@ -3939,6 +3943,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Capitão, agora você tem seu primeiro Cúter Pirata rápido, que pode ser usado para interromper a navegação costeira inimiga e encher seu tesouro.[NEWLINE][NEWLINE]Em Port Royal você pode fazer seu nome, desfrutar de prostitutas e rum rico e farto. Mas você realmente quer isso? Onde está seu medo de Deus, Milorde? Um serviço honroso para o rei, ou Jolly Roger e eterno maldição?[COLOR_REVERT]"[NEWLINE][NEWLINE]Você ainda pode seguir o caminho certo... mas afinal, a colônia tem que ser financiada de alguma forma... talvez você devesse...[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Wohlan Käpt'n, Ihr habt nun Euer erstes schnelles Piratenschiff, mit dem Ihr die Küstenschifffahrt des Feindes stören und Eure Schatzkammer füllen könnt.[NEWLINE][NEWLINE]In Port Royal könnt Ihr Euch einen Namen machen, leichte Mädchen und schweren Rum genießen. Aber wollt Ihr das wirklich? Wo bleibt Eure Gottesfurcht, Milord? Ein ehrenvoller Dienst fürs Vaterland oder Jolly Roger und ewige Verdammnis?[COLOR_REVERT]"[NEWLINE][NEWLINE]Noch könnt Ihr den richtigen Weg einschlagen...aber schließlich muss die Kolonie ja auch irgendwie finanziert werden...vielleicht sollte man doch...[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Капитан, теперь у нас есть свой первый быстроходный пиратский катер, который вы можете использовать, чтобы помешать вражескому прибрежному судоходству и пополнить свою казну.[NEWLINE][NEWLINE]В Порт-Ройяле вы можете сделать себе имя, насладиться шлюхами и густым ромом. Но разве вы этого хотите? Где ваш страх перед Богом, милорд? Почетная служба королю или Веселому Роджеру и вечное проклятие?[COLOR_REVERT]"[NEWLINE][NEWLINE]Вы еще можете пойти по правильному пути.. ..но ведь колонии тоже надо как-то финансировать...может и стоит попробовать...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kapitány, végre megvan az első gyors kalózhajód, amellyel megzavarhatod az ellenséges part menti hajózást és feltöltheted a kincstáradat.[NEWLINE][NEWLINE]Port Royalban nevet szerezhetsz magadnak, élvezheted a szajhákat és a bőséges, jóízű rumot. De vajon tényleg ezt akarod? Hol van az istenfélelmed, Milord? Becsületes szolgálat a királynak, vagy a Kalózzászló és az örök kárhozat?[COLOR_REVERT]"[NEWLINE][NEWLINE]Még mindig választhatod a helyes utat... de végül is a kolóniát valahogyan finanszírozni kell... talán mégiscsak...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY</Tag>
@@ -3947,6 +3952,7 @@
 		<French>Le premier missionnaire</French>
 		<German>Der erste Missionar</German>
 		<Russian>Ваш первый миссионер</Russian>
+		<Hungarian>Az első misszionáriusod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_HEAD</Tag>
@@ -3955,6 +3961,7 @@
 		<French>Le salut religieux pour les indigènes</French>
 		<German>Religiöse Rettung für die Wilden</German>
 		<Russian>Религия спасет туземцев</Russian>
+		<Hungarian>Vallási üdvösség az Indiánok számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_TEXT</Tag>
@@ -3963,6 +3970,7 @@
 		<French>«[COLOR_SELECTED_TEXT][COLOR_SELECTED_TEXT]Va dans la nature et proclame la parole de Dieu. Convertis ces sauvages athées pour qu'ils nous suivent au paradis et qu'ils nous donnent leur or au bénéfice de notre Église. Sauve leurs âmes de la souffrance éternelle et ramène-moi leur or.[COLOR_REVERT][COLOR_REVERT] »[NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Oui mon père, je ne vous décevrai pas .[COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je le sais bien, mon fils. Et si c'est le cas, tu ferais mieux de rester avec eux. Va donc, maintenant...[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Menjetek hát a pusztába, és hirdessétek Isten igéjét! Térítsétek meg ezeket az istentelen vadembereket, hogy kövessenek minket a mennybe, és adják nekünk az aranyukat az egyház javára! Mentsétek meg a lelküket az örök kárhozattól, és hozzátok el nekem az aranyukat!"[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Igen, Atyám. Nem fogok csalódást okozni neked.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tudom, fiam. Ha mégis kudarcot vallasz, jobb, ha ott maradsz velük. Most menj...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY</Tag>
@@ -3971,6 +3979,7 @@
 		<French>Le salut religieux pour les indigènes</French>
 		<German>Der erste Missionar</German>
 		<Russian>Ваш первый миссионер</Russian>
+		<Hungarian>Az első misszionáriusod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_HEAD</Tag>
@@ -3979,6 +3988,7 @@
 		<French>Le salut religieux pour les indigènes</French>
 		<German>Religiöse Rettung für die Wilden</German>
 		<Russian>Религия спасет туземцев</Russian>
+		<Hungarian>Vallási üdvösség az Indiánok számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_RUSSIAN_MISSIONARY_TEXT</Tag>
@@ -3987,6 +3997,7 @@
 		<French>«[COLOR_SELECTED_TEXT][COLOR_SELECTED_TEXT]Va dans la nature et proclame la parole de Dieu. Convertis ces sauvages athées pour qu'ils nous suivent au paradis et qu'ils nous donnent leur or au bénéfice de notre Église. Sauve leurs âmes de la souffrance éternelle et ramène-moi leur or.[COLOR_REVERT][COLOR_REVERT] »[NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Oui mon père, je ne vous décevrai pas .[COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je le sais bien, mon fils. Et si c'est le cas, tu ferais mieux de rester avec eux. Va donc, maintenant...[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Menjetek hát a pusztába, és hirdessétek Isten igéjét! Térítsétek meg ezeket az istentelen vadembereket, hogy kövessenek minket a mennybe, és adják nekünk az aranyukat az egyház javára! Mentsétek meg a lelküket az örök kárhozattól, és hozzátok el nekem az aranyukat![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Igen, Atyám. Nem fogok csalódást okozni neked.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tudom, fiam. Ha mégis kudarcot vallasz, jobb, ha ott maradsz velük. Most menj...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT</Tag>
@@ -3995,6 +4006,7 @@
 		<French>Votre premier évangéliste</French>
 		<German>Der erste Missionar</German>
 		<Russian>Ваш первый миссионер</Russian>
+		<Hungarian>Az első misszionáriusod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_HEAD</Tag>
@@ -4003,6 +4015,7 @@
 		<French>Le salut religieux pour les indigènes</French>
 		<German>Religiöse Rettung für die Wilden</German>
 		<Russian>Религия спасет туземцев</Russian>
+		<Hungarian>Vallási üdvösség az Indiánok számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_CHRISTIAN_MISSIONARY_PROT_TEXT</Tag>
@@ -4011,6 +4024,7 @@
 		<French>«[COLOR_SELECTED_TEXT][COLOR_SELECTED_TEXT]Va dans la nature et proclame la parole de Dieu. Convertis ces sauvages athées pour qu'ils nous suivent au paradis et qu'ils nous donnent leur or au bénéfice de notre Église. Sauve leurs âmes de la souffrance éternelle et ramène-moi leur or.[COLOR_REVERT][COLOR_REVERT] »[NEWLINE][NEWLINE]« [COLOR_SELECTED_TEXT]Oui mon père, je ne vous décevrai pas .[COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Je le sais bien, mon fils. Et si c'est le cas, tu ferais mieux de rester avec eux. Va donc, maintenant...[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]So gehet denn hinein in die Wildnis und verkündet Gottes Word. Bekehrt diese gottlosen Wilden, auf dass sie uns in den Himmel folgen mögen und uns ihr Gold überlassen zum Wohle der Kirche. Rettet ihre Seele vor der ewigen Verdammnis und bringt mir ihre Reichtümer.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ja, Herr. Ich werde euch nicht enttäuschen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das weiß ich mein Sohn. Und wenn doch, dann bleibt besser gleich bei Ihnen. Und nun geht...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Иди же в пустыню и проповедуй Слово Божье. Обрати этих безбожных дикарей в Истинную Веру, чтобы они последовали за нами на Небо и отдали нам свое золото на благо Церкви. Спаси их души от вечного проклятия и принеси мне их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, отец. Я не разочарую вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я знаю это, сын мой. И если ты это сделаешь, тебе лучше остаться там, с ними. А теперь иди...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Menjetek hát a pusztába, és hirdessétek Isten igéjét! Térítsétek meg ezeket az istentelen vadembereket, hogy kövessenek minket a mennybe, és adják nekünk az aranyukat az egyház javára! Mentsétek meg a lelküket az örök kárhozattól, és hozzátok el nekem az aranyukat![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Igen, Atyám. Nem fogok csalódást okozni neked.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tudom, fiam. Ha mégis kudarcot vallasz, jobb, ha ott maradsz velük. Most menj...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER</Tag>
@@ -4019,6 +4033,7 @@
 		<French>Le premier boucanier</French>
 		<German>Der erste Bukanier</German>
 		<Russian>Ваш первый буканьер</Russian>
+		<Hungarian>Az első martalócod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER_HEAD</Tag>
@@ -4027,6 +4042,7 @@
 		<French>Les boucaniers sont là parmi nous.</French>
 		<German>Seeräuber sind unter uns</German>
 		<Russian>Буканьеры среди нас</Russian>
+		<Hungarian>A martalócok köztünk vannak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BUCCANEER_TEXT</Tag>
@@ -4035,6 +4051,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Regardez moi ce trésor, Les gars. On pourra en faire quelque chose. Quand nous serons de retour à Port Royal, J'offrirai une tournée de rhum pour tout le monde .»[NEWLINE][NEWLINE][COLOR_REVERT] « [COLOR_SELECTED_TEXT]Ça m'étonnerair. Tu as jamais payé une tournée ? [COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Fais gaffe à ta langue quand j'ai envie de baston. Je vous offrirai à boire, je promets, et tout le butin sera partagé de façon juste...[COLOR_REVERT]»[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Seht euch blos diesen Schatz an, Jungs. Damit lässt sich was anfangen. Wenn wir wieder in Port Royal sind, schmeiß' ich ne Runde Rum für alle.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Das würde mich wundern. Hast Du überhaupt schon mal ne Runde geschmissen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pass blos auf was Du sagst. Ich bin immer noch in Kämpferlaune. Ich geb' einen Drink aus, versprochen. Und die Beute wird fair geteilt...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вы только посмотрите на это сокровище, парни. Теперь мы можем делать, что захотим. Когда вернемся в Порт Ройал, я поставлю выпивку всем присутствующим и выпью с каждым по кружке рома.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Меня бы это удивило. Ты когда-нибудь пил круговую?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Следи за своим языком и слушай, что я говорю. Я угощу вас выпивкой, обещаю, и добыча будет поделена по справедливости...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nézzétek csak meg ezt a kincset, fiúk! Valamit csinálni fogunk vele. Visszatérve Port Royalba, fizetek mindenkinek egy kör rumot."[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ez meglepő. Fizettél már valaha egy kört?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vigyázz, mit mondasz, amikor harcias kedvemben vagyok! Meghívlak arra az italra, ígérem, és a zsákmányon igazságosan osztozunk...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT</Tag>
@@ -4043,6 +4060,7 @@
 		<French>La première belle-de-nuit</French>
 		<German>Die erste Dirne</German>
 		<Russian>Первая блудница</Russian>
+		<Hungarian>Az első szajha</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT_HEAD</Tag>
@@ -4051,6 +4069,7 @@
 		<French>Soutenues à la taverne</French>
 		<German>Dirnen in der Taverne</German>
 		<Russian>Блудницы в таверне</Russian>
+		<Hungarian>Szajhák a kocsmában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_HARLOT_TEXT</Tag>
@@ -4059,6 +4078,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Alors, ma jolie, tu t'occupes des travailleurs et des artisans, quand ils sont las de leur travail et veulent s'amuser un peu. Assure-toi qu'ils en jouissent au mieux.[COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]D'accord, tant qu'ils me paient pour ça.[COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Ils vont le faire, sinon on les vire sur-le-champ. Je vois que tu vas bien remonter le moral de cette colonie.[COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Also Schätzchen, Du kümmerst Dich dann ab heute um die Arbeiter und Handwerker, wenn sie müde von der Arbeit hier ihren Spaß haben wollen. Sorg nur immer dafür, dass sie sich amüsieren.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Geht klar. Solange sie dafür bezahlen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das werden sie, ansonsten fliegen sie raus. Ich sag Dir was, damit leistest du einen ganz wesentlichen Beitrag für die Stimmung in der Kolonie.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Так что, дорогая, с сегодняшнего дня ты будешь заботиться о рабочих и ремесленниках, когда они придут сюда после работы и захотят повеселиться. Только всегда делай так, чтобы им было весело.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Понятно, хозяин. Но только пока они будут за это платить.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Будут платить, крошка, иначе вылетят из дверей выстрее ядра из пушки. И вот что я вам скажу, барышни: этим вы вносите очень значительный вклад в развитие нашей колонии.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Szóval édesem, mától kezdve te vigyázol a munkásokra és a mesteremberekre, amikor belefáradnak a munkába, és szórakozni szeretnének. Csak gondoskodj róla, hogy mindig jól érezzék magukat![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Megkapod, amíg fizetnek érte![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Fizetni fognak, különben egyből ki lesznek dobva. Látom, hogy tényleg javítani fogod a hangulatot ezen a településen![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER</Tag>
@@ -4067,6 +4087,7 @@
 		<French>La première actrice</French>
 		<German>Die erste Schauspielerin</German>
 		<Russian>Первая актриса</Russian>
+		<Hungarian>Az első színésznő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_HEAD</Tag>
@@ -4075,6 +4096,7 @@
 		<French>La salle de bal est une scène</French>
 		<German>Der Ballsaal wird zur Bühne</German>
 		<Russian>Бальный зал превращается в сцену</Russian>
+		<Hungarian>A bálterem színpaddá válik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_FEMALE_ENTERTAINER_TEXT</Tag>
@@ -4082,6 +4104,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Eu realmente preciso arrumar meu cabelo e me vestir antes do show começar. Caso contrário, em vez de rir do meu papel e das minhas falas, as pessoas vão rir de mim."[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Minha senhora, você está especialmente adorável novamente hoje. Nada precisa de conserto. Por favor, posso acompanhá-lo até o palco?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, você é um verdadeiro cavalheiro, além de um bajulador perigoso. Mas obrigado pelas suas amáveis palavras, senhor. Isso reduz um pouco meu medo do palco.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Ich muss unbedingt noch einmal meine Haare und mein Kleid richten, bevor es losgeht. Sonst lachen die Leute nicht nur über meine Rolle und mein Text.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Mylady, Ihr seht heute wieder ganz besonders reizend aus, da bedarf es doch keiner Korrektur mehr. Darf ich Euch zur Bühne geleiten?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh, Ihr seid ein wahrer Gentleman, aber auch ein ganz gefährlicher Schmeichler. Aber Danke Euch für Eure lieben Worte Sir, das senkt mein Lampenfieber doch ein klein wenig.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Мне действительно нужно поправить прическу и переодеться, прежде чем представление начнется. Иначе люди просто не будут смеяться над моей ролью и моими репликами.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Миледи, вы выглядите сегодня особенно мило, нет нужды в исправлениях. Могу я проводить вас на сцену?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]О, вы настоящий джентльмен и при этом очень опасный льстеец. Но спасибо за добрые слова, сэр, это немного уменьшило мой страх перед сценой.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Tényleg rendbe kell hoznom a hajamat és a ruhámat, mielőtt elkezdődik a műsor. Különben az emberek nem csak a szerepemen és a szövegemen fognak nevetni.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Hölgyem, ma megint különösen csinos. Semmit sem kell rendbe hozni. Kérem, felkísérhetem a színpadra?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ó, ön egy igazi úriember, valamint egy veszélyes hízelgő. De köszönöm a kedves szavait, uram. Ez egy kicsit csökkenti a lámpalázamat.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER</Tag>
@@ -4090,6 +4113,7 @@
 		<French>Le premier marchand expert.</French>
 		<German>Der erste erfahrene Händler</German>
 		<Russian>Первый торговец</Russian>
+		<Hungarian>Az első kereskedő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_HEAD</Tag>
@@ -4098,6 +4122,7 @@
 		<French>Commerce avec les indigènes</French>
 		<German>Handel mit den Wilden</German>
 		<Russian>Торговля с индейцами</Russian>
+		<Hungarian>Kereskedés az Indiánokkal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_TRADER_TEXT</Tag>
@@ -4106,6 +4131,7 @@
 		<French>«[COLOR_SELECTED_TEXT]Visage pâle, ce sont de très bons fusils. Mais ils sont bien trop chers.[COLOR_REVERT] »[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Vous avez raison, on ne fait pas mieux. Bon, très bien. Je vais ajouter par-dessus le marché des cartouches et ce bon rhum. Qu'en dites-vous ? Marché conclu ? [COLOR_REVERT]»[NEWLINE][NEWLINE]«[COLOR_SELECTED_TEXT]Il nous faut le double de cartouches, et vendez plutôt le rhum à nos ennemis. Et là nous ferons affaire. [COLOR_REVERT] »[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Weißer Mann, das sein sehr gute Waffe. Aber Preis viel zu hoch.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, ihr bekommt ja auch was dafür. Ich leg noch Patronen drauf und diesen guten Rum hier. Was sagt ihr? Sind wir im Geschäft?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gib mir Rum, vorher muss ich testen. Zwei Fässer und zehn Gewehre wollen wir.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Бледнолицый, ты предлагаешь хорошее оружие. Но цена слишком высока.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж, я могу добавить еще немного пуль и вот этот чудесный ром. Что скажешь?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Налей мне рома, я хочу сначала проверить его. Если ты не лжец, мы возьмём два бочонка и десять винтовок.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Fehér ember, ezek nagyon jó fegyverek. De az áruk túl magas.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igazad van. Ezt a minőséget nem lehet felülmúlni. Na jó, rendben. Adok hozzá néhány töltényt és ezt a jó kis rumot. Mit szólsz hozzá? Áll az alku?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Duplázd meg a töltényeket és add el a rumot az ellenségeimnek! Akkor megegyeztünk!"[COLOR_REVERT][NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY</Tag>
@@ -4114,6 +4140,7 @@
 		<French>La première infantierie de ligne européenne</French>
 		<German>Die erste Europäische Linieninfanterie</German>
 		<Russian>Первая Европейская линейная пехота</Russian>
+		<Hungarian>Az első Európai sorkatona</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_HEAD</Tag>
@@ -4122,6 +4149,7 @@
 		<French>Troupes d'élite au Nouveau Monde</French>
 		<German>Eilitetruppen in der Neuen Welt</German>
 		<Russian>Элитные войска в Новом Свете</Russian>
+		<Hungarian>Elit csapatok az Újvilágban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EUROPEAN_LINE_INFANTRY_TEXT</Tag>
@@ -4129,6 +4157,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Homens, me escutem. Fomos enviados a este lugar esquecido por Deus para fazer grandes coisas e conquistar ainda mais deste belo país para nosso Rei.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Os selvagens aqui não são páreo para nós. Vamos varrê-los e tomar seu ouro.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hum, senhor, outro dia na floresta esses "selvagens" cercaram e destruíram uma tropa inteira. Devemos ter cuidado, senhor.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Männer, hört mir zu. Man hat uns an diesen gottverlassenen Ort geschickt, um Großes zu leisten und für unseren König ein neues Stückchen dieser schönes Erade zu erobern.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Wilden hier sind keine Gegner für uns. Wir werden sie hinwegfegen und uns ihr Gold holen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ähm, Sir, erst neulich sollen diese "Wilden" eine ganze Truppe im Wald umzingelt und ausgeschaltet haben. Wir sollten uns vorsehen, Sir![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Парни, послушайте меня. Нас послали в это Богом забытое место, чтобы вершить великие дела и завоевать еще больше земель для нашего Короля.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Местные дикари нам не ровня. Мы сметем их и заберем всё их золото.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Гхм, сэр, буквально на днях в лесу эти "дикари" окружили и уничтожили целый отряд. Мы должны быть осторожны, сэр.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Emberek, figyeljetek rám! Azért küldtek minket erre az isten háta mögötti helyre, hogy nagy dolgokat vigyünk véghez, és még többet hódítsunk meg ebből a gyönyörű országból Királyunk számára.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az itteni vadak nem ellenfelek számunkra. Elsöpörjük őket és elvisszük az aranyukat![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Öhm, uram, éppen a minap az erdőben ezek a "vadak" körülvettek és elpusztítottak egy egész csapatot. Óvatosnak kell lennünk, uram![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR</Tag>
@@ -4137,6 +4166,7 @@
 		<French>Plusieurs conquistadors</French>
 		<German>Mehrere Konquistadoren</German>
 		<Russian>Несколько конкистадоров</Russian>
+		<Hungarian>Néhány konkvisztádor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_HEAD</Tag>
@@ -4145,6 +4175,7 @@
 		<French>Comme un vol de gerfauts ...</French>
 		<German>Konquistadoren erobern die Neue [NEWLINE]Welt</German>
 		<Russian>Конкистадоры покоряют Новый Свет</Russian>
+		<Hungarian>A konkvisztádorok aranyat keresnek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_CONQUISTADOR_TEXT</Tag>
@@ -4152,6 +4183,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Homens, as Sete Cidades de Cibola, feitas inteiramente de ouro, estão logo além do horizonte, do outro lado deste deserto. Sigam-me![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Senhor, o guia diz que vai nos deixar, mas que encontraremos água pelo caminho. Se ele estiver mentindo, estamos todos mortos.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Está dizendo que esses selvagens ignorantes são espertos o bastante para nos enganar? Sigam-me... vamos atrás desse ouro![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Männer, die Neue Welt gehört uns. Seht Euch das an! Eine der sieben Städte von Cibola, ich weiß es, ich bin sicher. Folgt mir![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr, das sieht mir eher wie die Begräbnisstätte eines hohen Königs der Wilden aus. Ich glaube hier werden wir eher nur verstaubte Knochen oder den Tod finden oder beides. Wenn die Wilden uns sehen, sind wir geliefert.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was seid ihr, Eroberer oder Feiglinge? Mir nach...ich kann das Gold schon riechen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Парни, Новый Свет наш. Посмотрите туда! Это один из семи городов Сиболы, я уверен. Следуйте за мной![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Господи, это больше похоже на место захоронения верховного вождя туземцев. Скорее всего, мы найдем лишь обглоданные кости. А если кто-то из дикарей увидит нас, мы все погибнем...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вы завоеватели или трусы? За мной! Я уже чувствую запах золота!!![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Emberek, Cibola Hét Városa, ami teljes egészében aranyból épült, épp a sivatag túlsó oldalán, a láthatáron túl található. Kövessetek![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Uram, a vezetőnk azt mondja, hogy elhagy minket, de útközben találunk vizet. Ha hazudik, mindannyian halottak vagyunk.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Azt mondod, hogy ezek a tudatlan barbárok elég okosak ahhoz, hogy átverjenek minket? Kövessetek... menjünk, szerezzük meg azt az aranyat![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES</Tag>
@@ -4160,6 +4192,7 @@
 		<French>Des forgerons ardus à la tâche</French>
 		<German>Eifrige Waffenschmiede</German>
 		<Russian>Двадцать клинков</Russian>
+		<Hungarian>Lelkes fegyverkovácsok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_HEAD</Tag>
@@ -4168,6 +4201,7 @@
 		<French>Pointes et sabres pour l'armurerie</French>
 		<German>Klingenwaffen für das Waffenlager</German>
 		<Russian>Клинки для оружейной</Russian>
+		<Hungarian>Kardokat a fegyvertárba</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TWENTY_BLADES_TEXT</Tag>
@@ -4175,14 +4209,16 @@
 		<Portuguese>Senhor, seus ferreiros estão ocupados. Eles forjaram muitas espadas novas junto com outras armas.[NEWLINE][NEWLINE]Ainda não é suficiente para um exército, mas todos podemos nos defender melhor agora. Você pode até equipar algumas unidades novas.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Sir, Eure Waffenschmiede sind wirklich fleißig. Es wurden reichlich neue Schwerter und andere Klingenwaffen geschmiedet.[NEWLINE][NEWLINE]Es reicht noch nicht für eine Armee, aber Ihr könnt Euch jetzt jedenfalls besser verteidigen und einige neue Einheiten ausrüsten.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши кузнецы завалены работой. Они сделали уже много новых клинков и другого оружия.[NEWLINE][NEWLINE]И хоть этого пока недостаточно для большой армии, но теперь мы не беззащитны и даже можем экипировать несколькох колонистов.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kovácsai nagyon elfoglaltak. Rengeteg új kardot kovácsoltak más fegyverekkel együtt.[NEWLINE][NEWLINE]Ez ugyan még nem elég egy hadseregnek, de most már mindannyian jobban meg tudjuk védeni magunkat. Még néhány új egységet is felszerelhetünk.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP</Tag>
-		<English>First Small Coastal Ship</English>
+		<English>First small coastal ship</English>
 		<Portuguese>Primeiro pequeno navio costeiro</Portuguese>
 		<French>Premier petit bâteau côtier</French>
 		<German>Erster Kleiner Küstensegler</German>
 		<Russian>Первый малый прибрежный корабль</Russian>
+		<Hungarian>Az első Kis Partmenti Hajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP_HEAD</Tag>
@@ -4191,21 +4227,24 @@
 		<French>Cabotage en eaux basses.</French>
 		<German>Küstengewässer können befahren werden</German>
 		<Russian>Мелководье больше не проблема</Russian>
+		<Hungarian>Sekély vizeken lehet hajózni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SMALL_COASTAL_SHIP_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Splendid, Captain. You've successfully sailed your barge up the river and returned with much-needed goods.[NEWLINE][NEWLINE]See these barrels here and those back there. Please take them back with you. We rely on you.[COLOR_REVERT]"[NEWLINE][NEWLINE]You now have the first small coastal ship. Use it well, and don't put it onto the nearest sandbank.[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Splendid, Captain. You've successfully sailed your craft up the river and returned with much-needed goods.[NEWLINE][NEWLINE]See these barrels here, and those back there. Please take them back with you. We rely on you.[COLOR_REVERT]"[NEWLINE][NEWLINE]You now have the first small coastal ship. Use it well, and don't put it onto the nearest sandbank.[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Esplêndido, capitão. Você navegou com sucesso em sua barcaça rio acima e voltou com mercadorias muito necessárias.[NEWLINE][NEWLINE]Veja esses barris aqui e aqueles ali. Por favor, leve-os de volta com você. Contamos com você.[COLOR_REVERT]"[NEWLINE][NEWLINE]Agora você tem o primeiro pequeno navio costeiro. Use-o bem e não o coloque no banco de areia mais próximo.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Ganz famos Käpt'n, Ihr habt Euren Kahn endlich den Fluss rauf geschippert und bringt uns die dringend benötigten Waren.[NEWLINE][NEWLINE]Diese Fässer hier und die da hinten nehmt bitte wieder mit zurück, wir verlassen uns auf Euch[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr verfügt nun über den ersten kleinen Küstensegler. Gebraucht ihn wohl und setzt nicht gleich auf die nächste Sandbank. [NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Отлично, капитан. Вы успешно провели баржу вверх по реке и вернулись со столь необходимыми нам товарами.[NEWLINE][NEWLINE]Видите эти бочки здесьна пирсе и те у здания? Пожалуйста, захватите их с собой. Мы полагаемся на вас.[COLOR_REVERT]"[NEWLINE][NEWLINE]Теперь у вас есть первый малый прибрежный корабль. Используйте его бережно и постарайтесь не посадить на ближайшую отмель.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nagyszerű, Kapitány! Sikeresen felhajózott az uszályával a folyón, és visszatért a nagyon szükséges áruval.[NEWLINE][NEWLINE]Nézze ezeket a hordókat itt és azokat ott hátul! Kérem, vigye vissza őket magával. Számítunk önre.[COLOR_REVERT]"[NEWLINE][NEWLINE]Most már öné az első kis parti hajó. Használja jól, és ne tegye rögtön az eslő homokpadra![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP</Tag>
-		<English>First Big Coastal Ship</English>
+		<English>First big coastal ship</English>
 		<Portuguese>Primeiro grande navio costeiro</Portuguese>
 		<French>Premier grand bateau côtier</French>
 		<German>Erster Großer Küstensegler</German>
 		<Russian>Перый большой прибрежный корабль</Russian>
+		<Hungarian>Az első Nagy Partmenti Hajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP_HEAD</Tag>
@@ -4214,6 +4253,7 @@
 		<French>Le commerce côtier grossit à vue d'oeil</French>
 		<German>Die Küstenschifffahrt wächst und wächst</German>
 		<Russian>Прибрежное судоходство расширяется</Russian>
+		<Hungarian>A tengerparti hajózás egyre csak növekszik</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BIG_COASTAL_SHIP_TEXT</Tag>
@@ -4221,6 +4261,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Capitão, este é realmente um grande navio. Sua capacidade de carga rivaliza com um navio de alto mar. Sei que não pode ficar maior, ou então você ficará preso na lama.[NEWLINE][NEWLINE]Temos muitas mercadorias. Por favor, leve-as rio acima com você e tenha certeza de que receberá uma recompensa decente.[COLOR_REVERT]"[NEWLINE][NEWLINE]Agora você tem o primeiro grande navio costeiro. Use-o bem. Não encalhe em um banco de areia.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Käpt'n, Ihr habt Euch wahrlich verbessert, seit dem Ihr das letzte Mal hier wart. Dieses Schiff kann es ja schon fast mit einem Vollschiff aufnehmen. Aber noch größer darf es nicht werden, sonst macht Euch der Tiefgang einen Strich durch die Rechnung und Ihr bleibt im Schlick hängen.[NEWLINE][NEWLINE]Wir haben wieder ordentlich Ware, die Ihr bitte den Fluss mit runternehmt. Man wird Euch auch anständig dafür entlohnen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr verfügt nun über den ersten großen Küstensegler. Gebraucht ihn wohl und setzt nicht gleich auf die nächste Sandbank. [NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Поздравляю, капитан, у вас теперь действительно большой корабль. Предположу, что он может принять столько же груза, сколько и небольшое морское судно. Жаль, что он не может стать еще больше, иначе вы рискуете завязнуть придонном иле.[NEWLINE][NEWLINE] У нас скопилось множество товаров. Возьмите их с собой в следующий рейс вверх по реке и будьте уверены, вы сможете выручить за них достойную награду.[COLOR_REVERT]"[NEWLINE][NEWLINE]Теперь у вас есть первый большой прибрежный корабль. Он больше и сядет на мель быстрее малого прибрежного корабля, так что будьте аккуратны.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kapitány, ez tényleg egy nagy hajó! Rakodókapacitása vetekszik egy tengerjáró hajóéval. Tisztában vagyok vele, hogy ennél nagyobb nem lehet, különben elakad a mederben.[NEWLINE][NEWLINE]Rengeteg árunk van. Kérem, vigye fel őket magával a folyón, és biztos lehet benne, hogy tisztességes jutalmat fog kapni.[COLOR_REVERT]"[NEWLINE][NEWLINE]Most már öné az első kis parti hajó. Használja jól, és ne tegye rögtön az eslő homokpadra![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD</Tag>
@@ -4229,6 +4270,7 @@
 		<French>Premier piquier de garde</French>
 		<German>Erste Stadtwache</German>
 		<Russian>Первый городской стражник</Russian>
+		<Hungarian>Az első Városőr</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD_HEAD</Tag>
@@ -4237,6 +4279,7 @@
 		<French>Un colon est devenu piquier de garde</French>
 		<German>Ein Siedler hat den Beruf Stadtwache ergriffen</German>
 		<Russian>Поселенец выбрал профессию городского стража</Russian>
+		<Hungarian>Egy telepes a városőr szakmát választotta</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_TOWN_GUARD_TEXT</Tag>
@@ -4244,6 +4287,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Ei, você, não adormeça em serviço de guarda. Não é para isso que somos pagos. Devemos manter a paz e a ordem aqui."[NEWLINE][NEWLINE]"Ah, vamos, deixe-me sentar aqui um pouco. Ontem tomamos algumas bebidas, até a hora de fechar, na verdade. Só preciso descansar um pouco. A cidade está em boas mãos com você...[COLOR_REVERT]"[NEWLINE][NEWLINE]A colono assumiu a profissão de guarda municipal. Muito bom. A cidade agora tem um pouco de proteção. Mas isso não será suficiente no longo prazo.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Hey, Du, schlaf blos nicht auf Wache ein. Dafür werden wir nicht bezahlt. Wir sollen doch hier für Ruhe und Ordnung sorgen.[NEWLINE][NEWLINE]Ach was, lass mich doch ein wenig hier ausruhen. Gestern haben wir ganz schön ins Glas geschaut. Es dauerte bis zur Sperrstunde. Ich brauch' jetzt einfach Ruhe. Die Stadt ist doch bei Dir in guten Händen...[COLOR_REVERT]"[NEWLINE][NEWLINE]Ein Siedler hat den Beruf Stadtwache ergriffen. Sehr gut, damit sollte die Stadt schon ein wenig mehr geschützt sein. Aber das wird auf die Dauer nicht ausreichen. [NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Эй, ты, не спать в карауле! Нам платят не за это. Мы здесь, чтобы поддерживать мир и порядок[COLOR_REVERT]".[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да бросьте, позвольте мне хоть немного посидеть. Вчера мы сидели в таверне почти до закрытия. Мне просто нужно малость отдохнуть. С такими, как вы, этот город в надежных руках...[COLOR_REVERT]"[NEWLINE][NEWLINE]Один из колонистов выбрал для себя профессию городского стража. Очень хорошо - теперь колония хоть как-то защищена. Но в долгосрочной перспективе этого будет недостаточно.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Hé, te, ne aludj el az őrségben! Nem ezért fizetnek minket. Azért vagyunk itt, hogy rendet és békét tartsunk."[NEWLINE][NEWLINE]"Ugyan már, hadd üljek le egy kicsit! Tegnap ittunk néhány pohárral, egészen zárásig, ami azt illeti. Csak egy kis pihenésre van szükségem. A város jó kezekben van veled...[COLOR_REVERT]"[NEWLINE][NEWLINE]Egy telepes a városőri hivatást választotta. Nagyon jó! A városnak most már van egy kis védelme. De ez hosszú távon nem lesz elég.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_CARAVEL</Tag>
@@ -4266,6 +4310,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Senhor, este não é um navio para transportar emigrantes. Isso deveria ser óbvio para você. É apertado e abafado lá embaixo no porão. Só há um propósito para esse tipo de navio: levar o máximo de escravos possível da África para este inferno.[NEWLINE][NEWLINE]Acho que nós dois sabemos o que estamos dizendo aqui. Não há necessidade de continuar falando sobre isso. [NEWLINE][NEWLINE]Este navio se parece com está em boas condições. O que você quer com ele? Vou precisar de mais navios como este.[COLOR_REVERT]"[NEWLINE][NEWLINE]Agora você é o proprietário de um transportador de escravos. Você tem certeza de que deseja estar neste tipo de negócio? Os bons cidadãos de sua colônia podem ficar assustados no dia em que tal carga for subitamente descarregada em seu cais.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Sir, das ist kein Schiff, um Auswanderer zu transportieren. Das sollte Euch klar sein. Es ist eng und stickig da unten im Laderaum. Es gibt nur einen Zweck für diese Art Schiffe - möglichst viele Sklaven von Afrika hierher zu schaffen. [NEWLINE][NEWLINE]Schätze, wir beide wissen, wovon wir hier reden. Reden wir nicht weiter davon. Sie scheint gut in Schuss zu sein. Was wollt Ihr dafür? Ich brauche vermutlich noch ein oder zwei Schiffe mehr von der Sorte.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr seid nun Besitzer eines Sklaven-Transporters. Seid Ihr Euch wirklich sicher, dass Ihr in diese Art von Geschäft einsteigen wollt? Die braven Bürger Eurer Kolonie könnte es verschrecken, wenn an den Docks plötzlich solche Ladung gelöscht wird.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Сэр, это не корабль для перевозки эмигрантов. Если вы не в курсе, то в его огромных трюмах тесно и душно. У такого корабля только одна цель - доставить в колонии как можно больше чёрного дерева из Африки[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Думаю, мы оба знаем, о чем говорим. Можете не беспокоиться об этом. Похоже, этот корабль в хорошем состоянии. Сколько вы хотите за него? Кстати, я готов купить еще один или два таких корабля.[COLOR_REVERT]"[NEWLINE][NEWLINE]Теперь вы владелец транспорта для перевозки рабов. Вы действительно уверены, что хотите заняться этим бизнесом? Добрые граждане вашей колонии могут прийти в ужас, когда в доках их колонии внезапно появится такой груз.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Uram, ez a hajó nem kivándorlók szállítására szolgál. Ennek nyilvánvalónak kell lennie az ön számára. Szűkös és fülledt odalent a raktérben. Egyetlen célja van egy ilyen hajónak - minél több rabszolgát eljuttatni Afrikából erre a helyre.[NEWLINE][NEWLINE]Azt hiszem, mindketten tudjuk, miről van szó. Nem kell tovább beszélnünk erről. Ez a hajó jó állapotban lévőnek tűnik. Mit akar érte? Szükségem lesz még egy vagy két ilyen hajóra, mint ez.[COLOR_REVERT]"[NEWLINE][NEWLINE]Te most egy rabszolgaszállító hajó tulajdonosa vagy. Biztos vagy benne, hogy tényleg ilyen üzletbe akarsz belevágni? A kolóniád jó polgárai megijedhetnek azon a napon, amikor egy ilyen rakományt hirtelen kirakodnak a kikötőjükben.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE</Tag>
@@ -4274,6 +4319,7 @@
 		<French>Premier navire négrier</French>
 		<German>Erste Sklavenbarke</German>
 		<Russian>Первый невольничий барк</Russian>
+		<Hungarian>Az első Rabszolgahajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE_HEAD</Tag>
@@ -4282,6 +4328,7 @@
 		<French>Commerce d'esclave professionnel</French>
 		<German>Professioneller Sklavenhandel</German>
 		<Russian>Профессиональная работорговля</Russian>
+		<Hungarian>Hivatásos rabszolga kereskedelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_BARQUE_TEXT</Tag>
@@ -4297,6 +4344,7 @@
 		<French>Premier chasseur d'esclave</French>
 		<German>Erster Sklavenjäger</German>
 		<Russian>Первый охотник на рабов</Russian>
+		<Hungarian>Az első Rabszolgavadász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_HEAD</Tag>
