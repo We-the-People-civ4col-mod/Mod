@@ -3446,6 +3446,7 @@
 		<French>Vous avez obtenus votre premier char à boeufs. Ces chariots sont lent, mais peuvent transport des biens en grande quantité.[NEWLINE][NEWLINE]</French>
 		<German>Ochsenkarren können große Warenmengen über weite Strecken transporieren. Dafür brauchen sie allerdings verflixt lange.[NEWLINE][NEWLINE]</German>
 		<Russian>Воловьи упряжи могут перевозить большое количество товаров на большие расстояния. Однако на это уходит чертовски много времени.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az ökrösszekerek nagy mennyiségű árut szállíthatnak nagy távolságokra. Sajnos, ez fájdalmasan sokáig tart.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BREWERY</Tag>
@@ -3454,6 +3455,7 @@
 		<French>Votre première brasserie</French>
 		<German>Eure erste Brauerei</German>
 		<Russian>Ваша первая пивоварня</Russian>
+		<Hungarian>Az első sörfőzde</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BREWERY_HEAD</Tag>
@@ -3462,6 +3464,7 @@
 		<French>Dieu soit loué pour le houblon et le malt</French>
 		<German>Hopfen und Malz, Gott erhalt's</German>
 		<Russian>Хмель и солод, хвала Господу</Russian>
+		<Hungarian>Komló és maláta, dicsértessék az Úr!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BREWERY_TEXT</Tag>
@@ -3469,6 +3472,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Como devo explicar isso ao meu mestre?[COLOR_REVERT]" o fazendeiro pergunta ao mestre cervejeiro. "[COLOR_SELECTED_TEXT]Você precisa de mais cevada pelo mesmo preço?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nossa nova chaleira tem que funcionar em sua capacidade[COLOR_REVERT]", declara o mestre cervejeiro. "[COLOR_SELECTED_TEXT]Ela produz o dobro de cerveja que a velha chaleira. Não é maravilhoso?[NEWLINE]Posso abastecer todas as pousadas da colônia. É evidente que é preciso muito mais cevada para fazer isso. Seu mestre só terá que plantar outro campo.[NEWLINE]Caso contrário, talvez precise procurar em outro lugar,[COLOR_REVERT]" diz o mestre cervejeiro com um aceno de cabeça e uma piscadela.[NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Wie soll ich das denn bloß meinem Herren erklären,[COLOR_REVERT]" fragt der Knecht den Braumeister. "[COLOR_SELECTED_TEXT]Ihr wollt noch mehr Gerste geliefert haben und das auch noch zum gleichen Preis?![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Schließlich muss unser neuer Braukessel ja auch ausgelastet werden,[COLOR_REVERT]" verkündet der Braumeister stolz. "[COLOR_SELECTED_TEXT]Wir können jetzt doppelt so viel Bier brauen als mit dem alten Kessel, ist das nicht wunderbar?![NEWLINE][NEWLINE]Jede Gastwirtschaft in der Kolonie kann ich jetzt beliefern. Dafür benötigen wir natürlich auch mehr Gerste als früher. Euer Herr wird noch ein weiteres Feld anlegen lassen müssen.[NEWLINE][NEWLINE]Ansonsten muss ich mich halt' woanders umsehen,[COLOR_REVERT]" gibt der Braumeister mit einem Zwinkern zu bedenken.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Как мне объяснить это моему хозяину?[COLOR_REVERT]" — спрашивает батрак пивовара. "[COLOR_SELECTED_TEXT]Вы хотите ещё столько же ячменя по той же цене?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Наш новый варочный котел должен быть загружен до отказа.[COLOR_REVERT]" – заявляет пивовар. "[COLOR_SELECTED_TEXT]Теперь мы можем варить в два раза больше пива, чем в старом котле. Разве это не замечательно?[NEWLINE][NEWLINE]Теперь я могу обеспечить пивом каждую гостиницу в колонии. Конечно, для этого нам нужно больше ячменя. Вашему хозяину придется засадить еще одно поле.[NEWLINE][NEWLINE]Иначе мне придется искать его где-нибудь еще.[COLOR_REVERT]" – подмигивая, говорит пивовар.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Hogyan magyarázzam meg ezt a gazdámnak?"[COLOR_REVERT] - kérdezi a parasztlegény a sörfőzőmestertől. "[COLOR_SELECTED_TEXT]Több árpát kell szállítani ugyanannyiért?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az új sörfőző üstünknek teljes kapacitással kell működnie![COLOR_REVERT]" - jelenti ki a sörfőzőmester. "[COLOR_SELECTED_TEXT]Kétszer annyi sört készít, mint a régi üst. Hát nem csodálatos?[NEWLINE][NEWLINE]A kolónia minden fogadóját el tudom látni. Nyilvánvalóan sokkal több árpa kell hozzá. A mesterednek egyszerűen egy másik területet kell majd beültetnie.[NEWLINE][NEWLINE]Különben lehet, hogy máshol kell körülnéznem,[COLOR_REVERT] - mondja a sörfőzőmester bólintva és kacsintva.[NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTH_GREAT_WAREHOUSE_EXPANSION</Tag>
@@ -3477,6 +3481,7 @@
 		<French>Votre cinquième expansion d'entrepôt</French>
 		<German>Eure fünfte große Lagerhauserweiterung</German>
 		<Russian>Ваше первое хранилище</Russian>
+		<Hungarian>Az ötödik raktárbővítés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTH_GREAT_WAREHOUSE_EXPANSION_HEAD</Tag>
@@ -3485,6 +3490,7 @@
 		<French>Entassés</French>
 		<German>Es wird eng</German>
 		<Russian>Плотная застройка</Russian>
+		<Hungarian>Kezd szűkös lenni</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIFTH_GREAT_WAREHOUSE_EXPANSION_TEXT</Tag>
@@ -3492,6 +3498,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Você teve que construir o novo armazém bem em frente à prefeitura? E por que ele é tão grande? Dois pequenos não serviriam? Você bloqueia nossa bela vista da cidade. Não há sol entrando pela janela,[COLOR_REVERT]" o prefeito diz ao capataz.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem, agora,[COLOR_REVERT]" ele diz calmamente. "[COLOR_SELECTED_TEXT]Você aprovou os planos. Tudo o que nossos artesãos produzem deve ser colocado em algum lugar. No final, os cofres da cidade ficarão cheios de impostos sobre os produtos deste armazém.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Humph, o próximo armazém será na periferia da cidade,[COLOR_REVERT]" o prefeito declara[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tudo bem. Não há mais espaço na cidade de qualquer maneira[COLOR_REVERT]", responde o capataz, já embriagado de comemorar a conclusão do trabalho.[NEWLINE][NEWLINE]</Portuguese>
 		 <German>"[COLOR_SELECTED_TEXT]Musstet ihr das neue Lagerhaus denn unbedingt direkt vor dem Rathaus bauen? Und warum ist es so groß? Hätten es zwei kleine nicht auch getan? Ihr versperrt uns ja die schöne Sicht auf die Stadt. Und Sonne kommt auch keine mehr zum Fenster rein,[COLOR_REVERT]" redet der Bürgermeister auf den Vorarbeiter ein.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tscha, nu,[COLOR_REVERT]" meint dieser gelassen. "[COLOR_SELECTED_TEXT]Ihr hattet die Pläne ja genehmigt. Und irgendwo müssen die ganzen Waren ja hin, die unsere Handwerker produzieren. Am Ende wird schließlich auch der Stadtsäckel damit gefüllt, was aus diesem Lager verkauft wird.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hmpf, das nächste Lagerhaus bauen wir aber am Stadtrand[COLOR_REVERT]", brummelt der Bürgermeister kleinlaut in seinem Bart.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gern, hier in der Stadt ist jetzt sowieso kein Platz mehr[COLOR_REVERT]", gibt der Vorarbeiter schon leicht beschwipst zurück.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вам обязательно нужно было построить новый склад прямо перед ратушей? И почему он такой большой? Разве два маленьких не справились бы? Вы закрываете нам прекрасный вид на город. И солнце больше не светит в окна[COLOR_REVERT]" - выговаривает мэр прорабу.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Так, стоп.[COLOR_REVERT]" – спокойно отвечает тот. "[COLOR_SELECTED_TEXT]Вы сами утверждали планы. Да и товары, произведенные нашими мастерами, нужно куда-то девать. В конце концов, городская казна будет пополняться за счет продаж товаров с этого склада.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хм, следующий склад мы будем строить на окраине города.[COLOR_REVERT]" — смущенно бормочет мэр.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хех, в любом случае, здесь, в городе, больше нет мест для стройки.[COLOR_REVERT]" – отвечает уже слегка подвыпивший бригадир.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Muszáj volt az új raktárat pont a városháza elé építeni? És miért olyan nagy? Nem lett volna elég két kisebb is? Eltakarja a gyönyörű kilátást a városra. Nem süt be a nap az ablakon,[COLOR_REVERT]" - mondja a polgármester az építésvezetőnek.[NEWLINE][NEWLINE]"Nos, akkor most,[COLOR_REVERT]" - mondja nyugodtan. "[COLOR_SELECTED_TEXT]Ön jóváhagyta a terveket. Mindent, amit a mesterembereink gyártanak, valahová el kell helyezni. Végül is a város kasszáját az ebből a raktárból származó termékek után fizetett adók fogják megtölteni.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Rendben, a következő raktár a város szélén lesz,[COLOR_REVERT]" - jelenti ki a polgármester[NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]" Jól van. A városban amúgy sincs több hely[COLOR_REVERT]" - válaszolja az építésvezető, aki már részeg a munka befejezésének ünneplésétől.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TOWN_MARKETS</Tag>
@@ -3500,6 +3507,7 @@
 		<French>Trois marchés couverts</French>
 		<German>Mehrere Städtische Märkte (3)</German>
 		<Russian>Три городских рынка</Russian>
+		<Hungarian>Számos városi piac (3)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TOWN_MARKETS_HEAD</Tag>
@@ -3508,6 +3516,7 @@
 		<French>Le commerce prospère</French>
 		<German>Der Handel blüht</German>
 		<Russian>Торговля процветает</Russian>
+		<Hungarian>Virágzik a kereskedelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TOWN_MARKETS_TEXT</Tag>
@@ -3515,6 +3524,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Quanto custa esta picareta?[COLOR_REVERT]" pergunta o mineiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]E o que você quer com este ancinho?[COLOR_REVERT]" o fazendeiro quer saber.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]É como um parque de diversões aqui[COLOR_REVERT]", ri o batedor enquanto se senta em uma das caixas para examinar sua nova machadinha.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Desça daí![COLOR_REVERT]" o comerciante estala. "[COLOR_SELECTED_TEXT]Espere sua vez. O que você quer?[COLOR_REVERT]" ele suspira para o mestre tecelão, "[COLOR_SELECTED_TEXT]Não tenho mais lã para vender para você.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Não, tenho lã suficiente por enquanto. Estou aqui para comercializar meus tecidos. Novíssimo, top qualidade.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Was kostet diese Spitzhacke,[COLOR_REVERT]" fragt der Minenarbeiter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Und was wollt Ihr für diese Harke,[COLOR_REVERT]" will der Farmer wissen.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tja, hier gehts ja zu wie auf dem Jahrmarkt[COLOR_REVERT]", lacht der Scout und setzt sich mit seinem neuen Tomahawk auf eine der vielen Kisten.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Runter da,[COLOR_REVERT]" schnauzt der Händler, "[COLOR_SELECTED_TEXT]jeder kommt dran, nur immer schön der Reihe nach. Und was wollt Ihr,[COLOR_REVERT]" seufzt er dem Webermeister entgegen, "[COLOR_SELECTED_TEXT]ich habe keine Wolle mehr, die ich Euch verkaufen könnte.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nein, Wolle hab ich selbst schon genug. Aber wie stehts mit Euch, könnt Ihr nicht noch einige Stoffe brauchen? Ganz neu angefertigt, richtige Qualitätsware...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Сколько стоит эта кирка?[COLOR_REVERT]" — спрашивает шахтер.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]И что вы хотите за эти грабли?[COLOR_REVERT]" — интересуется фермер.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Здесь как на ярмарке.[COLOR_REVERT]" – смеется разведчик, садясь на один из ящиков и рассматривая свой новый томагавк.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Слезайте оттуда![COLOR_REVERT]" — рявкает торговец. "[COLOR_SELECTED_TEXT]Подожди своей очереди. Что тебе нужно?[COLOR_REVERT] — вздыхает он, обращаясь к мастеру-ткачу — [COLOR_SELECTED_TEXT]У меня больше нет шерсти, чтобы продать вам.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Нет, у меня пока достаточно шерсти. Я здесь, чтобы продавать свои ткани. Совершенно новые, высшего качества.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mennyibe kerül ez a csákány?[COLOR_REVERT]" - kérdezi a bányász.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]És mennyit kérsz ezért a gereblyéért?[COLOR_REVERT]" - akarja tudni a gazda. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Olyan ez itt, mint egy vásártér[COLOR_REVERT]" - nevet a felderítő, miközben leül az egyik ládára, hogy megvizsgálja új tomahawkját.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gyere le onnan![COLOR_REVERT]" - csattan fel a kereskedő. "[COLOR_SELECTED_TEXT]Várj a sorodra!. Mit akarsz?[COLOR_REVERT]" sóhajtja a szövőmesternek, "[COLOR_SELECTED_TEXT]Nincs több gyapjúm, amit eladhatnék neked.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nem, egyelőre elég gyapjúm van. Azért jöttem, hogy eladjam a kelméimet. Vadonatújak, kiváló minőségűek.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_HORSE_MARKET</Tag>
@@ -3523,6 +3533,7 @@
 		<French>Grande Halle aux bestiaux</French>
 		<German>Euer erster Großer Viehmarkt</German>
 		<Russian>Ваша первая скотоводческая ферма</Russian>
+		<Hungarian>Az első marha- és lópiac</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_HORSE_MARKET_HEAD</Tag>
@@ -3531,13 +3542,15 @@
 		<French>De bien belles bêtes</French>
 		<German>Erfolgreiche Zucht</German>
 		<Russian>Успешная селекция</Russian>
+		<Hungarian>Sikeres állattenyésztés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ONE_HORSE_MARKET_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Have you delivered those fifty horses to the militia yet?[COLOR_REVERT]" asks the rancher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, but what about the thirty cattle for the slaughterhouse?[COLOR_REVERT]" says the second rancher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I delivered those right after I dropped off the herd of sheep at the weaving mill.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well then, for today at least everyone is taken care of[COLOR_REVERT]", laughs the second rancher.[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Have you delivered those fifty horses to the militia yet?[COLOR_REVERT]" asks the rancher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Yes, but what about the thirty cattle for the slaughterhouse?[COLOR_REVERT]" says the second rancher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I delivered those right after I dropped off the herd of sheep at the weaving mill.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well then, everyone is taken care of for today at least[COLOR_REVERT]", laughs the second rancher.[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Você já entregou aqueles cinquenta cavalos para a milícia?[COLOR_REVERT]" pergunta o vaqueiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sim, mas e os trinta bovinos para o matadouro?[COLOR_REVERT]" diz o segundo vaqueiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eu os entreguei logo depois de deixar o rebanho de ovelhas na tecelagem moinho.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pois bem, por hoje pelo menos todo mundo está cuidado[COLOR_REVERT]", ri o segundo vaqueiro.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Hast Du die fünzig Pferde schon bei der Miliz abgeliefert?[COLOR_REVERT]" fragt der Züchter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, aber hast Du auch an die dreißig Rinder für die Schlachterei gedacht?[COLOR_REVERT]" gibt der zweite Züchter zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Natürlich, die hab ich gleich abgeliefert, nachdem ich die Herde Schafe bei der Weberei vorbei gebracht habe.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, dann sind ja für heute alle versorgt[COLOR_REVERT]", lacht der zweite Züchter vergnügt.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вы уже доставили эти пятьдесят лошадей ополчению?[COLOR_REVERT]" — спрашивает владелец ранчо.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да. А как на счет тридцати голов крупного рогатого скота для скотобойни?[COLOR_REVERT]" — говорит второй владелец ранчо.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я доставил их сразу после того, как оставил стадо овец на ткацкой фабрике.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну что ж, по крайней мере на сегодня мы обо всех позаботились[COLOR_REVERT]" – смеется второй владелец ранчо.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Leszállítottad már azt az ötven lovat a polgárőrségnek?[COLOR_REVERT]" - kérdezi a tenyésztő."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igen, de mi van a harminc marhával a vágóhídra?[COLOR_REVERT]" - mondja a másik tenyésztő. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Azokat rögtön azután szállítottam le, hogy a birkanyájat levittem a szövőgyárba.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hát akkor mára legalább mindenki el van látva[COLOR_REVERT]" - nevet a másik tenyésztő.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_THEATRE</Tag>
@@ -3546,6 +3559,7 @@
 		<French>Votre premier théâtre</French>
 		<German>Euer erstes Theater</German>
 		<Russian>Ваш первый театр</Russian>
+		<Hungarian>Az első színház</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_THEATRE_HEAD</Tag>
@@ -3554,6 +3568,7 @@
 		<French>Haut-monde</French>
 		<German>Die feine Gesellschaft</German>
 		<Russian>Высшее общество</Russian>
+		<Hungarian>Előkelő társaság</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_THEATRE_TEXT</Tag>
@@ -3561,6 +3576,7 @@
 		<Portuguese>A noite cai sobre a colônia. O trabalho do dia está feito. Os lavradores e as criadas voltam para casa ou para a pousada.[NEWLINE][NEWLINE]Senhoras e senhores da alta sociedade, entretanto, são atraídos por um lugar mais refinado. O primeiro teatro da colônia está a levar cultura a este canto do mundo.[NEWLINE][NEWLINE]Funcionários do governo, comerciantes, proprietários de plantações e oficiais, os "Quem é Quem" da sociedade colonial prestam as suas homenagens. O teatro já está lotado.[NEWLINE][NEWLINE]Em breve haverá negócios suficientes para uma casa de ópera...[NEWLINE][NEWLINE]</Portuguese>
 		<German>Die Nacht senkt sich über die Kolonie, das Tagwerk ist getan. Die Knechte und Mädge strömen nach Hause oder in die Wirtschaft.[NEWLINE][NEWLINE]Die Damen und Herren der feineren Gesellschaft zieht es jedoch an einen schöneren Ort. Das erste Theater der Kolonie hat seine Türen geöffnet und bringt Kultur auch in diesen Winkel der Welt.[NEWLINE][NEWLINE]Regierungsbeamte, Händler, Plantagenbesitzer, Offiziere. Das "Who is who" der kolonialen Gesellschaft gibt sich die Ehre. Das Theater platzt bereits aus allen Nähten.[NEWLINE][NEWLINE]Ihr solltet Euch vielleicht überlegen, ob Ihr nicht demnächst ein Opernhaus errichten wollt...[NEWLINE][NEWLINE]</German>
 		<Russian>Ночь опускается на колонию. Дневная работа закончена. Рабочие и служанки отправляются домой или в гостиницу.[NEWLINE][NEWLINE]Леди и джентльмены из высшего общества, однако, тянутся к более утонченным местам. Первый театр колонии принёс культуру в этот уголок мира.[NEWLINE][NEWLINE]Владельцы плантаций и чиновники, клерки и торговцы, "сливки" колониального общества выражают свое восхищение. Театр уже трещит по швам от количества желающих его посетить.[NEWLINE][NEWLINE]Места на представления продаются с такой скоростью, что администрации впору задуматься о строительстве оперы...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A kolóniára éjszaka borul. A napi munka véget ért. A parasztok és a cselédlányok hazafelé vagy a fogadóba mennek.[NEWLINE][NEWLINE]Az előkelő hölgyek és urak azonban egy kifinomultabb helyre vonzódnak. A gyarmat első színháza kultúrát hoz a világnak ebbe a szegletébe.[NEWLINE][NEWLINE]Kormányzati tisztviselők, kereskedők, ültetvénytulajdonosok és tisztek, a gyarmati társadalom "krémje" teszi meg a tiszteletét. A színház már most zsúfolásig tele van.[NEWLINE][NEWLINE]Hamarosan egy operaházra is elegendő kereslet lesz...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_COLONIAL_CONGRESS</Tag>
@@ -3569,6 +3585,7 @@
 		<French>Un palais de Congrès</French>
 		<German>Eure Kongresshalle</German>
 		<Russian>Ваш первый континентальный конгресс</Russian>
+		<Hungarian>Az első Kongresszusi épület</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_COLONIAL_CONGRESS_HEAD</Tag>
@@ -3577,6 +3594,7 @@
 		<French>Conjurations en place</French>
 		<German>Ein konspirativer Ort</German>
 		<Russian>Место для заговорщиков</Russian>
+		<Hungarian>Egy összeesküvő hely</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_COLONIAL_CONGRESS_TEXT</Tag>
@@ -3584,6 +3602,7 @@
 		<Portuguese>O novo palácio do governador, representando o Rei, ergue-se majestosamente sobre a colônia. Os rumores estão brotando como cogumelos.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Por dentro, tudo é ouro e mármore[COLOR_REVERT]", dizem os camponeses e servos. "[COLOR_SELECTED_TEXT]Eles usaram os melhores tecidos e peles para cortinas e tapeçarias - tão lindos que até o rei poderia morar lá,[COLOR_REVERT]" dizem as esposas e empregadas dos mercadores.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Deixe-os falar,[COLOR_REVERT]" o governador pensa consigo mesmo. "[COLOR_SELECTED_TEXT]Contanto que ninguém descubra que não é um palácio para o rei ou seu vice, mas para os delegados que se reúnem para trabalhar em nossa Declaração de Independência.[NEWLINE][NEWLINE]O rei vai arrancar minha cabeça se a notícia disso for divulgada antes de estarmos prontos.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Majestätisch ragt der neue Palast des Gouverneurs - des Stellvertreters des Königs - in den Himmel über der Kolonie. Schon jetzt sprießen die Gerüchte wie Pilze aus dem Boden.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Innen ist alles aus Gold und Marmor[COLOR_REVERT]", sagen die Bauern und Knechte, "[COLOR_SELECTED_TEXT]feinste Stoffe und Pelzbezüge für Vorhänge und Wandtepiche - so schön, dass selbst der König hier wohnen würde[COLOR_REVERT]" die Händlersfrauen und Mägde.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Lasst sie nur reden,[COLOR_REVERT]" denkt sich der Gouverneur. "[COLOR_SELECTED_TEXT]Solange keiner dahinterkommt, dass es kein Palast für den König oder seinen Stellvertreter ist, sondern für die Delegierten, die an der Unabhängigkeitserklärung arbeiten sollen.[NEWLINE][NEWLINE]Der König würde mich glatt einen Kopf kürzer machen, wenn das rauskommt, bevor wir gewappnet sind...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Новый величественный дворец губернатора — наместника короля — возвышается в небе над колонией. Слухи о нём растут, как грибы после дождя.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Внутри все сделано из золота и мрамора.[COLOR_REVERT]" - говорят крестьяне и слуги. "[COLOR_SELECTED_TEXT]Они использовали лучшие ткани и меха для занавесей и гобеленов — такие красивые, что даже король мог бы там жить.[COLOR_REVERT]" — говорят купеческие жены и служанки.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Пусть болтают[COLOR_REVERT]" - думает про себя губернатор. "[COLOR_SELECTED_TEXT]Пока никто не догадывается, что это дворец не для короля или его наместника, а для делегатов, которые должны работать над Декларацией независимости.[NEWLINE][NEWLINE]Мне снесут голову, если это станет известно раньше, чем мы будем готовы.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A Királyt képviselő kormányzó új palotája fenségesen magasodik a kolónia fölé. A pletykák úgy szaporodnak, akár a gomba.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Belül minden arany és márvány[COLOR_REVERT]" - mondják a parasztok és a szolgák. "[COLOR_SELECTED_TEXT]A legfinomabb szöveteket és szőrméket használták függönyökhöz és kárpitokhoz - olyan szépek, hogy még a király is lakhatna benne[COLOR_REVERT]" - mondják a kereskedőfeleségek és a cselédek.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hadd beszéljenek,[COLOR_REVERT]" - gondolja magában a kormányzó. "[COLOR_SELECTED_TEXT]Amíg senki nem jön rá, hogy ez nem a király vagy a helyettese palotája, hanem a Függetlenségi Nyilatkozatunk kidolgozására összegyűlt küldöttek palotája.[NEWLINE][NEWLINE]A Király a fejemet fogja venni, ha ennek híre kitudódik, mielőtt készen lennénk[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_TANNERY</Tag>
@@ -3592,6 +3611,7 @@
 		<French>Votre troisième tannerie</French>
 		<German>Eure dritte Gerberei</German>
 		<Russian>Ваша третья дубильня </Russian>
+		<Hungarian>A harmadik cserző üzemed</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_TANNERY_HEAD</Tag>
@@ -3600,6 +3620,7 @@
 		<French>L'argent n'a pas d'odeur</French>
 		<German>Geld stinkt nicht</German>
 		<Russian>Деньги не пахнут</Russian>
+		<Hungarian>A pénznek nincs szaga</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_TANNERY_TEXT</Tag>
@@ -3607,6 +3628,7 @@
 		<Portuguese>O curtidor abre um pouquinho o portão para ver quem o está impedindo de trabalhar.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, é você[COLOR_REVERT]", ele dá as boas-vindas ao açougueiro local e seu criado. "[COLOR_SELECTED_TEXT]O que você tem para mim hoje?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]O melhor couro de vaca, muito fresco, abatido esta manhã. Mas diga-me, com toda a honestidade,[COLOR_REVERT]" ele sussurra para o curtidor, "[COLOR_SELECTED_TEXT]o que você está fazendo aí? A vizinhança inteira fede. É insuportável.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Você é do tipo que fala. Seus recipientes de coragem fedem igualmente.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem,[COLOR_REVERT]" responde o açougueiro, "[COLOR_SELECTED_TEXT]esse é o preço que temos que pagar por uma prosperidade. economia. O cheiro de dinheiro.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Nur einen Spalt breit öffnet der Gerbermeister das Tor, um nachzusehen, wer ihn denn jetzt schon wieder von der Arbeit abhält.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, Ihr seid's[COLOR_REVERT]", begrüßt er den örtlichen Fleischermeister und seinen Knecht freundlich. "[COLOR_SELECTED_TEXT]Was habt Ihr denn heute für mich?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Beste Rinderhaut, ganz frisch, heute morgen geschlachtet. Aber sagt mal, ganz im Vertrauen,[COLOR_REVERT]" raunt er dem Gerber zu, "[COLOR_SELECTED_TEXT]was treibt Ihr denn da drinnen bloß. Die ganze Nachbarschaft stinkt, es ist ja kaum zum Aushalten.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das müsst Ihr gerade sagen, Schlachter. Eure Abfälle stinken doch genauso.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Naja,[COLOR_REVERT]" gibt der Schlachter zurück, "[COLOR_SELECTED_TEXT]vielleicht ist das der Preis, den wir für eine florierende Wirtschaft zahlen müssen. Immerhin stinkt das Geld nicht, dass diese Arbeit uns einbringt.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Darauf würde ich aber nicht wetten,[COLOR_REVERT]" lacht der Knecht vergnügt, "[COLOR_SELECTED_TEXT]immerhin müsst ihr die Goldstücke ja auch anfassen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>Кожевник чуть-чуть приоткрывает ворота, чтобы посмотреть, кто мешает ему работать.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]А, это вы[COLOR_REVERT]" - приветствует он местного мясника и его слугу. "[COLOR_SELECTED_TEXT]Что у вас есть для меня сегодня?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Самая лучшая воловья шкура, очень свежая, снятая сегодня утром. Но скажи мне честно,[COLOR_REVERT]" – шепчет он кожевнику – "[COLOR_SELECTED_TEXT]что вы там делаете? Воняет на весь район. Это невыносимо.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Прекрати болтать ерунду. Твои кишки воняют так же.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну,[COLOR_REVERT]" - отвечает мясник - "[COLOR_SELECTED_TEXT]это цена, которую мы должны заплатить за процветающую экономику. Это запах денег, друг мой.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A cserző csak résnyire nyitja ki a kaput, hogy megnézze, ki tartja fel a munkában.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ó, te vagy az[COLOR_REVERT]" - köszönti a helyi hentest és szolgáját. "[COLOR_SELECTED_TEXT]Mit hoztál nekem ma?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Legjobb tehénbőrt, nagyon friss, ma reggel vágták le. De mondd meg őszintén,[COLOR_REVERT]" - súgja a cserzőnek - "[COLOR_SELECTED_TEXT]mit csinálsz te ott bent? Az egész környék bűzlik. Elviselhetetlen.[COLOR_REVERT]"[NEWLINE][NEWLINE]Még te beszélsz? A nálad lévő belsőségek is ugyanolyan büdösek.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hát,[COLOR_REVERT]" - feleli a hentes, "[COLOR_SELECTED_TEXT]ez az ára a virágzó gazdaságnak. A pénz szaga.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_LARGE_DYERY</Tag>
@@ -3615,6 +3637,7 @@
 		<French>Deuxième teinturerie industrielle</French>
 		<German>Eure zweite Große Färberei</German>
 		<Russian>Ваша вторая большая красильня</Russian>
+		<Hungarian>A második ruhafestő gyárad</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_LARGE_DYERY_HEAD</Tag>
@@ -3623,6 +3646,7 @@
 		<French>Les couleurs ne sont pas des douleurs</French>
 		<German>Hier wird's langsam bunt</German>
 		<Russian>Раскрасить серые будни</Russian>
+		<Hungarian>Egyre színesebb lesz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_LARGE_DYERY_TEXT</Tag>
@@ -3630,6 +3654,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Maravilhoso, você está entregando aquele índigo que eu preciso[COLOR_REVERT]". O mestre tintureiro agradece efusivamente. "[COLOR_SELECTED_TEXT]Meu servo nativo inspecionará as mercadorias. Da próxima vez, você deve vir um pouco mais cedo.[NEWLINE][NEWLINE]Mal conseguimos acompanhar a produção. Quase ficamos sem suprimentos.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ótimo, acabamos de plantar um campo extra. Minha senhora deve ter um sexto sentido para o investimento certo. Da próxima vez, podemos trazer-lhe quatro fardos em vez do previamente acordado dois.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sim, com certeza, moça. Tecido tingido vale muito mais na Europa do que aqueles lençóis cinza chatos.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Wunderbar, endlich bringt Ihr mir den Nachschub an Indigo, auf den ich schon so lange gewartet habe,[COLOR_REVERT]" bedankt sich der Färbermeister überschwenglich. "[COLOR_SELECTED_TEXT]Mein indianischer Knecht hier, wird die Ware gleich mal begutachten. Nächstes Mal könnt Ihr aber ruhig ein paar Tage früher vorbeischauen.[NEWLINE][NEWLINE]Wir kommen mit der Produktion kaum nach. Fast wäre uns der Nachschub ausgegangen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Toll, wir haben gerade erst ein neues Feld angelegt. Meine Herrin hatte da wohl einen siebten Sinn für die richtige Investition. Dann bringen wir Euch das nächste Mal vielleicht vier statt der bisher vereinbarten zwei Ballen?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, unbedingt, Mädchen. Gefärbte Stoffe lassen sich in Europa jetzt mit viel mehr Gewinn verkaufen, als diese langweiligen grauen Leinen.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Замечательно, наконец-то вы доставили индиго, который мне нужен![COLOR_REVERT]" — восторженно благодарит мастер-красильщик. "[COLOR_SELECTED_TEXT]Мой слуга-индеец немедленно проверит товар. В следующий раз было бы хорошо, если бы вы пришли на несколько дней раньше.[NEWLINE][NEWLINE]Мы с трудом успеваем за производством. У нас почти не осталось запасов.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Отлично, мы только что засеяли дополнительное поле. У моей хозяйки должно быть шестое чувство, как правильно вложить деньги. В следующий раз мы можем принести вам четыре тюка вместо ранее оговоренных двух.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, конечно, девочка. Крашеная ткань в Европе стоит гораздо больше, чем это скучное серое постельное белье.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Csodálatos, te azt az indigót szállítod nekem, amire szükségem van[COLOR_REVERT]". A festőmester lelkesen megköszöni neki. "[COLOR_SELECTED_TEXT]Indián szolgám ellenőrzi az árut. Legközelebb kicsit korábban kellene jönnöd.[NEWLINE][NEWLINE]Alig tudunk lépést tartani a termeléssel. Majdnem kifogytunk a készletekből.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nagyszerű, most ültettünk be egy újabb területet. Az úrnőmnek hatodik érzéke lehet a megfelelő befektetéshez. Legközelebb a korábban megbeszélt kettő helyett négy bálát is hozhatunk neked.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Igen, mindenképpen, kislány. A festett szövet sokkal többet ér Európában, mint azok az unalmas szürke vásznak.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SPICE_TRADERS_HALL</Tag>
@@ -3638,6 +3663,7 @@
 		<French>Votre première halle aux Épices</French>
 		<German>Eure erste Gewürzhandelshalle</German>
 		<Russian>Ваша первая фабрика специй</Russian>
+		<Hungarian>Az első fűszerkereskedő csarnok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SPICE_TRADERS_HALL_HEAD</Tag>
@@ -3646,6 +3672,7 @@
 		<French>Fraude à l'étiquette - Amérique ou Inde? </French>
 		<German>Etikettenschwindel - Amerika oder Indien?</German>
 		<Russian>Мошенничество с этикетками — Америка или Индия?</Russian>
+		<Hungarian>Címkecsalás - Amerika vagy India?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SPICE_TRADERS_HALL_TEXT</Tag>
@@ -3653,6 +3680,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Produtos excelentes, excelentes![COLOR_REVERT]" o capitão do Indiaman exclama com entusiasmo ao comerciante de especiarias. "[COLOR_SELECTED_TEXT]Secretário, o livro-razão, por favor. Vamos pegar dez desses barris aqui e depois aquele atrás de nós, ah, sim, e aquele na entrada também. Ha! Rota marítima para a Índia... por que precisamos dela quando cultivamos as melhores especiarias aqui mesmo neste continente?[COLOR_REVERT]" diz o capitão alegremente ao comerciante de especiarias.[NEWLINE][NEWLINE]</Portuguese>
 	   <German>"[COLOR_SELECTED_TEXT]Ganz hervorragende Ware, ganz hervorragend![COLOR_REVERT]" ruft der Kapitän des Indienfahrers begeistert der Gewürzhändlerin entgegen. "[COLOR_SELECTED_TEXT]Sekretär, das Hauptbuch bitte. Wir nehmen 10 dieser Fässer hier und dann noch die dort hinter uns, ach ja, und die am Eingang auch. Ha! Seeweg nach Indien...wofür brauchen wir den, wenn wir die besten Gewürze auch hier auf diesem Kontinent anbauen können. In Europa merken sie den Unterschied sowieso nicht[COLOR_REVERT]", lacht der Kapitän der Gewürzhändlerin freundlich zu.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Отличный товар, просто отличный![COLOR_REVERT]" — восторженно говорит капитан торгового судна торговцу специями. "[COLOR_SELECTED_TEXT]Секретарь, бухгалтерскую книгу, пожалуйста. Мы возьмем 10 во-о-он тех бочек, а потом ту, что позади нас. О да, и еще ту, что у входа. Ха! Морской путь в Индию... что нам нужно, так это когда мы сможем выращивать лучшие специи здесь, на этом континенте. В Европе они все равно не заметят разницы![COLOR_REVERT]" капитан дружелюбно смеется вместе с торговцем специями.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Egészen kiváló áru, egészen kiváló![COLOR_REVERT]" - kiáltja lelkesen az Indiaman kapitánya a fűszerkereskedőnek. "[COLOR_SELECTED_TEXT]Titkár úr, a főkönyvet kérem! Tíz ilyen hordót viszünk ide, aztán azt a mögöttünk lévőt, ó igen, és a bejáratnál lévőt is. Ha! Tengeri út Indiába... minek nekünk egyáltalán, amikor a legjobb fűszereket itt termesztjük ezen a kontinensen?[COLOR_REVERT]" - mondja a kapitány boldogan a fűszerkereskedőnek[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_CORN_CHAMBER</Tag>
@@ -3661,14 +3689,16 @@
 		<French>Cinquième grenier à grain</French>
 		<German>Eure fünfte Getreidekammer</German>
 		<Russian>Ваш пятый амбар</Russian>
+		<Hungarian>Az ötödik kukoricatároló</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_CORN_CHAMBER_HEAD</Tag>
-		<English>Space is in the smallest cabin</English>
+		<English>Running out of space</English>
 		<Portuguese>O espaço está na menor cabine</Portuguese>
 		<French>De la place dans le plus petit rangement</French>
 		<German>Raum ist in der kleinsten Hütte</German>
 		<Russian>Портной для склада</Russian>
+		<Hungarian>Egyre szűkösebb a hely</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_CORN_CHAMBER_TEXT</Tag>
@@ -3676,6 +3706,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Não importa o que gostaríamos. Nosso armazém simplesmente não cabe mais cereal.[COLOR_REVERT]" diz o merceeiro. "[COLOR_SELECTED_TEXT]Além disso, está úmido demais. A câmara nova que acabamos de terminar é bem mais adequada para o cereal[COLOR_REVERT]", ele diz ao fazendeiro, ocupado em descarregar sacos de milho do carro na praça.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De quantos sacos estamos falando? Hmm, vamos ver... 2, 4, 8, 10. Muito bom! Ponha-os no celeiro ali[COLOR_REVERT]", exclama o administrador, alegre.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Conseguimos acomodar esta entrega. Para a próxima carga o senhor terá de achar outro comprador. Nossos armazéns estão transbordando![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Also beim besten Willen, unsere Lagerhalle kann wirklich kein Getreide mehr aufnehmen,[COLOR_REVERT]" wiegelt der Krämer ab, "[COLOR_SELECTED_TEXT]außerdem ist es hier viel zu feucht. Für das Getreide ist die Kammer dort wesentlich besser geeignet, die wir erst vor kurzem fertiggestellt haben[COLOR_REVERT]" rät er dem Bauern, der gerade eine neue Lieferung Getreidesäcke von seinem Wagen auf den Platz wuchtet.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Um wie viele Säcke handelt es sich? Hm, mal sehen...2, 4, 8, 10. Sehr schön, bringt sie dort in die Getreidekammer[COLOR_REVERT]", ruft der Verwalter freudig aus.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Diese Ladung bekommen wir hier gerade noch untergebracht. Aber für die nächste Fuhre müsst Ihr Euch einen anderen Abnehmer suchen. Unsere Lager platzen aus allen Nähten![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Неважно, чего мы хотим. Наш склад просто не вмещает столько зерна.[COLOR_REVERT]" — говорит бакалейщик. "[COLOR_SELECTED_TEXT]Кроме того, здесь слишком сыро. Новый амбар, который мы только что закончили, намного лучше подходит для зерна[COLOR_REVERT]" — говорит он фермеру, снимавшему мешки с кукурузой с тележки на площадь.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]О скольких мешках идет речь? Хм, посмотрим... 2, 4, 8, 10. Очень мило! Несите их в амбар[COLOR_REVERT]" - радостно восклицает управляющий.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Мы можем принять эту доставку. Но вам придется найти другого покупателя для вашей следующей партии, сэр. Наши склады трещат по швам![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nem számít, hogy mit szeretnénk. A raktárunk egyszerűen nem bír el több gabonát.[COLOR_REVERT]" - mondja a boltos. "[COLOR_SELECTED_TEXT]Különben is, túlságosan nedves. Az új tárolóban, amit most fejeztünk be, sokkal jobban elfér a gabona[COLOR_REVERT]" - mondja a gazdának, aki szorgalmasan pakolja a kukoricás zsákokat a szekérről a térre.[NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]Hány zsákról van szó? Hmm, lássuk csak... 2, 4, 8, 10. Nagyon szép! Tegyétek őket a magtárba oda![COLOR_REVERT]" - kiált fel örömmel az intéző.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ezt a szállítmányt el tudjuk helyezni. A következő szállítmánynak más vevőt kell találnia, uram. A raktáraink zsúfolásig tele vannak![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WINERY</Tag>
@@ -3684,6 +3715,7 @@
 		<French>Votre premier chai!</French>
 		<German>Eure erste Winzerei</German>
 		<Russian>Ваш первый цех виноделов</Russian>
+		<Hungarian>Az első borászat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WINERY_HEAD</Tag>
@@ -3692,6 +3724,7 @@
 		<French>Du bon vin, s'il vous plaît!</French>
 		<German>Wein auf Bier gelob' ich mir</German>
 		<Russian>Вино предпочтительнее</Russian>
+		<Hungarian>Kedvelt bor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_WINERY_TEXT</Tag>
@@ -3699,6 +3732,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Sr. Estalajadeiro, dê-me duas garrafas do seu melhor vinho. Acho que cerveja tem um gosto muito insosso para mim[COLOR_REVERT]", o estranho chama o estalajadeiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Felizmente, mas só tenho uma garrafa de vinho tinto e branco, se você não se importa em beber tipos diferentes[COLOR_REVERT]", responde o estalajadeiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A nova vinícola não consegue acompanhar a demanda?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Não, não, a vinícola está produzindo como um relógio, mas nosso governador prefere exportar para a Europa em vez de matar a sede da sua própria cidadãos.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Você tem certeza disso?[COLOR_REVERT]" o estranho brinca. "[COLOR_SELECTED_TEXT]Talvez ele queira beber todo o vinho sozinho![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Herr Wirt, gebt mir zwei Flaschen von Eurem besten Wein, auf die Dauer schmeckt mir das Bier doch zu fad[COLOR_REVERT]" ruft der Fremde dem Schankwirt seelig zu.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gern, aber ich habe nur noch je eine Flasche Rotein und Weißwein... wenn es Euch nichts ausmacht, verschiedene Sorten zu trinken[COLOR_REVERT]", antwortet der Wirt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, hat man Euch denn den ganzen frischen Wein schon weggetrunken? Oder kann die neue Winzerei doch nicht liefern?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nein, nein, die Winzerei produziert wie am Schnürchen, doch unser Gouverneur verkauft das Zeug lieber nach Europa, anstatt den Durst seiner eigenen Bürger zu stillen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Seid Ihr Euch da sicher...?[COLOR_REVERT]" gibt der Fremde zurück. "[COLOR_SELECTED_TEXT]Vielleicht trinkt er den ganzen Wein ja auch gleich selbst...![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Господин трактирщик, дайте мне две бутылки вашего лучшего вина. Пиво для меня крайне бесвкусный напиток.[COLOR_REVERT]" – обращается незнакомец к трактирщику.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]С удовольствием, но у меня есть только по одной бутылке красного и белого вина. Так что, если вы не возражаете против разных сортов...[COLOR_REVERT]" - отвечает трактирщик.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Новая винодельня не поспевает за спросом?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Нет-нет, винодельня работает как часы, но наш губернатор предпочитает экспортировать вино в Европу, а не утолять жажду собственных граждан.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вы в этом уверены?[COLOR_REVERT]" – шутит незнакомец. "[COLOR_SELECTED_TEXT]Может, он сам хочет выпить все вино![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kocsmáros, adjon nekem két üveggel a legjobb borából! A sör nekem túlságosan ízetlen.[COLOR_REVERT]" - szólítja meg az idegen a fogadóst.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Szívesen, de csak egy-egy üveg vörös- és fehérborom van, ha nem bánja, hogy különböző fajtákat iszik[COLOR_REVERT]" - válaszol a fogadós.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az új borászat nem tud lépést tartani a kereslettel? [COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nem, nem, a borászat úgy termel, mint a vízfolyás, de a kormányzónk inkább Európába exportálja, ahelyett, hogy a saját polgárai szomját oltaná.[COLOR_REVERT]"[NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]Ebben egészen biztos?"[COLOR_REVERT]" - viccelődik az idegen. "[COLOR_SELECTED_TEXT]Talán ő maga akarja meginni az összes bort![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_SLAUGHTERHOUSE</Tag>
@@ -3707,6 +3741,7 @@
 		<French>Votre deuxième abattoir</French>
 		<German>Euer zweites Schlachthaus</German>
 		<Russian>Ваша вторая скотобойня</Russian>
+		<Hungarian>A második vágóhíd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_SLAUGHTERHOUSE_HEAD</Tag>
@@ -3715,13 +3750,15 @@
 		<French>Les bons outils</French>
 		<German>Das richtige Werkzeug</German>
 		<Russian>Правильные инструменты</Russian>
+		<Hungarian>A megfelelő szerszámok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SECOND_SLAUGHTERHOUSE_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Maybe I can help you.[COLOR_REVERT]" The lumberjack jokes with the master butcher and his journeyman as they ready another animal for slaughter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]This should make it go even faster[COLOR_REVERT]", the lumberjack waves his mighty axe under their noses.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's crazy,[COLOR_REVERT]" the butcher shoots back. "[COLOR_SELECTED_TEXT]Too dirty, much too rough! Do you think gentlemen want to find splinters of wood in their fillet? We'll keep using our fine butcher's knives.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I agree. Much better,[COLOR_REVERT]" interjects the tanner, "[COLOR_SELECTED_TEXT]otherwise I won't have a quality skin for fine leather! Speaking of which, Mr. Butcher, I'm ready for the next delivery.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, follow us to our new slaughterhouse. Your hides are stacked high there.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Maybe I can help you.[COLOR_REVERT]" The lumberjack jokes with the master butcher and his journeyman as they ready another animal for slaughter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]This should make it go even faster[COLOR_REVERT]", the lumberjack waves his mighty axe under their noses.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]That's crazy,[COLOR_REVERT]" the butcher shoots back. "[COLOR_SELECTED_TEXT]Too dirty, much too rough! Do you think gentlemen want to find splinters in their steaks? We'll keep using our fine butcher's knives.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I agree. Much better,[COLOR_REVERT]" interjects the tanner, "[COLOR_SELECTED_TEXT]otherwise I won't have a quality skin for fine leather! Speaking of which, Mr. Butcher, I'm ready for the next delivery.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Well, follow us to our new slaughterhouse. Your hides are stacked high.[COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Talvez eu possa ajudá-lo.[COLOR_REVERT]" O lenhador brinca com o mestre açougueiro e seu jornaleiro enquanto eles preparam outro animal para o abate.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isso deve fazer com que ele ande ainda mais rápido[COLOR_REVERT]", o lenhador balança seu poderoso machado debaixo de seus narizes.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isso é louco,[COLOR_REVERT]" o açougueiro responde. "[COLOR_SELECTED_TEXT]Muito sujo, muito áspero! Você acha que os cavalheiros querem encontrar lascas de madeira em seus filés? Continuaremos usando nossas finas facas de açougueiro.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Concordo. Muito melhor,[COLOR_REVERT]" interrompe o curtidor, "[COLOR_SELECTED_TEXT]caso contrário não terei uma pele de qualidade para fino couro! Falando nisso, Sr. Açougueiro, estou pronto para a próxima entrega.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem, siga-nos até nosso novo matadouro.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Kann ich Euch helfen,[COLOR_REVERT]" fragt der Holzfäller den Fleischermeister und seinen Gesellen, die gerade wieder eine neue Schlachtung vorbereiten. "[COLOR_SELECTED_TEXT]Hiermit würde es bestimmt noch schneller gehen,[COLOR_REVERT]" hält der Holzfäller den beiden seine mächtige Axt unter die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bloß nicht damit,[COLOR_REVERT]" antwortet der Fleischer erbost, "[COLOR_SELECTED_TEXT]die ist doch viel zu schmutzig und viel zu grob! Glaubt Ihr etwa, die Herrschaften wollen Holzsplitter in ihrem Filet finden? Wir benutzen da doch lieber unsere feinen Fleischermesser.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, das ist viel besser,[COLOR_REVERT]" wirft der Gerber ein, "[COLOR_SELECTED_TEXT]denn sonst kann ich doch die abgezogene Haut nicht mehr zu feinem Leder verarbeiten! Wo wir gerade dabei sind, Herr Fleischer, ich wollte gerade die nächste Lieferung abholen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na, dann folgt uns mal in unser neues Schlachthaus, da hab ich Eure Lieferung schon fertig gestapelt.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Возможно, я смогу вам помочь.[COLOR_REVERT]" Лесоруб шутит с главным мясником и его подмастерьем, готовящимся к очередному забою скота.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это должно ускорить процесс[COLOR_REVERT]" - лесоруб машет своим могучим топором у них перед носом.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Это безумие.[COLOR_REVERT]" – парирует мясник. "[COLOR_SELECTED_TEXT]Слишком грязно, слишком грубо! Как вы думаете, джентльмены хотят находить щепки в своем филе? Мы продолжим использовать наши прекрасные мясные ножи.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я согласен. Гораздо они лучше,[COLOR_REVERT]" - вставляет дубильщик - "[COLOR_SELECTED_TEXT]иначе у меня не будет качественной шкуры для выделки кожи! Кстати говоря, господин мясник, я готов заюрать следующую партию.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж, пойдёмте на нашу новую скотобойню. Ваши шкуры уже ждут вас там.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Talán tudok segíteni.[COLOR_REVERT]" A favágó viccelődik a hentessel és a segédjével, miközben újabb állatot készítenek elő a vágásra.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ettől még gyorsabban fog menni[COLOR_REVERT]", a favágó az orruk előtt lengeti hatalmas fejszéjét.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ez őrültség,[COLOR_REVERT]", vág vissza a hentes. "[COLOR_SELECTED_TEXT]Túl mocskos, túlságosan durva! Azt hiszed, az urak fadarabokat akarnak találni a filéjükben? Mi továbbra is a finom henteskéseinket fogjuk használni."[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Egyetértek. Sokkal jobb,[COLOR_REVERT]" - vág közbe a cserző, "[COLOR_SELECTED_TEXT]különben nem lesz minőségi nyers bőröm a finom bőrárukhoz! Ha már itt tartunk, hentes úr, készen állok a következő szállítmány fogadásra.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos, akkor kövess minket az új vágóhídra. A bőrök ott vannak egymásra halmozva."[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_FURNITURY</Tag>
@@ -3730,6 +3767,7 @@
 		<French>Votre première ébenisterie</French>
 		<German>Eure erste Möbelschreinerei</German>
 		<Russian>Ваша первая столярная мастерская</Russian>
+		<Hungarian>Az első bútorgyártó műhely</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_FURNITURY_HEAD</Tag>
@@ -3738,6 +3776,7 @@
 		<French>Sapin ou acajou?</French>
 		<German>Bauholz oder Edelholz?</German>
 		<Russian>Трудный выбор</Russian>
+		<Hungarian>Fűrészáru vagy nemesfa?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_FURNITURY_TEXT</Tag>
@@ -3745,6 +3784,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Qual primeiro?[COLOR_REVERT]" pergunta o lenhador, olhando entusiasmado entre o marceneiro e o mestre carpinteiro. "[COLOR_SELECTED_TEXT]Só posso fornecer uma de cada vez.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A madeira é mais importante[COLOR_REVERT]", argumenta o mestre carpinteiro. "[COLOR_SELECTED_TEXT]A madeira está em demanda para novos navios, edifícios e carroças. Posso vender mais agora do que nunca.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]E os meus armários? O próprio governador encomendou uma nova mesa para mim. Ele deveria esperar até o Natal? Eu poderia muito bem fechar minha loja[COLOR_REVERT]", resmunga o marceneiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Talvez você devesse contratar mais alguns madeireiros[COLOR_REVERT]", sugere o mestre carpinteiro. "[COLOR_SELECTED_TEXT]Assim teremos todos bastante madeira![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Was denn nun zuerst[COLOR_REVERT]", fragt der Holzfäller und blickt aufgeregt zwischen dem Möbelschreiner und dem Schreinermeister hin und her. "[COLOR_SELECTED_TEXT]Ich kann immer nur einen zur Zeit beliefern.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bauholz ist wichtiger,[COLOR_REVERT]" mahnt der Schreinermeister, "[COLOR_SELECTED_TEXT]denn die Nachfrage nach Holz für neue Schiffe, neue Gebäude und neue Planwagen ist enorm gestiegen. Ich kann davon jetzt mehr verkaufen, mehr als je zuvor.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Und was ist mit meiner Möbelschreinerei? Der Gouverneur persönlich hat einen neuen Schreibtisch bei mir bestellt. Soll er etwa bis Weihnachten darauf warten? Dann kann ich mein Geschäft ja gleich wieder schließen[COLOR_REVERT]", schimpft der Möbelschreiner.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vielleicht solltet Ihr einfach noch ein paar Holzfäller einstellen,[COLOR_REVERT]" meint der Schreinermeister beschwichtigend, "[COLOR_SELECTED_TEXT]dann haben wir alle genügend Holz zur Verfügung![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Что сначала?[COLOR_REVERT]" — спрашивает лесоруб, взволнованно переводя взгляд с краснодеревщика на мастера-плотника. "[COLOR_SELECTED_TEXT]Я не смогу помочь вам обоим сразу.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Простая древесина важнее.[COLOR_REVERT]" – утверждает мастер-плотник. "[COLOR_SELECTED_TEXT]Она востребована для создания новых кораблей, зданий и повозок. Сейчас я могу продавать её больше, чем когда-либо прежде.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]А как же мои шкафы? Да сам Губернатор заказал у меня новый стол. Он что, должен ждать до Рождества? Мне тогда проще сразу закрыть свою мастерскую![COLOR_REVERT]" - возмущается краснодеревщик.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Может быть, стоит нанять еще несколько лесорубов?[COLOR_REVERT]" – предлагает мастер-плотник. "[COLOR_SELECTED_TEXT]Так у нас будет много нужного дерева![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Melyik legyen az első?[COLOR_REVERT] - kérdezi a favágó, és izgatottan néz ide-oda az asztalosmester és az ácsmester között. "[COLOR_SELECTED_TEXT]Egyszerre csak egyet tudok szállítani.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az épületfa fontosabb[COLOR_REVERT]" - érvel az ácsmester. "[COLOR_SELECTED_TEXT]A faanyagra új hajókhoz, épületekhez és szekerekhez van szükség. Most többet tudok eladni, mint valaha.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]És mi lesz a szekrényeimmel? Maga a kormányzó rendelt tőlem egy új íróasztalt. Várnia kellene karácsonyig? Akár be is zárhatnám a boltomat[COLOR_REVERT]" - morogja az asztalos.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Talán csak fel kellene venned még néhány favágót[COLOR_REVERT]" - javasolja az ácsmester. "[COLOR_SELECTED_TEXT]Így mindannyiunknak lesz bőven fánk![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDRED_SAILCLOTH</Tag>
@@ -3753,6 +3793,7 @@
 		<French>Les meilleures voiles en chanvre</French>
 		<German>Bestes Segeltuch aus Hanf</German>
 		<Russian>Лучшая парусина из конопли</Russian>
+		<Hungarian>A legjobb kender vitorlavászon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDRED_SAILCLOTH_HEAD</Tag>
@@ -3761,6 +3802,7 @@
 		<French>Auto-suffisance</French>
 		<German>Selbstversorgung</German>
 		<Russian>Запас карман не тянет</Russian>
+		<Hungarian>Önellátás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HUNDRED_SAILCLOTH_TEXT</Tag>
@@ -3769,14 +3811,16 @@
 		<French>Nous produisons cent voiles par tour ! L'industrie navale de nos colonies n'est plus dépendante de matériaux importés d'Europe ![NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Hm, mal sehen...100 Ballen Segeltuch, 50 Rollen Seile, 50 Tonnen Holz und 100 Fass Teer. Das ist ja eine ganz anständige Produktion[COLOR_REVERT]", meint der verantwortliche Lagerverwalter der Werft nachdenklich. "[COLOR_SELECTED_TEXT]Wo bringen wir das nur alles unter?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das Segeltuch muss auf alle Fälle zuerst abtransportiert werden, die Werft oben im Norden hat schon einen Boten geschickt - sie benötigen das Tuch dringend für die neue Brigg, die gerade am Ausrüstungskai liegt[COLOR_REVERT]", wendet der Segelmacher ein.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Danach muss aber schnellstens die Ladung Seile in die südliche Werft transportiert werden, denn die Yacht des Gouverneurs muss bis Monatsende ebenfalls fertig werden[COLOR_REVERT]", drängt der Seilmacher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aber hier rumliegen kann das Zeug ja auch nicht, damit verstopfen wir ja unsere Werft hier. Also schön, ich werde dem Fuhrkutscher sagen, er soll zuerst einiges davon ins große Lagerhaus schaffen, damit dann die anderen Kolonien versorgt werden können[COLOR_REVERT]", grinst der Verwalter erfreut über diese Idee.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Давайте посмотрим... 100 тюков холста, 50 канатных бухт, 50 тонн дерева и 100 бочек смолы. Солидный запас.[COLOR_REVERT]" - задумчиво говорит заведующий складом. "[COLOR_SELECTED_TEXT]Вот только куда мы все это поместим?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Сначала нужно отдать парусину. От северной верфи уже прибыл гонец. Она срочно требуется для нового брига, который там уже почти достроили.[COLOR_REVERT]" — говорит мастер раскройки парусины.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]После этого канаты должны как можно скорее отправиться на южную верфь. Новая яхта губернатора должна быть готова к концу месяца.[COLOR_REVERT]" – говорит канатный мастер.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Но этот хлам не может просто так лежать здесь. Мы завалим всю верфь. Я скажу извозчику, чтобы он сначала перевез часть этого на большой склад. Так можно будет обслуживать и другие колонии.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Lássuk csak... 100 bála vászon, 50 tekercs kötél, 50 tonna fa és 100 hordó kátrány. Ez egy jó kis készlet[COLOR_REVERT]" - mondja elgondolkodva a raktárvezető. "[COLOR_SELECTED_TEXT]Hová fogjuk mindezt tenni?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A vitorlavásznat először el kell vinni. A hajógyár északon már küldött egy futárt. Sürgősen szükség van rá az új Brigantinhoz, amit éppen most szerelnek fel a rakparton[COLOR_REVERT]" - szól közbe a vitorlakészítő.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ezután a köteleket kell minél gyorsabban a déli hajógyárba vinni. A kormányzó jachtjának a hónap végére el kell készülnie[COLOR_REVERT]" - mondja a kötélkészítő.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De az anyag nem maradhat csak úgy itt. Eltorlaszoljuk a hajógyárat. Megmondom a kocsisnak, hogy először a nagy raktárba vigyen be belőle valamennyit. Így a többi kolóniát is ki lehet szolgálni.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_GOLD</Tag>
-		<English>You are now exploiting a gold vein</English>
+		<English>You've discovered a gold vein</English>
 		<Portuguese>Você agora está explorando um veio de ouro</Portuguese>
 		<French>Nous exploitons un filon d'or</French>
 		<German>Ihr beutet nun eine Goldader aus</German>
 		<Russian>Высокая добыча золота (10/ход)</Russian>
+		<Hungarian>Egy aranylelőhelyet aknázol ki</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_GOLD_HEAD</Tag>
@@ -3785,6 +3829,7 @@
 		<French>De l'or, de l'or, toujours plus d'or !</French>
 		<German>Gold, Gold und noch mal Gold!</German>
 		<Russian>Золото, золото и ещё раз золото!</Russian>
+		<Hungarian>Arany, arany és még több arany!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_GOLD_TEXT</Tag>
@@ -3792,6 +3837,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Ouro, senhor, ouro, as preocupações de dinheiro da colônia acabaram![COLOR_REVERT]" o secretário irrompe, empolgado. "[COLOR_SELECTED_TEXT]Senhor, aqui está o herói que descobriu o veio de ouro.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ora, isso é maravilhoso,[COLOR_REVERT]" diz o governador. "[COLOR_SELECTED_TEXT]Entre. Deixe-me oferecer-lhe um refresco. Conte-me tudo sobre a descoberta. Quanto ouro o senhor acha que pode haver?[COLOR_REVERT]"[NEWLINE][NEWLINE]Virando-se para o secretário, diz: "[COLOR_SELECTED_TEXT]Chame o contador e mande buscar o geólogo.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pai, que maravilha! Eu estava esperando um colar novo. E uma pulseira e...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Silêncio, minha filha,[COLOR_REVERT]" o pai irritado a interrompe, "[COLOR_SELECTED_TEXT]o ouro tem de ser enviado para a Europa.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mas senhor, deve haver o bastante para um colar novo[COLOR_REVERT]", diz o secretário, sorrindo com esperança para a filha do governador.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Gold, Herr Gouverneur, Gold, die Geldsorgen der Kolonie sind erledigt![COLOR_REVERT]" platzt der Sekretär aufgeregt herein. "[COLOR_SELECTED_TEXT]Herr Gouverneur, dies hier ist der Held, der die Goldader gefunden hat.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ha, hm,[COLOR_REVERT]" macht der Gouverneur. "[COLOR_SELECTED_TEXT]Das ist ja wunderbar. Kommt herein und nehmnt eine Erfrischung zu Euch und dann erzählt mir alles über den Fund. Wie groß ist die Goldader?[COLOR_REVERT]"[NEWLINE][NEWLINE]Und zu dem Sektretär gewandt "[COLOR_SELECTED_TEXT]der Buchhalter soll kommen und schickt nach dem Geologen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vater, wie wunderschön! Als erstes möchte ich eine neue Halskette. Und dann einen Armreif und...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ruhig, mein Kind,[COLOR_REVERT]" unterbricht sie der genervte Vater, "[COLOR_SELECTED_TEXT]das Gold wird nach Europa verschifft.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Aber, Herr Gouverneur, für eine neue Halskette sollte es schon noch reichen...[COLOR_REVERT]", lächelt der Sektretär die Tochter des Gouverneurs anzüglich zu.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Золото, сэр, золото! О денежных проблемах колонии можно забыть![COLOR_REVERT]" — взволнованно говорит секретарь. "[COLOR_SELECTED_TEXT]Сэр, вот тот герой, что обнаружил золотую жилу.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что же, это прекрасно.[COLOR_REVERT]" – говорит губернатор. "[COLOR_SELECTED_TEXT]Входите. Позвольте предложить вам освежиться. Расскажите мне все о находке. Как вы думаете, сколько там может быть золота?[COLOR_REVERT]"[NEWLINE][NEWLINE]И повернувшись к секретарю, он говорит: "[COLOR_SELECTED_TEXT]Скажите бухгалтеру, чтобы пришел. И пошлите за геологом.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Отец, это чудесно! Я надеялась на новое ожерелье. И браслет и...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тише, дитя мое.[COLOR_REVERT]" – перебивает ее раздраженный отец – "[COLOR_SELECTED_TEXT]Золото нужно отправить в Европу.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Но, сэр, на новое ожерелье должно хватить.[COLOR_REVERT]" – говорит секретарь, с надеждой улыбаясь дочери губернатора.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Arany, uram, arany, a kolónia pénzgondjainak vége!"[COLOR_REVERT] - ront be izgatottan a titkár. "[COLOR_SELECTED_TEXT]Uram, itt van a hős, aki feltárta az aranylelőhelyet.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hát ez csodálatos,[COLOR_REVERT]" - mondja a kormányzó. "[COLOR_SELECTED_TEXT]Jöjjön be. Hadd kínáljam meg önt egy kis frissítővel! Meséljen el mindent a leletről! Mit gondol, mennyi arany lehet ott?"[COLOR_REVERT]"[NEWLINE][NEWLINE]A titkárához fordulva így szól: "[COLOR_SELECTED_TEXT]Szóljon a könyvelőnek, hogy jöjjön be, és küldjön a geológusért![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Apám, ez csodálatos! Már nagyon vágytam egy új nyakláncra. És egy karkötőre és...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csitt, gyermekem,[COLOR_REVERT]" - szakítja félbe a bosszús apa, "[COLOR_SELECTED_TEXT]az aranyat Európába kell szállítani. [COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De uram, elégnek kell lennie egy új nyakláncra[COLOR_REVERT]" - mondja a titkár, és reménykedve mosolyog a kormányzó lányára.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_CUSTOM_OFFICE</Tag>
@@ -3800,6 +3846,7 @@
 		<French>Premier poste de douane</French>
 		<German>Euer erstes Zentrales Zollamt</German>
 		<Russian>Ваша первая таможня</Russian>
+		<Hungarian>Az első Vámhivatal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_CUSTOM_OFFICE_HEAD</Tag>
@@ -3808,6 +3855,7 @@
 		<French>Quelque chose à déclarer ?</French>
 		<German>Her mit den Zöllen...</German>
 		<Russian>Поднимите тарифы...</Russian>
+		<Hungarian>Jöjjenek a vámok...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_CUSTOM_OFFICE_TEXT</Tag>
@@ -3815,6 +3863,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Acalme-se, meus bons capitães. Todos aqui serão atendidos. Mas a ordem deve ser mantida. Um navio após o outro.[NEWLINE][NEWLINE]Qual navio chegou primeiro? Esse é o que deve ser liberado primeiro. Justo é justo.[NEWLINE][NEWLINE]Aqui estão seus formulários alfandegários, recém-saídos de nossa nova impressora[COLOR_REVERT]", o capitão do porto instrui o esperante capitães.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Formulários alfandegários...desembaraço...agora é tão ruim aqui quanto em casa. Antigamente, apenas descarregamos a carga, pagávamos nossas dívidas e pronto. O que deu no governador?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Governador? Não...isso é do rei. O governador não gosta disso. mais do que o resto de nós, acredite em mim...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Immer mit der Ruhe, meine Herren Kapitäne. Jeder wird hier abgefertigt. Aber Ordnung muss sein. Immer schön der Reihe nach.[NEWLINE][NEWLINE]Welches Schiff ist zuerst eingelaufen? Der wird auch zuerst abgefertigt.[NEWLINE][NEWLINE]Hier haben Sie die neuen Zollformulare, ganz frisch aus unserer neuen Druckerpresse[COLOR_REVERT]", belehrt der Hafenmeister die wartenden Kapitäne.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Zollformulare...abfertigen...das ist ja hier genauso schlimm wie in der Heimat. Früher haben wir die Ladung einfach gelöscht, unseren Obolus geleistet und gut war. Was ist denn bloß in den Gouverneur gefahren?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gouverneur, meint Ihr? Nein...das kommt vom König. Dem Gouverneur schmeckt das genauso wenig wie uns allen, glaubt mir...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Успокойтесь, мои хорошие капитаны. Все здесь будут обслужены. Но порядок должен поддерживаться. Один корабль за другим.[NEWLINE][NEWLINE]Какой корабль прибыл первым? Его нужно очистить первым. Это будет справедливо.[NEWLINE][NEWLINE]Вот ваши таможенные формы, только что из нашего нового печатного станка[COLOR_REVERT]" – инструктирует начальник порта ожидающих капитанов.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Таможенные формы...очистка ...сейчас здесь становится так же плохо, как дома. Раньше мы просто разгружали груз, платили взносы и все. Что нашло на губернатора?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Губернатор? Нет... это распоряжение Короля. Поверьте, губернатору это нравится не больше, чем всем нам...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nyugalom, jó kapitányaim. Itt mindenkit ki fognak szolgálni. De a rendet fenn kell tartani! Egyik hajó a másik után.[NEWLINE][NEWLINE]Melyik hajó érkezett meg először? Az lesz az, amelyiket először vámkezelünk. Ez a dolgok rendje.[NEWLINE][NEWLINE]Itt vannak a vámnyomtatványok, frissen az új nyomdánkból[COLOR_REVERT]" - adja utasításba a kikötőmester a várakozó kapitányoknak.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vámnyomtatványok... vámkezelés... most már olyan rossz itt, mint otthon. Régen csak kiraktuk a rakományt, kifizettük a vámot és kész. Mi ütött a kormányzóba?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Kormányzó? Nem... ez a Királytól jött. A kormányzónak sem tetszik ez jobban, mint nekünk, higgye el...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_GREAT_ARSENAL</Tag>
@@ -3823,14 +3872,16 @@
 		<French>Votre premier grand arsenal</French>
 		<German>Euer erstes Großes Zeughaus</German>
 		<Russian>Ваш первый большой арсенал</Russian>
+		<Hungarian>Az első nagy fegyvergyár</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_GREAT_ARSENAL_HEAD</Tag>
-		<English>Forge the iron while it's hot</English>
+		<English>Strike the iron while it's hot</English>
 		<Portuguese>Forje o ferro enquanto está quente</Portuguese>
 		<French>Battez le fer tant qu'il est chaud</French>
 		<German>Schmiede das Eisen, solange es heiß ist...</German>
 		<Russian>Куйте железо, пока горячо</Russian>
+		<Hungarian>Addig üsd a vasat, amíg meleg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_GREAT_ARSENAL_TEXT</Tag>
@@ -3839,6 +3890,7 @@
 		<French>Le premier grand arsenal de nos colonies vient d'être construit. Espérons que celui-ci ne suscite pas trop de crainte chez notre Roi...[NEWLINE][NEWLINE]</French>
 		<German>"[COLOR_SELECTED_TEXT]Was wollt Ihr denn noch?[COLOR_REVERT]" ruft der Verwalter aufgeregt dem Geschützmeister entgegen. "[COLOR_SELECTED_TEXT]Ihr habt doch nun die neue Esse. Damit könnt Ihr dreimal so viele Kanonen gießen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Naja, die Esse allein ist es ja nicht, Sir. Wir benötigen auch noch mehr Stückgießer. Die Kanonen gießen sich ja schließlich nicht von allein.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Na schön,[COLOR_REVERT]" meint der Verwalter, "[COLOR_SELECTED_TEXT]ich will sehen, was ich beim Gouverneur erreichen kann.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Что вам еще нужно?[COLOR_REVERT]" — кричит взволнованный управляющий оружейнику. "[COLOR_SELECTED_TEXT]Теперь у вас есть новый горн. С его помощью вы сможете сделать в три раза больше пушек.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Эта кузница сама по себе только начало, сэр. Нам также нужно больше оружейников. В конце концов, пушки сами себя не отливают.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Хорошо,[COLOR_REVERT]" – говорит управляющий – "[COLOR_SELECTED_TEXT]посмотрим, что я смогу выпросить у губернатора.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mit akarsz még?"[COLOR_REVERT] - kiáltja a zaklatott intéző a fegyverkovácsnak. "[COLOR_SELECTED_TEXT]Az új műhely most már a tiéd. Háromszor annyi ágyút tudsz vele készíteni.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos, ez a műhely önmagában csak a kezdet, uram. Több fegyverkovácsra is szükségünk van. Elvégre az ágyúk nem készülnek el maguktól.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Rendben,[COLOR_REVERT]" - mondja az intéző, "[COLOR_SELECTED_TEXT]megnézem, mit tudok kérni a kormányzótól.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MEDICAL_OFFICE</Tag>
@@ -3847,6 +3899,7 @@
 		<French>Votre premier cabinet médical</French>
 		<German>Eure erste Arztpraxis</German>
 		<Russian>Ваш первый дом врача</Russian>
+		<Hungarian>Az első orvosi rendelő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_MEDICAL_OFFICE_HEAD</Tag>
