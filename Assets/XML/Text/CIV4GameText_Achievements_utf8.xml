@@ -3150,21 +3150,24 @@
 		<French>Défirestation pour une grande cause</French>
 		<German>Verwüstung für einen guten Zweck</German>
 		<Russian>Опустошение во имя благого дела</Russian>
+		<Hungarian>Pusztítás egy jó ügyért</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_EIGHT_LUMBERJACKS_TEXT</Tag>
-		<English>A wistful ache constricts your heart as the evening twilight slants across the clearing. This primeval forest with its ancient trees is magnificent, a true monument to the power of the Heavenly Lord who created this New World with all its wonders.[NEWLINE][NEWLINE]Was what you commanded your men to do pleasing to God? Many board feet of wood have been felled here. And not just in this forest![NEWLINE][NEWLINE]Up and down the coast loggers have cut a path of destruction through nature on your behalf. You shake your head and smile grimly.[NEWLINE][NEWLINE]It is not the trees that are your responsibility, but the settlers. If you want to build cities, you need wood - and you can't make an omelette without breaking eggs.[NEWLINE][NEWLINE]</English>
+		<English>A wistful ache constricts your heart as the evening twilight slants across the clearing. This magnificent forest is ancient, a true monument to the power of the Heavenly Lord who created this New World with all its wonders.[NEWLINE][NEWLINE]Is your decision pleasing to God? So many board feet of wood felled here, and not just in this forest![NEWLINE][NEWLINE]Up and down the coast loggers chop a path of destruction through nature on your behalf. You shake your head and smile grimly.[NEWLINE][NEWLINE]It is not the trees that are your responsibility, but the settlers. If you want to build cities, you need wood - and you can't make an omelette without breaking eggs.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Uma dor melancólica aperta seu coração enquanto o crepúsculo da noite se inclina pela clareira. Esta floresta primitiva com suas árvores antigas é magnífica, um verdadeiro monumento ao poder do Senhor Celestial que criou este Novo Mundo com todas as suas maravilhas.[NEWLINE][NEWLINE]O que você ordenou que seus homens fizessem foi agradável a Deus? Muitos pés de madeira foram derrubados aqui. E não apenas nesta floresta![NEWLINE][NEWLINE]Os madeireiros de todo o litoral abriram um caminho de destruição pela natureza em seu nome. Você balança a cabeça e sorri severamente.[NEWLINE][NEWLINE]Não são as árvores que são de sua responsabilidade, mas os colonos. Se você quer construir cidades, você precisa de madeira - e não dá para fazer uma omelete sem quebrar os ovos.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Wehmütiger Schmerz umschnürt Euer Herz, als das sanft glühende Licht der Abendsonne schräg über die Lichtung fällt. Dieser Urwald mit seinen alten Baumriesen ist prächtig, ein wahres Denkmal für die Macht des Himmlischen Herrn, der diese Neue Welt mit ihren Wundern erschaffen hat.[NEWLINE][NEWLINE]War es gottgefällig, was Ihr Euren Männern befohlen habt? Viele Klafter Holz wurden hier in den letzten Wochen geschlagen. Und nicht nur in diesem Forst![NEWLINE][NEWLINE]Überall in den Küstenwäldern haben Kolonisten in Eurem Auftrag eine Schneise der Verwüstung durch die Natur gepflügt. Ihr schüttelt den Kopf und lächelt grimmig.[NEWLINE][NEWLINE]Nicht die Bäume sind Eure Schutzbefohlenen, sondern die Siedler. Wer Städte bauen will, braucht Holz - und wo gehobelt wird, da fallen Späne ...[NEWLINE][NEWLINE]</German>
 		<Russian>Тоскливая боль сжимает сердце, когда вечерние сумерки косо скользят по поляне. Этот первобытный лес с его гиганстскими деревьями великолепен, настоящий памятник силе Небесного Господа, сотворившего этот Новый Мир со всеми его чудесами.[NEWLINE][NEWLINE]Было ли угодно Богу то, что вы приказали своим людям? Множество стволов вековых деревьев было срублено здесь. И не только в этом лесу![NEWLINE][NEWLINE]Лесозаготовщики идут вдоль и поперёк побережья, прокладывая путь разрушения в первозданном лесу. Вы качаете головой и мрачно улыбаетесь.[NEWLINE][NEWLINE]Вы отвечаете не за деревья, а за поселенцев. Если вы хотите строить города, вам нужна древесина и вы не сможете приготовить омлет, не разбив яиц.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Nosztalgikus fájdalom szorítja össze a szívedet, ahogy az esti szürkület átvonul a tisztáson. Ez az erdőség ősi fáival csodálatos, igazi emlékműve a Mennyei Úr hatalmának, aki megteremtette ezt az Újvilágot minden csodájával együtt.[NEWLINE][NEWLINE]Vajon tetszett-e Istennek, amit az embereidnek parancsoltál? Sok deszkányi fát vágtak ki itt. És nem csak ebben az erdőben![NEWLINE][NEWLINE]A fakitermelők a part mentén végig a pusztulás útját vágták a természetben a te nevedben. Megrázod a fejed és komoran mosolyogsz.[NEWLINE][NEWLINE]Nem a fákért vagy felelős, hanem a telepesekért. Ha városokat akarsz építeni, fára van szükséged - és nem lehet omlettet készíteni anélkül, hogy ne törnéd össze a tojásokat[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES</Tag>
-		<English>Six Converted Natives</English>
+		<English>Six converted Natives</English>
 		<Portuguese>Seis nativos convertidos</Portuguese>
 		<French>Six convertis</French>
 		<German>Sechs Konvertierte</German>
 		<Russian>Шесть крещенных индейцев</Russian>
+		<Hungarian>Hat Áttérített Őslakos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES_HEAD</Tag>
@@ -3173,21 +3176,24 @@
 		<French>Un service pieu</French>
 		<German>Fromme Fron</German>
 		<Russian>Благочестивое служение</Russian>
+		<Hungarian>Szent szolgálat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CONVERTED_NATIVES_TEXT</Tag>
-		<English>Native villages are emptying out as with hellfire sermons your missionaries convince the Natives to renounce pagan idols and consecrate their souls to the Holy Lord Jesus.[NEWLINE][NEWLINE]Entire families are being converted and, at the priest's behest, are moving into the settler towns to receive Holy Communion in churches there - and to make themselves useful performing pious services in the parishes.[NEWLINE][NEWLINE]</English>
+		<English>Native villages are emptying out, as with hellfire sermons your missionaries convince the Natives to renounce pagan idols and consecrate their souls to the Holy Lord Jesus.[NEWLINE][NEWLINE]Entire families are being converted and, at the priest's behest, are moving into the settler towns to receive Holy Communion in churches there - and to make themselves useful performing pious services in the parishes.[NEWLINE][NEWLINE]</English>
 		<Portuguese>As aldeias nativas estão se esvaziando à medida que, com os sermões do fogo do inferno, seus missionários convencem os nativos a renunciar aos ídolos pagãos e a consagrar suas almas ao Santo Senhor Jesus.[NEWLINE][NEWLINE]Famílias inteiras estão sendo convertidas e, a mando do padre, estão se mudando para as cidades colonizadas para receber a Sagrada Comunhão nas igrejas de lá - e para se tornarem úteis realizando serviços piedosos nas paróquias.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Immer leerer werden die Dörfer der Wilden, seitdem Eure Missionare die Einheimischen mit flammenden Predigten davon überzeugen, den heidnischen Götzen abzuschwören und ihre Seelen dem Heiligen Herrn Jesu zu weihen.[NEWLINE][NEWLINE]Ganze Familien lassen sich bekehren und ziehen auf Geheiß des Priesters in die Städte der Weißen, um in deren Gotteshäusern die Heilige Kommunion zu empfangen - und um sich in den Kirchengemeinden durch fromme Frondienste nützlich zu machen.[NEWLINE][NEWLINE]</German>
 		<Russian>Деревни индейцев пустеют, а проповедями об ужасах Ада ваши миссионеры убеждают туземцев отречься от языческих идолов и посвятить свои души Святому Господу Иисусу.[NEWLINE][NEWLINE]Целые семьи обращаются в христианство и по настоянию священника переселяются в наши города, чтобы приносить пользу обществу, причащаться в церквах и совершать богослужения в приходах.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az Indián falvak kiürülnek, ahogy a misszionáriusok pokoli prédikációkkal meggyőzik az Indiánokat, hogy mondjanak le a pogány bálványokról, és szenteljék lelküket a Szent Úrnak.[NEWLINE][NEWLINE]Egész családok térnek meg, és a pap utasítására a telepesek városaiba költöznek, hogy az ottani templomokban részesüljenek a szentáldozásban - és hogy hasznosak legyenek a plébániákon végzett jámbor szolgálatokban.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_STATESMEN</Tag>
-		<English>Ten Statesmen</English>
+		<English>Ten statesmen</English>
 		<Portuguese>Dez estadistas</Portuguese>
 		<French>Dix hommes d'état émérites</French>
 		<German>Zehn Staatsmänner</German>
 		<Russian>Десять маститых политиков</Russian>
+		<Hungarian>Tíz Államférfi</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_STATESMEN_HEAD</Tag>
@@ -3196,6 +3202,7 @@
 		<French>L'autorité n'est que consentie</French>
 		<German>Zur Treue verpflichtet</German>
 		<Russian>Лояльность - улица с двусторонним движением</Russian>
+		<Hungarian>A hűség kétirányú utca</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEN_STATESMEN_TEXT</Tag>
@@ -3203,14 +3210,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Obrigado por me receber, Governador. Meu pedido é urgente.[COLOR_REVERT]"[NEWLINE][NEWLINE]Com um aceno de mão, você convida seu convidado a falar livremente. Você sabe que ele é um dos dignitários de sua capital, que sua palavra tem peso para o conselho municipal.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]As tarifas na Europa[COLOR_REVERT]", explica o homem, "[COLOR_SELECTED_TEXT]estão se tornando insuportáveis. Toda a nossa diligência não será recompensada se o rei impor impostos horríveis sobre nossos produtos de exportação.[COLOR_REVERT]"[NEWLINE][NEWLINE]Você acene com a cabeça. "[COLOR_SELECTED_TEXT]Você deve saber que ouço reclamações semelhantes de vereadores de outras cidades. Certamente, devemos lealdade ao nosso soberano, mas inversamente...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]... o soberano também nos deve lealdade e boa conduta[COLOR_REVERT]", acrescenta o político ao seu pensei.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Bem, Governador, se você decidir que temos que fazer valer nossos direitos, pode contar comigo...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Habt Dank, dass Ihr mich empfangt, Herr Gouverneur. Mein Anliegen drängt.[COLOR_REVERT]"[NEWLINE][NEWLINE]Mit einer Handbewegung fordert Ihr Euren Gast auf, frei zu sprechen. Ihr wisst, dass er zu den Honoratioren Eurer Hauptstadt zählt, dass sein Wort im Rat der Stadt Gewicht hat.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Zölle in Europa[COLOR_REVERT]", erklärt der Mann, "[COLOR_SELECTED_TEXT]wachsen ins Unerträgliche. All unser Fleiß bleibt unbelohnt, wenn der König unsere Exportwaren mit horrenden Steuern belegt.[COLOR_REVERT]"[NEWLINE][NEWLINE]Ihr nickt. "[COLOR_SELECTED_TEXT]Seid versichert, dass solche Klagen mich auch von den Ratsherren anderer Städte erreichen. Gewiss, wir sind unserem Landesherrn Treue schuldig, doch ist umgekehrt ...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]... der Landesherr auch uns zu Treue und Wohlverhalten verpflichtet[COLOR_REVERT]", ergänzt der Politiker Euren Gedanken.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun, Herr Gouverneur, solltet Ihr der Meinung sein, dass wir uns unsere Rechte erzwingen müssen, dann könnt Ihr auf mich zählen ...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Спасибо, что приняли меня, губернатор. Дело, с которым я пришел к вам, очень важное.[COLOR_REVERT]"[NEWLINE][NEWLINE]Взмахом руки вы предлагаете гостю говорить свободно. Вы знаете, что это один из высокопоставленных лиц в вашей столице и его слово имеет большой вес в городском совете.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Пошлины в Европе[COLOR_REVERT]" — объясняет мужчина — [COLOR_SELECTED_TEXT]становятся невыносимыми. Все наши усилия остаются без вознаграждения, если король облагает наши экспортные товары чудовищными налогами.[COLOR_REVERT]"[NEWLINE][NEWLINE]Вы киваете. "[COLOR_SELECTED_TEXT]Вы должны знать, что я слышу подобные жалобы от советников и из других городов. Конечно, мы должны быть верны нашему государю, но с другой стороны...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]... государь также в долгу перед нашими верностью и хорошим поведением.[COLOR_REVERT]" - заканчивает вашу мысль политик.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что же, губернатор, если вы решите, что мы должны защищать наши права, вы можете рассчитывать на меня...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Köszönöm, hogy fogadott, kormányzó. Sürgős kérésem van.[COLOR_REVERT]"[NEWLINE][NEWLINE]Egy kézmozdulattal megengeded a vendégednek, hogy szabadon beszéljen. Tudod, hogy ő a fővárosod egyik méltósága, hogy szavának súlya van a városi tanács előtt.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Az európai vámok[COLOR_REVERT]" - magyarázza a férfi - "[COLOR_SELECTED_TEXT]egyre elviselhetetlenebbek. Minden igyekezetünk kárba vész, ha a király horribilis adókat vet ki az exportáruinkra.[COLOR_REVERT]"[NEWLINE][NEWLINE]Bólogatsz. "[COLOR_SELECTED_TEXT]Tudnia kell, hogy más városok tanácsosaitól is hallok hasonló panaszokat. Természetesen hűséggel tartozunk uralkodónknak, de ugyanakkor...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]... az uralkodó is tartozik nekünk hűséggel és jó modorral[COLOR_REVERT]" - egészíti ki gondolatodat a politikus. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos, kormányzó, ha úgy dönt, hogy érvényt kell szereznünk jogainknak, számíthat rám...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS</Tag>
-		<English>Six Criminals</English>
+		<English>Six petty criminals</English>
 		<Portuguese>Seis criminosos</Portuguese>
 		<French>Six bagnards</French>
 		<German>Sechs Kleinkriminelle</German>
 		<Russian>Шесть каторжников</Russian>
+		<Hungarian>Hat Fegyenc</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS_HEAD</Tag>
@@ -3219,21 +3228,24 @@
 		<French>Terre des possibles</French>
 		<German>Land der unbegrenzten [NEWLINE]Möglichkeiten</German>
 		<Russian>Земля возможностей</Russian>
+		<Hungarian>Lehetőségek földje bűnözőknek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_CRIMINALS_TEXT</Tag>
-		<English>The prosperity of your colonies is growing - and attracting many a freeloader who does not take justice and morality very seriously.[NEWLINE][NEWLINE]Was it really wise to welcome cunning scoundrels onto your immigration ships? Back home, the village beadles and town guards kept a strict eye on thieves and cheats, strays and gutter thugs. No wonder they are drawn to the New World - the land of opportunity.[NEWLINE][NEWLINE]</English>
+		<English>The prosperity of your colonies is growing - and attracting many a freeloader who does not take justice and morality very seriously.[NEWLINE][NEWLINE]Was it really wise to welcome cunning scoundrels onto your immigration ships? Back home, the village beadles and town guards kept a strict eye on thieves and cheats, strays and gutter thugs. No wonder these ne'er-do-wells are drawn to the New World - the land of opportunity.[NEWLINE][NEWLINE]</English>
 		<Portuguese>A prosperidade de suas colônias está crescendo - e atraindo muitos aproveitadores que não levam a justiça e a moralidade muito a sério.[NEWLINE][NEWLINE]Foi realmente sensato receber canalhas astutos em seus navios de imigração? Em casa, os bedelles da aldeia e os guardas da cidade mantinham um olhar rigoroso sobre ladrões e trapaceiros, desgarrados e bandidos de sarjeta. Não admira que sejam atraídos para o Novo Mundo - a terra das oportunidades.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Der Wohlstand in Euren Kolonien wächst - und zieht so manchen Schmarotzer an, der es mit Recht und Moral nicht sonderlich ernst nimmt.[NEWLINE][NEWLINE]War es wirklich klug gewesen, auch noch den abgefeimtesten Strolch an Bord Eurer Einwanderungsschiffe Willkommen zu heißen? Daheim warfen die Dorfbüttel und Stadtwachen ein strenges Auge auf solche Tagediebe und Maulaffen, Streuner und Gossenschläger. Kein Wunder, dass es das Pack in die Neue Welt zieht - in das Land der unbegrenzten Möglichkeiten.[NEWLINE][NEWLINE]</German>
 		<Russian>Процветание ваших колоний растет и привлекает многих халявщиков, которые не очень серьезно относятся к законам и морали.[NEWLINE][NEWLINE]Действительно ли разумно было принимать этих негодяев на свои иммиграционные корабли? На родине за такими бездельниками и мордоворотами, бродягами и уличными хулиганами зорко следили деревенские приставы и городская стража. Неудивительно, что их тянет в Новый Свет — страну безграничных возможностей.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Gyarmataitok jóléte egyre nő - és sok olyan ingyenélőt vonz, aki nem veszi túl komolyan az igazságot és az erkölcsöt.[NEWLINE][NEWLINE]Valóban bölcs dolog volt cselszövő gazembereket fogadni a bevándorló hajóidra? Otthon az egyházfők és a városőrök szigorúan szemmel tartották a tolvajokat és a csalókat, a csavargókat és a gengsztereket. Nem csoda, hogy az Újvilág - a lehetőségek földje - vonzza őket.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS</Tag>
-		<English>Six Indentured Servants</English>
+		<English>Six indentured servants</English>
 		<Portuguese>Seis servos contratados</Portuguese>
 		<French>Six domestiques sous contrats</French>
 		<German>Sechs Schuldknechte</German>
-		<Russian>Шесть кабальных слуг</Russian>
+		<Russian>Шесть кабальных слуг</Russian
+		<Hungarian>Hat Szerződéses Szolga</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS_HEAD</Tag>
@@ -3242,21 +3254,24 @@
 		<French>Les gages des serviteurs</French>
 		<German>Der Lohn der Knechte</German>
 		<Russian>Заработная плата слуг</Russian>
+		<Hungarian>A szolgák bére</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SIX_INDENTURED_SERVANTS_TEXT</Tag>
-		<English>Their life is no bed of roses. They do the heaviest work, hauling and toiling. But this bitter life will end after seven years.[NEWLINE][NEWLINE]Back home they freely signed a contract with their future employer. Now, in return for passage to the New World, they give up their right to a self-determined existence for seven years.[NEWLINE][NEWLINE]Without complaint they do everything their master deems necessary. And then? He grants them a small sum of money or gives them a farm which, though small, will be their own.[NEWLINE][NEWLINE]In this way indentured servants become free citizens.[NEWLINE][NEWLINE]</English>
+		<English>Their life is no bed of roses. They do the heaviest work, hauling and lifting. But this bitter life will end after seven years.[NEWLINE][NEWLINE]Back home they freely signed a contract with their future employer. Now, in return for passage to the New World, they give up their right to a self-determined existence for seven years.[NEWLINE][NEWLINE]Without complaint they do everything their master deems necessary. And then? He grants them a small sum of money or gives them a farm which, though small, will be their own.[NEWLINE][NEWLINE]In this way indentured servants become free citizens.[NEWLINE][NEWLINE]</English>
 		<Portuguese>A vida deles não é um mar de rosas. Eles fazem o trabalho mais pesado, transportando e trabalhando. Mas esta vida amarga terminará depois de sete anos.[NEWLINE][NEWLINE]Em casa, eles assinaram livremente um contrato com seu futuro empregador. Agora, em troca da passagem para o Novo Mundo, eles renunciam ao seu direito a uma existência autodeterminada por sete anos.[NEWLINE][NEWLINE]Sem reclamar, eles fazem tudo o que seu mestre considera necessário. E então? Ele lhes concede uma pequena quantia em dinheiro ou lhes dá uma fazenda que, embora pequena, será deles.[NEWLINE][NEWLINE]Desta forma, os servos contratados tornam-se cidadãos livres.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ein Zuckerschlecken ist ihr Leben nicht. Schwerste Arbeit verrichten sie, schleppen und schuften. Doch währt dies bittere Leben nur sieben Jahre.[NEWLINE][NEWLINE]Einst in der Heimat haben sie aus freien Stücken mit ihrem künftigen Dienstherrn einen Vertrag geschlossen. Er spendiert ihnen die Überfahrt in die Neue Welt, und sie verpfänden ihm im Gegenzug ihr Recht auf ein selbstbestimmtes Dasein.[NEWLINE][NEWLINE]Sieben Jahre lang tun sie als Schuldknechte klaglos alles, was ihr Herr für nötig erachtet. Und dann? Dann gewährt er ihnen eine kleine Summe Geldes oder schenkt ihnen einen Hof, der zwar unscheinbar, aber ihr Eigen ist.[NEWLINE][NEWLINE]Und aus Schuldknechten werden freie Bürger.[NEWLINE][NEWLINE]</German>
 		<Russian>Их жизнь не усыпана розами. Они выполняют самую тяжелую работу, надрывая жилы. Но эта горькая жизнь закончится через семь лет.[NEWLINE][NEWLINE]На родине они добровольно подписали контракт со своим будущим работодателем. Теперь, в обмен на проезд до Нового Света, они отказываются от своего права на самостоятельное существование на семь лет.[NEWLINE][NEWLINE]Безропотно делают все, что сочтет нужным их хозяин. А что же потом? Он дает им небольшую сумму денег или дает им ферму, которая, хоть и небольшая, будет их собственной.[NEWLINE][NEWLINE]Так кабальные слуги становятся свободными гражданами.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az életük nem rózsás. Ők végzik a legnehezebb munkát, cipekednek és gürcölnek. De ennek a keserves életnek hét év múlva vége lesz.[NEWLINE][NEWLINE]Otthon szabadon szerződést kötöttek leendő munkaadójukkal. Most az Újvilágba való átjutásért cserébe hét évre lemondanak az önrendelkezési jogukról.[NEWLINE][NEWLINE]Panasz nélkül megtesznek mindent, amit a gazdájuk szükségesnek tart. És aztán? Egy kis pénzösszeget vagy egy farmot ad nekik, ami ha kicsi is, de a sajátjuk lesz.[NEWLINE][NEWLINE]Így válnak a szerződéses szolgák szabad polgárokká.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER</Tag>
-		<English>Three Cocoa Planters</English>
+		<English>Three cocoa planters</English>
 		<Portuguese>Três plantadores de cacau</Portuguese>
 		<French>Trois planteurs de cacao</French>
 		<German>Drei erfahrene Kakaopflücker</German>
 		<Russian>Три плантатора какао</Russian>
+		<Hungarian>Három Kakaóbab Termesztő</Hungarian>n>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER_HEAD</Tag>
@@ -3265,6 +3280,7 @@
 		<French>Le choix des dames</French>
 		<German>Damenwahl</German>
 		<Russian>Дамский угодник</Russian>
+		<Hungarian>Hölgyválasz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_COCOA_PLANTER_TEXT</Tag>
@@ -3272,22 +3288,25 @@
 		<Portuguese>Você já sente os volumosos selos reais através do couro áspero quando a secretária lhe entrega a pasta de documentos. Seu sorriso astuto mostra que você fez uma careta um tanto óbvia.[NEWLINE][NEWLINE]Não é de admirar - prata, mais prata, cada vez mais prata! - este é um simples resumo do conteúdo e do tom das cartas recentes.[NEWLINE][NEWLINE]Tristemente, você puxa o pergaminho de sua embalagem protetora e quebra a cera vermelha. Uma fragrância delicada e uma caligrafia ainda mais refinada seduzem os seus sentidos. Em palavras cuidadosamente educadas, a própria rainha solicita outro carregamento do exótico "cacau".[NEWLINE][NEWLINE]Parece que uma mania pelo feijão picante tomou conta da corte. Felizmente, você tem um talento modesto para capitalizar esses caprichos.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ihr fühlt die schweren königlichen Siegel bereits durch das grobe Leder, als Euch der Sekretär die Dokumentenmappe reicht. Sein Schmunzeln verrät, dass Ihr wohl etwas zu deutlich das Gesicht verzogen habt.[NEWLINE][NEWLINE]Kein Wunder - Silber, mehr Silber, noch mehr Silber! - so lassen sich Inhalt und Tonfall der letzten Schreiben zusammenfassen.[NEWLINE][NEWLINE]Verdrossen zieht Ihr das Pergament aus der schützenden Umhüllung und brecht das rote Wachs. Ein zarter Duft und eine noch feinere Handschrift offenbaren sich Euren Sinnen. In ausgesucht höflichen Worten ersucht die Königin höchstselbst um eine weitere Sendung des exotischen "Cacaos".[NEWLINE][NEWLINE]Euch scheint, das eine gewisse Narrheit nach der würzigen Bohne den Hof ergriffen hat. Glücklicherweise zählt es zu Euren bescheidenen Talenten, derartigen Marotten stets eine lukrative Seite abzugewinnen.[NEWLINE][NEWLINE]</German>
 		<Russian>Когда секретарь протягивает вам папку с документами, даже сквозь грубую кожу вы чувствуете массивные королевские печати. По его понимающей ухмылке видно, что вы слишком явно скривились.[NEWLINE][NEWLINE]Неудивительно — серебро, больше серебра, еще больше серебра! - это простое изложение содержания и тона писем, которые вы получаете последнее время.[NEWLINE][NEWLINE]Вы угрюмо вытаскиваете пергамент из защитной упаковки и ломаете красный воск. Тонкий аромат и еще более тонкий почерк пленяют ваш разум. В подчеркнуто вежливых словах сама Королева запрашивает очередную партию экзотического "какао".[NEWLINE][NEWLINE]Похоже, двор захлестнуло увлечение пряными бобами. К счастью, у вас есть скромный талант извлекать выгоду из таких капризов.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Már akkor érzed a terjedelmes királyi pecséteket a durva bőrön keresztül, amikor a titkárnő átnyújtja neked az iratmappát. Tudálékos mosolyán látszik, hogy túlságosan is nyilvánvalóan fintorogtál.[NEWLINE][NEWLINE]Nem csoda - ezüst, még több ezüst, egyre több ezüst! - ez a közelmúltbeli levelek tartalmának és hangnemének egyszerű összefoglalása.[NEWLINE][NEWLINE]Mogorván kihúzod a pergament a védőcsomagolásból és megtöröd a vörös viaszt. Finom illat és még finomabb kézírás csábítja érzékeidet. Gondosan udvarias szavakkal maga a királynő kér egy újabb szállítmányt az egzotikus "kakaóból".[NEWLINE][NEWLINE]Úgy tűnik, hogy a fűszeres bab iránti őrület elragadta az udvart. Szerencsére neked van némi tehetséged az ilyen szeszélyek kihasználására.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PROSPECTOR</Tag>
-		<English>Three Prospectors</English>
+		<English>Three prospectors</English>
 		<Portuguese>Três garimpeiros</Portuguese>
 		<French>Trois prospecteurs</French>
 		<German>Drei erfahrene Schürfer</German>
 		<Russian>Три старателя</Russian>
+		<Hungarian>Három Aranyásó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PROSPECTOR_HEAD</Tag>
-		<English>Black humour</English>
+		<English>Dark humour</English>
 		<Portuguese>Humor negro</Portuguese>
 		<French>Trois prospecteurs</French>
 		<German>Schwarzer Humor</German>
 		<Russian>Чёрный юмор</Russian>
+		<Hungarian>Fekete humor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_PROSPECTOR_TEXT</Tag>
@@ -3295,14 +3314,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]... e eu digo que isso não é apenas um reflexo da neve. Veja como ela brilha. Agache-se e...[COLOR_REVERT]" Você sorri e deixa seus pensamentos vagarem.[NEWLINE][NEWLINE]As crianças aqui aprendem na escola sobre as primeiras descobertas de prata nas montanhas locais. O garimpeiro de cabelos brancos à sua frente é uma lenda viva.[NEWLINE][NEWLINE]Uma risada distante faz seus ouvidos arrepiarem. "[COLOR_SELECTED_TEXT]... para as profundezas quentes do inferno, onde nada sobrou do Velho Mundo. Aqui estou praticamente trabalhando ao sol![COLOR_REVERT]"[NEWLINE][NEWLINE]Sons fracos de mineiros trabalhando ecoam pelo corredor escuro. Você abre um sorriso dolorido e olha para a pedra nua acima de você. O suor frio escorre pelas têmporas. Você estima a distância até o sol.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]... und ich sag' noch, das ist doch nicht nur Neuschnee, was hier glitzert, bücke mich und ...[COLOR_REVERT]" Ihr lächelt milde und lasst Eure Gedanken schweifen.[NEWLINE][NEWLINE]Die Geschichte von den ersten Silberfunden in den hiesigen Bergen lernen heutzutage bereits die Kinder in der Schule. Der weißhaarige Bergmann vor Euch ist eine lebende Legende.[NEWLINE][NEWLINE]Polterndes Lachen lässt Euch wieder die Ohren spitzen. "[COLOR_SELECTED_TEXT]... bis in die heißen Tiefen der Hölle, drüber fand man in der Alten Welt nix mehr. Aber hier kann ich ja fast noch im Sonnenschein die Picke schwingen![COLOR_REVERT]"[NEWLINE][NEWLINE]Dröhnendes Gegröle vieler Bergleute hallt dumpf durch den nahezu schwarzen Gang. Ihr ringt Euch ein gequältes Lächeln ab und schaut auf den nackten Stein über Euch. Kalter Schweiß rinnt langsam Eure Schläfen herab, als Ihr versucht, die Entfernung zur Sonne zu schätzen.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]... и я говорю, что это не просто отражение на снегу. Посмотрите, как он блестит. Присядьте и...[COLOR_REVERT]" Вы улыбаетесь и позволяете своим мыслям блуждать.[NEWLINE][NEWLINE]Истории о первых находках серебра в местных горах сегодня уже рассказывают детям в школах. Седовласый старатель перед вами — живая легенда.[NEWLINE][NEWLINE]Раскатистый смех снова заставляет вас навострить уши. "[COLOR_SELECTED_TEXT]... в жаркие глубины ада, где от Старого Света ничего не осталось. Здесь я работаю практически под солнечном светом![COLOR_REVERT]"[NEWLINE][NEWLINE]Слабые звуки работы шахтеров эхом разносятся по сумрачному коридору. Вы выдавливаете из себя кривую улыбку и смотрите на голый камень над вами. Холодный пот струится по вискам. Вы оцениваете расстояние обратно, к солнцу.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]... és én azt mondom, hogy ez nem csak a hó visszaverődése. Nézd meg, hogy csillog. Guggolj le és ...[COLOR_REVERT]" Elmosolyodsz, és hagyod elkalandozni a gondolataidat.[NEWLINE][NEWLINE]Az itteni gyerekek az iskolában az első ezüstfelfedezésekről tanulnak a helyi hegyekben. Az előtted álló fehér hajú aranyásó egy élő legenda.[NEWLINE][NEWLINE]Egy távoli nevetés hangja felkapjod a fejed. "[COLOR_SELECTED_TEXT]... a pokol forró mélységeibe, ahol semmi sem maradt az Óvilágból. Itt gyakorlatilag napsütésben dolgozom![COLOR_REVERT]"[NEWLINE][NEWLINE]A dolgozó bányászok halk hangjai visszhangoznak a félhomályos folyosón. Fájdalmas mosolyt csalsz elő, és a fölötted lévő csupasz kőre nézel. Hideg verejték csorog le a halántékodon. Megbecsülöd a távolságot egészen a Napig.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR</Tag>
-		<English>Your first Renowned Medic</English>
+		<English>Your first renowned medic</English>
 		<Portuguese>Seu primeiro médico renomado</Portuguese>
 		<French>Le premier médecin renommé</French>
 		<German>Der erste ausgebildete Ärzte</German>
 		<Russian>Первый известный медик</Russian>
+		<Hungarian>Az első Neves Orvosod</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR_HEAD</Tag>
@@ -3311,6 +3332,7 @@
 		<French>Premiers soins</French>
 		<German>Erste medizinische Versorgung</German>
 		<Russian>Первая медицинская помощь</Russian>
+		<Hungarian>Az első orvosi ellátás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_DOCTOR_TEXT</Tag>
@@ -3319,14 +3341,16 @@
 		<French>"[COLOR_SELECTED_TEXT]On dirait que vous avez besoin d'un verre, monsieur. Voilà, prenez cette bière. Elle est encore fraîche. On dirait que vous venez juste de débarquer, et je reconnais un nouveau-venu quand j'en vois un. [NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Je euis nouveau dans le coin, monsieur. Mais je ne suis pas là pour une bière.Je suis là pour les soins médicaux de vos dames employées ici. Leur bonne santé aide à conserver celle des hommes de cette colonie.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mes da-? Oh, vous voulez dire les putains. Puisque vous le dites. Mais pas touche, Docteur. Exmainez juste![COLOR_REVERT]"[NEWLINE][NEWLINE]]</French>
 		<German>"[COLOR_SELECTED_TEXT]Ihr seht aus als bräuchtet ihr einen kräftigen Schluck, werter Herr. Hier, nehmt dieses Bier. Es ist noch ganz frisch. Ihr sehr aus, als wärt ihr gerade erst vom Schiff gestolpert. Neuankömmlinge erkenne ich auf den ersten Blick.[NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Ich bin tatsächlich neu in dieser Gegend, Mr. Aber ich komme nicht um mich zu berauschen. Ich bin hier wegen der medizinischen Versorgung Eurer weiblichen Angestellten. Wäre glaube ich mal nötig, damit auch die Männer der Kolonie gesund bleiben.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Meiner was? Ach, ihr meint die Huren. Na, wenn ihr meint. Aber anfassen is' nicht, Doc. Nur untersuchen![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Вы выглядите так, будто вам нужно сделать хороший глоток чего-нибудь освежающего, сэр. Вот, возьмите пиво. Оно еще свежее. Похоже, вы только что сошли с корабля. Я узнаю новичка, когда вижу его.[COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я действительно только что прибыл, мистер, но я здесь не за пивом. Я приехал для оказывания медицинской помощи вашим сотрудницам. Думаю, мужчины в колонии должны быть полностью здоровы.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что?.. О, вы имеете в виду наших шлюх. Ну, если вы так считаете... Но не вздумайте их лапать, Док. Просто проверьте их здоровье![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Úgy néz ki, mint akinek szüksége van egy jó nagy kortyra, uram. Tessék, igyon egy sört. Ez még mindig friss. Biztos most jött le a hajóról. Felismerem az újonnan érkezetteket, ha látom őket![NEWLINE][NEWLINE][COLOR_REVERT]"[COLOR_SELECTED_TEXT]Valóban új vagyok ezen a területen, jó uram. De nem sörért jöttem. Azért jöttem, hogy orvosi ellátást nyújtsak az ön női alkalmazottainak. Az ő egészségük révén a kolónia férfi tagjai is egészségesek maradnak.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A micsodáimnak? Ó, a szajhákra gondol. Hát, ha így gondolja. De ne nyúljon hozzájuk, doki. Csak vizsgálja meg őket![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_DOCTORS</Tag>
-		<English>Three Renowned Medics</English>
+		<English>Three renowned medics</English>
 		<Portuguese>Três médicos renomados</Portuguese>
 		<French>Trois médecins réputés</French>
 		<German>Drei ausgebildete Ärzte</German>
 		<Russian>Три знаменитых медика</Russian>
+		<Hungarian>Három neves Orvos</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_DOCTORS_HEAD</Tag>
@@ -3335,6 +3359,7 @@
 		<French>Soins médicaux</French>
 		<German>Medizinische Versorgung</German>
 		<Russian>Медицинская помощь</Russian>
+		<Hungarian>Orvosi szolgálat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_DOCTORS_TEXT</Tag>
@@ -3342,14 +3367,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]O senhor precisa de atendimento médico urgente, meu bom homem. Tome um gole generoso deste remédio. Cura quase tudo.[NEWLINE][NEWLINE]Eu mesmo preparei, então é completamente inofensivo. Vai fazê-lo se sentir um homem novo![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mas eu não tenho como pagar o remédio, doutor. Por que acha que só mandaram chamá-lo agora?! Olhe em volta. Não tem ninguém aqui. Têm medo de que eu esteja contagioso.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Desta vez eu lhe dou o remédio de graça. Assim que melhorar, não deixe de contar a todos quem o ajudou.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Ihr braucht dingend ärztliche Hilfe, guter Mann. Hier, nehmt einen kräftigen Schluck von dieser Medizin. Sie hilft gegen so gut wie alles.[NEWLINE][NEWLINE]Die habe ich selbst hergestellt. Sie ist also vollkommen unbedenlich. Danach fühlt Ihr Euch wie neu geboren![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Die Medizin kann ich mir aber nicht leisten, Herr Doktor. Was glaubt Ihr, warum man erst jetzt nach Euch geschickt hat?! Seht Euch um, sie haben es mit der Angst bekommen und fürchten, dass ich ansteckend bin.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nun, heute gebe ich euch die Medizin kostenlos. Aber es könnte ja nicht schaden, wenn Ihr nach Eurer Genesung überall erzählt, wer Euch geholfen hat...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Дорогой друг, вам нужна срочная медицинская помощь. Вот, сделайте хороший глоток этого лекарства. Оно помогает практически от всего.[NEWLINE][NEWLINE]Я сделал его сам, так что оно совершенно безвредно. Вы почувствуете себя новым человеком![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Но я не могу позволить себе лекарства, доктор! Как вы думаете, почему они послали за вами только сейчас?! Оглянитесь вокруг. Здесь никого нет. Они боятся, что я заразен![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Сегодня я дам вам лекарство бесплатно. А когда вы поправитесь, не забудьте рассказать всем, кто вам помог.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Sürgős orvosi ellátásra van szüksége, jóember! Tessék, vegyen be egy jó nagy kortyot ebből a gyógyszerből! Szinte mindenre gyógyír.[NEWLINE][NEWLINE]Magam készítettem, tehát teljesen ártalmatlan. Úgy fogja érezni magát tőle, mintha egy új ember lenne![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De nem engedhetem meg magamnak a gyógyszert, doktor. Mit gondol, miért csak most küldtek magáért?! Nézzen körül! Nincs itt senki. Attól félnek, hogy fertőző vagyok.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ezúttal ingyen adom a gyógyszert. Amint felépül, mindenképpen mondja el mindenkinek, aki segített magának."[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_COCA_COLLECTOR</Tag>
-		<English>Your first Expert Coca Collector</English>
+		<English>Your first expert coca collector</English>
 		<Portuguese>Sua primeira Coletora (Coca)</Portuguese>
 		<French>Premier expert planteur de coca</French>
 		<German>Euer erster erfahrener Coca-Sammler</German>
 		<Russian>Ваш первый сборщик коки</Russian>
+		<Hungarian>Első Tapasztalt Kokalevél Gyűjtőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_COCA_COLLECTOR_HEAD</Tag>
@@ -3358,6 +3385,7 @@
 		<French>Ivresse des sens</French>
 		<German>Es benebelt die Sinne</German>
 		<Russian>Лучшее в мире лекарство</Russian>
+		<Hungarian>Túlterheli az érzékeket</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_EXPERT_COCA_COLLECTOR_TEXT</Tag>
@@ -3365,14 +3393,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Meu querido filho, você tem alguma daquela nova erva que cresce tão bem por aqui?[NEWLINE][NEWLINE]Coca, acho que é assim que chamam. Quando meus pacientes mastigam, eles juram que alivia a dor melhor do que todas as minhas tinturas juntas. Eu deveria tentar para minhas próprias dores de cabeça.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Doutor, você veio ao lugar certo, mas tenha cuidado com isso. Isso sobrecarrega os sentidos.[NEWLINE][NEWLINE]A propósito, não diga ao meu mestre, o dono desta plantação. Ele envia as folhas para a Europa, onde faz um negócio muito bom.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ele vende tudo na Europa? ele.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Liebes Kind, habt Ihr noch welche von diesen neuen Kräutern, die hier in dieser Gegend so gut gedeihen?[NEWLINE][NEWLINE]Coca nennt man sie, glaube ich. Einige meiner Patienten kauen sie und schwören darauf, dass es ihre Schmerzen besser lindert als alle meine Tinkturen zusammen. Gegen meine eigenen Kopfschmerzen würde ich es auch gern mal probieren.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Herr Doktor, da seid Ihr bei mir genau an der richtigen Adresse. Aber seid vorsichtig damit, es benebelt die Sinne.[NEWLINE][NEWLINE]Sagt es nur nicht meinem Herren, dem Besitzer dieser Plantage. Er verkauft alle Blätter nach Europa und macht damit sehr gute Geschäfte.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nach Europa? Sollen denn die in der Alten Welt es besser haben als wir hier? Ich glaube, ich muss einmal ein Wörtchen mit ihm reden.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Моё дорогое дитя, есть ли у тебя та новая трава, которая так хорошо растет здесь?[NEWLINE][NEWLINE]Кажется, они называют её кока. Некоторые из моих пациентов жуют её и клянутся, что она облегчает боль лучше, чем все мои настойки вместе взятые. Я хотел бы попробовать её от своей головной боли.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Доктор, вы обратились по адресу. Но будьте с ней осторожны. Она притупляет ваши чувства и вы перестаёте себя контролировать.[NEWLINE][NEWLINE]Кстати, не говорите об этом моему хозяину, владельцу этой плантации. Он продаёт все листья коки в Европу и, кажется, его дела идут в гору.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Он все продаёт в Европу? У них в Старом Свете должно быть лучше, чем у нас здесь? Думаю, мне нужно поговорить с ним.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kedves gyermekem, van nálad abból az új fűszernövényből, ami olyan jól terem errefelé?[NEWLINE][NEWLINE]"Koka", azt hiszem, úgy hívják. Amikor a betegeim elrágják, esküsznek rá, hogy jobban enyhíti a fájdalmaikat, mint az összes tinktúrám együttvéve. Ki kellene próbálnom a saját fejfájásomra.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Doktor úr, jó helyre jött, de óvatosan bánjon vele. Túlterheli az érzékeket.[NEWLINE][NEWLINE]Egyébként ne mondja el a gazdámnak, ennek az ültetvénynek a tulajdonosának. A leveleket Európába küldi, ahol nagyon jó üzletet csinál.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mindent Európában ad el? Miért lenne nekik jobb az Óvilágban, mint nekünk itt? Beszélnem kell vele![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_PRINTING_PRESSES</Tag>
-		<English>Many Printing Presses</English>
+		<English>Many printing presses</English>
 		<Portuguese>Muitas impressoras</Portuguese>
 		<French>De nombreuses imprimeries</French>
 		<German>Viele Druckerpressen</German>
 		<Russian>Множество печатных станков</Russian>
+		<Hungarian>Sok Nyomda</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_PRINTING_PRESSES_HEAD</Tag>
@@ -3381,6 +3411,7 @@
 		<French>Pas de fausse modestie</French>
 		<German>Keine falsche Bescheidenheit</German>
 		<Russian>Без ложной скромности</Russian>
+		<Hungarian>Csak semmi álszerénység!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_PRINTING_PRESSES_TEXT</Tag>
@@ -3388,6 +3419,7 @@
 		<Portuguese>Cidades grandes e prósperas surgiram no Novo Mundo. Os seus magníficos edifícios são monumentos em pedra à prosperidade dos seus cidadãos, bem como à motivação e visão do seu líder.[NEWLINE][NEWLINE]Mesmo isto não é suficiente para satisfazer a opinião pública. A imprensa e os jornais estimulam os cidadãos com apelos entusiasmados para homenagear o governador por seus muitos anos de liderança sábia.[NEWLINE][NEWLINE]Um monumento nacional, imponente e orgulhoso, deveria ser erguido para exaltar sua glória nos séculos vindouros.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sem falsa modéstia, Governador[COLOR_REVERT]", escreve o jornal da capital. "[COLOR_SELECTED_TEXT]Dê às pessoas o que elas exigem: uma estátua em reconhecimento ao maior estadista do nosso tempo![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Große, blühende Städte sind in der Neuen Welt entstanden. Ihre prachtvollen Bauten sind steinerne Denkmäler für den Wohlstand der Bürger, aber auch für Tatkraft und Weitsicht ihres Anführers.[NEWLINE][NEWLINE]Der veröffentlichten Meinung genügt dies indes nicht. Druckerpressen und Zeitungshäuser überschwemmen die Stadtbürger mit flammenden Appellen, dem Gouverneur müsse feierlich Reverenz erwiesen werden für all die Jahre kluger Führung.[NEWLINE][NEWLINE]Ein nationales Denkmal solle her, stattlich und stolz, das seinen Ruhm noch in fernen Jahrhunderten preise.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Zeigt keine falsche Bescheidenheit, Gouverneur[COLOR_REVERT]", schreibt das Hauptstadtblatt, "[COLOR_SELECTED_TEXT]gebt dem Volk, was es wünscht - eine Statue des größten Staatsmannes unserer Zeit![COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>В Новом Свете вырастают большие цветущие города. Их великолепные здания являются каменными памятниками процветания их граждан, а также целеустремленности и предусмотрительности их лидера.[NEWLINE][NEWLINE]Но по мнению общества этого недостаточно. Печатные станки и газеты склоняют горожан к призывам воздать должное губернатору за все годы его мудрого руководства.[NEWLINE][NEWLINE]Должен быть воздвигнут национальный монумент, величественный и гордый, прославляющий его в веках.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Давайте без ложной скромности, губернатор.[COLOR_REVERT]" - пишет столичная газета. "[COLOR_SELECTED_TEXT]Дайте людям то, что они хотят - памятник величайшему государственному деятелю нашего времени![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Az Újvilágban nagy, virágzó városok jöttek létre. Pompás épületeik kőből faragott emlékművei polgáraik jólétének, valamint vezetőjük elszántságának és előrelátásának jelképei.[NEWLINE][NEWLINE]De még ez sem elég a közvélemény megelégedésére. A nyomdák és az újságok buzgó felhívásokkal ösztökélik a polgárokat, hogy tisztelegjenek a kormányzó előtt sokéves bölcs vezetéséért.[NEWLINE][NEWLINE]Egy nemzeti emlékművet kellene felállítani, méltóságteljes és büszke épületet, hogy évszázadokon át magasztalja a dicsőségét.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csak semmi álszerénység, Kormányzó![COLOR_REVERT]" - írja a fővárosi újság. "[COLOR_SELECTED_TEXT]Adja meg a népnek, amit követel - egy szobrot, amely korunk legnagyobb államférfiúját ismeri el![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_OXCART</Tag>
@@ -3396,14 +3428,16 @@
 		<French>Char à boeufs</French>
 		<German>Ochsenkarren</German>
 		<Russian>Ваша первая воловья упряж</Russian>
+		<Hungarian>Ökrösszekerek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_OXCART_HEAD</Tag>
-		<English>Slow but persistent</English>
+		<English>Slow but steady</English>
 		<Portuguese>Lento, mas persistente</Portuguese>
 		<French>Lent mais tenace</French>
 		<German>Langsam aber beständig</German>
 		<Russian>Медленно, но верно</Russian>
+		<Hungarian>Lassú, de tartós</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_OXCART_TEXT</Tag>
