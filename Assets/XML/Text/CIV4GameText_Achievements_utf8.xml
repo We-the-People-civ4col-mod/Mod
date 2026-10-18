@@ -3102,7 +3102,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_TRAPPER_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Trappers scour the forest for all the different animals[COLOR_REVERT]", you muse to yourself as you glance out the window at the recent delivery of the finest premium furs, rafted down the great river into town by the trappers.[NEWLINE][NEWLINE]Soon there will be no more beaver, bears and other furries in this part of the world if the Old World continues to be eager for such luxuries.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What am I thinking?[COLOR_REVERT]" you say to yourself. "[COLOR_SELECTED_TEXT]The colony needs the revenue now.[COLOR_REVERT]" Your remorse is over. You return to your afternoon tea.[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]Trappers scour the forest for all the different animals[COLOR_REVERT]", you muse to yourself as you glance out the window at the recent delivery of the finest premium furs, rafted down the great river by the trappers.[NEWLINE][NEWLINE]Soon they'll trap out the beaver and all the other animals with thick winter fur as long as the Old World demands such luxuries.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What am I thinking?[COLOR_REVERT]" you say to yourself. "[COLOR_SELECTED_TEXT]Back in Europe people trim their coats with cat fur. The colony needs the revenue now. We have to deliver quality because we certainly can't compete on price.[COLOR_REVERT]" Your remorse is over. You return to your afternoon tea.[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Os caçadores vasculham a floresta em busca de todos os animais diferentes[COLOR_REVERT]", você pensa enquanto olha pela janela para a recente entrega das melhores peles de luxo, transportadas pelo grande rio até a cidade pelos caçadores.[NEWLINE][NEWLINE]Em breve não haverá mais castores, ursos e outros peludos nesta parte do mundo se o Velho Mundo continuar ansioso por isso luxos.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]O que estou pensando?[COLOR_REVERT]" você diz para si mesmo. "[COLOR_SELECTED_TEXT]A colônia precisa da receita agora.[COLOR_REVERT]" Seu remorso acabou. Você volta para o chá da tarde.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Fallensteller stellen Fallen, hier im Wald den Tieren allen...[COLOR_REVERT]" sinniert Ihr vor Euch hin, als Ihr bei einem Blick aus dem Fenster die neue Ladung feinster Felle ankommen seht, die die Trapper den großen Fluss hinunter in die Stadt gebracht haben.[NEWLINE][NEWLINE]Bald wird es in diesem Teil der Welt keine Bieber, Bären und andere Pelztiere mehr geben, wenn die Alte Welt weiterhin so begierig auf diese Luxusware sein sollte.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach was...[COLOR_REVERT]" denkt Ihr Euch, "[COLOR_SELECTED_TEXT]solange die Kolonie daran so gut verdient wie bisher.[COLOR_REVERT]" Und schon ist es mit den Gewissensbissen auch schon wieder vorbei und Ihr widmet Euch wieder Eurem Nachmittagstee.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Звероловы заполонили лес своими капканами.[COLOR_REVERT]" — размышляете вы про себя, глядя в окно на очередную доставку лучших мехов премиум-класса, доставленных охотниками по великой реке в город.[NEWLINE][NEWLINE]Скоро здесь не останется бобров, лис и других пушных зверей, если Старый Свет и дальше будет стремиться к такой роскоши.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]С другой стороны, ничего не поделаешь.[COLOR_REVERT]" — говорите вы себе. "[COLOR_SELECTED_TEXT]Колонии нужны доходы.[COLOR_REVERT]" Ваше раскаяние закончилось. Вы возвращаетесь к послеобеденному чаю.[NEWLINE][NEWLINE]</Russian>
@@ -4353,21 +4353,24 @@
 		<French>À la poursuite des fuyards</French>
 		<German>Aufspüren von entlaufenen Sklaven</German>
 		<Russian>Выслеживание беглых рабов.</Russian>
+		<Hungarian>Szökött rabszolgák üldözése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_HUNTER_TEXT</Tag>
-		<English>You've hired a slave hunter to bring back runaway slaves. Some slave hunters choose a distinctive tartan so the owner's slaves can be identified by their clothing. Slaves get the bright tartan. The slave hunter wears hunting plaid to blend into the forest.[NEWLINE][NEWLINE]</English>
+		<English>You've hired a slave hunter to bring back runaway slaves. Some Scottish slave hunters choose a distinctive tartan so the owner's slaves can be identified by their clothing. Slaves get the bright tartan. The slave hunter wears hunting plaid to blend into the forest.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Você contratou um caçador de escravos para trazer escravos fugitivos. Alguns caçadores de escravos escolhem um tartan distinto para que os escravos do proprietário possam ser identificados pelas suas roupas. Os escravos recebem o tartan brilhante. O caçador de escravos usa um tecido discreto para se camuflar na floresta.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Ihr habt einen Sklavenjäger angeheuert, der Euch entlaufene Sklaven zurückbringt. Da ihr nun offensichtlich ganz und gar in dieses Geschäft eingestiegen seid und Eure Plantagen mit Sklaven betreibt, gibt es dazu eigentlich nichts mehr zu sagen. Möge der Herr Euch Eure Taten vergeben.[NEWLINE][NEWLINE]</German>
 		<Russian>Вы наняли охотника за рабами, чтобы вернуть сбежавших наглецов. Теперь, когда вы полностью посвятили себя этому делу и поручили работу на плантациях рабам, больше нечего сказать об этом. Господь милосердный да простит вас за дела неправедные.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Egy rabszolgavadászt béreltél fel, hogy hozza vissza a szökött rabszolgákat. A rabszolgavadászok gyakran választanak egy jellegzetes skót kockás mintát, hogy a tulajdonos rabszolgáit ruházatuk alapján lehessen azonosítani. A rabszolgák kapják a világos kockás mintát, a rabszolgavadász pedig, Skóciára emlékezve, vadászkockás ruhát visel, hogy beleolvadjon az erdőbe.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER</Tag>
-		<English>First slave master</English>
+		<English>First slave overseer</English>
 		<Portuguese>Primeiro mestre de escravos</Portuguese>
 		<French>Premier contre-maître</French>
 		<German>Erster Sklavenaufseher</German>
 		<Russian>Первый надсмотрщик за рабами</Russian>
+		<Hungarian>Az első Rabszolgafelügyelő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER_HEAD</Tag>
@@ -4376,6 +4379,7 @@
 		<French>Faites claquer le fouet</French>
 		<German>Antreiben mit der Peitsche</German>
 		<Russian>Помощь хлыста</Russian>
+		<Hungarian>Az első Rabszolgafelügyelő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_SLAVE_MASTER_TEXT</Tag>
@@ -4383,6 +4387,7 @@
 		<Portuguese>O açúcar é o primeiro alimento que permite aos trabalhadores europeus trabalhar muitas horas, mas tem de ser barato. O progresso no Velho País exige eficiência no Novo, e isso significa ter um superintendente.[NEWLINE][NEWLINE]Antes de aparecermos para comprar escravos na África, os reis locais tinham seu próprio comércio de escravos. Os abolicionistas querem que ignoremos a antiga cultura africana.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Zuerst entreißt Ihr diese armen Kreaturen ihrer Heimat und ihren Familien und schafft sie unter erbärmlichen Bedingungen in die Neue Welt und nun heuert Ihr auch noch einen Aufseher an, der die Sklaven mit der Peitsche zur Arbeit antreiben wird? [NEWLINE][NEWLINE]Habt Ihr denn gar kein Gewissen? Gewiss, Eure Produktivität wird erheblich steigen - aber zu welchem Preis? Noch gibt es ein zurück. Der Herr wird Euch vielleicht vergeben, wenn Ihr von Eurem Plan ablasst und den Aufseher anderweitig verwendet.[NEWLINE][NEWLINE]</German>
 		<Russian>Сначала вы отрываете этих несчастных от их домов и семей, привозите в Новый Свет в нечеловеческих условиях, а теперь нанимаете надсмотрщика, который будет заставлять их работать при помощи кнута и палок?[NEWLINE][NEWLINE]У вас совсем нет совести? Конечно, производительность ваших плантаций значительно повысится, но какой ценой?! Однако еще не всё потеряно. Наш Господь великодушен и может простить вас, если вы откажетесь от своего плана и воспользуетесь надсмотрщиком в другом месте.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A cukor az első olyan étel, ami lehetővé teszi az európai munkások számára a hosszú munkaidőt, de olcsónak kell lennie. A Régi Világban elért fejlődés hatékonyságot követel az Újvilágban, és ez felügyelőket jelent.[NEWLINE][NEWLINE]Mielőtt megjelentünk Afrikában rabszolgákat vásárolni, a helyi királyoknak saját rabszolga-kereskedelmük volt. Az abolicionisták azt akarják, hogy figyelmen kívül hagyjuk az ősi Afrikai kultúrát.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES</Tag>
@@ -4391,6 +4396,7 @@
 		<French>Cinq esclaves africains</French>
 		<German>Fünf afrikanische Sklaven</German>
 		<Russian>Пять африканских рабов</Russian>
+		<Hungarian>Öt afrikai rabszolga</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_HEAD</Tag>
@@ -4399,13 +4405,15 @@
 		<French>Expansion de l'esclavage</French>
 		<German>Ausweitung der Sklaverei</German>
 		<Russian>Распространение рабства</Russian>
+		<Hungarian>A rabszolgaság terjedése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_AFRICAN_SLAVES_TEXT</Tag>
-		<English>My lord, your plantations and farms are booming, no question - but at what cost? It seems you have finally switched to running the colonies in the New World with slaves instead of God-fearing settlers from Europe. [NEWLINE][NEWLINE]The colony is becoming a godless place. This is not the Garden of Eden we were promised. If you free the slaves, perhaps more emigrants will join you. How will you ever free yourself from the yoke of the King's oppression if so much of your population remain unfree?[NEWLINE][NEWLINE]</English>
+		<English>My lord, your plantations and farms are booming, no question - but at what cost? It seems you have finally switched to running the colonies in the New World with slaves instead of God-fearing settlers from Europe. [NEWLINE][NEWLINE]The colony is becoming a godless place. This is not the Garden of Eden we were promised. If you free the slaves, perhaps more emigrants will join you. How will you ever free yourself from the yoke of the King's oppression if so much of your population remains unfree?[NEWLINE][NEWLINE]</English>
 		<Portuguese>Meu senhor, as suas plantações e fazendas estão crescendo, sem dúvida - mas a que custo? Parece que você finalmente passou a administrar as colônias no Novo Mundo com escravos, em vez de colonos europeus tementes a Deus. [NEWLINE][NEWLINE]A colônia está se tornando um lugar sem Deus. Este não é o Jardim do Éden que nos foi prometido. Se você libertar os escravos, talvez mais emigrantes se juntem a você. Como você se libertará do jugo da opressão do rei se grande parte de sua população permanecer sem liberdade?[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Plantagen und Farmen nehmen einen gewaltigen Aufschwung, keine Frage - aber zu welchem Preis? Es scheint Ihr seid nun endgültig dazu übergegangen, die Kolonien in der Neuen Welt mit Sklaven zu betreiben anstatt mit gottesfürchtigen Siedlern aus Europa. [NEWLINE][NEWLINE]Die Kolonie entwickelt sich offenbar immer mehr zu einem gottlosen Ort. Das hier ist nicht der Garten Eden, den wir alle erwartet haben. Wenn Ihr die Sklaven freilasst, schließen sich Euch vielleicht wieder mehr Auswanderer an. Wie wollt Ihr Euch je vom Joch der Unterdrückung durch den König befreien, wenn selbst Teile Eurer Bevölkerung unfrei bleiben? [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, плантации и фермы процветают - но какой ценой? Вы предпочитаете использовать в колониях Нового Света труд рабов вместо богобоязненных переселенцев из Европы.[NEWLINE][NEWLINE]Кажется, колония все больше и больше превращается в безбожное место. Это не тот райский сад, которого мы все ожидали. Если вы освободите рабов, возможно, к вам присоединится больше эмигрантов. Как вы собираетесь освободиться от ига королевского гнета, если часть вашего населения останется несвободной?[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, az ültetvényei és farmjai virágoznak, ez nem kérdés - de milyen áron? Úgy tűnik, hogy végül áttért arra, hogy a gyarmatokat az Újvilágban rabszolgákkal működtesse az istenfélő európai telepesek helyett. [NEWLINE][NEWLINE]Úgy tűnik, a gyarmat egyre inkább istentelen hellyé válik. Ez nem az Édenkert, amire mindannyian számítottunk. Ha felszabadítja a rabszolgákat, talán még több kivándorló fog csatlakozni Önhöz. Hogyan fogja valaha is megszabadítani magát a király elnyomásának igájától, ha a lakosság egy része továbbra is szolga marad?[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES</Tag>
@@ -4414,6 +4422,7 @@
 		<French>Cinq affranchis</French>
 		<German>Fünf befreite Sklaven</German>
 		<Russian>Пять освобожденных рабов</Russian>
+		<Hungarian>Öt felszabadított rabszolga</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES_HEAD</Tag>
@@ -4422,6 +4431,7 @@
 		<French>D'esclaves à hommes libres</French>
 		<German>Sklaven werden freie Bürger</German>
 		<Russian>Рабы становятся свободными гражданами</Russian>
+		<Hungarian>A rabszolgák szabad polgárokká válnak</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_FREED_SLAVES_TEXT</Tag>
@@ -4429,6 +4439,7 @@
 		<Portuguese>Milorde, na sua colônia cada vez mais escravos estão a tornar-se cidadãos livres. Eles agora se voluntariam para ajudar a desenvolver a colônia. Isso aumentará sua produtividade. [NEWLINE][NEWLINE]Talvez mais escravos encontrem o caminho para a liberdade. Não faria mal à colônia.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, in Eurer Kolonie werden immer mehr Sklaven zu freien Bürgern. Sie werden nun freiwillig für den Aufbau und den Erfolg der Kolonie mitarbeiten. Dadurch erhöht sich Ihre Produktivität. [NEWLINE][NEWLINE]Vielleicht finden ja noch mehr Sklaven den Weg in die Freiheit. Der Kolonie würde es nicht schaden. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, в колонии все больше и больше рабов становятся свободными гражданами. Теперь они добровольно помогают развивать колонию. В конечном итоге это повысит их продуктивность.[NEWLINE][NEWLINE]Возможно, в будущем еще больше рабов найдут путь к свободе. Это не повредит колонии. Мы будем молить Господа направить вас на путь истинный.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a gyarmatán egyre több rabszolga válik szabad polgárrá. Önként jelentkeznek, hogy segítsenek a kolónia fejlesztésében. Ez növeli a termelékenységüket. [NEWLINE][NEWLINE]Talán még több rabszolga találja meg a szabadság útját. Ez nem okozna kárt a kolóniának.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE</Tag>
@@ -4437,6 +4448,7 @@
 		<French>30.000 biens échangés</French>
 		<German>30.000 Waren gehandelt</German>
 		<Russian>30'000 товаров продано</Russian>
+		<Hungarian>30.000 árut értékesítése</Hungarian>
 	 </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_HEAD</Tag>
@@ -4445,6 +4457,7 @@
 		<French>Trente mille biens échangés</French>
 		<German>Dreißigtausend Waren gehandelt</German>
 		<Russian>Бойкая торговля</Russian>
+		<Hungarian>Harmincezer áru értékesítése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HIGH_PROFITABLE_TRADE_TEXT</Tag>
@@ -4452,14 +4465,16 @@
 		<Portuguese>Meu Senhor, a sua economia está agora a funcionar bem, o problema da pirataria está sob controle e uma grande frota mercante transporta as suas mercadorias para a Europa. Suas colônias são a pérola do império do seu rei.[NEWLINE][NEWLINE]Apesar da carga tributária cada vez maior, seu tesouro está enchendo. Gaste parte desse dinheiro para proteger a colônia. Tanta riqueza atrai invejosos.[NEWLINE][NEWLINE]Se você está pensando em renunciar ao Rei, tenha em mente que isso precisa ser bem planejado. Você precisa de um exército, armas, suprimentos e muito mais. Você perderá tudo se não estiver bem preparado para a revolução.</Portuguese>
 		<German>Mylord, Eure Wirtschaft läuft mittlerweile wie geschmiert, Ihr habt das Piratenproblem im Griff und eine große Handelsflotte schafft Eure Waren nach Europa. Eure Kolonien sind mittlerweile die Perle des Reiches Eures Königs.[NEWLINE][NEWLINE]Trotz der immer größeren Steuerlast füllt sich Eure Schatzkammer mehr und mehr. Ihr solltet auf jeden Fall auch den Schutz der Kolonie nicht vergessen. So viel Reichtum ruft Neider auf den Plan.[NEWLINE][NEWLINE]Und solltet Ihr darüber nachdenken, den König König sein zu lassen und sich eventuell vom König loszusagen, dann bedenkt: Das will gut geplant sein. Ihr braucht dafür auch eine Armee, viele Waffen, Vorräte und noch mehr. Ihr könntet alles verlieren, wenn Ihr nicht gut für eine Revolution gerüstet seid. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваша экономика теперь работает гладко, проблема пиратства решена и большой торговый флот везет ваши товары в Европу. Ваши колонии — жемчужины империи вашего Короля.[NEWLINE][NEWLINE]Несмотря на постоянно растущее налоговое бремя, ваша казна пополняется все больше и больше. Но не забывайте защищать колонию. Такое богатство привлекает завистников.[NEWLINE][NEWLINE]Если вы думаете об отречении от Короля, помните, что это нужно хорошо спланировать. Вам понадобится армия, оружие, припасы и многое другое. Вы потеряете все, если не будете хорошо подготовлены к революции.</Russian>
+		<Hungarian>Uram, a gazdasága most már zökkenőmentesen működik, a kalózkodás problémáját kézben tartja, és egy nagy kereskedelmi flotta szállítja az áruját Európába. Gyarmatai a királyi birodalom gyöngyszemei.[NEWLINE][NEWLINE]Az egyre növekvő adóterhek ellenére kincstára mindinkább megtelik. Költsön el belőle, hogy megvédje a gyarmatokat! A sok gazdagság vonzza az irigyeket.[NEWLINE][NEWLINE]Ha a Királytól való elszakadáson gondolkodik, tartsa szem előtt, hogy ezt jól meg kell tervezni. Szüksége van hadseregre, fegyverekre, ellátmányra és még sok minden másra. Mindent elveszít, ha nincs jól felkészülve a forradalomra.</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT</Tag>
-		<English>Horse and Carriages</English>
+		<English>Horse-drawn carriages</English>
 		<Portuguese>Cavalos e Carruagens</Portuguese>
 		<French>Chevaux et coches</French>
 		<German>Viele Kutschengespanne</German>
 		<Russian>Лошади и транспорт</Russian>
+		<Hungarian>Lovak és szekerek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_HEAD</Tag>
@@ -4468,13 +4483,15 @@
 		<French>Les coches facilitent le transport</French>
 		<German>Kutschen erleichtern den Transport</German>
 		<Russian>Развитие перевозок</Russian>
+		<Hungarian>A szekerek javítják a szállítást</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MASS_TRANSPORT_TEXT</Tag>
-		<English>Milord, you've made a lot of progress developing your colonies. More and more carriages. wagons and carts are travelling on the well-paved roads that connect your coastal cities with the inland boondocks where they collect a variety of merchandise for export.[NEWLINE][NEWLINE]A solid infrastructure is a wonderful thing. Keep up the good work![NEWLINE][NEWLINE]</English>
+		<English>Milord, you've made real progress developing your colonies. More and more carriages. wagons and carts are travelling on the well-paved roads connecting your coastal cities with inland towns that have a variety of merchandise for export.[NEWLINE][NEWLINE]Solid infrastructure is a wonderful thing. Keep up the good work![NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, você fez muito progresso no desenvolvimento de suas colônias. Cada vez mais carruagens. carroças e carroças viajam pelas estradas bem pavimentadas que conectam suas cidades costeiras com o interior, onde coletam uma variedade de mercadorias para exportação.[NEWLINE][NEWLINE]Uma infraestrutura sólida é uma coisa maravilhosa. Continue com o bom trabalho![NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Ihr macht beachtliche Fortschritte bei der Erschließung Eurer Kolonien. Immer mehr Kutschen und Fuhrwerke sind auf Euren gut ausgebauten Straßen unterwegs, um die Küstenstädte mit dem Hinterland zu verbinden und Waren für den Export heranzuschaffen. [NEWLINE][NEWLINE]Eine funktionierende Infrastruktur ist eine gute Sache. Macht weiter so! [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы добились больших успехов в развитии своих колоний. Все больше различных вагонов, фургонов и повозок едут по хорошо вымощенным дорогам, которые соединяют ваши прибрежные города с внутренними поместьями, где они собирают разнообразные товары на экспорт.[NEWLINE][NEWLINE]Надежная инфраструктура — замечательная вещь. Продолжайте в том же духе![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, sokat haladt a kolóniák fejlesztésével. Egyre több szekér áll rendelkezésre. Kocsik és szekerek haladnak a jól burkolt utakon, amelyek összekötik tengerparti városait a szárazföldi településekkel, ahol különféle árukat állítanak elő exportra.[NEWLINE][NEWLINE]A szilárd infrastruktúra csodálatos dolog. Csak így tovább!</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS</Tag>
@@ -4483,6 +4500,7 @@
 		<French>Quelques petits vaisseaux</French>
 		<German>Einige kleinere Schiffe</German>
 		<Russian>Несколько малых судов</Russian>
+		<Hungarian>Néhány kis hajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS_HEAD</Tag>
@@ -4491,13 +4509,15 @@
 		<French>Petits, rapides et agiles</French>
 		<German>Klein, schnell und wendig</German>
 		<Russian>Маленький, быстрый и маневренный</Russian>
+		<Hungarian>Kicsi, gyors és mozgékony</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SOME_SMALL_VESSELS_TEXT</Tag>
-		<English>Milord, congratulations on your flotilla, your new fleet of small naval vessels. These ships may be compact, but that makes them agile and fast.[NEWLINE][NEWLINE]Exactly the right ships for the narrow bays and flat coastal sections here. Remember not to neglect the large transport ships that will carry your goods across the ocean to Europe.[NEWLINE][NEWLINE]</English>
+		<English>Milord, congratulations on your flotilla, this new fleet of small naval vessels. These ships may be compact, but that makes them agile and fast.[NEWLINE][NEWLINE]Exactly the right ships for the narrow bays and flat coastal sections here. Remember not to neglect the large transport ships that will carry your goods across the ocean to Europe.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, parabéns pela sua flotilha, sua nova frota de pequenas embarcações de guerra. Esses navios podem ser compactos, mas isso os torna ágeis e rápidos.[NEWLINE][NEWLINE]Exatamente os navios certos para as baías estreitas e seções costeiras planas daqui. Lembre-se de não negligenciar os grandes navios de transporte que transportarão suas mercadorias através do oceano até a Europa.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, man darf Euch zum Aufbau einer Flotille von kleineren Marinefahrzeugen neuen Typs gratulieren. Diese Fahrzeuge sind zwar klein, dafür aber auch wendig und schnell. [NEWLINE][NEWLINE]Genau die richtigen Schiffe für die engen Buchten und flachen Küstenabschnitte hier. Ihr solltet aber auch die großen Transportschiffe wie die Westindienfahrer und Galleonen nicht vernachlässigen, um Eure Waren nach Europa verschiffen zu können.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, поздравляю с новым флотом малых кораблей. Они могут быть небольшими, но это делает их маневренными и быстрыми.[NEWLINE][NEWLINE]Это как раз то, что нужно в узких заливах и на мелководных участках побережья. Но не пренебрегайте большими транспортными судами, которые должны доставлять ваши товары через океан в Европу.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, gratulálok a flottillához, a kis hajókból álló új flottájához. Lehet, hogy ezek a hajók nem nagyok, de ettől fürgék és gyorsak.[NEWLINE][NEWLINE]Pontosan a megfelelő hajók az itteni szűk öblökhöz és lapos partvidéki szakaszokhoz. Ne feledkezzen el a nagy szállítóhajókról sem, amelyek az óceánon át Európába szállítják majd az áruját![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS</Tag>
@@ -4506,6 +4526,7 @@
 		<French>Quelques gros navires marchands</French>
 		<German>Mehrere große Handelsschiffe</German>
 		<Russian>Несколько крупных торговых судов</Russian>
+		<Hungarian>Számos nagy kereskedelmi hajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS_HEAD</Tag>
@@ -4514,6 +4535,7 @@
 		<French>Des cales grandes comme une église</French>
 		<German>Laderäume so große wie eine Kirche</German>
 		<Russian>Грузовые отсеки размером с церковь[NEWLINE]</Russian>
+		<Hungarian>A rakomány akkora, mint egy ház</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BIG_VESSELS_TEXT</Tag>
@@ -4521,6 +4543,7 @@
 		<Portuguese>Milorde, você está de parabéns pela construção de uma impressionante frota de navios mercantes. Estas embarcações são um pouco mais lentas, mas robustas e adequadas para uma travessia do Atlântico. Nos seus enormes porões de carga, podem transportar enormes quantidades de mercadorias para a Europa.[NEWLINE][NEWLINE]São exatamente os navios certos para uma marinha mercante. Ao mesmo tempo, tome cuidado para não negligenciar as pequenas e manobráveis escunas, brigues e saveiros para o comércio ao longo de suas próprias costas. Essas pequenas embarcações são mais adequadas para águas costeiras rasas.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, man darf Euch zum Aufbau einer Flotille von imposanten Handelsschiffen neuen Typs gratulieren. Diese Fahrzeuge sind zwar etwas langsamer, dafür aber stabil gebaut und für eine Atlantiküberquerung gut geeignet. Sie haben riesige Laderäume und können enorme Mengen an Waren nach Europa transportieren. [NEWLINE][NEWLINE]Genau die richtigen Schiffe für den Aufbau einer Handelsmarine. Ihr solltet aber auch die kleinen und wendigen Schooner, Brigs und Sloops nicht vernachlässigen, um an Euren eigenen Küsten Handel zu treiben. Für die seichten Küstengewässer sind diese kleinen Fahrzeuge oft besser geeignet.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вас можно поздравить с постройкой внушительного флота торговых кораблей. И хотя эти суда немного неповоротнливы, но они прочны и отлично подходят для пересечения Атлантики. В своих огромных трюмах они могут перевозить невероятное количество товаров в Европу.[NEWLINE][NEWLINE]Это как раз те корабли, которые подходят торговому флоту. Однако не пренебрегайте маленькими и маневренными шхунами, бригами и шлюпами для торговли вдоль своих берегов. Эти небольшие суда лучше подходят для мелководья прибрежных вод.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, gratulálok a lenyűgöző kereskedelmi hajóflotta megépítéséhez! Ezek a hajók kissé lassabbak, de erősek és alkalmasak az Atlanti-óceánon való átkelésre. Hatalmas rakterükben rengeteg árut lehet Európába szállítani.[NEWLINE][NEWLINE]Pontosan a megfelelő hajók egy kereskedelmi flotta számára. Ugyanakkor ne feledkezzen meg a saját partjai mentén folytatott kereskedelemhez szükséges kicsi és jól manőverező szkúnerekről, briggekről és naszádokról. Ezek a kis hajók jobbak a sekély part menti vizeken.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS</Tag>
@@ -4529,6 +4552,7 @@
 		<French>Quelques navires commerciaux de taille moyenne</French>
 		<German>Mehrere mittelgroße Handelsschiffe</German>
 		<Russian>Несколько средних торговых кораблей</Russian>
+		<Hungarian>Számos közepes méretű hajó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS_HEAD</Tag>
@@ -4537,13 +4561,15 @@
 		<French>Une marine marchande se forme</French>
 		<German>Eine Handelsmarine entsteht</German>
 		<Russian>Появление торгового флота</Russian>
+		<Hungarian>Egy kereskedőhajó felbukkan</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_MEDIUM_VESSELS_TEXT</Tag>
-		<English>Milord, congratulations on the construction of a flotilla of merchant ships. These vessels will form the basis of your trading activities. They are suitable for an Atlantic crossing. The ships are quite cheap and easy to build. With them you can transport your first goods to Europe and explore the coasts.[NEWLINE][NEWLINE]However, these ships are not quite up to date with the latest developments in shipping. Marine designers are already working on faster ships to carry significantly more goods. You might want to think about a shipyard that can build even better ships.[NEWLINE][NEWLINE]</English>
+		<English>Milord, congratulations on the construction of a fleet of merchant ships. These vessels, suitable for an Atlantic crossing, are the basis of your trading activities. The ships are quite cheap and easy to build. With them you can transport your first goods to Europe and explore the coasts.[NEWLINE][NEWLINE]However, these ships are not quite up to date with new developments in shipping. Marine designers are already working on faster ships to carry significantly more goods. You might want to think about a shipyard capable of more advanced ships.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, parabéns pela construção de uma flotilha de navios mercantes. Esses navios formarão a base de suas atividades comerciais. Eles são adequados para uma travessia do Atlântico. Os navios são bastante baratos e fáceis de construir. Com eles você pode transportar suas primeiras mercadorias para a Europa e explorar as costas.[NEWLINE][NEWLINE]No entanto, esses navios não estão atualizados com os mais recentes desenvolvimentos no transporte marítimo. Os projetistas marítimos já estão trabalhando em navios mais rápidos para transportar um número significativamente maior de mercadorias. Você pode querer pensar em um estaleiro que possa construir navios ainda melhores.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, man darf Euch zum Aufbau einer Flotille von Handelsschiffen gratulieren. Diese Fahrzeuge werden den Grundstock für Eure Handelsaktivitäten bilden und sie sind für eine Atlantiküberquerung geeignet. Die Schiffe sind recht billig und leicht zu bauen. Mit ihnen könnt Ihr erste Waren nach Europa transportieren und die Küsten erkunden.[NEWLINE][NEWLINE]Die Schiffe sind allerdings nicht mehr ganz auf dem neuesten Stand der Entwicklung in der Seefahrt. Es gibt Pioniere der Seefahrt, die bereits an schnelleren und wenigeren Schiffen arbeiten, die auch deutlich mehr Waren transportieren können. Ihr solltet vielleicht über den Bau einer Werft nachdenken, um noch bessere Schiffe bauen zu können.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, поздравляю с постройкой флотилии торговых судов. Эти суда станут основой нашей торговой деятельности. Они подходят для пересечения Атлантики и довольно дешевы и просты в постройке. На них мы сможем доставить свои первые товары в Европу и исследовать побережье.[NEWLINE][NEWLINE]Однако эти корабли не совсем соответствуют последним разработкам в области судостроения. Морские конструкторы уже работают над более быстрыми кораблями, которые также могут перевозить значительно больше грузов. Возможно, вы захотите подумать о верфи, которая может строить еще более совершенные корабли.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, gratulálok a kereskedelmi hajóflotta megépítéséhez! Ezek a hajók képezik majd kereskedelmi tevékenysége alapját. Alkalmasak az Atlanti-óceánon való átkelésre. A hajók meglehetősen olcsók és könnyen megépíthetők. Velük el tudja szállítani az első áruit Európába és fel tudja fedezni a partokat.[NEWLINE][NEWLINE]Ezek a hajók azonban nem egészen felelnek meg a hajózás legújabb követelményeinek. A hajótervezők már gyorsabb hajókon dolgoznak, amelyek lényegesen több árut is képesek szállítani. Érdemes lenne elgondolkodni egy olyan hajógyáron, amely még jobb hajókat tud építeni.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES</Tag>
@@ -4552,14 +4578,16 @@
 		<French>Cinq trésors</French>
 		<German>Fünf Schätze</German>
 		<Russian>Пять сокровищ</Russian>
+		<Hungarian>Öt Kincs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_HEAD</Tag>
-		<English>Treasures were hoarded</English>
+		<English>Treasures have been hoarded</English>
 		<Portuguese>Tesouros foram acumulados</Portuguese>
 		<French>Des trésors sous le coude</French>
 		<German>Schätze wurden gehortet</German>
 		<Russian>Запасы золота</Russian>
+		<Hungarian>Gyűlnek a kincsek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_TREASURES_TEXT</Tag>
@@ -4567,6 +4595,7 @@
 		<Portuguese>Milorde, você atualmente tem cinco baús de tesouro cheios de ouro até a borda. Bandidos, a Câmara Municipal e outros ralé certamente estão notando esse ouro. Você tem que guardar seus tesouros o tempo todo. [NEWLINE][NEWLINE]Você deve conseguir um navio adequado que possa levar os tesouros para a Europa e transformá-los em dinheiro vivo. Traga-os você mesmo para a Europa, a menos que queira deixar o rei ficar com a maior parte para si![NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Ihr nennt derzeit fünf Schatztruhen, randvoll gefüllt mit Gold, Euer Eigentum. Banditen, der Stadtrat und anderes Gesindel sind sicher schon hinter dem Gold her. Außerdem müsst Ihr die Schätze die ganze Zeit bewachen lassen. [NEWLINE][NEWLINE]Ihr solltet darüber nachdenken, Euch ein geeignetes Transportmittel zu beschaffen und die Schätze nach Europa schaffen, wo man sie Euch mit barer Münze vergüten wird. Bringt sie auf jeden Fall selbst nach Europa. Der König wird ansonsten den größten Teil davon in seine eigene Schatzkammer wandern lassen! [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, у вас сейчас пять сундуков с сокровищами, до краев наполненных золотом. Индейцы, бандиты и прочие негодяи наверняка будут охотиться за ними. Нам следует позаботиться об охране.[NEWLINE][NEWLINE]Вы должны найти подходящее судно, которое сможет доставить сокровища в Европу и превратить их в наличные деньги, если не хотите, чтобы Король оставил большую часть себе![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, jelenleg öt kincsesládája van, amelyek csordultig vannak arannyal. A banditák, a városi tanács és mindenféle csőcselék már biztosan észrevette ezt az aranyat. Állandóan őriznie kell a kincseit! [NEWLINE][NEWLINE]Szereznie kellene egy megfelelő hajót, amelyik Európába tudja vinni a kincseket és ott pénzzé teheti őket. Saját maga vigye őket Európába, hacsak nem akarja, hogy a király a legnagyobb részt belőle megtartsa magának![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MULATTOS</Tag>
@@ -4575,6 +4604,7 @@
 		<French>Dix mulâtres</French>
 		<German>Zehn Mulatten</German>
 		<Russian>Десять мулатов</Russian>
+		<Hungarian>Tíz mulatt</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MULATTOS_HEAD</Tag>
@@ -4583,13 +4613,15 @@
 		<French>L'Europe et l'Afrique se mêlent en eux</French>
 		<German>Nachkommen europäischer Siedler [NEWLINE]und afrikanischer Sklaven</German>
 		<Russian>Потомки европейских поселенцев и африканских рабов</Russian>
+		<Hungarian>Európai telepesek és[NEWLINE]Afrikai rabszolgák leszármazottai</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MULATTOS_TEXT</Tag>
-		<English>My lord, in your colonies the proportion of mixed descendants of European settlers and African slaves is increasing. A not-insignificant part of your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that the mutual dislike of both races is not as great as thought. It's only natural for the population to develop accordingly.[NEWLINE][NEWLINE]</English>
+		<English>My lord, in your colonies the proportion of mixed descendants of European settlers and African slaves is increasing. A not-insignificant part of your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that, for European fathers in particular, hostility between the races has limits. The population develops accordingly.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Meu senhor, nas suas colônias a proporção de descendentes mistos de colonos europeus e de escravos africanos está a aumentar. Uma parte não insignificante de suas colônias pertence a este grupo populacional.[NEWLINE][NEWLINE]Parece que a antipatia mútua de ambas as raças não é tão grande quanto se pensava. É natural que a população se desenvolva adequadamente.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, in Euren Kolonien steigt der Anteil an gemischten Nachkommen von europäischen Siedlern und afrikanischen Sklaven. Ein nicht unerheblicher Anteil in Euren Kolonien gehört dieser Bevölkerungsgruppe an. [NEWLINE][NEWLINE]Es scheint, als wäre die gegenseitige Abneigung beider Rassen doch nicht bei allen so groß wie gedacht. Da scheint es nur natürlich zu sein, dass sich die Bevölkerung dementsprechend weiterentwickelt. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, в колониях увеличивается доля смешанных потомков европейских переселенцев и африканских рабов. Немалая часть ваших колоний принадлежит к этой группе населения.[NEWLINE][NEWLINE]Кажется, взаимная неприязнь обеих рас не так уж велика, как кажется. Так что вполне естественно, что население будет приростать соответствующим образом.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a gyarmatain egyre nő az Európai telepesek és az Afrikai rabszolgák vegyes leszármazottainak aránya. A gyarmatainak jelentős része tartozik ehhez a népességcsoporthoz.[NEWLINE][NEWLINE]Úgy tűnik, hogy a két faj kölcsönös ellenszenve nem olyan nagy, mint gondoltuk. Természetes, hogy a népesség ennek megfelelően fejlődik.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MESTIZZOS</Tag>
@@ -4598,6 +4630,7 @@
 		<French>Dix métis</French>
 		<German>Zehn Mestizen</German>
 		<Russian>Десять метисов</Russian>
+		<Hungarian>Tíz mesztic</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MESTIZZOS_HEAD</Tag>
@@ -4606,13 +4639,15 @@
 		<French>L'Europe et les Amériques se mêlent en eux</French>
 		<German>Nachkommen europäischer Siedler [NEWLINE]und indigener Bevölkerung</German>
 		<Russian>Потомки европейских поселенцев и тузевцев</Russian>
+		<Hungarian>Európai telepesek és[NEWLINE]az Indián népesség leszármazottai</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MESTIZZOS_TEXT</Tag>
-		<English>My lord, in your colonies, the share of mixed descendants of European settlers and Indigenous population is increasing. A not-insignificant proportion in your colonies belongs to this population group.[NEWLINE][NEWLINE]It seems that the mutual dislike of both races is not as great as thought. It's only natural that the population develops accordingly.[NEWLINE][NEWLINE]</English>
+		<English>My lord, in your colonies, the number of mixed descendants of European settlers and the Indigenous population is increasing. A not-insignificant proportion in your colonies belongs to this population group.[NEWLINE][NEWLINE]The expected mutual dislike between the races is complicated with captives on both sides, plus socializing through trade. It's only natural that the population develops accordingly.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Meu senhor, nas suas colônias, a proporção de descendentes mistos de colonos europeus e de população indígena está a aumentar. Uma proporção não insignificante em suas colônias pertence a este grupo populacional.[NEWLINE][NEWLINE]Parece que a antipatia mútua de ambas as raças não é tão grande quanto se pensava. É natural que a população se desenvolva de acordo.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, in Euren Kolonien steigt der Anteil an gemischten Nachkommen von europäischen Siedlern und indigener Bevölkerung. Ein nicht unerheblicher Anteil in Euren Kolonien gehört dieser Bevölkerungsgruppe an. [NEWLINE][NEWLINE]Es scheint, als wäre die gegenseitige Abneigung beider Rassen doch nicht bei allen so groß wie gedacht. Da scheint es nur natürlich zu sein, dass sich die Bevölkerung dementsprechend weiterentwickelt. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, в колониях увеличивается доля смешанных потомков европейских переселенцев и местных жителей. Немалая часть ваших колоний принадлежит к этой группе населения.[NEWLINE][NEWLINE]Кажется, взаимная неприязнь обеих рас не так уж велика, как кажется. Так что вполне естественно, что население будет приростать соответствующим образом.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a gyarmatain egyre nő az európai telepesek és az őslakosok vegyes leszármazottainak aránya. A gyarmatai jelentős arányban tartoznak ehhez a népességcsoporthoz.[NEWLINE][NEWLINE]Úgy tűnik, hogy a két faj kölcsönös ellenszenve nem olyan nagy, mint gondoltuk. Természetes, hogy a népesség ennek megfelelően fejlődik.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_JUDGES</Tag>
@@ -4621,6 +4656,7 @@
 		<French>Trois juges</French>
 		<German>Drei Richter</German>
 		<Russian>Три судьи</Russian>
+		<Hungarian>Három bíró</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_JUDGES_HEAD</Tag>
@@ -4629,13 +4665,15 @@
 		<French>Établissement d'un système juridique</French>
 		<German>Aufbau eines Justizsystems</German>
 		<Russian>Становление системы правосудия</Russian>
+		<Hungarian>Bírósági rendszer létrehozása</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_JUDGES_TEXT</Tag>
-		<English>My lord, I congratulate you on the ongoing establishment of a working judiciary. A well-organized colony needs a functioning judicial system.[NEWLINE][NEWLINE]You seem to be well on your way to dealing with all the riffraff who've come here to the New World. The problems are just the same as in the Old World. Keep order! The King and the good settlers will thank you.[NEWLINE][NEWLINE]</English>
+		<English>My lord, I congratulate you on the ongoing establishment of a working judiciary. A well-organized colony needs a functioning court system.[NEWLINE][NEWLINE]You seem to be well on your way to dealing with all the riffraff who've come here to the New World. The problems are just the same as in the Old World. Keep order! The King and the good settlers will thank you.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Meu senhor, felicito-o pelo estabelecimento contínuo de um judiciário funcional. Uma colônia bem organizada precisa de um sistema judicial funcional.[NEWLINE][NEWLINE]Você parece estar no caminho certo para lidar com toda a ralé que veio aqui para o Novo Mundo. Os problemas são os mesmos do Velho Mundo. Mantenha a ordem! O rei e os bons colonos vão agradecer.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, ich beglückwünsche Euch zu dem fortschreitenden Aufbau einer finktionierenden Justiz. Eine gut organisierte Kolonie braucht ein funktionierendes Justizsystem. [NEWLINE][NEWLINE]Ihr seid offenbar auf einem guten Weg um mit dem ganzen Gesindel fertig zu werden, dass es hier in die Neue Welt verschlagen hat. Die Probleme sind dieselben wie in der Alten Welt. Haltet Ordnung und der König und die braven Siedler werden es Euch danken. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, поздравляю, прогресс в становлении судебной системы очевиден всем. Нашим колониям это нужно, как никогда.[NEWLINE][NEWLINE]Кажется, вы уже научились разбираться со всей этой сволочью, пришедшей сюда, в Новый Свет. Да, проблемы те же, что и в Старом Свете. Наведите здесь порядок! Король и добропорядочные поселенцы будут вам благодарны.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, gratulálok a működő igazságszolgáltatás folyamatban lévő létrehozásához. Egy jól szervezett kolóniának szüksége van egy működő igazságszolgáltatási rendszerre.[NEWLINE][NEWLINE]Úgy tűnik, jó úton halad az Újvilágba érkezett csőcselékkel való leszámolásban. A problémák ugyanazok, mint az Óvilágban. Tartsunk rendet! A Király és a jó telepesek hálásak lesznek.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY</Tag>
@@ -4644,6 +4682,7 @@
 		<French>Quinze milices coloniales</French>
 		<German>Fünfzehn koloniale Milizen</German>
 		<Russian>Пятнадцать колониальных ополченцев</Russian>
+		<Hungarian>Tizenöt Gyarmati Nemzetőr</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY_HEAD</Tag>
