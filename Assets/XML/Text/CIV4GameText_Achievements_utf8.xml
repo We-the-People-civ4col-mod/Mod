@@ -5081,6 +5081,7 @@
 		<French>Voiles et cordes</French>
 		<German>Segel und Seile</German>
 		<Russian>Паруса и канаты</Russian>
+		<Hungarian>Vitorlák és kötelek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_TEXT</Tag>
@@ -5088,6 +5089,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Tudo bem, pessoal, me escutem![COLOR_REVERT]", o diretor do estaleiro interrompe vigorosamente," [COLOR_SELECTED_TEXT]Vocês dois fizeram um bom trabalho, mas olhem para todas as coisas que ainda estão por aí. Aquele navio ali ainda precisa ser equipado. Aqui está uma fila de carrinhos esperando para serem descarregados. O comprador está ficando impaciente. Você não pode continuar saindo mais cedo para o pub![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Terminei por hoje. Minhas costas doem muito[COLOR_REVERT]", resmunga o fabricante de cordas. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isso não é de trançar cordas,[COLOR_REVERT]," o fabricante de velas ri. "[COLOR_SELECTED_TEXT]Isso é de todas as suas visitas às prostitutas. Aquela nova ruiva impressiona você, admita...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Also gut Jungs, jetzt hört mir mal zu[COLOR_REVERT]", schreitet der Werftdirektor energisch ein, "[COLOR_SELECTED_TEXT]Ihr habt Eure Sache beide gut gemacht, aber schaut Euch das ganze Zeug an, dass hier noch rumliegt. Das Schiff da muss immer noch vollständig ausgerüstet werden und der Karren da muss auch noch abgeladen werden. Seht mal, der Käufer wartet schon ungeduldig und schaut jeden Tag hier vorbei. Ihr könnt doch jetzt nicht einfach in die nächste Kneipe gehen![COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Also ich bin fertig für heute, mein Rücken tut mir schon wieder so weh[COLOR_REVERT]," beschwert sich der Seilmacher. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das kommt aber nicht vom Seile flechten,[COLOR_REVERT]", wirft der Segelmacher lachend ein,[COLOR_SELECTED_TEXT]Das kommt von den vielen Besuchen bei den Animierdamen. Die neue Rothaarige hat es dir doch angetan, gib's ruhig zu....[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Хорошо, ребята, а теперь послушайте меня[COLOR_REVERT]" — говорит управляющий верфи своим работникам. "[COLOR_SELECTED_TEXT]Вы оба отлично потрудились, но работа еще далека от завершения. Тот корабль у дальнего причала всё ещё не полностью укомплектован, да и вон та телега у бочек до сих пор стоит не разгруженная. Покупатель с нетерпением приходит каждый день и ждёт окончания работ. Так что никаких хождений по тавернам - продолжаем![COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]На сегодня я закончил, у меня опять и так сильно болит спина[COLOR_REVERT]" - жалуется мастер плетения канатов.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Вот только это не из-за плетения канатов,[COLOR_REVERT]" – смеясь, вставляет раскройщик парусины, "[COLOR_SELECTED_TEXT]а из-за визитов к блудницам. Признайся, новенькая рыжая вертихвостка произвела на тебя впечатление...[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Jól van srácok, most figyeljetek ide[COLOR_REVERT]" - szól közbe erélyesen a hajógyár igazgatója - "[COLOR_SELECTED_TEXT]Mindketten jó munkát végeztetek, de nézzétek, mennyi minden hever még itt. Azt a hajót ott még teljesen fel kell szerelni és azt a szekeret ott ki kell rakodni! Nézzétek, a vevő már türelmetlenül vár és minden nap idejön. Nem mehettek most el csak úgy a következő kocsmába!"[COLOR_REVERT][NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Szóval mára végeztem, már megint nagyon fáj a hátam[COLOR_REVERT] - panaszkodik a kötélkészítő. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]De ez nem a kötélfonástól van,[COLOR_REVERT]", vág közbe nevetve a vitorlakészítő,[COLOR_SELECTED_TEXT]Ez a sok örömlány meglátogatástól van. Az új vörös hajú lenyűgöz téged, ismerd el....[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER</Tag>
@@ -5096,6 +5098,7 @@
 		<French>Production de poudre noire</French>
 		<German>Schwarzpulver-Herstellung</German>
 		<Russian>Производство черного пороха</Russian>
+		<Hungarian>Puskapor gyártás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_HEAD</Tag>
@@ -5104,13 +5107,15 @@
 		<French>Charbon de bois et poudre noire</French>
 		<German>Holzkohle und Schwarzpulver</German>
 		<Russian>Уголь и черный порох</Russian>
+		<Hungarian>Faszén és puskapor</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_CHARCOAL_POWDER_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]How can you stand this heat? Sweat is dripping off my beard[COLOR_REVERT]," the powder maker gasps. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]At least I'm not in a workshop surrounded by a ton of gunpowder[COLOR_REVERT]," the charcoal burner answers back. "[COLOR_SELECTED_TEXT]This little bit of smoke doesn't bother me, as long as I don't have to worry about blowing up half the city." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Think when you choose your career, that's all I'm saying. Let's get back to work. With lots of powder for target practice, the militia can do serious damage when it's time to face the enemy.[COLOR_REVERT]" [NEWLINE][NEWLINE]"</English>
+		<English>"[COLOR_SELECTED_TEXT]How can you stand this heat? Sweat is dripping off my beard[COLOR_REVERT]," the powder maker gasps. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]At least I'm not in a workshop surrounded by a ton of gunpowder[COLOR_REVERT]," the charcoal burner answers back. "[COLOR_SELECTED_TEXT]This little bit of smoke doesn't bother me, as long as I don't have to worry about blowing up half the city." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Think when you choose your career, that's all I'm saying. Let's get back to work. With lots of powder for target practice, the militia will do serious damage when it's time to face the enemy.[COLOR_REVERT]" [NEWLINE][NEWLINE]"</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Como você aguenta esse calor? O suor está escorrendo da minha barba[COLOR_REVERT]", suspira o fabricante de pólvora. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pelo menos não estou em uma oficina cercado por uma tonelada de pólvora[COLOR_REVERT]", responde o carvoeiro. "[COLOR_SELECTED_TEXT]Esse pouquinho de fumaça não me incomoda, contanto que eu não precise me preocupar em explodir metade da cidade." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pense na hora de escolher sua carreira, é tudo o que estou dizendo. Vamos voltar ao trabalho. Com muita pólvora para praticar tiro ao alvo, a milícia pode causar sérios danos na hora de enfrentar o inimigo.[COLOR_REVERT]" [NEWLINE][NEWLINE]"</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Wie hältst Du diese Hitze blos immer aus, mir tropft schon wieder der Schweiß den Bart runter[COLOR_REVERT]", wirft der Feuerwerker keuchend ein.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Naja, ich hocke ja auch nicht den ganzen Tag in der Werkstatt mit einer Tonne Schießpulver um mich rum[COLOR_REVERT]," gibt der Köhlermeister höhnisch grinsend zurück. "[COLOR_SELECTED_TEXT]Das bisschen Rauch macht mir nichts. Außerdem muss ich mir auch nicht ständig Gedanken machen, vielleicht gleich die halbe Stadt in die Luft zu jagen."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Wohl war, Augen auf bei der Berufswahl sag ich da nur. Aber genug palavert, zurück an die Arbeit. Die Miliz hat schon wieder Nachschub bestellt. Man könnte fast meinen die Essen das Zeug, statt es zu verschießen.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Soll mir recht sein, solange ich anständig bezahlt werde..."[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Как вы можете выносить эту жару? С моей бороды уже снова капает[COLOR_REVERT]" — задыхаясь, вставляет производитель пороха.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, я же не сижу весь день в мастерской с кучей пороха вокруг меня[COLOR_REVERT]" — с ухмылкой отвечает мастер-угольщик. "[COLOR_SELECTED_TEXT]А небольшой дым меня не беспокоит. Кроме того, мне не нужно постоянно беспокоиться о том, что я взорву полгорода."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж, выбирать профессию надо с открытыми глазами, вот и все, что я хочу сказать. Но хватит болтовни, вернемся к работе. Ополчение уже заказало дополнительные припасы. Можно подумать, что они едят эту дрянь, а не используют для стрельбы.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Меня это устраивает, пока мне прилично платят..."[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Hogy bírod ezt a hőséget, már megint folyik az izzadság a szakállamról [COLOR_REVERT]" - vág közbe zihálva a puskapor készítő. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hát, én nem ülök egész nap a műhelyben egy tonna puskaporral körülvéve[COLOR_REVERT]" - viszonozza gúnyosan a szénégető mester. "[COLOR_SELECTED_TEXT]Az a kis füst nem zavar engem. Különben is, nem kell állandóan azon aggódnom, hogy felrobbantom a fél várost." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nos, nyitott szemmel járj, mikor pályát választasz, ennyit mondok. De elég a fecsegésből, vissza a munkához. A nemzetőrség már rendelt is további ellátmányt. Már-már azt hihetnénk, hogy megeszik a cuccot, ahelyett, hogy lövöldöznének."[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nekem megfelel, amíg tisztességesen megfizetnek..."[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIREWORKS</Tag>
@@ -5119,6 +5124,7 @@
 		<French>Industrie poudrière</French>
 		<German>Schwarzpulver-Industrie</German>
 		<Russian>Производство черного пороха</Russian>
+		<Hungarian>Puskaporgyártó épületek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIREWORKS_HEAD</Tag>
@@ -5127,6 +5133,7 @@
 		<French>Villes enfumées</French>
 		<German>Rauch über der Stadt</German>
 		<Russian>Дым над городом</Russian>
+		<Hungarian>Füst a város felett</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIREWORKS_TEXT</Tag>
@@ -5134,6 +5141,7 @@
 		<Portuguese>Milorde, a fumaça sobre suas colônias é tão espessa que parece que você está queimando toda a floresta. Ainda assim, é prudente tornar-se independente dos suprimentos da Europa, especialmente no delicado assunto da pólvora negra.[NEWLINE][NEWLINE]O rei e seus concorrentes não vão gostar, mas você obviamente entende como é sábio produzir pólvora mais rápido do que qualquer outra nação no Novo Mundo, para que ninguém possa ditar os termos para você sem ficar em desvantagem no conflito armado. É claro que isso não significa que eles não correrão o risco.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, über Euren Kolonien steht der Rauch so dicht, dass man denken könnte, sie fallen einem Inferno zum Opfer. Aber mitnichten, sehr schlau von Euch, dass Ihr Euch auch bei dem heiklen Thema Schwarzpulver immer mehr von Lieferungen aus Europa unabhängig macht.[NEWLINE][NEWLINE]Dem König und Euren Konkurrenten wird das zwar nicht gefallen, aber bald stellt Ihr mehr Pulver her, als alle anderen Nationen in der Neuen Welt, wenn Ihr so weitermacht. Dann kann Euch ohnehin kaum noch jemand etwas vorschreiben. Aber Obacht, das muss zwangsläufig zu einem bewaffneten Konflikt führen.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, дым над вашими колониями такой густой, что можно подумать, что они стали жертвами ада. Но нет, с вашей стороны было очень умно сделать нас более независимыми от поставок из Европы, даже в деликатном вопросе черного пороха.[NEWLINE][NEWLINE]Королю и вашим конкурентам это не понравится, но если будете продолжать в том же духе, скоро вы будете производить больше пороха, чем любая другая нация в Новом Свете. Тогда вряд ли кто-то сможет вам что-то диктовать. Но будьте осторожны, это неизбежно приведет к вооруженному конфликту.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a füst olyan sűrű a kolóniák felett, hogy az ember azt hihetné, hogy az egész erdőt felégeti. De egyáltalán nem, nagyon okos dolog, hogy egyre inkább függetlenné tesszük magunkat az Európából érkező utánpótlástól, még a puskapor kényes kérdésében is.[NEWLINE][NEWLINE]A Király és a versenytársai nem fognak örülni neki, de te nyilvánvalóan megérti, milyen bölcs dolog gyorsabban gyártani puskaport, mint bármelyik másik nemzet az Újvilágban, így senki sem diktálhat Önnek feltételeket anélkül, hogy fegyveres konfliktusban hátrányba kerülne. Természetesen ez nem jelenti azt, hogy nem fognak kockáztatni.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SURFACE_MINING</Tag>
@@ -5142,6 +5150,7 @@
 		<French>Beaucoup de mines à ciel ouvert</French>
 		<German>Viele Tagebauarbeiter</German>
 		<Russian>Множество карьерных рабочих</Russian>
+		<Hungarian>Sok külszíni bányász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SURFACE_MINING_HEAD</Tag>
@@ -5150,6 +5159,7 @@
 		<French>Pierre, argile et tourbe</French>
 		<German>Stein, Lehm und Torf</German>
 		<Russian>Камень, глина и торф</Russian>
+		<Hungarian>Kő, agyag és tőzeg</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SURFACE_MINING_TEXT</Tag>
@@ -5157,6 +5167,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Este é um trabalho pesado[COLOR_REVERT]", diz o cortador de turfa para sua esposa que trabalha ao lado dele, "[COLOR_SELECTED_TEXT]mas pelo menos posso ver o sol. Os mineiros de carvão cavam tão fundo que o solo fica quente sob seus pés. O piso do túnel deve estar logo acima do teto do Inferno. Um dia eles cairão.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A julgar pelos mineiros que tenho conheci[COLOR_REVERT]", diz sua esposa, "[COLOR_SELECTED_TEXT]eles deveriam se encaixar perfeitamente.[COLOR_REVERT]" [NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Meine Schaufel ist schon wieder kaputt, ich brauch dringend eine neue Schaufel[COLOR_REVERT]", beschwert sich der Torfstecher.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Du solltest es vielleicht mal mit einer Spitzhacke wie dieser hier versuchen[COLOR_REVERT]," gibt der Steinbrecher wohlmeinend zurück. "[COLOR_SELECTED_TEXT]Die hab ich mir gerade erst aus dem Depot geholt. Damit geht's viel schneller voran."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Was soll ich denn bitte mit einer Spitzhacke? Ich muss das Material doch in Blöcken heraustrennen und nicht in Stücke hauen. Das geht nicht mit einer Spitzhacke.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, gut, ich kenn mich halt nur mit Steinen aus, nicht mit diesem schmierigen Zeug hier..."[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Моя лопата снова сломалась, мне срочно нужна новая![COLOR_REVERT]" — жалуется добытчик торфа.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Может, попробуешь вот эту кирку?[COLOR_REVERT]" — добродушно спрашивает каменотес. "[COLOR_SELECTED_TEXT]Я только что забрал несколько штук со склада. Они значительно ускоряют работу."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что мне делать с киркой? Я должен вырезать материал блоками, а не рубить на куски. Киркой этого не сделать.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что же, я много знаю о камнях, а не об этой жирной дряни..."[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Ez nehéz munka[COLOR_REVERT] – mondja a tőzegbányász a mellette dolgozó feleségének –, [COLOR_SELECTED_TEXT]de legalább látom a napot. A szénbányászok olyan mélyre ásnak, hogy a talaj a lábuk alatt felmelegszik. A járatok padlója biztosan pont a pokol mennyezete felett van.  Egy napon átesnek rajta.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Azok alapján, akiket eddig tudtam[COLOR_REVERT]" - mondja a felesége - "[COLOR_SELECTED_TEXT]ők pont oda valók.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MINING</Tag>
@@ -5165,6 +5176,7 @@
 		<French>Beaucoup de mineurs</French>
 		<German>Viele Minenarbeiter</German>
 		<Russian>Множество шахтёров</Russian>
+		<Hungarian>Sok bányász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MINING_HEAD</Tag>
@@ -5173,6 +5185,7 @@
 		<French>Extraction du fer et du charbon</French>
 		<German>Erz- und Kohleförderung</German>
 		<Russian>Руда и уголь</Russian>
+		<Hungarian>Érc és szénbányászat</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MINING_TEXT</Tag>
@@ -5180,6 +5193,7 @@
 		<Portuguese>Desembrulhando a bandana que cobre o nariz e a boca, o mineiro de carvão parece um guaxinim gigante segurando uma grande caneca de cerveja. "[COLOR_SELECTED_TEXT]Admito que este é um trabalho perigoso comparado ao corte de turfa, mas nada queima por tanto tempo e quente quanto o carvão[COLOR_REVERT]", ele se gaba.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Você está absolutamente certo[COLOR_REVERT]", diz seu amigo, "[COLOR_SELECTED_TEXT]Não há combustível como um combustível antigo.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Es ist verdammt dunkel und stickig da drin, wir müssen unbedingt für mehr Licht und Belüftung sorgen[COLOR_REVERT]", beschwert sich der Bergarbeiter.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, auf jeden Fall. Nimm das nächste Mal die neue Laterne hier mit. Was ist mit deiner Schulter, hat die auch was abbekommen, als der große Brocken runterkam[COLOR_REVERT]," gibt der andere Kumpel fragend zurück.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, ich konnte nicht richtig sehen und dann kam der auch schon von der Decke. Die Stützbalken halten das Gewicht nicht. Das muss eine große Ader sein, so wie dass da unten schimmert.[COLOR_REVERT]" [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Dann sollten wir die anderen rufen und hier weitergraben.[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Там чертовски темно и душно, нужно добавить света и вентиляции[COLOR_REVERT]" – жалуется шахтер.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, обязательно. В следующий раз нужно захватить ещё один фонарь. Кстати, что с твоим плечом, оно тоже пострадало, когда упал тот большой кусок?[COLOR_REVERT]" — отвечает другой.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, я не заметил, как образовался провис породы, а потом часть всё же обвалилась. Опорные балки не выдерживают веса. Должно быть, это большая жила, вроде той, что мерцает там, внизу.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Тогда надо позвать остальных и продолжать копать здесь.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>A szénbányász levette az orrát és száját takaró kendőt és úgy nézett ki, mint egy óriási mosómedve, aki egy nagy korsó sört tart a kezében. "[COLOR_SELECTED_TEXT]Elismerem, hogy ez veszélyesebb munka, mint a tőzegvágás, de semmi sem ég olyan sokáig és olyan forrón, mint a szén[COLOR_REVERT]" – dicsekedett. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Teljesen igazad van[COLOR_REVERT]" - mondja a barátja - "[COLOR_SELECTED_TEXT]Nincs olyan fűtőanyag, mint a régi fűtőanyag -[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS</Tag>
@@ -5188,6 +5202,7 @@
 		<French>Beaucoup d'armuriers</French>
 		<German>Viele Waffenschmiede</German>
 		<Russian>Множество оружейников</Russian>
+		<Hungarian>Sok fegyverkészítő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_HEAD</Tag>
@@ -5196,6 +5211,7 @@
 		<French>Bien des armuriers à l'oeuvre</French>
 		<German>Viele waffenschmiedende Schmiede</German>
 		<Russian>Оружия много не бывает</Russian>
+		<Hungarian>Sok fegyverkészítő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_WEAPONSMITHS_TEXT</Tag>
@@ -5203,6 +5219,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Para uma arma de quatro pés, ganhamos doze castores![COLOR_REVERT]", gaba-se o armeiro para o ferreiro. "[COLOR_SELECTED_TEXT]Costumávamos dar a um caçador oito facas por apenas um castor.[COLOR_REVERT]"[NEWLINE][NEWLINE]O ferreiro decide testá-lo. "[COLOR_SELECTED_TEXT]Quantas facas cabem em uma arma de quatro pés?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Se você sabe fazer aritmética, deveria ir lá e ser um comerciante[COLOR_REVERT]", o armeiro retruca. "[COLOR_SELECTED_TEXT]É aí que está o dinheiro de verdade.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Werter Herr Schmied, ich danke Euch für das Vorbeibringen der Blankwaffen[COLOR_REVERT]", nickt der Waffenschmied dem Schmied zu.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Das ist hervorragende Qualität Meister Schmied, die kann ich direkt an die Dragoner weiterverkaufen. Zusammen mit meinen Musketen ist die Truppe dann bestens ausgerüstet.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, Eure neuen Musketen können sich aber auch sehen lassen, gute Arbeit. Der Kommandeur wird zufrieden sein. Dann rück' mal das Geld raus, du Geizkragen[COLOR_REVERT]," erwidert der Schmied mit einem breiten Grinsen.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Господин кузнец, спасибо за доставку клинков[COLOR_REVERT]" — кивает кузнецу оружейник."[COLOR_SELECTED_TEXT]Они отличного качества, что говорит о вашей высокой квалификации. Я немедленно свяжусь с командиром драгун. Вместе с моими мушкетами отряд будет хорошо экипирован.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ваши новые мушкеты тоже впечатляют, прекрасная работа. Командир будет доволен. Так что выкладывай деньги, скупердяй[COLOR_REVERT]" — с широкой улыбкой отвечает кузнец.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Egy négy lábas fegyverért tizenkét hódot kapunk![COLOR_REVERT]" – dicsekszik a fegyverkovács a kovácsnak - "[COLOR_SELECTED_TEXT]Régen egy prémvadásznak nyolc kést adtunk egyetlen hódért.[COLOR_REVERT]"[NEWLINE][NEWLINE]A kovács úgy dönt, hogy teszteli őt. "[COLOR_SELECTED_TEXT]Hány kést kapunk egy négy lábas fegyverért?[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ha tudsz számolni, akkor menj ki és legyél kereskedő[COLOR_REVERT]" vág vissza a fegyverkovács. "[COLOR_SELECTED_TEXT]Ott van az igazi pénz![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER</Tag>
@@ -5211,6 +5228,7 @@
 		<French>Beaucoup de distilleurs</French>
 		<German>Mehrere Destillateure</German>
 		<Russian>Несколько винокуров</Russian>
+		<Hungarian>Sok szeszfőzde</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER_HEAD</Tag>
@@ -5219,6 +5237,7 @@
 		<French>Du bonheur liquide</French>
 		<German>Flüssiges Glück</German>
 		<Russian>Жидкое счастье</Russian>
+		<Hungarian>Folyékony boldogság</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BREWER_TEXT</Tag>
@@ -5226,6 +5245,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Bem, rapazes, digam o nome do seu veneno: uísque, vinho ou cerveja?[COLOR_REVERT]" o barman oferece.[NEWLINE][NEWLINE]O cervejeiro, soprando uma caneca de sua cerveja sob o nariz do dono do bar, prontamente declara "[COLOR_SELECTED_TEXT]Isso é o melhor! Seus clientes merecem a chance de cultivar um paladar refinado[COLOR_REVERT]." [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Vamos provar isso[COLOR_REVERT]", diz o barman, inclinando a caneca para trás.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Não se esqueça do vinho[COLOR_REVERT]", intervém o vintager. "[COLOR_SELECTED_TEXT]E rum! E conhaque![COLOR_REVERT]!" diz o destilador.  "[COLOR_SELECTED_TEXT]Se você deseja desenvolver seu paladar, você precisa de variedade.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Na Jungs, was darf ich Euch servieren? Bier, Whiskey oder lieber Wein? [COLOR_REVERT]", fragt der Barkeeper.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Tja, wir wollten eigentlich gerade genau dasselbe fragen,[COLOR_REVERT]" grinst der Brauer und hält dem Barkeeper einen Krug Bier unter die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, dann lasst mal sehen - oder besser probieren[COLOR_REVERT]," erwidert der Barkeeper und greift sich den Krug.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]He, nicht so hastig, lasst noch Platz für meinen Wein, das ist ein ganz besonders edler Tropfen[COLOR_REVERT]," wirft der Winzer etwas enttäuscht ein.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Ну, парни, что вам предложить? Пиво, виски или вино?[COLOR_REVERT]" – спрашивает бармен.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, мы как раз собирались спросить то же самое.[COLOR_REVERT]" — усмехается пивовар и протягивает кружку пива бармену.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ну, будь я проклят, давайте смотреть, а точнее - пробовать[COLOR_REVERT]!" — отвечает бармен и хватает кружку.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Эй, не пей так много, оставь место и для моего вина! Сегодняшнее особенно хорошо...[COLOR_REVERT]" — несколько разочарованно вставляет винодел.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nos, fiúk, mit kértek – whiskyt, bort vagy sört?[COLOR_REVERT]" – kérdezi a csapos.[NEWLINE][NEWLINE]A sörfőző, aki egy korsó sört lenget a csapos orra előtt, azonnal kijelenti: "[COLOR_SELECTED_TEXT]Ez a legjobb! A vendégeid megérdemlik, hogy kifinomult ízt kóstoljanak.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Kóstoljuk meg![COLOR_REVERT]" - mondja a csapos és ledönti a korsót.[NEWLINE][NEWLINE]'[COLOR_SELECTED_TEXT]Ne felejtsétek el a bort![COLOR_REVERT]" – szól közbe a borász. "[COLOR_SELECTED_TEXT]És a rumot! És a brandyt![COLOR_REVERT]!" – mondja a lepárló. "[COLOR_SELECTED_TEXT]Ha fejleszteni akarjátok az ízléseteket, változatosságra van szükségetek.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER</Tag>
@@ -5234,6 +5254,7 @@
 		<French>Beaucoup de fermiers expérimentés</French>
 		<German>Viele erfahrene Farmer</German>
 		<Russian>Несколько опытных фермеров</Russian>
+		<Hungarian>Számos tapasztalt földműves</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER_HEAD</Tag>
@@ -5242,6 +5263,7 @@
 		<French>Ravitaillement</French>
 		<German>Nahrungsmittelversorgung</German>
 		<Russian>Поставки продовольствия</Russian>
+		<Hungarian>Élelem mindenkinek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_FARMER_TEXT</Tag>
@@ -5249,6 +5271,7 @@
 		<Portuguese>Milorde, você está no caminho certo para garantir o abastecimento de alimentos em suas colônias. Você já tem vários agricultores experientes cultivando seus campos e recuperando a natureza.[NEWLINE][NEWLINE]Enquanto eles continuarem assim, poderemos alimentar tanto os colonos quanto os novos imigrantes para que suas colônias continuem crescendo. Um bom suprimento de alimentos é a chave para uma população satisfeita.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Ihr seid auf einem guten Weg, die Nahrungsmittelversorgung in Euren Kolonien sicherzustellen. Ihr habe jetzt schon etliche erfahrene Bauern, die Eure Felder bestellen und die Wildnis urbar machen.[NEWLINE][NEWLINE]Macht nur weiter so, damit genug Nahrungsmittel für die Kolonisten und Neuankömmlinge zur Verfügung stehen und Eure Kolonien immer weiter wachsen. Nur eine gute Nahrungsmittelversorgung stellt geregeltes Wachstum sicher.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы на правильном пути к обеспечению продовольствием своих колоний. У вас уже есть несколько опытных фермеров, которые возделывают ваши поля и осваивают дикую природу.[NEWLINE][NEWLINE]Просто продолжайте в том же духе, чтобы колонистам и иммигрантам хватало еды, а ваши колонии продолжали расти. Только хорошее питание обеспечивает требуемый рост.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, jó úton halad a kolóniái élelemellátásának biztosítása felé. Már több tapasztalt földművese is van, akik megművelik a földjeit és visszahódítják a vadont.[NEWLINE][NEWLINE]Csak folytassa ezt, hogy legyen elég élelem a telepesek és a bevándorlók számára, és a kolóniái folyamatosan növekedni fognak. Csak a jó élelemellátás biztosítja a szabályozott növekedést.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN</Tag>
@@ -5256,14 +5279,16 @@
 		<Portuguese>Muitos pescadores experientes</Portuguese>
 		<German>Viele erfahrene Fischer</German>
 		<Russian>Несколько опытных рыболовов</Russian>
+		<Hungarian>Több tapasztalt halász</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN_HEAD</Tag>
-		<English>Freshly-fried flying fish</English>
+		<English>Freshly-fried fish</English>
 		<Portuguese>Peixe voador recém-frito</Portuguese>
 		<French>Poissons-pilotes prestement pannés</French>
 		<German>Fischers Fritze</German>
 		<Russian>Свежеобжаренная летучая рыба</Russian>
+		<Hungarian>Frissen sült repülő hal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MANY_FISHERMEN_TEXT</Tag>
@@ -5271,6 +5296,7 @@
 		<Portuguese>Milorde, o peixe é um recurso nutritivo e abundante em nossas costas, e seus colonos adoram o sabor. Você já tem alguns pescadores experientes trazendo uma boa pescaria.[NEWLINE][NEWLINE]Enquanto houver comida suficiente para os colonos e imigrantes, suas colônias continuarão crescendo. É necessário um bom suprimento de alimentos para garantir um crescimento constante.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Fisch ist eine nahrhafte und vor den Küsten reichlich vorhandene Ressource, die Euren Kolonisten gut schmecken wird. Ihr habe jetzt schon etliche erfahrene Fischer, die Eure Boote bemannen und vor den Küsten ihren Fang einbringen.[NEWLINE][NEWLINE]Macht nur weiter so, damit genug Nahrungsmittel für die Kolonisten und Neuankömmlinge zur Verfügung stehen und Eure Kolonien immer weiter wachsen. Nur eine gute Nahrungsmittelversorgung stellt geregeltes Wachstum sicher.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, рыба — питательный и обильный ресурс у побережья, который понравится вашим колонистам. У вас уже есть несколько опытных рыбаков, которые обслуживают ваши лодки и привозят улов в хранилища.[NEWLINE][NEWLINE]Продолжайте в том же духе, чтобы у колонистов и иммигрантов было достаточно еды, а ваши колонии продолжали расти. Только хорошее питание обеспечивает требуемый рост.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a hal tápláló és bőséges erőforrás a partok mentén, ami izlik a telepeseinek. Már most is van néhány tapasztalt halász, aki a hajóit személyzettel ellátja és a partoknál fogja a halakat.[NEWLINE][NEWLINE]Csak folytassa így, hogy legyen elég élelem a telepesek és a bevándorlók számára, és a kolóniái folyamatosan növekedni fognak. Csak a jó élelmiszerellátás biztosítja a szabályozott növekedést.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS</Tag>
@@ -5279,6 +5305,7 @@
 		<French>Trois laitières</French>
 		<German>Drei fleißige Milchmädchen</German>
 		<Russian>Три опытных доярки</Russian>
+		<Hungarian>Három szakképzett fejőnő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_HEAD</Tag>
@@ -5287,6 +5314,7 @@
 		<French>Lait frais</French>
 		<German>Frische Milch</German>
 		<Russian>Свежее молоко</Russian>
+		<Hungarian>Friss tej</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_MILKMAIDS_TEXT</Tag>
@@ -5294,6 +5322,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]O que eu gosto na ordenha das vacas[COLOR_REVERT]", diz a jovem leiteira, "[COLOR_SELECTED_TEXT]é pensar em todos os bebezinhos que estou alimentando[COLOR_REVERT]."[NEWLINE][NEWLINE]Seu colega mais velho sorri pacientemente. "[COLOR_SELECTED_TEXT]Sim, mas para ter filhos você precisa aturar um marido[COLOR_REVERT]."[NEWLINE][NEWLINE] "[COLOR_SELECTED_TEXT]Você está certo[COLOR_REVERT]", ri a jovem leiteira. "[COLOR_SELECTED_TEXT]Um bebê e nenhum marido seriam bons para nós, mas não para o padre[COLOR_REVERT]."[NEWLINE][NEWLINE]Ambos riem e voltam ao trabalho.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, an Euch scheint wahrlich ein Bauer verlorengegangen. Ihr entwickelt eine Vorliebe für die Landwirtschaft, wie es sonst offenbar nur der König selbst zu tun pflegt. [NEWLINE][NEWLINE]Ihr errichtet nicht nur Farmen, sondern sorgt auch für die richtigen Knechte und Mägde, die diese am Laufen halten. Gerade habt Ihr wieder eine Melkerin eingestellt, die sich liebevoll um die Kühe kümmern wird. Da geben die Kühe gleich noch mal doppelt so viel Milch. Würdet Ihr Euch nicht auch gern von so einer Mildmagd verwöhnen lassen?[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, похоже, женщины могут ухаживать не только за своими детьми и мужьями. Вы прививаете вкус к сельскому хозяйству многим колонистам и их жёнам.[NEWLINE][NEWLINE]Вы не только строите фермы, но и предоставляете работу всем, кто желает ею заниматься. Вы только что наняли еще одну доярку, которая будет со всей любовью заботиться о коровах. Коровы будут давать в два раза больше молока. Может, вы хотели бы, чтобы и вас баловала такая доярка?[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Amit szeretek a tehénfejésben[COLOR_REVERT]," mondja a fiatal fejőnő, "[COLOR_SELECTED_TEXT]az, hogy gondolok az összes kisbabára, akiket etetek[COLOR_REVERT]."[NEWLINE][NEWLINE]Idősebb kollégája türelmesen mosolyog. "[COLOR_SELECTED_TEXT]Igen, de ahhoz, hogy babád legyen, el kell viselned a férjet[COLOR_REVERT]."[NEWLINE][NEWLINE] "[COLOR_SELECTED_TEXT]Igazad van[COLOR_REVERT]," nevet a fiatal fejőnő. "[COLOR_SELECTED_TEXT]Egy baba, férj nélkül nekünk megfelelne, de egy papnak nem[COLOR_REVERT].”[NEWLINE][NEWLINE]Mindketten kuncognak, majd visszatérnek a munkához.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER</Tag>
@@ -5302,6 +5331,7 @@
 		<French>Trois maîtres-fromagers</French>
 		<German>Drei Meister Käsemacher </German>
 		<Russian>Три сыровара</Russian>
+		<Hungarian>Három sajtkészítő mester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER_HEAD</Tag>
@@ -5310,6 +5340,7 @@
 		<French>Fromages moulés maison</French>
 		<German>Heimische Käseerzeugung</German>
 		<Russian>Домашнее сыроварение</Russian>
+		<Hungarian>Házias sajtok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THREE_CHEESE_MAKER_TEXT</Tag>
@@ -5317,14 +5348,16 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Bem, rapaz, você acabou com todo o leite de novo? Quanto posso lhe vender hoje, senhor?[COLOR_REVERT]", pergunta a leiteira sedutora.[NEWLINE][NEWLINE]O jovem e trabalhador queijeiro mal a nota. "[COLOR_SELECTED_TEXT]Dois baldes cheios. Agora que minha leiteria pode oferecer uma escolha de queijo fresco, as pessoas da cidade estão batendo na minha porta[COLOR_REVERT]."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Só trabalho e nenhuma diversão[COLOR_REVERT]", sorri a empregada. "[COLOR_SELECTED_TEXT]Você deveria vir ao baile da igreja[COLOR_REVERT]."[NEWLINE][NEWLINE]Agora o jovem olha para ela mais de perto, seu rosto se ilumina com um sorriso e por alguns momentos ele se esquece do trabalho.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Na, junger Mann, habt Ihr denn schon wieder alle Milch aufgebraucht? Wie viel darf ich Euch denn heute verkaufen, Sir?[COLOR_REVERT]", fragt die Magd hoffnungsvoll.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja, in der Tat. Seitdem ich die Käserei eröffnet habe, rennt mir die Stadtbevölkerung die Türen ein. Frischen Käse hatten wir hier in der Gegend bisher nicht. Ich brauche zwei Eimer voll[COLOR_REVERT]" grinst der Käsemacher zurück und hält der Magd den leeren Eimer vom letzten Kauf hin.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, was Ihr nicht sagt, [COLOR_REVERT]," grinst die Magd und greift sich den Eimer." [COLOR_SELECTED_TEXT]Dann setzt Euch mal, es wird eine Weile dauern die hier voll zu machen[COLOR_REVERT]."[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Ну, молодой человек, вы опять израсходовали все молоко? Сколько же вам вам нужно сегодня?[COLOR_REVERT]" - с улыбкой спрашивает работница фермы.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, действительно. С тех пор, как я открыл сыроварню, горожане с самого утра ломятся в двери моей сырной лавки, ведь раньше у нас здесь не было свежего сыра. Пожалуй, сегодня я возьму два полных ведра.[COLOR_REVERT]" — ухмыляется в ответ сыровар и протягивает девушке пустое ведро от последней покупки.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что ж,[COLOR_REVERT]" – усмехается работница, забирая ведро - "[COLOR_SELECTED_TEXT]тогда присаживайтесь, нужно время, чтобы наполнить их[COLOR_REVERT]."[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nos, fiatalember, már megint elhasználtad az összes tejet? Mennyit adhatok el ma neked?[COLOR_REVERT]" – kérdezi a kacér fejőnő.[NEWLINE][NEWLINE]A szorgalmas fiatal sajtkészítő alig veszi észre. "[COLOR_SELECTED_TEXT]Két vödörrel, tele. Most, hogy a tejboltom friss sajtokat is kínál, a városiak tömkelegesen járnak hozzám[COLOR_REVERT]."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Csak munka és semmi szórakozás[COLOR_REVERT]" mosolyog a leány. "[COLOR_SELECTED_TEXT]El kéne jönnöd a templomi bálra[COLOR_REVERT]."[NEWLINE][NEWLINE]Most a fiatalember jobban megnézi, arca felderül, és néhány pillanatra megfeledkezik a munkáról.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER</Tag>
-		<English>Several animal breeders</English>
+		<English>Several livestock breeders</English>
 		<Portuguese>Vários criadores de animais</Portuguese>
 		<French>Plusieurs éleveurs d'animaux</French>
 		<German>Mehrere Tierzüchter</German>
 		<Russian>Несколько заводчиков животных</Russian>
+		<Hungarian>Számos állattenyésztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER_HEAD</Tag>
@@ -5333,6 +5366,7 @@
 		<French>Élevages primés</French>
 		<German>Erfolgreiche Zucht</German>
 		<Russian>Успешное разведение</Russian>
+		<Hungarian>Sikeres tenyésztés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SEVERAL_BREEDER_TEXT</Tag>
@@ -5340,6 +5374,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]O que é essa ração aí? Parece que meus porcos gostam tanto quanto suas galinhas[COLOR_REVERT]", comenta o criador de porcos.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Esta é uma mistura comprovada de grãos de milho, aveia e cascas de vegetais,[COLOR_REVERT]" diz o avicultor. "[COLOR_SELECTED_TEXT]Tenho certeza que seus porcos iriam gostar, mas não acho que este pequeno balde será suficiente para eles. Os porcos comem de manhã à noite. Minhas galinhas não precisam de tanto[COLOR_REVERT]." [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]Os porcos alimentam metade da cidade quando são abatidos, enquanto suas galinhas magras mal alimentam uma raposa[COLOR_REVERT]", brinca o criador de porcos. "[COLOR_SELECTED_TEXT]Por outro lado, seus ovos são bons. Eu te dou isso[COLOR_REVERT]."[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Na, was fütterst du denn da? Sieht so aus, als würde es meinen Schweinen auch sehr gut schmecken und nicht nur den Hühnern[COLOR_REVERT]", bemerkt der Hirte wie beiläufig.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ach, das ist eine bewährte Mischung aus Maiskörnern, Hafer und Gemüseschalen [COLOR_REVERT]" meint der Geflügelzüchter. "[COLOR_SELECTED_TEXT]Das würde deinen Schweinen bestimmt gut schmecken, aber ich glaube nicht, dass ihnen dieser kleine Eimer reichen wird. Die fressen doch von morgens bis abends. Meine Hühner sind da viel genügsamer.[COLOR_REVERT]." [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]Dafür wird von meinen Schweinen aber auch die halbe Stadt satt, wenn sie geschlachtet werden, während deine mageren Hennen höchstens für den Fuchs gut sind,[COLOR_REVERT]" gibt der Hirte fröhlich feixend zurück.[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Ну, и чем ты их кормишь? Похоже, моим свиньям эта смесь тоже очень нравится.[COLOR_REVERT]" - небрежно замечает пастух.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]А, это проверенная смесь кукурузных зерен, овса и овощной шелухи.[COLOR_REVERT]" – говорит птицевод. "[COLOR_SELECTED_TEXT]Я уверен, что вашим свиньям она понравится, но я не думаю, что им будет достаточно этого маленького ведерка. Они едят с утра до вечера. Мои куры намного экономнее.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Но мои свиньи кормят полгорода, когда их забивают, а ваши худые куры годятся в лучшем случае только для легкого завтрака лисы[COLOR_REVERT]" – счастливо улыбаясь, отвечает пастух.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Nos, mivel etetsz? Úgy látszik, a disznóim is nagyon szeretik, nem csak a csirkék[COLOR_REVERT]" - jegyzi meg lazán a kondás.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Á, ez egy bevált keverék kukoricamagból, zabból és növényi héjból[COLOR_REVERT]" - mondja a baromfitenyésztő. "[COLOR_SELECTED_TEXT]Biztos vagyok benne, hogy a disznóidnak ízleni fog, de nem hiszem, hogy ez a kis vödör elég lesz nekik. Reggeltől estig esznek. Az én csirkéim sokkal takarékosabbak.[COLOR_REVERT]" [NEWLINE][NEWLINE][COLOR_SELECTED_TEXT]De az én disznóim a fél városnak élelmet adnak, ha levágják őket, míg a te sovány tyúkjaid legfeljebb a rókáknak jók[COLOR_REVERT]" - viszonozza boldogan mosolyogva a kondás.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS</Tag>
@@ -5348,6 +5383,7 @@
 		<French>Trois maitres fabricants</French>
 		<German>Drei Meister Handwerker</German>
 		<Russian>Три производителя хозтоваров</Russian>
+		<Hungarian>Három iparosmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_HEAD</Tag>
@@ -5356,6 +5392,7 @@
 		<French>Des biens du quotidien</French>
 		<German>Haushaltswaren</German>
 		<Russian>Товары для домашнего хозяйства</Russian>
+		<Hungarian>Háztartási áruk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_HOUSEHOLD_GOODS_TEXT</Tag>
@@ -5363,6 +5400,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Você vende porcelanas de alta qualidade do Velho País[COLOR_REVERT],"" diz o advogado. "[COLOR_SELECTED_TEXT]Agradeço muito[COLOR_REVERT]."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Prefiro comprar um bom prato de madeira que as crianças não consigam quebrar[COLOR_REVERT]", diz a costureira.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Temos variedade suficiente para agradar a vocês dois[COLOR_REVERT]", responde o lojista, "[COLOR_SELECTED_TEXT]com novos itens vindo todos os dias.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Ihr denkt auch an praktischen Dinge. Mehrere Meister-Handwerker haben sich in Eurer Kolonie niedergelassen. Die Versorgung der Kolonie mit praktischen Haushaltswaren und Möbeln nimmt zu.[NEWLINE][NEWLINE]Das wird besonders diejenigen freuen, die sich ein wenig Luxus leisten können und wollen. Und für Euch fällt sicher auch die eine oder andere Münze Steuern beim Handel damit ab...[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы думаете и о практических вещах. В вашей колонии поселились несколько мастеров-ремесленников. Поступление в колонию практичных предметов домашнего обихода и мебели увеличивается.[NEWLINE][NEWLINE]Это особенно порадует тех, кто хочет и может позволить себе немного роскоши. И для вас, конечно же, также должны быть интересны налоги с торговли этими товарами...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Ön az Óhazából származó, kiváló minőségű porcelánt árul[COLOR_REVERT]" – mondja az ügyvéd. "[COLOR_SELECTED_TEXT]Ezt nagyra értékelem[COLOR_REVERT]."[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Inkább egy jó fa tányért vásárolnék, amit a gyerekek nem tudnak eltörni[COLOR_REVERT]" mondja a varrónő.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT] Van elég választékunk, hogy mindkettőjüket kielégítsük[COLOR_REVERT]" válaszolja a boltos, "[COLOR_SELECTED_TEXT]minden nap új áruk érkeznek.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MASTER_BAKER</Tag>
@@ -5371,6 +5409,7 @@
 		<French>Plusieurs maitre boulanger</French>
 		<German>Mehrere Meister Bäcker</German>
 		<Russian>Несколько пекарей</Russian>
+		<Hungarian>Számos Pékmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_HEAD</Tag>
@@ -5379,13 +5418,15 @@
 		<French>Pain fait maison</French>
 		<German>Begehrte Backwaren</German>
 		<Russian>Домашняя выпечка</Russian>
+		<Hungarian>Házi sütés</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_MASTER_BAKER_TEXT</Tag>
-		<English>"[COLOR_SELECTED_TEXT]I'm here to pick up my bags of flour. My warehouse is empty again,[COLOR_REVERT]" says the confectioner to the baker.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm sorry, but these are the last bags I can give you. The militia bought everything I have,[COLOR_REVERT]," the baker replies apologetically.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Not so fast! Our troops need these bags as well,[COLOR_REVERT]" the officer declares. "[COLOR_SELECTED_TEXT]I don't want to confiscate them, but if I have to ...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What? That's it?[COLOR_REVERT]" the desperate confectioner cries out. "[COLOR_SELECTED_TEXT]I can't put off my customers again. Find some way to produce more flour![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
+		<English>"[COLOR_SELECTED_TEXT]I'm here to pick up my bags of flour. My warehouse is empty again,[COLOR_REVERT]" says the confectioner to the baker.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]I'm sorry, but these are the last bags I can give you. The militia bought everything I have,[COLOR_REVERT]," the baker replies apologetically.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Not so fast! Army cooks need this flour as well,[COLOR_REVERT]" the officer declares. "[COLOR_SELECTED_TEXT]I don't want to confiscate them, but if I have to ...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]What? That's it?[COLOR_REVERT]" the desperate confectioner cries out. "[COLOR_SELECTED_TEXT]I can't put off my customers again. Find some way to produce more flour![COLOR_REVERT]"[NEWLINE][NEWLINE]</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Estou aqui para pegar meus sacos de farinha. Meu armazém está vazio de novo,[COLOR_REVERT]" diz o confeiteiro ao padeiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sinto muito, mas estes são os últimos sacos que posso lhe dar. A milícia comprou tudo o que tenho,[COLOR_REVERT]", responde o padeiro pedindo desculpas.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Não tão rápido! Nossas tropas também precisam dessas malas,[COLOR_REVERT]" declara o oficial. "[COLOR_SELECTED_TEXT]Não quero confiscá-los, mas se for preciso...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]O quê? É isso?[COLOR_REVERT]" o confeiteiro desesperado grita. "[COLOR_SELECTED_TEXT]Não posso adiar meus clientes novamente. Encontre uma maneira de produzir mais farinha![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Werter Herr Bäcker, ich bin hier um die bestellten Säcke mit Mehl abzuholen, mein Lager ist schon wieder leer[COLOR_REVERT]", teilt der Konditor dem Bäcker hoffnungsfroh mit.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Oh je, dies hier sind derzeit die letzten Säcke, die ich Euch geben kann, die Miliz hat schon wieder alles aufgekauft[COLOR_REVERT]" entgegnet der Bäcker entschuldigend.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Moment, die werden von der Truppe auch noch dringend gebraucht, [COLOR_REVERT]," schreitet der Offizier ein." [COLOR_SELECTED_TEXT]Ich möchte die Säcke auch nur ungern requirieren, aber wenn es sein muss...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Waaas? Das ist alles?[COLOR_REVERT]", schreit der Konditor entsetzt auf. "[COLOR_SELECTED_TEXT]Ich kann doch nicht schon wieder meine Kunden vertrösten, Ihr müsst dringend noch mehr herstellen[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Здравствуйте, уважаемый мельник, я пришел забрать заказанные мешки с мукой. Мой склад снова пуст.[COLOR_REVERT]" — с надеждой говорит пекарь.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Извините, но это всё, что осталось из заготовленного мной за эту неделю. Ополченцы скупили почти всю муку...[COLOR_REVERT]" – извиняющимся тоном отвечает мельник.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Не так быстро! Войскам тоже нужны эти мешки.[COLOR_REVERT]" — заявляет вошедший во время разговора офицер. "[COLOR_SELECTED_TEXT]Не хотелось бы их конфисковывать, но если придется...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Что? Вы заберёте вообще всё?![COLOR_REVERT]" – восклицает отчаявшийся пекарь. И добавляет, обращаясь уже к мельнику: "[COLOR_SELECTED_TEXT]Я больше не могу отказывать своим клиентам. Вам придется производить больше муки.[COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Azért jöttem, hogy elvigyem a liszteszsákjaimat. A raktáram ismét üres.[COLOR_REVERT]" – mondja a cukrász a péknek.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sajnálom, de ezek az utolsó zsákok, amiket adhatok neked. A nemzetőrség megvette az összes készletemet,[COLOR_REVERT]" válaszolja bocsánatkérően a pék.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ne olyan gyorsan! A katonáinknak is szükségük van ezekre a zsákokra,[COLOR_REVERT]" jelenti ki a tiszt. "[COLOR_SELECTED_TEXT]Nem akarom elkobozni őket, de ha muszáj...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Mi? Ennyi?[COLOR_REVERT]" – kiált fel kétségbeesetten a cukrász. "[COLOR_SELECTED_TEXT]Nem halaszthatom el újra a vevőimet. Találj ki valamit, hogy több lisztet tudj előállítani![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER</Tag>
@@ -5394,6 +5435,7 @@
 		<French>Trosi planteurs de manioc</French>
 		<German>Drei erfahrene Maniokpflanzer</German>
 		<Russian>Три опытних плантатора маниоки</Russian>
+		<Hungarian>Három tapasztalt maniókaültető</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_HEAD</Tag>
@@ -5402,6 +5444,7 @@
 		<French>Plus de Manioc</French>
 		<German>Mehr Maniok</German>
 		<Russian>Больше маниоки</Russian>
+		<Hungarian>Több manióka</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_CASSAVA_PLANTER_TEXT</Tag>
@@ -5409,6 +5452,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Felizmente, você pode receber outro especialista nas colônias.[NEWLINE][NEWLINE]Agora você tem três plantadores de mandioca experientes. Eles prometem produzir recursos de mandioca ainda mais elevados. Continue o bom trabalho e em breve suas colônias serão amplamente conhecidas pelo cultivo de mandioca.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Maniokpflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, вы догадались пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь у вас трудятся уже три опытных плантаторов маниоки. Благодаря этому теперь вы будете получать еще более высокие урожаи при сборе этого товара. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию этого деликатеса.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a kolóniákon.[NEWLINE][NEWLINE]Most már három tapasztalt maniókaültetőt tudott felfogadni a kolóniák számára. Ezzel most még nagyobb termést lehet betakarítani. Folytassa a kiváló munkát és hamarosan a kolóniái széles körben ismertek lesznek e specialitás termesztéséről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR</Tag>
@@ -5417,6 +5461,7 @@
 		<French>Trois collecteur de cochenille expérimenté</French>
 		<German>Drei erfahrene Cochenille Sammler</German>
 		<Russian>Три опытных сборщика кошенили</Russian>
+		<Hungarian>Három tapasztalt bíbortetű gyűjtő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_HEAD</Tag>
@@ -5425,13 +5470,15 @@
 		<French>Voir rouge sans la colère</French>
 		<German>Mehr Cochenille</German>
 		<Russian>Больше кошенили</Russian>
+		<Hungarian>Több bíbortetű</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_COCHINEAL_COLLECTOR_TEXT</Tag>
-		<English>Milord, you colonies are growing. Fortunately another specialist has arrived in the colonies.[NEWLINE][NEWLINE]We now have three experienced cochineal collectors. Using them you can expect even higher yields from the harvest. With such good work soon your colonies will be known far and wide for cochineal cultivation.[NEWLINE][NEWLINE]</English>
+		<English>Milord, you colonies are growing. Fortunately another specialist has arrived in the colonies.[NEWLINE][NEWLINE]We now have three experienced cochineal collectors. Using them you can expect even higher yields. With such good work soon your colonies will be known far and wide for the cochineal you gather and process.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, suas colônias estão crescendo. Felizmente outro especialista chegou às colônias.[NEWLINE][NEWLINE]Agora temos três coletores de cochonilha experientes. Usando-os você pode esperar recursos ainda maiores da colheita. Com um trabalho tão bom, em breve suas colônias serão conhecidas em todo o mundo pelo cultivo de cochonilha.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Cochenille Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte dieses Rohstoffs erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau dieser Spezialität bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, в колонии прибыл еще один специалист.[NEWLINE][NEWLINE]Вы смогли завербовать трех опытных сборщиков кошенили. Используя их, вы можете рассчитывать на более высокие урожаи. С такой хорошей работой скоро ваши колонии станут широко известны благодаря выращиванию кошенили.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére újabb szakember érkezett a gyarmatokra.[NEWLINE][NEWLINE]Sikerült három tapasztalt bíbortetű gyűjtőt felfogadni. Velük még nagyobb betakarításra számíthat. Ilyen jó munkával hamarosan a kolóniái messze földön híresek lesznek a bíbortetű-termesztésről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER</Tag>
@@ -5440,6 +5487,7 @@
 		<French>Trois cueilleurs de fruits experts</French>
 		<German>Drei erfahrene Fruchtsammler</German>
 		<Russian>Три опытных сборщика фруктов</Russian>
+		<Hungarian>Három tapasztalt gyümölcsszedő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_HEAD</Tag>
@@ -5448,6 +5496,7 @@
 		<French>Plus de fruits</French>
 		<German>Mehr Früchte</German>
 		<Russian>Больше фруктов</Russian>
+		<Hungarian>Bőséges friss gyümölcs</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_FRUITS_PICKER_TEXT</Tag>
@@ -5455,6 +5504,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Agora chegou outro especialista.[NEWLINE][NEWLINE]Você recrutou três colhedores de frutas experientes. Isso significa que você obterá recursos ainda maiores durante a colheita. Continue com o bom trabalho! Em breve as colônias serão amplamente conhecidas por nossos frutos abundantes.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Fruchtsammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte aller Art von Früchte erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von reichhaltigen Früchten bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, вы можете принять в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы наняли трех опытных сборщиков фруктов. Это означает, что вы можете рассчитывать на более высокие урожаи. Продолжайте начатое! Скоро колонии станут широко известны благодаря изобилию фруктов.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Most már három tapasztalt gyümölcsszedőt fogadott fel. Ez azt jelenti, hogy a szüret során még nagyobb termést fog elérni. Csak így tovább! Hamarosan a kolóniák széles körben ismertek lesznek a bőséges gyümölcstermésükről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER</Tag>
@@ -5463,6 +5513,7 @@
 		<French>Trois planteurs d'indigo expert</French>
 		<German>Drei erfahrene Indigo Pflanzer</German>
 		<Russian>Три опытных плантатора индиго</Russian>
+		<Hungarian>Három tapasztalt indigó termesztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_HEAD</Tag>
