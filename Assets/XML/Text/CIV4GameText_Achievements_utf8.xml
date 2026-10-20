@@ -3244,7 +3244,7 @@
 		<Portuguese>Seis servos contratados</Portuguese>
 		<French>Six domestiques sous contrats</French>
 		<German>Sechs Schuldknechte</German>
-		<Russian>Шесть кабальных слуг</Russian
+		<Russian>Шесть кабальных слуг</Russian>
 		<Hungarian>Hat Szerződéses Szolga</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -4691,6 +4691,7 @@
 		<French>Entrainement militaire [NEWLINE] plutôt que travailler la terre</French>
 		<German>Grundausbildung statt [NEWLINE]täglicher Arbeit</German>
 		<Russian>Военная подготовка вместо повседневного труда</Russian>
+		<Hungarian>Gyalogsági alapkiképzés [NEWLINE]a kétkezi munka helyett</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_INFANTRY_TEXT</Tag>
@@ -4698,6 +4699,7 @@
 		<Portuguese>Milorde, você já reuniu quinze unidades da milícia colonial. As colônias perdem cada vez mais dos seus melhores trabalhadores para os militares. Isso é realmente necessário?  [NEWLINE][NEWLINE]Considere que a maioria desses homens trabalha em lojas ou fazendas para aumentar nossa produção econômica. O rei quer receitas das colônias, especialmente porque investiu muito dinheiro nelas. Você deve estar preparado com um bom motivo quando ele perguntar.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Ihr habt jetzt schon 15 Einheiten Kolonialmiliz aufstellen lassen. Die Kolonien müssen immer mehr ihrer guten und gesunden Arbeiter an das Militär abgeben. Ist das wirklich nötig?  [NEWLINE][NEWLINE]Bedenkt, dass ein Großteil dieser Männer auch in Werkstätten oder auf Farmen arbeiten  könnte, um die Wirtschaftsleistung zu steigern. Der König will durch die Kolonien verdienen anstatt dort nur immer Geld reinstecken zu müssen. Ihr solltet dafür einen guten Grund haben, wenn Ihr gefragt werdet.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы создали уже 15 отрядов колониальных ополченцев. Поселениям приходится отправлять в армию все больше и больше своих лучших работников. Это действительно необходимо?[NEWLINE][NEWLINE]Учтите, что большинство этих мужчин заняты работой на производствах или фермах, чтобы увеличить нашу экономическую производительность. Король хочет получить доход от колоний, тем более что он вложил в них так много денег. Когда он спросит, почему доходы не растут, как планировалось, у вас должен быть готов достойный ответ.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, már tizenöt gyarmati nemzetőre van. A gyarmatoknak egyre több és több jó munkásukat kell a hadseregbe küldeniük. Tényleg szükség van erre?  [NEWLINE][NEWLINE]Fontolja meg, hogy ezeknek az embereknek a többsége a boltokban vagy a gazdaságokban dolgozzon, hogy növelje a gazdasági teljesítményünket. A Király bevételt akar a gyarmatoktól, hiszen sok pénzt fektetett bele. Készen kell állni egy jó indokkal, amikor majd rákérdez.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY</Tag>
@@ -4706,6 +4708,7 @@
 		<French>Quinze infanteries de ligne</French>
 		<German>Fünfzehn Einheiten Linieninfanterie</German>
 		<Russian>Пятнадцать линейных пехотинцев</Russian>
+		<Hungarian>Tizenöt Sorkatona</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY_HEAD</Tag>
@@ -4714,6 +4717,7 @@
 		<French>Inquiétude de la population</French>
 		<German>Die Bevölkerung in Sorge</German>
 		<Russian>Население в опасности</Russian>
+		<Hungarian>A lakosság aggódni kezd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_LINE_INFANTRY_TEXT</Tag>
@@ -4721,6 +4725,7 @@
 		<Portuguese>Milorde, você já levantou quinze unidades de infantaria de linha. Um exército tão grande não é apenas caro, mas preocupa cada vez mais a população. Uma guerra é iminente? [NEWLINE][NEWLINE]Uma infantaria bem treinada é importante para proteger suas colônias emergentes no Novo Mundo. A questão é se a colônia realmente precisa das tropas ou se o dinheiro deveria ser investido de outras maneiras. A expansão com a espada deve ser cuidadosamente planejada.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Ihr habt jetzt schon 15 Einheiten Linieninfanterie aufstellen lassen. Soviel Militär ist nicht nur teuer, es versetzt die Bevölkerung auch zunehmend in Sorge. Steht etwa ein Krieg bevor? [NEWLINE][NEWLINE]Gut ausgebildete Infanterie ist wichtig zum Schutz Eurer aufstrebenden Kolonien in der Neuen Welt. Die Frage ist, ob die Kolonie die Truppen wirklich benötigt oder Ihr das Geld nicht besser anders investieren solltet. Expansion mit dem Schwert sollte ebenfalls gut durchdacht sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы создали уже 15 отрядов линейной пехоты. Такая большая армия не только дорого обходится, но и все больше беспокоит население. Неужели война неизбежна?[NEWLINE][NEWLINE]Хорошо обученная пехота важна для защиты новых колоний в Новом Свете. Вопрос в том, действительно ли колонии нужны эти войска или стоит вложить деньги во что-то другое. Экспансия с оружием в руках должна быть хорошо продумана.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, már tizenöt sorkatonája van. Egy ekkora hadsereg nemcsak drága, hanem egyre inkább aggasztja a lakosságot is. Közeleg a háború? [NEWLINE][NEWLINE]A jól képzett gyalogság fontos a feltörekvő gyarmatok védelméhez az Újvilágban. A kérdés az, hogy a gyarmatoknak valóban szüksége van-e a csapatokra, vagy inkább máshová kellene befektetni a pénzt. A karddal való terjeszkedést jól meg kell tervezni.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY</Tag>
@@ -4729,6 +4734,7 @@
 		<French>Quinze unités montées</French>
 		<German>Fünfzehn berittene Einheiten</German>
 		<Russian>Пятнадцать конных отрядов</Russian>
+		<Hungarian>Tizenöt Lovaskatona</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY_HEAD</Tag>
@@ -4737,13 +4743,15 @@
 		<French>Des sabres et des sacs d'avoine</French>
 		<German>Säbel und Hafersäcke</German>
 		<Russian>Сабли и овсяные мешки</Russian>
+		<Hungarian>Kardok és Szalagok</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_CAVALRY_TEXT</Tag>
-		<English>Milord, you are obviously a horse lover. You have purchased only the best horses and weapons to equip mounted units in the colonies. Many of the horses are gone at the moment, used to equip new carriages. But I guess you know what you're doing.[NEWLINE][NEWLINE]Horses are prey animals. Running from danger is instinctive for them. These warhorses will have to suppress that reflex in order to carry their riders into battle. Perhaps this is the best way to protect the colonies and to conquer new territories. Fighting is much faster on horseback. On the other hand their maintenance is so much more expensive.[NEWLINE][NEWLINE]</English>
+		<English>Milord, you are obviously a horse lover. You buy only the best horses to equip our mounted units. Several of the horses have been taken to equip new carriages, but I guess you have your reasons.[NEWLINE][NEWLINE]As prey animals horses instinctively run from danger. These warhorses will have to suppress that reflex when they carry their riders into battle. Still, this could be the best way to protect the colonies and to conquer new territories. Fighting is much faster on horseback, even if their maintenance is more expensive.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, você obviamente é um amante de cavalos. Você comprou apenas os melhores cavalos e armas para equipar unidades montadas nas colônias. Muitos dos cavalos já se foram, usados para equipar novas carruagens. Mas acho que você sabe o que está fazendo.[NEWLINE][NEWLINE]Cavalos são presas. Fugir do perigo é instintivo para eles. Esses cavalos de guerra terão que suprimir esse reflexo para poder levar seus cavaleiros para a batalha. Talvez esta seja a melhor forma de proteger as colônias e de conquistar novos territórios. Lutar é muito mais rápido a cavalo. Por outro lado, sua manutenção é muito mais cara.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Ihr seid offensichtlich ein Pferdeliebhaber. Nur die besten Pferde und Blankwaffen habt Ihr angeschafft, und in den Kolonien eine stattliche Anzahl von berittenen Einheiten ausgerüstet. Die Pferde fehlen jetzt natürlich, um neue Fuhrwerke auszurüsten. Aber Ihr werdet schon wissen, was Ihr tut.[NEWLINE][NEWLINE]Pferde sind Fluchttiere. Es scheint allerdings, dass diese Pferde in nicht allzulanger Zeit diesen Reflex unterdrücken müssen, um ihre Reiter in die Schlacht zu führen. Aber vielleicht ist das notwendig, um die Kolonien zu schützen und neue Territorien zu erobern. Das geht vom Pferderücken aus natürlich viel schneller. Allerdings ist der Unterhalt auch teurer. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы явно любитель лошадей. Вы покупали только лучших лошадей и оружие для оснащения конных отрядов. И теперь у нас не хватает лошадей для организации транспортных сетей. Но надеемся, вы знаете, что делаете.[NEWLINE][NEWLINE]Лошади не хищные животные. Бегство от опасности является для них инстинктивным. И этим боевым коням придётся научиться подавлять этот рефлекс, чтобы нести своих всадников в бой. Возможно, это лучший способ защитить колонии и завоевать новые территории. Сражаться намного быстрее верхом. Однако с другой стороны, их содержание намного дороже.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, ön nyilvánvalóan lóbarát. A legjobb lovakat és fegyvereket vásárolta a gyarmatok lovas egységeinek felszereléséhez. A lovak közül sok eltűnt, új kocsik elé fogták be őket. De gondolom, tudja mit csinál.[NEWLINE][NEWLINE]A lovak zsákmányállatok. Ösztönösen menekülnek a veszély elől. Ezeknek a harci lovaknak el kell nyomniuk ezt a reflexet, hogy lovasaikat a csatába vihessék. Talán ez a legjobb módja a kolóniák védelmének és az új területek meghódításának. Lóháton sokkal gyorsabb a harc. Másrészt viszont a fenntartásuk sokkal drágább.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY</Tag>
@@ -4752,6 +4760,7 @@
 		<French>Quinze artilleries légères</French>
 		<German>Fünfzehn leichte Geschütze</German>
 		<Russian>Пятнадцать легких артиллерийских орудий</Russian>
+		<Hungarian>Tizenöt könnyűtüzérség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY_HEAD</Tag>
@@ -4760,13 +4769,15 @@
 		<French>Des forts protégés</French>
 		<German>Geschützte Forts</German>
 		<Russian>Под надёжной защитой</Russian>
+		<Hungarian>Védett erődök</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_LIGHT_ARTILLERY_TEXT</Tag>
-		<English>Milord, to defend a city effectively requires a sufficient number of light artillery. You have quite a lot of them already, so that many of our new colonies are well-protected.[NEWLINE][NEWLINE]However, light artillery and the equipment for it also takes up a lot of space. In addition, the guns need to be regularly checked and adjusted, and the operating crews need training. In short, artillery is really expensive. Think about that when you buy more guns, even if it makes the population feel a little safer.[NEWLINE][NEWLINE]</English>
+		<English>Milord, it takes a lot of light artillery to defend a city effectively. Right now you have enough to protect most of our settlements.[NEWLINE][NEWLINE]On the other hand light artillery takes up space, needs regular maintenance, and gun crews have to be trained. In short, artillery is expensive. Don't forget that when you buy more artillery, even if it makes the population feel a little safer.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, para defender uma cidade de forma eficaz é necessário um número suficiente de artilharia leve. Você já tem muitos deles, então muitas de nossas novas colônias estão bem protegidas.[NEWLINE][NEWLINE]No entanto, a artilharia leve e o equipamento para ela também ocupam muito espaço. Além disso, as armas precisam ser verificadas e ajustadas regularmente e as equipes operacionais precisam de treinamento. Resumindo, a artilharia é muito cara. Pense nisso quando comprar mais armas, mesmo que isso faça a população se sentir um pouco mais segura.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, eine Stadt lässt sich nur mit einer gewissen Anzahl von leichten Geschützen wirksam verteidigen. Ihr habt jetzt schon eine ganze Menge davon angeschafft, so dass viele unserer neuen Kolonien wirksam geschützt werden können. [NEWLINE][NEWLINE]Allerdings nehmen Geschütze und die Ausrüstung dafür auch viel Platz weg. Zudem müssen die Geschütze regelmäßig überprüft und gereigt werden und die Bedienungsmannschaften brauchen Training. Kurzum, Artillerie ist wirklich teuer. Denkt daran, wenn Ihr weitere Geschütze anschafft. Immerhin fühlt die Bevölkerung sich damit jedes Mal ein Stückchen sicherer.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, для эффективной защиты города требуется достаточное количество легкой артиллерии. Их у вас уже довольно много, так что многие из наших новых колоний хорошо защищены.[NEWLINE][NEWLINE]Однако легкая артиллерия и оборудование для нее также занимают много места. Кроме того, орудия необходимо регулярно проверять и настраивать, а действующие расчеты – обучать. Словом, артиллерия действительно дорогая. Думайте об этом, когда покупаете больше оружия, даже если это позволяет населению чувствовать себя в большей безопасности.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, egy város hatékony védelméhez elegendő számú könnyűtüzérségre van szükség. Önnek már most is elég sok van belőlük, így sok új kolóniánk jól védett.[NEWLINE][NEWLINE]A könnyűtüzérség és a hozzá szükséges felszerelés azonban sok helyet is foglal. Ráadásul az ágyúkat rendszeresen ellenőrizni, javítani kell, és a kezelőszemélyzetet is ki kell képezni. Egyszóval a tüzérség nagyon drága. Gondolj erre, amikor több fegyvert vásárolsz, még akkor is, ha a lakosság ettől egy kicsit jobban biztonságban érzi magát[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY</Tag>
@@ -4775,6 +4786,7 @@
 		<French>Quinze artilleries lourde</French>
 		<German>Fünfzehn schwere Geschütze</German>
 		<Russian>Пятнадцать тяжелых артиллерийских орудий</Russian>
+		<Hungarian>Tizenöt nehéztüzérség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_HEAD</Tag>
@@ -4783,6 +4795,7 @@
 		<French>Boulets en fer et poudre noire</French>
 		<German>Eisenkugeln und Schwarzpulver</German>
 		<Russian>Тяжелые ядра</Russian>
+		<Hungarian>Vasgolyók és[NEWLINE]fekete por</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_COLONIAL_HEAVY_ARTILLERY_TEXT</Tag>
@@ -4790,6 +4803,7 @@
 		<Portuguese>Milorde, pelo que ouvimos, o Rei não está entusiasmado com esta acumulação de artilharia pesada nas colônias. Na Europa, há uma preocupação crescente - não apenas com o nosso próprio Rei - sobre o que realmente se pretende fazer com ele. Você realmente não precisa de tanta artilharia pesada para defender uma colônia e prefere lutar contra os selvagens com mosquetes e baionetas. [NEWLINE][NEWLINE]Então o que você quer com isso? Qual colônia próxima você deseja? Ou você chegaria ao ponto de desafiar o exército do rei? Decida logo, antes que alguém chegue antes de você.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, was man hört ist der König von dieser Ansammlung schwerer Artillerie in den Kolonien nicht begeistert. In Europa wächst die Sorge - nicht nur bei unserem eigenen König - was Ihr damit eigentlich vorhabt. So viel schwere Artillerie braucht man eigentlich nicht zur Verteidugung einer Kolonie und die Wilden bekämpft man eher mit Muskete und Bajonett. [NEWLINE][NEWLINE]Was also wollt Ihr damit? Nach welcher nahegelegenen Kolonie gelüstet es Euch? Oder wollt Ihr gar des Königs Armee die Stirn bieten? Ihr solltet Euch bald entscheiden, bevor Euch jemand zuvor kommt.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, судя по тому, что мы слышали, Король не в восторге от этого наращивания количества тяжелой артиллерии в колониях. По всей Европе растет озабоченность о том, что вы на самом деле собираетесь с ней делать. Нам не нужно столько тяжелой артиллерии, чтобы защитить колонию, да и с дикарями сражаться сподручнее с помощью мушкета и штыка.[NEWLINE][NEWLINE]Может, вы обратили свой взор на какую-то соседнюю колонию? Или вы готовы зайти так далеко, чтобы бросить вызов армии Короля? Принимайте решение скорее, пока кто-нибудь не опередил вас.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, ahogy hallottuk, a Királynak nem tetszik a nehéztüzérség felállítása a gyarmatokon. Európában egyre nagyobb az aggodalom - nem csak a mi Királyunknál - hogy mit is szándékozik ezzel kezdeni. Nem igazán van szüksége ennyi nehéztüzérségre egy gyarmat védelméhez, és inkább muskétával és bajonettel harcol a vadak ellen. [NEWLINE][NEWLINE]Szóval mit akar ezzel kezdeni? Melyik közeli kolóniára vágyik? Vagy elmenne odáig, hogy szembeszállna a Király seregével? Döntsön mielőbb, mielőtt valaki megelőz bennünket![NEWLINE][NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS</Tag>
@@ -4798,6 +4812,7 @@
 		<French>Plusieurs hommes religieux</French>
 		<German>Mehrere religiöse Eiferer</German>
 		<Russian>Несколько религиозных людей</Russian>
+		<Hungarian>Több vallásos ember</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_HEAD</Tag>
@@ -4806,6 +4821,7 @@
 		<French>Des fanatiques</French>
 		<German>Religiöse Eiferer</German>
 		<Russian>Религиозные фанатики</Russian>
+		<Hungarian>Lelkes hívők</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_RELIGIOUS_ZEALOTS_TEXT</Tag>
@@ -4813,6 +4829,7 @@
 		<Portuguese>Milorde, você certamente notou a variedade de religiosos não-conformistas que se estabeleceram nas colônias. A instalação aqui está aberta a todos, desde que trabalhem duro para o bem de todos nós.[NEWLINE][NEWLINE]O único problema é que essas pessoas acabaram no Novo Mundo por um motivo. A razão é que a Europa não os queria. Eles podem facilmente criar problemas quando pregam as suas diferentes interpretações da Palavra de Deus. Se eles decidirem impor suas crenças a outros colonos, talvez você precise mandá-los embora novamente.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, mittlerweile haben sich in den Kolonien verschiedenste religiöse Vertriebene niedergelassen. Grundsätzlich stehen die Kolonien allen offen, solange sie hart für das Wohl der Kolonien arbeiten und keinen Ärger machen.[NEWLINE][NEWLINE]Das Problem ist nur, dass diese Leute aus gutem Grund hier in die neue Welt gekommen sind und man sie in Europa nicht mehr haben wollte. Achtet darauf, dass sie keinen Unfrieden stiften und nichts weiter tun als das Wort Gottes zu predigen. Sollten sie das Wohl der Kolonien gefährden, solltet Ihr Euch vielleicht wieder von Ihnen trennen. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, вы наверняка заметили, что в колониях поселились самые разные религиозные нонконформисты. По сути, колонии открыты для всех, если они усердно трудятся на благо колоний и не создают проблем.[NEWLINE][NEWLINE]Единственная проблема в том, что эти люди оказались здесь, в Новом Свете, не просто так. Причина в том, что в Европе они стали кому-то неугодны. Следите за тем, чтобы они не создавали проблем, когда проповедуют слово Божье. Если они угрожают благополучию колоний, возможно, нам придется снова отправить их в путь...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, bizonyára észrevette, hogy a vallási nonkonformisták széles köre telepedett le a gyarmatokon. Alapvetően a gyarmatok mindenki számára nyitottak, amíg keményen dolgoznak a gyarmatok javára és nem okoznak bajt.[NEWLINE][NEWLINE]Az egyetlen probléma az, hogy ezek az emberek okkal kerültek ide az Újvilágba. Ez az ok az, hogy Európának nem kellettek. Vigyázzon, hogy ne okozzanak bajt, miközben Isten igéjét hirdetik. Ha veszélyeztetik a gyarmatok jólétét, akkor lehet, hogy ismét útjukra kell bocsátani őket.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP</Tag>
@@ -4821,6 +4838,7 @@
 		<French>Le premier évêque</French>
 		<German>Der erste Bischoff</German>
 		<Russian>Первый епископ</Russian>
+		<Hungarian>Az első püspök</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_HEAD</Tag>
@@ -4829,6 +4847,7 @@
 		<French>Le maitre-berger des ouailles la colonie</French>
 		<German>Der oberste Hirte für die Kolonie</German>
 		<Russian>Главный пастырь колонии</Russian>
+		<Hungarian>A kolónia főpásztora</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIRST_BISHOP_TEXT</Tag>
@@ -4836,6 +4855,7 @@
 		<Portuguese>Milorde, a Igreja obviamente sente que o seu rebanho no Novo Mundo precisa de mais disciplina e ordem. Eles lhe enviaram um bispo para assumir o comando.[NEWLINE][NEWLINE]"A Palavra é credível: quem aspira ao ofício de bispo aspira a uma grande tarefa. Portanto, que o bispo seja irrepreensível, marido de uma só mulher, sóbrio, prudente, de porte digno, hospitaleiro, apto para ensinar; que ele não seja um homem bêbado ou violento, mas atencioso; que ele não seja briguento ou ganancioso por dinheiro.[NEWLINE][NEWLINE]Ele deve presidir bem sua própria casa, educar seus filhos na obediência e com toda a decência. Se alguém não pode presidir sua própria casa, como pode cuidar da Igreja de Deus? [NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, die Kirche ist offensichtlich der Meinung, dass ihre Schäfchen in der Neuen Welt ein wenig mehr Zucht und Ordnung benötigen. Man hat Euch einen Bischof geschickt, der das übernehmen soll. [NEWLINE][NEWLINE]"Das Wort ist glaubwürdig: Wer das Amt eines Bischofs anstrebt, der strebt nach einer großen Aufgabe. Deshalb soll der Bischof untadelig, Mann einer einzigen Frau, nüchtern, besonnen sein, von würdiger Haltung, gastfreundlich, fähig zu lehren; er sei kein Trinker und kein gewalttätiger Mensch, sondern rücksichtsvoll; er sei nicht streitsüchtig und nicht geldgierig.[NEWLINE][NEWLINE]Er muss seinem eigenen Haus gut vorstehen, seine Kinder in Gehorsam und allem Anstand erziehen. Wenn einer seinem eigenen Haus nicht vorstehen kann, wie soll der für die Kirche Gottes sorgen? Er darf kein Neubekehrter sein, damit er nicht hochmütig wird und dem Gericht des Teufels verfällt. Er muss aber auch bei den Außenstehenden einen guten Ruf haben, damit er nicht in üble Nachrede kommt und in die Falle des Teufels gerät. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, Церковь явно считает, что ее паства в Новом Свете нуждается в большей дисциплине и порядке. Они прислали к нам епископа для управления делами Церкви.[NEWLINE][NEWLINE]"Верно слово: кто стремится к сану епископа, тот стремится к великому делу. Итак, да будет епископ непорочен, муж одной жены, трезвый, благоразумный, с достоинством, гостеприимный, способный к обучению, не пьяница и не буйный человек, но рассудительный, не сварливый и не жадный до денег.[NEWLINE][NEWLINE]Он должен хорошо руководить своим домом, воспитывать своих детей в послушании и приличиях. Если кто не может руководить своим домом, как может он заботиться о Божьей церкви? Он не должен быть новообращенным, чтобы не возгордиться и не попасть на суд дьявола. Он также должен иметь хорошую репутацию среди страждущих, чтобы он не приобрел дурной славы и не попал в ловушку дьявола".[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, az Egyház nyilvánvalóan úgy érzi, hogy az Újvilágban élő nyájának nagyobb fegyelemre és rendre van szüksége. Püspököt küldtek neked, hogy átvegye az irányítást[NEWLINE][NEWLINE]"A szó hiteles: aki a püspöki hivatalra törekszik, nagy feladatra törekszik. Ezért a püspök legyen feddhetetlen, egy feleség férje, józan, megfontolt, méltóságteljes tartású, vendégszerető, tanítani tudó; ne legyen részeges vagy erőszakos ember, hanem megfontolt; ne legyen veszekedős vagy pénzsóvár.[NEWLINE][NEWLINE]Jól elnököljön saját háza felett, gyermekeit engedelmességre és minden tisztességre nevelje. Ha valaki nem tud elnökölni a saját háza felett, hogyan gondoskodhatna Isten gyülekezetéről? Nem szabad újonnan megtértnek lennie, nehogy elbizakodottá váljon és az ördög ítélete alá essen. De a kívülállók között is jó hírnévvel kell rendelkeznie, nehogy rossz hírbe kerüljön és az ördög csapdájába essen." [NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE</Tag>
@@ -4844,6 +4864,7 @@
 		<French>Le troisième noble</French>
 		<German>Der dritte Edelmann</German>
 		<Russian>Третий дворянин</Russian>
+		<Hungarian>A harmadik nemes</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_HEAD</Tag>
@@ -4852,6 +4873,7 @@
 		<French>Les nobles découvrent le nouveau monde</French>
 		<German>Adlige entdecken die Neue Welt</German>
 		<Russian>Дворяне открывают Новый Свет</Russian>
+		<Hungarian>A nemesek felfedezik az Újvilágot</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_NOBLE_TEXT</Tag>
@@ -4859,6 +4881,7 @@
 		<Portuguese>Milorde, parece que suas colônias são tão bem-sucedidas que até os nobres estão descobrindo o Novo Mundo por si próprios. Está agora em voga na Europa passar algum tempo no “aventureiro” Novo Mundo ou comprar aqui uma casa de campo e organizar caçadas à vista dos acampamentos indígenas. Esses nobres então têm histórias para contar em casa.[NEWLINE][NEWLINE]Que este lugar está repleto de nativos hostis, animais selvagens, clima insuportável e sabe-se lá o que mais, a maioria deles não percebe até que se encontrem sozinhos, sem criados, em um lugar onde ninguém lhes entrega a toalha aquecida ou o xerez. Certifique-se de ajudá-los a sobreviver a esta aventura surpreendente. Em troca, eles podem ser muito úteis na administração de sua colônia.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, es scheint, dass Eure Kolonien so erfolgreich sind, dass mittlerweile sogar etliche Adlige die Neue Welt für sich entdecken. Offenbar wird es in Europa gerade en vogue mal eine Zeit in der "abenteuerreichen" Neuen Welt zu verbringen oder sich hier ein Landhaus zuzulegen und Jagden in Sichtweite von Indianerlagern zu veranstalten. Dann hat man zuhause etwas zu berichten.[NEWLINE][NEWLINE]Dass es hier von feindlichen Ureinwohnern, wilden Tieren, unerträglichem Klima und wert weiß was sonst noch nur so wimmelt, dämmert den meisten erst, wenn sie hier ohne Diener dastehen und keiner ihnen das angewärmte Handtuch oder den Sherry reicht. Sorgt trotzdem dafür, dass dieses Abenteuer überleben. Sie werden Euch sehr nützlich bei der Verwaltung Eurer Kolonie sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, кажется, наши колонии настолько успешны, что даже дворяне решили открыть для себя Новый Свет. Сейчас в Европе модно проводить время в "авантюрном" Новом Свете или покупать здесь загородный дом и устраивать охоту в пределах видимости индейских лагерей. Этим дворянам есть что рассказать дома.[NEWLINE][NEWLINE]То, что это место кишит враждебными туземцами, дикими животными, невыносимым климатом и кто знает чем еще, до большинства из них не доходит, пока они не оказываются одни без слуг и никто не протягивает им подогретое полотенце или херес. Постарайтесь помочь им пережить это удивительное приключение. Они могут очень пригодиться нам в управлении колонией.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, úgy tűnik, hogy az Ön gyarmatai olyan sikeresek, hogy még a nemesek is felfedezik maguknak az Újvilágot. Európában most divatos dolog a "kalandvágyó" Újvilágban időzni, vagy itt vidéki házat venni és vadászatokat szervezni az indiántáborok látótávolságában. Ezeknek a nemeseknek aztán lesz mit mesélniük otthon.[NEWLINE][NEWLINE]Hogy ez a hely hemzseg az ellenséges Indiánoktól, a vadállatoktól, az elviselhetetlen éghajlattól és ki tudja, mi más nem jut eszükbe a legtöbbjüknek, amíg egyedül, szolgák nélkül nem találják magukat, és senki sem nyújtja át nekik a felmelegített törölközőt vagy a sherryt. Segítsen nekik túlélni ezt a meglepő kalandot! Nagyon hasznosak lehetnek számodra a kolóniád igazgatásában.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER</Tag>
@@ -4867,6 +4890,7 @@
 		<French>Le troisième fondateur</French>
 		<German>Der dritte Siedlungsgründer</German>
 		<Russian>Третий поселенец</Russian>
+		<Hungarian>A harmadik telepes</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_HEAD</Tag>
@@ -4875,13 +4899,15 @@
 		<French>Fin prêts</French>
 		<German>Vorbereitungen abgeschlossen</German>
 		<Russian>Подготовка завершена</Russian>
+		<Hungarian>Az előkészületek befejeződtek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_SETTLER_TEXT</Tag>
-		<English>Milord, the materials for the new settlement are piling up on the just-completed dock and the settlers are ready to leave. What are you waiting for?[NEWLINE][NEWLINE]The longer you wait, the more likely it is that the settlers here in the colony will catch some disease or scatter to the taverns and gambling dens at the harbour. You should get them on their way as soon as possible. Otherwise the best places for a new settlement will be snatched away by the competitors![NEWLINE][NEWLINE]</English>
+		<English>Milord, supplies for the new settlement are piling up on the dock. The settlers are eager to leave. What are you waiting for?[NEWLINE][NEWLINE]The longer you wait, the more likely it is that these settlers will catch some disease here in the colony, or scatter to the taverns and gambling dens at the harbour. Get them on their way as soon as possible! Otherwise the best places for a new settlement will be snatched away by the competitors.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, os materiais para a nova colônia estão se acumulando no cais recém-concluído e os colonizadores estão prontos para partir. O que você está esperando?[NEWLINE][NEWLINE]Quanto mais você esperar, maior será a probabilidade de os colonizadores aqui na colônia pegarem alguma doença ou se espalharem pelas tavernas e casas de jogo no porto. Você deve colocá-los a caminho o mais rápido possível. Caso contrário, os melhores locais para uma nova colônia serão arrebatados pelos concorrentes![NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, auf dem gerade erst fertiggestellten Dock stapeln sich die Materialien für die neue Siedlung und die Siedler sind bereit aufzubrechen. Worauf wartet Ihr denn noch?[NEWLINE][NEWLINE]Je länger Ihr wartet, desto eher stecken sich die Siedler hier in der Kolonie mit irgendwelchen Krankheiten an oder zerstreuen sich in die Wirtshäuser und Spielhöllen am Hafen. Ihr solltet sie möglichst bald auf den Weg bringen, damit Euch die besten Plätze für eine neue Siedlung nicht von der Konkurrenz weggeschnappt werden![NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, материалы для нового поселения собраны у только что построенного дока и поселенцы готовы уйти. Чего вы ждете?[NEWLINE][NEWLINE]Чем дольше вы ждете, тем выше вероятность того, что поселенцы здесь, в колонии, подхватят какую-нибудь болезнь или разбегутся по тавернам и игорным заведениям в гавани. Вы должны отправить их в путь как можно скорее. Иначе лучшие места для нового поселения отберут конкуренты![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, az új település anyagai egyre gyűlnek a most elkészült dokkban és a telepesek készen állnak az indulásra. Mire vár még?[NEWLINE][NEWLINE]Minél tovább vár, annál valószínűbb, hogy a telepesek itt a kolónián elkapnak valami betegséget vagy szétszélednek a kikötő kocsmáiba és játékbarlangjaiba. A lehető leghamarabb útnak kellene indítania őket. Ellenkező esetben az új települések számára a legjobb helyeket a versenytársak fogják megszerezni![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_PENAL_COLONY</Tag>
@@ -4890,6 +4916,7 @@
 		<French>Douze criminel</French>
 		<German>Zwölf Kleinkriminelle</German>
 		<Russian>Двенадцать каторжников</Russian>
+		<Hungarian>Tizenkettő bűnöző</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_HEAD</Tag>
@@ -4898,21 +4925,24 @@
 		<French>Colonie pénitenciaire</French>
 		<German>Strafkolonie</German>
 		<Russian>Исправительная колония</Russian>
+		<Hungarian>Fegyenctelep</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_PENAL_COLONY_TEXT</Tag>
-		<English>Milord, the colony is slowly but surely becoming a penal colony. There are currently many criminals in the colony - too many, in fact. The prisons are overcrowded. You should intervene with the King so he stops sending you new convicts.[NEWLINE][NEWLINE]The problem in Europe is quickly solved as long as they can deport convicts here, but that may not be conducive to the success of this colony. Instead you should increase wages for real craftsmen to boost the production of goods![NEWLINE][NEWLINE]</English>
+		<English>Milord, this colony is slowly but surely becoming a penal colony. There are currently many criminals here - too many, in fact. Prisons are overcrowded. You should intervene with the King so he stops sending you new convicts.[NEWLINE][NEWLINE]Europe's problem is quickly solved when they deport convicts here, ignoring that the troublemakers become our problem. You should increase wages for real craftsmen to boost the production of goods![NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, a colônia está lenta mas seguramente a tornar-se numa colônia penal. Atualmente existem muitos criminosos na colônia – muitos, na verdade. As prisões estão superlotadas. Você deve intervir junto ao rei para que ele pare de enviar novos condenados.[NEWLINE][NEWLINE]O problema na Europa é rapidamente resolvido, desde que eles possam deportar os condenados para cá, mas isso pode não contribuir para o sucesso desta colônia. Em vez disso, você deveria aumentar os salários dos verdadeiros artesãos para impulsionar a produção de bens![NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, die Kolonie entwickelt sich langsam aber sicher zu einer Strafkolonie. Es befinden sich derzeit viele Kriminelle in der Kolonie - zu viele, um genau zu sein. Die Gefängnisse sind überfüllt. Ihr solltet beim König intervenieren, Euch keine neuen Sträflinge mehr zu schicken.[NEWLINE][NEWLINE]In Europa ist das Problem schnell gelöst, wenn man die Sträflinge hierher abschieben kann, aber dem Erfolg der Kolonie ist das vielleicht nicht gerade zuträglich. Ihr solltet lieber das Handgeld für echte Handwerker erhöhen und zusehen, dass Ihr die Güterproduktion verstärkt![NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, колония медленно, но верно превращается в исправительную колонию. Сейчас в колонии много преступников, даже слишком много. Тюрьмы переполнены. Вы должны вмешаться в дела Короля, чтобы он перестал присылать нам новых заключенных.[NEWLINE][NEWLINE]Проблема в Европе быстро решается, пока сюда можно депортировать заключенных, но это не способствет успеху самой колонии. Вместо этого мы должны повысить заработную плату настоящим мастерам, чтобы увеличить производство товаров![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolónia lassan, de biztosan fegyencteleppé válik. Jelenleg sok bűnöző van a kolónián - valójában túl sok. A börtönök túlzsúfoltak. Meg kellene kérnie a Királyt, hogy ne küldjön ide újabb elítélteket.[NEWLINE][NEWLINE]Európában a probléma gyorsan megoldódik, amíg ide deportálhatják az elítélteket, de ez nem biztos, hogy elősegíti a kolónia sikerét. Ehelyett meg kellene emelni a valódi mesteremberek bérét, hogy fellendüljön az árutermelés![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ROASTING</Tag>
-		<English>Roasting economy</English>
+		<English>The business of roasting</English>
 		<Portuguese>Economia de torrefação</Portuguese>
 		<French>Une économie torréfiée et rôtie</French>
 		<German>Experten für das Rösten</German>
 		<Russian>Экономика обжаривания</Russian>
+		<Hungarian>Pörkölési szakértelem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ROASTING_HEAD</Tag>
@@ -4921,6 +4951,7 @@
 		<French>Café, cacao et cacahuètes</French>
 		<German>Kaffee, Kakao und Erdnüsse</German>
 		<Russian>Кофе, какао и арахис</Russian>
+		<Hungarian>Kávé, kakaó és földimogyoró</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_ROASTING_TEXT</Tag>
@@ -4928,6 +4959,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Traga-me exatamente esse tipo de fruta da próxima vez[COLOR_REVERT]", o torrador aponta para os sacos cheios até a borda com frutas frescas de café. "[COLOR_SELECTED_TEXT]Eles são da melhor qualidade.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Agora que você pode processar o dobro de frutos de cacau, levo mais tempo para coletar o suficiente[COLOR_REVERT]", diz o coletor de cacau, satisfeito. "[COLOR_SELECTED_TEXT]O novo armazém, além do aprendizado com nosso último lote, significa que agora podemos entregar o melhor produto para a Europa, e há o suficiente para nossa própria colônia também[COLOR_REVERT]", dizem o colhedor de grãos de café e o colhedor de amendoim simultaneamente.[NEWLINE][NEWLINE]Grãos de café torrados, amendoins e cacau são guloseimas saborosas populares e lucrativas.[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Bringt mir das nächste Mal noch mehr von diesen Bohnen hier[COLOR_REVERT]", deutet der Röster auf die prall mit frischen Kaffeebeeren gefüllten Säcke. "[COLOR_SELECTED_TEXT]Die haben die beste Qualität.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Und von den Kakaofrüchten könnt Ihr nun auch doppelt so viel verarbeiten, da hab ich richtig was zu tun, um das alles einzusammeln[COLOR_REVERT]", freut sich die Kakaosammlerin. "[COLOR_SELECTED_TEXT]Das neue Lagerhaus und die Erfahrungen aus der letzten Produktion lassen uns nun beste Ware für Europa herstellen, aber für die Kolonie fällt sicher auch noch genug ab,[COLOR_REVERT]" meinen die Kaffeebeerensammlerin und der Erdnusspflücker wie aus einem Munde.[NEWLINE][NEWLINE]Ihr seid erfolgreich beim Aufbau einer Industrie zur Verarbeitung von gerösteten Kaffebohnen, Erdnüssen oder Kakao. Weiter so![NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]В следующий раз принеси мне еще таких ягод.[COLOR_REVERT]" — обжарщик указывает на мешки, до краев наполненные свежими кофейными ягодами. "[COLOR_SELECTED_TEXT]Они превосходного качества.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Теперь мы можем перерабатывать в два раза больше какао-бобов.[COLOR_REVERT]" – довольно говорит другой. "[COLOR_SELECTED_TEXT]Наш новый склад и опыт с нашей последней партией означают, что теперь мы можем производить лучший продукт для Европы, но его также будет достаточно и для нашей собственной колонии.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Не забывайте про арахис! В последнее время он стал пользоваться бешеным успехом.[COLOR_REVERT]" — вмешивается третий.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Legközelebb pontosan ilyen bogyót hozzon nekem[COLOR_REVERT]" - mutat a pörkölő a friss kávébogyókkal zsúfolásig teli zsákokra. "[COLOR_SELECTED_TEXT]Ezek a legjobb minőségűek.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Most, hogy kétszer annyi kakaóbabot tudsz feldolgozni, több időmbe telik összegyűjteni elegendő mennyiséget[COLOR_REVERT]" - mondja elégedetten a Kakaóbab Gyűjtő. "[COLOR_SELECTED_TEXT]Az új raktár, plusz a legutóbbi tételből tanultak, azt jelenti, hogy most már a legjobb terméket tudjuk szállítani Európába és a saját kolóniánknak is jut elég.[COLOR_REVERT]", mondja egyszerre a kávébogyó- és a mogyorószedő.[NEWLINE][NEWLINE]A pörkölt kávébab, a mogyoró és a kakaó népszerű, ízletes csemegék, és jövedelmezőek is.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEATIME</Tag>
@@ -4936,6 +4968,7 @@
 		<French>Experts en thés et épices </French>
 		<German>Tee- und Gewürzexperten</German>
 		<Russian>Эксперты по чаю и специям</Russian>
+		<Hungarian>Tea és fűszer szakértők</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEATIME_HEAD</Tag>
@@ -4944,6 +4977,7 @@
 		<French>Thé et épices</French>
 		<German>Tee und Gewürze</German>
 		<Russian>Чай и специи</Russian>
+		<Hungarian>Tea és fűszer</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_TEATIME_TEXT</Tag>
@@ -4951,6 +4985,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]Onde devo colocar todos os saquinhos novos com o chá? A coisa cresce como uma erva daninha[COLOR_REVERT]", o comerciante de chá aponta para os saquinhos cheios até a borda com folhas de chá frescas. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Eles têm a melhor qualidade e você não queria vendê-los originalmente em competição com os caros produtos importados do Oriente, mas eles crescem bem aqui, na sua porta. Você deveria estar realmente feliz com a eliminação dos impostos alfandegários[COLOR_REVERT]", diz o coletor de chá.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sim, bem, isso pode ser verdade, mas onde estou com minhas pimentas? Não há espaço suficiente no armazém para ambos[COLOR_REVERT]" reclama o comerciante de especiarias. "[COLOR_SELECTED_TEXT]Precisamos encontrar espaço, ou então terei que colher novas plantas todos os dias. Elas têm um sabor muito melhor fresco de qualquer maneira[COLOR_REVERT]", comenta o plantador de pimenta vermelha.[NEWLINE][NEWLINE]Você está construindo com sucesso uma indústria de processamento de chá e especiarias. Mantem! [NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Wo soll ich nur die ganzen neuen Säcke mit dem Tee noch unterbringen, das Zeug wuchert ja wie Unkraut[COLOR_REVERT]", deutet der Teehändler auf die prall mit frischen Teeblättern gefüllten Säcke.[NEWLINE][NEWLINE] "[COLOR_SELECTED_TEXT]Die haben die beste Qualität und Ihr wolltet das "Zeug" ursprünglich gar nicht verkaufen, sondern nur die teure Importware aus dem Osten. Dabei wächst das hier direkt vor Eurer Haustür. Ihr solltet Euch wirklich freuen, dass der Zoll wegfällt[COLOR_REVERT]", freut sich die Teesammlerin.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ja nun, das mag ja stimmen, aber wo bleibe ich mit meinen Chillischoten? Im Lager ist nicht genug Platz für beides[COLOR_REVERT]," beschwert sich die Gewürzhändlerin. "[COLOR_SELECTED_TEXT]Dafür finden wir auch noch Platz, ansonsten pflücke ich einfach jeden Tag neu. Frisch schmecken die eh viel besser.[COLOR_REVERT]", wirft die Gewürzpflückerin ein.[NEWLINE][NEWLINE]Ihr seid erfolgreich beim Aufbau einer Industrie zur Verarbeitung von Tee oder Gewürzen. Weiter so![NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]И куда мне девать все новые пакетики с чаем?[COLOR_REVERT]" - чайный торговец указывает на пакетики, до краев наполненные свежими чайными листьями.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]У них лучшее качество и вы изначально не хотели продавать "дрянь", а только дорогой импортный товар с Востока. А тут он растет прямо у вашего порога. Вы должны быть рады, что таможенная пошлина была отменена.[COLOR_REVERT]" - говорит сборщик чая.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Да, может быть, это и здорово, но где я буду складывать свои мешки с перцем чили? У нас не хватит места на складе для всего этого добра.[COLOR_REVERT]" - жалуется торговец специями. "[COLOR_SELECTED_TEXT]Для всего найдется место, только на новом складе. Я видел сегодня утром, как его начали строить.[COLOR_REVERT]" — вставляет сборщик красного перца.[NEWLINE][NEWLINE]Вы успешно строите отрасль для обработки чая или специй. Так держать![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Hová tegyem az új teás zsákokat? Úgy nő ez a cucc, mint a gaz[COLOR_REVERT]",a teakereskedő a friss tealevelekkel zsúfolásig teli zsákokra mutat. [NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]A legjobb minőségűek és eredetileg nem akartad eladni a drága keleti importáruval versenyezve, de itt terem a küszöbön. Igazán örülhetnél, hogy megszűnt a vám,[COLOR_REVERT]" - mondja a tealevél gyűjtő.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Hát igen, ez igaz lehet, de hová tegyem a chilipaprikámat? Nincs elég hely a raktárban mindkettőnek[COLOR_REVERT]" - panaszkodik a fűszerkereskedő. "[COLOR_SELECTED_TEXT]Helyet kell találni, különben minden nap új növényeket kell szednem. Frissen amúgy is sokkal jobb az ízük[COLOR_REVERT]" - vág közbe a paprika ültető.[NEWLINE][NEWLINE]Sikeresen építed a tea- és a fűszerfeldolgozó ipart. Csak így tovább! [NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS</Tag>
@@ -4959,6 +4994,7 @@
 		<French>Trois coupeurs de bois de sang</French>
 		<German>Drei Blauholzsammler</German>
 		<Russian>Три сборщика кампеша</Russian>
+		<Hungarian>Három kékfa gyűjtő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS_HEAD</Tag>
@@ -4967,6 +5003,7 @@
 		<French>Les teintes profondes de la jungle</French>
 		<German>Des Urwalds satte Farben</German>
 		<Russian>Яркие краски джунглей</Russian>
+		<Hungarian>A dzsungel gazdag színei</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LOGWOOD_COLLECTORS_TEXT</Tag>
@@ -4974,6 +5011,7 @@
 		<Portuguese>Milorde, a floresta primitiva guarda muitas surpresas novas. Junto com um suprimento quase inesgotável de madeira para a construção de colônias, oferece tipos especiais de madeira que podem ser usados para fazer tinturas![NEWLINE][NEWLINE]Envie seus especialistas botânicos para a selva para encontrar essa madeira. Extraia as tinturas e crie tecidos finos! Os cidadãos da sua colônia irão arrebatá-los de suas mãos - ou vendê-los por muito dinheiro para seus amigos na Europa![NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, der Urwald birgt doch immer wieder neue Überraschungen. Er bietet nicht nur einen schier unerschöpflichen Vorrat an guten Hölzern für den Aufbau der Kolonien, er bietet auch ganz besonderte Holzarten, aus denen man sogar Farben herstellen kann.[NEWLINE][NEWLINE]Ihr tut gut daran, Eure Handwerker mit besonderen Fähigkeiten im Aufspüren solcher Holzarten in den Urwald ausschwärmen zu lassen. Beschafft Euch das Holz, extrahiert die Farben und stellt edle Stoffe her! Die neuen Bürger Eurer Kolonie werden sie Euch aus den Händen reißen - oder verkauft sie für teures Geld nach Europa![NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, первобытный лес всегда таит в себе новые сюрпризы. Мало того, что он предлагает почти неисчерпаемый запас хорошей древесины для строительства колоний. В некоторых местах находятся очень интересные породы дерева, которые можно использовать даже для изготовления красок.[NEWLINE][NEWLINE]Хорошо бы отправить в джунгли наших мастеров, обладающих специальными навыками в поиске таких пород дерева. Добывайте древесину, извлекайте красители и шейте прекрасные ткани! Новые жители вашей колонии вырвут их у вас из рук, ну или продадут за большие деньги в Европу![NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, az őserdő sok új meglepetést tartogat. Nemcsak a kolóniák építéséhez szükséges jó minőségű fa szinte kimeríthetetlen tárházát kínálja, hanem nagyon különleges fafajtákat is, amelyekből még festékeket is lehet készíteni.[NEWLINE][NEWLINE]Küldd ki botanikus szakértőidet a dzsungelbe, hogy megtalálják ezt a fát. Nyerd ki belőle a festékeket és készíts belőlük finom szöveteket! A kolóniád lakói ki fogják ragadni a kezedből, vagy nagy pénzért eladják európai barátaiknak![NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_FORTS</Tag>
@@ -4982,6 +5020,7 @@
 		<French>Cinq forts</French>
 		<German>Fünf Forts</German>
 		<Russian>Пять укреплений</Russian>
+		<Hungarian>Öt erőd</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_FORTS_HEAD</Tag>
@@ -4990,6 +5029,7 @@
 		<French>Palissades</French>
 		<German>Palisaden</German>
 		<Russian>Бревенчатая защита</Russian>
+		<Hungarian>Cölöpkerítések</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_FIVE_FORTS_TEXT</Tag>
@@ -4997,6 +5037,7 @@
 		<Portuguese>Milorde, você ergueu uma nova paliçada e cinco de suas cidades agora estão protegidas.[NEWLINE][NEWLINE]Nenhum nativo renegado ousará atacar aqui. Construa forte, mas não corte todas as árvores. Temos outros planos que exigem muita madeira.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, schon wieder habt Ihr eine Palisade fertiggestellt und eine Eurer Städte ist jetzt viel besser geschützt. [NEWLINE][NEWLINE]Macht nur weiter so, dann wird auch der letzte Wilde begreifen, dass es hier nichts zu holen gibt. Übertreibt es aber mit der Abholzung der Wälder auch nicht, immerhin müssen die Bäume ja auch wieder nachwachsen, damit unsere Kolonien und unsere neue Handelsflotte auch in 1-2 Jahren noch genug Holz vorfinden. [NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, мы построили еще одно укрепление и теперь один из наших городов стал лучше защищен.[NEWLINE][NEWLINE]Будем продолжать в том же духе и даже самый злобный дикарь поймет, что здесь он не прорвётся. Главное, не переусердствовать с вырубкой леса, ведь деревья должны снова отрасти, чтобы наши колонии и наш новый торговый флот находили достаточно древесины через некоторое время.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, ismét befejeztett egy cölöpkerítést és 5 városa immár sokkal jobban védett.[NEWLINE][NEWLINE]Egyetlen lázadó Indián sem merészel majd itt támadni. Építsen szilárdan, de ne vágjon ki minden fát! Más terveink is vannak, amelyekhez sok fa szükséges.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER</Tag>
@@ -5005,6 +5046,7 @@
 		<French>Beaucoup de tribunaux</French>
 		<German>Viele Gerichtsgebäude</German>
 		<Russian>Множество зданий суда</Russian>
+		<Hungarian>Sok bírósági épület</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER_HEAD</Tag>
@@ -5013,6 +5055,7 @@
 		<French>La loi et l'ordre</French>
 		<German>Recht und Ordnung</German>
 		<Russian>Закон и порядок</Russian>
+		<Hungarian>Törvény és rend</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_LAW_AND_ORDER_TEXT</Tag>
@@ -5020,6 +5063,7 @@
 		<Portuguese>Milorde, a lei e a ordem realmente governam suas colônias. Mais uma vez, você concluiu a construção de um tribunal onde pequenos peixes e grandes tubarões - quero dizer, pequenos criminosos e criminosos perigosos - enfrentam sua justa punição.[NEWLINE][NEWLINE]No entanto, você também deve deixar as pessoas escaparem impunes de alguma coisa aqui e ali. A vida nas colônias é difícil e muitas pessoas lutam apenas pela mera sobrevivência. Quanto maior o tribunal, maior será a sombra que ele projeta...[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, in Euren Kolonien herrschen wirklich Recht und Ordnung. Schon wieder habt Ihr ein Gerichtsgebäude fertiggestellt, wo kleine Fische und große Haie...ähm ich meine Kleinkriminelle und Schwerverbrecher ihrer gerechten Strafe zugeführt werden.[NEWLINE][NEWLINE]Ihr solltet den Leuten allerdings auch hier und da mal was durchgehen lassen. Das Leben in den Kolonien ist hart und so manch einer kämpft nur ums nackte Überleben. Je größer das Gerichtsgebäude, desto größer auch der Schatten, den es wirft...[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, в ваших колониях действительно царит закон и порядок. Построено очередное здание суда, где маленькие рыбы и большие акулы ... эээ, я хотел сказать, мелкие преступники и матёрые уголовники подвергаются справедливому наказанию.[NEWLINE][NEWLINE]Тем не менее, вы должны позволять людям делать что-то безнаказанно. Жизнь в колониях тяжела и некоторые люди просто борются за выживание. Да и чем больше здание суда, тем большую тень оно отбрасывает...[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, tényleg a törvény és a rend uralkodik a gyarmatokon. Ismét elkészült egy bírósági épület, ahol a kis halak és a nagy cápák... ööö... úgy értem, a piti bűnözők és a nagystílű gengszterek elnyerik méltó büntetésüket.[NEWLINE][NEWLINE]Azonban néha elnézőnek kell lennie az emberekkel szemben. Az élet a kolóniákon kemény és sokan csak a puszta túlélésért küzdenek. Minél nagyobb a bíróság, annál nagyobb árnyékot vet...[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT</Tag>
@@ -5028,6 +5072,7 @@
 		<French>Beaucoup de grééements</French>
 		<German>Viele Schiffsausrüster</German>
 		<Russian>Множество корабельных мастеров</Russian>
+		<Hungarian>Sok hajófelszerelés készítő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_SHIP_EQUIPMENT_HEAD</Tag>
