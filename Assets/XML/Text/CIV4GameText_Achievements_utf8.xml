@@ -5522,6 +5522,7 @@
 		<French>Bleu indigo</French>
 		<German>Mehr blaue Farben</German>
 		<Russian>Больше синего индиго</Russian>
+		<Hungarian>Több kék indigó</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_INDIGO_PLANTER_TEXT</Tag>
@@ -5529,6 +5530,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Agora você adicionou outro especialista.[NEWLINE][NEWLINE]Três plantadores de índigo experientes foram recrutados. Podemos esperar recursos ainda mais elevados da colheita do índigo. Atrair esses imigrantes significa que suas colônias serão amplamente conhecidas pelo índigo.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Indigo-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Indigo erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Indigo bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. У вас появился еще один ценный специалист.[NEWLINE][NEWLINE]Три опытных плантатора индиго. Мы можем ожидать более высоких урожаев индиго. Привлечение этих специалистов означает, что ваши колонии станут широко известны благодаря индиго.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Most egy újabb szakemberrel bővültek.[NEWLINE][NEWLINE]Három tapasztalt indigó termesztőt fogadott fel. Még nagyobb termésre számíthatunk az indigó betakarítása során. Ezeknek a bevándorlóknak az idevonzása azt jelenti, hogy a kolóniái széles körben ismertek lesznek az indigóról.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER</Tag>
@@ -5537,6 +5539,7 @@
 		<French>Trois planteurs de lin expert</French>
 		<German>Drei erfahrene Flax-Pflanzer</German>
 		<Russian>Три опытных плантатора льна</Russian>
+		<Hungarian>Három tapasztalt len termesztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_HEAD</Tag>
@@ -5545,6 +5548,7 @@
 		<French>Du lin pour la fibre</French>
 		<German>Mehr Fasern auf dem Feld</German>
 		<Russian>Больше волнистого льна</Russian>
+		<Hungarian>Több lenrost</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_LINEN_PLANTER_TEXT</Tag>
@@ -5552,14 +5556,16 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Você acabou de dar as boas-vindas a outro especialista nas colônias.[NEWLINE][NEWLINE]Você recrutou três plantadores de linho experientes. Agora você pode cultivar ainda mais linho. Mantem! Em breve suas colônias serão amplamente conhecidas pelo cultivo de linho.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Flax-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Flax erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Flax bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять уже трех опытных плантаторов льна для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при уборке льна. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию льна.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Már három tapasztalt lentermesztőt is sikerült felfogadnia a kolóniák számára. Ezzel most még nagyobb termést fog elérni a vászon betakarítása során. Folytassa a jó munkát és a kolóniái hamarosan széles körben ismertek lesznek a vászon termesztéséről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR</Tag>
-		<English>Three experienced maple syrup collectors</English>
+		<English>Three experienced maple syrup tappers</English>
 		<Portuguese>Três coletores experientes de xarope de bordo</Portuguese>
 		<French>Trois collecteurs de sirop d'érable expert</French>
 		<German>Drei erfahrene Ahorn-Sirup-Sammler</German>
 		<Russian>Три опытных сборщика кленового сиропа</Russian>
+		<Hungarian>Három tapasztalt juharszirup gyűjtő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_HEAD</Tag>
@@ -5568,6 +5574,7 @@
 		<French>Plus d'or liquide</French>
 		<German>Mehr flüssiges Gold</German>
 		<Russian>Больше сладостей</Russian>
+		<Hungarian>Folyékony arany</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_MAPLE_SIRUP_COLLECTOR_TEXT</Tag>
@@ -5575,6 +5582,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Felizmente, você pode receber outro especialista nas colônias.[NEWLINE][NEWLINE]Você recrutou três seringueiros experientes em xarope de bordo para as colônias. Agora você pode coletar mais barris de xarope de bordo. Continue com o bom trabalho! Em breve as colônias serão conhecidas em todos os lugares pela qualidade do nosso xarope de bordo.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Ahorn-Sirup-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Ahorn-Sirup erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Ahorn-Sirup bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы смогли нанять трех опытных сборщиков кленового сиропа для колоний. Благодаря этому вы теперь добьетесь более высоких урожаев при сборе кленового сиропа. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря сбору кленового сиропа.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Már három tapasztalt juharszirup gyűjtőt is sikerült felfogadnia a kolóniák számára. Ezzel most még nagyobb termést fog elérni a juharszirup betakarítása során. Folytassa a jó munkát és a kolóniái hamarosan széles körben ismertek lesznek a juharszirup termesztéséről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER</Tag>
@@ -5583,6 +5591,7 @@
 		<French>Trois planteurs de colza expert</French>
 		<German>Drei erfahrene Raps-Pflanzer</German>
 		<Russian>Три опытных плантатора рапса</Russian>
+		<Hungarian>Három tapasztalt repce termesztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_HEAD</Tag>
@@ -5591,6 +5600,7 @@
 		<French>Des affaires bien grasses</French>
 		<German>Eine schmierige Angelegenheit</German>
 		<Russian>Жирный бизнес</Russian>
+		<Hungarian>Zsíros üzlet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_RAPE_PLANTER_TEXT</Tag>
@@ -5598,14 +5608,16 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Felizmente, você pode receber outro especialista nas colônias.[NEWLINE][NEWLINE]Com esta novidade, você agora tem três plantadores de canola experientes. Com isso, a colheita da canola terá recursos ainda maiores. Continue o bom trabalho e em breve suas colônias serão amplamente conhecidas por nosso óleo de canola.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Raps-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Raps erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Raps bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять уже трех опытных плантаторов рапса для колоний. Благодаря этому вы теперь будете получать еще более высокие урожаи рапса. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию масличного рапса.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Már három tapasztalt repce termesztőt is sikerült felfogadnia a kolóniák számára. Ezzel most még nagyobb termést fog elérni a repce betakarítása során. Folytassa a jó munkát és a kolóniái hamarosan széles körben ismertek lesznek a repcetermesztésről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER</Tag>
-		<English>Three experienced olive planters</English>
+		<English>Three experienced olive cultivators</English>
 		<Portuguese>Três plantadores de oliveiras experientes</Portuguese>
 		<French>Trois experts ramasseurs d'olives</French>
 		<German>Drei erfahrene Oliven-Pflanzer</German>
 		<Russian>Три опытных плантатора оливок</Russian>
+		<Hungarian>Három tapasztalt oliva termesztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_HEAD</Tag>
@@ -5614,6 +5626,7 @@
 		<French>Ce pays a besoin de nouveaux fruits</French>
 		<German>Neue Früchte braucht das Land</German>
 		<Russian>Земля нуждается в новых плодах</Russian>
+		<Hungarian>Ősi élelem az új földön</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_OLIVES_PLANTER_TEXT</Tag>
@@ -5621,6 +5634,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Felizmente, você pode receber outro especialista nas colônias.[NEWLINE][NEWLINE]Recrutamos três plantadores de azeitonas experientes. A colheita da azeitona pode esperar recursos ainda maiores. Continue com o bom trabalho! Em breve nossas colônias serão amplamente conhecidas pela qualidade de nossas azeitonas.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Oliven-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Oliven erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Oliven bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, вы смогли пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Теперь вы смогли нанять трех опытных плантаторов оливок для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при сборе оливок. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию оливок.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Már három tapasztalt oliva termesztőt is sikerült felfogadnia a kolóniák számára. Ezzel most még nagyobb termést fog elérni az olajbogyó betakarítása során. Folytassa a jó munkát és a kolóniái hamarosan széles körben ismertek lesznek az olajbogyó termesztésről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR</Tag>
@@ -5629,6 +5643,7 @@
 		<French>Trois experts collecteur de vanille</French>
 		<German>Drei erfahrene Vanille-Sammler</German>
 		<Russian>Три опытных сборщика ванили</Russian>
+		<Hungarian>Három tapasztalt vanília termesztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_HEAD</Tag>
@@ -5637,6 +5652,7 @@
 		<French>Ce pays a besoin de parfums sucrés</French>
 		<German>Neue süße Gewürze braucht das Land</German>
 		<Russian>Земле нужны новые сладкие специи</Russian>
+		<Hungarian>Édes üzlet</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_VANILLA_COLLECTOR_TEXT</Tag>
@@ -5644,14 +5660,16 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Acabamos de receber outro especialista.[NEWLINE][NEWLINE]Existem agora três coletores experientes de baunilha em suas colônias. A colheita da baunilha será mais rica do que nunca! Se todos continuarmos com o bom trabalho, suas colônias serão amplamente conhecidas pela baunilha.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Vanille-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Vanille erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Vanille bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. Мы только что приветствовали еще одного специалиста.[NEWLINE][NEWLINE]Теперь в ваших колониях трое опытных сборщиков ванили. Урожай ванили будет богаче, чем когда-либо! Если мы все продолжим в том же духе, ваши колонии будут широко известны своей ванилью.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Már három tapasztalt vanília termesztőt is sikerült felfogadnia a kolóniák számára. Ezzel most még nagyobb termést fog elérni a vanília betakarítása során. Folytassa a jó munkát és a kolóniái hamarosan széles körben ismertek lesznek a vanília termesztésről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER</Tag>
-		<English>Three experienced hemp planter</English>
+		<English>Three experienced hemp planters</English>
 		<Portuguese>Três plantadores de cânhamo experientes</Portuguese>
 		<French>Trois planteurs de chanvre experts</French>
 		<German>Drei erfahrene Hanf-Pflanzer</German>
 		<Russian>Три опытных плантатора конопли</Russian>
+		<Hungarian>Három tapasztalt kender termesztő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_HEAD</Tag>
@@ -5660,6 +5678,7 @@
 		<French>Cordes et épissures</French>
 		<German>Seile und Tauwerk</German>
 		<Russian>Веревки и снасти</Russian>
+		<Hungarian>Kötélzet és vitorlavászon</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_HEMP_PLANTER_TEXT</Tag>
@@ -5667,6 +5686,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Felizmente acabamos de receber outro especialista nas colônias.[NEWLINE][NEWLINE]Você conseguiu recrutar três plantadores de cânhamo experientes. Você verá uma colheita de cânhamo ainda maior. Continue com o bom trabalho. Mais navios podem ser construídos agora, com velas robustas e cordames fortes.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Hanf-Pflanzer für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Hanf erzielen. Macht weiter so und Ihr könnt bald noch mehr Schiffe mit gutem Tauwerk ausrüsten.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, мы только что приветствовали в колониях еще одного специалиста.[NEWLINE][NEWLINE]Вам удалось нанять трех опытных плантаторов конопли. Вы увидите еще больший урожай конопли. Продолжайте в том же духе. Теперь можно построить больше кораблей с большими парусами и крепким такелажем.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Már három tapasztalt kender termesztőt is sikerült felfogadnia a kolóniák számára. Ezzel most még nagyobb termést fog elérni a kender betakarítása során. Folytassa a jó munkát! Most már több hajót tud építeni, erős vitorlákkal és kötélzettel.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR</Tag>
@@ -5675,6 +5695,7 @@
 		<French>Trois collecteurs expérimentés de caoutchouc</French>
 		<German>Drei erfahrene Kautschuk-Sammler</German>
 		<Russian>Три опытных сборщика каучука</Russian>
+		<Hungarian>Három tapasztalt kaucsuk gyűjtő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_HEAD</Tag>
@@ -5683,13 +5704,15 @@
 		<French>Le caoutchouc pousse sur les arbres</French>
 		<German>Kautschuk wächst auf Bäumen</German>
 		<Russian>Каучуковые деревья</Russian>
+		<Hungarian>Gumi a fákból</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_EXPERT_KAUTSCHUK_COLLECTOR_TEXT</Tag>
-		<English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You've recruited three experienced rubber collectors. With this, you will now achieve even higher yields from the rubber trees. Keep up the good work and your colonies will soon be widely known for the cultivation of rubber.[NEWLINE][NEWLINE]</English>
+		<English>Milord, you colonies are growing. Fortunately, you can welcome another specialist to the colonies.[NEWLINE][NEWLINE]You've recruited three experienced rubber collectors. You can now maximize yields from the rubber trees. Keep up the good work and your colonies will soon be widely known for the cultivation of rubber.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, suas colônias estão crescendo. Felizmente, você pode receber outro especialista nas colônias.[NEWLINE][NEWLINE]Você recrutou três coletores de borracha experientes. Com isso, você alcançará recursos ainda maiores com as seringueiras. Continue com o bom trabalho e em breve suas colônias serão amplamente conhecidas pelo cultivo da borracha.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen. Erfreulicherweise könnt Ihr einen weiteren Spezialisten in den Kolonien begrüßen.[NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Kautschuk-Sammler für die Kolonien anwerben. Damit werdet Ihr jetzt noch höhere Erträge bei der Ernte von Kautschuk erzielen. Macht weiter so und Eure Kolonien werden bald weithin für den Anbau von Kautschuk bekannt sein.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, ваши колонии растут. К счастью, вы можете пригласить в колонии еще одного специалиста.[NEWLINE][NEWLINE]Вы смогли нанять трех опытных сборщиков каучука для колоний. Благодаря этому вы теперь добьетесь еще более высоких урожаев при сборе каучука. Продолжайте в том же духе и вскоре ваши колонии станут широко известны благодаря выращиванию каучука.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniák egyre nőnek. Szerencsére egy újabb szakembert üdvözölhet a gyarmatokon.[NEWLINE][NEWLINE]Már három tapasztalt kaucsuk gyűjtőt is sikerült felfogadnia a kolóniák számára. Ezzel most még nagyobb termést fog elérni a kaucsuk betakarítása során. Folytassa a jó munkát és a kolóniái hamarosan széles körben ismertek lesznek a kaucsuk termesztésről.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER</Tag>
@@ -5698,6 +5721,7 @@
 		<French>Trois maitres bouchers</French>
 		<German>Drei Meister Schlachter</German>
 		<Russian>Три мастера мясника</Russian>
+		<Hungarian>Három hentesmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_HEAD</Tag>
@@ -5706,6 +5730,7 @@
 		<French>Jambon, côtelettes ou volaille ?</French>
 		<German>Schinken, Kotlett oder Geflügel?</German>
 		<Russian>Ветчина, свиные отбивные или домашняя птица?</Russian>
+		<Hungarian>Sonka, sertésszelet vagy baromfi?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_BUTCHER_TEXT</Tag>
@@ -5713,6 +5738,7 @@
 		<Portuguese>"[COLOR_SELECTED_TEXT]O que você planeja fazer com esta faca insignificante? Ela mal consegue cortar um assado cozido demais. O açougue precisa de ferramentas reais[COLOR_REVERT]." O mestre açougueiro balança seu cutelo, errando por pouco o nariz do açougueiro.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Sou mais rápido com minha faca do que você jamais será. Essa lâmina enorme parece que você está pronto para massacrar uma família indefesa[COLOR_REVERT]", responde o açougueiro amargamente. "[COLOR_SELECTED_TEXT]Além disso, eu não apenas corto. Tenho que cortar as juntas de maneira limpa, sem derramar muito sangue.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ah, claro, qualquer um pode ver isso só de olhar para o seu avental...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pelo menos eu não tenho montes de ossos espalhados por toda parte.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Isso mesmo! Você conta com meus porcos para comer suas sobras![COLOR_REVERT]"[NEWLINE][NEWLINE]</Portuguese>
 		<German>"[COLOR_SELECTED_TEXT]Was wollt Ihr denn mit diesem mickrigen Messer anfangen, damit könnt ihr doch bestenfalls den fertigen Braten anschneiden. Zum Schlachten braucht ihr richtiges Werkzeug[COLOR_REVERT]", hält der Fleischermeister dem Geflügelschlachter sein neues Beil vor die Nase.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Angeber, ich bin mit diesem Messer hier genauso schnell wie Ihr mit diesem riesigen Mordinstrument,[COLOR_REVERT]" entgegnet der Geflügelschlachter säuerlich. "[COLOR_SELECTED_TEXT]Außerdem hack' ich nicht einfach drauflos, sondern zerlege die Viecher sauber und ohne zu viel Blut zu vergießen.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Klar, das sieht man schon an Eurer Schürze....[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Pah, dafür liegen bei mir nicht überall haufenweise Knochen rum.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Stimmt, Ihr verfüttert Eure Reste lieber an meine Schweine...[COLOR_REVERT]"[NEWLINE][NEWLINE]</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Что вы планируете делать с этим хилым ножом? Им едва можно разрезать пережаренное мясо. Для разделки нужны настоящие инструменты[COLOR_REVERT]". Мастер мясник небрежно машет своим огромным тесаком прямо перед носом мясника птицы.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Я владею своим ножом лучше, чем вы когда-либо сможете научиться. Ваш огромный нож выглядит так, будто вы собираетесь лишить пастора всех его прихожан[COLOR_REVERT]" — кисло отвечает мясник птицы. "[COLOR_SELECTED_TEXT]Кроме того, я не просто рублю. Я должен аккуратно разрезать суставы, не проливая слишком много крови.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Конечно, любой может увидеть это, просто взглянув на ваш фартук...[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]По крайней мере, у меня не валяются повсюду кучи костей.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Правильно! Вы рассчитываете, что мои свиньи съедят остатки вашей возни![COLOR_REVERT]"[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Mit akarsz kezdeni ezzel a szánalmas késsel? Egy átsült pecsenyét is alig tudnál felvágni vele. A hentesmunkához igazi szerszámok kellenek[COLOR_REVERT]". A hentesmester lazán meglengette a bárdját közvetlenül a baromfihentes orra mellett.[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Gyorsabban bánok a késemmel, mint te valaha is fogsz! Az a túlméretezett penge úgy néz ki, mintha egy tehetetlen család lemészárlására készülnél[COLOR_REVERT]" - válaszol savanyúan a baromfihentes."[COLOR_SELECTED_TEXT]Különben is, én nem csak úgy vagdalkozom. Tisztán kell végigvágnom az ízületek mentén, anélkül, hogy túl sok vér folyna el.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Ó, persze, ezt bárki láthatja, ha csak ránéz a kötényére. ..[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Nálam legalább nem hever mindenfelé egy halom csont.[COLOR_REVERT]"[NEWLINE][NEWLINE]"[COLOR_SELECTED_TEXT]Így van! Számíthatsz a disznóimra, hogy felfalják a maradékot![COLOR_REVERT]"[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER</Tag>
@@ -5721,6 +5747,7 @@
 		<French>Trois marchand ruinés</French>
 		<German>Drei gescheiterte Händler</German>
 		<Russian>Три неудачливых торговца</Russian>
+		<Hungarian>Három bukott kereskedő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_HEAD</Tag>
@@ -5729,6 +5756,7 @@
 		<French>Marchandise perdue</French>
 		<German>Verlorene Handelsgeschäfte</German>
 		<Russian>Неудачная сделка</Russian>
+		<Hungarian>Elveszett áruk</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_FAILED_TRADER_TEXT</Tag>
@@ -5736,6 +5764,7 @@
 		<Portuguese>Milorde, obviamente o nosso terceiro comerciante não conseguiu negociar lucrativamente com os nativos. Ele agora está bebendo até perder os sentidos nas ruas, alegando que suportou horrores inimagináveis no acampamento deles. [NEWLINE][NEWLINE]Você deveria fazer alguma coisa! Quando os nativos que nos rodeiam preferem negociar uns com os outros, atacando os nossos próprios comerciantes, isso deixa os nossos comerciantes nervosos. Em breve nenhum colono ousará deixar a colônia, temendo vizinhos tão hostis. Você deve encontrar uma maneira melhor de lidar com as diferentes nações de nativos que nos cercam.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, es ist jetzt bereits der dritte Händler von den Ureinwohnern zurückgekommen, der offensichtlich gescheitert ist und sich nun sinnlos in den Straßen betrinkt, ob des Grauens, dass er offenbar bei den Wilden erlebt hat.[NEWLINE][NEWLINE]Ihr Ihr solltet etwas unternehmen, sie machen die übrigen Händler nervös. Bald traut sich keiner mehr aus der Kolonie wegen der Geschichten, die über die Wilden kursieren. Ihr solltet zudem Eure Strategie gegenüber den Wilden überdenken.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, уже третьему нашему торговцу не удалось организовать торговый пост в деревне туземцев. Вечно пьяный он мотается по улицам, донимая прохожих своими рассказами о пережитых ужасах в индейских деревнях.[NEWLINE][NEWLINE]Сделайте что-нибудь! Окружающие нас туземцы предпочитают торговать друг с другом, нападая на наших торговцев. Люди нервничают. Скоро ни один поселенец не посмеет покинуть колонию, опасаясь таких враждебно настроенных соседей. Вам следует найти способ справиться с этими дикарями, которые нас окружают.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, nyilvánvalóan a harmadik kereskedőnk sem tudott nyereségesen üzletelni az Indiánokkal. Most eszméletlenre issza magát az utcán, azt állítva, hogy elképzelhetetlen borzalmakat élt át a táborukban. [NEWLINE][NEWLINE]Tennie kellene valamit! Amikor a minket körülvevő Indiánok inkább egymással kereskednek, megtámadják a kereskedőinket, az idegessé teszi az árusainkat. Hamarosan egyetlen telepes sem meri majd elhagyni a kolóniát, félve az ilyen ellenséges szomszédoktól. Jobb módot kellene találni a minket körülvevő Indiánok sokféleségének kezelésére.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER</Tag>
@@ -5744,6 +5773,7 @@
 		<French>Trois maitres teinturier</French>
 		<German>Drei Meister Färber</German>
 		<Russian>Три мастера красильщика</Russian>
+		<Hungarian>Három festőmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_HEAD</Tag>
@@ -5752,6 +5782,7 @@
 		<French>Des colonies colorées</French>
 		<German>Farbenfrohe Kolonien</German>
 		<Russian>Разноцветные колонии</Russian>
+		<Hungarian>Színes kolóniák</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_DYER_TEXT</Tag>
@@ -5759,6 +5790,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Suas cidades produzem cada vez mais bens. Você é verdadeiramente abençoado! Ainda hoje você deu as boas-vindas a outro artesão treinado. [NEWLINE][NEWLINE]Agora você tem três mestres tintureiros experientes. Esta colônia está destinada a se tornar um próspero centro comercial de tecidos tingidos. Se continuarmos com o bom trabalho, seus cidadãos certamente agradecerão.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister-Färber für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für gefärbte Stoffe entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, наши колонии растут. Города производят все больше и больше товаров. Вы действительно благословенны! Только сегодня мы приветствуем еще одного обученного мастера.[NEWLINE][NEWLINE]Теперь у нас есть три опытных красильщика. Этой колонии суждено стать процветающим центром торговли цветными тканями.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniái egyre nőnek. Városai egyre több árut termelnek. Ön igazán áldott! Épp ma fogadott fel egy újabb képzett mesterembert. [NEWLINE][NEWLINE]Már három tapasztalt festőmestere van. Ez a kolónia arra hivatott, hogy a festett szövetek virágzó kereskedelmi központjává váljon. Ha folytatja a jó munkát, a lakosai biztosan hálásak lesznek Önnek.[NEWLINE][NEWLINE</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER</Tag>
@@ -5767,14 +5799,16 @@
 		<French>Trois maitres confiseurs</French>
 		<German>Drei Meister Konditoren</German>
 		<Russian>Три мастера кондитера</Russian>
+		<Hungarian>Három cukrászmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_HEAD</Tag>
-		<English>Cakes and confectionery</English>
+		<English>Cakes and pastries</English>
 		<Portuguese>Bolos e confeitaria</Portuguese>
 		<French>Gâteaux et gâte-dents</French>
 		<German>Kuchen und Konfekt</German>
 		<Russian>Торты и кондитерские изделия</Russian>
+		<Hungarian>Sütemények és édességek</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_CONFECTIONER_TEXT</Tag>
@@ -5782,6 +5816,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo! Agora você pode receber mais um artesão habilidoso. [NEWLINE][NEWLINE]Você conseguiu recrutar três mestres confeiteiros talentosos. Sua colônia se tornará o principal centro comercial de chocolate e baunilha. Continue com o bom trabalho e seus cidadãos agradecerão por isso.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister-Konditoren für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für Schokolade und Vanille entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, наши колонии растут! Сегодня к нам присоединился еще один искусный мастер.[NEWLINE][NEWLINE]Нам удалось нанять трех талантливых мастеров кондитеров. Наша колония станет главным центром торговли шоколадом и ванилью. Если мы продолжим в том же духе, граждане будут благодарны вам за это.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniái egyre nőnek! Most egy újabb képzett mesterembert üdvözölhet. [NEWLINE][NEWLINE]Sikerült három tehetséges cukrászmestert felfogadnia. A kolóniái a csokoládé és a vanília fő kereskedelmi központjaivá fog válni. Ha folytatja a jó munkát, a polgárai biztosan hálásak lesznek érte.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER</Tag>
@@ -5789,6 +5824,7 @@
 		<Portuguese>Três mestres fabricantes de móveis</Portuguese>
 		<German>Drei Meister Möbelschreiner</German>
 		<Russian>Три краснодеревщика</Russian>
+		<Hungarian>Három asztalosmester</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_HEAD</Tag>
@@ -5797,6 +5833,7 @@
 		<French>Tables et chaises</French>
 		<German>Tische und Stühle</German>
 		<Russian>Столы и стулья</Russian>
+		<Hungarian>Asztalok, székek és szekrények</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_MASTER_FURNITURE_MAKER_TEXT</Tag>
@@ -5804,6 +5841,7 @@
 		<Portuguese>Milorde, suas colônias estão crescendo. Suas cidades produzem cada vez mais bens. Você é verdadeiramente abençoado! Hoje damos as boas-vindas a mais um artesão criativo. [NEWLINE][NEWLINE]Três fabricantes de móveis experientes trabalham aqui. Sua colônia logo se tornará um popular centro comercial de móveis coloniais. Eles fazem um trabalho tão lindo! Seus cidadãos desejam desfrutar de uma vida boa.[NEWLINE][NEWLINE]</Portuguese>
 		<German>Mylord, Eure Kolonien wachsen und Eure Städte können immer mehr Waren herstellen. Ihr seid wahrlich gesegnet und könnt einen weiteren ausgebildeten Handwerker in den Kolonien begrüßen. [NEWLINE][NEWLINE]Ihr konntet nun bereits drei erfahrene Meister Möbelschreiner für die Kolonien anwerben. Eure Kolonie wird sich bald zu einem wahren Handelszentrum für koloniale Möbel entwickeln. Macht weiter so und Eure braven Bürger werden es Euch danken.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, наши колонии растут. Города производят все больше и больше товаров. Вы действительно благословенны! Сегодня к нам присоединился еще один мастер.[NEWLINE][NEWLINE]Теперь у нас трудятся три опытных краснодеревщика. Ваша колония скоро станет популярным центром торговли колониальной мебелью. Продолжайте в том же духе! Ваши граждане с нетерпением ждут хорошей мебели.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a kolóniái egyre nőnek. Városai egyre több árut termelnek. Ön igazán áldott! Épp ma fogadott fel egy újabb kreatív mesterembert. [NEWLINE][NEWLINE]Három tapasztalt asztalosmester dolgozik itt. A kolóniái hamarosan a gyarmati bútorok népszerű kereskedelmi központjává válnak. Folytassa a sikeres munkát! A polgárai már alig várják, hogy élvezzék a jó életet.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR</Tag>
@@ -5812,6 +5850,7 @@
 		<French>Trois prisonniers de guerre</French>
 		<German>Drei Kriegsgefangene</German>
 		<Russian>Три военнопленных</Russian>
+		<Hungarian>Három hadifogoly</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_HEAD</Tag>
@@ -5820,13 +5859,15 @@
 		<French>3 prisonniers de guerre</French>
 		<German>3 Kriegsgefangene</German>
 		<Russian>Работники или золото</Russian>
+		<Hungarian>Három hadifogoly</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACHIEVE_THIRD_PRISONER_OF_WAR_TEXT</Tag>
-		<English>Milord, Your jails are filling up with prisoners of war, thanks to your obvious success in battle. Unfortunately prisoners of war are poor workers, plus you have to guard them all the time.[NEWLINE][NEWLINE]You should think about sending them back to the enemy - on their word of honour, of course - with the promise that they will never fight against you again on this continent.[NEWLINE][NEWLINE]</English>
+		<English>Milord, Your jails are filling up with prisoners of war, thanks to your glorious success in battle. Unfortunately prisoners of war are poor workers, plus you have to guard them all the time.[NEWLINE][NEWLINE]You should think about sending them back to the enemy - on their word of honour, of course - with the promise that they will never fight against you again on this continent.[NEWLINE][NEWLINE]</English>
 		<Portuguese>Milorde, Suas prisões estão se enchendo de prisioneiros de guerra, graças ao seu óbvio sucesso na batalha. Infelizmente, os prisioneiros de guerra são trabalhadores pobres, e você tem que protegê-los o tempo todo.[NEWLINE][NEWLINE]Você deveria pensar em mandá-los de volta ao inimigo - sob sua palavra de honra, é claro - com a promessa de que eles nunca mais lutarão contra você neste continente.[NEWLINE][NEWLINE]</Portuguese>
 		<French>Sire, vos prisons débordent de prisonniers de guerre. Vous avez recontré le succès en cours des batailles, c'est sûr. Toutefois, ce sont de piètres travailleurs, qu'il faut surveiller tout le temps.[NEWLINE][NEWLINE]Vous devriez peut-être les renvoyer chez eux sans autre forme de procès - sur leur seremnt, bien sûr, de ne jamais reprendre les armes contre vous, ni jamais sur ce continent.</French>
 		<German>Mylord, Eure Gefängnisse füllen sich mit Kriegsgefangenen. Offensichtlich wart Ihr im Kampf sehr erfolgreich. Kriegsgefangene sind aber schlechte Arbeiter. Außerdem müsst Ihr sie ständig bewachen lassen.[NEWLINE][NEWLINE]Ihr solltet Euch überlegen, ob Ihr sie nicht gegen bare Münze dem Feind zurückschickt - natürlich nur auf Ehrenwort, dass sie nie wieder auf diesem Kontinent und gegen Euch kämpfen werden.[NEWLINE][NEWLINE]</German>
 		<Russian>Милорд, наши тюрьмы заполняются военнопленными. Несомненно, мы могли бы использовать их на плантациях. Однако военнопленные — плохие работники. Кроме того, их ннужно постоянно охранять.[NEWLINE][NEWLINE]Вам следует рассмотреть возможность отправки их обратно врагу в обмен на золото. И, конечно, под честное слово, что они никогда больше не будут воевать на этом континенте и против нас.[NEWLINE][NEWLINE]</Russian>
+		<Hungarian>Uram, a börtönei megtelnek hadifoglyokkal. Nyilvánvaló, hogy nagyon sikeres volt a csatákban. A hadifoglyok azonban rossz munkások. Ráadásul állandóan őrizni kell őket.[NEWLINE][NEWLINE]Meg kellene fontolnia, hogy névértéken visszaküldi őket az ellenségnek - természetesen a becsületszavukat kérve, hogy soha többé nem harcolnak ezen a földrészen és ellened.[NEWLINE][NEWLINE]</Hungarian>
 	</TEXT>
 </Civ4GameText>
