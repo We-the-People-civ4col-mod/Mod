@@ -15,6 +15,7 @@
 		<Italian>[BOLD]Produzione e gestione risorse[\BOLD][NEWLINE][TAB]Congratulazioni! Hai appena fatto aumentare la popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Puoi assegnare questi nuovi cittadini a lavorare nelle caselle adiacenti all'insediamento, per raccogliere materie prime. Puoi anche assegnare i cittadini a lavorare negli edifici all'interno dell'insediamento, per trasformare le materie prime in beni. Nella schermata dell'insediamento, [clicca due volte] sul cittadino per assegnarlo a una professione specifica, o trascinalo sulla casella o edificio in cui vuoi che lavori.</Italian>
 		<Spanish>[BOLD]Producción y gestión de recursos[\BOLD][NEWLINE][TAB]¡Felicidades! Acabáis de aumentar la población de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Podéis asignar estos nuevos ciudadanos a trabajar en las casillas adyacentes al asentamiento para obtener materias primas. También se pueden asignar ciudadanos a los edificios del asentamiento para convertir materias primas en productos manufacturados. En la pantalla del asentamiento, basta con hacer doble clic en el ciudadano para asignarlo a una profesión específica o arrastrarlo a la casilla o edificio en el que queréis que trabaje.</Spanish>
 		<Russian>[BOLD]Управление производством и ресурсами[\BOLD][NEWLINE][TAB]Поздравляем! Вы только что увеличили население [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Новые горожане могут быть назначены на обработку участков, прилегающих к вашему поселению, для сбора ресурсов. Также они могут быть назначены в здания в вашем поселении для преобразования добытых ресурсов в промышленные товары. На экране поселения дважды щелкните горожанина, чтобы назначить ему определенную профессию или перенесите на участок или в здание, которое вы хотите обработать.</Russian>
+		<Hungarian>[BOLD]Termelés és Erőforrás Gazdálkodás[\BOLD][NEWLINE][TAB]Gratulálunk! Épp most növelted [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lakosságát. Ezeket az új polgárokat be lehet osztani a településed melletti területek megmunkálására, hogy nyersanyagokat gyűjtsenek. A polgárokat a településeden belüli épületekhez is rendelheted, hogy a nyersanyagokat feldolgozott termékekké alakítsák. A település képernyőjén egyszerűen duplán kattints a polgárokra, hogy hozzárendeld őket egy adott szakmához, vagy húzd őket arra a területre vagy épületre, ahol szeretnéd, hogy dolgozzon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_IMMIGRANT</Tag>
@@ -25,6 +26,7 @@
 		<Italian>[BOLD]Immigrazione[\BOLD][NEWLINE][TAB]Un nuovo colono attende sui moli della madrepatria, alla ricerca di libertà religiosa e di un passaggio verso il Nuovo Mondo. Per raccoglierlo sposta la nave nella zona colorata sui bordi della mappa e clicca sul pulsante "Fai vela per l'Europa".</Italian>
 		<Spanish>[BOLD]Inmigración[\BOLD][NEWLINE][TAB]Un nuevo Colono aguarda en los muelles de la madre patria, en busca de libertad de culto y un pasaje al Nuevo Mundo. Para recogerlo, llevad el barco al área de color que hay lado del borde del mapa y haced clic en el botón "Navegar a Europa".</Spanish>
 		<Russian>[BOLD]Иммиграция[\BOLD][NEWLINE][TAB]Новый колонист находится в доках вашей родины в ожидании поездки в Новый Свет. Чтобы забрать его, переместите свой корабль в цветную область у края карты и нажмите кнопку "Отплыть в Европу".</Russian>
+		<Hungarian>[BOLD]Bevándorlás[\BOLD][NEWLINE][TAB]Egy új telepes várakozik szülőfölded kikötőjében, aki az Újvilágba, a vallásszabadság földjére szeretne eljutni. Ha fel akarod venni őt, mozgasd a hajódat a térkép széléhez közeli színes területre és kattints a „Hajózás Európába” gombra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_PIONEER</Tag>
@@ -35,6 +37,7 @@
 		<Italian>[BOLD]Pioniere[\BOLD][NEWLINE][TAB]I coloni che hanno attrezzi a disposizione possono venire assegnati alla professione di pionieri. I pionieri possono migliorare la terra (aumentando così la produzione dell'insediamento), costruire strade (velocizzando i trasporti tra gli insediamenti) e addirittura fondare nuovi insediamenti. Ottieni abbastanza attrezzi e crea un pioniere.</Italian>
 		<Spanish>[BOLD]Pionero[\BOLD][NEWLINE][TAB]A los Colonos con acceso a Herramientas se les puede asignar la profesión de Pionero. Los Pioneros pueden mejorar la tierra (lo cual aumenta la producción del asentamiento), construir carreteras (lo cual acelera el transporte entre asentamientos) e incluso fundar nuevos asentamientos. Conseguid suficientes Herramientas y cread un Pionero.</Spanish>
 		<Russian>[BOLD]Первопроходец[\BOLD][NEWLINE][TAB]Колонисты с инструментами могут быть назначены на профессию первопроходца. На клетках поселений первопроходцы улучшают местность, чтобы увеличить добычу ресурсов. Также они могут строить дороги, чтобы ускорить перемещение между вашими поселениями. Для назначения юниту этой профессии в Новом Свете требуется достаточный запас инструментов и хлебобулочных изделий на складах колонии (в доках Европы для этого нужно только золото).</Russian>
+		<Hungarian>[BOLD]Utász[\BOLD][NEWLINE][TAB]A szerszámokkal rendelkező gyarmatosítók utászok lesznek. A település környéki területeket javíthatják az utászok, hogy növeljék a termelést. Bárhol építhetnek utakat, hogy felgyorsítsák az utazást. Ha elegendő szerszámmal és ellátmánnyal rendelkezel, akkor lehet utászod.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_IMPROVE_LAND</Tag>
@@ -45,6 +48,7 @@
 		<Italian>[BOLD]Migliorare le caselle terrestri[\BOLD][NEWLINE][TAB]Congratulazioni! Hai ottenuto un pioniere. Per migliorare la terra, sposta il pioniere sulla casella desiderata e clicca su uno dei pulsanti "Costruisci [miglioramento]". Ci vuole una piccola quantità d'oro per costruire ogni miglioramento.</Italian>
 		<Spanish>[BOLD]Mejora de las casillas de tierra[\BOLD][NEWLINE][TAB]¡Felicidades! Habéis conseguido un Pionero. Para mejorar la tierra, llevadlo a la casilla deseada y haced clic en uno de los botones "Construir [mejora]". Para construir cada una se necesita una pequeña cantidad de Oro.</Spanish>
 		<Russian>[BOLD]Улучшение участков земли[\BOLD][NEWLINE][TAB]Поздравляем! У вас есть первопроходец. Чтобы улучшить какую-либо клетку, переместите своего первопроходца на нужный участок и нажмите на одну из кнопок "Построить [Улучшение]". Строительство каждого улучшения стоит небольшое количество золота.</Russian>
+		<Hungarian>[BOLD]Területek Fejlesztése[\BOLD][NEWLINE][TAB]Gratulálunk! Van egy Utászod. A földed fejlesztéséhez mozgasd az utászodat a kívánt területre és kattints az egyik „Építs [Improvement]” gombra. Minden fejlesztés egy kis mennyiségű aranyba kerül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_NATIVE_VILLAGES</Tag>
@@ -55,6 +59,7 @@
 		<Italian>[BOLD]Nativi[\BOLD][NEWLINE][TAB]L'interazione con i nativi può essere positiva in molti modi. Puoi entrare liberamente negli insediamenti dei nativi. Quando una delle tue unità è in un insediamento nativo puoi parlare col capo (e magari ricevere un regalo), vivere tra i nativi per imparare una specialità, vendere o acquistare beni (se è un'unità di trasporto) o fondare una missione (se l'unità è un missionario). Puoi anche conquistare gli insediamenti nativi con unità combattenti.</Italian>
 		<Spanish>[BOLD]Nativos[\BOLD][NEWLINE][TAB]La interacción con los Nativos puede resultar beneficiosa de varias maneras. Podéis entrar libremente en los asentamientos indígenas. Con una de vuestras unidades en uno de ellos, podéis hablar con el jefe del Nativo (y, posiblemente, recibir un regalo), vivir entre los Nativos para aprender una especialidad, comprarles o venderles mercancías (si la unidad es un transporte) o fundar una misión (si la unidad es un Misionero). También podéis conquistar el asentamiento indígena con unidades de combate.</Spanish>
 		<Russian>[BOLD]Индейцы[\BOLD][NEWLINE][TAB]Вы можете свободно входить в поселения коренных жителей Нового Света. Взаимодействие с индейцами полезно во многих отношениях. Когда один из ваших отрядов входит в деревню туземцев, вы можете поговорить с вождем (и, возможно, получить подарок); жить среди них, чтобы выучить специальность; торговать различными товарами (если ваш юнит транспорт); открыть торговый пост (если ваш отряд торговец) или установить миссию (если ваш отряд миссионер). Вы также можете использовать войска, чтобы атаковать и разрушать поселения индейцев.</Russian>
+		<Hungarian>[BOLD]Indiánok[\BOLD][NEWLINE][TAB]Szabadon beléphetsz az Indiánok településeire. Az Indiánok közötti interakció több szempontból is előnyös. Amikor az egyik egységed belép egy Indián faluba, beszélhetsz a törzsfőnökkel (és esetleg ajándékot kaphatsz); élhetsz az Indiánok között, hogy megtanulj egy szakmát; kereskedhetsz árukkal (ha az egységed szállító); építhetsz egy kereskedelmi állomást (ha az egységed kereskedő) vagy alapíthatsz egy missziót (ha az egységed misszionárius). Harci egységeket is használhatsz Indián települések megtámadására és lerombolására.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_REVOLUTION</Tag>
@@ -65,6 +70,7 @@
 		<Italian>[BOLD]Rivoluzione![\BOLD][NEWLINE][TAB]Più della metà dei tuoi cittadini è convinta che la colonia dovrebbe essere uno stato sovrano. Ora puoi dichiarare l'indipendenza dalla madrepatria, dalla schermata della rivoluzione.</Italian>
 		<Spanish>[BOLD]¡Revolución![\BOLD][NEWLINE][TAB]La mitad o más de los ciudadanos creen que la colonia debería ser un estado soberano. Podéis declarar la independencia de vuestra madre patria si vais a la pantalla Revolución.</Spanish>
 		<Russian>[BOLD]Революция![\BOLD][NEWLINE][TAB]Более половины граждан считают, что ваша колония должна стать суверенным государством. Теперь вы можете провозгласить независимость от своей родины, посетив экран революции.</Russian>
+		<Hungarian>[BOLD]Forradalom![\BOLD][NEWLINE][TAB]A polgárok több mint fele úgy véli, hogy a gyarmatuknak szuverén államnak kellene lennie. Most kinyilváníthatod a függetlenséget az anyaországodtól a Forradalom képernyőn</Hungarian>
 	</TEXT>
 	<!--TUTORIAL EVENTS-->
 	<TEXT>
@@ -75,6 +81,7 @@
 		<German>[BOLD]Werkzeuge[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat mit der Produktion von Werkzeugen begonnen. Die aus Eisenerz gefertigten Werkzeuge werden zur Errichtung vieler fortschrittlicher Gebäude benötigt und kommen ebenfalls bei der Ausbildung von Pionieren und der Herstellung von Schusswaffen zum Einsatz.</German>
 		<Italian>[BOLD]Attrezzi[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha cominciato a produrre attrezzi. Vengono prodotti usando il minerale e sono richiesti per costruire molti edifici avanzati; inoltre servono anche per creare pionieri e armi.</Italian>
 		<Spanish>[BOLD]Herramientas[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha empezado a crear Herramientas. Construidas a partir de Mineral, las Herramientas son necesarias para construir muchos edificios avanzados y también se utilizan para hacer Pioneros y Armas.</Spanish>
+		<Hungarian>[BOLD]Szerszámok[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] most szerszámokat gyárt. Az ércből gyártott szerszámok számos fejlett épület alkotóelemei, valamint utászok és fegyverek készítéséhez is használják őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_BUILDING_REQUIRES_TOOLS</Tag>
@@ -84,6 +91,7 @@
 		<German>[BOLD]Werkzeuge[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat mit der Errichtung eines Gebäudes begonnen, für das Werkzeuge benötigt werden. Die Werkzeuge werden am Ende des Bauvorhabens gebraucht, zu Beginn müssen sie sich also noch nicht in der Stadt befinden.</German>
 		<Italian>[BOLD]Attrezzi[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha cominciato a costruire un edificio che richiede attrezzi. Gli attrezzi saranno consumati alla fine della costruzione dell'edificio, quindi non serve che tu li abbia in città quando avvii la costruzione.</Italian>
 		<Spanish>[BOLD]Herramientas[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha empezado a construir un edificio que precisa Herramientas. Las Herramientas se consumirán al término de la construcción del edificio, por lo que no necesitáis tenerlas en la ciudad al principio de la construcción.</Spanish>
+		<Hungarian>[BOLD]Szerszámok[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] polgárai egy olyan épület építésébe kezdtek, amelyhez szerszámokra van szükség. A szerszámok az épület építésének végén fogynak el, így nem kell, hogy az építkezés kezdetén a városban legyenek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_AUTOMATED_TRADE</Tag>
@@ -93,6 +101,7 @@
 		<German>[BOLD]Automatisierter Handel[\BOLD][NEWLINE][TAB]Der Handel zwischen zwei Städten kann mit Hilfe eines Transportmittels, d. h. ein Kutschentross oder ein Schiff, automatisiert werden. Um alle Handelsvorkehrungen zu treffen, klicken Sie im Siedlungsbildschirm auf "Gouverneur" und weisen Sie der einen Siedlung einen Import, der anderen einen Export zu. Jetzt wählen Sie eine Transporteinheit (entweder ein Schiff oder einen Kutschentross), klicken Sie auf "Handelswege zuweisen" und markieren Sie den Handelsweg, den das Transportmittel nehmen soll.</German>
 		<Italian>[BOLD]Commercio automatizzato[\BOLD][NEWLINE][TAB]Puoi automatizzare il commercio tra due città usando un trasporto, come una colonna di carovane o una nave. Per impostarlo devi prima cliccare su Governatore, nella schermata dell'insediamento, e selezionare un'importazione in un insediamento e un'esportazione in un altro. Poi seleziona un'unità da trasporto (una nave o una colonna di carovane), clicca sul pulsante Assegna rotte commerciali e metti un visto sulla rotta che vorresti far percorrere all'unità da trasporto.</Italian>
 		<Spanish>[BOLD]Intercambio automatizado[\BOLD][NEWLINE][TAB]El intercambio entre dos ciudades puede automatizarse mediante un transporte como, por ejemplo, una Caravana de carromatos o un barco. Para iniciar el intercambio, primero haced clic en la pestaña del gobernante, en la pantalla del asentamiento, y asignad una importación en un asentamiento y una exportación en otro. Ahora, seleccionad la unidad de transporte (bien un barco o una Caravana de carromatos), haced clic en el botón "Asignar rutas comerciales" y marcad la ruta comercial en que queréis que empiece a recorrer esta unidad de transporte.</Spanish>
+		<Hungarian>[BOLD]Automatizált Kereskedelem[\BOLD][NEWLINE][TAB]A két város közötti kereskedelem automatizálható olyan szállító eszközökkel, mint az ekhós szekér vagy a hajó. A kereskedelem beállításához először a település képernyőn kattints a kormányzó fülre. Adj meg egy import terméket az egyik településen és egy export terméket a másik településen. Ezután válassz ki egy szállítóegységet (hajót vagy ekhós szekeret), kattints a Kereskedelmi Útvonal Hozzárendelése gombra és pipáld ki azt a kereskedelmi útvonalat, ahol a szállítóegység elinduljon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_JOIN_UNIT_TO_CITY_2</Tag>
@@ -102,6 +111,7 @@
 		<German>[BOLD]Einer Siedlung anschließen[\BOLD][NEWLINE][TAB]Glückwunsch! Sie haben die Siedlung [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gegründet. Um die Bevölkerung und die Produktion Ihrer Siedlung zu steigern, müssen sich neue Einheiten der Siedlung anschließen. Bewegen Sie eine Einheit auf eine Siedlung und klicken Sie auf "Anschluss an Siedlung".</German>
 		<Italian>[BOLD]Unire all'insediamento[\BOLD][NEWLINE][TAB]Congratulazioni! Hai fondato l'insediamento di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Per aumentarne produzione e popolazione, devi unire nuove unità all'insediamento. Sposta un'unità sull'insediamento e clicca sul pulsante "Unisci all'insediamento".</Italian>
 		<Spanish>[BOLD]Unirse a un asentamiento[\BOLD][NEWLINE][TAB]¡Felicidades! Habéis fundado el asentamiento de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Para aumentar la población y la producción de vuestro asentamiento, debéis añadirle nuevas unidades. Llevad la unidad a éste y haced clic en el botón "Unirse a asentamiento".</Spanish>
+		<Hungarian>[BOLD]Csatlakozás egy Településhez[\BOLD][NEWLINE][TAB]Gratulálunk [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] megalapításához! Ahhoz, hogy növelni tudd településed népességét és termelését, új egységeket kell településeidhez hozzáadnod. Mozgass egy egységet a településre és kattints a „Településhez Csatlakozás” gombra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_MOTHERLAND</Tag>
@@ -111,6 +121,7 @@
 		<German>[BOLD]Europa[\BOLD][NEWLINE][TAB]Eines Ihrer Schiffe soll in Kürze in Europa ankommen. Im Europa-Bildschirm können Sie Güter kaufen und verkaufen, Einwanderer an Bord holen und neue Einheiten rekrutieren. Wenn Sie damit fertig sind, ziehen Sie Ihr Schiff in den Bereich des Bildschirms, auf dem "Auslaufend" steht.</German>
 		<Italian>[BOLD]Fondare un insediamento[\BOLD][NEWLINE][TAB]La vita di un colono è piena di sfide. Per sopravvivere dovrai trovare una terra e fondare una colonia. Quando selezioni un'unità che può costruire una colonia, sulle caselle adatte alla fondazione di una colonia appariranno dei cerchi verdi. Dopo aver trovato la posizione adeguata, sposta un'unità su quella casella e clicca sul pulsante "Costruisci insediamento".</Italian>
 		<Spanish>[BOLD]Europa[\BOLD][NEWLINE][TAB]Se espera que uno de vuestros barcos llegue a Europa en breve. En la pantalla de Europa, podéis comprar y vender mercancías, embarcar a inmigrantes y reclutar nuevas unidades. Cuando hayáis terminado, arrastrad el barco a la sección de la pantalla llamada "Salientes".</Spanish>
+		<Hungarian>[BOLD]Európa[\BOLD][NEWLINE][TAB]Az egyik hajód hamarosan eléri Európát. Az Európa képernyőn árut vásárolhatsz és adhatsz el, bevándorlókat rakodhatsz be, és új egységeket toborozhatsz. Ha végeztél, húzd a hajódat a képernyő „Kiutazás” feliratú részébe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_PROFESSIONS</Tag>
@@ -120,6 +131,7 @@
 		<German>[BOLD]Berufe[\BOLD][NEWLINE][TAB]Jeder Bürger kann einem beliebigen Beruf zugewiesen werden - entweder, indem Sie im Siedlungsbildschirm doppelt auf den Bürger klicken und aus dem Menü einen Beruf auswählen, oder indem Sie ihn auf ein Geländefeld oder Gebäude ziehen. Die Anzahl der Güter, die eine Einheit produziert, hängt zu einem großen Teil von der Art der Einheit ab. So kann etwa ein Schuldknecht in einem Schmiedebetrieb arbeiten, wird jedoch deutlich weniger Werkzeug herstellen als ein Meister-Schmied.</German>
 		<Italian>[BOLD]Professioni[\BOLD][NEWLINE][TAB]Puoi assegnare qualsiasi professione a qualsiasi cittadino [cliccandolo due volte] nella schermata dell'insediamento e selezionando una professione dal menu, oppure puoi trascinarlo su una casella o un edificio. Il numero di beni prodotti da un'unità mentre è assegnata a una professione dipende in gran parte dal tipo di unità. Per esempio un servo per contratto può lavorare nella bottega del fabbro, anche se non produrrà tanti attrezzi quanti ne produce mastro fabbro.</Italian>
 		<Spanish>[BOLD]Profesiones[\BOLD][NEWLINE][TAB]Se puede asignar cualquier profesión a cualquier ciudadano haciendo doble clic en él en la pantalla del asentamiento y seleccionando una profesión en el menú, o bien arrastrándolo a una casilla o a un edificio. La cantidad de mercancías que una unidad cree cuando tenga asignada una profesión depende en su mayor parte del tipo de unidad. Por ejemplo, un Siervo por deudas puede trabajar en la Herrería, aunque no producirá tantas Herramientas como un Herrero experto.</Spanish>
+		<Hungarian>[BOLD]Szakmák[\BOLD][NEWLINE][TAB]A polgárokat úgy lehet szakmákhoz rendelni, hogy duplán kattintasz rájuk a település képernyőjén és kiválasztod a szakmát a menüből, vagy ráhúzod őket egy mezőre vagy épületre. Az, hogy egy egység mennyi árut hoz létre, miközben egy szakmához van rendelve, nagyban függ az egység típusától. Például egy szerződéses szolga dolgozhat a kovácsműhelyben, de soha nem fog annyi szerszámot gyártani, mint egy tapasztalt kovács.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_IMPROVE_LAND_DONE</Tag>
@@ -130,6 +142,7 @@
 		<Italian>[BOLD]Migliorare le caselle di terra[\BOLD][NEWLINE][TAB]Congratulazioni! Hai costruito il miglioramento %s8_improvement vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>[BOLD]Mejora de las casillas de tierra[\BOLD][NEWLINE][TAB]¡Felicidades! Habéis construido [NUM8:un:una:unos:unas] %s8_improvement cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>[BOLD]Улучшение участков земли[\BOLD][NEWLINE][TAB]Поздравляем! Вы построили улучшение %s8_improvement с [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>[BOLD]Területek Fejlesztése[\BOLD][NEWLINE][TAB]Gratulálunk! Elkészült egy %s8_improvement [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_SPEAK_WITH_CHIEF</Tag>
@@ -139,6 +152,7 @@
 		<German>[BOLD]Mit dem Häuptling sprechen[\BOLD][NEWLINE][TAB]Den Kontakt mit Häuptlingen benachbarter Dörfer von Eingeborenen herzustellen kann eine wertvolle Ressourcenquelle für junge Kolonien sein. Kontaktierte Häuptlinge werden Ihnen mitteilen, an welchen Gütern ihr Dorf interessiert ist, welche Fähigkeiten sie Ihren Kolonisten beibringen können, und - falls Sie der erste Europäer sind, der Kontakt zu dem Dorf aufnimmt - überreichen sie oft Geschenke.[PARAGRAPH:2]Um mit einem Häuptling zu sprechen, bewegen Sie eine Einheit auf das Geländefeld des Dorfes und wählen Sie den Befehl "Mit dem Häuptling sprechen!".</German>
 		<Italian>[BOLD]Parla con il capo[\BOLD][NEWLINE][TAB]Prendere contatti con i capi dei vicini villaggi nativi può rivelarsi una valida fonte di risorse per le neonate colonie. I capi che contatti ti diranno quali sono i beni che al loro villaggio interessa acquistare, quali abilità possono insegnare ai tuoi coloni e, se sarai il primo europeo a contattarli, spesso ti faranno un regalo.[PARAGRAPH:2]Per parlare con un capo, sposta un'unità sulla casella del villaggio e scegli l'ordine Parla con il capo.</Italian>
 		<Spanish>[BOLD]Hablar con los jefes[\BOLD][NEWLINE][TAB]Establecer contacto con los jefes de las aldeas nativas vecinas puede ser una fuente valiosa de recursos para las colonias incipientes. Los jefes con los que contactéis os dirán qué mercancías le interesa adquirir a su aldea, qué habilidad pueden enseñarles a vuestros Colonos y ?si sois el primer europeo que contacta con ellos? hasta os harán un regalo.[PARAGRAPH:2]Para hablar con un jefe, llevad una unidad hasta la casilla de la aldea y seleccionad la orden "Hablar con el jefe".</Spanish>
+		<Hungarian>[BOLD]Beszéd a Főnökkel[\BOLD][NEWLINE][TAB]A szomszédos Indián falvak vezetőivel való kapcsolatfelvétel értékes forrásokat biztosíthat az induló kolóniák számára. A felkeresett törzsfőnökök elmondják, hogy milyen termékre van szüksége a falujuknak, milyen szakmákat tudnak megtanítani a telepeseidnek és - ha te vagy az első európai, aki kapcsolatba lép az adott faluval - gyakran ajándékot is adnak neked.[PARAGRAPH:2]Ahhoz, hogy beszélj egy törzsfőnökkel, mozogj egy egységgel a falura és válaszd a „Beszéd a Főnökkel” lehetőséget.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_SPEAK_WITH_CHIEF_COMPLETED</Tag>
@@ -148,15 +162,17 @@
 		<German>[BOLD]Erfolg![\BOLD][NEWLINE][TAB]Gut gemacht! Sie haben erfolgreich mit einem Häuptling gesprochen.</German>
 		<Italian>[BOLD]Ce l'hai fatta![\BOLD][NEWLINE][TAB]Bel lavoro! Sei riuscito a parlare con un capo.</Italian>
 		<Spanish>[BOLD]¡Conseguido![\BOLD][NEWLINE][TAB]¡Buen trabajo! Habéis conseguido hablar con un jefe.</Spanish>
+		<Hungarian>[BOLD]Siker![\BOLD][NEWLINE][TAB]Szép munka! Sikeresen beszéltél egy törzsfőnökkel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_WAR</Tag>
-		<English>[BOLD]War[\BOLD][NEWLINE][TAB]War now rages between you and the [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT]. Each of your settlements needs guns for defence. Guns can either be purchased from Europe or manufactured in a settlement that has an armoury.[PARAGRAPH:2]Once you have guns, any unit can be equipped with guns and gunpowder to become a soldier. In addition to guns, cannons can also be forged in an armoury or imported from Europe. War will continue until one side is destroyed, or peace is negotiated through the diplomacy screen.</English>
+		<English>[BOLD]War[\BOLD][NEWLINE][TAB]War now rages between you and the [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT]. Each of your settlements needs guns for defence. Guns can either be purchased from Europe or manufactured in a settlement that has an armoury.[PARAGRAPH:2]Once you have guns, any unit can be equipped with guns and gunpowder to become a soldier. In addition to guns, cannons can also be forged using coal in an armoury or imported from Europe. War will continue until one side is destroyed, or peace is negotiated through the diplomacy screen.</English>
 		<Portuguese>[BOLD]Guerra[\BOLD][NEWLINE][TAB]A guerra agora está acontecendo entre você e [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT]. Cada um dos suas colônias precisa de armas para defesa. As armas podem ser compradas na Europa ou fabricadas em uma colônia que tenha um arsenal.[PARAGRAPH:2]Depois de ter armas, qualquer unidade pode ser equipada com armas e pólvora para se tornar um soldado. Além das armas, os canhões também podem ser forjados em um arsenal ou importados da Europa. A guerra continuará até que um lado seja destruído ou a paz seja negociada através da tela da diplomacia.</Portuguese>
 		<French>[BOLD]Guerre[\BOLD][NEWLINE][TAB]La guerre a été déclarée entre vous et les [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT]. Pour assurer la défense de vos villes, vous devrez faire en sorte que toutes vos villes possèdent des armes à feu. Pour vous procurer des armes à feu, achetez-les en Europe ou faites-les fabriquer dans une colonie équipée d'une armurerie.[PARAGRAPH:2]Une fois en possession d'armes à feu, vous pouvez en équiper vos unités pour en faire des soldats. En plus des armes à feu, les canons peuvent également être fabriqués dans une armurerie ou achetés en Europe. La guerre continuera de faire rage jusqu'à ce que l'un des deux camps soient détruit ou qu'un accord de paix soit négocié via l'écran de diplomatie.</French>
 		<German>[BOLD]Krieg[\BOLD][NEWLINE][TAB]Zwischen Ihrem und dem [COLOR_HIGHLIGHT_TEXT]%s1:3_civ[COLOR_REVERT] Volk wurde der Krieg erklärt. Um Ihre Siedlungen zu verteidigen, sollten Sie sicherstellen, dass alle Ihre Siedlungen über Schusswaffen verfügen. Sie können entweder aus Europa gekauft oder in einer Siedlung hergestellt werden, die über eine Waffenkammer verfügt.[PARAGRAPH:2]Sobald Sie Schusswaffen haben, können Sie alle Einheiten damit ausstatten, um sie zu Soldaten zu machen. Zusätzlich zu den Schusswaffen können Sie auch Kanonen in der Waffenkammer herstellen oder in Europa kaufen. Der Krieg dauert an, bis eine Seite zerstört ist oder über den Diplomatie-Bildschirm Frieden ausgehandelt wurde.</German>
 		<Italian>[BOLD]Guerra[\BOLD][NEWLINE][TAB]È scoppiata la guerra tra te e i [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT]. Per difendere le tue città, assicurati che ogni insediamento disponga di armi. Puoi acquistarle dall'Europa oppure farle costruire in un insediamento dotato di armeria.[PARAGRAPH:2]Quando avrai le armi, potrai trasformare qualsiasi unità in soldati. Oltre alle armi, anche i cannoni possono essere costruiti in un'armeria o acquistati dall'Europa. La guerra continuerà fino alla distruzione di uno dei contendenti oppure fino a quando non verrà stipulato un trattato di pace tramite la schermata della diplomazia.</Italian>
 		<Spanish>[BOLD]Guerra[\BOLD][NEWLINE][TAB]Se ha declarado la guerra entre vosotros y el [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT]. Para defender vuestras ciudades, debéis cercioraros de que todos vuestros asentamientos tengan Armas. Éstas pueden comprarse en Europa o hacerse en un asentamiento que cuente con un Polvorín.[PARAGRAPH:2]Cuando tengáis Armas, podréis equipar a cualquier unidad con ellas para convertirla en un Soldado. Además de Armas, también se pueden hacer Cañones en un Polvorín o comprarlos en Europa. La guerra seguirá hasta que uno de los bandos sea destruido o se negocie la paz mediante la pantalla de diplomacia.</Spanish>
+		<Hungarian>[BOLD]Háború[\BOLD][NEWLINE][TAB]Most háború dúl közted és [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] között. Minden településednek szüksége van fegyverekre a védelemhez. A fegyvereket vagy megvásárolhatod Európából vagy előállíthatod egy olyan településen, ahol van fegyverraktár.[PARAGRAPH:2]Ha már vannak fegyvereid és puskaporod, bármely egységet felszerelheted vele, hogy katonává váljon. Az puskák mellett ágyúkat is lehet kovácsolni egy fegyvertárban, vagy Európából importálni. A háború addig folytatódik, amíg az egyik fél el nem pusztul, vagy a diplomácia képernyőn keresztül nem sikerül békét kötni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_IMMIGRANT_DONE_2</Tag>
@@ -166,6 +182,7 @@
 		<German>[BOLD]Immigration[\BOLD][NEWLINE][TAB]Glückwunsch! Sie haben Ihren ersten Einwanderer aus Europa aufgenommen! Einwanderer erscheinen, wenn Ihre Siedlungen Kreuze produzieren. Sie können die Produktion von Kreuzen erhöhen, wenn Sie eine Einheit in einer Kirche oder Kathedrale arbeiten lassen. Wie lange es dauert, bis ein weiterer Einwanderer verfügbar wird, sehen Sie auf dem Europa-Bildschirm.</German>
 		<Italian>[BOLD]Immigrazione[\BOLD][NEWLINE][TAB]Congratulazioni! Hai raccolto il tuo primo immigrante proveniente dall'Europa. Gli immigranti vengono visualizzati mano a mano che i tuoi insediamenti producono croci. Puoi aumentare la produzione di croci assegnando un'unità al lavoro in una chiesa o una cattedrale. Puoi vedere quanto tempo manca alla comparsa di un nuovo immigrante nella schermata dell'Europa.</Italian>
 		<Spanish>[BOLD]Inmigración[\BOLD][NEWLINE][TAB]¡Felicidades! Habéis recogido a vuestro primer inmigrante de Europa. Los inmigrantes aparecen a medida que los asentamientos producen Cruces. Podéis aumentar vuestra producción de Cruces si hacéis que una unidad trabaje en una Iglesia o en una Catedral. En la pantalla de Europa podéis ver cuánto tiempo queda para tener disponible a otro inmigrante.</Spanish>
+		<Hungarian>[BOLD]Bevándorlás[\BOLD][NEWLINE][TAB]Gratulálunk! Felvetted az első bevándorlót Európából. A bevándorlók akkor jelennek meg, amikor a településeid kereszteket termelnek. Növelheted a keresztek termelését, ha egy egységed templomban vagy katedrálisban szolgál. Az Európa képernyőn láthatod, hogy mennyi idő múlva lesz elérhető a következő bevándorló.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_FOUNDING_FATHERS_2</Tag>
@@ -175,6 +192,7 @@
 		<German>[BOLD]Gründerväter[\BOLD][NEWLINE][TAB]Ein Gründervater macht Ihnen das Angebot, sich Ihrer Kolonie anzuschließen. Ein Gründervater ist keine physische Einheit im Spiel, sondern sie bietet einen beträchtlichen Bonus für Ihre Kolonie. Wenn sich ein Gründervater Ihrer Kolonie anschließt, kostet das Gründerväterpunkte, es kann also manchmal von Vorteil sein, die Punkte für einen teureren Gründervater zu sparen. Aber seien Sie gewarnt, ein Gründervater schließt sich nur der Kolonie an, die ihn als Erstes aufnimmt.</German>
 		<Italian>[BOLD]Padri Fondatori[\BOLD][NEWLINE][TAB]Un Padre Fondatore sta per offrirsi di unirsi alla tua colonia. Un Padre Fondatore non è un'unità fisica vera e propria, ma fornisce un importante bonus alla tua colonia. Quando un Padre Fondatore si unisce alla tua colonia, consumi punti Padre Fondatore, quindi talvolta conviene risparmiarli per spenderli successivamente per un Padre Fondatore più costoso. Ma fai attenzione, perché un Padre Fondatore entrerà solo nella prima colonia che lo accetta.</Italian>
 		<Spanish>[BOLD]Padres fundadores[\BOLD][NEWLINE][TAB]Un Padre fundador está a punto de unirse a vuestra colonia. Un Padre fundador no es unidad "física" del juego, si no que, en vez de ello, proporciona una bonificación importante a vuestra colonia. Cuando un Padre fundador se une a vuestra colonia, se consumen puntos de Padres fundadores, por lo que a veces puede resultar más provechoso guardarse los puntos para un Padre fundador más caro. Aunque también habéis de saber que un Padre fundador (o Madre fundadora) solo se unirá a la primera colonia que lo (la) acepte.</Spanish>
+		<Hungarian>[BOLD]Alapító Atyák[\BOLD][NEWLINE][TAB]Egy Alapító Atya felajánlja, hogy csatlakozik a gyarmatodhoz. Az Alapító Atya nem egy fizikai egység a játékban, hanem jelentős bónuszt biztosít a kolóniádnak. Amikor egy Alapító Atya csatlakozik a gyarmatodhoz, az Alapító Atya pontok felhasználásra kerülnek, ezért néha előnyös lehet, ha a pontjaidat egy drágább Alapító Atyára tartogatod. De vigyázz! Egy Alapító Atya csak az első olyan gyarmathoz csatlakozik, amelyik elfogadja őt, és ha egyszer elutasítják, utána már nem fog csatlakozni hozzád.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_OVERSTOCK</Tag>
@@ -184,15 +202,17 @@
 		<German>[BOLD]Verschwendete Güter[\BOLD][NEWLINE][TAB]Sie verlieren Güter in der Siedlung [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Jede Siedlung kann normalerweise 100 Einheiten jedes Gutes halten, aber wenn diese Grenze erreicht ist, verlieren Sie in jede Runde Güter. Um diese Grenze zu erhöhen, errichten Sie ein Lagerhaus oder eine Lagerhauserweiterung.</German>
 		<Italian>[BOLD]Beni sprecati[\BOLD][NEWLINE][TAB]A [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] stai perdendo beni. Normalmente ogni insediamento può immagazzinare 100 unità di ciascun bene e, una volta raggiunto questo limite, comincerai a perdere beni a ogni turno. Per aumentare il limite devi costruire un magazzino o un'espansione del magazzino.</Italian>
 		<Spanish>[BOLD]Mercancías desperdiciadas[\BOLD][NEWLINE][TAB]Estáis perdiendo mercancías en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Normalmente, cada asentamiento solo puede almacenar 100 unidades de cada mercancía y, una vez que se alcanza este tope, empezaréis a perder mercancías cada turno. Para aumentar este tope, construid un Almacén o un Almacén ampliado.</Spanish>
+		<Hungarian>[BOLD]Pocsékba Ment Áruk[\BOLD][NEWLINE][TAB][COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] raktárkészlete csökken. Minden településen általában minden áruból csak 100 darab van, és amint eléred ezt a küszöböt, minden fordulóban árukat vesztesz. Ennek a küszöbnek a növeléséhez építs depót vagy raktárat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_TAXES</Tag>
-		<English>[BOLD]Taxes![\BOLD][NEWLINE][TAB]Your King has raised your taxes. These taxes will be deducted from every monetary transaction with your motherland.[PARAGRAPH:2]Any time your king attempts to raise your taxes, you are given the option of throwing a "Goods Party." Doing so will stop the tax increase, but you will never be able to trade that good with your motherland again!</English>
+		<English>[BOLD]Taxes![\BOLD][NEWLINE][TAB]Your King has raised your taxes. These taxes will be deducted from every monetary transaction with your motherland.[PARAGRAPH:2]Any time your king attempts to raise your taxes, you are given the option of throwing a "Goods Party." Doing so will stop the tax increase, but you will never be able to trade that item with your motherland again!</English>
 		<Portuguese>[BOLD]Impostos![\BOLD][NEWLINE][TAB]Seu rei aumentou seus impostos. Esses impostos serão deduzidos de cada transação monetária com sua pátria.[PARAGRAPH:2]Sempre que seu rei tentar aumentar seus impostos, você terá a opção de organizar uma "Festa de Mercadorias". Fazer isso interromperá o aumento de impostos, mas você nunca mais poderá negociar esse bem com sua pátria novamente!</Portuguese>
 		<French>[BOLD]Impôts ![\BOLD][NEWLINE][TAB]Votre roi a augmenté vos impôts, déduits de chaque transaction monétaire que vous effectuez avec la mère patrie.[PARAGRAPH:2]Chaque fois que votre roi veut augmenter vos impôts, vous avez la possibilité d'organiser une opération contestataire de Destruction des marchandises. Si vous choisissez cette option, l'augmentation sera ignorée, mais vous ne pourrez plus jamais vendre cette marchandise en Europe !</French>
 		<German>[BOLD]Steuern![\BOLD][NEWLINE][TAB]Ihr König hat die Steuern erhöht. Diese Steuern werden bei jeder Geldtransaktion mit Ihrem Heimatland abgezogen.[PARAGRAPH:2]Immer wenn Ihr König versucht, die Steuern zu erhöhen, können Sie einen "Güteraufstand" starten. Dadurch verhindern Sie die Steuererhöhung, aber Sie können dieses Gut nie mehr mit Ihrem Heimatland handeln!</German>
 		<Italian>[BOLD]Tasse![\BOLD][NEWLINE][TAB]Il re ha aumentato le tasse. Queste verranno dedotte da ogni transazione monetaria con la madrepatria.[PARAGRAPH:2]Ogni volta che il re cerca di aumentare le tasse, hai l'opportunità di protestare dando la "festa" di un determinato bene. Così facendo eviterai l'aumento di tasse, ma non potrai mai più commerciare quel bene con la madrepatria!</Italian>
 		<Spanish>[BOLD]¡Impuestos![\BOLD][NEWLINE][TAB]Vuestro rey os ha subido los impuestos. Éstos se deducirán de toda transacción monetaria realizada con la madre patria.[PARAGRAPH:2]Cada vez que vuestro monarca intente subiros los impuestos, se os dará la opción de fundar un partido para la mercancía en concreto. Al hacerlo, impediréis el aumento de impuestos, pero nunca más podréis comerciar con vuestra patria.</Spanish>
+		<Hungarian>[BOLD]Adó![\BOLD][NEWLINE][TAB]A Királyod megemelte az adót. Ez az adó levonásra kerül az anyaországoddal folytatott minden pénzmozgásból.[PARAGRAPH:2]Bármikor, amikor Királyod megpróbálja megemelni az adót, lehetőséged van arra, hogy „teadélutánt” rendezz. Ha így teszel, az adóemelést megakadályozod, de soha többé nem tudsz majd kereskedni az adott áruval az anyaországoddal!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TUTORIAL_FOUND_COLONY_2</Tag>
@@ -202,6 +222,7 @@
 		<German>[BOLD]Eine Siedlung gründen[\BOLD][NEWLINE][TAB]Das Leben eines Kolonisten ist nicht leicht. Um zu überleben, müssen Sie Land finden und eine Siedlung errichten. Wenn eine Einheit ausgewählt ist, die eine Siedlung gründen kann, erscheinen blaue Kreise auf den zum Bau optimal geeigneten Geländefeldern. Wenn Sie einen geeigneten Ort gefunden haben, bewegen Sie die Einheit zu dem Geländefeld und klicken Sie auf "Siedlung gründen".</German>
 		<Italian>[BOLD]Fondazione di un insediamento[\BOLD][NEWLINE][TAB]La vita di un colono è piena di sfide. Per sopravvivere dovrai trovare una terra e fondare un insediamento. Quando selezioni un'unità che può costruire un insediamento, sulle caselle adatte alla fondazione di un insediamento appariranno dei cerchi blu. Dopo aver trovato la posizione adeguata, sposta un'unità su quella casella e clicca sul pulsante "Costruisci insediamento".</Italian>
 		<Spanish>[BOLD]Fundación de un asentamiento[\BOLD][NEWLINE][TAB]La vida del colono es difícil. Para sobrevivir, tenéis que encontrar tierra y construir un asentamiento. Cuando se selecciona una unidad que puede construir un asentamiento, aparecerán círculos azules en las casillas que se consideren idóneas para fundar un asentamiento. Una vez que hayáis encontrado la ubicación apropiada, llevad una unidad a la respectiva casilla y haced clic en el botón "Construir Asentamiento".</Spanish>
+		<Hungarian>[BOLD]Település Alapítása[\BOLD][NEWLINE][TAB]A telepesek élete kihívásokkal teli. A túlélés érdekében földet kell találnod és települést kell építened. Amikor egy települést építeni képes egységet választasz ki, kék körök jelennek meg azokon a mezőkön, amelyek kiváló helyszínek lennének. Ha kiválasztottad a legjobb helyszínt, mozgass egy egységet a megfelelő mezőre és kattints a „Település Építése” gombra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TUTORIAL_CITY_SCREEN</Tag>
@@ -212,6 +233,7 @@
 		<Italian>[BOLD]Schermata dell'insediamento[\BOLD][NEWLINE][TAB]Nella schermata dell'insediamento puoi controllare ciò che produce la popolazione del tuo insediamento. Per produrre materie prime come cotone, zucchero o tabacco, trascina semplicemente un colono nella finestra del terreno, a destra della finestra degli edifici. Per assegnare un colono alla produzione di beni finiti, trascinalo su un edificio nella finestra degli edifici, al centro dello schermo. Puoi anche trascinarlo nella sezione chiamata Guarnigione, per fare in modo che lasci l'insediamento. Ricorda che devi sempre avere almeno un colono all'interno dell'insediamento.[PARAGRAPH:2]Nella parte inferiore della schermata dell'insediamento trovi la finestra dei beni, che elenca tutti i beni contenuti nell'insediamento e quanti quest'ultimo ne produce o ne perde ogni turno. Puoi caricare i beni su qualsiasi mezzo di trasporto presente nella stessa casella dell'insediamento trascinandoli nella sezione Trasporto.</Italian>
 		<Spanish>[BOLD]Pantalla del asentamiento[\BOLD][NEWLINE][TAB]En esta pantalla podéis controlar lo que produce la población de vuestro asentamiento. Para producir materias primas ?como Algodón, Azúcar o Tabaco? basta con arrastrar a un colono hasta la ventana del terreno, a la derecha del visor de edificios. Para destinar a un Colono a hacer bienes manufacturados, arrastradlo hasta un edificio del visor de edificios, en medio de la pantalla. También podéis arrastrarlo hasta el apartado llamado "Guarnición" para que la unidad deje el asentamiento. Nota: Siempre debéis tener al menos un colono en vuestro asentamiento.[PARAGRAPH:2]A lo largo de la parte inferior de la pantalla se encuentra el visor de mercancías, que lista todas las mercancías que contiene el asentamiento y la cantidad de ellas que produce o pierde cada turno. Las mercancías se pueden embarcar en cualquier transporte que se encuentre en la misma casilla del asentamiento arrastrándolas al apartado "Transporte".</Spanish>
 		<Russian>[BOLD]Экран поселения[\BOLD][NEWLINE][TAB]На экране поселения вы можете контролировать, что производит жители вашей колонии. Чтобы получить сырье, такое как хлопок, сахар или табак, просто переместите колониста на нужную клетку в окно ландшафта справа от окна зданий. Чтобы поручить колонисту производить промышленные товары, переместите его к нужному зданию на окно зданий в центре экрана. Вы также можете переместить его в раздел с надписью "Гарнизон", чтобы отряд покинул поселение. Примечание: в вашем поселении всегда должен быть хотя бы один колонист, иначе оно будет заброшено и исчезнет с карты мира.[PARAGRAPH:2]В нижней части экрана поселения находится окно товаров, в котором перечислены все товары, которые есть в вашем поселении и сколько оно производит или теряет за каждый ход. Товары можно загрузить в любой транспорт, находящийся в той же клетке, что и ваше поселение. Для этого выбранный товар нужно переместить в транспортное средство (морское или наземное), находящееся в разделе "Транспорт". Колонистов, рабочих, специалистов или войска, на экране колоний можно загрузить в транспорт, который может их перевозить, также, как и товары.</Russian>
+		<Hungarian>[BOLD]Település Képernyő[\BOLD][NEWLINE][TAB]A Település Képernyőn szabályozhatod, hogy a településed lakossága mit termeljen. Ha nyersanyagokat, például gyapotot, cukrot vagy dohányt szeretnél előállítani, egyszerűen húzz egy telepest az épületek képernyőtől jobbra található Terep Képernyőre. Ahhoz, hogy egy lakos feldolgozott termékeket állítson elő, húzd őt egy épülethez a képernyő közepén lévő Épület Ablakban. A „Helyőrség” feliratú részre is húzhatod, így az egység elhagyja a települést. Megjegyzés: mindig kell, hogy legalább egy telepes legyen a településen belül, különben az elhagyásra kerül.[PARAGRAPH:2]A település képernyő alján található az árukijelző, amely felsorolja a településed összes készleten lévő áruját, és azt, hogy mennyit termel vagy veszít minden körben. Az árukat a településeddel azonos mezőn lévő bármelyik szállítóeszközbe be lehet rakodni, ha a „Szállítás” részre húzod őket.</Hungarian>
 	</TEXT>
 	<!-- TAC Events Texts below -->
 	<TEXT>
@@ -221,6 +243,7 @@
 		<French>Une rumeur court à propos des environs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Des immenses trésors seraient cachés dans les environs...</French>
 		<German>Gerüchte über wertvolle Schatzfunde in der Nähe von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verbreiten sich rasch.</German>
 		<Russian>Слухи о находке сокровищ возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] быстро распространяются по округе.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében lévő értékes kincsekről szóló pletykák gyorsan terjednek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ADVENTURER</Tag>
@@ -229,6 +252,7 @@
 		<French>Une rumeur court à propos des environs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Des immenses trésors seraient cachés dans les environs... Cette rumeur attire des Aventuriers. Les citoyens et le Roi surveillent leurs agissements avec méfiance.</French>
 		<German>Gerüchte über wertvolle Schatzfunde in der Nähe von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ziehen Glücksritter aus aller Herren Länder an. Die Einwohner und der König beobachten die Vorgänge argwöhnisch.</German>
 		<Russian>Слухи о находке сокровищ близ [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привлекают искателей приключений со всего мира. Король и местные жители подозрительно наблюдают за происходящим.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében lévő értékes kincsekről szóló pletykák a világ minden tájáról vonzzák a kalandorokat. A helyi lakosok és Őfelsége is bizalmatlanul figyeli tevékenységüket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRSTCOLONY</Tag>
@@ -237,6 +261,7 @@
 		<French>Seigneur, vos hommes attendent vos ordres. Ils boivent vos paroles. C'est votre première colonie dans le Nouveau Monde et vos citoyens vous remercient de leur donner une chance de participer à un tel moment historique. Vos hommes souhaitent prêter serment afin de se rappeler de leur vertu. Quel serment souhaitez-vous qu'ils prêtent?</French>
 		<German>Milord, tief ergriffen stehen Eure Männer vor Euch. Dies ist die erste Kolonie Eurer Heimatnation in der Neuen Welt. Dankbar sind Eure Gefährten, dass Ihr ihnen die Chance gebt, an diesem historischen Augenblick teilzunehmen. Die Männer möchten einen Schwur ablegen, ein Versprechen, tugendhaft zu leben. Welchen Eid wollt Ihr sie schwören lassen?</German>
 		<Russian>Милорд, ваши люди стоят перед вами. Глубоко тронутые, они слушают ваши слова. Это первая колония вашей страны в Новом Свете и ваши граждане благодарят вас за то, что вы дали им возможность участвовать в этом историческом событии. Они хотят принести клятву, чтобы напомнить себе о своей добродетели. Какую клятву вы попросите их принести?</Russian>
+		<Hungarian>Uram, az embereid előtted állnak. Mélyen meghatódva hallgatják szavaidat. Ez nemzeted első gyarmata az Újvilágban és polgáraid köszönik, hogy részt vehetnek ebben a történelmi pillanatban. Embereid esküt kívánnak tenni, hogy emlékeztesse őket erényeikre. Melyik esküt kéred tőlük?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SECONDCOLONY</Tag>
@@ -245,6 +270,7 @@
 		<French>Votre roi a reconnu avec bienveillance la fondation de votre deuxième colonie dans le Nouveau Monde et offre son soutien.</French>
 		<German>Seine Majestät sieht mit Wohlgefallen die Gründung der zweiten Kolonie in der Neuen Welt und bietet Euch seine Unterstützung an.</German>
 		<Russian>Его Величество с радостью наблюдает за основанием второй колонии в Новом Свете и предлагает вам Свою поддержку.</Russian>
+		<Hungarian>Őfelsége jóindulatúan elismerte második kolóniájának megalapítását az Újvilágban és felajánlja támogatását.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SECONDCOLONY_1_HELP</Tag>
@@ -253,14 +279,16 @@
 		<French>[COLOR_FONT_GOLD]Votre Roi vous offre les matériaux nécessaires à la construction d'un chariot.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Seine Majestät offeriert Euch Materialien, mit denen Ihr ein Fuhrwerk bauen könnt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Его Величество предлагает материалы для постройки повозки.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Őfelsége anyagokat ajánl fel egy ekhós szekér építéséhez.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SECONDCOLONY_2_HELP</Tag>
-		<English>[COLOR_FONT_GOLD]His Majesty is offering blades and provisions for two town guards of your colonies.[COLOR_REVERT]</English>
+		<English>[COLOR_FONT_GOLD]His Majesty is offering blades and provisions to add two town guards to your colony.[COLOR_REVERT]</English>
 		<Portuguese>[COLOR_FONT_GOLD]Sua Majestade está oferecendo lâminas e provisões para dois guardas municipais de suas colônias.[COLOR_REVERT]</Portuguese>
 		<French>[COLOR_FONT_GOLD]Votre Roi vous offre des armes pour défendre votre colonie.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Seine Majestät bietet Euch Klingen und Ausrüstung für zwei Stadtwachen an, damit Ihr Eure Kolonien verteidigen könnt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Его Величество предлагает вам клинки городских стражников для экипирования защитников колонии.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Őfelsége kardokat és ellátmányt ajánl fel a kolónia 2 Városőrének.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THIRDCOLONY</Tag>
@@ -269,6 +297,7 @@
 		<French>Un groupe de jeunes gens ayant soif d'aventure vous propose d'explorer ce nouveau monde au nom de votre nation, si vous payez pour les équipements et les vivre pour cette entreprise.</French>
 		<German>Eine Gruppe junger ehrgeiziger Abenteurer bietet an, für unsere glorreiche Nation diese neue Welt zu erkunden, falls wir für die Vorräte und Ausrüstung dieses Unterfangens aufkommen.</German>
 		<Russian>Группа молодых искателей приключений предлагает исследовать этот новый мир во имя нашей славной нации. Разумеется, если мы оплатим припасы и оборудование, необходимые им для этого предприятия.</Russian>
+		<Hungarian>Lelkes fiatal kalandorok egy csoportja felajánlja, hogy dicső nemzetünk nevében felfedezik ezt az új világot, ha mi fizetjük a vállalkozáshoz szükséges ellátmányt és felszerelést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FOREST_FIRE</Tag>
@@ -279,6 +308,7 @@
 		<Italian>Un incendio ha devastato una foresta vicina alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>El fuego ha asolado un bosque cerca de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Лесной пожар бушует недалеко от [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Tűz tombol [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város közelében lévő erdőben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_1</Tag>
@@ -289,16 +319,18 @@
 		<Italian>Tragedia nei pressi di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
 		<Spanish>La tragedia se ha cebado con [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
 		<Russian>Чьи-то негодные отпрыски из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] устроили пожар в ближайшем лесу и убежали домой, не потушив его. Из-за этих сопляков сгорело много гектаров леса!</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] rosszalkodó gyermekei tüzet gyújtottak a közeli erdőben és anélkül mentek haza, hogy eloltották volna. Sok hektárnyi erdő égett le a gyerekek miatt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_2</Tag>
-		<English>To escape their pursuers in the smoke, outlaws set a forest on fire near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. They got lost and roasted themselves, a rehearsal for their eternity in Hell. The bad news is that a wide swathe of land now lies in ruins.</English>
+		<English>Planning to use smoke to escape their pursuers, outlaws set a forest on fire near [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. They got lost and roasted themselves, a foretaste of their eternity in Hell. The bad news is that a wide swathe of land now lies in ruins.</English>
 		<Portuguese>Para escapar de seus perseguidores na fumaça, os bandidos incendiaram uma floresta perto de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Eles se perderam e se torraram, num ensaio para sua eternidade no Inferno. A má notícia é que uma grande extensão de terra está agora em ruínas.</Portuguese>
 		<French>Des criminels ont mis le feu à la forêt près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] en tentant vainement .d'échapper à la justice, mais ils se sont perdus dans les flammes qui les ont rôtis. Qu'ils finissent de brûler en Enfer! La mauvaise nouvelle est que des hectares de terres sont maintenant en cendres.</French>
 		<German>Gesetzlose haben in einem Wald nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein Feuer gelegt, um ihren Häschern im Rauch zu entkommen. Die Spitzbuben verliefen sich und wurden zum Opfer der Flammen - recht so! Mögen sie in der Hölle weiterbrennen. Doch ein weiter Landstrich liegt nun in Schutt und Asche.</German>
 		<Italian>Dei criminali hanno appiccato il fuoco alla foresta vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], nel fallito tentativo di coprire la propria fuga.</Italian>
 		<Spanish>Unos prófugos han prendido fuego al bosque cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] en un triste intento por huir de la justicia.</Spanish>
 		<Russian>Преступники подожгли лес возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], чтобы спрятаться от своих подельников в дыму и не делить добычу, но заблудились и поджарились. Пусть они вечно горят в аду! Но из-за этих негодяев большой участок земли теперь покрыт пеплом и обгоревшими деревьями.</Russian>
+		<Hungarian>Törvényen kívüliek tüzet gyújtottak [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében lévő erdőben, hogy a füstben elmeneküljenek az üldözőik elől, de eltévedtek és elégtek. Égjenek örökké a pokolban! A rossz hír az, hogy egy széles földterület most romokban hever.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOREST_FIRE_3</Tag>
@@ -309,6 +341,7 @@
 		<Italian>Tragedia nei pressi di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: è scoppiato un incendio in un villaggio e si è propagato alla vicina foresta, devastando il territorio per chilometri.</Italian>
 		<Spanish>La tragedia se ha cebado con [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], pues un incendio en la aldea se ha propagado al bosque, y ha chamuscado una gran superficie de tierra.</Spanish>
 		<Russian>Трагедия возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]: пожар, случившийся в одной деревне, перекинулся на близлежащий лес, превратив большую территорию в выжженную пустыню на многие мили.</Russian>
+		<Hungarian>Tragédia történt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében. Az égő törmelékből keletkezett tűz átterjedt az erdőre, mérföldekre felperzselve a földet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOREST_FIRE_4</Tag>
@@ -319,6 +352,7 @@
 		<Italian>Un incendio forestale, causato da un fulmine, ha devastato il territorio vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Un incendio forestal causado por un rayo ha asolado las tierras aledañas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Лесной пожар, вызванный молнией, бушует около [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Tragédia történt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében. Az égő törmelékből keletkezett tűz átterjedt az erdőre, mérföldekre felperzselve a földet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HAPPY_HUNTING</Tag>
@@ -329,6 +363,7 @@
 		<Italian>L'abbondante selvaggina procurata dai cacciatori vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causato un piccolo boom demografico.</Italian>
 		<Spanish>El excedente logrado por los cazadores cerca de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha impulsado un pequeño crecimiento de la población.</Spanish>
 		<Russian>Излишки дичи, добытой охотниками возле [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], вызвали небольшой демографический бум.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város közelében a vadászok által lelőtt vadak kisebb népességrobbanáshoz vezettek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_1</Tag>
@@ -339,16 +374,18 @@
 		<Italian>I branchi di alci vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sono diventati particolarmente numerosi. I nostri cacciatori hanno procurato una riserva extra di cibo.</Italian>
 		<Spanish>Las manadas de alces cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se han hecho especialmente grandes. Los cazadores se han cobrado una reserva de comida.</Spanish>
 		<Russian>Популяция лосей вблизи [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в последнее время стала особенно большой. Теперь у наших охотников навалом излишков еды.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében különösen nagyra nőtt a jávorszarvasállomány. A vadászainknak mostanra jelentős felhalmozott élelmiszerfeleslegük lett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_2</Tag>
-		<English>The people of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] celebrate as the latest caribou hunting season has brought a rich harvest.</English>
+		<English>The people of [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] celebrate as the recent caribou hunting season brings a rich harvest.</English>
 		<Portuguese>O povo de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] comemora porque a última temporada de caça ao caribu trouxe uma rica colheita.</Portuguese>
 		<French>Les citoyens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] célèbrent une saison de chasse au caribou particulièrement fructueuse.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist ein fetter Wirt überführt worden, seinen Gästen Rattenkadaver als Hirschragout serviert zu haben.[NEWLINE]Der Mann wurde an die eigenen Schweine verfüttert! Seine reichen Kellervorräte an Getreide, Käse und Bier wurden ins Lagerhaus der Gemeinde verbracht.</German>
 		<Italian>La popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] festeggia l'abbondanza della recente stagione di caccia al caribù.</Italian>
 		<Spanish>Las gentes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] celebran que la última temporada de caza de caribúes ha sido muy generosa.</Spanish>
 		<Russian>Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] празднуют богатую добычу в последнем сезоне охоты на северных оленей.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lakói ünnepelnek, mivel a legutóbbi karibu vadászati szezon bőséges hús bevételt hozott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HAPPY_HUNTING_3</Tag>
@@ -359,6 +396,7 @@
 		<Italian>I cervi proliferano nella foresta vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], e i nostri cacciatori possono procurare carne in più.</Italian>
 		<Spanish>Los ciervos proliferan por el bosque cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], lo que ha permitido a los cazadores almacenar una reserva de carne.</Spanish>
 		<Russian>Благодаря большим стадам мигрирующих оленей в лесах возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] охотники заготовили большое количество мяса на зиму.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében lévő erdőben a hatalmas szarvascsordák lehetővé tették vadászaink számára, hogy sok húst halmozzanak fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WASHED_OUT</Tag>
@@ -369,6 +407,7 @@
 		<Italian>Le inondazioni hanno distrutto alcune strade vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Las inundaciones han arrasado algunas de las rutas cercanas a la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Наводнение размыло некоторые дороги возле [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Az áradások elmosták az utak egy részét [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város közelében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WASHED_OUT_1</Tag>
@@ -379,6 +418,7 @@
 		<Italian>Le inondazioni hanno distrutto le strade vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Las inundaciones han arrasado las rutas cercanas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Наводнение размыло дороги возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Az áradások elmosták az utakat [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MOTHER_LODE</Tag>
@@ -389,6 +429,7 @@
 		<Italian>I minatori d'oro vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno scoperto il filone principale.</Italian>
 		<Spanish>Los mineros de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] han dado con el filón principal de oro.</Spanish>
 		<Russian>Недалеко от [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] обнаружили большой пласт серебра.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város közelében ezüstbányászok gazdag telért találtak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MOTHER_LODE_1</Tag>
@@ -399,6 +440,7 @@
 		<Italian>I nostri minatori vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno scoperto il filone principale! Siamo ricchi, ricchi, ricchi!</Italian>
 		<Spanish>¡Los mineros han dado con el filón principal de oro cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]! ¡Somos ricos, ricos, ricos!</Spanish>
 		<Russian>Наши старатели недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] нашли большие залежи серебра! Мы богаты, богаты, богаты!</Russian>
+		<Hungarian>Ezüstbányászaink [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében gazdag telért találtak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_1</Tag>
@@ -409,6 +451,7 @@
 		<Italian>Un raccolto disastroso sta facendo patire la fame ai nostri vicini [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] nella città di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT], appena oltre confine. Potremmo guadagnarci il loro favore con degli aiuti umanitari da [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Una terrible cosecha de nuestros vecinos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] de la ciudad de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT], justo al otro lado de la frontera, hace que se estén muriendo de hambre. Tenemos la posibilidad de ganarnos su favor si les proporcionamos ayuda humanitaria desde [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Из-за ужасно скудного урожая наших соседей [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], в приграничном городе [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] голодают жители. Мы можем завоевать их расположение, доставив гуманитарную помощь из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>A borzalmas termés miatt a szomszédaink, [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lakói éheznek. Elnyerhetjük a kegyeiket, ha [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] humanitárius segélyt nyújt számukra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_2</Tag>
@@ -419,6 +462,7 @@
 		<Italian>La carestia ha colpito la città di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. La nostra gente a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha abbastanza cibo per aiutare i vicini [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Siamo pronti a fornire aiuto e conforto.</Italian>
 		<Spanish>La hambruna se ha cebado en la ciudad de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Nuestras gentes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] tienen bastante comida a mano para ayudar a sus vecinos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT]. Estamos listos para proporcionarles ayuda y consuelo.</Spanish>
 		<Russian>В [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] ночной ураган сорвал крышу склада и промочил мешки с зерном. Весь урожай заплесневел.[NEWLINE]У наших жителей в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] достаточно еды, чтобы прокормить своих соседей. Мы готовы оказать помощь и утешить бедолаг.</Russian>
+		<Hungarian>Szegény [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] szomszédaink számára borzalmas volt a termés. A határon túli [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] lakói éheznek. Elnyerhetjük a kegyeiket, ha [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] humanitárius segélyt nyújt számukra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_3</Tag>
@@ -429,6 +473,7 @@
 		<Italian>Una tragedia ha colpito appena al di là del confine: l'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] fatica a soddisfare la gente affamata di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Molti moriranno, se non hanno abbastanza da mangiare. Vuoi che i cittadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] si mobilitino per portare aiuto?</Italian>
 		<Spanish>Ha ocurrido una tragedia justo al otro lado de la frontera: el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] hace cuanto puede para alimentar a su hambrienta población de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Pero sin sustento suficiente, muchos morirán. ¿Deben los ciudadanos de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] movilizarse para ayudarlos?</Spanish>
 		<Russian>Ужасная ситуация назревает всего в нескольких милях от нашей границы: империя [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] изо всех сил пытается накормить голодающих жителей [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Многие жители погибнут из-за отсутствия еды. Милорд, жители города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] готовы оказать помощь своим соседям. Вы согласны?</Russian>
+		<Hungarian>Tragédia sújtott le a határon túli [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] városra. [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] vezetői azon fáradoznak, hogy az összes éhező lakost ellássák élelemmel. Sokan éhen fognak halni segítség nélkül. [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lakói nyújtsanak segítséget nekik?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEWS_EVENT_FAMINE_2</Tag>
@@ -439,6 +484,7 @@
 		<Italian>La generosa popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha salvato dalla carestia la gente di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Questo sforzo umanitario ha avvicinato le due nazioni.</Italian>
 		<Spanish>El generoso pueblo de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado ayuda para paliar la hambruna que sufren los afligidos habitantes de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Este acto humanitario ha estrechado los lazos entre ambas naciones.</Spanish>
 		<Russian>Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пожертвовали голодающим людям [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] часть своих запасов еды. Эта помощь сблизила две страны.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nagylelkű lakói segélyt adományoztak [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] éhező lakóinak. Ez a humanitárius erőfeszítés közelebb hozta egymáshoz a két nemzetet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEWS_EVENT_FAMINE_3</Tag>
@@ -449,6 +495,7 @@
 		<Italian>La generosa popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha decisamente salvato dalla carestia la gente affamata di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Questo generoso sforzo umanitario ha avvicinato molto le due nazioni.</Italian>
 		<Spanish>El generoso pueblo de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado ayuda ingente para paliar la hambruna que sufren los necesitados habitantes de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Este generoso acto humanitario ha estrechado mucho más los lazos entre ambas naciones.</Spanish>
 		<Russian>Щедрые жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] оказали огромную помощь голодающим жителям [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT].[NEWLINE]Эта великодушная гуманитарная акция сильно сблизила две страны.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nagylelkű lakói hatalmas segélyt adományoztak [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] éhező népének.[NEWLINE]Ez a nagylelkű humanitárius erőfeszítés sokkal közelebb hozta egymáshoz a két nemzetet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAMINE_OTHER_2</Tag>
@@ -459,6 +506,7 @@
 		<Italian>La gente [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inviato metà delle proprie scorte di cibo alla tua città di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] per allontanare la carestia causata da un cattivo raccolto. Questo aiuto umanitario potrebbe rappresentare un punto di svolta nelle relazioni con loro.</Italian>
 		<Spanish>El pueblo [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado la mitad de los alimentos que tenía almacenados a nuestra ciudad de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] para paliar la hambruna causada por una mala cosecha en el lugar. Este acto humanitario bien puede representar un punto de quiebra positivo en nuestras relaciones.</Spanish>
 		<Russian>Жители [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили половину своих запасов продовольствия в наш город [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] для борьбы с голодом, вызванным неурожаем. Эта гуманитарная помощь станет положительным поворотным моментом в отношениях наших стран.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lakosai elküldték a raktárukban tárolt élelmük felét [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] lakóinak, hogy a rossz termést követő éhínséget elkerüljék. Ez a humanitárius segély pozitív fordulópontot jelent a kapcsolatotokban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAMINE_OTHER_3</Tag>
@@ -469,6 +517,7 @@
 		<Italian>La generosa popolazione [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inviato l'intera scorta di cibo alla tua città di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] per scongiurare la carestia causata da un cattivo raccolto. Questo sforzo umanitario ha avvicinato molto le due popolazioni!</Italian>
 		<Spanish>Los generosos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] han enviado cuantos alimentos tenían almacenados a nuestra ciudad de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] para paliar la hambruna causada por una mala cosecha en el lugar. Este generoso acto humanitario ha estrechado mucho más los lazos entre nuestros dos pueblos.</Spanish>
 		<Russian>Щедрые жители [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили все свои продовольственные запасы в наш город [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT], чтобы предотвратить голод, вызванный плохим урожаем.[NEWLINE]Эта гуманитарная помощь сближает два ваших народа.</Russian>
+		<Hungarian>A nagylelkű [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] emberek [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] összes élelem készletét elküldték [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] lakóinak, hogy megakadályozzák a rossz termés okozta éhínséget.[NEWLINE]Ez a humanitárius erőfeszítés sokkal közelebb hozza egymáshoz a két népet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FESTIVITY</Tag>
@@ -477,6 +526,7 @@
 		<French>Le Roi [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] organise une fête fastureuse à Sa Cour Royal.</French>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] König richtet ein rauschendes Fest am Hofe aus.</German>
 		<Russian>Король [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] устраивает пышную вечеринку при дворе.</Russian>
+		<Hungarian>A hatalmas [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Király nagyszabású ünnepséget tart az udvarában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY1</Tag>
@@ -485,6 +535,7 @@
 		<French>Notre Glorieux Roi organise une fête fastueuse en son Palais. Sa Majesté demande une livraison de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vers l'Europe.</French>
 		<German>Seine Majestät plant ein rauschendes Fest zu seinem Thronjubiläum. Er erwartet, dass wir die Feierlichkeiten mit Warenlieferungen aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] großzügig unterstützen.</German>
 		<Russian>Наш славный Король устраивает роскошную вечеринку в своем дворце. Он ожидает, что мы поддержим празднование щедрыми поставками товаров из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Királyunk nagyszabású fesztivált rendez az Ő Királyi udvarában. Őfelsége azt követeli, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] áruit szállítsuk Európába, hogy kifejezzük támogatásunkat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY2</Tag>
@@ -493,6 +544,7 @@
 		<French>Un héritier au trône vient de naître. En guise de célébration, notre Roi a invité à sa cour les plus grands nobles de toute l'Europe. Son altesse attend que nous lui livrions des marchandises depuis [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vers l'Europe.</French>
 		<German>Ein Thronfolger wurde geboren. Seine Majestät hat den gesamten Hochadel Europas zu den Feierlichkeiten eingeladen. Er erwartet, dass wir zu diesem Prunk und Pomp Warenlieferungen aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] beisteuern.</German>
 		<Russian>Родился наследник престола! Его Величество пригласил ко двору всю европейскую высшую знать. Он ожидает, что мы доставим товары для празднества из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в Европу.</Russian>
+		<Hungarian>Megszületett a trónörökös! Őfelsége meghívta udvarába az összes európai főnemest. Azt várja tőlünk, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] áruit szállítsunk Európába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FESTIVITY_1_HELP</Tag>
@@ -501,6 +553,7 @@
 		<French>[COLOR_FONT_GOLD]Le Roi n'apprécie pas votre humour. Il aurait même demandé sa fiole de salmiac pour se remonter.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, dass er nach seinem Riechsalz verlangte.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Его Величество в бешенстве. Ходят слухи, что Он расстрелял ваш портрет из мушкета.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Őfelsége nincs elragadtattva. A pletykák szerint repülősót kért.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FESTIVITY_2_HELP</Tag>
@@ -509,6 +562,7 @@
 		<French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmente.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Вельможи и граждане следуют примеру Его Величества. Спрос на наши колониальные товары растет.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Nemesek és polgárok követik Őfelsége példáját. A gyarmati termékeink iránti kereslet növekszik.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FESTIVITY_4_HELP</Tag>
@@ -517,22 +571,25 @@
 		<French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmente.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Ваш ответ доставлен Его Величеству. Доверенные лица сообщают, что он сразу же попробовал образец, а затем любезно кивнул.[NEWLINE]Знать и богатые граждане нашей родины начали подражать своему Королю. Спрос на наши товары растет.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Nemesek és polgárok követik Őfelsége példáját. A gyarmati termékeink iránti kereslet növekszik.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WINTER</Tag>
-		<English>Cold winter in Europe.</English>
+		<English>Cold winter in Europe</English>
 		<Portuguese>Inverno frio na Europa.</Portuguese>
 		<French>Hiver très froid en Europe.</French>
 		<German>Winter in Europa.</German>
 		<Russian>Холодная зима в Европе</Russian>
+		<Hungarian>Hideg tél Európában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WINTER</Tag>
-		<English>Several years of cold winters in our European homeland.</English>
+		<English>Several years of cold winters in our European homeland</English>
 		<Portuguese>Vários anos de invernos frios na nossa pátria europeia.</Portuguese>
 		<French>Notre patrie en Europe subit depuis quelques années des hivers rigoureux.</French>
 		<German>Mehrere Jahre in Folge mit bitterkalten Wintern in unserer europäischen Heimat lassen die Menschen frieren.</German>
 		<Russian>Несколько лет подряд лютые морозы на нашей европейской родине заставляют людей мерзнуть.</Russian>
+		<Hungarian>Hideg tél Európában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WINTER_HELP</Tag>
@@ -541,6 +598,7 @@
 		<French>[COLOR_FONT_GOLD]Les hivers froids en Europe génère une augmentation de la demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT].</French>
 		<German>[COLOR_FONT_GOLD]Der eisigkalte Winter führt zu erhöhter Nachfrage nach unseren Pelzwaren und Fellen in [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT].</German>
 		<Russian>[COLOR_FONT_GOLD]Холодная зима означает, что спрос на наши меха и пальто в [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] будет расти.</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]A hideg tél növekvő keresletet jelent [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] prémjei és kabátjai iránt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_END_WINTER</Tag>
@@ -549,6 +607,7 @@
 		<French>La vague de froid en Europe a pris fin.</French>
 		<German>Die Kälteperiode in Europa ist vorüber.</German>
 		<Russian>Холода в Европе закончились</Russian>
+		<Hungarian>Európában véget ért a hideg időjárás.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_END_WINTER</Tag>
@@ -557,6 +616,7 @@
 		<French>La vague d'hivers glaciaux en Europe a pris fin.</French>
 		<German>Die Kälteperiode mit harter Wintern in unserer europäischen Heimat ist vorbei.</German>
 		<Russian>Холодный период с суровыми зимами на нашей европейской родине закончился.</Russian>
+		<Hungarian>Véget ért a hideg tél európai anyaföldünkön.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_END_WINTER_HELP</Tag>
@@ -565,6 +625,7 @@
 		<French>[COLOR_FONT_GOLD]La période de grand froid est terminé. La demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] s'affaiblit.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Die Periode harter Winter in Europa ist vorüber. Die Nachfrage nach unseren Pelzwaren und Fellen in [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] sinkt wieder.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Долгая холодная погода закончилась. Спрос на наши меха и пальто в [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] снижается.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Véget ért a hosszúra nyúlt hideg időjárás. [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] prémjei és kabátjai iránti kereslet csökken.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_VOLCANO_1</Tag>
@@ -575,6 +636,7 @@
 		<Italian>Un'eruzione vulcanica vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha devastato il territorio. Fortunatamente la città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] è stata risparmiata.</Italian>
 		<Spanish>La erupción de un volcán cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha devastado el campo. Por suerte, la propia ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] se ha salvado.</Spanish>
 		<Russian>Извержение вулкана возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] опустошило сельскую местность. К счастью, сам [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] город  не пострадал.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében vulkánkitörés pusztított. A szerencsés [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város megmenekült.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_1</Tag>
@@ -585,6 +647,7 @@
 		<Italian>Signore, sono successe cose terribili a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Prima gli uccelli si sono ammutoliti. Poi la terra ha rimbombato. E poi, poi la montagna vicino alla città è scoppiata, e un vulcano è sorto dalla roccia. Ha sparato rocce incandescenti nell'aria. Sono scesi nella città vicina, uccidendo polli e cani e molti bambini piccoli. Infine, spesse scaglie di cenere scesero e stesero un sudario nero sull'insediamento. Che fertile sfortuna! I sopravvissuti vi implorano di mandare aiuto.</Italian>
 		<Spanish>Excelencia, han ocurrido cosas terribles en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Primero los pájaros se callaron. Entonces la tierra retumbó. Y entonces, la montaña junto a la ciudad estalló, y un volcán surgió de la roca. Lanzó rocas al rojo vivo al aire. Bajaron en el pueblo cercano, matando gallinas y perros y muchos niños pequeños. Finalmente, gruesos copos de ceniza flotaron hacia abajo y pusieron un manto negro sobre el asentamiento. ¡Qué desgracia tan fértil! Los supervivientes le ruegan que envíe ayuda.</Spanish>
 		<Russian>Милорд, ужасные вещи произошли в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Сначала замолчали птицы. Потом загудела земля. А после гора рядом с городом с треском раскололась извержением вулкана! Он выбрасывал в воздух раскаленные камни. Они падали на близлежащий город, убивая кур, собак и многих маленьких детей. И наконец, город и окрестности накрыли густые хлопья пепла, накрывая все черной пеленой. Какое бедствие для посевов! Выжившие умоляют вас послать помощь.</Russian>
+		<Hungarian>Uram, szörnyű dolgok történtek [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében. Először elhallgattak a madarak. Aztán a föld morajlott. Majd a város melletti hegy megrepedt és egy vulkán emelkedett ki a sziklából. Izzó, forró köveket lövellt a levegőbe. Ezek a közeli városra hullottak, megölve a csirkéket, a kutyákat és sok kisgyermeket. Végül vastag hamupelyhek szálltak lefelé, fekete leplet borítva a településre. Micsoda katasztrófa a termésnek! A túlélők segítségért könyörögnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS</Tag>
@@ -595,6 +658,7 @@
 		<Italian>I banditi stanno devastando i terreni agricoli [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>Los bandidos están arrasando los cultivos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT].</Spanish>
 		<Russian>Бандиты бесчинствуют на отдаленных [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] фермах.</Russian>
+		<Hungarian>Banditák a peremvidéki [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] farmokat fosztogatják.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_1</Tag>
@@ -605,6 +669,7 @@
 		<Italian>I contadini fuori [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] si lamentano dei costanti furti dei banditi.</Italian>
 		<Spanish>Los granjeros de los aledaños de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se quejan de bandidos que les roban cada poco tiempo.</Spanish>
 		<Russian>Фермеры за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] жалуются, что их регулярно грабят бандиты.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] külterületén élő gazdák panaszkodnak, hogy banditák rendszeresen kirabolják őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_2</Tag>
@@ -615,6 +680,7 @@
 		<Italian>L'attività criminale ha interrotto la produzione di cibo nella regione agricola fuori [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>La actividad delictiva ha cortado la producción de alimentos en una región agrícola cercana a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Разгул преступности нарушает производство продуктов питания в фермерском регионе за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] városon kívüli mezőgazdasági térségben a bűnözés megzavarta az élelem termelést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_3</Tag>
@@ -625,6 +691,7 @@
 		<Italian>Sempre più spesso i briganti sono in attesa dei contadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. A poco a poco, quasi nessuno dei locali osa andare nei loro campi.</Italian>
 		<Spanish>Cada vez es más frecuente que los salteadores de caminos acechen a los agricultores de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Poco a poco, casi ninguno de los lugareños se atreve a ir a sus campos.</Spanish>
 		<Russian>Фермеры из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] все чаще попадают в засады от разбойников. Мало кто из местных жителей осмеливается покинуть ферму и начать работы в поле.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] földműveseit egyre gyakrabban támadják meg útonállók. Olyan rossz a helyzet, hogy a helyiek alig merik megművelni a földjeiket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS_AGAIN</Tag>
@@ -635,6 +702,7 @@
 		<Italian>L'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] soffre di carenza di cibo a causa dei furti dei banditi.</Italian>
 		<Spanish>El imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] no deja de sufrir pérdidas en la producción de alimentos debido al bandidaje.</Spanish>
 		<Russian>Империя [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] продолжает страдать от сокращения производства продовольствия из-за распоясавшихся бандитов.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] földeken a banditák miatt továbbra is csökken az élelem termelés.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_1</Tag>
@@ -645,6 +713,7 @@
 		<Italian>Le autorità locali a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] faticano ancora nel mettere sotto controllo l'attività banditesca che affligge i nostri agricoltori.</Italian>
 		<Spanish>Las autoridades locales de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] aún pugnan por controlar el bandidaje que asola a nuestros granjeros.</Spanish>
 		<Russian>Местные власти города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пытаются бороться с грабежами на наших фермах.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] helyi hatóságai még mindig küzdenek a gazdáinkat sújtó bandita tevékenység megfékezéséért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_2</Tag>
@@ -655,6 +724,7 @@
 		<Italian>I criminali stanno ancora depredando i nostri agricoltori. Potrebbe essere necessaria una reazione più severa, a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Los delincuentes aún se ceban con nuestros granjeros. Será necesaria una respuesta más contundente en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>На наших фермеров до сих пор охотятся преступники. Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] требуют принять самые жесткие меры.</Russian>
+		<Hungarian>A bűnözők még mindig a gazdáinkra vadásznak. Kemény válaszra van szükség [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] környékén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MINING_ACCIDENT</Tag>
@@ -665,6 +735,7 @@
 		<Italian>Un tragico incidente minerario vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha tolto la vita a centinaia dei loro minatori.</Italian>
 		<Spanish>Un trágico accidente en una mina cerca de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se ha cobrado la vida de cientos de mineros.</Spanish>
 		<Russian>Трагическая авария в шахте недалеко от [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] унесла жизни сотен горняков.</Russian>
+		<Hungarian>A bűnözők még mindig a gazdáinkra vadásznak. Kemény válaszra van szükség [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] környékén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_1</Tag>
@@ -675,6 +746,7 @@
 		<Italian>Un piccolo terremoto vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causato il crollo di una vicina miniera. Centinaia di minatori sono morti intrappolati.</Italian>
 		<Spanish>Un pequeño terremoto cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causado el derrumbe de una mina cercana. Los mineros han quedado atrapados y han muerto a centenares.</Spanish>
 		<Russian>Небольшое землетрясение возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привело к обрушению соседней шахты. Попавшие в ловушку шахтеры погибли.</Russian>
+		<Hungarian>Egy kisebb földrengés [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében egy bánya összeomlását okozta. A csapdába esett bányászok meghaltak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_2</Tag>
@@ -685,6 +757,7 @@
 		<Italian>I gas si sono incendiati nel sottosuolo di una miniera. L'aria bruciava e molti minatori incontrarono una morte orribile. Che possano ritrovare la felicità nel paradiso celeste![NEWLINE]Purtroppo non possiamo recuperare i loro corpi mortali, perché le travi di legno dei passaggi sotterranei sono carbonizzate e fragili.</Italian>
 		<Spanish>Los gases se encendieron bajo tierra en una mina. El aire ardía y muchos mineros encontraron una muerte espantosa. Que vuelvan a encontrar la felicidad en el paraíso celestial![NEWLINE]Por desgracia, no podemos recuperar sus cuerpos mortales, porque las vigas de soporte de madera de los pasajes subterráneos están carbonizadas y son frágiles.</Spanish>
 		<Russian>Газы воспламенились под землей в шахте. Казалось, горел сам воздух и многие горняки встретили ужасную смерть. Пусть они обретут покой в Раю![NEWLINE]К сожалению, мы не можем вернуть родным их бренные тела, потому что деревянные несущие балки подземных ходов сильно обуглились и стали очень хрупкими. Мы не можем рисковать жизнями еще одной партии горняков.</Russian>
+		<Hungarian>Gázok gyulladtak ki a föld alatt egy bányában. A levegő égett és sok bányász kegyetlen halált halt. Találják meg újra a boldogságot a mennyei paradicsomban![NEWLINE]Sajnos, nem tudjuk visszaszerezni a halandó testüket, mert a földalatti járatok fából készült tartógerendái elszenesedtek és törékenyek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_3</Tag>
@@ -695,6 +768,7 @@
 		<Italian>Si dice che una miniera vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sia infestata. Almeno questo è quello che credono i minatori. Sono fuggiti in fretta e furia dai passaggi sotterranei, facendo crollare l'ingresso. Che follia superstiziosa!</Italian>
 		<Spanish>Se dice que una mina cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] está encantada. Al menos esto es lo que creen los mineros. Han huido precipitadamente de los pasajes subterráneos, provocando el derrumbe de la entrada. ¡Qué locura supersticiosa!</Spanish>
 		<Russian>Говорят, что шахта возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] населена привидениями. По крайней мере, так считают горняки. Призраки выскочили из подземных ходов, обрушив вход. Какая суеверная глупость!</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében lévő bánya állítólag kísértetjárta. Legalábbis a bányászok ezt hiszik. Kirohantak a földalatti járatokból, beomlott a bejárat. Micsoda babonás ostobaság!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MINING_ACCIDENT_3_LANDMARK</Tag>
@@ -703,6 +777,7 @@
 		<French>Accident de mine</French>
 		<German>Minenunglück</German>
 		<Russian>Несчастный случай в шахте</Russian>
+		<Hungarian>Bányaszerencsétlenség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_AT_THE_SWORD</Tag>
@@ -713,6 +788,7 @@
 		<Italian>I soldati [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] si sono riuniti attorno ai loro eroi guerrieri.</Italian>
 		<Spanish>Los soldados [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han cerrado filas alrededor de sus héroes de la espada.</Spanish>
 		<Russian>Некоторые [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] солдаты проявили себя на поле боя и завоевали славу.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] katonák felsorakoztak hőseik mögött.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AT_THE_SWORD_1</Tag>
@@ -723,6 +799,7 @@
 		<Italian>I soldati della vittoriosa unità [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] si sono riuniti attorno ai loro eroi combattenti! La loro forza e la loro determinazione si sono rinsaldate! La loro efficacia è aumentata!</Italian>
 		<Spanish>Los soldados de [NUM3:nuestro:nuestra:nuestros:nuestras] [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] han cerrado filas alrededor de sus héroes de guerra. ¡Su fuerza y su resolución son ahora más inquebrantables y su habilidad ha aumentado!</Spanish>
 		<Russian>Солдаты нашего победоносного корпуса [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] сплотились вокруг своих боевых героев! Их решимость непоколебима! Их мастерство возросло!</Russian>
+		<Hungarian>A győztes [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] mögé felsorakoznak a katonáink! Elszántságuk rendíthetetlen! A képességeik megnőttek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_AT_THE_SWORD</Tag>
@@ -733,6 +810,7 @@
 		<Italian>Eroi della Spada</Italian>
 		<Spanish>Héroes de la espada</Spanish>
 		<Russian>Герои Нового света</Russian>
+		<Hungarian>Az Újvilág Hősei</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SPOILED_GRAIN</Tag>
@@ -743,6 +821,7 @@
 		<Italian>I ratti si sono intrufolati nel granaio a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Tutto il cibo immagazzinato è stato rovinato.</Italian>
 		<Spanish>Las alimañas entraron en el granero de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Toda la comida que allí había almacenada se ha perdido.</Spanish>
 		<Russian>Паразиты проникли в зернохранилище города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] magtárában elszaporodtak a férgek. Az összes ott tárolt élelem tönkrement.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SPOILED_GRAIN_1</Tag>
@@ -753,6 +832,7 @@
 		<Italian>I ratti si sono intrufolati nel granaio a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Tutto il cibo immagazzinato è stato danneggiato.</Italian>
 		<Spanish>Las alimañas han entrado en el granero de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Toda la comida que allí había almacenada se ha echado a perder.</Spanish>
 		<Russian>Паразиты проникли в амбар [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Все продовольственные запасы, которые там хранились, были испорчены.</Russian>
+		<Hungarian>A férgek bejutottak [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] magtárába. Az összes ott tárolt élelem megromlott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FUGITIVE</Tag>
@@ -763,6 +843,7 @@
 		<Italian>Si dice che le autorità [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] abbiano catturato un uomo in fuga dalla giustizia [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT]. Non è disponibile alcuna conferma.</Italian>
 		<Spanish>Se rumorea que las autoridades [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] han capturado a un fugitivo que huía de la justicia [COLOR_HIGHLIGHT_TEXT]%s4:2_civ_adjective[COLOR_REVERT]. No disponemos de confirmación.</Spanish>
 		<Russian>Ходят слухи, что власти [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] поймали беглеца, скрывающегося от [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT] правосудия. Однако, пока это не может быть подтверждено официально.</Russian>
+		<Hungarian>Az a hír járja, hogy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] hatóságok elfogtak egy szökevényt, aki a szigorú [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT] igazságszolgáltatás elől menekül. Egyelőre a hír nincs megerősítve.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_1</Tag>
@@ -773,6 +854,7 @@
 		<Italian>Nei nostri territori è stato scoperto un fuggitivo, ricercato per i crimini commessi nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>Hemos descubierto que en nuestro territorio se oculta un prófugo de la justicia, buscado por delitos en el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</Spanish>
 		<Russian>На нашей территории обнаружен скрывающийся от правосудия преступник, разыскиваемый за преступления в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колониях. Он может сказать нам, где спрятана его добыча.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kolóniákon elkövetett bűncselekmények miatt körözött szökevényt találtak meg a területünkön. Talán elárulja, hol rejtegeti a zsákmányát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_2</Tag>
@@ -783,6 +865,7 @@
 		<Italian>È stato catturato nei nostri territori un assassino, ricercato per l'omicidio di un funzionario [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Forse ci dirà dove ha nascosto il suo bottino.</Italian>
 		<Spanish>Hemos atrapado huyendo por nuestra tierra a un asesino buscado por matar a un funcionario [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT]. Tal vez nos diga dónde escondió su botín.</Spanish>
 		<Russian>Мы поймали мошенника, которого разыскивают [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], когда он пытался скрыться от правосудия на нашей земле. Надо заставить его рассказать нам, где он спрятал свою добычу.</Russian>
+		<Hungarian>Elfogtunk egy ravasz szélhámost, aki a szigorú [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] igazságszolgáltatás elől menekült át hozzánk. Talán elárulja, hol rejtegeti a zsákmányát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INFO_FUGITIVE_5</Tag>
@@ -793,6 +876,7 @@
 		<Italian>Voci dell'interrogatorio del fuggitivo sono arrivate alle autorità [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT], facendole incollerire.</Italian>
 		<Spanish>El asunto de nuestro interrogatorio al prófugo se ha filtrado a las autoridades [COLOR_HIGHLIGHT_TEXT]%s3:4_civ_adjective[COLOR_REVERT] y las ha enojado.</Spanish>
 		<Russian>Новость о нашем допросе беглеца просочилась к властям [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT], что их очень разозлило.</Russian>
+		<Hungarian>A szökevény kihallgatásának híre kiszivárgott és ez feldühítette az őt kereső [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] hatóságokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PEASANT_WARPREP</Tag>
@@ -803,6 +887,7 @@
 		<Italian>Rivolte tra la [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] popolazione rurale in Europa.</Italian>
 		<Spanish>Disturbios entre la [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] población rural en Europa.</Spanish>
 		<Russian>Волнения среди сельского населения [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Nyugtalanság terjed a vidéki [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lakosság körében Európában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PEASANT_WARPREP_1</Tag>
@@ -813,6 +898,7 @@
 		<Italian>Disordini tra la popolazione rurale in Europa. Sembra che stia per scoppiare un conflitto tra la nostra madrepatria e un altro paese europeo.</Italian>
 		<Spanish>Disturbios entre la población rural en Europa. Parece que está a punto de estallar un conflicto entre nuestra madre patria y otro país europeo.</Spanish>
 		<Russian>Волнения среди сельского населения в Европе. Конфликт между нашей метрополией и другой европейской страной может вспыхнуть в любой момент.</Russian>
+		<Hungarian>Nyugtalanság terjed a vidéki lakosság körében Európában. Bármikor kitörhet egy konfliktus anyaországunk és egy másik európai ország között.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1A</Tag>
@@ -823,6 +909,7 @@
 		<Italian>I disordini rurali stanno crescendo in Europa. Le relazioni tra [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] si sono deteriorate. La guerra è nell'aria.</Italian>
 		<Spanish>El malestar rural crece en Europa. Las relaciones entre [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] y [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] se han deteriorado. La guerra está en el aire.</Spanish>
 		<Russian>В Европе нарастают сельские беспорядки. Отношения между [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ухудшились. В воздухе витает запах войны.</Russian>
+		<Hungarian>Európában egyre nagyobb a vidéki nyugtalanság. [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] és [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] közötti kapcsolatok megromlottak. A háború a levegőben van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PEASANT_WARPREP_HELP</Tag>
@@ -833,8 +920,10 @@
 		<Italian>[COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] per %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] e [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] per %F5_yield in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] para %F2_yield en [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] y [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] para %F5_yield en [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Spanish>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] за %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] и [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] за %F5_yield в [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]: [ICON_GOLD] %F2_yield-ért és [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]: [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] %F5_yield-ért.</Hungarian>
 	</TEXT>
 	<TEXT>
+		
 		<Tag>TXT_KEY_EVENTTRIGGER_PEASANT_WARPREP_EMIGRANT</Tag>
 		<English>Unrest in Europe is leading to an increase in the number of emigrants.</English>
 		<Portuguese>A agitação na Europa está a levar a um aumento no número de emigrantes.</Portuguese>
@@ -869,6 +958,7 @@
 		<French>[ICON_BULLET]Augmentation du taux d'impôt de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%%</French>
 		<German>[ICON_BULLET]Steuererhöhung um [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] auf %D2%%</German>
 		<Russian>[ICON_BULLET]Налоговая ставка повышена на [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Adónövekedés, ami így %D2%% lesz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAXTAX_INCREASE</Tag>
@@ -877,6 +967,7 @@
 		<French>[ICON_BULLET]Augmentation du taux d'impôt maximal de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%</French>
 		<German>[ICON_BULLET]Maximalsteuer erhöht sich um [COLOR_NEGATIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
 		<Russian>[ICON_BULLET]Максимальная налоговая ставка повышена на [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Adónövekedés, ami így %D2% lesz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAXTAXDECREASE</Tag>
@@ -885,6 +976,7 @@
 		<French>[ICON_BULLET]Réduction du taux d'impôt maximal de [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2% total</French>
 		<German>[ICON_BULLET]Maximalsteuer sinkt um [COLOR_POSITIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
 		<Russian>[ICON_BULLET]Максимальная налоговая ставка понижена на [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Adónövekedés, ami így %D2%% lesz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RELATION_KING_DECREASE</Tag>
@@ -893,6 +985,7 @@
 		<French>[ICON_BULLET]Vos relations avec le Roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] se sont dégradées de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verschlechtern sich um [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем ухудшились на [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] kapcsolat romlás a fenséges [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Királlyal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RELATION_KING_INCREASE</Tag>
@@ -901,6 +994,7 @@
 		<French>[ICON_BULLET]Vos relations avec le roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] se sont ameliorées de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verbessern sich um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем улучшились на [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] kapcsolat javulás a fenséges [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Udvarral</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_LOOSE</Tag>
@@ -909,6 +1003,7 @@
 		<French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]: [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_GAIN</Tag>
@@ -917,6 +1012,7 @@
 		<French>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]: [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_OVERFLOW</Tag>
@@ -925,6 +1021,7 @@
 		<French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]La capacité maximale de stockage à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] pour %F2_yield a été dépassée de %D1[COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%s3_city : [COLOR_REVERT]Die maximale Lagermenge für %F2_yield wird um %d1 überschritten</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Максимальная емкость хранилища в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] для %F2_yield превышена на %D1[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] %F2_yield készlete átlépte (+%D1) a maximális tároló kapacitást[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_INCREASE</Tag>
@@ -933,6 +1030,7 @@
 		<French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в %s3_player</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %s3_player piacán</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_DECREASE</Tag>
@@ -941,6 +1039,7 @@
 		<French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в %s3_player</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %s3_player piacán</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_INCREASE_AFRICA</Tag>
@@ -950,6 +1049,7 @@
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
 	</TEXT>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Afrikában</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_DECREASE_AFRICA</Tag>
 		<English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
@@ -957,6 +1057,7 @@
 		<French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield en Afrique</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Afrikában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_INCREASE_PORT_ROYAL</Tag>
@@ -965,6 +1066,7 @@
 		<French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield à Port Royal</French>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Port Royalban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_DECREASE_PORT_ROYAL</Tag>
@@ -973,6 +1075,7 @@
 		<French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield à Port Royal</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Port Royalban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FATHER_POINTS</Tag>
@@ -990,6 +1093,7 @@
 		<French>Une rumeur se propage : un éclaireur [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] aurait trouvé des guerrières amazones dans une vallée lointaine.</French>
 		<German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Späher habe in einem entlegenen Tal ein Amazonenvolk entdeckt.</German>
 		<Russian>Ходят слухи, что разведчик [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружил племя амазонок в далекой долине.</Russian>
+		<Hungarian>Pletyka terjed arról, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] felderítő egy amazonasi törzset talált egy távoli völgyben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_LOST_TRIBE_1</Tag>
@@ -998,6 +1102,7 @@
 		<French>Un scout raconte un conte de fées. Dans la jungle la plus profonde, il s'est perdu un soir. La morosité s'abattit sur le monde alors qu'un tambour étouffé retentissait depuis un ravin caché.[NEWLINE][NEWLINE]Il se mit à marcher et regarda un camp de guerrières nues sautant autour d'un feu, sauvages comme de jeunes loups. Des massues en bois à pointe d'argent scintillaient dans la lumière vacillante, et les amazones les maniaient au rythme des sons. Quand ils l'ont aperçu, la convoitise de la chasse a brillé dans leurs yeux, et il s'est enfui.</French>
 		<German>Märchenhaftes berichtet ein Späher. Im tiefsten Urwald habe er sich eines Abends verlaufen. Düsternis senkte sich über die Welt, als ein dumpfes Trommeln aus einer verborgenen Schlucht erklang.[NEWLINE][NEWLINE]Er pirschte sich an und blickte hinab auf ein Lager nackter Kriegerinnen, die um ein Feuer sprangen, wild wie junge Wölfinnen. Im flackernden Lichtschein blitzten silberbeschlagene Holzkeulen, die die Amazonen im Rhythmus der Klänge schwangen. Als sie ihn erblickten, funkelte die Jagdlust in ihren Augen, und er floh.</German>
 		<Russian>Наш молодой разведчик рассказал удивительную историю, похожую на сказку. Однажды вечером он заблудился и долго плутал в густых джунглях. Когда сгустилась ночь, он услышал приглушенный барабанный бой из скрытого деревьями ущелья.[ПАРАГРАФ: 2] Он подполз ближе и обнаружил лагерь обнаженных женщин-воительниц, прыгающих вокруг костра, диких, как молодые волчицы. Шипастые дубинки с серебряными наконечниками сверкали в мерцающем свете костра, когда амазонки размахивали ими под бой барабанов. Парень решил подобраться поближе, чтобы получше всё рассмотреть, и тут они его заметили. Взгляды воительниц не сулили ничего хорошего и он сбежал.</Russian>
+		<Hungarian>A mi fantáziadús felderítőnk egy mesét talált ki. Egy este a sűrű dzsungelben eltévedt. A sötét éjszakában tompa dobolást hallott egy rejtett szakadékból.[PARAGRAPH:2]Közelebb kúszott és egy tábort fedezett fel, ahol meztelen harcos nők ugráltak a tűz körül, vadul, mint a fiatal nőstényfarkasok. A pislákoló tűz fényében ezüstös végű botok villogtak, ahogy az amazonok a dobok ütemére hadonásztak velük. Aztán megpillantották őt. Hirtelen úgy érezte magát, mint egy nyúl a farkasokkal szemben. Elmenekült.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
@@ -1006,6 +1111,7 @@
 		<French>La nouvelle se propage selon laquelle la libération des prisonniers de guerre a été négociée par un monastère [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Que le Seigneur soit loué dans sa miséricorde.</French>
 		<German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen durch ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kloster verhandelt wurde. Gelobt sei der Herr für seine Gnade.</German>
 		<Russian>Ходят слухи о том, что переговоры об освобождении военнопленного ведутся в одном из [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] монастырей. Хвала Господу нашему за Его Милосердие.</Russian>
+		<Hungarian>Elterjedt a hír, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kolostor tárgyalásokat folytatott egy hadifogoly szabadon bocsátásáról. Dicsérjük az Urat az ő kegyelméért!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
@@ -1014,6 +1120,7 @@
 		<French>Sire, le frère supérieur du monastère demande une entrevue pour discuter au sujet des prisonniers de guerre. Il se sent personellement touché dans cette affaire car son propre fère est mort en captivité. Il nous prie donc de négocier les termes de la libération du prisonnier avec nos rivaux. [NEWLINE]Il promet que de telles actions vont augmenter notre réputation auprès de l'Église. Il essaiera aussi de négocier une rançon.</French>
 		<German>Milor, der Abt des Klosters bittet darum mit euch über das Schicksal unseres Kriegsgefangenen reden zu dürfen. Er hat ein persönliches Interess an der Angelegenheit, da sein Bruder in Gefangenschaft starb. Daher bittet er darum, mit unseren Rivalen die Bedingungen der Freilassung dieses Gefangenen vermitteln zu dürfen. [NEWLINE]Er verspricht, dass dies unser Ansehen bei der Kirche verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
 		<Russian>Милорд, настоятель монастыря просит разрешения поговорить с вами о нашем военнопленном. Он проявляет личный интерес к этому вопросу, поскольку его брат умер в плену. Он не хочет, чтобы такая же участь постигла других бедолаг и просит разрешить ему обсудить условия освобождения этого заключенного с нашими соперниками.[NEWLINE]Он обещает, что этот шаг улучшит наше положение в церкви. Также он попытается договориться о сумме выкупа.</Russian>
+		<Hungarian>Uram, a kolostor apátja szeretne beszélni önnel a hadifoglyunkról. Személyes érdeklődést mutat, mert a testvére a fogságban halt meg. Könyörög, hogy engedje meg neki, hogy tárgyalhasson a riválisainkkal a fogoly szabadon bocsátásáról. [NEWLINE]Azt ígéri, hogy az ön támogatása javítani fogja a helyzetünket az Egyházon belül. Megpróbál majd váltságdíjról is tárgyalni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_MONASTERY_1</Tag>
@@ -1022,6 +1129,7 @@
 		<French>Nous ferons preuve de clémence et permettre à l'abbé de négocier les termes de la libération.</French>
 		<German>Wir werden Gnade zeigen und dem Abt erlauben die Freilassung unseres Gefangenen zu verhandeln.</German>
 		<Russian>Мы проявим милосердие и позволим настоятелю договориться об освобождении нашего пленника.</Russian>
+		<Hungarian>Kegyelmet fogunk tanúsítani és megengedjük az apátnak, hogy tárgyaljon foglyunk szabadon bocsátásáról.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_MONASTERY_2</Tag>
@@ -1029,6 +1137,7 @@
 		<Portuguese>Como gesto de boa vontade para com a Igreja, permitiremos que ele se junte à nossa nação. Mas ele deve expiar sua culpa realizando um trabalho penoso.</Portuguese>
 		<German>Als Zeichen des guten Willens gegenüber der Kirche werden wir ihm erlauben sich unserer Nation anzuschließen. Aber er muss seine Schuld durch Fronarbeit ableisten.</German>
 		<Russian>По прошению Церкви и в знак доброй воли мы позволим ему присоединиться к нам. Но он должен будет искупить свою вину тяжёлым трудом.</Russian>
+		<Hungarian>Ezt nem engedhetjük meg! Ennek a rabnak le kell töltenie a tetteiért járó büntetést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
@@ -1037,6 +1146,7 @@
 		<French>La nouvelle se répand selon laquelle un prisonnier de guerre a vu sa libération négociée dans un fort [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. La raison a triopmhé sur la haine.</French>
 		<German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen in einem [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fort verhandelt wurde. Die Vernuft hat erneut über den Hass gesiegt.</German>
 		<Russian>Ходят слухи, что переговоры об освобождении военнопленного ведутся в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] форте. Разум снова победил ненависть.</Russian>
+		<Hungarian>Elterjedt a hír, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] erődben tárgyalásokat folytattak egy hadifogoly szabadon bocsátásáról. Ismét győzött az ész a gyűlölet felett!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
@@ -1045,6 +1155,7 @@
 		<French>Sire, un officier du fort demande une entrevue. Il a remarqué qu'un de nos prisonnier est blessé et ne vivra pas longtemps en captivité. Il prétend que l'honneur exige que nous contactions nos rivaux pour procéder à un échange de prisonniers. Il promet que de telles actions réhaussera notre prestige auprès des autres notions. Il essaiera aussi de négocier une rançon.</French>
 		<German>Milor, ein Offizier des Forts bittet um eine Audienz. Er hat gesehen, dass der Gefangen verwundet ist und befürchtet dieser könnte eine lange Gefangenschaft nicht überleben. Er behauptet, dass es die Ehre gebietet unsere Rivalen zu kontaktieren und einen Austausch von Gefangenen zu verhandeln. [NEWLINE]Er verspricht, dass dies unser Ansehen bei anderen Nationen verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
 		<Russian>Милорд, с вами хочет поговорить командир одного из наших фортов. Ему доложили, что наш пленник серьёзно ранен и он считает, что долгого плена тот не выдержит. Командир форта утверждает, что честь офицера требует, чтобы мы связались с нашими соперниками и договорились об обмене.[NEWLINE]Он обещает, что такие действия повысят наш престиж среди других стран. Он также попытается договориться о сумме выкупа.</Russian>
+		<Hungarian>Uram, egy tiszt az erődben beszélni szeretne Önnel. Látta, hogy a foglyunk megsebesült és attól tart, hogy nem éli túl a fogságot. Az mondja, a becsület megköveteli a riválisainkkal való kapcsolatfelvételt, hogy tárgyaljunk a fogolycseréről. [NEWLINE]Azt ígéri, hogy ez a döntés javítani fogja a tekintélyünket más nemzetek előtt. Megpróbál majd váltságdíjról is tárgyalni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_FORT_1</Tag>
@@ -1053,6 +1164,7 @@
 		<French>Nous suivrons les exigence de l'honneur et permettre à l'officier de négocier la libération du prisonnier.</French>
 		<German>Wir werden dem Gebot der Ehre folge leisten und dem Offizier erlauben die Freilassung unseres Gefangenen zu verhandeln.</German>
 		<Russian>Ну что же, если ему удасться договориться, не видим в этом никаких проблем.</Russian>
+		<Hungarian>Megtesszük, amit a becsület követel és hagyjuk, hogy a tiszt tárgyaljon a foglyunk szabadon bocsátásáról.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_FORT_2</Tag>
@@ -1060,6 +1172,7 @@
 		<Portuguese>Uma vez que o oficial está intercedendo em seu nome, iremos conceder-lhe a sua libertação – apesar das suas ações. No entanto, ele deve saldar sua dívida através de trabalhos forçados em nossa colônia.</Portuguese>
 		<German>Da der Offizier so für ihn bittet, werden wir seine Freilassung erlauben - trotz seiner Taten. Aber er muss seine Schuld in unserer Kolonie durch Frondienst abarbeiten.</German>
 		<Russian>Поскольку офицер так сильно просит за этого человека, мы освободим его, несмотря на то, что он совершил. Однако он должен будет отработать свой долг тяжёлым трудом в нашей колонии.</Russian>
+		<Hungarian>Ezt nem engedhetjük meg! Ennek a rabnak le kell töltenie a tetteiért járó büntetést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADER_ATTACKED</Tag>
@@ -1068,6 +1181,7 @@
 		<French>Selon une rumeur, un marchand [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pacifique a été attaqué et tué par des indiens hostiles.</French>
 		<German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Händler wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
 		<Russian>Ходят слухи, что мирный [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] торговец подвергся нападению и был убит враждебно настроенными индейцами.</Russian>
+		<Hungarian>Az a hír járja, hogy egy békés [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kereskedőt megtámadtak és meggyilkoltak ellenséges Indiánok.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADER_ATTACKED_1</Tag>
@@ -1076,6 +1190,7 @@
 		<French>Notre marchand chez les indigènes voyage vers le village le plus proche pour affaire. Il se voit à nouveau voir la charmante indigène de la dernière fois. Elle appréciait sa compagnie. En même temps, il se rappelle qu'un des jeunes hommes le foudroyait du regard pendant que lui et elle discurtait. Perdu dans ses pensée, il perçoit soudain du coin de l'oeil quelque chose filer.[NEWLINE]Une flèche vole à deux doigts de son visage.</French>
 		<German>Unser Ureinwohnerhändler ist auf dem Weg zum nahgelegenen Dorf, um dort seine Geschäfte zu verrichten. Er freut sich darauf das junge freundliche Ureinwohndermädchen wieder zu sehen, dass so gerne mit ihm redet. Aber denkt er auch an die bösen Blicke eines der jungen Ureinwohnermänner, als er mit ihr sprach. ... Während er so in Gedanken ist, sieht er plötzlich einen Bewegung im Augenwinkel und ein Pfeil fliegt nur um eine Handbreite an seinem Gesicht vorbei.</German>
 		<Russian>Наш торговец с индейцами едет в ближайшую деревню туземцев, чтобы продать там очередную партию своих товаров. А еще он с нетерпением ждет встречи с привлекательной молодой туземкой, с которой познакомился во время своей последней поездки. Ей нравилось с ним разговаривать.[NEWLINE]Но в то же время торговец помнил недобрый взгляд одного из молодых индейцев деревни, во время своих разговоров с девушкой. Погруженный в эти мысли, он вдруг краем глаза улавливает сбоку какое-то движение.[NEWLINE]На расстоянии ширины ладони мимо его лица пролетает стрела...</Russian>
+		<Hungarian>Indián kereskedőnk a legközelebbi faluba utazott, hogy ott üzletet kössön. Alig várta, hogy találkozzon a legutóbbi látogatásán megismert vonzó Indián nővel. Jót beszélgettek.[NEWLINE]Ugyanakkor eszébe jutott az egyik fiatalember veszélyes pillantása, miközben a nővel beszélgetett. Gondolataiba merülve hirtelen mozgást észlelt a szeme sarkából.[NEWLINE]Egy karnyújtásnyira egy nyílvessző repült el az arca mellett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACKED_1</Tag>
@@ -1084,6 +1199,7 @@
 		<French>C'est le jeune homme de la dernière fois. Il attaque.</French>
 		<German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
 		<Russian>Это молодой индейский воин из той деревни. Он атакует.</Russian>
+		<Hungarian>Egy fiatal Indián férfi a faluból. Támad!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RANGER_BEAR_ATTACK</Tag>
