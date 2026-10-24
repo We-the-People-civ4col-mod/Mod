@@ -810,6 +810,7 @@
 		<Italian>Eroi della Spada</Italian>
 		<Spanish>Héroes de la espada</Spanish>
 		<Russian>Герои Нового света</Russian>
+		<Hungarian>Az Újvilág Hősei</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SPOILED_GRAIN</Tag>
@@ -820,6 +821,7 @@
 		<Italian>I ratti si sono intrufolati nel granaio a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Tutto il cibo immagazzinato è stato rovinato.</Italian>
 		<Spanish>Las alimañas entraron en el granero de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Toda la comida que allí había almacenada se ha perdido.</Spanish>
 		<Russian>Паразиты проникли в зернохранилище города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] magtárában elszaporodtak a férgek. Az összes ott tárolt élelem tönkrement.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SPOILED_GRAIN_1</Tag>
@@ -830,6 +832,7 @@
 		<Italian>I ratti si sono intrufolati nel granaio a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Tutto il cibo immagazzinato è stato danneggiato.</Italian>
 		<Spanish>Las alimañas han entrado en el granero de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Toda la comida que allí había almacenada se ha echado a perder.</Spanish>
 		<Russian>Паразиты проникли в амбар [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Все продовольственные запасы, которые там хранились, были испорчены.</Russian>
+		<Hungarian>A férgek bejutottak [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] magtárába. Az összes ott tárolt élelem megromlott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FUGITIVE</Tag>
@@ -840,6 +843,7 @@
 		<Italian>Si dice che le autorità [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] abbiano catturato un uomo in fuga dalla giustizia [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT]. Non è disponibile alcuna conferma.</Italian>
 		<Spanish>Se rumorea que las autoridades [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] han capturado a un fugitivo que huía de la justicia [COLOR_HIGHLIGHT_TEXT]%s4:2_civ_adjective[COLOR_REVERT]. No disponemos de confirmación.</Spanish>
 		<Russian>Ходят слухи, что власти [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] поймали беглеца, скрывающегося от [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT] правосудия. Однако, пока это не может быть подтверждено официально.</Russian>
+		<Hungarian>Az a hír járja, hogy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] hatóságok elfogtak egy szökevényt, aki a szigorú [COLOR_HIGHLIGHT_TEXT]%s4_civ_adjective[COLOR_REVERT] igazságszolgáltatás elől menekül. Egyelőre a hír nincs megerősítve.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_1</Tag>
@@ -850,6 +854,7 @@
 		<Italian>Nei nostri territori è stato scoperto un fuggitivo, ricercato per i crimini commessi nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>Hemos descubierto que en nuestro territorio se oculta un prófugo de la justicia, buscado por delitos en el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</Spanish>
 		<Russian>На нашей территории обнаружен скрывающийся от правосудия преступник, разыскиваемый за преступления в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колониях. Он может сказать нам, где спрятана его добыча.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kolóniákon elkövetett bűncselekmények miatt körözött szökevényt találtak meg a területünkön. Talán elárulja, hol rejtegeti a zsákmányát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FUGITIVE_2</Tag>
@@ -860,6 +865,7 @@
 		<Italian>È stato catturato nei nostri territori un assassino, ricercato per l'omicidio di un funzionario [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Forse ci dirà dove ha nascosto il suo bottino.</Italian>
 		<Spanish>Hemos atrapado huyendo por nuestra tierra a un asesino buscado por matar a un funcionario [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT]. Tal vez nos diga dónde escondió su botín.</Spanish>
 		<Russian>Мы поймали мошенника, которого разыскивают [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], когда он пытался скрыться от правосудия на нашей земле. Надо заставить его рассказать нам, где он спрятал свою добычу.</Russian>
+		<Hungarian>Elfogtunk egy ravasz szélhámost, aki a szigorú [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] igazságszolgáltatás elől menekült át hozzánk. Talán elárulja, hol rejtegeti a zsákmányát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INFO_FUGITIVE_5</Tag>
@@ -870,6 +876,7 @@
 		<Italian>Voci dell'interrogatorio del fuggitivo sono arrivate alle autorità [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT], facendole incollerire.</Italian>
 		<Spanish>El asunto de nuestro interrogatorio al prófugo se ha filtrado a las autoridades [COLOR_HIGHLIGHT_TEXT]%s3:4_civ_adjective[COLOR_REVERT] y las ha enojado.</Spanish>
 		<Russian>Новость о нашем допросе беглеца просочилась к властям [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT], что их очень разозлило.</Russian>
+		<Hungarian>A szökevény kihallgatásának híre kiszivárgott és ez feldühítette az őt kereső [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] hatóságokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PEASANT_WARPREP</Tag>
@@ -880,6 +887,7 @@
 		<Italian>Rivolte tra la [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] popolazione rurale in Europa.</Italian>
 		<Spanish>Disturbios entre la [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] población rural en Europa.</Spanish>
 		<Russian>Волнения среди сельского населения [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] в Европе.</Russian>
+		<Hungarian>Nyugtalanság terjed a vidéki [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lakosság körében Európában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PEASANT_WARPREP_1</Tag>
@@ -890,6 +898,7 @@
 		<Italian>Disordini tra la popolazione rurale in Europa. Sembra che stia per scoppiare un conflitto tra la nostra madrepatria e un altro paese europeo.</Italian>
 		<Spanish>Disturbios entre la población rural en Europa. Parece que está a punto de estallar un conflicto entre nuestra madre patria y otro país europeo.</Spanish>
 		<Russian>Волнения среди сельского населения в Европе. Конфликт между нашей метрополией и другой европейской страной может вспыхнуть в любой момент.</Russian>
+		<Hungarian>Nyugtalanság terjed a vidéki lakosság körében Európában. Bármikor kitörhet egy konfliktus anyaországunk és egy másik európai ország között.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PEASANT_WARPREP_1A</Tag>
@@ -900,6 +909,7 @@
 		<Italian>I disordini rurali stanno crescendo in Europa. Le relazioni tra [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] e [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] si sono deteriorate. La guerra è nell'aria.</Italian>
 		<Spanish>El malestar rural crece en Europa. Las relaciones entre [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] y [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] se han deteriorado. La guerra está en el aire.</Spanish>
 		<Russian>В Европе нарастают сельские беспорядки. Отношения между [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] и [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] ухудшились. В воздухе витает запах войны.</Russian>
+		<Hungarian>Európában egyre nagyobb a vidéki nyugtalanság. [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] és [COLOR_HIGHLIGHT_TEXT]%s3_player[COLOR_REVERT] közötti kapcsolatok megromlottak. A háború a levegőben van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PEASANT_WARPREP_HELP</Tag>
@@ -910,8 +920,10 @@
 		<Italian>[COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] per %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] e [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] per %F5_yield in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Italian>
 		<Spanish>[COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] para %F2_yield en [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] y [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] para %F5_yield en [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Spanish>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][ICON_GOLD] за %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] и [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] за %F5_yield в [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]: [ICON_GOLD] %F2_yield-ért és [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]: [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] %F5_yield-ért.</Hungarian>
 	</TEXT>
 	<TEXT>
+		
 		<Tag>TXT_KEY_EVENTTRIGGER_PEASANT_WARPREP_EMIGRANT</Tag>
 		<English>Unrest in Europe is leading to an increase in the number of emigrants.</English>
 		<Portuguese>A agitação na Europa está a levar a um aumento no número de emigrantes.</Portuguese>
@@ -946,6 +958,7 @@
 		<French>[ICON_BULLET]Augmentation du taux d'impôt de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%%</French>
 		<German>[ICON_BULLET]Steuererhöhung um [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] auf %D2%%</German>
 		<Russian>[ICON_BULLET]Налоговая ставка повышена на [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Adónövekedés, ami így %D2%% lesz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAXTAX_INCREASE</Tag>
@@ -954,6 +967,7 @@
 		<French>[ICON_BULLET]Augmentation du taux d'impôt maximal de [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2%</French>
 		<German>[ICON_BULLET]Maximalsteuer erhöht sich um [COLOR_NEGATIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
 		<Russian>[ICON_BULLET]Максимальная налоговая ставка повышена на [COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT]Maximum Adónövekedés, ami így %D2% lesz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAXTAXDECREASE</Tag>
@@ -962,6 +976,7 @@
 		<French>[ICON_BULLET]Réduction du taux d'impôt maximal de [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] pour atteindre %D2% total</French>
 		<German>[ICON_BULLET]Maximalsteuer sinkt um [COLOR_POSITIVE_TEXT]%D1%[COLOR_REVERT] auf %D2%</German>
 		<Russian>[ICON_BULLET]Максимальная налоговая ставка понижена на [COLOR_POSITIVE_TEXT]%D1%%[COLOR_REVERT] до %D2%</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1%%[COLOR_REVERT] Adónövekedés, ami így %D2%% lesz</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RELATION_KING_DECREASE</Tag>
@@ -970,6 +985,7 @@
 		<French>[ICON_BULLET]Vos relations avec le Roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] se sont dégradées de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verschlechtern sich um [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем ухудшились на [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] kapcsolat romlás a fenséges [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Királlyal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RELATION_KING_INCREASE</Tag>
@@ -978,6 +994,7 @@
 		<French>[ICON_BULLET]Vos relations avec le roi [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] se sont ameliorées de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Beziehungen zum [COLOR_HIGHLIGHT_TEXT]%s2:2_civ_adjective[COLOR_REVERT] König verbessern sich um [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Отношения с [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Королем улучшились на [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] kapcsolat javulás a fenséges [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] Udvarral</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_LOOSE</Tag>
@@ -986,6 +1003,7 @@
 		<French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]: [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_GAIN</Tag>
@@ -994,6 +1012,7 @@
 		<French>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield in [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]: [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_YIELD_OVERFLOW</Tag>
@@ -1002,6 +1021,7 @@
 		<French>[ICON_BULLET][COLOR_NEGATIVE_TEXT]La capacité maximale de stockage à [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] pour %F2_yield a été dépassée de %D1[COLOR_REVERT]</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%s3_city : [COLOR_REVERT]Die maximale Lagermenge für %F2_yield wird um %d1 überschritten</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]Максимальная емкость хранилища в [COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] для %F2_yield превышена на %D1[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_NEGATIVE_TEXT][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT] %F2_yield készlete átlépte (+%D1) a maximális tároló kapacitást[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_INCREASE</Tag>
@@ -1010,6 +1030,7 @@
 		<French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в %s3_player</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] %s3_player piacán</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_DECREASE</Tag>
@@ -1018,6 +1039,7 @@
 		<French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield chez %s3_player</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in %s3_player</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в %s3_player</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] %s3_player piacán</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_INCREASE_AFRICA</Tag>
@@ -1027,6 +1049,7 @@
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
 	</TEXT>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Afrikában</Hungarian>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_DECREASE_AFRICA</Tag>
 		<English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
@@ -1034,6 +1057,7 @@
 		<French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield en Afrique</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Afrikában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_INCREASE_PORT_ROYAL</Tag>
@@ -1042,6 +1066,7 @@
 		<French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield à Port Royal</French>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Port Royalban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_DECREASE_PORT_ROYAL</Tag>
@@ -1050,6 +1075,7 @@
 		<French>[ICON_BULLET]Le prix diminue de [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield à Port Royal</French>
 		<German>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Port Royal</German>
 		<Russian>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Порт Ройале</Russian>
+		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] Port Royalban</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FATHER_POINTS</Tag>
@@ -1067,6 +1093,7 @@
 		<French>Une rumeur se propage : un éclaireur [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] aurait trouvé des guerrières amazones dans une vallée lointaine.</French>
 		<German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Späher habe in einem entlegenen Tal ein Amazonenvolk entdeckt.</German>
 		<Russian>Ходят слухи, что разведчик [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружил племя амазонок в далекой долине.</Russian>
+		<Hungarian>Pletyka terjed arról, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] felderítő egy amazonasi törzset talált egy távoli völgyben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_LOST_TRIBE_1</Tag>
@@ -1075,6 +1102,7 @@
 		<French>Un scout raconte un conte de fées. Dans la jungle la plus profonde, il s'est perdu un soir. La morosité s'abattit sur le monde alors qu'un tambour étouffé retentissait depuis un ravin caché.[NEWLINE][NEWLINE]Il se mit à marcher et regarda un camp de guerrières nues sautant autour d'un feu, sauvages comme de jeunes loups. Des massues en bois à pointe d'argent scintillaient dans la lumière vacillante, et les amazones les maniaient au rythme des sons. Quand ils l'ont aperçu, la convoitise de la chasse a brillé dans leurs yeux, et il s'est enfui.</French>
 		<German>Märchenhaftes berichtet ein Späher. Im tiefsten Urwald habe er sich eines Abends verlaufen. Düsternis senkte sich über die Welt, als ein dumpfes Trommeln aus einer verborgenen Schlucht erklang.[NEWLINE][NEWLINE]Er pirschte sich an und blickte hinab auf ein Lager nackter Kriegerinnen, die um ein Feuer sprangen, wild wie junge Wölfinnen. Im flackernden Lichtschein blitzten silberbeschlagene Holzkeulen, die die Amazonen im Rhythmus der Klänge schwangen. Als sie ihn erblickten, funkelte die Jagdlust in ihren Augen, und er floh.</German>
 		<Russian>Наш молодой разведчик рассказал удивительную историю, похожую на сказку. Однажды вечером он заблудился и долго плутал в густых джунглях. Когда сгустилась ночь, он услышал приглушенный барабанный бой из скрытого деревьями ущелья.[ПАРАГРАФ: 2] Он подполз ближе и обнаружил лагерь обнаженных женщин-воительниц, прыгающих вокруг костра, диких, как молодые волчицы. Шипастые дубинки с серебряными наконечниками сверкали в мерцающем свете костра, когда амазонки размахивали ими под бой барабанов. Парень решил подобраться поближе, чтобы получше всё рассмотреть, и тут они его заметили. Взгляды воительниц не сулили ничего хорошего и он сбежал.</Russian>
+		<Hungarian>A mi fantáziadús felderítőnk egy mesét talált ki. Egy este a sűrű dzsungelben eltévedt. A sötét éjszakában tompa dobolást hallott egy rejtett szakadékból.[PARAGRAPH:2]Közelebb kúszott és egy tábort fedezett fel, ahol meztelen harcos nők ugráltak a tűz körül, vadul, mint a fiatal nőstényfarkasok. A pislákoló tűz fényében ezüstös végű botok villogtak, ahogy az amazonok a dobok ütemére hadonásztak velük. Aztán megpillantották őt. Hirtelen úgy érezte magát, mint egy nyúl a farkasokkal szemben. Elmenekült.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
@@ -1083,6 +1111,7 @@
 		<French>La nouvelle se propage selon laquelle la libération des prisonniers de guerre a été négociée par un monastère [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Que le Seigneur soit loué dans sa miséricorde.</French>
 		<German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen durch ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kloster verhandelt wurde. Gelobt sei der Herr für seine Gnade.</German>
 		<Russian>Ходят слухи о том, что переговоры об освобождении военнопленного ведутся в одном из [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] монастырей. Хвала Господу нашему за Его Милосердие.</Russian>
+		<Hungarian>Elterjedt a hír, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kolostor tárgyalásokat folytatott egy hadifogoly szabadon bocsátásáról. Dicsérjük az Urat az ő kegyelméért!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_MONASTERY</Tag>
@@ -1091,6 +1120,7 @@
 		<French>Sire, le frère supérieur du monastère demande une entrevue pour discuter au sujet des prisonniers de guerre. Il se sent personellement touché dans cette affaire car son propre fère est mort en captivité. Il nous prie donc de négocier les termes de la libération du prisonnier avec nos rivaux. [NEWLINE]Il promet que de telles actions vont augmenter notre réputation auprès de l'Église. Il essaiera aussi de négocier une rançon.</French>
 		<German>Milor, der Abt des Klosters bittet darum mit euch über das Schicksal unseres Kriegsgefangenen reden zu dürfen. Er hat ein persönliches Interess an der Angelegenheit, da sein Bruder in Gefangenschaft starb. Daher bittet er darum, mit unseren Rivalen die Bedingungen der Freilassung dieses Gefangenen vermitteln zu dürfen. [NEWLINE]Er verspricht, dass dies unser Ansehen bei der Kirche verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
 		<Russian>Милорд, настоятель монастыря просит разрешения поговорить с вами о нашем военнопленном. Он проявляет личный интерес к этому вопросу, поскольку его брат умер в плену. Он не хочет, чтобы такая же участь постигла других бедолаг и просит разрешить ему обсудить условия освобождения этого заключенного с нашими соперниками.[NEWLINE]Он обещает, что этот шаг улучшит наше положение в церкви. Также он попытается договориться о сумме выкупа.</Russian>
+		<Hungarian>Uram, a kolostor apátja szeretne beszélni önnel a hadifoglyunkról. Személyes érdeklődést mutat, mert a testvére a fogságban halt meg. Könyörög, hogy engedje meg neki, hogy tárgyalhasson a riválisainkkal a fogoly szabadon bocsátásáról. [NEWLINE]Azt ígéri, hogy az ön támogatása javítani fogja a helyzetünket az Egyházon belül. Megpróbál majd váltságdíjról is tárgyalni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_MONASTERY_1</Tag>
@@ -1099,6 +1129,7 @@
 		<French>Nous ferons preuve de clémence et permettre à l'abbé de négocier les termes de la libération.</French>
 		<German>Wir werden Gnade zeigen und dem Abt erlauben die Freilassung unseres Gefangenen zu verhandeln.</German>
 		<Russian>Мы проявим милосердие и позволим настоятелю договориться об освобождении нашего пленника.</Russian>
+		<Hungarian>Kegyelmet fogunk tanúsítani és megengedjük az apátnak, hogy tárgyaljon foglyunk szabadon bocsátásáról.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_MONASTERY_2</Tag>
@@ -1106,6 +1137,7 @@
 		<Portuguese>Como gesto de boa vontade para com a Igreja, permitiremos que ele se junte à nossa nação. Mas ele deve expiar sua culpa realizando um trabalho penoso.</Portuguese>
 		<German>Als Zeichen des guten Willens gegenüber der Kirche werden wir ihm erlauben sich unserer Nation anzuschließen. Aber er muss seine Schuld durch Fronarbeit ableisten.</German>
 		<Russian>По прошению Церкви и в знак доброй воли мы позволим ему присоединиться к нам. Но он должен будет искупить свою вину тяжёлым трудом.</Russian>
+		<Hungarian>Ezt nem engedhetjük meg! Ennek a rabnak le kell töltenie a tetteiért járó büntetést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
@@ -1114,6 +1146,7 @@
 		<French>La nouvelle se répand selon laquelle un prisonnier de guerre a vu sa libération négociée dans un fort [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. La raison a triopmhé sur la haine.</French>
 		<German>Es verbreitet sich die Meldung, dass die Freilassung eines Kriegsgefangenen in einem [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fort verhandelt wurde. Die Vernuft hat erneut über den Hass gesiegt.</German>
 		<Russian>Ходят слухи, что переговоры об освобождении военнопленного ведутся в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] форте. Разум снова победил ненависть.</Russian>
+		<Hungarian>Elterjedt a hír, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] erődben tárgyalásokat folytattak egy hadifogoly szabadon bocsátásáról. Ismét győzött az ész a gyűlölet felett!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRISONER_OF_WAR_AT_FORT</Tag>
@@ -1122,6 +1155,7 @@
 		<French>Sire, un officier du fort demande une entrevue. Il a remarqué qu'un de nos prisonnier est blessé et ne vivra pas longtemps en captivité. Il prétend que l'honneur exige que nous contactions nos rivaux pour procéder à un échange de prisonniers. Il promet que de telles actions réhaussera notre prestige auprès des autres notions. Il essaiera aussi de négocier une rançon.</French>
 		<German>Milor, ein Offizier des Forts bittet um eine Audienz. Er hat gesehen, dass der Gefangen verwundet ist und befürchtet dieser könnte eine lange Gefangenschaft nicht überleben. Er behauptet, dass es die Ehre gebietet unsere Rivalen zu kontaktieren und einen Austausch von Gefangenen zu verhandeln. [NEWLINE]Er verspricht, dass dies unser Ansehen bei anderen Nationen verbessern wird. Er will aber auch ein Lösegeld verhandeln.</German>
 		<Russian>Милорд, с вами хочет поговорить командир одного из наших фортов. Ему доложили, что наш пленник серьёзно ранен и он считает, что долгого плена тот не выдержит. Командир форта утверждает, что честь офицера требует, чтобы мы связались с нашими соперниками и договорились об обмене.[NEWLINE]Он обещает, что такие действия повысят наш престиж среди других стран. Он также попытается договориться о сумме выкупа.</Russian>
+		<Hungarian>Uram, egy tiszt az erődben beszélni szeretne Önnel. Látta, hogy a foglyunk megsebesült és attól tart, hogy nem éli túl a fogságot. Az mondja, a becsület megköveteli a riválisainkkal való kapcsolatfelvételt, hogy tárgyaljunk a fogolycseréről. [NEWLINE]Azt ígéri, hogy ez a döntés javítani fogja a tekintélyünket más nemzetek előtt. Megpróbál majd váltságdíjról is tárgyalni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_FORT_1</Tag>
@@ -1130,6 +1164,7 @@
 		<French>Nous suivrons les exigence de l'honneur et permettre à l'officier de négocier la libération du prisonnier.</French>
 		<German>Wir werden dem Gebot der Ehre folge leisten und dem Offizier erlauben die Freilassung unseres Gefangenen zu verhandeln.</German>
 		<Russian>Ну что же, если ему удасться договориться, не видим в этом никаких проблем.</Russian>
+		<Hungarian>Megtesszük, amit a becsület követel és hagyjuk, hogy a tiszt tárgyaljon a foglyunk szabadon bocsátásáról.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRISONER_OF_WAR_AT_FORT_2</Tag>
@@ -1137,6 +1172,7 @@
 		<Portuguese>Uma vez que o oficial está intercedendo em seu nome, iremos conceder-lhe a sua libertação – apesar das suas ações. No entanto, ele deve saldar sua dívida através de trabalhos forçados em nossa colônia.</Portuguese>
 		<German>Da der Offizier so für ihn bittet, werden wir seine Freilassung erlauben - trotz seiner Taten. Aber er muss seine Schuld in unserer Kolonie durch Frondienst abarbeiten.</German>
 		<Russian>Поскольку офицер так сильно просит за этого человека, мы освободим его, несмотря на то, что он совершил. Однако он должен будет отработать свой долг тяжёлым трудом в нашей колонии.</Russian>
+		<Hungarian>Ezt nem engedhetjük meg! Ennek a rabnak le kell töltenie a tetteiért járó büntetést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADER_ATTACKED</Tag>
@@ -1145,6 +1181,7 @@
 		<French>Selon une rumeur, un marchand [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] pacifique a été attaqué et tué par des indiens hostiles.</French>
 		<German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Händler wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
 		<Russian>Ходят слухи, что мирный [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] торговец подвергся нападению и был убит враждебно настроенными индейцами.</Russian>
+		<Hungarian>Az a hír járja, hogy egy békés [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kereskedőt megtámadtak és meggyilkoltak ellenséges Indiánok.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADER_ATTACKED_1</Tag>
@@ -1153,6 +1190,7 @@
 		<French>Notre marchand chez les indigènes voyage vers le village le plus proche pour affaire. Il se voit à nouveau voir la charmante indigène de la dernière fois. Elle appréciait sa compagnie. En même temps, il se rappelle qu'un des jeunes hommes le foudroyait du regard pendant que lui et elle discurtait. Perdu dans ses pensée, il perçoit soudain du coin de l'oeil quelque chose filer.[NEWLINE]Une flèche vole à deux doigts de son visage.</French>
 		<German>Unser Ureinwohnerhändler ist auf dem Weg zum nahgelegenen Dorf, um dort seine Geschäfte zu verrichten. Er freut sich darauf das junge freundliche Ureinwohndermädchen wieder zu sehen, dass so gerne mit ihm redet. Aber denkt er auch an die bösen Blicke eines der jungen Ureinwohnermänner, als er mit ihr sprach. ... Während er so in Gedanken ist, sieht er plötzlich einen Bewegung im Augenwinkel und ein Pfeil fliegt nur um eine Handbreite an seinem Gesicht vorbei.</German>
 		<Russian>Наш торговец с индейцами едет в ближайшую деревню туземцев, чтобы продать там очередную партию своих товаров. А еще он с нетерпением ждет встречи с привлекательной молодой туземкой, с которой познакомился во время своей последней поездки. Ей нравилось с ним разговаривать.[NEWLINE]Но в то же время торговец помнил недобрый взгляд одного из молодых индейцев деревни, во время своих разговоров с девушкой. Погруженный в эти мысли, он вдруг краем глаза улавливает сбоку какое-то движение.[NEWLINE]На расстоянии ширины ладони мимо его лица пролетает стрела...</Russian>
+		<Hungarian>Indián kereskedőnk a legközelebbi faluba utazott, hogy ott üzletet kössön. Alig várta, hogy találkozzon a legutóbbi látogatásán megismert vonzó Indián nővel. Jót beszélgettek.[NEWLINE]Ugyanakkor eszébe jutott az egyik fiatalember veszélyes pillantása, miközben a nővel beszélgetett. Gondolataiba merülve hirtelen mozgást észlelt a szeme sarkából.[NEWLINE]Egy karnyújtásnyira egy nyílvessző repült el az arca mellett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACKED_1</Tag>
@@ -1161,6 +1199,7 @@
 		<French>C'est le jeune homme de la dernière fois. Il attaque.</French>
 		<German>Das ist der junge Ureinwohner aus dem Dorf. Er greift an.</German>
 		<Russian>Это молодой индейский воин из той деревни. Он атакует.</Russian>
+		<Hungarian>Egy fiatal Indián férfi a faluból. Támad!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RANGER_BEAR_ATTACK</Tag>
