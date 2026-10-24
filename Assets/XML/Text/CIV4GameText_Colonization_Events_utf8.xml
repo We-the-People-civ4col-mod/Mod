@@ -407,6 +407,7 @@
 		<Italian>Le inondazioni hanno distrutto alcune strade vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Las inundaciones han arrasado algunas de las rutas cercanas a la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Наводнение размыло некоторые дороги возле [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Az áradások elmosták az utak egy részét [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város közelében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WASHED_OUT_1</Tag>
@@ -417,6 +418,7 @@
 		<Italian>Le inondazioni hanno distrutto le strade vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Las inundaciones han arrasado las rutas cercanas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Наводнение размыло дороги возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Az áradások elmosták az utakat [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MOTHER_LODE</Tag>
@@ -427,6 +429,7 @@
 		<Italian>I minatori d'oro vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno scoperto il filone principale.</Italian>
 		<Spanish>Los mineros de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] han dado con el filón principal de oro.</Spanish>
 		<Russian>Недалеко от [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] обнаружили большой пласт серебра.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város közelében ezüstbányászok gazdag telért találtak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MOTHER_LODE_1</Tag>
@@ -437,6 +440,7 @@
 		<Italian>I nostri minatori vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno scoperto il filone principale! Siamo ricchi, ricchi, ricchi!</Italian>
 		<Spanish>¡Los mineros han dado con el filón principal de oro cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]! ¡Somos ricos, ricos, ricos!</Spanish>
 		<Russian>Наши старатели недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] нашли большие залежи серебра! Мы богаты, богаты, богаты!</Russian>
+		<Hungarian>Ezüstbányászaink [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében gazdag telért találtak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_1</Tag>
@@ -447,6 +451,7 @@
 		<Italian>Un raccolto disastroso sta facendo patire la fame ai nostri vicini [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] nella città di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT], appena oltre confine. Potremmo guadagnarci il loro favore con degli aiuti umanitari da [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Una terrible cosecha de nuestros vecinos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] de la ciudad de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT], justo al otro lado de la frontera, hace que se estén muriendo de hambre. Tenemos la posibilidad de ganarnos su favor si les proporcionamos ayuda humanitaria desde [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Из-за ужасно скудного урожая наших соседей [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], в приграничном городе [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] голодают жители. Мы можем завоевать их расположение, доставив гуманитарную помощь из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>A borzalmas termés miatt a szomszédaink, [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lakói éheznek. Elnyerhetjük a kegyeiket, ha [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] humanitárius segélyt nyújt számukra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_2</Tag>
@@ -457,6 +462,7 @@
 		<Italian>La carestia ha colpito la città di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. La nostra gente a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha abbastanza cibo per aiutare i vicini [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Siamo pronti a fornire aiuto e conforto.</Italian>
 		<Spanish>La hambruna se ha cebado en la ciudad de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Nuestras gentes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] tienen bastante comida a mano para ayudar a sus vecinos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT]. Estamos listos para proporcionarles ayuda y consuelo.</Spanish>
 		<Russian>В [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] ночной ураган сорвал крышу склада и промочил мешки с зерном. Весь урожай заплесневел.[NEWLINE]У наших жителей в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] достаточно еды, чтобы прокормить своих соседей. Мы готовы оказать помощь и утешить бедолаг.</Russian>
+		<Hungarian>Szegény [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] szomszédaink számára borzalmas volt a termés. A határon túli [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] lakói éheznek. Elnyerhetjük a kegyeiket, ha [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] humanitárius segélyt nyújt számukra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAMINE_3</Tag>
@@ -467,6 +473,7 @@
 		<Italian>Una tragedia ha colpito appena al di là del confine: l'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] fatica a soddisfare la gente affamata di [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Molti moriranno, se non hanno abbastanza da mangiare. Vuoi che i cittadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] si mobilitino per portare aiuto?</Italian>
 		<Spanish>Ha ocurrido una tragedia justo al otro lado de la frontera: el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] hace cuanto puede para alimentar a su hambrienta población de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Pero sin sustento suficiente, muchos morirán. ¿Deben los ciudadanos de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] movilizarse para ayudarlos?</Spanish>
 		<Russian>Ужасная ситуация назревает всего в нескольких милях от нашей границы: империя [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] изо всех сил пытается накормить голодающих жителей [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]. Многие жители погибнут из-за отсутствия еды. Милорд, жители города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] готовы оказать помощь своим соседям. Вы согласны?</Russian>
+		<Hungarian>Tragédia sújtott le a határon túli [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] városra. [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] vezetői azon fáradoznak, hogy az összes éhező lakost ellássák élelemmel. Sokan éhen fognak halni segítség nélkül. [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lakói nyújtsanak segítséget nekik?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEWS_EVENT_FAMINE_2</Tag>
@@ -477,6 +484,7 @@
 		<Italian>La generosa popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha salvato dalla carestia la gente di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Questo sforzo umanitario ha avvicinato le due nazioni.</Italian>
 		<Spanish>El generoso pueblo de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado ayuda para paliar la hambruna que sufren los afligidos habitantes de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Este acto humanitario ha estrechado los lazos entre ambas naciones.</Spanish>
 		<Russian>Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пожертвовали голодающим людям [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] часть своих запасов еды. Эта помощь сблизила две страны.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nagylelkű lakói segélyt adományoztak [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] éhező lakóinak. Ez a humanitárius erőfeszítés közelebb hozta egymáshoz a két nemzetet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_NEWS_EVENT_FAMINE_3</Tag>
@@ -487,6 +495,7 @@
 		<Italian>La generosa popolazione di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha decisamente salvato dalla carestia la gente affamata di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Questo generoso sforzo umanitario ha avvicinato molto le due nazioni.</Italian>
 		<Spanish>El generoso pueblo de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado ayuda ingente para paliar la hambruna que sufren los necesitados habitantes de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT]. Este generoso acto humanitario ha estrechado mucho más los lazos entre ambas naciones.</Spanish>
 		<Russian>Щедрые жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] оказали огромную помощь голодающим жителям [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT].[NEWLINE]Эта великодушная гуманитарная акция сильно сблизила две страны.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nagylelkű lakói hatalmas segélyt adományoztak [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] éhező népének.[NEWLINE]Ez a nagylelkű humanitárius erőfeszítés sokkal közelebb hozta egymáshoz a két nemzetet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAMINE_OTHER_2</Tag>
@@ -497,6 +506,7 @@
 		<Italian>La gente [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inviato metà delle proprie scorte di cibo alla tua città di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] per allontanare la carestia causata da un cattivo raccolto. Questo aiuto umanitario potrebbe rappresentare un punto di svolta nelle relazioni con loro.</Italian>
 		<Spanish>El pueblo [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha enviado la mitad de los alimentos que tenía almacenados a nuestra ciudad de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] para paliar la hambruna causada por una mala cosecha en el lugar. Este acto humanitario bien puede representar un punto de quiebra positivo en nuestras relaciones.</Spanish>
 		<Russian>Жители [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили половину своих запасов продовольствия в наш город [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] для борьбы с голодом, вызванным неурожаем. Эта гуманитарная помощь станет положительным поворотным моментом в отношениях наших стран.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lakosai elküldték a raktárukban tárolt élelmük felét [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] lakóinak, hogy a rossz termést követő éhínséget elkerüljék. Ez a humanitárius segély pozitív fordulópontot jelent a kapcsolatotokban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAMINE_OTHER_3</Tag>
@@ -507,6 +517,7 @@
 		<Italian>La generosa popolazione [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inviato l'intera scorta di cibo alla tua città di [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] per scongiurare la carestia causata da un cattivo raccolto. Questo sforzo umanitario ha avvicinato molto le due popolazioni!</Italian>
 		<Spanish>Los generosos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] han enviado cuantos alimentos tenían almacenados a nuestra ciudad de [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] para paliar la hambruna causada por una mala cosecha en el lugar. Este generoso acto humanitario ha estrechado mucho más los lazos entre nuestros dos pueblos.</Spanish>
 		<Russian>Щедрые жители [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили все свои продовольственные запасы в наш город [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT], чтобы предотвратить голод, вызванный плохим урожаем.[NEWLINE]Эта гуманитарная помощь сближает два ваших народа.</Russian>
+		<Hungarian>A nagylelkű [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] emberek [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] összes élelem készletét elküldték [COLOR_SELECTED_TEXT]%s4_city[COLOR_REVERT] lakóinak, hogy megakadályozzák a rossz termés okozta éhínséget.[NEWLINE]Ez a humanitárius erőfeszítés sokkal közelebb hozza egymáshoz a két népet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FESTIVITY</Tag>
@@ -515,6 +526,7 @@
 		<French>Le Roi [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] organise une fête fastureuse à Sa Cour Royal.</French>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] König richtet ein rauschendes Fest am Hofe aus.</German>
 		<Russian>Король [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] устраивает пышную вечеринку при дворе.</Russian>
+		<Hungarian>A hatalmas [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Király nagyszabású ünnepséget tart az udvarában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY1</Tag>
@@ -523,6 +535,7 @@
 		<French>Notre Glorieux Roi organise une fête fastueuse en son Palais. Sa Majesté demande une livraison de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vers l'Europe.</French>
 		<German>Seine Majestät plant ein rauschendes Fest zu seinem Thronjubiläum. Er erwartet, dass wir die Feierlichkeiten mit Warenlieferungen aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] großzügig unterstützen.</German>
 		<Russian>Наш славный Король устраивает роскошную вечеринку в своем дворце. Он ожидает, что мы поддержим празднование щедрыми поставками товаров из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Királyunk nagyszabású fesztivált rendez az Ő Királyi udvarában. Őfelsége azt követeli, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] áruit szállítsuk Európába, hogy kifejezzük támogatásunkat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FESTIVITY2</Tag>
@@ -531,6 +544,7 @@
 		<French>Un héritier au trône vient de naître. En guise de célébration, notre Roi a invité à sa cour les plus grands nobles de toute l'Europe. Son altesse attend que nous lui livrions des marchandises depuis [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vers l'Europe.</French>
 		<German>Ein Thronfolger wurde geboren. Seine Majestät hat den gesamten Hochadel Europas zu den Feierlichkeiten eingeladen. Er erwartet, dass wir zu diesem Prunk und Pomp Warenlieferungen aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] beisteuern.</German>
 		<Russian>Родился наследник престола! Его Величество пригласил ко двору всю европейскую высшую знать. Он ожидает, что мы доставим товары для празднества из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в Европу.</Russian>
+		<Hungarian>Megszületett a trónörökös! Őfelsége meghívta udvarába az összes európai főnemest. Azt várja tőlünk, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] áruit szállítsunk Európába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FESTIVITY_1_HELP</Tag>
@@ -539,6 +553,7 @@
 		<French>[COLOR_FONT_GOLD]Le Roi n'apprécie pas votre humour. Il aurait même demandé sa fiole de salmiac pour se remonter.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, dass er nach seinem Riechsalz verlangte.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Его Величество в бешенстве. Ходят слухи, что Он расстрелял ваш портрет из мушкета.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Őfelsége nincs elragadtattva. A pletykák szerint repülősót kért.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FESTIVITY_2_HELP</Tag>
@@ -547,6 +562,7 @@
 		<French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmente.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Вельможи и граждане следуют примеру Его Величества. Спрос на наши колониальные товары растет.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Nemesek és polgárok követik Őfelsége példáját. A gyarmati termékeink iránti kereslet növekszik.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FESTIVITY_4_HELP</Tag>
@@ -555,22 +571,25 @@
 		<French>[COLOR_FONT_GOLD]Nobles et citoyens suivent l'exemple de leur Roi. La demande pour nos biens coloniaux augmente.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren steigt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Ваш ответ доставлен Его Величеству. Доверенные лица сообщают, что он сразу же попробовал образец, а затем любезно кивнул.[NEWLINE]Знать и богатые граждане нашей родины начали подражать своему Королю. Спрос на наши товары растет.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Nemesek és polgárok követik Őfelsége példáját. A gyarmati termékeink iránti kereslet növekszik.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WINTER</Tag>
-		<English>Cold winter in Europe.</English>
+		<English>Cold winter in Europe</English>
 		<Portuguese>Inverno frio na Europa.</Portuguese>
 		<French>Hiver très froid en Europe.</French>
 		<German>Winter in Europa.</German>
 		<Russian>Холодная зима в Европе</Russian>
+		<Hungarian>Hideg tél Európában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WINTER</Tag>
-		<English>Several years of cold winters in our European homeland.</English>
+		<English>Several years of cold winters in our European homeland</English>
 		<Portuguese>Vários anos de invernos frios na nossa pátria europeia.</Portuguese>
 		<French>Notre patrie en Europe subit depuis quelques années des hivers rigoureux.</French>
 		<German>Mehrere Jahre in Folge mit bitterkalten Wintern in unserer europäischen Heimat lassen die Menschen frieren.</German>
 		<Russian>Несколько лет подряд лютые морозы на нашей европейской родине заставляют людей мерзнуть.</Russian>
+		<Hungarian>Hideg tél Európában</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WINTER_HELP</Tag>
@@ -579,6 +598,7 @@
 		<French>[COLOR_FONT_GOLD]Les hivers froids en Europe génère une augmentation de la demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT].</French>
 		<German>[COLOR_FONT_GOLD]Der eisigkalte Winter führt zu erhöhter Nachfrage nach unseren Pelzwaren und Fellen in [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT].</German>
 		<Russian>[COLOR_FONT_GOLD]Холодная зима означает, что спрос на наши меха и пальто в [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] будет расти.</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]A hideg tél növekvő keresletet jelent [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] prémjei és kabátjai iránt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_END_WINTER</Tag>
@@ -587,6 +607,7 @@
 		<French>La vague de froid en Europe a pris fin.</French>
 		<German>Die Kälteperiode in Europa ist vorüber.</German>
 		<Russian>Холода в Европе закончились</Russian>
+		<Hungarian>Európában véget ért a hideg időjárás.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_END_WINTER</Tag>
@@ -595,6 +616,7 @@
 		<French>La vague d'hivers glaciaux en Europe a pris fin.</French>
 		<German>Die Kälteperiode mit harter Wintern in unserer europäischen Heimat ist vorbei.</German>
 		<Russian>Холодный период с суровыми зимами на нашей европейской родине закончился.</Russian>
+		<Hungarian>Véget ért a hideg tél európai anyaföldünkön.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_END_WINTER_HELP</Tag>
@@ -603,6 +625,7 @@
 		<French>[COLOR_FONT_GOLD]La période de grand froid est terminé. La demande pour nos fourrures et manteaux de [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] s'affaiblit.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Die Periode harter Winter in Europa ist vorüber. Die Nachfrage nach unseren Pelzwaren und Fellen in [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] sinkt wieder.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Долгая холодная погода закончилась. Спрос на наши меха и пальто в [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] снижается.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Véget ért a hosszúra nyúlt hideg időjárás. [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] prémjei és kabátjai iránti kereslet csökken.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_VOLCANO_1</Tag>
@@ -613,6 +636,7 @@
 		<Italian>Un'eruzione vulcanica vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha devastato il territorio. Fortunatamente la città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] è stata risparmiata.</Italian>
 		<Spanish>La erupción de un volcán cercano a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha devastado el campo. Por suerte, la propia ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] se ha salvado.</Spanish>
 		<Russian>Извержение вулкана возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] опустошило сельскую местность. К счастью, сам [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] город  не пострадал.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében vulkánkitörés pusztított. A szerencsés [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] város megmenekült.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_VOLCANO_1</Tag>
@@ -623,6 +647,7 @@
 		<Italian>Signore, sono successe cose terribili a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Prima gli uccelli si sono ammutoliti. Poi la terra ha rimbombato. E poi, poi la montagna vicino alla città è scoppiata, e un vulcano è sorto dalla roccia. Ha sparato rocce incandescenti nell'aria. Sono scesi nella città vicina, uccidendo polli e cani e molti bambini piccoli. Infine, spesse scaglie di cenere scesero e stesero un sudario nero sull'insediamento. Che fertile sfortuna! I sopravvissuti vi implorano di mandare aiuto.</Italian>
 		<Spanish>Excelencia, han ocurrido cosas terribles en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Primero los pájaros se callaron. Entonces la tierra retumbó. Y entonces, la montaña junto a la ciudad estalló, y un volcán surgió de la roca. Lanzó rocas al rojo vivo al aire. Bajaron en el pueblo cercano, matando gallinas y perros y muchos niños pequeños. Finalmente, gruesos copos de ceniza flotaron hacia abajo y pusieron un manto negro sobre el asentamiento. ¡Qué desgracia tan fértil! Los supervivientes le ruegan que envíe ayuda.</Spanish>
 		<Russian>Милорд, ужасные вещи произошли в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Сначала замолчали птицы. Потом загудела земля. А после гора рядом с городом с треском раскололась извержением вулкана! Он выбрасывал в воздух раскаленные камни. Они падали на близлежащий город, убивая кур, собак и многих маленьких детей. И наконец, город и окрестности накрыли густые хлопья пепла, накрывая все черной пеленой. Какое бедствие для посевов! Выжившие умоляют вас послать помощь.</Russian>
+		<Hungarian>Uram, szörnyű dolgok történtek [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében. Először elhallgattak a madarak. Aztán a föld morajlott. Majd a város melletti hegy megrepedt és egy vulkán emelkedett ki a sziklából. Izzó, forró köveket lövellt a levegőbe. Ezek a közeli városra hullottak, megölve a csirkéket, a kutyákat és sok kisgyermeket. Végül vastag hamupelyhek szálltak lefelé, fekete leplet borítva a településre. Micsoda katasztrófa a termésnek! A túlélők segítségért könyörögnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS</Tag>
@@ -633,6 +658,7 @@
 		<Italian>I banditi stanno devastando i terreni agricoli [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>Los bandidos están arrasando los cultivos [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT].</Spanish>
 		<Russian>Бандиты бесчинствуют на отдаленных [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] фермах.</Russian>
+		<Hungarian>Banditák a peremvidéki [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] farmokat fosztogatják.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_1</Tag>
@@ -643,6 +669,7 @@
 		<Italian>I contadini fuori [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] si lamentano dei costanti furti dei banditi.</Italian>
 		<Spanish>Los granjeros de los aledaños de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se quejan de bandidos que les roban cada poco tiempo.</Spanish>
 		<Russian>Фермеры за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] жалуются, что их регулярно грабят бандиты.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] külterületén élő gazdák panaszkodnak, hogy banditák rendszeresen kirabolják őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_2</Tag>
@@ -653,6 +680,7 @@
 		<Italian>L'attività criminale ha interrotto la produzione di cibo nella regione agricola fuori [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>La actividad delictiva ha cortado la producción de alimentos en una región agrícola cercana a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Разгул преступности нарушает производство продуктов питания в фермерском регионе за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] városon kívüli mezőgazdasági térségben a bűnözés megzavarta az élelem termelést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_3</Tag>
@@ -663,6 +691,7 @@
 		<Italian>Sempre più spesso i briganti sono in attesa dei contadini di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. A poco a poco, quasi nessuno dei locali osa andare nei loro campi.</Italian>
 		<Spanish>Cada vez es más frecuente que los salteadores de caminos acechen a los agricultores de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Poco a poco, casi ninguno de los lugareños se atreve a ir a sus campos.</Spanish>
 		<Russian>Фермеры из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] все чаще попадают в засады от разбойников. Мало кто из местных жителей осмеливается покинуть ферму и начать работы в поле.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] földműveseit egyre gyakrabban támadják meg útonállók. Olyan rossz a helyzet, hogy a helyiek alig merik megművelni a földjeiket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FARM_BANDITS_AGAIN</Tag>
@@ -673,6 +702,7 @@
 		<Italian>L'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] soffre di carenza di cibo a causa dei furti dei banditi.</Italian>
 		<Spanish>El imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT] no deja de sufrir pérdidas en la producción de alimentos debido al bandidaje.</Spanish>
 		<Russian>Империя [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] продолжает страдать от сокращения производства продовольствия из-за распоясавшихся бандитов.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] földeken a banditák miatt továbbra is csökken az élelem termelés.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_1</Tag>
@@ -683,6 +713,7 @@
 		<Italian>Le autorità locali a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] faticano ancora nel mettere sotto controllo l'attività banditesca che affligge i nostri agricoltori.</Italian>
 		<Spanish>Las autoridades locales de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] aún pugnan por controlar el bandidaje que asola a nuestros granjeros.</Spanish>
 		<Russian>Местные власти города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пытаются бороться с грабежами на наших фермах.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] helyi hatóságai még mindig küzdenek a gazdáinkat sújtó bandita tevékenység megfékezéséért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FARM_BANDITS_AGAIN_2</Tag>
@@ -693,6 +724,7 @@
 		<Italian>I criminali stanno ancora depredando i nostri agricoltori. Potrebbe essere necessaria una reazione più severa, a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Los delincuentes aún se ceban con nuestros granjeros. Será necesaria una respuesta más contundente en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>На наших фермеров до сих пор охотятся преступники. Жители [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] требуют принять самые жесткие меры.</Russian>
+		<Hungarian>A bűnözők még mindig a gazdáinkra vadásznak. Kemény válaszra van szükség [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] környékén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MINING_ACCIDENT</Tag>
@@ -703,6 +735,7 @@
 		<Italian>Un tragico incidente minerario vicino alla città [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha tolto la vita a centinaia dei loro minatori.</Italian>
 		<Spanish>Un trágico accidente en una mina cerca de la ciudad [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se ha cobrado la vida de cientos de mineros.</Spanish>
 		<Russian>Трагическая авария в шахте недалеко от [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] унесла жизни сотен горняков.</Russian>
+		<Hungarian>A bűnözők még mindig a gazdáinkra vadásznak. Kemény válaszra van szükség [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] környékén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_1</Tag>
@@ -713,6 +746,7 @@
 		<Italian>Un piccolo terremoto vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causato il crollo di una vicina miniera. Centinaia di minatori sono morti intrappolati.</Italian>
 		<Spanish>Un pequeño terremoto cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha causado el derrumbe de una mina cercana. Los mineros han quedado atrapados y han muerto a centenares.</Spanish>
 		<Russian>Небольшое землетрясение возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привело к обрушению соседней шахты. Попавшие в ловушку шахтеры погибли.</Russian>
+		<Hungarian>Egy kisebb földrengés [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében egy bánya összeomlását okozta. A csapdába esett bányászok meghaltak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_2</Tag>
@@ -723,6 +757,7 @@
 		<Italian>I gas si sono incendiati nel sottosuolo di una miniera. L'aria bruciava e molti minatori incontrarono una morte orribile. Che possano ritrovare la felicità nel paradiso celeste![NEWLINE]Purtroppo non possiamo recuperare i loro corpi mortali, perché le travi di legno dei passaggi sotterranei sono carbonizzate e fragili.</Italian>
 		<Spanish>Los gases se encendieron bajo tierra en una mina. El aire ardía y muchos mineros encontraron una muerte espantosa. Que vuelvan a encontrar la felicidad en el paraíso celestial![NEWLINE]Por desgracia, no podemos recuperar sus cuerpos mortales, porque las vigas de soporte de madera de los pasajes subterráneos están carbonizadas y son frágiles.</Spanish>
 		<Russian>Газы воспламенились под землей в шахте. Казалось, горел сам воздух и многие горняки встретили ужасную смерть. Пусть они обретут покой в Раю![NEWLINE]К сожалению, мы не можем вернуть родным их бренные тела, потому что деревянные несущие балки подземных ходов сильно обуглились и стали очень хрупкими. Мы не можем рисковать жизнями еще одной партии горняков.</Russian>
+		<Hungarian>Gázok gyulladtak ki a föld alatt egy bányában. A levegő égett és sok bányász kegyetlen halált halt. Találják meg újra a boldogságot a mennyei paradicsomban![NEWLINE]Sajnos, nem tudjuk visszaszerezni a halandó testüket, mert a földalatti járatok fából készült tartógerendái elszenesedtek és törékenyek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MINING_ACCIDENT_3</Tag>
@@ -733,6 +768,7 @@
 		<Italian>Si dice che una miniera vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sia infestata. Almeno questo è quello che credono i minatori. Sono fuggiti in fretta e furia dai passaggi sotterranei, facendo crollare l'ingresso. Che follia superstiziosa!</Italian>
 		<Spanish>Se dice que una mina cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] está encantada. Al menos esto es lo que creen los mineros. Han huido precipitadamente de los pasajes subterráneos, provocando el derrumbe de la entrada. ¡Qué locura supersticiosa!</Spanish>
 		<Russian>Говорят, что шахта возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] населена привидениями. По крайней мере, так считают горняки. Призраки выскочили из подземных ходов, обрушив вход. Какая суеверная глупость!</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében lévő bánya állítólag kísértetjárta. Legalábbis a bányászok ezt hiszik. Kirohantak a földalatti járatokból, beomlott a bejárat. Micsoda babonás ostobaság!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MINING_ACCIDENT_3_LANDMARK</Tag>
@@ -741,6 +777,7 @@
 		<French>Accident de mine</French>
 		<German>Minenunglück</German>
 		<Russian>Несчастный случай в шахте</Russian>
+		<Hungarian>Bányaszerencsétlenség</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_AT_THE_SWORD</Tag>
@@ -751,6 +788,7 @@
 		<Italian>I soldati [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] si sono riuniti attorno ai loro eroi guerrieri.</Italian>
 		<Spanish>Los soldados [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han cerrado filas alrededor de sus héroes de la espada.</Spanish>
 		<Russian>Некоторые [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] солдаты проявили себя на поле боя и завоевали славу.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] katonák felsorakoztak hőseik mögött.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_AT_THE_SWORD_1</Tag>
@@ -761,6 +799,7 @@
 		<Italian>I soldati della vittoriosa unità [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] si sono riuniti attorno ai loro eroi combattenti! La loro forza e la loro determinazione si sono rinsaldate! La loro efficacia è aumentata!</Italian>
 		<Spanish>Los soldados de [NUM3:nuestro:nuestra:nuestros:nuestras] [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] han cerrado filas alrededor de sus héroes de guerra. ¡Su fuerza y su resolución son ahora más inquebrantables y su habilidad ha aumentado!</Spanish>
 		<Russian>Солдаты нашего победоносного корпуса [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] сплотились вокруг своих боевых героев! Их решимость непоколебима! Их мастерство возросло!</Russian>
+		<Hungarian>A győztes [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] mögé felsorakoznak a katonáink! Elszántságuk rendíthetetlen! A képességeik megnőttek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_UNIT_AT_THE_SWORD</Tag>
