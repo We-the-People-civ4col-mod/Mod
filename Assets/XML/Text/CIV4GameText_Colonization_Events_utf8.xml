@@ -1203,19 +1203,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RANGER_BEAR_ATTACK</Tag>
-		<English>A rumour is spreading: A peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] missionary was attacked by a grizzly but a brave ranger saved him.</English>
+		<English>Everyone is talking about how a peaceful [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] missionary was attacked by a grizzly but a brave ranger saved him.</English>
 		<Portuguese>Um boato está se espalhando: um pacífico [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] missionário foi atacado por um urso pardo, mas um corajoso ranger o salvou.</Portuguese>
 		<French>Selon une rumeur, un grizzly a attaqué un missionnaire [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] mais un garde-forestier l'a sauvé.</French>
 		<German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Missionar wurde von einem Grizzly angegriffen aber ein mutiger Ranger hat ihn gerettet.</German>
 		<Russian>По колониям ползут слухи: на мирного [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] миссионера напал гризли, но храбрый рейнджер спас его от неминуемой гибели.</Russian>
+		<Hungarian>Pletyka terjed arról, hogy egy békés [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] misszionáriust megtámadott egy grizzly, de egy bátor járőr megmentette.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RANGER_BEAR_ATTACK_1</Tag>
-		<English>Our ranger is on patrol through the forest. Suddenly he hears a high-pitched scream of fear followed by a rattling sound, like a tree in a high wind. He heads toward the noise and sees a missionary up in a tree, while a hungry grizzly methodically tries to shake him loose.</English>
+		<English>Our ranger is on patrol through the forest. Suddenly he hears a high-pitched scream of fear followed by a rattling sound, like a tree in a high wind. He heads toward the noise and sees a missionary up in a tree, while a hungry grizzly tries to shake him loose.</English>
 		<Portuguese>Nosso guarda florestal está patrulhando a floresta. De repente, ele ouve um grito agudo de medo seguido por um som estridente, como o de uma árvore sob um vento forte. Ele se dirige em direção ao barulho e vê um missionário em uma árvore, enquanto um urso pardo faminto tenta metodicamente soltá-lo.</Portuguese>
 		<French>Notre garde forestier patrouille en forêt. Il entend un cri de peur haut-perché suivi par un bruit de branches, comme un arbre pris dans une rafale. Il se dirige vers le vacarme et voit un missionnaire haut perché dans un arbre, tandis qu'un grissly affamé secoue l'arbre comme un prunier pour récupérer le morceau.</French>
 		<German>Einer unserer Ranger ist auf Patrouille in den Wäldern. Plötzlich hört er Schreie voller Angst. Nach einer kurzen Suche findet er den Urpsrpung der Schreie. Er wird Zeuge wie ein Missionar in einem Baum von einem hungrigen Grizzly angegriffen wird, der wütend versucht ihn herunter zu schütteln.</German>
 		<Russian>Наш рейнджер патрулирует лес. Внезапно он слышит пронзительный крик, за которым следует глухой стук, как будто чем-то бъют по деревяшке. Он направляется на шум и видит на дереве трясущегося от страха миссионера, в то время как большой голодный гризли методичными ударами по дереву пытается стряхнуть его.</Russian>
+		<Hungarian>A járőrünk az erdőben őrjáratozott. Hirtelen egy magas, rémült sikolyt hallott, amit egy zörgő hang követett, mintha egy fa zörögne a nagy szélben. A zaj felé vette az irányt és meglátott egy misszionáriust egy fán, miközben egy éhes grizzly módszeresen próbálja lerázni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_1</Tag>
@@ -1224,6 +1226,7 @@
 		<French>Nous devons protéger le missionnaire du grizzly !</French>
 		<German>Wir müssen den Missionar vor dem Grizzly verteidigen!</German>
 		<Russian>Мы должны защитить миссионера от гризли!</Russian>
+		<Hungarian>Meg kell védenünk a misszionáriust a grizzlytől!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RANGER_BEAR_ATTACK_HELP</Tag>
@@ -1232,6 +1235,7 @@
 		<French>Le Grizzly attaque. Le missionnaire doit être protégé.</French>
 		<German>Ein Grizzly greift an. Ein Missionar muss verteidigt werden.</German>
 		<Russian>Гризли атакует. Нужно защищать миссионера.</Russian>
+		<Hungarian>Egy grizzly támad. Egy misszionáriust meg kell védeni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CONQUISTADORES_BEING_AMBUSHED</Tag>
@@ -1240,6 +1244,7 @@
 		<French>Selon une rumeur, des indigènes hostiles ont pris en embuscade des conquistadors [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT]  </French>
 		<German>Ein Gerücht macht die Runde: Ein friedlicher [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Conquistadore wurden von feindlichen Ureinwohnern überfallen.</German>
 		<Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] конкистадоры попали в засаду, устроенную враждебными туземцами.</Russian>
+		<Hungarian>Pletyka terjed arról, hogy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] konkvisztádorokat ellenséges Indiánok támadták meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONQUISTADORES_BEING_AMBUSHED_1</Tag>
@@ -1248,6 +1253,7 @@
 		<French>Nos hardis conquistadors explorent l'enfer vert sans répit, espérant tomber sur un trésor qui les rendra riche. L'instant d'après, ils remarquent que tous les oiseaux et toutes les bêtes se sont tues.[NEWLINE]Ils s'arrêtent. Un des hommes se retourne, et met en garde ses compagnons en hurlant et en pointant du doigt les arbres. Une flèche le frappe alors en pleine poitrine. Des cris de guerre résonnent des arbres et des fourrés.[NEWLINE]Nous sommes pris en embuscade !</French>
 		<German>Unsere tapferen Conquistadores schreiten müde durch die grüne Hölle, hoffend auf eine Entdeckung, um reich zu werden. Plötzlich bemerken sie, dass alle Geräusche von Vögeln und Tieren verschwunden sind und halten daher an. Einer der Männer dreht sich plötzlich um, schreit eine Warnung und zeigt in Richtung der Bäume, als auch schon ein Pfeil in seiner Brust steckt. Die Stille ist nun vorbei und Kriegsschreie hallen aus den Büschen. Wir werden überfallen!</German>
 		<Russian>Наши смелые конкистадоры блуждают по зеленому аду джунглей, надеясь наткнуться на сокровище, которое сделает их богатыми. Как вдруг они замечают, что голоса всех птицы и звери замолкли.[NEWLINE]Они останавливаются. Один из мужчин оборачивается, пытается что-то крикнуть, указывая на деревья. Но уже через мгновение из его груди торчит стрела. Тишина закончилась - отовсюду доносятся боевой клич индейцев.[NEWLINE]Мы попали в засаду!</Russian>
+		<Hungarian>Merész konkvisztádoraink céltalanul sodródtak a zöld pokolban, remélve, hogy rábukkannak egy kincsre, amely gazdaggá teszi őket. Hirtelen minden madár és állat elhallgatott.[NEWLINE]Megálltak. Az egyik férfi megfordult, figyelmeztetően kiáltott és a fák felé mutatott. Hirtelen egy nyílvessző találta el a mellkasát. A csendnek vége lett. A bokrok és a fák közül harci kiálltások hallatszanak.[NEWLINE]Csapdába estünk!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_1</Tag>
@@ -1256,6 +1262,7 @@
 		<French>Couvrez les flancs et battez-vous jusqu'à la mort</French>
 		<German>Verteidigt die Flanken und kämpft um euer Leben!</German>
 		<Russian>Прикрывайте фланги! Покажем краснокожим, что они зря это затеяли!</Russian>
+		<Hungarian>Fedezzétek a széleket és harcoljatok az életetekért!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CONQUISTADOR_AMBUSH_HELP</Tag>
@@ -1264,14 +1271,16 @@
 		<French>Des indigènes hostiles attaquent de la jungle.</French>
 		<German>Feindliche Ureinwohner greifen aus dem Dschungel an.</German>
 		<Russian>Из джунглей лезут толпы враждебные туземцы.</Russian>
+		<Hungarian>A dzsungelből ellenséges Indiánok támadnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HIGHWAYMAN_ATTACK</Tag>
-		<English>A rumour is spreading: A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but brave passengers defended it.</English>
+		<English>People are talking about how a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] stagecoach was attacked by highwaymen but brave passengers defended it.</English>
 		<Portuguese>Um boato está se espalhando: uma diligência [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] foi atacada por salteadores de estrada, mas passageiros corajosos a defenderam.</Portuguese>
 		<French>Selon une rumeur, des brigands ont attaqué une diligence [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] mais des passagers l'ont défendue.</French>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Kutsche wurde von Straßenräubern angegriffen, aber die mutigen Passagiere haben sie verteidigt.</German>
 		<Russian>Ходят слухи, что почтовый дилижанс [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] подвергся нападению разбойников, но храбрые пассажиры сумели отбиться от негодяев.</Russian>
+		<Hungarian>Pletyka terjed arról, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] postakocsit útonállók támadtak meg, de a bátor utasok megvédték.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HIGHWAYMAN_ATTACK_1</Tag>
@@ -1280,6 +1289,7 @@
 		<French>En voyage vers la ville suivante, notre diligence s'arrête brusquement alors que ses chevaux renâclent, effrayés par des coups de fey. De derrière des rocher, des bandits de grand-chemin émergent, pointant leurs armes vers le cocher. Dans la diligence, quelques hommes hardis prennent leurs propres armes pour défendre les dames et leurs vie.</French>
 		<German>Auf dem Weg zur nächsten Stadt wird unsere Kutsche durch den plötzlichen Knall von Schüssen und das Aufscheuen ihrer Pferde aufgehalten. Straßenräuber erheben sich aus ihrem Versteck hinter einigen Felsen und richten ihre Waffen auf den Kutscher. Aber innerhalb der Kutsche greifen einige junge starke Männer zu ihren Waffen, um die Damen und ihr eigenes Leben zu verteidigen.</German>
 		<Russian>Почтовый дилижанс совершал свой обычный рейс из столицы в соседнюю колонию. Внезапно лошади остановились и начали пятится назад, испуганные громкими выстрелами. Из-за ближайших скал появляется банда разбойников, печально известная тем, что не оставляет свиделей. Бандиты хотят присвоить перевозимый груз, о котором им поведал их человек из города. Молодой испуганный возница пытается спрятаться за камнями, забыв о своём оружии и беспрестанно шепча молитвы. Но внутри дилижанса находятся несколько смелых мужчин с ружьями, готовых защищать женщин и их жизни.</Russian>
+		<Hungarian>A következő város felé haladva postakocsink hirtelen megállt, mert a lovai hangos lövések miatt visszahőköltek. A sziklák mögül útonállók bukkantak elő, akik a postakocsisra szegezték pisztolyukat. A kocsiban néhány erős férfi a saját fegyveréért nyúlt, készen arra, hogy megvédje a hölgyeket és az életüket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_1</Tag>
@@ -1288,6 +1298,7 @@
 		<French>Si les passagers veulent en réchapper, ils doivent défendre la diligence!</French>
 		<German>Wenn die Passagiere überleben wollen, müssen sie die Kutsche verteidigen!</German>
 		<Russian>Если пассажиры хотят выжить, они должны защищать дилижанс!</Russian>
+		<Hungarian>Ha az utasok túl akarják élni, meg kell védeniük a postakocsit!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_2</Tag>
@@ -1303,6 +1314,7 @@
 		<French>Des bandits attaquent la diligence. Des passagers courageux la défendent.</French>
 		<German>Straßenräuber greifen die Kutsche an. Ein paar mutige Passagiere verteidigen sie.</German>
 		<Russian>На дилижанс нападают разбойники. Храбрые пассажиры защищаются.</Russian>
+		<Hungarian>Útonállók támadták meg a postakocsit. A bátor utasok megvédik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_BRIBE_HELP</Tag>
@@ -1318,6 +1330,7 @@
 		<French>Une rumeur se répand : un chariot [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] s'est fait attquer par un guerrier indigène hostile. Les colons pourront-ils le défendre ? </French>
 		<German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Wagenzug wurde von einem feindlichen Indianer-Trupp angegriffen. Ob die Siedler ihn verteidigen können?</German>
 		<Russian>Ходят слухи, что индейцы напали на обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Смогут ли ли колонисты защитить его?</Russian>
+		<Hungarian>Egy pletyka terjed: egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] szekérkaravánt ellenséges Indián harcosok támadtak meg. Meg tudják védeni a telepesek?</Hungarian>
 	 </TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_LANDTRANSPORT_ATTACK_1</Tag>
@@ -1326,6 +1339,7 @@
 		<French>Alléché par le butin potentiel, un groupe d'Indiens a attaqué un [COLOR_UNIT_TEXT]voiture[COLOR_REVERT]. Ils décochent des flèches de feu. À couvert, et sauvons ce que nous pouvons !</French>
 		<German>Angelockt von den Aussichten auf reiche Beute hat ein feindlicher Indianer-Trupp eines Eurer [COLOR_UNIT_TEXT]Gespanne[COLOR_REVERT] angegriffen. Sie schießen mit Brandpfeilen! Jetzt heißt es in Deckung gehen und retten was zu retten ist.</German>
 		<Russian>Соблазнившись перспективой богатой добычи, отряд злобных индейцев напал на [COLOR_UNIT_TEXT]обоз[COLOR_REVERT]. Они стреляют зажигательными стрелами! Все в укрытие! Спасайтесь!</Russian>
+		<Hungarian>A gazdag zsákmány reményében ellenséges Indiánok egy [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] ellen támadást indítottak. Lángoló nyilakat lőnek! Keressünk menedéket és mentsük meg, amit lehet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_1</Tag>
@@ -1334,6 +1348,7 @@
 		<French>Nous ne nous rendrons pas sans nous battre.</French>
 		<German>Wir werden niemals kampflos untergehen!</German>
 		<Russian>Мы никогда не сдадимся без боя!</Russian>
+		<Hungarian>Soha nem adjuk fel harc nélkül!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_2</Tag>
@@ -1342,6 +1357,7 @@
 		<French>Donnons leur ce qu'ils veulent, ils laisseront les chariots repartir.</French>
 		<German>Gebt ihnen die Waren, dann lassen Sie vielleicht die Wagen ziehen!</German>
 		<Russian>Отдадим им товары и, может, они нас отпустят...</Russian>
+		<Hungarian>Hadd vigyék el a árut. Engedjük el a szekereket. Az életünk fontosabb!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LANDTRANSPORT_ATTACK_HELP</Tag>
@@ -1350,6 +1366,7 @@
 		<French>Une troupe d'Indiens hostiles attaque notre chariot. Les cochers et les gardes le défendent.</French>
 		<German>Ein feindlicher Indianer-Trupp greift den Wagenzug an. Ein paar mutige Kutscher und Wachen verteidigen ihn.</German>
 		<Russian>Отряд индейцев нападает на торговый обоз. Храбрые колонисты пытаюстя обороняться.</Russian>
+		<Hungarian>Ellenséges Indiánok támadják meg a szekeret. Néhány bátor kocsis és őr védeni próbálja.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MILKMAID_IN_NEED</Tag>
@@ -1358,6 +1375,7 @@
 		<French>Selon une rumeur, une laitière [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est obligée d'épouser son oncle. Elle appelle le gouverneur à la rescousse.</French>
 		<German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Milchmädchen soll gezwungen werden, ihren Onkel zu heiraten. Sie erbittet Hilfe vom Gouverneur.</German>
 		<Russian>Ходят слухи, что [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] доярку вынуждают выйти замуж за своего дядю. Она просит помощи у губернатора.</Russian>
+		<Hungarian>Pletyka terjed egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] fejőnőről, akit arra kényszerítenek, hogy menjen hozzá a nagybátyjához. A kormányzóhoz fordul segítségért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MILKMAID_IN_NEED_1</Tag>
@@ -1366,6 +1384,7 @@
 		<French>À la mort de son père, une laitière est forcée d'épouser son oncle contre son gré pour qu'il hérite de la ferme bovine. Elle est venue en ville pour demander de l'aide, espérant un secours de la loi. Nous pouvons l'aider, mais dans ce cas, l'oncle et le reste de cette famille avide va se retourner contre nous.</French>
 		<German>Nach dem Tod ihres Vaters wird eine junge Milchmaid durch Ihren Onkel gezwungen, ihn gegen ihren Willen zu heiraten. Sie ist nun in die Stadt gekommen, um um Hilfe und rechtliche Unterstützung zu bitten. Wenn wir ihr helfen, wird sich ihr Onkel und der Rest dieser gierigen Familie gegen uns wenden.</German>
 		<Russian>После смерти отца, доярку, против ее воли, вынуждают выйти замуж за дядю, чтобы тот мог унаследовать животноводческую ферму. Она приехала в город просить помощи, надеясь, что закон вмешается. Мы можем поддержать ее, но если мы это сделаем, то настроим против нас ее дядю и остальную часть этой жадной семьи.</Russian>
+		<Hungarian>Apja halála után egy fejőnőt arra kényszerítettek, hogy akarata ellenére hozzámenjen a nagybátyjához, hogy az örökölhesse a marhatelepet. A lány a városba jött, hogy segítségért könyörögjön, remélve, hogy a törvény közbelép. Támogathatjuk őt, de ha így teszünk, ellenünk fordítjuk a nagybátyját és a kapzsi család többi tagját.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_1</Tag>
@@ -1374,6 +1393,7 @@
 		<French>Bien sûr, nous aiderons cette pauvre jeune femme ! On ne va pas se plier devant quelques péquenauts !</French>
 		<German>Wir werden dem jungen Mädchen natürlich helfen! Wir fürchten uns nicht vor ein paar Hinterwäldlern!</German>
 		<Russian>Конечно, мы защитим эту бедную девушку! Неужели мы испугаемся каких-то деревенщин!</Russian>
+		<Hungarian>Természetesen megvédjük azt a szegény fiatal lányt! Nem félünk néhány parasztembertől!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_2</Tag>
@@ -1382,6 +1402,7 @@
 		<French>Ne nous mêlons pas de ces histoires de familles. Ce n'est pas notre domaine.</French>
 		<German>Wir sollten uns nicht in diese Familienangelegenheit einmischen.</German>
 		<Russian>Это семейное дело. Мы не имеем права вмешиваться.</Russian>
+		<Hungarian>Ez a család dolga. Nincs jogunk közbeavatkozni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_3</Tag>
@@ -1397,6 +1418,7 @@
 		<French>Des criminels vont attaquer la ville.</French>
 		<German>Kriminelle werden die Stadt angreifen.</German>
 		<Russian>Преступники нападут на город.</Russian>
+		<Hungarian>A bűnözők megtámadják a várost.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HERDER_IN_NEED</Tag>
@@ -1405,6 +1427,7 @@
 		<French>Selon la rumeur, des loups attaquent une porcherie [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</French>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Schweinestall und sein Besitzer werden von Wölfen angegriffen.</German>
 		<Russian>Ходят слухи, что на свинарник [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] напали волки.</Russian>
+		<Hungarian>Az a hír járja, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] disznóólat farkasok támadtak meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HERDER_IN_NEED_1</Tag>
@@ -1413,6 +1436,7 @@
 		<French>Un éleveur de cochon nous a envoyé sont fils cadet pour obtenir de l'aide. Des loups attaque sa porcherie, et le fermier essaie désespéremny de protéger ses bêtes. Il prie pour avoir notre aide.</French>
 		<German>Ein Schweinezüchter hat seinen kleinen Sohn in die Stadt geschickt, um Hilfe zu holen. Wölfe greifen den Stall an und der Züchter versucht verzweifelt, seine Tiere zu beschützen. Er bitte uns um Hilfe.</German>
 		<Russian>Свиновод отправил в город своего маленького сына просить о помощи. Волки нападают на свинарник, и фермер отчаянно пытается защитить животных. Он умоляет нас помочь ему.</Russian>
+		<Hungarian>Egy disznótenyésztő a városba küldte fiatal fiát, hogy segítséget kérjen. Farkasok támadtak a disznóólra és a gazda kétségbeesetten próbálja megvédeni az állatokat. A segítségünkért könyörög.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HERDER_IN_NEED_1</Tag>
@@ -1421,6 +1445,7 @@
 		<French>Nous allons envoyer de l'aide ! Il doit tenir un peu plus longtemps.</French>
 		<German>Wir werden versuchen so schnell wie möglich Hilfe zu schicken! Aber er muss noch etwas durchhalten!</German>
 		<Russian>Мы вышлем помощь как можно быстрее! Он должен продержаться еще немного!</Russian>
+		<Hungarian>A lehető leggyorsabban segítséget küldünk! Még egy kicsit ki kell tartania!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HERDER_IN_NEED_HELP</Tag>
@@ -1429,6 +1454,7 @@
 		<French> Des loups attaquent la porcherie.</French>
 		<German>[COLOR_HIGHLIGHT_TEXT]Wölfe[COLOR_REVERT] greifen den Stall an.</German>
 		<Russian>Волки атакуют свинарник.</Russian>
+		<Hungarian>Farkasok támadják meg a disznóólat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FERRY_STATION_ROBBERS</Tag>
@@ -1437,14 +1463,16 @@
 		<French>Selon une rumeur, des voleurs attaquent un bac [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]</French>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Fährstation wird von Straßenräubern angegriffen.</German>
 		<Russian>Ходят слухи, что на паромную переправу [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] напали грабители.</Russian>
+		<Hungarian>Az a hír járja, hogy egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kompállomást rablók támadták meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FERRY_STATION_ROBBERS_1</Tag>
-		<English>Milord, a citizen has recognized a few rough-looking men riding through the city. They're wanted for ferry robbery, they're heavily armed and they're heading toward the local ferry station. If we ride now we just might have time to catch them and prevent another crime.</English>
+		<English>Milord, a citizen recognized some rough-looking men riding through the city. They're wanted for ferry robbery, they're heavily armed and they're heading toward the local ferry station. If we ride now we just might have time to catch them and prevent another crime.</English>
 		<Portuguese>Milorde, um cidadão reconheceu alguns homens de aparência rude cavalgando pela cidade. Eles são procurados por roubo de balsa, estão fortemente armados e se dirigem à estação local de balsas. Se cavalgarmos agora talvez tenhamos tempo de pegá-los e prevenir outro crime.</Portuguese>
 		<French>Sire, un citoyen a reconnu quelques hommes patibulaires à cheval dans la ville. Ils sont recherchés pour vol à main armée sur le bac, ils sont armés et se dirigent vers le bac local. Si nous montons maintenant, nous arriverons juste à temps pour les capturer et prévenir un autre crime.</French>
 		<German>Milord, ein Ortsansässiger hat einge nach Ärger aussehende Männer, die durch die Stadt ritten, als gesuchte Straßenräuber erkannt. Sie ritten in Richtung der örtlichen Fährstation und waren schwer bewaffnet. Wenn wir jetzt losreiten könnten wir sie noch einholen und Schlimmeres verhindern.</German>
 		<Russian>Милорд, горожанин узнал несколько мужчин, едущих по городу. Их разыскивают за ограбление парома ниже по реке. Они хорошо вооружены и направляются к местной паромной станции, возможно, замышляя новое нападение. Если мы поедем прямо сейчас, у нас как раз будет время, чтобы поймать их и предотвратить новое преступление.</Russian>
+		<Hungarian>Uram, egy polgár felismert néhány durva kinézetű férfit, akik a városon keresztül lovagoltak. Komprablásért körözik őket, erősen fel vannak fegyverkezve és a helyi kompállomás felé tartanak. Ha most elindulunk, talán lesz időnk elkapni őket és megakadályozni egy újabb bűncselekményt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_1</Tag>
@@ -1453,6 +1481,7 @@
 		<French>Nous allons lever la milice et apprendre la vie à ces bandits!</French>
 		<German>Wir werden die Miliz versammeln und diesen Straßenräubern eine Lektion erteilen!</German>
 		<Russian>Мы соберем ополчение и проучим этих грабителей паромов!</Russian>
+		<Hungarian>Összegyűjtjük a nemzetőrséget és megleckéztetjük azokat a komprablókat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_2</Tag>
@@ -1461,6 +1490,7 @@
 		<French>Désolé, mais nous ne pouvons rien y faire pour le moment ! </French>
 		<German>Wir sind zu tiefst bestürzt, aber uns ist es nicht möglich Hilfe zu schicken!</German>
 		<Russian>Нам очень жаль, но мы не можем отправить какую-либо помощь!</Russian>
+		<Hungarian>Nagyon sajnáljuk, de nem tudunk segítséget küldeni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_HELP</Tag>
@@ -1469,6 +1499,7 @@
 		<French>Des bandits attaquent le bac</French>
 		<German>Straßenräuber greifen die Fährstation an.</German>
 		<Russian>Разбойники атакуют паромную переправу.</Russian>
+		<Hungarian>Az útonállók megtámadják a kompállomást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_DEFEND_CHOICE</Tag>
@@ -1499,6 +1530,7 @@
 		<French>Sire, nous avons un dilemme. La fille d'un de nos plus riches planteurs de la région est tombé amoureuse d'un esclave. Quand le père a découvert cette relation et a voulu tué l'esclave, la jeune fille a aidé son amant à fuir.[NEWLINE]L'esclave attend ici en arrière salle. Il nous demande de l'aide. Par la fenêtre vous voyez le planteur et ses hommes de main tenter de pénétrer nos locaux pour rosser le pauvre esclave.</French>
 		<German>Milord, wir sind in einer schlimmen Situation. Die Tochter eines der reichsten Plantagenbesitzer der Region hat sich in einen Sklaven verliebt und diesem zur Flucht verholfen, nachdem ihr Vater von der Beziehung erfahren hat und drohte, den Sklaven zu töten. Der Sklave sitzt nun im Vorraum und bittet um Hilfe. Der Vater hat jedoch bewaffnete Männer versammelt und droht jetzt damit, das Gebäude gewaltsam zu betreten, um den Sklaven zu lynchen.</German>
 		<Russian>Милорд, у нас неприятная ситуация. Дочь одного из самых богатых плантаторов этого региона влюбилась в раба. Когда ее отец узнал об этих отношениях и попытался убить раба, она помогла возлюбленному бежать.[NEWLINE]Сейчас раб сидит в нашей приёмной. Он умоляет помочь ему. Из этого окна вы можете видеть владельца плантации со своими вооруженными людьми, пытающимися проникнуть сюда, чтобы линчевать этого бедного раба.</Russian>
+		<Hungarian>Uram, rossz a helyzet. A környék egyik leggazdagabb ültetvényesének lánya beleszeretett egy rabszolgába. Amikor az apja rájött a kapcsolatra és megpróbálta megölni a rabszolgát, a lány segített a szeretőjének megszökni.[NEWLINE]A rabszolga most a várótermünkben ül. A segítségünkért könyörög. Azon az ablakon keresztül láthatja az ültetvényest a fegyveres embereivel, amint megpróbálnak bejutni ide, hogy meglincseljék ezt a szegény rabszolgát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
@@ -1507,6 +1539,7 @@
 		<French>Pas de justice expéditive dans ma ville ! L'esclave est sous ma protection !</French>
 		<German>Wir werden keine Lynchjustiz in dieser Stadt erlauben! Der Sklave steht unter unserem Schutz!</German>
 		<Russian>Мы не допустим самосуда в этом городе! Раб находится под нашей защитой!</Russian>
+		<Hungarian>Nem engedjük meg, hogy a csőcselék szolgáltasson igazságot ebben a városban! A rabszolga a mi védelmünk alatt áll!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_2</Tag>
@@ -1515,6 +1548,7 @@
 		<French>Résolvons ceci à l'amiable. Nous dédommagerons généreusement le propriétaire pour son esclave. Nous espérons que cela le calemera. L'esclave et la fille ne doivent jamais se revoir.</French>
 		<German>Lasst uns dies friedlich regeln und dem Plantagenbesitzer eine so großzügige Summe zukommen, um den Sklaven freizukaufen, sodass er sich wieder beruhigt! Der Sklave und die Tochter sollen sich nie wieder treffen.</German>
 		<Russian>Давайте решим это мирным путем! Мы заплатим хозяину плантации за раба хорошую цену. Нам остается только надеяться, что это его успокоит. Но этот раб и дочь плантатора больше никогда не встретятся.</Russian>
+		<Hungarian>Oldjuk meg ezt békésen! Jó árat fizetünk az ültetvényesnek a rabszolgáért. Csak remélni tudjuk, hogy ez megnyugtatja őt. A rabszolga és a lánya soha többé nem találkozhatnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_3</Tag>
@@ -1523,6 +1557,7 @@
 		<French>La justice exige que nous livrions l'esclave au père! Aucun esclave ne doit molester une jeune fille et pervertir son esprit.</French>
 		<German>Händigt den Sklaven dem Vater aus, damit er Gerechtigkeit nehmen kann! Dieser Sklave ist deutlich zuweit gegangen als er seine Hände an das junge Mädchen legte und ihr den Kopf verdrehte.</German>
 		<Russian>Справедливость требует, чтобы мы отдали раба отцу! Ни один раб не должен прикасаться к невинной девушке и извращать ее юный ум.</Russian>
+		<Hungarian>Az igazság azt követeli, hogy adjuk át a rabszolgát az apjának! Egyetlen rabszolga sem teheti rá a kezét egy ártatlan lányra és csavarhatja el a fejét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1_HELP</Tag>
@@ -1531,6 +1566,7 @@
 		<French>Des citoyens outrés et des membres de la milice attaquent la ville.</French>
 		<German>Aufgebrachte Bürger und Mitglieder der Miliz greifen die Stadt an.</German>
 		<Russian>Возмущенные горожане и ополченцы нападают на город.</Russian>
+		<Hungarian>A felháborodott polgárok és a nemzetőrség tagjai megtámadják a várost.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WHALE_ATTACK</Tag>
@@ -1539,6 +1575,7 @@
 		<French>Une rumeur se répend : Un baleinier [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est attaqué par une baleine revancharde.</French>
 		<German>Ein Gerücht macht die Runde: Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Walfangschiff wird von eime Rache suchenden Wal angegriffen.</German>
 		<Russian>Ходят слухи: китобойное судно [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] подверглось нападению мстительного кита.</Russian>
+		<Hungarian>Pletyka terjed egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] bálnavadászhajóról, amit megtámadott egy bosszúra vágyó bálna.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALE_ATTACK_1</Tag>
@@ -1547,6 +1584,7 @@
 		<French>Très étrange. Depuis des jours, une baleine géante poursuit notre navire. C'est comme si elle cherchait à attaquer dès que nous baissons la garde. Attendez! C'est quoi ça ? Elle essaie de nous éperonner par franc-bord !</French>
 		<German>Das ist in der Tat seltsam. Seit Tagen verfolgt unser Schiff ein riesiger Wal. Es scheint fast so als warte er nur auf eine Gelgenheit, um uns anzugreifen, wenn wir nicht aufmerksam sind. Wartet! Was ist das? Der Walf versucht uns tatsächlich auf Backbord zu rammen.</German>
 		<Russian>Это очень странно. Уже несколько дней за нашим кораблем следует гигантский кит. Как будто он ждет удобный момент, чтобы напасть на нас, когда мы перестанем обращать на него внимание. Подождите! Что это?! Он пытается протаранить нас на миделе!!!</Russian>
+		<Hungarian>Ez nagyon furcsa. Napok óta egy óriás bálna követi a hajónkat. Mintha csak arra várna, hogy megtámadjon minket, amikor nem figyelünk. Várj! Mi ez? Megpróbál belénk rohanni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALE_ATTACK_1</Tag>
@@ -1555,6 +1593,7 @@
 		<French>Tous sur le pont, et aux harpons ! Nous sommes un baleinier ! Nous chassons les baleines, pas l'inverse !</French>
 		<German>Alle Mann an die Harpunen! Wir sind ein Walfangschiff! Wir jagen die Wale und nicht anders herum!</German>
 		<Russian>Парни, хватайте свои гарпуны! Мы - китобойный корабль! Мы охотимся на китов, а не наоборот!</Russian>
+		<Hungarian>Mindenki fogja meg a szigonyát! Bálnavadászhajó vagyunk! Mi vadászunk bálnára, nem fordítva!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WHALE_ATTACK_HELP</Tag>
@@ -1563,6 +1602,7 @@
 		<French>La baleine à bosse attaque</French>
 		<German>Ein Buckelwal greift an.</German>
 		<Russian>Нападение горбатого кита.</Russian>
+		<Hungarian>A púpos bálna támad.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CRIMINALS_BLACKMAIL_CITY</Tag>
