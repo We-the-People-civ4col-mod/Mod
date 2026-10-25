@@ -10487,6 +10487,11 @@ bool CvUnit::canAttack() const
 
 bool CvUnit::canDefend(const CvPlot* pPlot) const
 {
+	if (pPlot != NULL && pPlot->isCity() && getUnitInfo().isTreasure())
+	{
+		return false;
+	}
+
 	if (!isOnMap_())
 	{
 		return false;
