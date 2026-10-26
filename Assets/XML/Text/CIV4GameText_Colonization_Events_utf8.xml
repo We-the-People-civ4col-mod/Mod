@@ -2065,6 +2065,7 @@
 		<French>Seigneur, les charpentiers-charrons de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous proposent de construire des chariots pour aider les fermiers à cultiver leurs champs.</French>
 		<German>Milord, die Stellmacher Eurer Wagnerei in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bieten an, den Bauern Karren zu bauen, so dass sie ihre Felder flinker bewirtschaften können.</German>
 		<Russian>Милорд, колесные мастера в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагают построить тележки для фермеров, чтобы помочь им обрабатывать поля.</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bognármesterei felajánlják, hogy szekereket építenek a földműveseknek, hogy segítsenek nekik megművelni a földjeiket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_CATHEDRAL</Tag>
@@ -2073,6 +2074,7 @@
 		<French>La cathédrale de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attirent l'attention des étrangers.</French>
 		<German>Die Kathedrale in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lockt Fremde an.</German>
 		<Russian>Собор в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] — популярная достопримечательность среди иностранцев.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] katedrálisa népszerű látványosság a külföldiek számára.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CATHEDRAL</Tag>
@@ -2081,6 +2083,7 @@
 		<French>Sire, un garde-forestier vous attend. Il dit qu'il a fait des choses terribles. Des scalps sont accrochés à sa ceinture et sa veste est pleine de sang. Il a vu la tour de notre cathédrale et veut changer de vie. Il demande ce qu'il peut faire pour la communauté.</French>
 		<German>Milord, ein Waldläufer wartet vor der Tür. Furchtbares habe er in der Wildnis gesehen, meint er, und Furchtbares habe er getan. Aus der Ferne sah er den Turm unserer Kathedrale, und hielt dies für ein Zeichen, sein Leben zu ändern.</German>
 		<Russian>Милорд, за дверью вас ждет рейнджер. Он говорит, что в своей жизни он совершил много всего ужасного, но не думал об этом до того момента, пока издалека не увидел башню нашего собора. Он воспринял это как знак изменить свою жизнь.</Russian>
+		<Hungarian>Uram, egy járőr vár az ajtó előtt. Szörnyű dolgokat látott a vadonban, mondja, és szörnyű dolgokat tett. Messziről meglátta a katedrálisunk tornyát és ezt jelnek vette, hogy változtasson az életén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BABY_BOOM_1</Tag>
@@ -2091,6 +2094,7 @@
 		<Italian>I soldati [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] e le loro mogli celebrano la fine della guerra, creando un boom di nascite.</Italian>
 		<Spanish>Los soldados [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] y sus mujeres están celebrando el final de la guerra con un "baby boom".</Spanish>
 		<Russian>Солдаты [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] и их жены отмечают окончание войны, повышая демографию страны.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] katonák és feleségeik a háború végét ünneplik, ami születési hullámot okoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BABY_BOOM_1</Tag>
@@ -2101,6 +2105,7 @@
 		<Italian>I nostri soldati, tornati dalla guerra, si sono dedicati alla pace e a crearsi delle famiglie. La nostra civiltà gode di un boom di nascite!</Italian>
 		<Spanish>Nuestros soldados, al volver de la guerra, se han dedicado a la paz y a cuidar de sus familias. ¡Nuestra civilización está atravesando un "baby boom"!</Spanish>
 		<Russian>Милорд, измученные и уставшие, наши люди возвращаются домой с войны, на которую вы их отправили. Но они не настолько устали, чтобы не праздновать победу в тавернах. Барменши строят глазки героям войны и вскоре мы увидим множество больших животов. Позорное действо, вам не кажется?</Russian>
+		<Hungarian>Uram, fáradtan és kimerülten térnek haza embereink a háborúból, ahová Ön küldte őket. De nem annyira fáradtak, hogy ne tudnának a kocsmákban mulatni és költeni a háborús zsákmányt. A kocsmárosnők a háborús hősökkel incselkednek és hamarosan sok nagy hasat fogunk látni. Szégyenteljes mulatság, nem gondolja?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BABY_BOOM_HELP</Tag>
@@ -2109,6 +2114,7 @@
 		<French>La population croît dans 1 à %d1 villes.</French>
 		<German>Bevölkerungswachstum in 1 bis %d1 Siedlungen.</German>
 		<Russian>В %d1 городах население увеличивается на 1</Russian>
+		<Hungarian>1 népességnövekedés %d1 városban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_JADE</Tag>
@@ -2119,6 +2125,7 @@
 		<Italian>I minatori [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] hanno trovato dei depositi di giada.</Italian>
 		<Spanish>Los mineros [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han dado con depósitos de jade.</Spanish>
 		<Russian>Горняки [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружили залежи нефрита.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] bányászok jáde lelőhelyeket fedeztek fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_JADE_1</Tag>
@@ -2129,6 +2136,7 @@
 		<Italian>Signore, nelle montagne vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], i minatori si sono imbattuti in strani cumuli di macerie. Sembra essere giada. Il verde ricco della foresta e l'azzurro intenso del mare brillano nelle pietre morbide. I loro volti si illuminarono di felicità e offrirono loro dell'oro in cambio.</Italian>
 		<Spanish>Excelencia, en las montañas cercanas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], los mineros han encontrado extraños montones de escombros. Parece ser jade. El verde intenso del bosque y el azul conmovedor del mar brillan en las piedras blandas.[NEWLINE]Los trabajadores mostraron una a los nativos. Sus rostros se iluminaron de felicidad y les ofrecieron oro a cambio.</Spanish>
 		<Russian>Милорд, в горах возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] шахтеры наткнулись на странные груды камней. Кажется, это нефрит. Насыщенная зелень леса и одухотворенная синева моря переливаются в этих камнях.[NEWLINE]Рабочие показали один из них индейцам. Их лица озарились счастьем и они предложили им золото в обмен на камни.</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] melletti hegyekben a bányászok különös törmelékhalmokra bukkantak. Úgy tűnik, hogy jáde. Az erdő dús zöldje és a tenger lélekkel teli kékje csillog a puha kövekben.[NEWLINE]A munkások megmutattak egyet az Indiánoknak. Az arcuk felragyogott a boldogságtól és aranyat ajánlottak nekik cserébe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_JADE_1_LANDMARK</Tag>
@@ -2139,6 +2147,7 @@
 		<Italian>Giada</Italian>
 		<Spanish>Jade</Spanish>
 		<Russian>Нефрит</Russian>
+		<Hungarian>Jáde</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WHALEOFATHING</Tag>
@@ -2149,6 +2158,7 @@
 		<Italian>È stata localizzata una nuova fonte di balene davanti alla costa [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>Se ha localizado un nuevo caladero de ballenas en la costa [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT].</Spanish>
 		<Russian>У побережья [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] обнаружено множество [COLOR_SELECTED_TEXT]китов[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] partok mentén bálnákat találtak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALEOFATHING_1</Tag>
@@ -2159,6 +2169,7 @@
 		<Italian>Scruti il soffitto a volta della taverna, fiocamente illuminato dalle trasfusioni. L'aria è tagliente. Il fumo del tabacco e le esalazioni dei marinai ubriachi riempiono la stanza. Molti circondano un capitano magro che intrattiene la folla con occhi dilatati e una voce rauca. Si sentono alcuni frammenti di parole stridenti insieme a molte risate: [COLOR_SELECTED_TEXT]"Occhi incandescenti come fuoco di fucina ... trenta tentacoli."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Bocche infernali che scattano ... Quasi distrutto la mia nave a pezzi ..."[COLOR_REVERT], suona finita. Il tuo aiutante ti sussurra, compiaciuto: [COLOR_SELECTED_TEXT]"Beh, un attimo fa era un singolo mostro marino con appena venti tentacoli. Milord, cosa intende fare con questo millantatore?"[COLOR_REVERT]</Italian>
 		<Spanish>Te asomas al techo abovedado de la taberna, tenuemente iluminado por las transfunciones. El aire es cortante. El humo del tabaco y las exhalaciones de los marineros borrachos llenan la habitación. Muchos rodean a un capitán demacrado que entretiene a la multitud con los ojos dilatados y la voz ronca. Se oyen unas cuantas palabras estridentes junto con muchas risas: [COLOR_SELECTED_TEXT]"Ojos tan brillantes como el fuego de una fragua... treinta tentáculos."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Bocas del infierno chasqueantes... Casi destroza mi nave..."[COLOR_REVERT], suena por encima. Su ayudante le susurra, complaciente: [COLOR_SELECTED_TEXT]"Bueno, hace un momento era un solo monstruo marino con apenas veinte tentáculos. Milord, ¿qué piensa hacer con este fanfarrón?"[COLOR_REVERT]</Spanish>
 		<Russian>Вы оглядываете таверну, тускло освещенную бра со свечами. Воздух настолько плотный, что кажется, его можно нарезать на ломтики ножом. Табачный дым и вонючее дыхание пьяных матросов наполняют помещение. Большинство посетителей сгрудились вокруг сухопарого капитана с расширенными глазами и хриплым голосом, развлекающего толпу. Среди громкого смеха вы слышите обрывки слов: [COLOR_SELECTED_TEXT]"И глаза у них горели, как кузнечное пламя... по тридцать щупалец".[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Щелкающие адские пасти... мой корабль чуть не разлетелся на куски..."[COLOR_REVERT]. Ваш адъютант тихо шепчет вам: [COLOR_SELECTED_TEXT]"Минуту назад это было всего лишь одно морское чудовище с двадцатью щупальцами. Милорд, что вы намерены делать с этим хвастуном?"[COLOR_REVERT]</Russian>
+		<Hungarian>Felnézel a kocsma boltíves mennyezetére, amelyet gyertyákat tartó lámpák világítanak meg gyengén. A levegő csípős. Dohányfüst és részeg matrózok bűzös lehelete tölti be a helyiséget. Sokan körülvesznek egy sovány kapitányt, aki tágra nyílt szemmel, rekedt hangon szórakoztatja a tömeget. Szavakat hallasz a sok nevetés közepette: [COLOR_SELECTED_TEXT]"Szemek, izzóak, mint a kovácstűz ... harminc csáp."[COLOR_REVERT] [COLOR_SELECTED_TEXT]"Csattogó pokoli szájak ... a hajóm majdnem darabokra tört ..."[COLOR_REVERT]. A segéded nyugodt hangon súgja neked: [COLOR_SELECTED_TEXT]"Az előbb még csak egy tengeri szörny volt, mindössze húsz csáppal. Uram, mit szándékozik tenni ezzel a hencegővel?"[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALEOFATHING_1_LANDMARK</Tag>
@@ -2169,6 +2180,7 @@
 		<Italian>Balene</Italian>
 		<Spanish>Ballenas</Spanish>
 		<Russian>Киты</Russian>
+		<Hungarian>Bálnák</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CACAO_BONUS</Tag>
@@ -2185,6 +2197,7 @@
 		<French>Les indigènes ont montré à nos cueilleurs de cacao une espèce de cacaoyer particulièrement fertile.</French>
 		<German>Indios haben unseren Kakaopflückerinnen im Urwald eine neue Sorte besonders ertragreicher Kakaobäume gezeigt.</German>
 		<Russian>Индейцы показали нашим сборщикам какао несколько исключительно плодовитых какао-деревьев.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] gyarmatokon élő emberek felfedeztek egy új, kivételesen termékeny kakaónövényt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BONUS_HELP</Tag>
@@ -2193,6 +2206,7 @@
 		<French>[ICON_BULLET]Nouvelle ressource bonus de %s1_Icon ressources</French>
 		<German>[ICON_BULLET]Neue [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT] Bonusressource</German>
 		<Russian>[ICON_BULLET]Новый бонусный ресурс [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]Új [COLOR_YIELD_FOOD]%s1_bonus[COLOR_REVERT] bónusz erőforrás</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HERBS</Tag>
@@ -2203,6 +2217,7 @@
 		<Italian>Gli orticultori [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] hanno sfruttato rare risorse locali per produrre farmaci.</Italian>
 		<Spanish>Los horticultores [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] han aprovechado extraños recursos del lugar para producir remedios.</Spanish>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колонисты помогают туземцам с целебными травами.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] telepesek gyógynövényekkel segítik az Indiánokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HERBS_1</Tag>
@@ -2213,6 +2228,7 @@
 		<Italian>Si è scoperto che un tè medicinale coltivato dalla gente del posto è efficace nel curare i malanni. Questo tè cresce solo in una specifica regione vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Se ha descubierto que una infusión medicinal cultivada por los lugareños es eficaz para tratar enfermedades. Esta planta solo crece en una región muy concreta, cerca de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Милорд, знахарка из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], капризная, сумасшедшая старуха, вылечила от лихорадки вождя близлежащего поселения индейцев чаем, который она для него приготовила. Они оба ужасно воняли — и чай и женщина,но отвар помог.[PARAGRAPH:2]Теперь все близлежайшие индейские деревни хотят, чтобы женщина помогала им с их травами, надеясь, что она сможет избавиться от любой боли и страданий. Вы согласны с этим, милорд?</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bábája, egy nyűgös, bolondos öregasszony, a közeli indián település lázas főnökét meggyógyította egy általa főzőtt teával. Mindkettő borzasztóan bűzlött - a tea és az asszony is - de a főzet segített.[PARAGRAPH:2]Most már minden indián falu azt akarja, hogy az asszony segítsen nekik a gyógynövényeivel, azt remélve, hogy minden fájdalmat és kínt meg tud szüntetni. Egyetért ezzel, Uram?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HERBS_1_LANDMARK</Tag>
@@ -2221,6 +2237,7 @@
 		<French>Herbes</French>
 		<German>Kräuter</German>
 		<Russian>Травы</Russian>
+		<Hungarian>Gyógynövények</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CALM_1</Tag>
@@ -2229,6 +2246,7 @@
 		<French>Votre navire [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] est bloquée par la pétole, pas un souffle d'air.</French>
 		<German>Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] ist in eine Flaute geraten.</German>
 		<Russian>Наш корабль [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] попал в штиль.</Russian>
+		<Hungarian>A flottánkból egy [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] szélcsendbe került.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CALM_HELP</Tag>
@@ -2237,6 +2255,7 @@
 		<French>[ICON_BULLET]%D1 passage ralenti vers l'Europe pour [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]Überfahrt für [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] verlängert sich um %D1 [NUM1:Runde:Runden].</German>
 		<Russian>[ICON_BULLET]Переход в Европу для [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] займет %D1 ход</Russian>
+		<Hungarian>[ICON_BULLET]%D1-kal lassabb átkelés Európába a veszteglő [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TAILWIND_1</Tag>
@@ -2245,6 +2264,7 @@
 		<French>Votre navire [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] a le vent en poupe.</French>
 		<German>Euer Schiff [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] wird von kräftigem Rückenwind begünstigt.</German>
 		<Russian>Какая удача! Сильный попутный ветер значительно ускорил ход нашего [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT].</Russian>
+		<Hungarian>A flottánkból egy [COLOR_UNIT_TEXT]%s3_unit[COLOR_REVERT] erős hátszélet kapott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TAILWIND_HELP_1</Tag>
@@ -2253,6 +2273,7 @@
 		<French>[ICON_BULLET]%D1 déplacement supplémentaires pour [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]%D1 zusätzliche Bewegungspunkte für [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET]%D1 дополнительных хода для [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</Russian>
+		<Hungarian>[ICON_BULLET]További %D1 mozgás a jó szelet kapott [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TAILWIND_HELP_2</Tag>
@@ -2261,6 +2282,7 @@
 		<French>[ICON_BULLET]%D1 passage plus rapide vers l'Europe pour [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT]</French>
 		<German>[ICON_BULLET]%D1 schnellere Überfahrt für [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET]Плавание в Европу для [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] пройдет быстрее на %D1 хода </Russian>
+		<Hungarian>[ICON_BULLET]%D1-kal gyorsabb átkelés Európába a felgyorsult [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] számára</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RUNAWAY</Tag>
@@ -2269,6 +2291,7 @@
 		<French>Des chevaux de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se sont enfuits dans la nature.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Pferde entlaufen und in die Wildnis geflohen.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] несчастье - из местной конюшни пропали лошади.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lovai a pusztába szaladtak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RUNAWAY_1</Tag>
@@ -2277,6 +2300,7 @@
 		<French>Des chevaux de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] se sont enfuits dans la nature. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] à [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suscpéctés d'avoir capturé les chevaux.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind Pferde entlaufen und in die Wildnis geflohen. Unsere [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] werden verdächtigt, die Pferde eingefangen zu haben.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пропал табун лошадей. В их краже подозреваются наши соседи [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lovai a vadonba vágtattak. [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] lakóit gyanúsítják a lovak ellopásával.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUNAWAY_3</Tag>
@@ -2299,6 +2323,7 @@
 		<French>Sire, du Vieux Monde nous parvient une nouvelle étonnante : lors de la fête du couronnement de l'empereur Habsburg, les souverains d'Europe ont festoyé ensemble au banquet. Le vin coule à flot, ils se vantent et se taquinent. Un mot a mené à un autre et finalement un pari a été fait : Pour la Majesté qui réussit la première à fonder de nombreuses nouvelles villes à l'intérieur du Nouveau Monde, les autres Altesses doivent embrasser son cul nu. Sa Majesté nous a promis de riches récompenses si nous l'aidons à gagner le pari !</French>
 		<German>Milord, aus der Alten Welt dringt eine erstaunliche Kunde: Beim Krönungsfest des teutschen Kaisers zechten die Herrscher Europas gemeinsam beim Bankett. Der Rebensaft floss, man prahlte und neckte einander. Ein Wort gab das andere und schließlich wurde eine Wette geschlossen: Der Majestät, der es als Erster gelingt, viele neue Städte im Landesinneren der Neuen Welt zu gründen, der müssen die anderen Hoheiten den blanken Arsch küssen. Seine Majestät hat uns reichen Lohn versprochen, wenn wir ihm zum Wettsieg verhelfen!</German>
 		<Russian>Милорд, из Старого Света до нас дошли удивительные новости. На пиру в честь коронации Императора Габсбургов собрались все правители Европы. В винном угаре монархи хвастались и поддразнивали друг друга. Одно слово тянулось за другим и в конце концов было заключено пари: победит тот правитель, у которого первым окажется больше всего новых городов во внутренних районах Нового Света. Наш Король сулит нам богатые награды, если мы поможем Ему выиграть пари!</Russian>
+		<Hungarian>Uram, megdöbbentő hírek érkeztek hozzánk az Óvilágból! A Habsburg császár koronázási ünnepségén Európa uralkodói mind összegyűltek. Miközben folyt a bor, dicsekedtek és ugratták egymást. Egyik szó követte a másikat, és végül fogadást kötöttek: az az uralkodó nyer, akinek először lesz a legtöbb új városa az Újvilág belsejében. A mi Királyunk gazdag jutalmat ígér nekünk, ha segítünk neki megnyerni a fogadást!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TERRAX_HELP</Tag>
@@ -2307,6 +2332,7 @@
 		<French>Soyez le premier à fonder au moins %s1 colonies dans les terres (sans accès à l'océan ou à des lacs et mers intérieurs).</French>
 		<German>Gründet als Erster mindestens %s1 Siedlungen im Landesinneren (ohne Zugang zum Ozean oder einem Binnenmeer).</German>
 		<Russian>Будьте первым, кто создаст не менее %s1 поселений внутри континента (без доступа к океану или внутреннему морю).</Russian>
+		<Hungarian>Legyél az első, aki legalább %s1 települést alapít a szárazföld belsejében (tengerhez vagy beltengerhez való hozzáférés nélkül).</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_TERRAX</Tag>
@@ -2315,6 +2341,7 @@
 		<French>Mauvaise nouvelle, Sire. Votre Roi a perdu son pari. Les colons d'une autre nations ont fondé plusieurs colonies à l'intérieur des terres.</French>
 		<German>Schlechte Kunde, Milord! Ein anderer Statthalter war schneller als Ihr und hat als Erster im Landesinneren neue Siedlungen gegründet. Seine Majestät hat die Wette verloren.</German>
 		<Russian>Плохие новости, милорд! Другой губернатор был быстрее нас и первым основал новые поселения в вдали от побережья. Его Величество проиграл пари.</Russian>
+		<Hungarian>Rossz hírek, Uram! Egy másik kormányzó gyorsabb volt nálad és elsőként alapított új településeket a szárazföld belsejében. Őfelsége elvesztette a fogadást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TERRAX_DONE</Tag>
@@ -2323,6 +2350,7 @@
 		<French>De nombreuses nouvelles colonies [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] ont été fondées à l'intérieur des terres.</French>
 		<German>Zahlreiche neue [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Siedlungen wurden im Landesinneren gegründet.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] основали несколько поселений вдали от побережья.</Russian>
+		<Hungarian>Számos új [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] település jött létre a szárazföld belsejében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_DONE</Tag>
@@ -2331,6 +2359,7 @@
 		<French>Excellente nouvelle, Sire ! Nous avons fait gagner à notre Roi son pari. Vous avez fondé plusieurs colonies à l'intérieur des terres.</French>
 		<German>Großartige Kunde, Milord! Ihr habt so viele neue Siedlungen im Landesinneren gegründet, dass unser König seine Wette gewinnen konnte. Seine Majestät ist voll des Lobes über Euch!</German>
 		<Russian>Отличные новости, милорд! Его Величество, наш любимый Король, выиграл пари. У наших поселенцев теперь есть несколько поселений вдали от моря.</Russian>
+		<Hungarian>Nagyszerű hírek, Uram! Őfelsége, szeretett Királyunk megnyerte a fogadást. A telepeseidnek több közössége van a szárazföld belsejében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SHIPYARD</Tag>
@@ -2339,6 +2368,7 @@
 		<French>Le port de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] attirent des prostituées venus d'Europe.</French>
 		<German>Die Schiffswerft in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lockt Dirnen aus der Alten Welt an.</German>
 		<Russian>Верфь в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] привлекает проституток из Старого Света.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hajógyára vonzza az óvilági szajhákat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SHIPYARD</Tag>
@@ -2347,6 +2377,7 @@
 		<French>Seigneur, la veuve d'un capitaine a ouvert un bordel à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Elle a recruté des jeunes prostituées venues d'Europe pour adoucir les soirées de nos marins. Devons-nous les expulser hors de nos colonies ?</French>
 		<German>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine resolute Kapitänswitwe neben der Schiffswerft ein Bordell aufgemacht und ein paar junge Dirnen aus der Heimat angeworben, die nun den Zimmerleuten und Schauerleuten den Feierabend versüßen. Sollen wir die Weibsbilder vertreiben?</German>
 		<Russian>Милорд, в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] решительная вдова капитана открыла бордель рядом с верфью и набрала несколько молодых шлюх из Европы, которые теперь услаждают вечера грузчиков. Должны ли мы изгнать этих распутных женщин?</Russian>
+		<Hungarian>Uram, egy elszánt kapitány özvegye bordélyházat nyitott [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hajógyára mellett és otthonról toborzott néhány fiatal szajhát, akik most megédesítik a rakodómunkások estéit. Utasítsuk ki ezeket a buja nőket?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CARGOSPACE</Tag>
@@ -2355,6 +2386,7 @@
 		<French>Un maître charpentier de navire vous propose ses services à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Ein Schiffsbaumeister bietet seine Dienste in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an.</German>
 		<Russian>Мастер-корабел предлагает свои услуги в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Egy hajóépítő mester felajánlja szolgálatait [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lakóinak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CARGOSPACE_1</Tag>
@@ -2363,6 +2395,7 @@
 		<French>Seigneur, un maître charpentier de navire propose d'augmenter la capacité en cargaison de l'un de vos bateaux à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Milord, in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] bietet Euch ein durchreisender Schiffsbaumeister an, in der Schiffswerft ein Schiff auszubauen. Durch geschickte Raumnutzung will er mehr Stauraum schaffen. Sollen wir ihn gewähren lassen?</German>
 		<Russian>Милорд, в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] какой-то мастер-корабел говорит, что может улучшить корабль в нашей гавани. Благодаря разумному использованию пространства он хочет увеличить грузоподъемность. Давайте позволим ему это сделать?</Russian>
+		<Hungarian>Uram, egy átutazó hajóépítő mester azt mondja, hogy fel tud javítani egy hajót [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kikötőjében. Okos helykihasználással nagyobb rakodókapacitást akar létrehozni. Engedjük meg neki, hogy ezt megtegye?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CARGOSPACE_HELP</Tag>
@@ -2371,6 +2404,7 @@
 		<French>[ICON_BULLET]Le navire [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] a %d3% pourcent de chance de recevoir %d1 [NUM1:espace de cargaison supplémentaire:espaces de cargaison supplémentaires].</French>
 		<German>[ICON_BULLET]Mit %d3% Wahrscheinlichkeit erhält das Schiff [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] %d1 [NUM1:zusätzlichen Frachtraum:zusätzliche Frachträume].</German>
 		<Russian>[ICON_BULLET][COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] получит %d1 [NUM1:дополнительный грузовой отсек:дополнительных грузовых отсека] (процент успеха %d3%).</Russian>
+		<Hungarian>[ICON_BULLET]%d3% eséllyel további %d1 [NUM1:extra raktér:extra raktér] az átalakított [COLOR_UNIT_TEXT]%s2_unit[COLOR_REVERT] számára.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CARGOSPACE_FAILED</Tag>
@@ -2379,6 +2413,7 @@
 		<French>[COLOR_NEGATIVE_TEXT]Sire, l'imposteur s'est enfui avec votre argent ![COLOR_REVERT]</French>
 		<German>[COLOR_NEGATIVE_TEXT]Milord, der Hochstapler hat sich mit Eurem Geld auf und davon gemacht![COLOR_REVERT]</German>
 		<Russian>[COLOR_NEGATIVE_TEXT]Милорд, мошенник скрылся с нашими деньгами![COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_NEGATIVE_TEXT]Uram, a szélhámos elmenekült a pénzzel![COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CARGOSPACE_SUCCESS</Tag>
@@ -2387,6 +2422,7 @@
 		<French>[COLOR_POSITIVE_TEXT]Sire, l'amélioration de la cargaison pour le navire [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] avance rapidement.[COLOR_REVERT]</French>
 		<German>[COLOR_POSITIVE_TEXT]Milord, der Ausbau der [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] schreitet zügig voran.[COLOR_REVERT]</German>
 		<Russian>[COLOR_POSITIVE_TEXT]Милорд, расширение грузового отсека [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] идет полным ходом.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]Uram, a [COLOR_UNIT_TEXT]%s1_unit[COLOR_REVERT] raktér bővítése gyorsan halad.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HYMNS_AND_SCULPTURES</Tag>
@@ -2397,6 +2433,7 @@
 		<Italian>Nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] è emerso un nuovo Grande Artista, ispirato dalla musica e dalla scultura religiose a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Inspirado por la música y las esculturas religiosas de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], ha aparecido un gran artista en el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</Spanish>
 		<Russian>Вдохновленный религиозной музыкой и скульптурой в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Империи появляется великий художник.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vallásos zenéje és szobrászata által megihletett [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] népből egy nagy művész emelkedett ki.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_1</Tag>
@@ -2407,6 +2444,7 @@
 		<Italian>La musica suonata in %s5_building a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha ispirato un giovane, che è poi diventato un Grande Artista!</Italian>
 		<Spanish>La música tocada en [NUM5:nuestro:nuestra:nuestros:nuestras] %s5_building de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha inspirado a un joven, que ha crecido hasta convertirse en un gran artista.</Spanish>
 		<Russian>Музыка, играющая в вашем %s5_building в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], вдохновила молодого исполнителя, который стал великим артистом!</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]-i %s5_building zenéje megihletett egy fiatal előadót, aki nagyszerű művésszé fejlődött!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HYMNS_AND_SCULPTURES_2</Tag>
@@ -2417,6 +2455,7 @@
 		<Italian>L'arte e la scultura che decorano %s5_building a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hanno nutrito l'immaginazione e i talenti di un nuovo Grande Artista!</Italian>
 		<Spanish>El arte y las esculturas que decoran [NUM5:el:la:los:las] %s5_building de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ha alimentado la imaginación y el talento de un nuevo gran artista.</Spanish>
 		<Russian>Искусство и скульптуры, украшающие ваше %s5_building в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], разожгли воображение и талант нового великого художника!</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]-i %s5_building falát díszítő képek és szobrok egy nagy művész fantáziáját és tehetségét táplálták!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_1</Tag>
@@ -2425,6 +2464,7 @@
 		<French>Les attaques incessantes de nos navires marchands a conduit l'Europe à nous envoyer des frégates pour faire fuire les agresseurs.</French>
 		<German>Unablässige Angriffe auf Handelsschiffe beeinträchtigen den Handel mit Europa. Ein Monarch schickt ein Kriegsschiff, um die Störenfriede zu vertreiben.</German>
 		<Russian>Из-за постоянных нападений на мирные торговые суда из Европы были отправлены фрегаты, чтобы выследить пиратов.</Russian>
+		<Hungarian>A békés kereskedelmi hajók elleni folyamatos támadások miatt Európából Fregattokat küldtek a fosztogatók levadászására.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_2</Tag>
