@@ -12201,7 +12201,7 @@
 		<German>[ICON_BULLET]Die Geländeart %s1_feature wird entfernt</German>
 		<Italian>[ICON_BULLET][NUM1:Il:La] %s1_feature [NUM1:è stato eliminato:è stata eliminata] </Italian>
 		<Spanish>[ICON_BULLET][NUM1:Ha desaparecido el:Ha desaparecido la:Han desaparecido los:Han desaparecido las] %s1:1_feature</Spanish>
-		<Russian>[ICON_BULLET]%s1_feature очищено</Russian>
+		<Russian>[ICON_BULLET]Тип местности %s1_feature удалён</Russian>
 		<Hungarian>[ICON_BULLET]%s1_feature eltávolítva</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14262,7 +14262,7 @@
 		<Tag>TXT_KEY_UNIT_HELP_COMMANDED_BY</Tag>
 		<English>Unit is commanded by </English>
 		<German>Einheit wird kommandiert von </German>
-		<Russian>Командование подразделением осуществляет </Russian>
+		<Russian>Подразделением командует </Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ACTION_ATTACH_LEADER</Tag>

@@ -646,7 +646,7 @@
 		<German>Milord, Schreckliches ist bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] geschehen. Zunächst verstummten die Vögel. Dann grollte die Erde. Und dann, dann barst der Berg neben der Stadt, und ein Vulkan erstieg aus dem Gestein. Er schoss glühendheiße Steine in die Luft. Sie gingen in der nahen Stadt nieder und erschlugen Hühner und Hunde und auch so manches kleine Kind. Schließlich schwebten dichte Ascheflocken herab und legten ein schwarzes Leichentuch über die Siedlung. Welch fruchtbares Unglück! Die Überlebenden flehen Euch an, Hilfe zu schicken.</German>
 		<Italian>Signore, sono successe cose terribili a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Prima gli uccelli si sono ammutoliti. Poi la terra ha rimbombato. E poi, poi la montagna vicino alla città è scoppiata, e un vulcano è sorto dalla roccia. Ha sparato rocce incandescenti nell'aria. Sono scesi nella città vicina, uccidendo polli e cani e molti bambini piccoli. Infine, spesse scaglie di cenere scesero e stesero un sudario nero sull'insediamento. Che fertile sfortuna! I sopravvissuti vi implorano di mandare aiuto.</Italian>
 		<Spanish>Excelencia, han ocurrido cosas terribles en [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Primero los pájaros se callaron. Entonces la tierra retumbó. Y entonces, la montaña junto a la ciudad estalló, y un volcán surgió de la roca. Lanzó rocas al rojo vivo al aire. Bajaron en el pueblo cercano, matando gallinas y perros y muchos niños pequeños. Finalmente, gruesos copos de ceniza flotaron hacia abajo y pusieron un manto negro sobre el asentamiento. ¡Qué desgracia tan fértil! Los supervivientes le ruegan que envíe ayuda.</Spanish>
-		<Russian>Милорд, ужасные вещи произошли в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Сначала замолчали птицы. Потом загудела земля. А после гора рядом с городом с треском раскололась извержением вулкана! Он выбрасывал в воздух раскаленные камни. Они падали на близлежащий город, убивая кур, собак и многих маленьких детей. И наконец, город и окрестности накрыли густые хлопья пепла, накрывая все черной пеленой. Какое бедствие для посевов! Выжившие умоляют вас послать помощь.</Russian>
+		<Russian>Милорд, ужасные вещи произошли в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Сначала замолчали птицы. Потом земля содрогнулась. А затем... затем гора рядом с городом взорвалась, обрушив потоки расплавленной породы на город! Погибло множество детей, животные, скот. Густой пепел укрыл поселение черным саваном. Какая катастрофа для урожая! Выжившие умоляют вас прислать помощь.</Russian>
 		<Hungarian>Uram, szörnyű dolgok történtek [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében. Először elhallgattak a madarak. Aztán a föld morajlott. Majd a város melletti hegy megrepedt és egy vulkán emelkedett ki a sziklából. Izzó, forró köveket lövellt a levegőbe. Ezek a közeli városra hullottak, megölve a csirkéket, a kutyákat és sok kisgyermeket. Végül vastag hamupelyhek szálltak lefelé, fekete leplet borítva a településre. Micsoda katasztrófa a termésnek! A túlélők segítségért könyörögnek.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -853,7 +853,7 @@
 		<German>Ein berüchtigter Straßenräuber, der in den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien gesucht wird, ist von einer unserer Stadtwachen aufgegriffen worden. Möglicherweise verrät er uns, wo er seine Beute versteckt hat.</German>
 		<Italian>Nei nostri territori è stato scoperto un fuggitivo, ricercato per i crimini commessi nell'impero [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Italian>
 		<Spanish>Hemos descubierto que en nuestro territorio se oculta un prófugo de la justicia, buscado por delitos en el imperio [COLOR_HIGHLIGHT_TEXT]%s1:1_civ_adjective[COLOR_REVERT].</Spanish>
-		<Russian>На нашей территории обнаружен скрывающийся от правосудия преступник, разыскиваемый за преступления в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колониях. Он может сказать нам, где спрятана его добыча.</Russian>
+		<Russian>На нашей территории обнаружен скрывающийся от правосудия преступник, разыскиваемый за преступления в колониях [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]. Он может сказать нам, где спрятана его добыча.</Russian>
 		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kolóniákon elkövetett bűncselekmények miatt körözött szökevényt találtak meg a területünkön. Talán elárulja, hol rejtegeti a zsákmányát.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -923,7 +923,6 @@
 		<Hungarian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT][COLOR_SELECTED_TEXT]%s3_city[COLOR_REVERT]: [ICON_GOLD] %F2_yield-ért és [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT]: [COLOR_POSITIVE_TEXT]%D4[COLOR_REVERT][ICON_GOLD] %F5_yield-ért.</Hungarian>
 	</TEXT>
 	<TEXT>
-		
 		<Tag>TXT_KEY_EVENTTRIGGER_PEASANT_WARPREP_EMIGRANT</Tag>
 		<English>Unrest in Europe is leading to an increase in the number of emigrants.</English>
 		<Portuguese>A agitação na Europa está a levar a um aumento no número de emigrantes.</Portuguese>
@@ -6408,7 +6407,7 @@
 		<English>[ICON_BULLET]The %s1 are [COLOR_NEGATIVE_TEXT] displeased[COLOR_REVERT].</English>
 		<Portuguese>[ICON_BULLET]Os %s1 estão [COLOR_NEGATIVE_TEXT] descontentes[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Die %s1 sind [COLOR_NEGATIVE_TEXT] verärgert[COLOR_REVERT]. Sie hatten sich mehr von Eurem Besuch versprochen. Das wird nicht so schnell vergessen.</German>
-		<Russian>[ICON_BULLET]%s1 [COLOR_NEGATIVE_TEXT]раздражены[COLOR_REVERT]. Они ожидали большего от вашего визита. Это не забудется так легко.</Russian>
+		<Russian>[ICON_BULLET]%s1 ожидали большего от вашего визита и выглядят [COLOR_NEGATIVE_TEXT]недовольными[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_1</Tag>
@@ -6432,7 +6431,7 @@
 		<Portuguese>Seu comerciante especialista descobriu uma aldeia nativa. Seus guardas o observam há um bom tempo e podem facilmente derrubá-lo. Como ele deveria se comportar?</Portuguese>
 		<French>Votre marchand expérimenté a découvert un village indien. Mais les indigènes vous observent depuis longtemps et peuvent vous abattre sans coup férir. Comment vous tenez-vous ? </French>
 		<German>Euer couragierter Ureinwohnerhändler hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
-		<Russian>Наш отважный торговец набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
+		<Russian>Наш отважный торговец обнаружил деревню индейцев. Жители уже довольно давно наблюдают за ним и могли бы без труда с ним расправиться, если бы захотели. Как ему следует вести себя?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1_News</Tag>

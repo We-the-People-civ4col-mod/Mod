@@ -2441,7 +2441,7 @@
 		<Portuguese>Estas pobres almas serão bem-vindas. Dê-lhes algo para comer para que possam recuperar as forças.</Portuguese>
 		<French>Ces pauvres âmes doivent être accueillies. Donnez leur une bonne couverture et de quoi manger pour qu'ils retrouvent leur force.</French>
 		<German>Diese armen Seelen sind uns wie alle anderen Willkommen. Gebt ihnen etwas zu Essen, damit sie wieder zu Kräften kommen.</German>
-		<Russian>Эти бедняги должны быть приняты. Дайте им что-нибудь поесть, чтобы они могли восстановить свои силы.</Russian>
+		<Russian>Мы примем этих несчастных в обмен на их службу колониям. Дайте им что-нибудь поесть, чтобы они могли восстановить свои силы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SICK_IMMIGRANTS_REFUSE</Tag>
@@ -2910,7 +2910,7 @@
 		<German>Welch grausige Kunde! Die armen Seelen haben mein tiefes Mitgefühl. Doch kann ich helfen? Selbst der mächtigste Mann ist machtlos gegen die Gewalten von Himmel und Hölle.</German>
 		<Italian>Invia gli aiuti disponibili ai sopravvissuti. Sii contento che la città non sia stata colpita.</Italian>
 		<Spanish>Enviad cuanta ayuda podamos a los supervivientes. Demos gracias de que la propia ciudad no se haya visto afectada.</Spanish>
-		<Russian>Отправьте всю возможную помощь выжившим. И возблагодарим Бога за то, что сам город не пострадал.</Russian>
+		<Russian>Отправьте всю возможную помощь выжившим. И возблагодарим Бога за то, что сам город не сильно пострадал.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_VOLCANO_DORMANT_1</Tag>
