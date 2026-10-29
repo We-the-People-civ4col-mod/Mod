@@ -1358,7 +1358,10 @@ void CvDLLButtonPopup::OnOkClicked(CvPopup* pPopup, PopupReturn *pPopupReturn, C
 				{
 					gDLL->sendPlayerAction(GC.getGameINLINE().getActivePlayer(), PLAYER_ACTION_SET_DIPLO_YIELD_AMOUNT, info.getData1(), pPopupReturn->getCurrentSpinBoxValue(0), eFromPlayer);
 				}
-				gDLL->updateDiplomacyAttitude(true);
+				if (gDLL->isDiplomacy())
+				{
+					gDLL->updateDiplomacyAttitude(true);
+				}
 				break;
 			}
 
