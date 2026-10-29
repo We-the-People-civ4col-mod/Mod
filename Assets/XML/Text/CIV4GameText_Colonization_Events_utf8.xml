@@ -2458,7 +2458,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_1</Tag>
-		<English>Because of constant attacks on peaceful merchant ships, war ships have been sent from Europe to hunt down the harassers.</English>
+		<English>Because of constant attacks on peaceful merchant ships, warships have been sent from Europe to hunt down the harassers.</English>
 		<Portuguese>Devido aos constantes ataques a navios mercantes pacíficos, navios de guerra foram enviados da Europa para caçar os assediadores.</Portuguese>
 		<French>Les attaques incessantes de nos navires marchands a conduit l'Europe à nous envoyer des frégates pour faire fuire les agresseurs.</French>
 		<German>Unablässige Angriffe auf Handelsschiffe beeinträchtigen den Handel mit Europa. Ein Monarch schickt ein Kriegsschiff, um die Störenfriede zu vertreiben.</German>
@@ -2467,35 +2467,39 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_2</Tag>
-		<English>Following ongoing attacks on merchant ships, war ships are coming from Europe to destroy the predators once and for all.</English>
+		<English>Following ongoing attacks on merchant ships, warships are coming from Europe to destroy the predators once and for all.</English>
 		<Portuguese>Após os contínuos ataques a navios mercantes, navios de guerra vêm da Europa para destruir os predadores de uma vez por todas.</Portuguese>
 		<French>Les attaques incessantes de nos navires marchands a conduit l'Europe à nous envoyer des frégates pour en finir une fois pour toute.</French>
 		<German>Immer noch beeinträchtigen Piraten die Überfahrten der Händler nach Europa. Ein Monarch schickt ein Kriegsschiff, um den Störenfrieden den Garaus zu machen.</German>
 		<Russian>После непрекращающихся атак на торговые суда из Европы прибывают фрегаты, чтобы уничтожить хищников раз и навсегда.</Russian>
+		<Hungarian>A kereskedelmi hajók elleni folyamatos támadásokat követően Európából Fregattok érkeznek, hogy egyszer s mindenkorra elpusztítsák a fosztogatókat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ANTI_PIRATE_3</Tag>
-		<English>Privateers and pirates are still terrorizing the merchants. A king in Europe is sending a third war ship to America to protect the sea lanes.</English>
+		<English>Privateers and pirates are still terrorizing the merchants. A king in Europe is sending a third warship to America to protect the sea lanes.</English>
 		<Portuguese>Corsários e piratas ainda aterrorizam os mercadores. Um rei da Europa está enviando um terceiro navio de guerra para a América para proteger as rotas marítimas.</Portuguese>
 		<French>Les corsaires et les pirates continuent à terroriser nos marchands. Un roi en Europe décide d'envoyer une troisième frégate aux Amériques pour protéger les voies maritimes.</French>
 		<German>Piraten terrorisieren ohne Unterlass die Überfahrten der Händler nach Europa. Ein Monarch scheut weder Kosten noch Mühen und schickt zum dritten Mal ein Kriegsschiff nach Amerika, um die Küste sicherer zu machen.</German>
 		<Russian>Каперы и пираты все еще терроризируют купцов. Короли Европы отправляют в Америку третий фрегат для защиты морских путей.</Russian>
+		<Hungarian>A kalózok és martalócok még mindig terrorizálják a kereskedőket. Egy európai Király egy harmadik Fregattot küld Amerikába, hogy megvédje a tengeri útvonalakat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_1</Tag>
-		<English>Milord, hostile ships are hunting our merchants. Our King's war ship will send them to a watery grave.</English>
+		<English>Milord, hostile ships are hunting our merchants. Our King's warship will send them to a watery grave.</English>
 		<Portuguese>Milorde, navios hostis estão caçando nossos mercadores. O navio de guerra do nosso Rei irá enviá-los para uma sepultura aquática.</Portuguese>
 		<French>Seigneur, des navires hostiles chassent nos marchands. Notre Roi va envoyer une frégate pour combattre les pirates.</French>
 		<German>Milord, Piraten und Freibeuter fremder Nationen machen unsere Küste unsicher. Seine Majestät wird ein Kriegsschiff entsenden, um den Halunken ein nasses Grab zu bereiten.</German>
 		<Russian>Милорд, вражеские корабли охотятся на наших торговцев. Фрегат нашего Короля отправит их на дно.</Russian>
+		<Hungarian>Uram, ellenséges hajók vadásznak a kereskedőinkre. Királyunk Fregattja a tenger mélyére fogja küldeni őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_2</Tag>
-		<English>Milord, hostile ships are still hunting along our coast where they capture our merchant ships. Our King will send another war ship to protect the sea lanes.</English>
+		<English>Milord, hostile ships are still hunting along our coast where they capture our merchant ships. Our King will send another warship to protect the sea lanes.</English>
 		<Portuguese>Milorde, navios hostis ainda caçam ao longo da nossa costa, onde capturam os nossos navios mercantes. Nosso Rei enviará outro navio de guerra para proteger as rotas marítimas.</Portuguese>
 		<French>Seigneur, des navires hostiles continuent à patrouiller le long de nos côtes et à capturer nos navires marchands. Notre Roi envoi une nouvelle frégate pour protéger les voies maritimes.</French>
 		<German>Milord, immer noch segeln Feinde an unserer Küste entlang und machen Jagd auf unsere Schiffe. Seine Majestät entsendet ein weiteres Kriegsschiff zu unserem Schutz.</German>
 		<Russian>Милорд, вражеские корабли все еще охотятся у нашего побережья, захватывая наши торговые суда. Наш Король отправит еще один фрегат для защиты морских путей.</Russian>
+		<Hungarian>Uram, az ellenséges hajók még mindig vadásznak a partjaink mentén, ahol elfogják a kereskedelmi hajóinkat. Királyunk újabb Fregattot küld a tengeri útvonalak védelmére.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ANTI_PIRATE_3</Tag>
@@ -2504,6 +2508,7 @@
 		<French>Seigneur, notre Roi est profondément déçu de notre incapacité à assurer la sécurité des voies maritimes. Il a envoyé encore une frégate d'Europe pour nous aider. Soyez assuré que c'est la dernière fois qu'il nous viendra en aide.</French>
 		<German>Milord, Seine Majestät lässt verlauten, er sei enttäuscht von Eurem Unvermögen, die Piraten und feindlichen Freibeuter zur Räson zu ziehen. Er hat erneut ein Kriegsschiff aus Europa in die Neue Welt abkommandiert, um diese Schurken auszuschalten. Seine Majestät warnt Euch aber, dass er keine weiteren Schiffe mehr entbehren könne.</German>
 		<Russian>Милорд, Король разочарован нашей неспособностью разобраться с вражескими кораблями. Он в очередной раз приказал отправить фрегат из Европы в Новый Свет, чтобы уничтожить этих негодяев. Однако, Король предупреждает нас, что больше кораблей он выделить не сможет.</Russian>
+		<Hungarian>Uram, a Királyunk azt mondja, csalódott, hogy képtelenek vagyunk megfékezni az ellenséges hadihajókat. Ismét egy Fregattot rendelt Európából az Újvilágba, hogy leszámoljon ezekkel a gazemberekkel. A Királyunk azonban figyelmeztet minket, hogy nem tud több hajót nélkülözni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NO_SMOKING</Tag>
@@ -2514,6 +2519,7 @@
 		<Italian>I coltivatori di tabacco si stanno facendo fare il culo da donne recalcitranti.</Italian>
 		<Spanish>Los cultivadores de tabaco están recibiendo una paliza por parte de las mozas recalcitrantes.</Spanish>
 		<Russian>Разгневанные женщины угрожают плантации табака.</Russian>
+		<Hungarian>Dühös nők egy dohányültetvényt fenyegetnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NO_SMOKING_1</Tag>
@@ -2524,6 +2530,7 @@
 		<Italian>Signore, delle femmine arrabbiate stanno marciando verso una piantagione di tabacco fuori da [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Portano torce e intendono bruciare la tenuta al suolo. Il loro leader fa discorsi infuocati che inalare fumo è satanico. Chiunque sbuffi un sigaro farebbe un'offerta bruciata al diavolo.</Italian>
 		<Spanish>Excelencia, las hembras enfurecidas están marchando hacia una plantación de tabaco en las afueras de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Llevan antorchas y pretenden quemar la finca hasta los cimientos. Su líder hace discursos encendidos de que inhalar humo es satánico. Cualquiera que fume un cigarro estaría haciendo una ofrenda quemada al diablo.</Spanish>
 		<Russian>Милорд, разгневанные женщины идут на табачную плантацию за пределами [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Они несут факелы и хотят предать её огню. Их предводительница заявляет, что вдыхать дым — сатанинское дело. Всякий, кто курит сигару, служит дьяволу.</Russian>
+		<Hungarian>Uram, dühös nők vonulnak [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egyik dohányültetvényére. Fáklyákat visznek magukkal és fel akarják gyújtani a birtokot. Vezetőjük hangosan kijelenti, hogy a füst belélegzése sátáni dolog. Aki szivart szív, az égőáldozatot mutat be az ördögnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BUGS</Tag>
@@ -2532,6 +2539,7 @@
 		<French>Une invasion de charançons trouble nos récoltes de coton.</French>
 		<German>Rüsselkäfer und ihre Larven plagen eine Baumwollplantage.</German>
 		<Russian>Долгоносики уничтожают посевы хлопка.</Russian>
+		<Hungarian>A gyapotevő bogarak elpusztítják a gyapottermést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BUGS_1</Tag>
@@ -2540,6 +2548,7 @@
 		<French>Seigneur, une invasion de charançons du coton trouble nos récoltes dans une plantation près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ce scarabée noir fore dans la fleur et y pond. Les larves dévorent tout de l'intérieur avant que nous ne puvions récolter les filament. Un guérissuer indigène nous recommande de détruire les champs et d'incendier la plantation. Sinon l'insecte va se répandre.</French>
 		<German>Milord, Baumwollkapselkäfer haben eine Plantage bei [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] befallen. Das schwarze Getier bohrt seine Rüssel in die Kapselfrüchte und legt dort Eier ab. Larven fresssen die Kapseln leer, bevor wir ihre Samenfäden ernten können. Ein indianischer Medizinmann hat uns geraten, die Felder zu vernichten und sogar das Anwesen niederzubrennen, anderenfalls sei der Plage nicht Herr zu werden.</German>
 		<Russian>Милорд, долгоносики заполонили плантацию возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Черный жук вгрызается в хлопковую коробочку и откладывает туда яйца. Личинки съедают все, что находится в капсулах, прежде чем мы успеваем собрать хлопковые нити. Шаман индейцев советует нам уничтожить поля и сжечь плантацию. В противном случае заражение будет распространяться.</Russian>
+		<Hungarian>Uram, a gyapotevő bogarak megfertőzték [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egy ültetvényét. A fekete bogár belefúrja magát a gyapotbogyóba és ott rakja le petéit. A lárvák mindent megesznek, mielőtt betakaríthatnánk a gyapotszálakat. Egy indián orvos azt tanácsolja, hogy pusztítsuk el a földeket és égessük fel az ültetvényt. Ellenkező esetben a fertőzés tovább terjed.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_CATHEDRALS_1</Tag>
@@ -2548,6 +2557,7 @@
 		<French>Vous avez construit votre première église dans le Nouveau Monde. Cependant, la piété n'aime pas la fausse modestie.</French>
 		<German>Ihr habt Eure erste Kirche in der Neuen Welt erbaut und damit ein frommes Werk getan. Doch Gottesfurcht kennt weder Maß noch Bescheidenheit.</German>
 		<Russian>Вы построили свою первую церковь в Новом Свете и таким образом совершили благочестивое дело. Однако благочестие не любит ложной скромности.</Russian>
+		<Hungarian>Megépítetted az első templomodat az Újvilágban és ezzel erényes munkát végeztél. Ne feledd, hogy az istenfélelem nem ismer sem mértéket, sem szerénységet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_CATHEDRALS</Tag>
@@ -2556,6 +2566,7 @@
 		<French>Mon Dieu ! Un autre gouverneur a déjà construit cinq abbayes avant que nous en soyons capable. Oublions notre récompense.</French>
 		<German>Schlechte Kunde, Milord! Ein anderer Gouverneur hat als Erster fünf Abteien gebaut. Rechnet nicht mehr mit einer Belohnung, wenn Ihr ihm nacheifert.</German>
 		<Russian>Господи, ну как так-то?! Другой губернатор построил пять аббатств раньше, чем мы. Забудьте о каких-либо наградах...</Russian>
+		<Hungarian>Az Isten szerelmére! Egy másik kormányzó öt apátságot épített, mielőtt mi megtehettük volna. Felejtsük el a jutalmat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_CATHEDRALS_DONE</Tag>
@@ -2564,6 +2575,7 @@
 		<French>Une puissance étrangère a construit cinq abbayes.</French>
 		<German>Eine Nation hat fünf christliche Abteien errichtet.</German>
 		<Russian>Кто-то построил пять аббатств.</Russian>
+		<Hungarian>Valaki öt apátságot épített.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_CATHEDRALS_DONE</Tag>
@@ -2572,6 +2584,7 @@
 		<French>Félicitations, Sire ! Vous êtes le premier gouverneur à construire cinq abbayes dans le Nouveau Monde. Le Seigneur vous bénit. Votre Roi semble être d'humeur généreuse aujourd'hui.</French>
 		<German>Glückwunsch, Milord! Ihr habt als erster Gouverneur fünf Abteien in der Neuen Welt errichtet. Gottes Lohn ist Euch gewiss. Aber auch Seine Majestät möchte sich großzügig zeigen.</German>
 		<Russian>Поздравляю, Милорд! Вы первый губернатор с пятью аббатствами в Новом Свете. Да снизойдёт на вас Благословение Господа. Его Величество сегодня в прекрасном настроении после это новости.</Russian>
+		<Hungarian>Gratulálok, Uram! Ön az első kormányzó, akinek öt apátsága van az Újvilágban. Az Úr áldása van rajtunk és Őfelsége ma nagylelkű hangulatban van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_1</Tag>
@@ -2580,14 +2593,16 @@
 		<French>Une délagation de la guilde des quincailliers demande à vous voir. Les maitres de forge vous félicitent de vos efforts à mettre en place un fabrique d'outil pour la fabrication en masse de quincaillerie. La demande en clous, rivets, écrous et axes, serre-joints et vis croît. La productivité entrainera le progrès dans les colonies. ILs suggèrent construire une grande fabrique d'outils dans un lieu central, plus grande que ce que le Nouveau Monde n'ait jamais vu.</French>
 		<German>Eine Abordnung der Handwerkergilden wird bei Euch vorstellig. Die Meister loben Eure Tatkraft, eine Schmiedemanufaktur errichtet zu haben, in der Eisenwaren in großen Mengen hergestellt werden können. Doch wüchse die Nachfrage an Nägeln und Nieten, Bolzen und Beilen, Schellen und Schrauben noch weiter an. Die Entwicklung der Kolonien hinge maßgeblich davon ab, diesen Bedarf zu decken. Demütig unterbreitet man Euch die Idee, an zentraler Stelle eine Fabrik zu errichten, größer als alle anderen, die die Neue Welt bisher gesehen hat.</German>
 		<Russian>Делегация от гильдий ремесленников к Губернатору. Мастера хвалят ваши усилия по созданию кузнечного цеха для массового производства скобяных изделий. Спрос на гвозди и заклепки, болты и оси, струбцины и винты растет. Производительность означает больший прогресс в колониях. Они предлагают построить фабрику, больше, чем когда-либо видел Новый Свет.</Russian>
+		<Hungarian>A kézműves céhek küldöttsége van itt, hogy találkozzon veled. A mesterek dicsérik a kovácsműhely felállítására tett erőfeszítéseidet a vasáru tömeggyártása érdekében. A szögek és szegecsek, csavarok és fejszék, bilincsek és ékek iránti kereslet egyre nő. A termelékenység nagyobb fejlődést jelent a gyarmatokon. Javasolják, hogy központi helyen építs egy gyárat, nagyobbat, mint amekkorát az Újvilág valaha is látott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_GREAT_TOOL_FACTORY</Tag>
-		<English>Another governor was the first to build a big hardware factory. Don't count on any rewards even if you catch up.</English>
+		<English>Another governor was the first to build a big hardware factory. Even if you catch up don't count on any rewards.</English>
 		<Portuguese>Outro governador foi o primeiro a construir uma grande fábrica de ferragens. Não conte com nenhuma recompensa, mesmo que você o alcance.</Portuguese>
 		<French>Un autre gouverneur a construit avant vous une grande fabrique d'outils. Oubliez la récompense !</French>
 		<German>Ein anderer Gouverneur hat als Erster eine Große Eisenwarenfabrik errichtet. Rechnet nicht mehr mit einer Belohnung, wenn Ihr gleichzieht.</German>
 		<Russian>Другой губернатор первым построил завод инструментов. Можете не рассчитывать ни на какие награды, даже если построите свой.</Russian>
+		<Hungarian>Egy másik kormányzó volt az első, aki Szerszámgyárat épített. Ne számítsunk jutalomra még akkor sem, ha később megépítjük.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
@@ -2596,6 +2611,7 @@
 		<French>Une puissance étrangère a construit une grande fabrique d'outils.</French>
 		<German>Eine Nation hat eine Große Eisenwarenfabrik errichtet.</German>
 		<Russian>Кто-то построил отличный завод по производству инструментов.</Russian>
+		<Hungarian>Valaki megépített egy szerszámgyárat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_GREAT_TOOL_FACTORY_DONE</Tag>
@@ -2604,14 +2620,16 @@
 		<French>Félicitations ! Vous êtes le premier gouverneur à construire une grande fabrique d'outils dans le nouveau monde. La guilde des artisans vous en est reconnaissante.</French>
 		<German>Welch erstaunliche Leistung! Ihr habt als erster Gouverneur eine Große Eisenwarenfabrik in der Neuen Welt errichtet. Die Handwerkergilden fühlen sich Euch zu Dank verpflichtet.</German>
 		<Russian>Какое удивительное достижение! Вы были первым губернатором, построившим в Новом Свете завод инструментов. Ремесленные гильдии чувствуют себя в долгу перед вами.</Russian>
+		<Hungarian>Micsoda elképesztő teljesítmény! Te vagy az első kormányzó, aki szerszámgyárat épített az Újvilágban. A kézműves céhek hálásak neked.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_1</Tag>
-		<English>Milord, at the opening ceremony for your arsenal, an oddly dressed foreigner pulls you aside. He speaks your language, but with a terrible accent. The man claims to be acting on behalf of a Russian prince who would like to do business with the strongest economic power in the New World.</English>
+		<English>At the opening ceremony for your arsenal, an oddly dressed foreigner pulls you aside. He speaks your language, but with a terrible accent. The man claims to be acting on behalf of a Russian prince who would like to do business with the strongest economic power in the New World.</English>
 		<Portuguese>Milorde, na cerimônia de abertura do seu arsenal, um estrangeiro vestido de maneira estranha o chama de lado. Ele fala a sua língua, mas com um sotaque terrível. O homem afirma estar agindo em nome de um príncipe russo que gostaria de fazer negócios com a potência econômica mais forte do Novo Mundo.</Portuguese>
 		<French>Sire, lors de la cérémonie d'ouverture de l'arsenal, un étranger accoutré de manière étrange vous tire à l'écart. Il parle votre langue avec un accent à couper au couteau. L'homme prétend agir au nom d'un prince Russe voulant faire affaire avec la plus grande puissance économique du Nouveau Monde.</French>
 		<German>Milord, beim Richtfest Eures Arsenals zieht Euch ein fremdartig gekleideter Ausländer beiseite. Er spricht Eure Muttersprache, doch mit einem fürchterlichen Akzent. Der Mann behauptet, im Auftrag eines russischen Fürsten zu handeln, der gerne mit der stärksten Wirtschaftsmacht der Neuen Welt ins Geschäft kommen möchte.</German>
 		<Russian>Милорд, на церемонии открытия вашего арсенала вас отводит в сторону странно одетый иностранец. Он говорит на вашем языке, но с жутким акцентом. Этот человек утверждает, что действует от имени русского князя, который хотел бы вести дела с сильнейшей экономической державой Нового Света.</Russian>
+		<Hungarian>Uram, a Hadiüzemed megnyitó ünnepségén egy furcsán öltözött külföldi félrehív. Beszéli a nyelved, de szörnyű akcentussal. A férfi azt állítja, hogy egy orosz herceg nevében jár el, aki az Újvilág legerősebb gazdasági hatalmával szeretne üzletet kötni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_GREAT_ARSENAL</Tag>
@@ -2620,6 +2638,7 @@
 		<French>Un autre gouverneur des Amériques a construit un Grand Arsenal. L'émissaire étranger va lui donner la récompense promise.</French>
 		<German>Ein anderer Gouverneur hat als Erster ein Großes Zeughaus errichtet und das Geschäft mit dem russischen Fürsten abschließen können. Schade!</German>
 		<Russian>Другой губернатор первым построил большой арсенал и заключил сделку с русским князем. Вот чёрт!</Russian>
+		<Hungarian>Uram, a Hadiüzemed megnyitó ünnepségén egy furcsán öltözött külföldi félrehív. Beszéli a nyelved, de szörnyű akcentussal. A férfi azt állítja, hogy egy orosz herceg nevében jár el, aki az Újvilág legerősebb gazdasági hatalmával szeretne üzletet kötni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_GREAT_ARSENAL_DONE</Tag>
@@ -2628,6 +2647,7 @@
 		<French>Une autre puissance a construit un Grand arsenal.</French>
 		<German>Eine andere Nation hat ein Großes Zeughaus errichtet.</German>
 		<Russian>Кто-то построил большой арсенал.</Russian>
+		<Hungarian>Valaki megépített egy Hadiüzemet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_GREAT_ARSENAL_DONE</Tag>
@@ -2636,6 +2656,7 @@
 		<French>Seigneur, vous êtes le premier gouverneur à construire un Grand arsenal. L'homme d'affaires mystérieux qui prétend agir pour le compte d'un prince Russe apparait à la cérémonie d'ouverture. Il parle toujours avec un accent à couper au couteau. Vous lui recommandez chaudement le tuteur de votre neveu, M. Chérel, qui aidera à assimiler sans peine une langue et sa prononciation. Mais d'abord, vous lui demandez l'offre du prince.</French>
 		<German>Milord, Ihr habt als Erster in der Neuen Welt ein Großes Zeughaus errichten können. Wie versprochen, taucht zum Richtfest der ominöse ausländische Geschäftsmann wieder auf, der vorgibt, im Auftrag eines russischen Fürsten zu handeln. Immer noch spricht der Unterhändler Eure Muttersprache mit furchtbarem Akzent. Ihr nehmt Euch vor, ihm den Hauslehrer Eurer Neffen, Herrn Berlitz, zu empfehlen, der bei der Spracherziehung der Tunichtgute wahre Wunder wirkte. Doch zuvor bittet Ihr den Fremden, die Angebote des Fürsten vorzutragen.</German>
 		<Russian>Милорд, вы первый губернатор в Новом Свете, построивший Большой Арсенал. На церемонии открытия снова появляется зловещий иностранный бизнесмен, который утверждает, что действует от имени русского князя. Переговорщик до сих пор говорит на вашем языке с ужасным акцентом. Вы берете на себя смелость порекомендовать репетитора ваших племянников, мистера Берлитца, который предлагает отличное языковое образование. Однако сначала вы просите незнакомца представить предложение князя.</Russian>
+		<Hungarian>Uram, te vagy az első kormányzó az Újvilágban, aki egy Hadiüzemet épített. Ahogy ígérte, a megnyitó ünnepségen újra megjelent az ominózus külföldi üzletember, aki azt állította, hogy egy orosz herceg nevében jár el. A tárgyaló még mindig szörnyű akcentussal beszéli az anyanyelvedet. Te az unokaöccseid tanítóját, Berlitz urat javaslod, aki kiváló nyelvoktatást nyújt. Előbb azonban megkéred az idegent, hogy ismertesse a herceg ajánlatát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RUM_BLOSSOM</Tag>
@@ -2652,6 +2673,7 @@
 		<French>Un entrepôt à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a subi un raid. Nos voisins [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] sont suspectés d'avoir pillé notre cargaison de rhum.</French>
 		<German>Ein Lagerhaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde überfallen und ausgeraubt. Unsere [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] Nachbarn in [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] werden verdächtigt, den Überfall begangen und die Ladung Rum geraubt zu haben.</German>
 		<Russian>Склад в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] подвергся налету. Наши соседи [COLOR_HIGHLIGHT_TEXT]%s1_civ[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s6_city[COLOR_REVERT] подозреваются в краже тележки рома.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egyik raktárát kifosztották.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RUINS_1</Tag>
@@ -2660,6 +2682,7 @@
 		<French>Sire, les ruines près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] n'avaient jamais été explorées proprement. Vos conseillers vous recommendent d'y envoyer une expédition.</French>
 		<German>Milord, die Ruinen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sind bis heute nicht gründlich untersucht worden. Eure Ratgeber empfehlen, eine Expedition zu entsenden.</German>
 		<Russian>Милорд, руины возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] так и не были исследованы должным образом. Советники рекомендуют отправить туда экспедицию.</Russian>
+		<Hungarian>Uram, a romokat [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] mellett soha nem kutatták át rendesen. A tanácsosaid egy expedíció kiküldését javasolják.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RUINS_DONE</Tag>
@@ -2668,6 +2691,7 @@
 		<French>Une expédition [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] prend route vers les ruines situées près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition bricht zu den Ruinen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf.</German>
 		<Russian>Экспедиция [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется к руинам возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedíció indul a romokhoz [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] mellé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUINS_HELP</Tag>
@@ -2676,6 +2700,7 @@
 		<French>Envoyez l'unité [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] dans les ruines près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] dans les %d3 prochains tours.</French>
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu den Ruinen nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
 		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] для осмотра руин возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в течение %d3 ходов.</Russian>
+		<Hungarian>Küldj egy [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] egységet a romokhoz [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelébe %d3 körön belül!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_RUINS</Tag>
@@ -2684,6 +2709,7 @@
 		<French>Malheureusement, votre expédition ne peut plus explorer les ruines.</French>
 		<German>Leider können die Ruinen von Eurer Expedition nicht mehr erkundet werden.</German>
 		<Russian>К сожалению, ваша экспедиция уже не может исследовать руины.</Russian>
+		<Hungarian>Sajnos az expedíciód már nem tudja felfedezni a romokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RUINS_DONE</Tag>
@@ -2692,6 +2718,7 @@
 		<French>Seigneur, notre expédition est arrivée aux ruines. Sur quoi nos hommes doivent-ils se concentrer ?</French>
 		<German>Milord, unsere Expedition hat die Ruinen erreicht. Wonach sollen unsere Männer suchen?</German>
 		<Russian>Милорд, наша экспедиция прибыла к руинам. Что будем искать?</Russian>
+		<Hungarian>Uram, expedíciónk megérkezett a romokhoz. Mit keresünk?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CARPENTER_FAMILY</Tag>
@@ -2700,6 +2727,7 @@
 		<French>Un maître charpentier [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] souhaite que sa famille en Europe lui rende visite.</French>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Zimmermeister möchte seine Familie in die Neue Welt nachkommen lassen.</German>
 		<Russian>Мастер-плотник из [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] хочет перевезти свою семью в Новый Свет.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ácsmester szeretné áthozni családját Európából.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CARPENTER_FAMILY_1</Tag>
@@ -2708,6 +2736,7 @@
 		<French>Un maître charpentier souhaite envoyer une lettre à sa famille en Europe et leur dire à quel point le Nouveau Monde est beau. Milord, il vous demande si vous pourriez lui donner un peu d'argent pour le passage de l'un de ses frères.</French>
 		<German>Ein Zimmermeister will seiner Familie in der Heimat schreiben, wie sehr ihm das Leben in der Neuen Welt gefällt. Er fragt Euch, Milord, ob Ihr ihm etwas Geld geben möchtet. Er würde es seinen Angehörigen schicken, damit einer seiner Brüder in die Neue Welt nachkommen kann.</German>
 		<Russian>Не так давно мастер-плотник писал письмо своей семье в Европу, в котором рассказывал о прекрасном Новом Свете. И теперь он спрашивает, Милорд, не могли бы вы оплатить проезд одного из его братьев в наши колонии.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ácsmester szeretné áthozni családját Európából.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BOOK_MORMON</Tag>
@@ -2716,6 +2745,7 @@
 		<French>Un citoyen [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a proclamé qu'un ange lui a révélé le Livre sacré de Mormon.</French>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Reich behauptet ein Mann, ein Engel hätte ihm nahe der Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] das Buch Mormon überreicht.</German>
 		<Russian>Житель [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] заявил, что ангел открыл ему священную Книгу Мормона.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] lakos [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében azt hirdeti, hogy egy angyal kinyilatkoztatta neki a Mormon szent könyvét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BOOK_MORMON</Tag>
@@ -2724,31 +2754,32 @@
 		<French>Un citoyen [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] proclame qu'un ange lui a révélé un livre sacré inscrit sur des plaques d'argent.[NEWLINE]La nouvelle se répand comme une trainée de poudre dans nos colonies. Presque tous les habitants de la ville le croit avec son livre des Mormons. Que devons-nous faire ?</French>
 		<German>Milord! Ein Mann behauptet, ein Engel hätte ihm in der Wüste nahe der Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] eine heilige Schrift überreicht.[NEWLINE]Die Nachricht verbreitet sich wie ein Lauffeuer, fast alle Stadtbewohner folgen ihm und diesem Buch Mormon bereits. Was sollen wir tun?</German>
 		<Russian>Один человек говорит, что в пустыне недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ангел явил ему Священную Книгу, начертанную на серебряных пластинах.[NEWLINE]Эта новость распространяется по нашим колониям со скоростью лесного пожара. Почти все жители города верят ему и этой так называемой Книге Мормона. Что нам с этим делать?</Russian>
+		<Hungarian>Egy férfi azt hirdeti, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] mellett a sivatagban egy angyal egy ezüstlemezekre írt Szent Könyvet mutatott fel.[NEWLINE]A hír futótűzként terjed a gyarmatokon. A város szinte minden lakója hisz neki és ennek az úgynevezett Mormon könyvnek. Mit tegyünk?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CORRUPT_STATESMAN</Tag>
-		<English>In the [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] colonial empire, corrupt government stattesmen were caught gambling in a dive bar.</English>
+		<English>In the [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] colonial empire, corrupt government statesmen were caught gambling in a tavern.</English>
 		<Portuguese>No império colonial [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT], estadistas governamentais corruptos foram apanhados a jogar num bar.</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Kolonialreich wurden korrupte Staatsbeamte beim Glückspiel in einer Spelunke erwischt.</German>
 		<Russian>В колониальной империи [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] коррумпированные государственные служащие были пойманы на азартных играх в захудалом баре.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CORRUPT_STATESMAN</Tag>
-		<English>My Lord! A number of royal officials have been caught gambling in a dive, and it is said that women of easy virtue were present as well. If you do nothing, this will bring the Crown and your office into disrepute.</English>
+		<English>My Lord! A number of royal officials have been caught gambling in an alehouse, and it is said that women of easy virtue were present as well. If you do nothing, this will bring the Crown and your office into disrepute.</English>
 		<Portuguese>Meu Senhor! Vários funcionários reais foram pegos jogando em um mergulho, e dizem que mulheres de virtudes fáceis também estavam presentes. Se você não fizer nada, isso trará descrédito à Coroa e ao seu cargo.</Portuguese>
 		<German>Milord! man hat einige königliche Verwaltungsbeamte beim Glückspiel in einer Spelunke erwischt und leichte Mädchen sollen auch dabei gewesen sein. Das Ansehen der Krone und auch Euer Amt werden dadurch beschmutzt, wenn Ihr nichts tut.</German>
 		<Russian>Милорд! Несколько королевских чиновников были пойманы за азартными играми в подпольном заведении и, говорят, что там также присутствовали женщины легкого поведения. Если вы ничего не предпримете, это опозорит Корону и Вашу должность.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CORRUPT_STATESMAN_1</Tag>
-		<English>It’s dead simple! Bribe the innkeeper and the whores and let the matter blow over. I suspect that’s not the only thing our royal officials get up to, but we’re stuck with them.</English>
+		<English>It’s dead simple! Bribe the innkeeper and the whores. Let the matter blow over. That’s not the only thing our royal officials get up to, but we’re stuck with them.</English>
 		<Portuguese>É muito simples! Suborne o estalajadeiro e as prostitutas e deixe o assunto passar. Suspeito que essa não seja a única coisa que nossos funcionários reais fazem, mas estamos presos a eles.</Portuguese>
 		<German>Das ist doch ganz einfach! Bestecht den Wirt und die Huren und lasst Gras über die Sache wachsen. Ich vermute das ist nicht das Einzige, was unsere könglichen Beamten so treiben, aber wir sind auf sie angewiesen.</German>
 		<Russian>Давайте уладим это дело по-тихому. Нужно подкупить трактирщика с проститутками и пусть дело само по себе затихнет. Подозреваю, что это не единственное, чем занимаются наши королевские чиновники, но что поделать, приходится с этим смириться.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CORRUPT_STATESMAN_2</Tag>
-		<English>You’re right, we absolutely must do something about this and send a clear message. We’ll arrest them and make an example of them. At least one of them will have to be hanged to maintain order.</English>
+		<English>You’re right! We absolutely must do something about this to send a clear message. We’ll arrest them and make an example of them. Hang at least one.</English>
 		<Portuguese>Você está certo, devemos absolutamente fazer algo a respeito e enviar uma mensagem clara. Vamos prendê-los e fazer deles um exemplo. Pelo menos um deles terá que ser enforcado para manter a ordem.</Portuguese>
 		<German>Ihr habt Recht, wir müssen unbedingt etwas dagegen unternehmen und ein Zeichen setzen. Wir verhaften sie und statuieren ein Exempel. Mindestens einer von Ihnen wird hängen müssen, um die Ordnung zu wahren.</German>
 		<Russian>Вы правы, не стоит смотреть на это сквозь пальцы. Мы арестуем их и устроим показательный суд. Как минимум одного из них придётся повесить, чтобы сохранить порядок в колониях.</Russian>
@@ -2762,7 +2793,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CORRUPT_STATESMAN_REMOVE_ONE_STATESMAN</Tag>
-		<English>[ICON_BULLET]One Statesman will disappear from the city.</English>
+		<English>[ICON_BULLET]One statesman will disappear from the city.</English>
 		<Portuguese>[ICON_BULLET]Um estadista desaparecerá da cidade.</Portuguese>
 		<German>[ICON_BULLET]Ein Staatsmann wird aus der Stadt entfernt.</German>
 		<Russian>[ICON_BULLET]Один государственный деятель исчезнет из города.</Russian>
@@ -2809,6 +2840,7 @@
 		<French>Une émeute royaliste dans les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est survenue à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Kolonialreich wird von Protesten treuer Royalisten erschüttert, sie gehen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] auf die Straße!</German>
 		<Russian>В [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колонии [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] бунт роялистов.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Királypárti lázadás zajlik [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] területén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS</Tag>
@@ -2817,6 +2849,7 @@
 		<French>Seigneur, certain citoyens éminents de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] manifestent. Ils déclarent que vous n'êtes pas vraiment loyal envers notre Souverain. Vous vous devez de réagir, mais gare aux conséquences !</French>
 		<German>Milord! Ein guter Teil der Bürger in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zieht protestierend in Richtung des örtlichen Regierungspalastes. Sie werfen Euch vor, dass Ihr unserem König nicht mehr loyal seid, einige bezichtigen Euch gar des Separatismus! Ihr müsst etwas tun, doch bedenkt, dass es Folgen haben könnte ...</German>
 		<Russian>Милорд, некоторые видные граждане [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] заявляют, что на самом деле вы не лояльны к суверену. Вы должны ответить, но не забывайте о последствиях!</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egyes prominens polgárai azt állítják, hogy nem vagy igazán hűséges az uralkodóhoz. Válaszolnod kell nekik, de vigyázz a következményekkel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THE_ROYALS_1PYTHON</Tag>
@@ -2825,6 +2858,7 @@
 		<French>... peut-être que même le Roi va entendre parler de nos bonnes manières ...</French>
 		<German>... von solch wohlfeilem Gebaren könnte sogar der König erfahren ...</German>
 		<Russian>... может быть, Король услышит о ваших хороших манерах ...</Russian>
+		<Hungarian>... talán a Király hallani fog a jó modorodról ...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THE_ROYALS_2PYTHON</Tag>
@@ -2833,6 +2867,7 @@
 		<French>... ce type de conversation peut causer des problèmes ...</French>
 		<German>... dieses royalistische Palaver könnte uns noch zu schaffen machen ...</German>
 		<Russian>... такого рода разговоры могут вызвать некоторые проблемы ...</Russian>
+		<Hungarian>... ez a fajta beszéd okozhat némi gondot ...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THE_ROYALS_3PYTHON</Tag>
@@ -2841,6 +2876,7 @@
 		<French>... ce type d'action peut les rendre très énervés ...</French>
 		<German>... das wird für Groll und Wut sorgen, die Königstreuen könnten uns noch einen Denkzettel verpassen ...</German>
 		<Russian>...это может ещё больше разозлить лоялистов...</Russian>
+		<Hungarian>... ez még jobban feldühítheti a lojalistákat ...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THE_ROYALS_4PYTHON</Tag>
@@ -2849,6 +2885,7 @@
 		<French>... c'est violent, ils chercheront certainement à se venger ...</French>
 		<German>... ein heikler Schritt, die Lumpen werden sicher Rache üben ...</German>
 		<Russian>... это сложная вещь. Они точно захотят отомстить...</Russian>
+		<Hungarian>... ez kemény dolog. Biztosan bosszút akarnak majd állni ...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_1</Tag>
@@ -2857,6 +2894,7 @@
 		<French>Le roi [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] a envoyé un cadeau à son gouverneur loyal.</French>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] König zeigt sich gegenüber seinem treuen Gouverneur erkenntlich.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Король посылает подарок своему верному губернатору.</Russian>
+		<Hungarian>A fenséges [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Király ajándékot küld hűséges kormányzójának.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_1</Tag>
@@ -2865,6 +2903,7 @@
 		<French>Il semble, sire, que votre offre ne pouvait effectivement pas être refusée et qu'elle a marqué les esprit à la cour du Roi. Son Altesse vous envoie deux de ses meilleurs hommes pour vous protéger.</French>
 		<German>Es scheint, Milord, dass Eure aufrichtigen Bemühungen um die königstreuen Bürger von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] sogar am entfernten Hofe Eindruck schinden. Mit den besten Grüßen schickt Euch Seine Majestät zwei kampferprobte Soldaten als Leibwache.</German>
 		<Russian>Кажется, милорд, что ваш труд признан Королевским двором. Его Величество посылает двух своих самых выдающихся солдат защищать вашу жизнь.</Russian>
+		<Hungarian>Úgy tűnik, Uram, hogy a Királyi udvarban elismerik a kemény munkádat. Őfelsége két legkiválóbb katonáját küldi, hogy megvédjék az életed.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_2</Tag>
@@ -2873,6 +2912,7 @@
 		<French>Les royalistes sèment le trouble dans les colonies [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</French>
 		<German>Überall im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonialreich begehren die Royalisten auf.</German>
 		<Russian>В [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колонии роялисты доставляют неприятности.</Russian>
+		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Királypártiak gondot okoznak a gyarmatokon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_2</Tag>
@@ -2881,6 +2921,7 @@
 		<French>Seigneur, les royalistes semblent faire usage de leur droit d'expression. Ils sont en train de fonder des clubs et des loges partout. Pour le moment ce n'est un problème que dans les plus grandes villes, le reste du pays reste encore à l'écart.</French>
 		<German>Milord! Die Königstreuen scheinen von ihrem Recht auf freie Rede regen Gebrauch zu machen. Es bilden sich überall Logen und Clubs. Gerade die großen kulturellen Zentren des Landes scheinen diesen patriotischen Tendenzen anheim zu fallen. Unter der einfachen Bevölkerung auf dem Lande finden dererlei Grillen noch keinen Anklang.</German>
 		<Russian>Милорд, роялисты в полной мере пользуются своим правом на свободу слова. Их клубы и ложи повсюду. В основном в крупных городах, деревенские жители, пока, не участвуют.</Russian>
+		<Hungarian>Uram, a Királypártiak teljes mértékben élnek a szabad véleménynyilvánítás jogával. Klubjaik és páholyaik mindenütt jelen vannak. Főleg a nagyobb városokban. A vidéki emberek egyelőre nem csatlakoznak hozzájuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
@@ -2889,14 +2930,16 @@
 		<French>Les royalistes ont détruit les réserves de nourriture dans les [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</French>
 		<German>Royalisten haben in den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Städten Nahrung vernichtet.</German>
 		<Russian>Роялисты уничтожили еду в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] колониях.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Királypártiak elpusztították az élelemkészletet a gyarmatokon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_3</Tag>
-		<English>Milord. The King's loyalists have tricked us. They've gotten into all the granaries in all the cities and destroyed everything edible. In many places good people helped because they were told you gave the order! The royalists printed fake notices that said, "Because of outrageously high taxes it is the first duty of citizens to oppose the king! Destroy all food in all cities in protest!"</English>
+		<English>Milord! The King's loyalists have tricked us. They've gotten into granaries in all our cities and destroyed everything edible. In many places good people helped because they were told you gave the order! The royalists printed fake notices that said, "Because of outrageously high taxes it is the first duty of citizens to oppose the king! Destroy all food in all cities in protest!"</English>
 		<Portuguese>Milorde. Os leais ao Rei enganaram-nos. Eles invadiram todos os celeiros de todas as cidades e destruíram tudo que era comestível. Em muitos lugares, pessoas boas ajudaram porque lhes disseram que você dava a ordem! Os monarquistas imprimiram avisos falsos que diziam: "Por causa dos impostos escandalosamente elevados, é o primeiro dever dos cidadãos opor-se ao rei! Destruir todos os alimentos em todas as cidades em protesto!"</Portuguese>
 		<French>Sire ! Les royalistes nous ont durement touchés. Ils ont détruit de grandes réserves de nourritures dans tous nos greniers. Apparemment, ils ont dupé les populations locales et les troupes en proclamant qu'il s'agissait de votre ordre : la « fête de la nourriture » contre le Roi.</French>
 		<German>Milord! Die Königstreuen haben uns übel mitgespielt. Sie haben in allen Städten die Kornspeicher besetzt und begonnen, das Getreide und alles andere Essbare zu vernichten. Vielerorts beteiligten sich brave Leute an diesem Frevel, weil es hieß, es wäre Eure Order! Auf getürkten Anschlägen stand zu lesen: "Aufgrund der unverschämt hohen Steuern ist es erste Bürgerpflicht, sich dem König zu widersetzen! Vernichtet aus Protest alle Nahrungsmittel in allen Städten!"</German>
 		<Russian>Милорд. Сторонники короля обманули нас. Они забрались во все зернохранилища во всех городах и уничтожили все съестное. Во многих местах хорошие люди помогали, потому что им сказали, что это вы отдали такой приказ! Роялисты напечатали поддельные объявления, в которых говорилось: "Из-за возмутительно высоких налогов первая обязанность граждан — выступить против Короля! В знак протеста уничтожить всю еду во всех городах!"</Russian>
+		<Hungarian>Uram! A Király hívei kijátszottak minket! Bejutottak az összes város magtárába és elpusztítottak mindent, ami ehető. Sok helyen a jó emberek segítettek, mert azt mondták nekik, hogy te adtad a parancsot! A Királypártiak hamis hirdetményeket nyomtattak, amelyeken ez állt: "A felháborítóan magas adók miatt a polgárok első számú kötelessége, hogy szembeszálljanak a Királlyal! Tiltakozásul az összes városban semmisítsetek meg minden élelmet!"</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
@@ -2905,6 +2948,7 @@
 		<French>Les royalistes ont fait sauter le journal dans la ville [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Royalisten haben in der [COLOR_HIGHLIGHT_TEXT]%s3_civ_adjective[COLOR_REVERT] Stadt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] die Druckerpressen der lokalen Zeitung gesprengt!</German>
 		<Russian>Газета в [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] была взорвана роялистами.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] Királypártiak felrobbantották [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nyomdáját.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THE_ROYALS_CONSEQUENCES_4</Tag>
@@ -2913,6 +2957,7 @@
 		<French>Seigneur, SEIGNEUR ! Le journal de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été détruit ! Il semble qu'un mouvement clandestin royaliste est sorti de terre pour se venger. Ils ont peint « Longue vie au Roi » sur un mur à proximité. Le graffiti est signé de M. Alçofricas Lavrain, un drôle de nom...</French><!-- Guy Fawkes à l'envers ... anagramme de François Ravaillac -->
 		<German>Milord! MILORD ! In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurden die Druckerpressen der lokalen Zeitung in die Luft gejagt. Eine versprengte Gruppe Royalisten hat wohl Rache genommen. An einer Wirtshauswand in der Nähe stand in großen Lettern: "Es lebe der König!", unterzeichnet von einem gewissen Sir Sekwaf Yug. Es scheint ein Tarnname zu sein, so heißt doch kein ...</German>
 		<Russian>Милорд, МИЛОРД! В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] было взорвано здание газеты! Это похоже на месть подпольного роялистского движения. Они нарисовали "Да здравствует король" на соседней стене и оставили глупую подпись "Сэр Секваф Юг".</Russian>
+		<Hungarian>Uram, URAM! [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nyomdáját felrobbantották! Úgy néz ki, hogy ez egy Királypárti földalatti mozgalom bosszúja. "Éljen soká a Király" feliratot festettek egy közeli falra, Sir Sekwaf Yug, egy ügyetlen álnév aláírásával.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THE_ROYALS_2aPYTHON</Tag>
@@ -2921,20 +2966,22 @@
 		<French>... Le soutien pour une révolution chute, en tout cas dans les grandes villes ...</French>
 		<German>... die revolutionäre Begeisterung lässt nach, aber wenigstens nur in den großen Städten ...</German>
 		<Russian>Революционный энтузиазм ослабевает, но пока, по крайней мере, только в больших городах...</Russian>
+		<Hungarian>A forradalomra való hajlandóság csökken, főleg a nagyobb városokban ...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PIRATES</Tag>
-		<English>The wealth of this country is astonishing! Chests full of gold, gems and jewellery are pouring into the port cities. Wealth so easily exchanged brings out the worst in people. Honestly, my lord, there's already a lot of talk in the harbour taverns about which warehouse might be worth a visit. If you do not do something soon, greed will poison your good colonists.</English>
+		<English>The wealth of this country is astonishing! Chests full of gold, gems and jewelry are pouring into the port cities. Wealth so easily exchanged brings out the worst in people. Honestly, my lord, there's already a lot of talk in the harbour taverns about which warehouse might be worth a visit. If you do not do something soon, greed will poison your good colonists.</English>
 		<Portuguese>A riqueza deste país é surpreendente! Baús cheios de ouro, pedras preciosas e joias estão chegando às cidades portuárias. A riqueza tão facilmente trocada traz à tona o que há de pior nas pessoas. Honestamente, meu senhor, já se fala muito nas tabernas do porto sobre qual armazém vale a pena visitar. Se você não fizer algo logo, a ganância envenenará seus bons colonos.</Portuguese>
 		<French>La richesse de cette terre est étonnante ! Des coffres pleins d'or, de bijoux et de pierres précieuses affluent dans les villes portuaires. Eh bien, voir de telles choses ne fait pas toujours ressortir le meilleur des gens. Pour être honnête, monseigneur, il y a déjà des rumeurs dans les tavernes et les quartiers du port sur l'entrepôt qui mériterait une visite. Si vous n'agissez pas rapidement, la cupidité empoisonnera vos bons colons.</French>
 		<German>Der Reichtum dieses Landes ist erstaunlich! Kisten voll Gold, Geschmeide und mannigfaltigen Gemmen strömen in die Hafenstädte. Nun, derartiges zu sehen befördert nicht immer das Beste in den Menschen. Um ehrlich zu sein, Milord, man munkelt in den Spelunken und Hafenvierteln bereits, welches Lagerhaus einen Besuch gar lohnen würde. Wenn Ihr nicht bald etwas unternehmt, dann wird die Gier Eure braven Kolonisten vergiften.</German>
 		<Italian>La ricchezza di questa terra è sorprendente! I forzieri pieni d'oro, di gioielli e di molteplici gemme si riversano nelle città portuali. Beh, vedere queste cose non sempre tira fuori il meglio dalle persone. Ad essere onesti, mio signore, ci sono già voci nelle taverne e nei quartieri del porto su quale magazzino varrebbe la pena visitare. Se non agite presto, l'avidità avvelenerà i vostri buoni coloni.</Italian>
 		<Spanish>La riqueza de esta tierra es asombrosa. Cofres llenos de oro, joyas y múltiples gemas llegan a las ciudades portuarias. Pues bien, ver esas cosas no siempre saca lo mejor de las personas. A decir verdad, mi señor, ya hay rumores en las tabernas y los barrios del puerto sobre qué almacén merecería una visita. Si no actúan pronto, la codicia envenenará a sus buenos colonos.</Spanish>
 		<Russian>Богатство этой страны поражает воображение! Сундуки, наполненные золотом, серебром и различными драгоценными камнями, копятся на складах портовых городов, ожидая отправки в Старый свет. И наблюдение за этим иногда пробуждает в людях не самые лучшие их качества. Честно говоря, милорд, в тавернах и портовых кварталах уже начинаются разговоры о том, какой склад стоит "посетить". Если вы не предпримете что-то в ближайшее время, жадность отравит разум ваших колонистов.</Russian>
+		<Hungarian>Megdöbbentő ennek az országnak a gazdagsága! Arannyal, ékszerekkel és sokféle drágakővel teli ládák özönlenek a kikötővárosokba. Nos, az ilyen dolgok látványa nem mindig hozza ki az emberből a legjobbat. Hogy őszinte legyek, Uram, a kocsmákban és a kikötői negyedekben máris pletykálnak arról, hogy melyik raktárat lenne érdemes meglátogatni. Ha nem teszel valamit gyorsan, a kapzsiság megmérgezi a jó embereidet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1_HELP</Tag>
-		<English>If this treasure is still in the harbor after %d1 [NUM1:turn:turns], the pirates will steal it. If you move it away in time, a Pirate Cutter will appear off the coast instead.</English>
+		<English>If this treasure is still in the harbour after %d1 [NUM1:turn:turns], pirates will steal it. If you move it away in time, a pirate cutter will appear off the coast instead.</English>
 		<Portuguese>Se este tesouro ainda estiver no porto após %d1 [NUM1:turno:turnos], os piratas irão roubá-lo. Se você afastá-lo a tempo, um Cúter Pirata aparecerá na costa.</Portuguese>
 		<German>Wenn sich dieser Schatz nach %d1 [NUM1:Runde:Runden] noch immer im Hafen befindet, werden die Piraten ihn stehlen. Bringst du ihn rechtzeitig fort, werden die Piraten vor der Küste lauern.</German>
 		<Russian>Если через %d1 [NUM1:ход:ходов] это Сокровище будет находиться в гавани, его украдут пираты. Если же вы успеете его убрать, у берегов появится Пиратский катер.</Russian>
@@ -2948,21 +2995,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1a</Tag>
-		<English>Pirates watch the harbor.</English>
+		<English>Pirates watch the harbour.</English>
 		<Portuguese>Piratas vigiam o porto.</Portuguese>
 		<German>Piraten beobachten den Hafen.</German>
 		<Russian>Пираты наблюдают за гаванью.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1A_STOLEN</Tag>
-		<English>The pirates have stolen the treasure from the harbor of %s1!</English>
+		<English>Pirates have stolen the treasure from the harbour of %s1!</English>
 		<Portuguese>Os piratas roubaram o tesouro do porto de %s1!</Portuguese>
 		<German>Die Piraten haben den Schatz im Hafen von %s1 gestohlen!</German>
 		<Russian>Пираты украли Сокровище из гавани города %s1!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1A_CUTTER</Tag>
-		<English>A Pirate Cutter has appeared off the coast of %s1!</English>
+		<English>A pirate cutter has appeared off the coast of %s1!</English>
 		<Portuguese>Um Cúter Pirata apareceu na costa de %s1!</Portuguese>
 		<German>Vor der Küste von %s1 ist ein Piratenkutter aufgetaucht!</German>
 		<Russian>У берегов города %s1 появился Пиратский катер!</Russian>
@@ -2975,6 +3022,7 @@
 		<French>Un changement dans les courants a perturbé les habitudes de reproduction des poissons. Les pêcheurs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] transportent une prise exceptionnellement abondante. Bien que les rendements saisonniers sont en plein essor, les anciens grommèlent que cette surpêche pour cette saison ponctuelle entrainera des années dee vaches maigres.</French>
 		<German>Eine Strömungsänderung hat das übliche Laichverhalten gestört und die Fischerleute aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ziehen ungewöhnlich reiche Fänge auf ihre Boote. Obwohl die saisonalen Erträge in die Höhe schiessen, raten erfahrene Fischer zur Zuückhaltung, um durch das intensive Fischen nicht die Erträge der kommenden Jahre zu gefährden.</German>
 		<Russian>Изменение течения нарушило обычные схемы нереста. Рыбаки из портов [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] вылавливают необычайно богатый улов. Хотя сезонные урожаи растут, местные старейшины ворчат, что это может поставить под угрозу улов в ближайшие годы.</Russian>
+		<Hungarian>A változó áramlatok megzavarták a szokásos ívási szokásokat. [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kikötőinek halászai szokatlanul gazdag fogásra tettek szert. Bár a rövid távú hozam fellendül, a helyi öregek azt kifogásolják, hogy az ilyen intenzív halászat veszélyeztetheti a fogást az elkövetkező években.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PROSPECTORS</Tag>
@@ -2983,6 +3031,7 @@
 		<French>Attiré par des rumeurs étranges à propos de gisements d'argent abondants, les prospecteurs étrangers indépendants se ruent dans les montagnes près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Ces itinérants souhaitent certainement garder les meilleurs prises pour eux-mêmes !</French>
 		<German>Durch wilde Gerüchte bezüglich reicher Silbervorkommen angelockt, strömen fremde Glücksuchende in die Berge nahe [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Bald werden diese die besten Claims für sich beansprucht haben!</German>
 		<Russian>Привлеченные слухами о богатых месторождениях серебра, иностранные старатели устремляются в горы возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Эти прохвосты стремятся заполучить лучшие самородки!</Russian>
+		<Hungarian>A helyi ezüstlelőhelyekről szóló pletykák vonzzák a külföldi aranyásókat, akik [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében lévő hegyekbe özönlenek. Ezeknek a szerencsevadászoknak az a céljuk, hogy a legjobb zsákmányt szerezzék meg maguknak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WITCHTRIAL</Tag>
@@ -2991,6 +3040,7 @@
 		<French>Le bruit court qu'une famille de récents immigrants à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] est en fait composée de sorcières ! Elles restent entre elles, font pousser d'étranges racines dans leur jardin, et ne vont pas à l'église le dimanche. L'une d'elles a même une tache de naissance !</French>
 		<German>Die Bevölkerung flüstert, dass eine grosse Familie, die kürzlich in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] eingewandert ist, unter dem Verdacht der Hexerei steht. Sie bleiben unter sich, bauen seltsame Wurzeln und Kräuter an und nehmen nicht an Gottesdiensten teil. Einer von Ihnen hat sogar ein auffallendes Geburtsmal.</German>
 		<Russian>Горожане шепчутся, что женщины большой семьи недавних иммигрантов в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] — ведьмы! Они держатся особняком, собирают какие-то коренья в недалеко от города и не ходят в церковь по воскресеньям. У одной из них даже есть родимое пятно!</Russian>
+		<Hungarian>A városlakók azt suttogják, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gyarmatra nemrégen bevándorolt család tagjai boszorkányok! Magukba zárkóznak, furcsa gyökereket ásnak ki a kertjeikben és vasárnaponként nem járnak templomba. Egyiküknek még anyajegye is van!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_COUNTERBLASTE</Tag>
@@ -2999,6 +3049,7 @@
 		<French>Notre Monarque bien-aimé a soudainement développé l'idée farfelue que fumer du tabac serait mauvais pour les poumons, allant jusqu'à autoriser la publication d'un pamphlet dénonçant cette habitude. Cette idée saugrenue pourrait ruiner nos exportations !</French>
 		<German>Unser geliebter Herrscher hat kürzlich eine exzentrische Meinung zum Tabakgenuss entwickelt. Er glaubt, dies sei schadhaft für die Lungen. Er will sogar so weit gehen, ein Pamphlet zu veröffentlichen, dass davor warnt. Diese bizarre Idee kann unsere Exporteinnahmen schwer schädigen.</German>
 		<Russian>У нашего любимого монарха внезапно сложилось эксцентричное мнение, что курение табака вредно для легких и он даже опубликовал брошюру, осуждающую эту привычку. Эта идиотская идея может разрушить наш экспортный рынок!</Russian>
+		<Hungarian>Szeretett uralkodónk hirtelen azt a különc véleményt alakította ki, hogy a dohányzás káros a tüdőre, sőt, odáig ment, hogy egy röpiratot is kiadott, amelyben elítéli a szokást. Ez a bizarr ötlet tönkreteheti az exportpiacunkat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COUNTERBLASTE_1_HELP</Tag>
@@ -3007,6 +3058,7 @@
 		<French>[COLOR_FONT_GOLD]Les nobles et les citoyens suivent l'exemple de leur roi. La demande pour nos biens coloniaux est en baisse.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde dem König zugetragen. Kammerdiener berichten, er habe gleich eine Probe verköstigt und anschließend huldvoll genickt.[NEWLINE]Adlige und reiche Bürger in unserer Heimat eifern nun dem König nach. Die Nachfrage nach unseren Kolonialwaren sinkt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Знать и горожане следуют примеру своего короля. Спрос на наши колониальные товары снижается.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Nemesek és polgárok követik Királyuk példáját. A gyarmati termékeink iránti kereslet csökken.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_COUNTERBLASTE_2_HELP</Tag>
@@ -3015,6 +3067,7 @@
 		<French>[COLOR_FONT_GOLD]Le roi reçoit la nouvelle que ses citoyens dans les colonies remettent en question son jugement.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Seine Majestät ist höchst unerfreut, dass man sein Urteil zu dieser Angelegenheit in Frage stellt.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Его Величеству сообщили, что граждане в колониях сомневаются в Его решении по этому поводу.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Őfelsége azt a hírt kapta, hogy a gyarmatokon élő polgárai megkérdőjelezik a véleményének igaz voltát ebben az ügyben.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_1_HELP</Tag>
@@ -3023,6 +3076,7 @@
 		<French>[COLOR_FONT_GOLD]Le prix augmente car, grâce à la nouvelle offre, les citoyens savent maintenant que l'huile de baleine brûle mieux que le suif.[COLOR_REVERT]</French>
 		<German>[COLOR_FONT_GOLD]Die Nachfrage nach edlem Tranöl steigt in Europa, da die braven Bürger sich aufgrund des neuen Angebots darüber bewusst werden, dass Öl besser brennt als Talg.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Цена растёт, так как благодаря новому предложению горожане теперь знают, что ворвань горит лучше, чем обычный жир.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Az ár emelkedik, mivel az új ajánlatnak köszönhetően a polgárok már tudják, hogy a bálnaolaj jobban ég, mint a faggyú.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_COMMANDEERED</Tag>
@@ -3031,6 +3085,7 @@
 		<French>Seigneur, la marine Royale a réquisitionné l'un de nos meilleurs navires pour aider dans une campagne contre des pirates barbaresques. Comment devons-nous répondre ?</French>
 		<German>Milord, die Royal Navy hat eines unserer besten Schiffe requiriert, um eine Strafaktion gegen die Berber-Piraten zu unterstützen. Wie sollen wir darauf reagieren?</German>
 		<Russian>Милорд, Королевский флот требует один из наших лучших кораблей для помощи в кампании против берберских пиратов. Что мы им ответим?</Russian>
+		<Hungarian>Uram, a Királyi haditengerészet az egyik legjobb hajónkat kérte fel a barbár kalózok elleni hadjárathoz. Hogyan válaszoljunk?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SENDCONVERTS</Tag>
@@ -3039,6 +3094,7 @@
 		<French>La Cour Royale s'est esbaudie en voyant les tenues pittoresques et les coutumes de nos sujets indigènes fraichement convertis, et souhaite que quelques un d'entre eux soient envoyés en Europe.</French>
 		<German>Der königliche Hof ist fasziniert von der Kunst und Geschichten der Ureinwohner. Man wünscht, dass wir einen Konvertierten Ureinwohner nach Europa schicken.</German>
 		<Russian>Королевский двор очарован искусством и историями нашего крещенного индейца и требует, чтобы мы отправили его в Европу.</Russian>
+		<Hungarian>A Királyi udvarnak megtetszett egy megtért Indián alattvalónk festői öltözete és szokásai, és Európába szállíttatta őt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_LUMBER</Tag>
@@ -3047,6 +3103,7 @@
 		<French>La Marine Royale a réquisitionné [COLOR_HIGHLIGHT_TEXT]deux charges de fret de bois[COLOR_REVERT] pour la construction de ses nouveaux navires. Les biens sont à collecter le plus tôt possible aux docks de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Die Royal Navy hat [COLOR_HIGHLIGHT_TEXT]zwei Schiffsladungen Holz[COLOR_REVERT] für den Bau neuer Schiffe angefordert. Das Holz soll so bald wie möglich in einer Siedlung mit Dock oder Zollhaus bereitgestellt werden.</German>
 		<Russian>Королевский флот затребовал [COLOR_HIGHLIGHT_TEXT]две полные партии пиломатериалов[COLOR_REVERT] для строительства новых кораблей, которые должны быть доставлены как можно скорее в доки [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>A Királyi Haditengerészet [COLOR_HIGHLIGHT_TEXT]két teljes rakomány épületfát[COLOR_REVERT] igényelt új hajók építéséhez, amelyeket a lehető leghamarabb [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] dokkjába kell szállítani.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REQUISITION_HELP</Tag>
@@ -3055,6 +3112,7 @@
 		<French>Répondez à la demande pour les résultats suivants :</French>
 		<German>Leider ist es unserer bescheidenen Wirtschaft nicht möglich dieser Anfrage gerecht zu werden.</German>
 		<Russian>Выполните эти требования для следующих результатов:</Russian>
+		<Hungarian>Teljesítsd ezeket a követelményeket a következőkhöz:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DELIVER_LUMBER</Tag>
@@ -3063,6 +3121,7 @@
 		<French>Les représentants de la Marine Royale sont arrivés à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] pour prendre livraison des [COLOR_HIGHLIGHT_TEXT]deux charges de fret de bois[COLOR_REVERT], comme convenu lors de notre dernier arrangement.</French>
 		<German>Repräsentanten der Royal Navy sind in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] angekommen, um die versprochene Lieferung der [COLOR_HIGHLIGHT_TEXT]zwei Schiffsladungen Holz[COLOR_REVERT] entgegen zu nehmen.</German>
 		<Russian>Представители Королевского флота прибыли в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], чтобы принять [COLOR_HIGHLIGHT_TEXT]две полные партии пиломатериалов[COLOR_REVERT] в соответствии с нашей предыдущей договоренностью.</Russian>
+		<Hungarian>A Királyi Haditengerészet képviselői megérkeztek [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] dokkjába, hogy átvegyék a [COLOR_HIGHLIGHT_TEXT]két teljes rakomány épületfát[COLOR_REVERT], korábbi megállapodásunk szerint.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REQUISITION_COATS</Tag>
@@ -3071,6 +3130,7 @@
 		<French>Son Altesse Royale a décidé de financer une expédition polaire à la recherche de la légendaire Terra Australis. 200 caisses de manteaux d'hiver fines ont été commandées aux fourreurs de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Seine Majestät hat beschlossen eine Polar-Expedition auszustatten, um das sagenhafte Terra Australis zu finden. 200 Mäntel bester Qualität werden von den Pelzhändlern von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verlangt.</German>
 		<Russian>Его Величество решил профинансировать полярную экспедицию в поисках легендарной Terra Australis. У скорняков города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] были заказаны 200 ящиков хороших зимних пальто.</Russian>
+		<Hungarian>Őfelsége úgy döntött, hogy finanszíroz egy sarki expedíciót a legendás Terra Australis felkutatására. [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kabátkészítőitől 200 láda finom téli bundát rendelt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DELIVER_COATS</Tag>
@@ -3079,6 +3139,7 @@
 		<French>Les explorateurs de Sa Majesté sont arrivés pour prendre livraion des manteaux à l'usage de l'expédition polaire.</French>
 		<German>Die Entdecker Seiner Majestät sind angekommen, um die Ladung Mäntel für die Polar-Expedition abzuholen.</German>
 		<Russian>Исследователи Его Величества прибыли, чтобы забрать партию пальто для своей полярной экспедиции.</Russian>
+		<Hungarian>Őfelsége felfedezői megérkeztek, hogy átvegyék a sarki expedíciójukhoz szükséges kabátokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_IMPATIENT</Tag>
@@ -3087,6 +3148,7 @@
 		<French>Cela fait déjà un certain temps, et les biens convenus n'ont toujours pas été livrés à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Sa Majesté n'est pas habituée à devoir attendre !</French>
 		<German>Die Verzögerung der versprochenen Warenlieferung in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist sehr bedenklich. Seine Majestät ist nicht erfreut!</German>
 		<Russian>Прошло довольно много времени, а оговоренный товар еще не доставлен в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Его Величество не привык ждать!</Russian>
+		<Hungarian>Már sok idő eltelt és a megbeszélt áru még mindig nincs leszállítva [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] raktárába. Őfelsége nem szokott várakozni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HUDSON</Tag>
@@ -3095,6 +3157,7 @@
 		<French>Par décrêt royal, tout prochain commerce de manteau devra être réalisé par des agents dûment autorisés de la compagnie de la Baie d'Hudson.</French>
 		<German>Laut königlichen Beschluss dürfen alle weiteren Handelsgeschäfte mit Pelzen ab sofort nur noch durch Vertreter der Hudson Bay Company erfolgen.</German>
 		<Russian>Согласно Королевскому указу, вся дальнейшая торговля шубами должна осуществляться через уполномоченных агентов компании Гудзонова залива.</Russian>
+		<Hungarian>Királyi rendelet értelmében minden további kabátkereskedelmet a Hudson Bay Company felhatalmazott ügynökein keresztül kell lebonyolítani.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HORSETHIEF</Tag>
@@ -3103,6 +3166,7 @@
 		<French>Une ignoble bande de voleurs de chevaux a saisi les plus beaux animaux de notre troupeau, et menace de mettre le feu aux écuries si ils sont poursuivis.</French>
 		<German>Eine Bande von niederträchtigen Pferdedieben hat die besten Tiere unserer Herde geraubt und droht sogar damit die Stallungen und Scheunen zu verbrennen, wenn Sie verfolgt werden.</German>
 		<Russian>Банда угонщиков лошадей захватила лучших животных из нашего стада и грозится поджечь амбары, если мы станем их преследовать.</Russian>
+		<Hungarian>Egy csapat rongyos lótolvaj megszerezte a ménesünk legszebb állatait és fel fogják gyújtani az istállókat, ha üldözőbe vesszük őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CATTLETHIEF</Tag>
@@ -3111,6 +3175,7 @@
 		<French>L'hiver a été difficile, et les gardes de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont attrapé une bande indigène du village voisin de [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] qui tentait de voler du bétail de nos troupeaux pour assurer leur subsistance.</French>
 		<German>Der harte letzte Winter hat die Ureinwohner einer nahen [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] Siedlung dazu verleitet, Vieh der Herden von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zu stehlen, doch unsere wachsame Stadtwache hat sie dabei gefangen.</German>
 		<Russian>Зима выдалась тяжелой. Стражники города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] поймали индейцев из соседней деревни [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT], пытавшихся украсть часть нашего скота для еды.</Russian>
+		<Hungarian>A tél kemény volt. [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] őrei elfogták a közeli [COLOR_HIGHLIGHT_TEXT]%s1_player[COLOR_REVERT] falu Indiánjait, akik megpróbálták ellopni a marháinkat élelem gyanánt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_KING_PLEASED_HELP</Tag>
@@ -3119,6 +3184,7 @@
 		<French>Votre Roi est satisfait de votre réponse!</French>
 		<German>Seine Majestät ist über diese Antwort sehr erfreut.</German>
 		<Russian>Отношения с вашим Королем улучшились.</Russian>
+		<Hungarian>Javult a kapcsolat a Királyoddal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_KING_ANGRY_HELP</Tag>
@@ -3127,14 +3193,16 @@
 		<French>Votre Roi est en colère!</French>
 		<German>Seine Majestät ist über diese Reaktion sehr verärgert.</German>
 		<Russian>Наш Король разозлился!</Russian>
+		<Hungarian>Királyod feldühödött!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_KINGFURIOUS</Tag>
-		<English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your countless misdeeds, a heavy fine must be paid at once into the royal coffers, or royal agents will be authorized to sack [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] and confiscate your undeserved wealth!</English>
+		<English>By solemn decree of His Royal Majesty's Privy Council, your treasonous and egregious perfidy has gone on long enough! As partial recompense for your countless misdeeds, a heavy fine must be paid at once into the Royal coffers, or Royal agents will be authorized to sack [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] and confiscate your ill-gotten wealth!</English>
 		<Portuguese>Por decreto solene do Conselho Privado de Sua Majestade Real, sua traiçoeira e flagrante perfídia já dura tempo suficiente! Como recompensa parcial por seus incontáveis delitos, uma multa pesada deve ser paga imediatamente aos cofres reais, ou os agentes reais serão autorizados a saquear [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] e confiscar sua riqueza imerecida!</Portuguese>
 		<French>Par décret solennel du Conseil privé du Roi, votre perfide  traîtrise éhontée n'a que trop longtemps ! En compensation de vos innombrables méfaits, le Roi vient d'autoriser la mise à sac de la colonie suivante: [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] pour y saisir votre insolente richesse ... à moins bien sûr que vous ne dédommagiez la Couronne comme il se doit.</French>
 		<German>Durch unumstösslichen Beschluss Seiner Majestät wird Euer verräterisches Handeln bestraft. Als teilweise Wiedergutmachung Eurer vielen Vergehen werdet Ihr sofort eine Strafe zahlen oder königliche Abgesandte werden dazu autorisiert, im Umland von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] alles zu konfiszieren, was rechtmässig Seiner Majestät gehört!</German>
 		<Russian>По указу Тайного Совета Его Королевского Величества ваше изменническое поведение и вопиющее вероломство продолжаются достаточно долго! В качестве частичного возмещения за ваши бесчисленные проступки, крупный штраф должен быть немедленно уплачен в королевскую казну, иначе королевские агенты получат право разграбить [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] и конфисковать ваше незаслуженное богатство!</Russian>
+		<Hungarian>Ő Királyi felsége titkos tanácsának ünnepélyes rendeletére, a te áruló és felháborító aljasságod már régóta tart! Számtalan gaztetted részleges kárpótlásaként súlyos pénzbírságot kell azonnal befizetned a Királyi kasszába, különben Királyi ügynökök felhatalmazást kapnak, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] raktárából elkobozzák érdemtelen vagyonod!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHBISHOPRIC</Tag>
@@ -3143,6 +3211,7 @@
 		<French>Par la piété et le labeur de votre peuple, la cathédrale de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été proclamé comme le nouveau siège de l'Archevêché, attirant les pélerins de toutes les églises environnantes.</French>
 		<German>Aufgrund der Verehrung durch die Bevölkerung und ihrer geschichtlichen Bedeutung, wurde die Kathedrale von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zum Sitze des Erzbischofs ernannt und zieht nun noch mehr Pilger aus der Gegend an.</German>
 		<Russian>Благодаря преданности и вкладу ваших людей собор [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] был провозглашен резиденцией нового архиепископства, привлекая паломников из окрестных церквей.</Russian>
+		<Hungarian>Néped odaadásának és hozzájárulásainak köszönhetően [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] székesegyházát egy új érsekség székhelyévé nyilvánították, amely a környező templomokból vonzza a zarándokokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVETRADE</Tag>
@@ -3151,6 +3220,7 @@
 		<French>Maintenant que vos colonies ont pris contact avec de multiples civilisations indigènes, un marchand local de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vous propose d'investir dans un réseau de comptoirs à épices chez les indigènes pour ainsi recueillir des saveurs rares, appréciées, et lointaines.</French>
 		<German>Da unsere Kolonien nun Kontakt zu mehreren Ureinwohnerstämmen in unserer Nachbarschaft haben, hat ein örtlicher Händler aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] vorgeschlagen, ein Netzwerk aus Handelsposten aufzubauen, dass seltene und wertvolle Gewürze von diesen Stämmen erwirbt.</German>
 		<Russian>Поскольку ваши колонии смогли установить контакт с большим количеством племён индейцев, торговец из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] предлагает инвестировать в сеть торговых постов, чтобы собирать редкие и ценные специи из далеких деревень туземцев.</Russian>
+		<Hungarian>Mivel a gyarmatod már kapcsolatba lépett különböző Indián nemzetekkel, [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egy helyi kereskedője azt javasolja, hogy fektess be egy kereskedelmi hálózatba, ami ritka és értékes fűszereket gyűjtene a távoli törzsektől.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK1</Tag>
@@ -3159,6 +3229,7 @@
 		<French>Après avoir espionné nos négociants maritimes dont la richesse est grandissante, une bande de pirates a pillé nos côtes, demandant en rançon pour ne pas passer nos navires par le feu.</French>
 		<German>Durch den wachsenden Reichtum unserer Fernhändler angelockt, hat sich eine dreckige Bande Piraten vor unseren Küsten versammelt. Sie verlangen Lösegeld, damit sie unsere Schiffe nicht in Flammen aufgehen lassen.</German>
 		<Russian>Наблюдая за растущим богатством наших морских торговцев, шайка пиратов собирается у наших берегов, требуя выкупа. Иначе они грозятся предать наши корабли огню!</Russian>
+		<Hungarian>Tengeri kereskedőink növekvő vagyonát kémlelve, egy aljas kalózcsapat gyülekezik a partjainknál, váltságdíjat követelve, hogy cserébe megkíméljék a hajóinkat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PIRATEATTACK2</Tag>
@@ -3167,6 +3238,7 @@
 		<French>L'infâme chef pirate Roc Brasiliano a envoyé un émissaire pour nous demander une fortune princière en or et en argent, nous menaçant d'envoyer notre vulnérable flotte marchande par le fond. Comment devons nous répondre, Milord ?</French>
 		<German>Der berüchtigte Piratenführer Roc Brasiliano sendet uns einen Abgesandten, der eine königliche Summe Gold und Silber fordert. Andernfalls droht er damit, unsere verletzlichen Handelsschiffe auf den Grund von Davy Jones Reich zu schicken. Wie wollen wir reagieren, Milord?</German>
 		<Russian>Печально известный пират Рок Бразилиано прислал эмиссара, требуя целое состояние в золоте и серебре. В противном случае он угрожает отправить наших морских торговцев в шкафчик Дэви Джонса. Что нам ему ответить, милорд?</Russian>
+		<Hungarian>A hírhedt kalóz, Roc Brasiliano követet küldött, aki egy vagyont követel aranyban és ezüstben. Ellenkező esetben azzal fenyegetőzik, hogy sebezhető kereskedőinket a tenger fenekére küldi. Mit válaszoljunk, Uram?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WINE_PLANTS</Tag>
@@ -3175,6 +3247,7 @@
 		<French>Un vigneron européen a vendu l'une de ses meilleurs cépages à nos colonies.</French>
 		<German>Ein Winzer aus Europa hat seine besten Rebstöcke in die Neue Welt verkauft.</German>
 		<Russian>Европейский винодел привез свои лучшие виноградные лозы в колонии.</Russian>
+		<Hungarian>Egy európai borász a legjobb szőlőfajtáit hozta el a gyarmatokra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WINE_PLANTS</Tag>
@@ -3183,6 +3256,7 @@
 		<French>Un vigneron européen propose de vendre l'un de ses meilleurs cépages. Il demande de l'or en contrepartie.</French>
 		<German>Ein Winzer aus Europa bietet uns seine besten Rebstöcke zum Kauf. Er verlangt dafür natürlich Gold.</German>
 		<Russian>Европейский виноградарь предлагает продать нам свои лучшие виноградные лозы. И конечно, он хочет, чтобы ему платили золотом.</Russian>
+		<Hungarian>Egy európai borász felajánlja, hogy eladja nekünk a legjobb szőlőjét. Természetesen aranyat kér cserébe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RED_PEPPER_PLANTS</Tag>
@@ -3191,6 +3265,7 @@
 		<French>Des indigènes ont vendu leur meilleurs plants de piment aux colons européens.</French>
 		<German>Ureinwohner haben europäischen Kolonisten Setzlinge ihres Roten Pfeffers verkauft.</German>
 		<Russian>Местные индейцы продали часть своих растений красного перца европейским колонистам.</Russian>
+		<Hungarian>A helyi Indiánok eladták néhány paprikapalántájukat az európai gyarmatosítóknak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RED_PEPPER_PLANTS</Tag>
@@ -3199,6 +3274,7 @@
 		<French>Des indigènes proposent de nous vendre leurs semences de piment rouge. Ils demandent de l'or en contrepartie.</French>
 		<German>Ureinwohner aus der Gegend bieten uns Setzlinge ihres Roten Pfeffers zum Kauf. Sie verlangen dafür natürlich gold.</German>
 		<Russian>Местные индейцы продадут нам несколько семян своего красного перца. Взамен они хотят получить золото.</Russian>
+		<Hungarian>A helyi Indiánok eladnak nekünk néhány magot a paprikapalántáikról. Aranyban kérnek fizetséget cserébe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SICK_IMMIGRANTS</Tag>
@@ -3207,14 +3283,16 @@
 		<French>De nombreux immigrants sont arrivés malades dans le Nouveau Monde en raison du long voyage en mer.</French>
 		<German>Viele Einwanderer kommen durch die lange Schiffsreise krank in der Neuen Welt an.</German>
 		<Russian>После долгого плавания по морю многие переселенцы достигают Нового Света, страдая от болезней.</Russian>
+		<Hungarian>A hosszú tengeri út után sok bevándorló betegségektől szenvedve érkezik az Újvilágba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SICK_IMMIGRANTS</Tag>
-		<English>Some new immigrants have arrived. They're sick and weak from the long voyage.</English>
+		<English>New immigrants have arrived. They're sick and weak from the long voyage.</English>
 		<Portuguese>Alguns novos imigrantes chegaram. Eles estão doentes e fracos devido à longa viagem.</Portuguese>
 		<French>Quelques nouveaux immigrants sont arrivés. Ils sont malades et souffrants en raison du long voyage en mer.</French>
 		<German>Einige neue Einwanderer sind eingetroffen. Sie scheinen durch die lange Schiffreise krank geworden zu sein.</German>
 		<Russian>Прибыло несколько новых иммигрантов. После длительного путешествия они больны и слабы.</Russian>
+		<Hungarian>Néhány új bevándorló érkezett. Betegek és gyengék a hosszú utazástól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISEASED_NATIVES</Tag>
@@ -3223,6 +3301,7 @@
 		<French>Des maladies importées d'Europe se répandent dans les villages indigènes.</French>
 		<German>Die Krankheiten des Weissen Mannes verbreiten sich in den Dörfern der Ureinwohner.</German>
 		<Russian>В деревнях индейцев распространяются болезни европейских переселенцев.</Russian>
+		<Hungarian>A telepesek betegségei az Indiánok falvaiban is terjednek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISEASED_NATIVES</Tag>
@@ -3231,6 +3310,7 @@
 		<French>Une maladie est en train de se propager dans un village indigène voisin. Les indigènes croient que cela fait suite à la visite de certains de nos colons et demandent de l'aide.</French>
 		<German>Eine Krankheit breitet sich in einer nahegelegenen Siedlung der Wilden aus. Sie behaupten, die Krankheit sei ausgebrochen, nachdem einige unserer Siedler ihr Dorf besucht hatten. Sie bitten nun um unsere Hilfe.</German>
 		<Russian>В соседней деревне индейцев начали массово болеть жители. Эпидемия вспыхнула сразу после того, как там побывали наши колонисты. Туземцы нуждаются в нашей помощи.</Russian>
+		<Hungarian>Egy betegség terjed a közeli Indián faluban. A betegség azután tört ki, hogy telepeseink meglátogatták őket. Most az Indiánoknak szükségük van a segítségünkre.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SALT_RESOURCE</Tag>
@@ -3239,14 +3319,16 @@
 		<French>Des colons européens ont décovert un immense dépôt de sel près de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Europäische Siedler haben grosse Salzvorkommen in der Gegend um [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entdeckt.</German>
 		<Russian>Огромное месторождение соли было обнаружено колонистами недалеко от [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>Európai telepesek hatalmas sólelőhelyet fedeztek fel [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SALT_RESOURCE</Tag>
-		<English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might discover salt deposits but it will cost some gold.</English>
+		<English>While riding across nearby hills in the desert, local settlers notice how dust kicked up in the air as they pass tastes very salty. A mining expedition might discover salt deposits but it will cost some gold.</English>
 		<Portuguese>Os colonos locais relatam que, nas colinas próximas no deserto, o ar tem um sabor muito salgado. Uma expedição mineira pode descobrir depósitos de sal, mas custará algum ouro.</Portuguese>
 		<French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera un peu.</French>
 		<German>Lokale Siedler berichten, dass die Luft auf nahegelegenen Hügeln in der Wüste nach Salz riecht. Eine Expedition zur Exploration des Salzvorkommens würde uns natürlich etwas Gold kosten.</German>
 		<Russian>Местные поселенцы сообщают, что в близлежащих холмах в пустыне воздух очень солоноватый на вкус. Горнодобывающая экспедиция может поискать залежи соли, но это будет стоить золота.</Russian>
+		<Hungarian>A helyi telepesek arról számolnak be, hogy a közeli sivatagi dombokon a levegőnek nagyon sós illata van. Egy bányászati expedíció talán felfedezhetne sólelőhelyeket, de ez némi aranyba kerül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BISONS</Tag>
@@ -3255,6 +3337,7 @@
 		<French>Les indigènes sont en colère parce que des hommes blancs chassent leurs bisons.</French>
 		<German>Die Ureinwohner sind verärgert, weil die Europäer zu viele Bisons jagen.</German>
 		<Russian>Индейцы возмущены тем, что поселенцы охотятся на их бизонов.</Russian>
+		<Hungarian>Az Indiánok dühösek, mert a telepesek vadásznak a bölényeikre.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BISONS</Tag>
@@ -3263,6 +3346,7 @@
 		<French>Des indigènes d'une tribu voisine se sont rapprochés du maire de l'une de nos villes pour demander que nous cessions de chasser le bison dans la zone. Ils prétendent que les bisons leur appartiennent par leurs droits ancestraux, et qu'ils ne pourront survivre sans leur viande.</French>
 		<German>Ureinwohner eines nahegelegenen Stammes sind an uns herangetreten. Sie fordern, dass wir die Jagd auf die Bisons der Gegend einstellen. Sie behaupten, dass die Bisons durch das Recht ihrer Vorväter ihnen gehören und sie diese zum Überleben brauchen.</German>
 		<Russian>Туземцы сказали мэру одного из наших городов прекратить охоту на бизонов в этом районе. Они заявляют, что эту землю и бизонов им завещали их предки. Им нужно мясо бизона, чтобы жить и продолжать свой род.</Russian>
+		<Hungarian>A Indiánok azt mondták az egyik városunk polgármesterének, hogy hagyja abba a bölényvadászatot a környéken. Azt állítják, hogy őseik jogán ezek a bölények az övék. A túléléshez szükségük van a bölényhúsra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HOLY_GIANT_TREES</Tag>
@@ -3271,6 +3355,7 @@
 		<French>Les colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont abattu un  arbre géant qui était sacré pour les indigènes.</French>
 		<German>Europäische Kolonisten aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben einen außergewöhnlich großen Baum gefällt, der den Ureinwohnern heilig war.</German>
 		<Russian>Европейские колонисты в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] срубили гигантское дерево, которое считалось священным для туземцев.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] európai telepesei kivágtak egy hatalmas fát, amely az Indiánok számára szent volt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HOLY_GIANT_TREES</Tag>
@@ -3279,6 +3364,7 @@
 		<French>Les indigènes d'une tribu voisine sont furieux contre nos bûcherons qui ont coupé un arbre géant qui leur était sacré. Ils demandent que les bûcherons leurs soient livrés pour les châtier.</French>
 		<German>Ureinwohner eines nahegelegenen Stammes sind sehr verärgert, weil einige unserer Holzfäller einen außergewöhnlich großen Baum gefällt haben, der ihnen heilig war. Sie fordern, dass wir ihnen die Schuldigen zur Bestrafung ausliefern.</German>
 		<Russian>Туземцы соседнего племени в ярости от того, что наши лесорубы срубили священное для индейцев гигантское дерево. Они требуют, чтобы лесорубы были переданы им для наказания.</Russian>
+		<Hungarian>Egy közeli törzs Indiánjai mélységesen fel vannak háborodva, mert favágóink kivágtak egy hatalmas fát, amely számukra szent volt. Követelik, hogy a favágókat adják át nekik büntetésül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
@@ -3287,6 +3373,7 @@
 		<French>Des colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur première Action de grâce.</French>
 		<German>Europäische Kolonisten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben das erste Erntedankfest gefeiert.</German>
 		<Russian>Европейские колонисты в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отпраздновали первый День Благодарения.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] európai telepesei megünnepelték az első hálaadást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THANKSGIVING</Tag>
@@ -3295,6 +3382,7 @@
 		<French>Les colons de l'un de nos villages ont célébré une année riche en succès et tiennent à inviter leur voisins indigènes. Ils demandent la permission pour cette célébration et nous demande notre concours financier.</French>
 		<German>Die Siedler einer unserer Städte wollen ein erfolgreiches letztes Jahr feiern und auch ihre Nachbarn aus den nahegelegenen Ureinwohnerdörfern einladen. Sie bitten untertänigst, um unsere Erlaubnis für dieses Fest und fragen, ob wir das Ereignis vielleicht unterstützen wollen.</German>
 		<Russian>Поселенцы из одной из наших деревень хотят отметить удачный год и намерены пригласить и своих соседей индейцев. Они запрашивают у нас разрешения на празднование и вопрошают, не хотим ли спонсировать мероприятие.</Russian>
+		<Hungarian>Az egyik falunk telepesei egy sikeres évet szeretnének megünnepelni és szándékukban áll meghívni az Indián szomszédaikat is. Engedélyt kérnek tőlünk az ünneplésre és pénzt az esemény támogatására.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HALLOWEEN</Tag>
@@ -3303,14 +3391,16 @@
 		<French>Les colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur première fête d'Halloween dans le Nouveau Monde.</French>
 		<German>Europäische Kolonisten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben das erste Halloween in der Neuen Welt gefeiert.</German>
 		<Russian>Европейские колонисты в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отпраздновали первый День всех святых в Новом Свете.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] európai telepesei megünnepelték az első Halloweent az Újvilágban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HALLOWEEN</Tag>
-		<English>Some settlers that have recently arrived from Ireland and other European countries want to celebrate what they call 'Hallowe'en'. It sounds like a wild event, possibly heretical.</English>
+		<English>Some settlers who have recently arrived from Ireland and other European countries want to celebrate what they call 'Hallowe'en'. It sounds like a wild event, possibly heretical.</English>
 		<Portuguese>Alguns colonos que chegaram recentemente da Irlanda e de outros países europeus querem celebrar o que chamam de “Hallowe'en”. Parece um evento selvagem, possivelmente herético.</Portuguese>
 		<French>Des colons récemment arrivés d'Irlande et d'autres pays européens veulent célébrer ce qu'ils appellent « Halloween ». Cela semble être une célébration assez païenne, sinon clairement hérétique.</French>
 		<German>Einige Siedler, die erst kürzlich aus Irland und anderen europäischen Ländern angekommen sind, wollen ein Fest feiern, welches sie 'Halloween' nennen. Das Fest hört sich etwas supekt an.</German>
 		<Russian>Некоторые поселенцы, недавно прибывшие из Ирландии и других европейских стран, хотят отпраздновать то, что они называют «Хэллоуин». Звучит как дикое событие, возможно, еретическое.</Russian>
+		<Hungarian>Az Írországból és más európai országokból nemrégiben érkezett telepesek egy része meg akarja ünnepelni a Halloweent. Ez vad eseménynek hangzik, esetleg eretneknek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MOLESTING_MISSIONARY</Tag>
@@ -3319,6 +3409,7 @@
 		<French>Des missionnaires sont accusés d'avoir abusé de femmes indigènes.</French>
 		<German>Ein Missionar wurde beschuldigt, Ureinwohnerinnen sexuell zu belästigen.</German>
 		<Russian>Миссионера обвиняют в сексуальных домогательствах к туземным женщинам.</Russian>
+		<Hungarian>Egy misszionáriust azzal vádolnak, hogy szexuálisan zaklatott Indián nőket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MOLESTING_MISSIONARY</Tag>
@@ -3327,6 +3418,7 @@
 		<French>Des indigènes d'un village voisin sont venus dans l'une de nos villes. Ils avaient un missionnaire avec eux auquel ils ont lié les mains. Ils l'accusent d'avoir abusé de leurs femmes.</French>
 		<German>Einige Wilde aus einer nahegelegenen Siedlung sind in eine unserer Städte angekommen. Sie haben einen gefesselten Missionar bei sich und beschuldigen diesen, dass er ihre Frauen sexuell belästigt habe.</German>
 		<Russian>Несколько индейцев из близлежащей деревни живут в одном из наших городов. Они привели миссионера со связанными руками и обвиняют его в сексуальных домогательствах к их женщинам.</Russian>
+		<Hungarian>Néhány Indián egy közeli faluból az egyik városunkban tartózkodik. Hoztak egy misszionáriust, akinek a keze meg van kötve és azzal vádolják, hogy szexuálisan zaklatta a nőiket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DESERTED_WOLF_WHELP</Tag>
@@ -3335,6 +3427,7 @@
 		<French>Un louveteau abandonné a été trouvé dans le désert.</French>
 		<German>Ein verlassener Wolfswelpe wurde in der Wildnis gefunden.</German>
 		<Russian>В пустынной местности был найден брошенный волчонок.</Russian>
+		<Hungarian>Egy magára hagyott farkaskölyköt találtak a vadonban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DESERTED_WOLF_WHELP</Tag>
@@ -3343,6 +3436,7 @@
 		<French>Nos hommes ont trouvé un louveteau abandonné dans le désert. Sa mère est probablement morte. Cette jeune bête peut sans doute être domptée ou même vendu à un original fortuné.</French>
 		<German>Einer unserer Männer hat einen verlassenen Wolfswelpen in der Wildnis gefunden. Seine Mutter ist wahrscheinlich tot. Vielleicht kann das kleine Biest ja gezähmt werden. Oder wir verkaufen es einem Reichen, der gelangweilt genug ist.</German>
 		<Russian>Наши люди нашли в глуши брошенного волчонка. Его мать, вероятно, мертва. Возможно, этого молодого зверя можно было бы приручить или продать какому-нибудь безумно богатому человеку.</Russian>
+		<Hungarian>Embereink egy magára hagyott farkaskölyköt találtak a vadonban. Az anyja valószínűleg elpusztult. Talán ezt a fiatal állatot meg lehetne szelídíteni vagy el lehetne adni egy őrült gazdag embernek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TAVERN_VS_CHAPEL</Tag>
@@ -3351,6 +3445,7 @@
 		<French>Des matériaux de construction laissés à l'abandon dans une ancienne colonie ont été retrouvés.</French>
 		<German>Einige übriggelassene Baumaterialien von der Gründung einer Kolonie wurden entdeckt.</German>
 		<Russian>Найдены остатки строительных материалов после основания колонии.</Russian>
+		<Hungarian>Egy korábbi kolónia megmaradt építőanyagait megtalálták.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TAVERN_VS_CHAPEL</Tag>
@@ -3359,6 +3454,7 @@
 		<French>Des colons ont récemment découvert des matériaux de construction délaissés lors de la fondation de leur colonie. Certains veulent l'utiliser pour construire une chapelle, d'autres pour construire une taverne. Quelle que soit la décision, l'un des deux camps en sera contrarié.</French>
 		<German>Einige Kolonisten einer kürzlich gegründeten Stadt haben entdeckt, dass noch einige Baumaterialien übrig geblieben sind. Einige Bewohner wollen mit diesen Baumaterialien eine Kapelle errichten. Andere Bewohner wollen stattdessen eine Taverne bauen. Wie auch immer wir uns entscheiden, eine Seite wird unzufrieden sein.</German>
 		<Russian>У колонистов в недавно основанном городе остались материалы, оставшиеся от его строительства. Некоторые хотят построить часовню. Другие хотят таверну. Что бы мы ни решили, одна из сторон будет недовольна.</Russian>
+		<Hungarian>Egy nemrég alapított város telepeseinek maradt némi építőanyaga. Néhányan kápolnát akarnak építeni. Mások kocsmát akarnak. Bárhogy is döntünk, az egyik fél boldogtalan lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BANKRUPT_FARMER</Tag>
@@ -3367,6 +3463,7 @@
 		<French>Un fermier d'une de nos colonies a fait faillite.</French>
 		<German>Ein Farmer aus der Gegend ist bankrott gegangen.</German>
 		<Russian>Местный фермер стал банкротом.</Russian>
+		<Hungarian>Egy helyi gazda csődbe ment.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BANKRUPT_FARMER</Tag>
@@ -3375,6 +3472,7 @@
 		<French>Un fermier ayant récemment immigré s'est lourdement endetté pour acheter des terres et il ne peut plus rembourser. Il veut vendre tout ce qui lui reste pour clore ses dettes et rentrer en Europe.</French>
 		<German>Ein kürzlich eingewanderter Farmer hat einen hohen Kredit aufgenommen, um sich etwas Land zu kaufen. Diesen kann er nun nicht mehr zurückzahlen. Daher will er sein gesamtes Habe verkaufen, um damit den Kredit zu begleichen und wieder nach Europa zurückzukehren.</German>
 		<Russian>Недавно приехавший фермер получил большую ссуду на покупку земли, но переоценил свои силы и теперь не может заплатить. Он хочет продать все, что у него есть, чтобы погасить долг и вернуться в Европу.</Russian>
+		<Hungarian>Egy nemrég érkezett gazda nagy kölcsönt kapott földvásárlásra, de most nem tudja fizetni a részleteket. El akarja adni mindenét, amije van, hogy visszafizesse a kölcsönt és visszamenjen Európába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
@@ -3383,6 +3481,7 @@
 		<French>Un conflit militaire d'importance a pris fin en Europe.</French>
 		<German>Ein bedeutender militärischer Konflikt wurde in Europa beendet.</German>
 		<Russian>В Европе завершился крупный военный конфликт.</Russian>
+		<Hungarian>Véget ért egy jelentős katonai konfliktus Európában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
@@ -3391,14 +3490,16 @@
 		<French>Un conflit militaire d'importance a pris fin en Europe. De nombreuses troupes n'y sont plus nécessaires et ont été renvoyées à leur maison. Peut-être pourrions-nous en engager quelques-unes.</French>
 		<German>Ein bedeutender militärischer Konflikt wurde in Europa beendet. Viele Soldaten sind schon entlassen worden. Vielleicht können wir einige davon anheuern.</German>
 		<Russian>Крупномасштабный военный конфликт в Европе закончился. Содержать многотысячные армии больше нет нужды и войска распустили по домам. У нас есть возможность завербовать в колониальную армию опытных солдат.</Russian>
+		<Hungarian>Véget ért egy nagyszabású katonai konfliktus Európában. Sok katonára már nincs szükség és ezért hazaküldték őket. Talán felvehetnénk közülük néhányat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DRUNKEN_FISHER</Tag>
-		<English>A drunken fisher died in a storm.</English>
+		<English>A drunken fisher drowned in a storm.</English>
 		<Portuguese>Um pescador bêbado morreu em uma tempestade.</Portuguese>
 		<French>Un pêcheur ivre est mort dans une tempête.</French>
 		<German>Ein betrunkener Fischer starb in einem Sturm.</German>
 		<Russian>Пьяный рыбак погиб во время шторма.</Russian>
+		<Hungarian>Egy részeg halász meghalt a viharban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DRUNKEN_FISHER</Tag>
@@ -3407,6 +3508,7 @@
 		<French>Un pêcheur ivre est passé par-dessus bord lors d'une tempête. Il s'est noyé. Sa veuve souhaite vendre son bâteau de pêche, n'en ayant plus d'usage.</French>
 		<German>Ein betrunkener Fischer fiel während eines Sturms über Bord und ertrank. Seine Witwe möchte nun dessen Fischerboot verkaufen, da sie keine Verwendung dafür hat.</German>
 		<Russian>Пьяный рыбак во время шторма упал за борт и утонул. Теперь его вдова хочет продать его рыбацкую лодку, так как она ей не нужна.</Russian>
+		<Hungarian>Egy részeg halász a tengerbe esett egy viharban és megfulladt. Az özvegye most el akarja adni a halászhajóját, mivel nincs rá szüksége.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ROTTEN_MEAT</Tag>
@@ -3415,14 +3517,16 @@
 		<French>Un boucher a fui l'Europe où il est accusé de vendre de la viande pourrie.</French>
 		<German>Ein Fleischermeister ist aus Europa geflohen, weil er verdorbenes Fleisch verkauft haben soll.</German>
 		<Russian>Мясник сбежал из Европы, где его обвинили в продаже тухлого мяса.</Russian>
+		<Hungarian>Egy hentes elmenekült Európából, ahol azzal vádolják, hogy romlott húst árult.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ROTTEN_MEAT</Tag>
-		<English>A butcher has arrived in the harbour of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads his innocence and wants a second chance.</English>
+		<English>A butcher has just disembarked in one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads his innocence and wants a second chance.</English>
 		<Portuguese>Um açougueiro chegou ao porto de uma de nossas cidades. Teve que fugir da Europa porque foi acusado de vender carne estragada. Ele alega sua inocência e quer uma segunda chance.</Portuguese>
 		<French>Un ancien boucher est arrivé au port de l'une de nos villes. Il a fui d'Europe parce qu'il était accusé de vendre de la viande pourrie. Il clâme son innocence et souhaite une deuxième chance ici.</French>
 		<German>Ein Fleischermeister ist im Hafen einer unserer Städte eingetroffen. Er musste aus Europa fliehen, weil er verdorbenes Fleisch verkauft haben soll. Er behauptet aber, unschuldig zu sein, und bittet um eine zweite Chance.</German>
 		<Russian>На корабле из Европы в наши колонии прибыл мясник. Ему пришлось бежать из-за обвинений в продаже тухлого мяса. Он заявляет о своей невиновности, происках конкурентов и просит дать ему шанс восстановить своё доброе имя.</Russian>
+		<Hungarian>Egy hentes érkezett az egyik városunk kikötőjébe. El kellett menekülnie Európából, mert azzal vádolták, hogy romlott húst árult. Ártatlannak vallja magát és egy második esélyt szeretne kapni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DESPERATE_CONQUISTADORES</Tag>
@@ -3431,6 +3535,7 @@
 		<French>Des conquistadors désespérés ont pillé un village indigène.</French>
 		<German>Einige verzweifelte Konquistadoren haben eine Siedlung der Ureinwohner überfallen.</German>
 		<Russian>Несколько отчаянных конкистадоров совершили набег на поселение индейцев.</Russian>
+		<Hungarian>Néhány kétségbeesett konkvisztádor rajtaütött egy Indián településen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DESPERATE_CONQUISTADORES</Tag>
@@ -3439,6 +3544,7 @@
 		<French>Des conquistadors à cheval sont arrivés dans l'une de nos villes dans un bien triste état. Ils comptent plusieurs blessés. Peu de temps après, des indigènes d'une tribu voisine sont également arrivés et ont accusé les conquistadors d'avoir réalisé un raide dans leurs villages.</French>
 		<German>Einige berittene Konquistadoren sind in sehr schlechtem Zustand in einer unserer Siedlungen angekommen. Einige von ihnen sind verwundet. Kurz darauf trafen auch einige Ureinwohner eines nahegelegenen Stammes ein und beschuldigten die Konquistadoren, ihre Dörfer überfallen zu haben.</German>
 		<Russian>В одном из наших поселений появились несколько конных конкистадоров в довольно плачевном состоянии, некоторые были ранены. И почти сразу пришли индейцы из соседнего племени и обвинили тех конкистадоров в набегах на их деревни.</Russian>
+		<Hungarian>Néhány lovas konkvisztádor elég rossz állapotban jelent meg az egyik településünkön. Néhányan megsebesültek. Aztán egy közeli törzs Indiánjai érkeztek és ezeket a konkvisztádorokat vádolták meg azzal, hogy fosztogatják a falujukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRAPPER_TROUBLE</Tag>
@@ -3447,6 +3553,7 @@
 		<French>Des tensions montent entre trappeurs et indigènes à propos de droits de chasse.</French>
 		<German>Konflikte zwischen Trappern und Ureinwohnern über Jagdrechte.</German>
 		<Russian>Проблемы между звероловами и туземцами из-за прав на охоту.</Russian>
+		<Hungarian>Zűr a vadászok és az Indiánok között a vadászati jogok miatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRAPPER_TROUBLE</Tag>
@@ -3455,6 +3562,7 @@
 		<French>À proximité de l'un de nos forts, nos troupes ont entendu des tirs dans les bois. En menant l'investigation, ils se sont confrontés à une querelle entre des trappeurs et des indigènes à propos de droits de chasse. Les indigènes considèrent que cette forêt leur appartient et que les blancs n'y sont pas autorisés à chasser.</French>
 		<German>In der Nähe eines unserer Forts haben die Truppen Schüsse in den Wäldern gehört. Als sie zur Untersuchung ausrückten, fanden sie Ureinwohner und Trapper in einen Streit über Jagdrechte in den umliegenden Wäldern verwickelt vor. Die Ureinwohner behaupten, dass das Land immer noch ihnen gehört und dass dort kein weisser Mann ohne ihre Erlaubnis jagen darf.</German>
 		<Russian>В лесу, недалеко от одного из наших фортов, наши бойцы услышали выстрелы. Они пошли проверить, в чем дело и увидели группы индейцев и звероловов, между которыми возник спор о правах на охоту. Туземцы утверждают, что эти леса по-прежнему принадлежат им и что ни одному поселенцу не разрешается там охотиться.</Russian>
+		<Hungarian>Az egyik erődünkhöz közeli erdőben csapataink lövéseket hallottak. Amikor kimentek, hogy kivizsgálják a dolgot, belesétáltak egy vadászati joggal kapcsolatos vitába az Indiánok és a prémvadászok között. Az Indiánok azt állítják, hogy azok az erdők még mindig az övék, és hogy egyetlen telepes sem vadászhat ott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
@@ -3463,6 +3571,7 @@
 		<French>Des truands occupent les bois.</French>
 		<German>Halsabschneider machen die Wälder unsicher.</German>
 		<Russian>По лесам бродят головорезы.</Russian>
+		<Hungarian>Vadorzók kóborolnak az erdőben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
@@ -3471,6 +3580,7 @@
 		<French>Selon plusieurs rapports, des truands occupent les bois. Heureusement nous disposons d'un fort à proximité et nous pouvons faire intervenir des troupes.</French>
 		<German>In der Nähe eines unserer Forts scheinen sich einige Halsabschneider in den Wäldern zu verstecken. Sollen unsere Truppen eingreifen?</German>
 		<Russian>Мы слышали, что в лесу прячутся преступники. К счастью, один из наших близлежащих фортов может послать войска, которые очистят лес от негодяев.</Russian>
+		<Hungarian>Hallottuk, hogy törvényen kívüliek leselkednek az erdőben. Szerencsére az egyik közeli erődünk csapatokat tud küldeni, hogy beavatkozzanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
@@ -3479,6 +3589,7 @@
 		<French>Des hommes dans les terres sauvages s'approvisionnent dans les forts.</French>
 		<German>Männer in der Wildnis nutzen die Forts, um Vorräte zu kaufen.</German>
 		<Russian>Люди из глуши покупают припасы в фортах.</Russian>
+		<Hungarian>A vadonból érkező emberek ellátmányt vásárolnak az erődökben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
@@ -3487,6 +3598,7 @@
 		<French>Des hommes vivant dans les terres sauvages sont venu pour s'approvisionner dans nos forts. Ils semblent bien connaître les environs et pourraient nous être utiles.</French>
 		<German>Einige Männer, die in der nahegelegenen Wildnis leben, sind in unser Fort gekommen, um Vorräte zu kaufen. Es scheint, als hätten sie sehr viel Wissen über die Gegend. Daher könnten sie uns sehr nützlich sein.</German>
 		<Russian>Несколько человек из диких мест пришли в наш форт, чтобы купить припасы. Они знают местность и могут быть нам очень полезны.</Russian>
+		<Hungarian>Néhány férfi a közeli vadonból bejött az erődbe, hogy ellátmányt vásároljon. Ismerik a környéket és nagyon hasznosak lehetnek számunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAN_FROM_THE_WILDERNESS_HELP</Tag>
@@ -3502,6 +3614,7 @@
 		<French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture.</French>
 		<German>Nach einem langen harten Winter kamen Ureinwohner in ein Kloster, um Nahrung zu kaufen.</German>
 		<Russian>После долгой суровой зимы индейцы пришли в монастырь купить еды.</Russian>
+		<Hungarian>Egy hosszú, kemény tél után az Indiánok eljöttek egy kolostorba, hogy élelmet vásároljanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_TRADING_FOOD</Tag>
@@ -3510,6 +3623,7 @@
 		<French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture. Ils n'ont pas grand-chose à offrir en échange.</French>
 		<German>Nach einem langen harten Winter kamen Ureinwohner aus einem benachbarten Dorf in eines unserer Kloster, um Nahrung zu kaufen. Sie haben aber im Austausch wenig anzubieten.</German>
 		<Russian>После долгой суровой зимы в один из наших монастырей из близлежащей деревни пришли индейцы в надежде купить еды. Но им нечего предложить взамен.</Russian>
+		<Hungarian>A hosszú, kemény tél után egy közeli faluból az Indiánok eljöttek az egyik kolostorunkba, hogy élelmet vásároljanak. Nem sok mindent tudnak cserébe felajánlani.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HIDING_SLAVES</Tag>
@@ -3518,6 +3632,7 @@
 		<French>Des esclaves indigènes se sont enfuis et cherchent la protection dans nos monastères.</French>
 		<German>Einige Ureinwohner sind der Sklaverei des Weissen Mannes entflohen und suchen Schutz in Klöstern.</German>
 		<Russian>Несколько туземных рабов сбежало из чужой колонии в поисках защиты в наших монастырях.</Russian>
+		<Hungarian>Néhány Indián rabszolga megszökött egy idegen gyarmatról, hogy a mi kolostorainkban keressen védelmet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HIDING_SLAVES</Tag>
@@ -3526,6 +3641,7 @@
 		<French>Des esclaves indigènes se sont enfuis de chez l'un de nos voisins européens et cherchent la protection de l'un de nos monastères. Des troupes des colons européens voisins encerclent le monastère et demandent que leur propriété leur soit rendu.</French>
 		<German>Einige Ureinwohner konnten aus der Sklaverei in einer nahegelegenen Siedlung eines unserer europäischen Nachbarn entfliehen. Sie suchen nun um Schutz in einem unserer Klöster nach. Truppen unseres Nachbarn sind ihnen gefolgt und haben nun das Kloster umstellt. Sie verlangen die Herausgabe der Sklaven.</German>
 		<Russian>Несколько туземных рабов сбежало из чужой колонии. Они просят защиты в одном из наших монастырей. Войска нашего европейского соседа окружили монастырь, требуя вернуть им их имущество.</Russian>
+		<Hungarian>Néhány Indián rabszolga megszökött egy idegen gyarmatról. Védelmet kérnek az egyik kolostorunkban. Európai szomszédunk csapatai körülvették a kolostort, hogy visszaköveteljék tulajdonukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
@@ -3534,6 +3650,7 @@
 		<French>Des indigènes ont apporté un guerrier blessé dans un monastère.</French>
 		<German>Ureinwohner brachten Verwundeten in ein Kloster.</German>
 		<Russian>Индейцы принесли в монастырь раненого воина.</Russian>
+		<Hungarian>Az Indiánok egy sebesült harcost vittek egy kolostorba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
@@ -3542,6 +3659,7 @@
 		<French>Des indigènes d'un village avoisinant ont ramené un jeune guerrier sérieusement blessé dans l'un de nos monastères. Il semble avoir été attaqué par un ours. Si nous ne l'aidons pas, il va probablement mourir.</French>
 		<German>Einige Ureinwohner eines nahegelegen Dorfes haben einen schwer verwundeten jungen Krieger in eines unserer Klöster gebracht. Er scheint vom einem Bären angegriffen worden zu sein. Wenn wir nicht helfen, wird er sterben.</German>
 		<Russian>Индейцы из близлежащей деревни принесли в один из наших монастырей тяжело раненного молодого воина. На него напал медведь. Если мы ему не поможем, он наверняка умрет.</Russian>
+		<Hungarian>Néhány Indián egy közeli faluból egy fiatal, súlyosan sebesült harcost hozott az egyik kolostorunkba. Egy medve támadta meg. Ha nem segítünk rajta, biztosan meghal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_UNIVERSITY</Tag>
@@ -3550,6 +3668,7 @@
 		<French>La première université a été fondée à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Die erste Universität der Neuen Welt wurde in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gegründet.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] был основан первый университет.</Russian>
+		<Hungarian>Az első egyetemet [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] városában alapították.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_UNIVERSITY</Tag>
@@ -3558,6 +3677,7 @@
 		<French>Une société influente d'hommes éduqués dans notre mère patrie ont entendu parlé de la fondation de notre première université. Ils souhaitent nous aider en nous envoyer un de leurs professeurs émérites pour y enseigner.</French>
 		<German>Eine einflußreiche Gesellschaft gebildeter Männer unseres Heimatlandes hat von der Gründung unserer ersten Universität erfahren. Sie wollen uns helfen, indem sie uns einen hoch gebildeten Mann schicken wollen, der unsere Studenten unterrichtet.</German>
 		<Russian>Влиятельное общество образованных людей в нашей родной стране услышало об основании нашего первого университета. Они хотят помочь нам, прислав в качестве профессора видного ученого.</Russian>
+		<Hungarian>Egy befolyásos művelt férfiakból álló társaság az anyaországban hallott az első egyetemünk megalapításáról. Segíteni akarnak nekünk azzal, hogy egy neves akadémikust küldenek professzornak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_YOUNG_COD_SWARM</Tag>
@@ -3566,14 +3686,16 @@
 		<French>Des bancs massifs de cabillauds dans les océans.</French>
 		<German>Riesige Kabeljauschwärme in den Ozeanen.</German>
 		<Russian>Крупные косяки трески в океанах.</Russian>
+		<Hungarian>Nagy tőkehalrajok az óceánokban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_YOUNG_COD_SWARM</Tag>
-		<English>One of our fishing boats has sighted a large school of small young cod. If we harvest those fish now, the cod will probably not recover.</English>
+		<English>One of our fishing boats has sighted a large school of small cod but, if we harvest those young fish now, the cod will probably not recover.</English>
 		<Portuguese>Um dos nossos barcos de pesca avistou um grande cardume de pequenos bacalhaus jovens. Se pescarmos esse peixe agora, o bacalhau provavelmente não recuperará.</Portuguese>
 		<French>L'un de nos bateaux de pêche a repéré de larges bancs de jeunes cabillauds. Si nous les pêchons tous d'un seul coup, il ne pourra probablement pas se reproduire.</French>
 		<German>Eines unserer Fischerboote hat einen riesigen Schwarm junger Kabeljaufische entdeckt. Wenn wir ihn jedoch jetzt bereits abfischen, wird es sich nicht davon erholen.</German>
 		<Russian>Одна из наших рыбацких лодок заметила большой косяк мелкой молодой трески. Если мы выловим эту рыбу сейчас, популяция трески, скорее всего, не восстановится.</Russian>
+		<Hungarian>Az egyik halászhajónk egy nagy, fiatal tőkehalrajra bukkant. Ha most lehalásszuk őket, azt valószínűleg nem fogja kiheverni az állomány.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS</Tag>
@@ -3582,6 +3704,7 @@
 		<French>Une grande compagnie financière souhaite développer ses activités dans le Nouveau Monde. Elle offre une récompense à la première colonie qui construira 5 villes disposant de docks ou de meilleurs ports.</French>
 		<German>Eine einflußreiche Handelsgesellschaft will ihre Unternehmungen in der Neuen Welt ausweiten. Sie bietet daher dem Gouverneur der ersten Kolonie, die 5 Städte mit einfachen oder ausgebauten Häfen errichtet, eine Belohnung an.</German>
 		<Russian>Влиятельная торговая компания хочет расширить свой бизнес в Новом Свете. Она предлагает награду первой державе, которая построит пять городов с доками.</Russian>
+		<Hungarian>Az egyik halászhajónk egy nagy, fiatal tőkehalrajra bukkant. Ha most lehalásszuk őket, azt valószínűleg nem fogja kiheverni az állomány.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_DOCKS</Tag>
@@ -3590,6 +3713,7 @@
 		<French>Sire, une autre puissance a construit 5 ports avant vous. Ils ont obtenu le soutien de la compagnie financière influente.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Häfen errichten. Sie werden daher nun von einer einflußreichen Handelsgesellschaft unterstützt.</German>
 		<Russian>Милорд, губернатор другой колониальной державы первым построил доки в пяти городах. Они получили поддержку, предложенную влиятельной торговой компанией.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója először épített meg 5 kikötőt. Elnyerte a befolyásos kereskedelmi társaság által felajánlott támogatást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_DOCKS_DONE</Tag>
