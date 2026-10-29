@@ -3323,11 +3323,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SALT_RESOURCE</Tag>
-		<English>Local settlers report that, on nearby hills in the desert, the air tastes very salty. A mining expedition might discover salt deposits but it will cost some gold.</English>
+		<English>While riding across nearby hills in the desert, local settlers notice how dust kicked up in the air as they pass tastes very salty. A mining expedition might discover salt deposits but it will cost some gold.</English>
 		<Portuguese>Os colonos locais relatam que, nas colinas próximas no deserto, o ar tem um sabor muito salgado. Uma expedição mineira pode descobrir depósitos de sal, mas custará algum ouro.</Portuguese>
 		<French>Ces colons nous ont informé que l'air est particulièrement salé dans quelques collines du désert. Une expédition minière pourrait y trouver un gisement de sel, mais celle-ci coûtera un peu.</French>
 		<German>Lokale Siedler berichten, dass die Luft auf nahegelegenen Hügeln in der Wüste nach Salz riecht. Eine Expedition zur Exploration des Salzvorkommens würde uns natürlich etwas Gold kosten.</German>
 		<Russian>Местные поселенцы сообщают, что в близлежащих холмах в пустыне воздух очень солоноватый на вкус. Горнодобывающая экспедиция может поискать залежи соли, но это будет стоить золота.</Russian>
+		<Hungarian>A helyi telepesek arról számolnak be, hogy a közeli sivatagi dombokon a levegőnek nagyon sós illata van. Egy bányászati expedíció talán felfedezhetne sólelőhelyeket, de ez némi aranyba kerül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BISONS</Tag>
@@ -3336,6 +3337,7 @@
 		<French>Les indigènes sont en colère parce que des hommes blancs chassent leurs bisons.</French>
 		<German>Die Ureinwohner sind verärgert, weil die Europäer zu viele Bisons jagen.</German>
 		<Russian>Индейцы возмущены тем, что поселенцы охотятся на их бизонов.</Russian>
+		<Hungarian>Az Indiánok dühösek, mert a telepesek vadásznak a bölényeikre.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BISONS</Tag>
@@ -3344,6 +3346,7 @@
 		<French>Des indigènes d'une tribu voisine se sont rapprochés du maire de l'une de nos villes pour demander que nous cessions de chasser le bison dans la zone. Ils prétendent que les bisons leur appartiennent par leurs droits ancestraux, et qu'ils ne pourront survivre sans leur viande.</French>
 		<German>Ureinwohner eines nahegelegenen Stammes sind an uns herangetreten. Sie fordern, dass wir die Jagd auf die Bisons der Gegend einstellen. Sie behaupten, dass die Bisons durch das Recht ihrer Vorväter ihnen gehören und sie diese zum Überleben brauchen.</German>
 		<Russian>Туземцы сказали мэру одного из наших городов прекратить охоту на бизонов в этом районе. Они заявляют, что эту землю и бизонов им завещали их предки. Им нужно мясо бизона, чтобы жить и продолжать свой род.</Russian>
+		<Hungarian>A Indiánok azt mondták az egyik városunk polgármesterének, hogy hagyja abba a bölényvadászatot a környéken. Azt állítják, hogy őseik jogán ezek a bölények az övék. A túléléshez szükségük van a bölényhúsra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HOLY_GIANT_TREES</Tag>
@@ -3352,6 +3355,7 @@
 		<French>Les colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont abattu un  arbre géant qui était sacré pour les indigènes.</French>
 		<German>Europäische Kolonisten aus [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben einen außergewöhnlich großen Baum gefällt, der den Ureinwohnern heilig war.</German>
 		<Russian>Европейские колонисты в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] срубили гигантское дерево, которое считалось священным для туземцев.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] európai telepesei kivágtak egy hatalmas fát, amely az Indiánok számára szent volt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HOLY_GIANT_TREES</Tag>
@@ -3360,6 +3364,7 @@
 		<French>Les indigènes d'une tribu voisine sont furieux contre nos bûcherons qui ont coupé un arbre géant qui leur était sacré. Ils demandent que les bûcherons leurs soient livrés pour les châtier.</French>
 		<German>Ureinwohner eines nahegelegenen Stammes sind sehr verärgert, weil einige unserer Holzfäller einen außergewöhnlich großen Baum gefällt haben, der ihnen heilig war. Sie fordern, dass wir ihnen die Schuldigen zur Bestrafung ausliefern.</German>
 		<Russian>Туземцы соседнего племени в ярости от того, что наши лесорубы срубили священное для индейцев гигантское дерево. Они требуют, чтобы лесорубы были переданы им для наказания.</Russian>
+		<Hungarian>Egy közeli törzs Indiánjai mélységesen fel vannak háborodva, mert favágóink kivágtak egy hatalmas fát, amely számukra szent volt. Követelik, hogy a favágókat adják át nekik büntetésül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THANKSGIVING</Tag>
@@ -3368,6 +3373,7 @@
 		<French>Des colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur première Action de grâce.</French>
 		<German>Europäische Kolonisten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben das erste Erntedankfest gefeiert.</German>
 		<Russian>Европейские колонисты в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отпраздновали первый День Благодарения.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] európai telepesei megünnepelték az első hálaadást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_THANKSGIVING</Tag>
@@ -3376,6 +3382,7 @@
 		<French>Les colons de l'un de nos villages ont célébré une année riche en succès et tiennent à inviter leur voisins indigènes. Ils demandent la permission pour cette célébration et nous demande notre concours financier.</French>
 		<German>Die Siedler einer unserer Städte wollen ein erfolgreiches letztes Jahr feiern und auch ihre Nachbarn aus den nahegelegenen Ureinwohnerdörfern einladen. Sie bitten untertänigst, um unsere Erlaubnis für dieses Fest und fragen, ob wir das Ereignis vielleicht unterstützen wollen.</German>
 		<Russian>Поселенцы из одной из наших деревень хотят отметить удачный год и намерены пригласить и своих соседей индейцев. Они запрашивают у нас разрешения на празднование и вопрошают, не хотим ли спонсировать мероприятие.</Russian>
+		<Hungarian>Az egyik falunk telepesei egy sikeres évet szeretnének megünnepelni és szándékukban áll meghívni az Indián szomszédaikat is. Engedélyt kérnek tőlünk az ünneplésre és pénzt az esemény támogatására.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_HALLOWEEN</Tag>
@@ -3384,14 +3391,16 @@
 		<French>Les colons européens de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ont célébré leur première fête d'Halloween dans le Nouveau Monde.</French>
 		<German>Europäische Kolonisten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben das erste Halloween in der Neuen Welt gefeiert.</German>
 		<Russian>Европейские колонисты в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отпраздновали первый День всех святых в Новом Свете.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] európai telepesei megünnepelték az első Halloweent az Újvilágban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_HALLOWEEN</Tag>
-		<English>Some settlers that have recently arrived from Ireland and other European countries want to celebrate what they call 'Hallowe'en'. It sounds like a wild event, possibly heretical.</English>
+		<English>Some settlers who have recently arrived from Ireland and other European countries want to celebrate what they call 'Hallowe'en'. It sounds like a wild event, possibly heretical.</English>
 		<Portuguese>Alguns colonos que chegaram recentemente da Irlanda e de outros países europeus querem celebrar o que chamam de “Hallowe'en”. Parece um evento selvagem, possivelmente herético.</Portuguese>
 		<French>Des colons récemment arrivés d'Irlande et d'autres pays européens veulent célébrer ce qu'ils appellent « Halloween ». Cela semble être une célébration assez païenne, sinon clairement hérétique.</French>
 		<German>Einige Siedler, die erst kürzlich aus Irland und anderen europäischen Ländern angekommen sind, wollen ein Fest feiern, welches sie 'Halloween' nennen. Das Fest hört sich etwas supekt an.</German>
 		<Russian>Некоторые поселенцы, недавно прибывшие из Ирландии и других европейских стран, хотят отпраздновать то, что они называют «Хэллоуин». Звучит как дикое событие, возможно, еретическое.</Russian>
+		<Hungarian>Az Írországból és más európai országokból nemrégiben érkezett telepesek egy része meg akarja ünnepelni a Halloweent. Ez vad eseménynek hangzik, esetleg eretneknek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MOLESTING_MISSIONARY</Tag>
@@ -3400,6 +3409,7 @@
 		<French>Des missionnaires sont accusés d'avoir abusé de femmes indigènes.</French>
 		<German>Ein Missionar wurde beschuldigt, Ureinwohnerinnen sexuell zu belästigen.</German>
 		<Russian>Миссионера обвиняют в сексуальных домогательствах к туземным женщинам.</Russian>
+		<Hungarian>Egy misszionáriust azzal vádolnak, hogy szexuálisan zaklatott Indián nőket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MOLESTING_MISSIONARY</Tag>
@@ -3408,6 +3418,7 @@
 		<French>Des indigènes d'un village voisin sont venus dans l'une de nos villes. Ils avaient un missionnaire avec eux auquel ils ont lié les mains. Ils l'accusent d'avoir abusé de leurs femmes.</French>
 		<German>Einige Wilde aus einer nahegelegenen Siedlung sind in eine unserer Städte angekommen. Sie haben einen gefesselten Missionar bei sich und beschuldigen diesen, dass er ihre Frauen sexuell belästigt habe.</German>
 		<Russian>Несколько индейцев из близлежащей деревни живут в одном из наших городов. Они привели миссионера со связанными руками и обвиняют его в сексуальных домогательствах к их женщинам.</Russian>
+		<Hungarian>Néhány Indián egy közeli faluból az egyik városunkban tartózkodik. Hoztak egy misszionáriust, akinek a keze meg van kötve és azzal vádolják, hogy szexuálisan zaklatta a nőiket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DESERTED_WOLF_WHELP</Tag>
@@ -3416,6 +3427,7 @@
 		<French>Un louveteau abandonné a été trouvé dans le désert.</French>
 		<German>Ein verlassener Wolfswelpe wurde in der Wildnis gefunden.</German>
 		<Russian>В пустынной местности был найден брошенный волчонок.</Russian>
+		<Hungarian>Egy magára hagyott farkaskölyköt találtak a vadonban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DESERTED_WOLF_WHELP</Tag>
@@ -3424,6 +3436,7 @@
 		<French>Nos hommes ont trouvé un louveteau abandonné dans le désert. Sa mère est probablement morte. Cette jeune bête peut sans doute être domptée ou même vendu à un original fortuné.</French>
 		<German>Einer unserer Männer hat einen verlassenen Wolfswelpen in der Wildnis gefunden. Seine Mutter ist wahrscheinlich tot. Vielleicht kann das kleine Biest ja gezähmt werden. Oder wir verkaufen es einem Reichen, der gelangweilt genug ist.</German>
 		<Russian>Наши люди нашли в глуши брошенного волчонка. Его мать, вероятно, мертва. Возможно, этого молодого зверя можно было бы приручить или продать какому-нибудь безумно богатому человеку.</Russian>
+		<Hungarian>Embereink egy magára hagyott farkaskölyköt találtak a vadonban. Az anyja valószínűleg elpusztult. Talán ezt a fiatal állatot meg lehetne szelídíteni vagy el lehetne adni egy őrült gazdag embernek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TAVERN_VS_CHAPEL</Tag>
@@ -3432,6 +3445,7 @@
 		<French>Des matériaux de construction laissés à l'abandon dans une ancienne colonie ont été retrouvés.</French>
 		<German>Einige übriggelassene Baumaterialien von der Gründung einer Kolonie wurden entdeckt.</German>
 		<Russian>Найдены остатки строительных материалов после основания колонии.</Russian>
+		<Hungarian>Egy korábbi kolónia megmaradt építőanyagait megtalálták.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TAVERN_VS_CHAPEL</Tag>
@@ -3440,6 +3454,7 @@
 		<French>Des colons ont récemment découvert des matériaux de construction délaissés lors de la fondation de leur colonie. Certains veulent l'utiliser pour construire une chapelle, d'autres pour construire une taverne. Quelle que soit la décision, l'un des deux camps en sera contrarié.</French>
 		<German>Einige Kolonisten einer kürzlich gegründeten Stadt haben entdeckt, dass noch einige Baumaterialien übrig geblieben sind. Einige Bewohner wollen mit diesen Baumaterialien eine Kapelle errichten. Andere Bewohner wollen stattdessen eine Taverne bauen. Wie auch immer wir uns entscheiden, eine Seite wird unzufrieden sein.</German>
 		<Russian>У колонистов в недавно основанном городе остались материалы, оставшиеся от его строительства. Некоторые хотят построить часовню. Другие хотят таверну. Что бы мы ни решили, одна из сторон будет недовольна.</Russian>
+		<Hungarian>Egy nemrég alapított város telepeseinek maradt némi építőanyaga. Néhányan kápolnát akarnak építeni. Mások kocsmát akarnak. Bárhogy is döntünk, az egyik fél boldogtalan lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BANKRUPT_FARMER</Tag>
@@ -3448,6 +3463,7 @@
 		<French>Un fermier d'une de nos colonies a fait faillite.</French>
 		<German>Ein Farmer aus der Gegend ist bankrott gegangen.</German>
 		<Russian>Местный фермер стал банкротом.</Russian>
+		<Hungarian>Egy helyi gazda csődbe ment.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BANKRUPT_FARMER</Tag>
@@ -3456,6 +3472,7 @@
 		<French>Un fermier ayant récemment immigré s'est lourdement endetté pour acheter des terres et il ne peut plus rembourser. Il veut vendre tout ce qui lui reste pour clore ses dettes et rentrer en Europe.</French>
 		<German>Ein kürzlich eingewanderter Farmer hat einen hohen Kredit aufgenommen, um sich etwas Land zu kaufen. Diesen kann er nun nicht mehr zurückzahlen. Daher will er sein gesamtes Habe verkaufen, um damit den Kredit zu begleichen und wieder nach Europa zurückzukehren.</German>
 		<Russian>Недавно приехавший фермер получил большую ссуду на покупку земли, но переоценил свои силы и теперь не может заплатить. Он хочет продать все, что у него есть, чтобы погасить долг и вернуться в Европу.</Russian>
+		<Hungarian>Egy nemrég érkezett gazda nagy kölcsönt kapott földvásárlásra, de most nem tudja fizetni a részleteket. El akarja adni mindenét, amije van, hogy visszafizesse a kölcsönt és visszamenjen Európába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
@@ -3464,6 +3481,7 @@
 		<French>Un conflit militaire d'importance a pris fin en Europe.</French>
 		<German>Ein bedeutender militärischer Konflikt wurde in Europa beendet.</German>
 		<Russian>В Европе завершился крупный военный конфликт.</Russian>
+		<Hungarian>Véget ért egy jelentős katonai konfliktus Európában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_CONFLICT_ENDED</Tag>
@@ -3472,14 +3490,16 @@
 		<French>Un conflit militaire d'importance a pris fin en Europe. De nombreuses troupes n'y sont plus nécessaires et ont été renvoyées à leur maison. Peut-être pourrions-nous en engager quelques-unes.</French>
 		<German>Ein bedeutender militärischer Konflikt wurde in Europa beendet. Viele Soldaten sind schon entlassen worden. Vielleicht können wir einige davon anheuern.</German>
 		<Russian>Крупномасштабный военный конфликт в Европе закончился. Содержать многотысячные армии больше нет нужды и войска распустили по домам. У нас есть возможность завербовать в колониальную армию опытных солдат.</Russian>
+		<Hungarian>Véget ért egy nagyszabású katonai konfliktus Európában. Sok katonára már nincs szükség és ezért hazaküldték őket. Talán felvehetnénk közülük néhányat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DRUNKEN_FISHER</Tag>
-		<English>A drunken fisher died in a storm.</English>
+		<English>A drunken fisher drowned in a storm.</English>
 		<Portuguese>Um pescador bêbado morreu em uma tempestade.</Portuguese>
 		<French>Un pêcheur ivre est mort dans une tempête.</French>
 		<German>Ein betrunkener Fischer starb in einem Sturm.</German>
 		<Russian>Пьяный рыбак погиб во время шторма.</Russian>
+		<Hungarian>Egy részeg halász meghalt a viharban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DRUNKEN_FISHER</Tag>
@@ -3488,6 +3508,7 @@
 		<French>Un pêcheur ivre est passé par-dessus bord lors d'une tempête. Il s'est noyé. Sa veuve souhaite vendre son bâteau de pêche, n'en ayant plus d'usage.</French>
 		<German>Ein betrunkener Fischer fiel während eines Sturms über Bord und ertrank. Seine Witwe möchte nun dessen Fischerboot verkaufen, da sie keine Verwendung dafür hat.</German>
 		<Russian>Пьяный рыбак во время шторма упал за борт и утонул. Теперь его вдова хочет продать его рыбацкую лодку, так как она ей не нужна.</Russian>
+		<Hungarian>Egy részeg halász a tengerbe esett egy viharban és megfulladt. Az özvegye most el akarja adni a halászhajóját, mivel nincs rá szüksége.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ROTTEN_MEAT</Tag>
@@ -3496,14 +3517,16 @@
 		<French>Un boucher a fui l'Europe où il est accusé de vendre de la viande pourrie.</French>
 		<German>Ein Fleischermeister ist aus Europa geflohen, weil er verdorbenes Fleisch verkauft haben soll.</German>
 		<Russian>Мясник сбежал из Европы, где его обвинили в продаже тухлого мяса.</Russian>
+		<Hungarian>Egy hentes elmenekült Európából, ahol azzal vádolják, hogy romlott húst árult.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ROTTEN_MEAT</Tag>
-		<English>A butcher has arrived in the harbour of one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads his innocence and wants a second chance.</English>
+		<English>A butcher has just disembarked in one of our cities. He had to flee Europe because he was accused of selling rotten meat. He pleads his innocence and wants a second chance.</English>
 		<Portuguese>Um açougueiro chegou ao porto de uma de nossas cidades. Teve que fugir da Europa porque foi acusado de vender carne estragada. Ele alega sua inocência e quer uma segunda chance.</Portuguese>
 		<French>Un ancien boucher est arrivé au port de l'une de nos villes. Il a fui d'Europe parce qu'il était accusé de vendre de la viande pourrie. Il clâme son innocence et souhaite une deuxième chance ici.</French>
 		<German>Ein Fleischermeister ist im Hafen einer unserer Städte eingetroffen. Er musste aus Europa fliehen, weil er verdorbenes Fleisch verkauft haben soll. Er behauptet aber, unschuldig zu sein, und bittet um eine zweite Chance.</German>
 		<Russian>На корабле из Европы в наши колонии прибыл мясник. Ему пришлось бежать из-за обвинений в продаже тухлого мяса. Он заявляет о своей невиновности, происках конкурентов и просит дать ему шанс восстановить своё доброе имя.</Russian>
+		<Hungarian>Egy hentes érkezett az egyik városunk kikötőjébe. El kellett menekülnie Európából, mert azzal vádolták, hogy romlott húst árult. Ártatlannak vallja magát és egy második esélyt szeretne kapni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DESPERATE_CONQUISTADORES</Tag>
@@ -3512,6 +3535,7 @@
 		<French>Des conquistadors désespérés ont pillé un village indigène.</French>
 		<German>Einige verzweifelte Konquistadoren haben eine Siedlung der Ureinwohner überfallen.</German>
 		<Russian>Несколько отчаянных конкистадоров совершили набег на поселение индейцев.</Russian>
+		<Hungarian>Néhány kétségbeesett konkvisztádor rajtaütött egy Indián településen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DESPERATE_CONQUISTADORES</Tag>
@@ -3520,6 +3544,7 @@
 		<French>Des conquistadors à cheval sont arrivés dans l'une de nos villes dans un bien triste état. Ils comptent plusieurs blessés. Peu de temps après, des indigènes d'une tribu voisine sont également arrivés et ont accusé les conquistadors d'avoir réalisé un raide dans leurs villages.</French>
 		<German>Einige berittene Konquistadoren sind in sehr schlechtem Zustand in einer unserer Siedlungen angekommen. Einige von ihnen sind verwundet. Kurz darauf trafen auch einige Ureinwohner eines nahegelegenen Stammes ein und beschuldigten die Konquistadoren, ihre Dörfer überfallen zu haben.</German>
 		<Russian>В одном из наших поселений появились несколько конных конкистадоров в довольно плачевном состоянии, некоторые были ранены. И почти сразу пришли индейцы из соседнего племени и обвинили тех конкистадоров в набегах на их деревни.</Russian>
+		<Hungarian>Néhány lovas konkvisztádor elég rossz állapotban jelent meg az egyik településünkön. Néhányan megsebesültek. Aztán egy közeli törzs Indiánjai érkeztek és ezeket a konkvisztádorokat vádolták meg azzal, hogy fosztogatják a falujukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRAPPER_TROUBLE</Tag>
@@ -3528,6 +3553,7 @@
 		<French>Des tensions montent entre trappeurs et indigènes à propos de droits de chasse.</French>
 		<German>Konflikte zwischen Trappern und Ureinwohnern über Jagdrechte.</German>
 		<Russian>Проблемы между звероловами и туземцами из-за прав на охоту.</Russian>
+		<Hungarian>Zűr a vadászok és az Indiánok között a vadászati jogok miatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRAPPER_TROUBLE</Tag>
@@ -3536,6 +3562,7 @@
 		<French>À proximité de l'un de nos forts, nos troupes ont entendu des tirs dans les bois. En menant l'investigation, ils se sont confrontés à une querelle entre des trappeurs et des indigènes à propos de droits de chasse. Les indigènes considèrent que cette forêt leur appartient et que les blancs n'y sont pas autorisés à chasser.</French>
 		<German>In der Nähe eines unserer Forts haben die Truppen Schüsse in den Wäldern gehört. Als sie zur Untersuchung ausrückten, fanden sie Ureinwohner und Trapper in einen Streit über Jagdrechte in den umliegenden Wäldern verwickelt vor. Die Ureinwohner behaupten, dass das Land immer noch ihnen gehört und dass dort kein weisser Mann ohne ihre Erlaubnis jagen darf.</German>
 		<Russian>В лесу, недалеко от одного из наших фортов, наши бойцы услышали выстрелы. Они пошли проверить, в чем дело и увидели группы индейцев и звероловов, между которыми возник спор о правах на охоту. Туземцы утверждают, что эти леса по-прежнему принадлежат им и что ни одному поселенцу не разрешается там охотиться.</Russian>
+		<Hungarian>Az egyik erődünkhöz közeli erdőben csapataink lövéseket hallottak. Amikor kimentek, hogy kivizsgálják a dolgot, belesétáltak egy vadászati joggal kapcsolatos vitába az Indiánok és a prémvadászok között. Az Indiánok azt állítják, hogy azok az erdők még mindig az övék, és hogy egyetlen telepes sem vadászhat ott.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
@@ -3544,6 +3571,7 @@
 		<French>Des truands occupent les bois.</French>
 		<German>Halsabschneider machen die Wälder unsicher.</German>
 		<Russian>По лесам бродят головорезы.</Russian>
+		<Hungarian>Vadorzók kóborolnak az erdőben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CUTTHROATS_IN_THE_WOODS</Tag>
@@ -3552,6 +3580,7 @@
 		<French>Selon plusieurs rapports, des truands occupent les bois. Heureusement nous disposons d'un fort à proximité et nous pouvons faire intervenir des troupes.</French>
 		<German>In der Nähe eines unserer Forts scheinen sich einige Halsabschneider in den Wäldern zu verstecken. Sollen unsere Truppen eingreifen?</German>
 		<Russian>Мы слышали, что в лесу прячутся преступники. К счастью, один из наших близлежащих фортов может послать войска, которые очистят лес от негодяев.</Russian>
+		<Hungarian>Hallottuk, hogy törvényen kívüliek leselkednek az erdőben. Szerencsére az egyik közeli erődünk csapatokat tud küldeni, hogy beavatkozzanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
@@ -3560,6 +3589,7 @@
 		<French>Des hommes dans les terres sauvages s'approvisionnent dans les forts.</French>
 		<German>Männer in der Wildnis nutzen die Forts, um Vorräte zu kaufen.</German>
 		<Russian>Люди из глуши покупают припасы в фортах.</Russian>
+		<Hungarian>A vadonból érkező emberek ellátmányt vásárolnak az erődökben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MAN_FROM_THE_WILDERNESS</Tag>
@@ -3568,6 +3598,7 @@
 		<French>Des hommes vivant dans les terres sauvages sont venu pour s'approvisionner dans nos forts. Ils semblent bien connaître les environs et pourraient nous être utiles.</French>
 		<German>Einige Männer, die in der nahegelegenen Wildnis leben, sind in unser Fort gekommen, um Vorräte zu kaufen. Es scheint, als hätten sie sehr viel Wissen über die Gegend. Daher könnten sie uns sehr nützlich sein.</German>
 		<Russian>Несколько человек из диких мест пришли в наш форт, чтобы купить припасы. Они знают местность и могут быть нам очень полезны.</Russian>
+		<Hungarian>Néhány férfi a közeli vadonból bejött az erődbe, hogy ellátmányt vásároljon. Ismerik a környéket és nagyon hasznosak lehetnek számunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MAN_FROM_THE_WILDERNESS_HELP</Tag>
@@ -3583,6 +3614,7 @@
 		<French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture.</French>
 		<German>Nach einem langen harten Winter kamen Ureinwohner in ein Kloster, um Nahrung zu kaufen.</German>
 		<Russian>После долгой суровой зимы индейцы пришли в монастырь купить еды.</Russian>
+		<Hungarian>Egy hosszú, kemény tél után az Indiánok eljöttek egy kolostorba, hogy élelmet vásároljanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_TRADING_FOOD</Tag>
@@ -3591,6 +3623,7 @@
 		<French>Après un hiver long et vigoureux, des indigènes sont venues au Monastère pour acheter de la nourriture. Ils n'ont pas grand-chose à offrir en échange.</French>
 		<German>Nach einem langen harten Winter kamen Ureinwohner aus einem benachbarten Dorf in eines unserer Kloster, um Nahrung zu kaufen. Sie haben aber im Austausch wenig anzubieten.</German>
 		<Russian>После долгой суровой зимы в один из наших монастырей из близлежащей деревни пришли индейцы в надежде купить еды. Но им нечего предложить взамен.</Russian>
+		<Hungarian>A hosszú, kemény tél után egy közeli faluból az Indiánok eljöttek az egyik kolostorunkba, hogy élelmet vásároljanak. Nem sok mindent tudnak cserébe felajánlani.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HIDING_SLAVES</Tag>
@@ -3599,6 +3632,7 @@
 		<French>Des esclaves indigènes se sont enfuis et cherchent la protection dans nos monastères.</French>
 		<German>Einige Ureinwohner sind der Sklaverei des Weissen Mannes entflohen und suchen Schutz in Klöstern.</German>
 		<Russian>Несколько туземных рабов сбежало из чужой колонии в поисках защиты в наших монастырях.</Russian>
+		<Hungarian>Néhány Indián rabszolga megszökött egy idegen gyarmatról, hogy a mi kolostorainkban keressen védelmet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HIDING_SLAVES</Tag>
@@ -3607,6 +3641,7 @@
 		<French>Des esclaves indigènes se sont enfuis de chez l'un de nos voisins européens et cherchent la protection de l'un de nos monastères. Des troupes des colons européens voisins encerclent le monastère et demandent que leur propriété leur soit rendu.</French>
 		<German>Einige Ureinwohner konnten aus der Sklaverei in einer nahegelegenen Siedlung eines unserer europäischen Nachbarn entfliehen. Sie suchen nun um Schutz in einem unserer Klöster nach. Truppen unseres Nachbarn sind ihnen gefolgt und haben nun das Kloster umstellt. Sie verlangen die Herausgabe der Sklaven.</German>
 		<Russian>Несколько туземных рабов сбежало из чужой колонии. Они просят защиты в одном из наших монастырей. Войска нашего европейского соседа окружили монастырь, требуя вернуть им их имущество.</Russian>
+		<Hungarian>Néhány Indián rabszolga megszökött egy idegen gyarmatról. Védelmet kérnek az egyik kolostorunkban. Európai szomszédunk csapatai körülvették a kolostort, hogy visszaköveteljék tulajdonukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
@@ -3615,6 +3650,7 @@
 		<French>Des indigènes ont apporté un guerrier blessé dans un monastère.</French>
 		<German>Ureinwohner brachten Verwundeten in ein Kloster.</German>
 		<Russian>Индейцы принесли в монастырь раненого воина.</Russian>
+		<Hungarian>Az Indiánok egy sebesült harcost vittek egy kolostorba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MONASTERY_HEALING_WOUNDED</Tag>
@@ -3623,6 +3659,7 @@
 		<French>Des indigènes d'un village avoisinant ont ramené un jeune guerrier sérieusement blessé dans l'un de nos monastères. Il semble avoir été attaqué par un ours. Si nous ne l'aidons pas, il va probablement mourir.</French>
 		<German>Einige Ureinwohner eines nahegelegen Dorfes haben einen schwer verwundeten jungen Krieger in eines unserer Klöster gebracht. Er scheint vom einem Bären angegriffen worden zu sein. Wenn wir nicht helfen, wird er sterben.</German>
 		<Russian>Индейцы из близлежащей деревни принесли в один из наших монастырей тяжело раненного молодого воина. На него напал медведь. Если мы ему не поможем, он наверняка умрет.</Russian>
+		<Hungarian>Néhány Indián egy közeli faluból egy fiatal, súlyosan sebesült harcost hozott az egyik kolostorunkba. Egy medve támadta meg. Ha nem segítünk rajta, biztosan meghal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_UNIVERSITY</Tag>
@@ -3631,6 +3668,7 @@
 		<French>La première université a été fondée à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Die erste Universität der Neuen Welt wurde in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] gegründet.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] был основан первый университет.</Russian>
+		<Hungarian>Az első egyetemet [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] városában alapították.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_UNIVERSITY</Tag>
@@ -3639,6 +3677,7 @@
 		<French>Une société influente d'hommes éduqués dans notre mère patrie ont entendu parlé de la fondation de notre première université. Ils souhaitent nous aider en nous envoyer un de leurs professeurs émérites pour y enseigner.</French>
 		<German>Eine einflußreiche Gesellschaft gebildeter Männer unseres Heimatlandes hat von der Gründung unserer ersten Universität erfahren. Sie wollen uns helfen, indem sie uns einen hoch gebildeten Mann schicken wollen, der unsere Studenten unterrichtet.</German>
 		<Russian>Влиятельное общество образованных людей в нашей родной стране услышало об основании нашего первого университета. Они хотят помочь нам, прислав в качестве профессора видного ученого.</Russian>
+		<Hungarian>Egy befolyásos művelt férfiakból álló társaság az anyaországban hallott az első egyetemünk megalapításáról. Segíteni akarnak nekünk azzal, hogy egy neves akadémikust küldenek professzornak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_YOUNG_COD_SWARM</Tag>
@@ -3647,14 +3686,16 @@
 		<French>Des bancs massifs de cabillauds dans les océans.</French>
 		<German>Riesige Kabeljauschwärme in den Ozeanen.</German>
 		<Russian>Крупные косяки трески в океанах.</Russian>
+		<Hungarian>Nagy tőkehalrajok az óceánokban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_YOUNG_COD_SWARM</Tag>
-		<English>One of our fishing boats has sighted a large school of small young cod. If we harvest those fish now, the cod will probably not recover.</English>
+		<English>One of our fishing boats has sighted a large school of small cod but, if we harvest those young fish now, the cod will probably not recover.</English>
 		<Portuguese>Um dos nossos barcos de pesca avistou um grande cardume de pequenos bacalhaus jovens. Se pescarmos esse peixe agora, o bacalhau provavelmente não recuperará.</Portuguese>
 		<French>L'un de nos bateaux de pêche a repéré de larges bancs de jeunes cabillauds. Si nous les pêchons tous d'un seul coup, il ne pourra probablement pas se reproduire.</French>
 		<German>Eines unserer Fischerboote hat einen riesigen Schwarm junger Kabeljaufische entdeckt. Wenn wir ihn jedoch jetzt bereits abfischen, wird es sich nicht davon erholen.</German>
 		<Russian>Одна из наших рыбацких лодок заметила большой косяк мелкой молодой трески. Если мы выловим эту рыбу сейчас, популяция трески, скорее всего, не восстановится.</Russian>
+		<Hungarian>Az egyik halászhajónk egy nagy, fiatal tőkehalrajra bukkant. Ha most lehalásszuk őket, azt valószínűleg nem fogja kiheverni az állomány.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS</Tag>
@@ -3663,6 +3704,7 @@
 		<French>Une grande compagnie financière souhaite développer ses activités dans le Nouveau Monde. Elle offre une récompense à la première colonie qui construira 5 villes disposant de docks ou de meilleurs ports.</French>
 		<German>Eine einflußreiche Handelsgesellschaft will ihre Unternehmungen in der Neuen Welt ausweiten. Sie bietet daher dem Gouverneur der ersten Kolonie, die 5 Städte mit einfachen oder ausgebauten Häfen errichtet, eine Belohnung an.</German>
 		<Russian>Влиятельная торговая компания хочет расширить свой бизнес в Новом Свете. Она предлагает награду первой державе, которая построит пять городов с доками.</Russian>
+		<Hungarian>Az egyik halászhajónk egy nagy, fiatal tőkehalrajra bukkant. Ha most lehalásszuk őket, azt valószínűleg nem fogja kiheverni az állomány.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_DOCKS</Tag>
@@ -3671,6 +3713,7 @@
 		<French>Sire, une autre puissance a construit 5 ports avant vous. Ils ont obtenu le soutien de la compagnie financière influente.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Häfen errichten. Sie werden daher nun von einer einflußreichen Handelsgesellschaft unterstützt.</German>
 		<Russian>Милорд, губернатор другой колониальной державы первым построил доки в пяти городах. Они получили поддержку, предложенную влиятельной торговой компанией.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója először épített meg 5 kikötőt. Elnyerte a befolyásos kereskedelmi társaság által felajánlott támogatást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_DOCKS_DONE</Tag>
