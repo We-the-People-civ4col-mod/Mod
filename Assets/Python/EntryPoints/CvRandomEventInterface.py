@@ -3988,7 +3988,7 @@ def getHelpRunAway3(argsList):
 	if event.getGenericParameter(1) <> 0:
 		szHelp = localText.getText(
 			"TXT_KEY_EVENT_YIELD_LOOSE",
-			(quantity, gc.getYieldInfo(iYield).getChar(), city.getNameKey())
+			(-quantity, gc.getYieldInfo(iYield).getChar(), city.getNameKey())
 		)
 
 		szHelp += "\n" + localText.getText(
