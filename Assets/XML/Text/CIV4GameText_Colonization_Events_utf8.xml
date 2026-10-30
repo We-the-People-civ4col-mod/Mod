@@ -3722,6 +3722,7 @@
 		<French>Une autre colonie a été la première à construire 5 ports avant les autres.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Häfen errichten.</German>
 		<Russian>Колониальная нация построила доки в пяти городах раньше всех остальных.</Russian>
+		<Hungarian>Uram, egy másik gyarmatosító nemzet minden más gyarmatot megelőzve öt városban épített kikötőket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_DOCKS_DONE</Tag>
@@ -3730,6 +3731,7 @@
 		<French>Sire, vous avez été le premier à construire des ports dans cinq de vos colonies. Vous avez obtenu le soutien d'une grande compagnie financière. Choisissez votre récompense.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Häfen errichten. Ihr werdet daher nun von einer einflußreichen Handelsgesellschaft unterstützt. Wählt Eure Belohnung.</German>
 		<Russian>Милорд, мы построили доки в пяти городах раньше, чем любая другая колониальная держава. Теперь у вас есть поддержка влиятельной торговой компании. Время забрать свою награду.</Russian>
+		<Hungarian>Uram, öt városban építettél kikötőket, mielőtt bármely más gyarmat megtehette volna. Most már egy befolyásos kereskedelmi társaság is támogat téged. Válaszd ki a jutalmadat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_DOCKS_REWARD_SHIP_HELP</Tag>
@@ -3745,6 +3747,7 @@
 		<French>Des négociants privés dans nos colonies nous demandent d'investir dans davantage de marchés. Ils nous proposent même une récompense si nous devenons la première puissance coloniale à construire 5 marchés.</French>
 		<German>Eine einflußreiche Gruppe von Händlern aus unseren Städten fordert, dass wir mehr Märkte in den Kolonien bauen. Sie bietet als Anreiz sogar eine Belohnung, falls wir als erste Kolonie Märkte in 5 Städten errichtet haben.</German>
 		<Russian>Группа частных торговцев в нашей колонии настаивает на том, что нам нужно больше рынков. Они даже предлагают вознаграждение, если мы сможем быть первыми, у которых будет пять городов с рынками.</Russian>
+		<Hungarian>Gyarmatunkon a magánkereskedők egy csoportja úgy gondolja, hogy több piacra van szükség. Még jutalmat is felajánlanak, ha elsőként öt városban lesz piacunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_MARKETS</Tag>
@@ -3753,6 +3756,7 @@
 		<French>Seigneur, une autre colonie a construit 5 marchés dans ses villes avant nous. Vous avez perdu votre chance de gagner une récompense de la part des négociants privés.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Märkte errichten. Dadurch habt Ihr die Chance auf eine Belohung durch unsere eigenen Händler vertan.</German>
 		<Russian>Милорд, губернатор другой колонии построил рынки в пяти городах раньше вас. Вы упустили шанс получить эту награду от частных торговцев.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója öt városban épített piacot előtted. Elszalasztottad a lehetőséget, hogy megkapd a jutalmat a magánkereskedőktől.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_MARKETS_DONE</Tag>
@@ -3761,6 +3765,7 @@
 		<French>Une puissance coloniale a été la première à construire des marchés dans 5 villes.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in 5 Städten Märkte errichten.</German>
 		<Russian>Колониальная нация построила рынки в пяти своих городах.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az első, amely öt városban rendelkezik piaccal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MARKETS_DONE</Tag>
@@ -3769,6 +3774,7 @@
 		<French>Seigneur, vous avez été le premier à construire 5 marchés dans vos villes. Les négociants privés vous proposent de choisir votre récompense.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Märkte errichten. Die Händler aus unseren Städten fragen nun, welche Belohnung Ihr dafür wollt.</German>
 		<Russian>Милорд, вы построили рынки в пяти городах раньше, чем это смогла сделать любая другая колониальная держава. Торговцы, помня своё обещание, спрашивают, какое вознаграждение вы желаете получить.</Russian>
+		<Hungarian>Uram, öt városban építettél piacot, mielőtt bármely más gyarmat megtehette volna. A magánkereskedők most azt kérdezik, hogy milyen jutalmat szeretnél?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS</Tag>
@@ -3777,6 +3783,7 @@
 		<French>Sire, l'église demande que nous construisions des cimetières dans cinq villes pour y enterrer nos morts. Il nous a été promis que des prêtres nous seraient envoyés pour mener les funérailles.</French>
 		<German>Milord, die Kirche verlangt, dass wir in mindestens fünf Städten Friedhöfe bauen, um tote Bürger zu begraben. Uns wurde versprochen, dass dann auch Priester für die Beerdigungen geschickt werden.</German>
 		<Russian>Милорд, церковь требует, чтобы мы построили кладбища как минимум в пяти городах для захоронения умерших граждан. Нам обещают, что потом будут присланы священники для совершения похоронных обрядов.</Russian>
+		<Hungarian>Uram, az Egyház azt kéri, hogy legalább öt városban építsünk temetőket. Az Egyház papokat küld majd, hogy temetési szertartásokat tartsanak elhunyt polgáraink számára..</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
@@ -3785,6 +3792,7 @@
 		<French>Sire, une autre nation a été la première à construire cinq cimetières dans les villes.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Friedhöfe errichten.</German>
 		<Russian>Колониальная нация организовала кладбища в пяти городах.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amelynek öt városában van temető.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_GRAVEYARDS_DONE</Tag>
@@ -3801,6 +3809,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous cinq cimetières dans ses villes. Vous avez laissé passer votre chance pour recevoir la récompense de l'Église </French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Friedhöfe errichten. Dadurch habt Ihr die Chance auf eine Belohung durch die Kirche vertan.</German>
 		<Russian>Милорд, губернатор другой колонии построил кладбища в пяти городах. Мы упустили шанс получить награду от церкви.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója öt városban épített temetőket előtted. Elszalasztottad a lehetőséget, hogy megkapd a jutalmat az Egyháztól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS</Tag>
@@ -3809,6 +3818,7 @@
 		<French>Bien sûr, nous ferons en sorte que nos morts connaissent le repos éternel en terre sacrée.</French>
 		<German>Selbstverständlich werden wir sicherstellen, dass alle unsere Toten friedvoll in heilger Erde ruhen können.</German>
 		<Russian>Конечно, мы позаботимся о том, чтобы все наши умершие могли мирно упокоиться на святой земле.</Russian>
+		<Hungarian>Természetesen biztosítani fogjuk, hogy minden halottunk békében nyugodhasson szent földben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_GRAVEYARDS_DONE_1</Tag>
@@ -3817,6 +3827,7 @@
 		<French>Assurez-vous que les prêtres soient accueillis avec cérémonie.</French>
 		<German>Stellt sicher, dass die Priester mit Feierlichkeiten willkommen geheißen werden.</German>
 		<Russian>Удостоверьтесь, что священников встретили должным образом.</Russian>
+		<Hungarian>Gondoskodjunk arról, hogy a papokat ünnepélyes keretek között fogadjuk!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES</Tag>
@@ -3825,6 +3836,7 @@
 		<French>Sire, le commandant des piquiers de garde de notre capitale suggère de construire cinq boulangeries dans le nouveau monde pour fournir à la garde de meilleures rations. Il promet que ceci amènera de nombreux volontaires pour la garde.</French>
 		<German>Milord, der Befehlshaber der Statdwache unserer Haupstadt schlägt vor, dass wir mehr Bäckereien in unseren Städten bauen, um die Wache mit besseren Rationen zu versorgen. Er verspricht dass dies zu vielen neuen Freiwilligen für die Wache führne wird.</German>
 		<Russian>Милорд, командир городской стражи нашей столицы предлагает построить еще пять пекарен, чтобы улучшить снабжение гарнизонов. Он обещает, что это увеличит количество новобранцев и таким образом мы сможем улучшить нашу обороноспособность.</Russian>
+		<Hungarian>Uram, a fővárosunk városőrségének parancsnoka azt javasolja, hogy építsünk még öt kenyérgyárat a városainkban, hogy az őrséget jobb fejadagokkal lássuk el. Azt ígéri, hogy ez sok új önkéntest hoz az őrségbe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_BAKERIES_DONE</Tag>
@@ -3833,6 +3845,7 @@
 		<French>Une autre nation a construit la première une boulangerie dans cinq de ses villes.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Bäckereien errichten.</German>
 		<Russian>Колониальная нация открыла пекарни в пяти городах.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amely öt városban rendelkezik kenyérgyárral.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BAKERIES_DONE</Tag>
@@ -3841,6 +3854,7 @@
 		<French>Sire, vous avez construit une boulangerie dans cinq villes avant toutes les autres colonies. Les volontaires se pressent pour s'enrôler dans la garde.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Bäckereien errichten. Neue Freiwillge wollen sich der Wache anschließen.</German>
 		<Russian>Милорд, мы построили пекарни в пяти городах раньше, чем любая другая колониальная держава. В охрану готовы набрать новых добровольцев.</Russian>
+		<Hungarian>Uram, öt városodban építettél kenyérgyárakat, mielőtt bármely más gyarmat megtehette volna. Új önkénteseket lehet toborozni az őrségbe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_BAKERIES</Tag>
@@ -3849,6 +3863,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous une boulangerie dans cinq de ses villes. Vous avez laissé passer l'occasion de l'afflux des volontaires dans la garde.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Bäckereien errichten. Dadurch habt Ihr die Chance auf neue Freiwillige für die Wache vertan.</German>
 		<Russian>Милорд, губернатор другой колонии построил пекарни в пяти городах раньше нас. Мы упустили шанс получить новых добровольцев для охраны наших городов.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója öt városban épített kenyérgyárat előtted. Elszalasztottad a lehetőséget, hogy új önkénteseket szerezz az őrségbe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_BAKERIES</Tag>
@@ -3857,14 +3872,16 @@
 		<French>Bien sûr, nous allons nous assurer que les hommes courageux gardant nos villes aient les meilleures rations.</French>
 		<German>Selbstverständlich werden wir sicherstellen, dass die mutigen Männer, die unsere Städte bewachen gut versorgt sind.</German>
 		<Russian>Конечно, мы позаботимся о том, чтобы храбрецы, охраняющие наши города, были хорошо обеспечены.</Russian>
+		<Hungarian>Természetesen gondoskodunk arról, hogy a városainkat őrző bátor embereket jól ellássuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_BAKERIES_DONE_1</Tag>
-		<English>Ensure that these new volunteers get well trained. But give them a good meal first.</English>
+		<English>Ensure that these new volunteers get well trained, but give them a good meal first.</English>
 		<Portuguese>Certifique-se de que esses novos voluntários sejam bem treinados. Mas primeiro dê-lhes uma boa refeição.</Portuguese>
 		<French>Entrainez au mieux ces nouveaux volontaires. Mais donnez leur un bon repas d'abord.</French>
 		<German>Stellt sicher, dass die neuen Freiwilligen gut trainiert werden. Aber zuerst gebt ihnen eine anständige Mahlzeit.</German>
 		<Russian>Проследите, чтобы новички прошли хорошую подготовку. Но сначала обеспечте их хорошим пайком.</Russian>
+		<Hungarian>Biztosítsd, hogy ezek az új önkéntesek jól képzettek legyenek. De előbb adj nekik enni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS</Tag>
@@ -3873,6 +3890,7 @@
 		<French>Sire, des mercenaires de Hesse recherchent un nouveau contrat. Mais parmi leurs conditions, ils souhaitent travailler pour le pays avec les meilleures saucisses. Peut-être que si nous construisons des boucheries dans cinq de nos villes, nous pourrons les convaincre de nous rejoindre</French>
 		<German>Milord, einige hessische Söldner suchen nach einem neuen Auftrag. Aber sie stellen die seltsame Bedingung dass sie nur für das Land mit den besten Würsten arbeiten wollen. Vielleicht können wir sie davon überzeugen zu uns zu kommen indem wir in fünf unserer Städte Schlachtereien errichten.</German>
 		<Russian>Милорд, несколько гессенских наемников ищут новый контракт. Но включают странное требование, что они будут работать только на страну с лучшими колбасами. Может быть, если мы построим дома мясников в пяти наших городах, мы сможем убедить их прийти к нам.</Russian>
+		<Hungarian>Uram, néhány Hesseni Zsoldos új szerződést szeretne kötni. De van egy furcsa követelésük, miszerint csak annak az országnak dolgoznak, ahol a legjobb kolbász van. Talán ha öt városunkban mészárszéket építenénk, meggyőzhetnénk őket, hogy hozzánk jöjjenek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_BUTCHERS_DONE</Tag>
@@ -3881,6 +3899,7 @@
 		<French>Sire, une autre nation a été la première à construire des boucheries dans cinq de ses villes.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Schlachtereien errichten.</German>
 		<Russian>Колониальная нация построила дома мясников в пяти городах.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amelynek öt városában van mészárszék.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_BUTCHERS_DONE</Tag>
@@ -3889,6 +3908,7 @@
 		<French>Sire, vous avez construit des boucheries dans cinq de vos villes avant toutes les autres colonies. Les mercenaires de Hesse sont convaincus et nosu ont rejoint.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Schlachtereien errichten. Das hat die hessischen Söldner überzeugt für uns zu kämpfen.</German>
 		<Russian>Милорд, мы построили дома мясников в пяти городах раньше, чем любая другая колониальная держава. Это убедило гессенских наемников сражаться за нас.</Russian>
+		<Hungarian>Uram, öt városban építettél mészárszéket, mielőtt bármely más gyarmat megtehette volna. Ez meggyőzte a Hesseni Zsoldosokat, hogy harcoljanak értünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_BUTCHERS</Tag>
@@ -3897,6 +3917,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous les boucheries dans cinq villes. Vous avez laissé passer la chance de recruter les mercenaires de Hesse.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Schlachtereien errichten. Dadurch habt Ihr die Chance auf die hessischen Söldner vertan.</German>
 		<Russian>Милорд, губернатор другой колонии построил дома мясников в пяти городах раньше нас. Мы упустили шанс нанять гессенских наемников.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója öt városban épített mészárszéket előtted. Elszalasztottad a lehetőséget, hogy felbéreld a Hesseni Zsoldosokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_BUTCHERS</Tag>
@@ -3905,22 +3926,25 @@
 		<French>Nous leur montrerons que nos bouchers sont les rois du monde de la saucisse !</French>
 		<German>Wir werden beweisen, dass unsere Schlachter die besten Würste der Welt machen!</German>
 		<Russian>Мы покажем им, что наши мясники делают лучшие колбасы в мире!</Russian>
+		<Hungarian>Megmutatjuk nekik, hogy a mi henteseink készítik a világ legjobb kolbászait!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_BUTCHERS_DONE_1</Tag>
-		<English>Wonderful, let us celebrate a Hessian sausage festival.</English>
+		<English>Wonderful, let us celebrate with a Hessian sausage festival.</English>
 		<Portuguese>Maravilhoso, vamos celebrar um festival de salsicha de Hesse.</Portuguese>
 		<French>Merveilleux, faisons une foire à la saucisse de Francfort.</French>
 		<German>Wundervoll, laßt uns ein hessisches Wurstfest feiern.</German>
 		<Russian>Замечательно, давайте устроим фестиваль гессенских колбас.</Russian>
+		<Hungarian>Csodálatos, ünnepeljük meg egy Hesseni kolbászfesztivállal!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES</Tag>
-		<English>Milord, our ships that return from Europe bring bad news. There have been outbreaks of the plague in major cities of several countries. Our citizens are worried and demand that we build hospitals in at least five cities to be prepared for the worst. They even offer to raise money to hire more doctors.</English>
+		<English>Milord, our ships returning from Europe bring bad news. There have been outbreaks of plague in major cities across several countries. Our citizens are worried and demand that we build hospitals in at least five cities to be prepared for the worst. They even offer to raise money to hire more doctors.</English>
 		<Portuguese>Milorde, os nossos navios que regressam da Europa trazem más notícias. Houve surtos da peste nas principais cidades de vários países. Os nossos cidadãos estão preocupados e exigem que construamos hospitais em pelo menos cinco cidades para estarmos preparados para o pior. Eles até se oferecem para arrecadar dinheiro para contratar mais médicos.</Portuguese>
 		<French>Sire, une bien mauvaise nouvelle arrive d'Europe avec nos navires. Des résurgences de peste ont frappé des villes majeures dans de nombreux paus. Nos citoyens sont inquiest et exigent que nous construisions des hôpitaux dans au moins cinq de nos villes pour être parés au pire. Ils sont prêt à payer pour recruter plus de médecins?</French>
 		<German>Milord, unsere Schiffe die aus Europa zurückkehren bringen schlechte Neuigkeiten. Es scheint, als hätte es Ausbrüche der Pest in den Großstädten mehrerer Länder gegeben. Unsere Bürger sind daher beunruhigt und verlangen, dass wir Krankenhäuser in mindestens fünf Städten bauen, um auf das Schlimmste vorbereitet zu sein. Sie bieten sogar an, Geld für die Anstellung von mehr Ärzten zu sammeln.</German>
 		<Russian>Милорд, наши корабли, возвращающиеся из Европы, приносят плохие новости. В крупных городах нескольких стран происходили вспышки чумы. Наши граждане обеспокоены и требуют построить дома для врачей как минимум в пяти городах, чтобы быть готовыми к худшему. Они даже предлагают собрать деньги, чтобы нанять больше медиков.</Russian>
+		<Hungarian>Uram, az Európából visszatérő hajóink rossz híreket hoznak. Több ország nagyvárosaiban kitört a pestis. Polgáraink aggódnak és követelik, hogy legalább öt városban építsünk kórházakat, hogy felkészüljünk a legrosszabbra. Még azt is felajánlják, hogy pénzt gyűjtenek, hogy több orvost vehessünk fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
@@ -3929,6 +3953,7 @@
 		<French>Sire, une autre nation a construit la première des hôpitaux dans cinq villes</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen in fünf Städten Krankenhäuser errichten.</German>
 		<Russian>Колониальная нация построила дома для врачей в пяти городах.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amely öt városban épített kórházat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MEDICAL_OFFICES_DONE</Tag>
@@ -3937,6 +3962,7 @@
 		<French>Sire, vous avez construit des hôpitaux dans cinq villes avant tous les autres. Comme promis, nos citoyens se sont cotisés pour recruter des médecins.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Krankenhäuser errichten. Wie versprochen, haben unsere Bürger Geld gesammelt, um mehr Ärzte einzustellen.</German>
 		<Russian>Милорд, мы построили дома для врачей в пяти городах раньше, чем любая другая колониальная держава. Как и было обещано, наши граждане собрали деньги, чтобы нанять больше врачей.</Russian>
+		<Hungarian>Uram, öt városban építettél kórházakat, mielőtt bármely más gyarmat megtehette volna. Ahogy ígérték, polgáraink pénzt gyűjtöttek, hogy több orvost vehessünk fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_MEDICAL_OFFICES</Tag>
@@ -3945,6 +3971,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous des hôpitaux dans cinq villes. Vous avez laissé passer l'occasion de faire cotiser vos citoyens pour des médecins.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch in 5 Städten Krankenhäuser errichten. Dadurch habt Ihr die Chance vertan, eure Bürger davon zu überzeugen für mehr Ärzte zu bezahlen.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил больницы в пяти городах. Мы упустили шанс убедить своих граждан платить за большее количество врачей.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója öt városban épített kórházakat előtted. Elszalasztottad a lehetőséget, hogy meggyőzd a polgáraidat, hogy fizessenek több orvosért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES</Tag>
@@ -3953,6 +3980,7 @@
 		<French>Nous assurerons les soins médicaux pour nos citoyens</French>
 		<German>Wir werden so gut wie möglich die medizinische Versorgung unserer Bürger sichern.</German>
 		<Russian>Мы обеспечим медицинскую помощь нашим гражданам.</Russian>
+		<Hungarian>Biztosítani fogjuk polgáraink orvosi ellátását.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_MEDICAL_OFFICES_DONE_1</Tag>
@@ -3961,6 +3989,7 @@
 		<French>Les docteurs recevront tout ce dont ils ont besoin. Tout signe de peste doit être signalé immédiatement.</French>
 		<German>Die Ärzte sollen alles bekommen was sie brauche. Jedes noch so kleine Zeichen der Pest muss sofort berichtet werden.</German>
 		<Russian>Врачи получат все необходимое. О любых признаках чумы немедленно сообщать мне лично.</Russian>
+		<Hungarian>Az orvosok megkapnak mindent, amire szükségük van. A járvány első jeleit azonnal jelenteni kell!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA</Tag>
@@ -3969,6 +3998,7 @@
 		<French>Sire, nos diplomates en Europe ont entendu que la haute société d'Europe nous tient pour des rustres sans culture. Si nous sommes les premiers à construire un opéra dans le nouveay monde, ceci changera leur perception. Nous pourrions même convaincre des acteurs et artistes célèbres devenir dans nos colonies.</French>
 		<German>Milord, unsere Dimplomaten in Europa berichten dass die europäischen Adeligen und die Reichen der Oberschicht behaupten wir wären Barbaren ohne Kultur. Wenn wir die ersten in der Neuen Welt wären, die eine Oper bauen würden, könnten wir dieses Bild ändern. Das würde sicherlich auch berühmte Schauspieler und Künstler überzeugen in unsere Kolonien zu kommen.</German>
 		<Russian>Милорд, наши дипломаты в Европе слышали, как европейское высшее общество утверждает, что мы нецивилизованные варвары без культуры. Если бы мы первыми построили оперу в Новом Свете, мы изменили бы этот имидж. Это также убедило бы известных художников и актеров приехать в наши колонии.</Russian>
+		<Hungarian>Uram, európai diplomatáink hallották, hogy az ottani felsőbb körök azt állítják, hogy mi civilizálatlan, kultúra nélküli barbárok vagyunk. Ha mi lennénk az elsők, akik operát építenénk az Újvilágban, megváltoztatnánk ezt a képet. Ez híres művészeket és színészeket is meggyőzhetne arról, hogy jöjjenek a gyarmatainkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_OPERA_DONE</Tag>
@@ -3977,6 +4007,7 @@
 		<French>Sire, une autre colonie a construit la première un Opéra.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen eine Oper errichten.</German>
 		<Russian>Колониальная нация построила оперу.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amelyik operát épített.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_OPERA_DONE</Tag>
@@ -3985,6 +4016,7 @@
 		<French>Sire, vous avez été le premier à construire un opéra. Des artistes célèbres d'Europe veulent venir y jouer.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen eine Oper errichten. Berühmte Schauspieler aus Europa wollen nun darin auftreten.</German>
 		<Russian>Милорд, мы построили оперу раньше любой другой колониальной державы. Известные артисты из Европы уже присылают свои заявки на выступление в ней.</Russian>
+		<Hungarian>Uram, előbb építettél operát, mint bármely más gyarmat. Híres előadóművészek akarnak most jönni Európából, hogy fellépjenek benne.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_OPERA</Tag>
@@ -3993,6 +4025,7 @@
 		<French>Sire, un gouverneur a construit un opéra avant vous. Vous avez manqué l'occasion de convaincre les artistes de venir dans nos colonies.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch eine Oper errichten. Dadurch habt Ihr die Chance vertan, berühmte Schauspieler anzulocken.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил оперу раньше вас. Мы упустили шанс убедить известных артистов приехать в наши колонии.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója már épített egy operát előtted. Elszalasztottad a lehetőséget, hogy híres előadóművészeket győzz meg, hogy jöjjenek a mi gyarmatunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_OPERA</Tag>
@@ -4001,6 +4034,7 @@
 		<French>Nous construirons un opéra et monrerons notre culture au reste du monde.</French>
 		<German>Wir werden diese Oper bauen und der Welt unsere Kultur demonstrieren.</German>
 		<Russian>Мы построим эту оперу и продемонстрируем нашу культуру всему миру.</Russian>
+		<Hungarian>Megépítjük ezt az operát és megmutatjuk kultúránkat a világnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_OPERA_DONE_1</Tag>
@@ -4009,6 +4043,7 @@
 		<French>Nous attendons avec impatience les premières représentations dans notre nouvel Opéra.</French>
 		<German>Wir freuen uns bereits auf die ersten Aufführungen in unserer neuen Oper.</German>
 		<Russian>С нетерпением ждем первых спектаклей в нашей новой опере.</Russian>
+		<Hungarian>Alig várjuk, hogy láthassuk az első előadásokat az új Operában.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT</Tag>
@@ -4017,6 +4052,7 @@
 		<French>Sire, des nobles Européens prétendent que nous ne sommes des partenaires commerciaux fiable car notre système légal est trop décentralisé, et donc instable. Nous pourrions changer cela en étant les premiers dans le nouveau monde à construire une Cour Suprême. SI c'est le cas, cela pourra motiver des juges à venir dans nos colonies.</French>
 		<German>Milord, europäische Adlige behaupten, dass wir keine vertrauenswürdinge Geschäftspartner seine, da unser Rechtssystem nicht zentralisiert und daher nicht stabil sei. Wir könnten dies dadurch ändern, indem wir die ersten in der Neuen Welt sind, die einen Obersten Gerichtshof bauen. Wenn wir dies erreichen, wird dies sicherlich auch Richter aus Europe davon überzeugen in die neue Welt zu migrieren.</German>
 		<Russian>Милорд, европейские дворяне утверждают, что мы ненадежные деловые партнеры, потому что наша правовая система не централизована, а значит, нестабильна. Мы могли бы изменить это, построив первыми в Новом Свете Верховный суд. Если мы это сделаем, это наверняка побудит судей из Европы приехать в наши колонии.</Russian>
+		<Hungarian>Uram, az európai nemesek azt állítják, hogy nem vagyunk megbízható üzleti partnerek, mert a mi jogrendszerünk nem központosított, ezért instabil. Ezen változtathatnánk, ha az Újvilágban elsőként építenénk egy Legfelsőbb Bíróságot. Ha ezt megtesszük, az biztosan arra ösztönözné az európai bírákat, hogy a gyarmatainkra jöjjenek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
@@ -4025,6 +4061,7 @@
 		<French>Sire, une autre nation a été la première à construire une Cour Suprême.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen einen Obersten Gerichtshof errichten.</German>
 		<Russian>Колониальная нация первой построила Верховный суд.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amelyik Legfelsőbb Bíróságot épített.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_SUPREME_COURT_DONE</Tag>
@@ -4033,6 +4070,7 @@
 		<French>Sire, vous êtes le premier à construire une Cour Suprême. Comme attendu, des juges venus d'Europe recherche la possibilité de venir y travailler</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen einen Obersten Gerichtshof errichten. Wie erwartet suchen nun Richter aus Europa darin eine Anstellung.</German>
 		<Russian>Милорд, мы построили Верховный суд раньше любой другой колонии. Как и ожидалось, судьи из Европы ищут возможность поработать в нем.</Russian>
+		<Hungarian>Uram, te hamarabb építetted meg a Legfelsőbb Bíróságot, mint bármely más kolónia. Ahogy az várható volt, az Európából érkező bírák keresik a lehetőséget, hogy benne dolgozhassanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_SUPREME_COURT</Tag>
@@ -4041,6 +4079,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit une Cour Suprême avant vous. Vous avez laissé passer l'occasion de convaincre des juges à travailler pour nous.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Obersten Gerichtshof errichten. Dadurch habt Ihr die Chance vertan, Richter aus Europa anzulocken.</German>
 		<Russian>Милорд, губернатор другой колониальной державы построил Верховный суд раньше нас. Мы упустили шанс убедить судей из Европы приехать к нам.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója már megépített egy Legfelsőbb Bíróságot előtted. Elszalasztottad a lehetőséget, hogy meggyőzd az európai bírákat, hogy jöjjenek hozzánk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_SUPREME_COURT</Tag>
@@ -4049,6 +4088,7 @@
 		<French>Nous construirons une Cour Suprême pour assurer l'uniformité du droit dans nos colonies.</French>
 		<German>Wir werden einen Obersten Gerichtshof bauen, um ein stabiles Rechtssystem in unseren Kolonien zu gewährleisten.</German>
 		<Russian>Мы построим Верховный суд, чтобы обеспечить стабильную правовую систему в наших колониях.</Russian>
+		<Hungarian>Fel fogjuk építeni a Legfelsőbb Bíróságot, hogy stabil jogrendszert biztosítsunk gyarmatunkon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_SUPREME_COURT_DONE_1</Tag>
@@ -4057,6 +4097,7 @@
 		<French>Les juges doivent se mettre au travail. Le droit, la loi et l'ordre règneront dans nos colonies.</French>
 		<German>Die Richter sollen ans Werk gehen. Es soll Recht und Ordnung in useren Kolonien herrschen.</German>
 		<Russian>Судьи должны приступить к работе. В наших колониях воцарится закон и порядок.</Russian>
+		<Hungarian>A bírák munkához látnak. Törvény és rend lesz a gyarmatainkon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS</Tag>
@@ -4065,6 +4106,7 @@
 		<French>Sire, nos diplomates négoicant avec les autres colonies nous rapportent notre désunion politique. Nous devons installer un Congrès Colonial pour réunir les différentes opinions politiques. Ceci attirera des hommes d'État qualifiée.</French>
 		<German>Milord, unsere Diplmaten, die von Verhandlungen mit anderen Kolonialmächten zurückkehren berichten dass wir den Eindruck vermitteln politisch uneins zu sein. Wir sollten einen Kolonialkongress gründen, um die politische Meinungen zu konsolidieren. Dies würde sicherlich auch dazu führen, dass wir weitere begabte Staasmänner findne.</German>
 		<Russian>Милорд, наши дипломаты, ведущие переговоры с другими колониальными державами, сообщают, что мы кажемся политически раздробленными. Мы должны создать Колониальный Конгресс, чтобы консолидировать политические взгляды. Это также привлекло бы более квалифицированных государственных деятелей.</Russian>
+		<Hungarian>Uram, a többi kolóniával tárgyaló diplomatáink arról számolnak be, hogy politikailag széttöredezettnek tűnünk. Egy Gyarmati Kongresszust kellene létrehoznunk, hogy egységesítsük a politikai véleményeket. Ez több képzett államférfit is vonzana.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
@@ -4073,6 +4115,7 @@
 		<French>Sire, une autre nation a construit la première un Congrès Colonial.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialkongress errichten.</German>
 		<Russian>Колониальная нация первой создала Колониальный Конгресс.</Russian>
+		<Hungarian>Uram, egy másik nemzet lett az első, amelyik Gyarmati Kongresszust épített.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_COLONIAL_CONGRESS_DONE</Tag>
@@ -4081,6 +4124,7 @@
 		<French>Sire, vous avez été le premier à construire un Congrès colonial. Comme promis, des jeunes hommes d'État motivés attendent de venir au travail.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen in fünf Städten Krankenhäuser errichten. Wie versprochen warten nun junge motivierte Staatsmänner darauf ans Werk zu gehen.</German>
 		<Russian>Милорд, мы построили Колониальный Конгресс раньше, чем любая другая колониальная нация. Как и ожидалось, молодые целеустремленные государственные деятели ждут начала работы.</Russian>
+		<Hungarian>Uram, hamarabb építetted meg a Gyarmati Kongresszust, mint bármely más gyarmat. Ahogy ígértem, fiatal, motivált államférfiak várják, hogy munkához lássanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_COLONIAL_CONGRESS</Tag>
@@ -4089,6 +4133,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit un congrès colonial avant vous. Vous avez laissé passer l'occasion de convaincre plus d'hommes d'États à travailleur pour notre cause.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Kolonialkongress in errichten. Dadurch habt Ihr die Chance vertan, weitere Staatsmänner zu gewinnen.</German>
 		<Russian>Милорд, губернатор другой колониальной державы построил Колониальный Конгресс раньше нас. Мы упустили возможность убедить больше государственных деятелей работать на нас.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója már felépített egy Gyarmati Kongresszust előtted. Elszalasztottad a lehetőséget, hogy több államférfit meggyőzz, hogy nekünk dolgozzanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS</Tag>
