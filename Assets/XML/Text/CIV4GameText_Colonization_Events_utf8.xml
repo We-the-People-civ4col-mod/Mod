@@ -4142,6 +4142,7 @@
 		<French>Nous établirons un congrès colonual comme institution politique centrale dans nos colonies.</French>
 		<German>Wir werden einen Kolonialkongress als zentrale politische Einrichtung in den Kolonien etablieren.</German>
 		<Russian>Мы создадим Колониальный Конгресс как центральный политический институт в колониях.</Russian>
+		<Hungarian>A gyarmatokon központi politikai intézményként létrehozzuk a Gyarmati Kongresszust.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_COLONIAL_CONGRESS_DONE_1</Tag>
@@ -4150,6 +4151,7 @@
 		<French>Les nouveaux hommes d'État doivent se concerter. À partir de maintenant, nos colonies doivent parler à l'unisson lors des négociations avec les puissances étrangères.</French>
 		<German>Die neuen Staatsmänner sollen ans Werk gene. Unsere Kolonien sollen von nun an in Verhandlungen mit anderne Mächten mit einer einzigen politischen Stimme sprechen.</German>
 		<Russian>Новые государственные деятели должны приступать к работе. Отныне наши колонии будут говорить единым политическим голосом в переговорах с иностранными державами.</Russian>
+		<Hungarian>Az új államférfiak munkához látnak. Mostantól kezdve kolóniáinknak egy politikai hangon kell beszélniük a külföldi hatalmakkal folytatott tárgyalásokon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE</Tag>
@@ -4158,6 +4160,7 @@
 		<French>Sire, nos offciers des douanes nous rapporte que notre système de collecte actuel est corrompu et faillible. Il y a un manque à gagner énorme. Nous devons mettre en place une autorité centrale des douanes pour réguler tout ça et mettre fin aux abus. Il sera même possible de recruter des marchands qui travaillaient dans le marché  noir.</French>
 		<German>Milord, unsere Zollbeamten berichten, dass die Zollerhebung eher schlecht funktioniert und zudem korruptionsanfällig ist. Uns entgehen dadurch tagtäglich Einnahmen. Wir müssen ein Zentrales Zollamt errichten, um die Zollerhebung einheitlich zu regeln und der Korruption die Basis zu entziehen. Dann werden sich letztlich auch Schmuggler und die Verkäufer von geschmuggelter Waren der Zollerhebung nicht mehr entziehen können und ihre Abgaben abführen.</German>
 		<Russian>Милорд, наши таможенники сообщают, что наша таможенная система несовершенна и коррумпирована. Мы теряем деньги каждый день. Нам необходимо создать Центральное таможенное управление для регулирования дел и искоренения такой коррупции. Некоторые торговцы с черного рынка могут работать на нас легально.</Russian>
+		<Hungarian>Uram, a vámtisztviselőink arról számolnak be, hogy a vámrendszerünk hibás és korrupt. Minden nap pénzt veszítünk. Létre kell hoznunk egy Központi Vámhatóságot, amely szabályozza az ügyeket és felszámolja ezt a fajta korrupciót. A feketepiaci kereskedőd végül legálisan dolgozhatnának nekünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
@@ -4166,6 +4169,7 @@
 		<French>Sire, une autre nation a construit une Autorité Centrale des Douanes avant nous.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen ein Zentrales Zollamt errichten.</German>
 		<Russian>Колониальная нация построила Центральное таможенное управление.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amely Központi Vámhatóságot épített.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_CUSTOM_OFFICE_DONE</Tag>
@@ -4174,6 +4178,7 @@
 		<French>Sire, vous avez construit une autorité centrale des douanes avant tous les autres. Comme promis, des marchands précédemment au noir se sont engagés pour nous.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen ein Zentrales Zollamt errichten. Wie versprochen müssen einige Schwarzmarkthändler nun für uns arbeiten.</German>
 		<Russian>Милорд, мы построили Центральное таможенное управление раньше любой другой колониальной державы. Как и было обещано, теперь на нас будут работать несколько торговцев с черного рынка.</Russian>
+		<Hungarian>Uram, minden más gyarmat előtt létrehoztad a Központi Vámhatóságot. Ahogy ígértük, számos feketepiaci kereskedő dolgozik most már nekünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_CUSTOM_OFFICE</Tag>
@@ -4182,6 +4187,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous une autorité centrale des douanes. Vous avez laissé passer l'occasion de forcer les marchands à travailler pour nous.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch ein Zentrales Zollamt errichten. Dadurch habt Ihr die Chance vertan, die Schwarzmarkthändler zu zwingen, für uns zu arbeiten.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил Центральный таможенный орган раньше нас. Мы упустили шанс заставить торговцев с черного рынка работать на нас.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója már felépített egy Központi Vámhatóságot előtted. Elszalasztottad a lehetőséget, hogy a feketepiaci kereskedőket magunk mellé állítsd.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_CUSTOM_OFFICE</Tag>
@@ -4190,14 +4196,16 @@
 		<French>Nous allons établir une autorité centrale des douanes pour mettre fin à la fraude une fois pour toutes.</French>
 		<German>Wir werden das Zentrale Zollamt errichten, um die Korrupiton ein für alle Mal zu beenden.</German>
 		<Russian>Мы построим Центральное таможенное управление, чтобы раз и навсегда покончить с коррупцией.</Russian>
+		<Hungarian>Fel fogjuk építeni a Központi Vámhatóságot, hogy egyszer s mindenkorra véget vessünk a korrupciónak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_CUSTOM_OFFICE_DONE_1</Tag>
-		<English>Send these black market trader to the Natives to establish trading posts. It will be the most appropriate use for their talents.</English>
+		<English>Send these black market traders to the Natives to establish trading posts. It will be the best use of their talents.</English>
 		<Portuguese>Envie esses comerciantes do mercado negro aos nativos para estabelecer feitorias. Será o uso mais adequado para seus talentos.</Portuguese>
 		<French>Envoyez ces marchands louches vers les indigènes pour établir des comptoirs. Ce sera un usage adéquat de leurs talents.</French>
 		<German>Schickt die Schwarzmarkthändler zu den Ureinwohnern, um Handelsposten zu errichten. Dort werden ihre Fähigkeiten am nützlichsten sein.</German>
 		<Russian>Отправьте этих торговцев с черного рынка к индейцам, чтобы они открыли торговые посты. Это будет самое подходящее применение их талантам.</Russian>
+		<Hungarian>Küldjük ezeket a feketepiaci kereskedőket az Indiánokhoz, hogy kereskedelmi állomásokat létesítsenek. Ez lesz a legmegfelelőbb felhasználása a tehetségüknek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER</Tag>
@@ -4206,6 +4214,7 @@
 		<French>Sire, l'Église a reconnu nos efforts pour répandre la parole de Dieu. Nous avons reçu l'ordre de construire une cathédrale de l'archevêché pour montre au petit peuple la gloire et la lumière du Christ. En retour, nous avons reçu la promesse que si nous sommes les premiers à la bâtir, d'autres évêques nous seront envoyés.</French>
 		<German>Milord, die Kirche befiehlt uns unsere Anstrengungen das Wort Gottes zu verbreiten zu verstärken. Uns wurde aufgetragen eine Kathedrale für den Erzbischof zu errichten, um auch dem einfachen Volk den Ruhm und das Licht Christi zu zeigen. Uns wurde versprochen, dass weitere Bischöfe in die Kolonien geschickt werden, wenn wir dies als erste erreichen.</German>
 		<Russian>Милорд, Святая Церковь повелевает нам прилагать все усилия для распространения слова Божьего. Нам велено построить Кафедральный собор, дабы показать народу славу и свет Христа. Взамен нам обещают, что, если мы добьемся этого первыми, в наши колонии будет отправлено больше епископов.</Russian>
+		<Hungarian>Uram, az Egyház azt parancsolja nekünk, hogy tegyünk meg minden erőfeszítést Isten igéjének terjesztésére. Megparancsolják nekünk, hogy építsünk egy Érseki Székesegyházat, hogy Krisztus dicsőségét és világosságát megmutassuk az egyszerű embereknek. Cserébe ígéretet kapunk arra, hogy ha ezt elsőként valósítjuk meg, több püspököt küldenek a gyarmatainkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_MINSTER_DONE</Tag>
@@ -4214,14 +4223,16 @@
 		<French>Sire, une autre nation a été la première à construire une cathédrale de l'archevêché</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen eine Kathedrale für den Erzbischof errichten.</German>
 		<Russian>Колониальная нация построила Кафедральный собор.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amelyik megépítette az Érseki Székesegyházat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_MINSTER_DONE</Tag>
-		<English>Milord, you've built the Cathedral of the Archbishop before any other colony could. As promised bishops have recently arrived in the capitol.</English>
+		<English>Milord, you've built the Cathedral of the Archbishop ahead of every other colony. As promised, bishops have recently arrived in the capitol.</English>
 		<Portuguese>Milorde, você construiu a Catedral do Arcebispo antes de qualquer outra colônia. Como prometido, os bispos chegaram recentemente à capital.</Portuguese>
 		<French>Sire, vous avez construit une cathédrale de l'archevêché avant tous les autres. Comme promis, des évêques sont arrivés il y a peu dans la capitale.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen eine Kathedrale für den Erzbischof errichten. Wie versprochen sind Bischöfe in der Haupstadt eingetroffen.</German>
 		<Russian>Милорд, мы построили Кафедральный собор раньше, чем любая другая колониальная держава. Как и было обещано, недавно в столицу прибыли епископы.</Russian>
+		<Hungarian>Uram, te építetted meg az Érseki Székesegyházat, mielőtt bármely más gyarmat megtehette volna. Az ígéreteknek megfelelően nemrégiben püspökök érkeztek a fővárosba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_MINSTER</Tag>
@@ -4230,14 +4241,16 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit une cathédrale de l'archevêché avant vous. Vous avez laissé passer l'occasion de recveoir des évêques de la part de l'Église.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch eine Kathedrale für den Erzbischof errichten. Dadurch habt Ihr die Chance vertan, weitere Bischöfe von der Kirche zu erhalten.</German>
 		<Russian>Милорд, губернатор другой колониальной нации раньше нас построил Кафедральный собор. Мы упустили шанс получить от церкви дополнительных епископов.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója előtted építette fel az Érseki Székesegyházat. Elszalasztottad a lehetőséget, hogy püspököket szerezz az Egyháztól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_MINSTER</Tag>
-		<English>We will built the Cathedral of the Archbishop and so the light of Christ will shine brightly.</English>
+		<English>We will built the Cathedral of the Archbishop so the light of Christ will shine brightly.</English>
 		<Portuguese>Construiremos a Catedral do Arcebispo e assim a luz de Cristo brilhará intensamente.</Portuguese>
 		<French>Nous construirons la cathédrale de l'archevêché pour que le Christ brille de toute sa lumière.</French>
 		<German>Wir werden die Kathedrale für den Erzbischof bauen, damit das Licht Christi hell erstrahlen möge.</German>
 		<Russian>Мы построим Кафедральный Собор и тогда свет Христа озарит нашу страну своей Благодатью.</Russian>
+		<Hungarian>Megépítjük az Érseki Székesegyházat és így Krisztus fénye ragyogni fog.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_MINSTER_DONE_1</Tag>
@@ -4246,6 +4259,7 @@
 		<French>Nous comptons que les nouveaux évêques prennent bon soin de l'âme de nos citoyens.</French>
 		<German>Wir vertrauen darauf, dass unsere neuen Bischöfe sich gut um die Seelen unserer Bürger kümmern werden.</German>
 		<Russian>Мы верим, что наши новые епископы будут хорошо заботиться о душах наших граждан.</Russian>
+		<Hungarian>Bízunk abban, hogy új püspökeink vigyáznak majd polgáraink lelkére.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_HORSE_MARKET</Tag>
@@ -4254,6 +4268,7 @@
 		<French>Sire, nos éleveurs les plus prospères suggèrent de construire une grande halle aux bestiaux pour attirer plus de chalands. Ils pensent que ceci entrainera les éleveurs d'autres colonies à venir s'établir chez nous.</French>
 		<German>Milord, unsere reichsten Tierzüchter schlagen vor, dass wir einen Großen Viehmarkt errichten, damit wir noch mehr Geschäft anziehen. Sie glauben, dass dies sogar dazu führen wird, dass Züchter anderer Kolonien lieber zu Bürgern unserer Kolonien werden würden.</German>
 		<Russian>Милорд, наши самые преуспевающие владельцы ранчо предлагают нам построить Большую скотоводческую ферму, чтобы привлечь к нам больше клиентов. Они считают, что это может побудит владельцев ранчо из других колоний захотеть стать гражданами наших колоний.</Russian>
+		<Hungarian>Uram, legjobb állattenyésztőink azt javasolják, hogy építsünk egy Központi Ló és Marhapiacot, hogy még nagyobb üzleti lehetőségeink legyenek. Úgy vélik, hogy ez még más gyarmatokról érkező állattenyésztőket is arra késztetne, hogy a mi gyarmataink polgárai akarjanak lenni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_HORSE_MARKET_DONE</Tag>
@@ -4262,6 +4277,7 @@
 		<French>Sire, une autre nation a construit avant nous une grande halle aux bestiaux.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen einen Großen Viehmarkt errichten.</German>
 		<Russian>Колониальная нация в одном из городов построила Большую скотоводческую ферму.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amely Központi Ló és Marhapiacot épített.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_HORSE_MARKET_DONE</Tag>
@@ -4270,6 +4286,7 @@
 		<French>Sire, vous avez construit une grande halle aux bestiaux avant tous les autres. Comme promis des éleveurs étrangers veulent devenir des citoyens de nos colonies.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen einen Großen Viehmarkt errichten. Wie versprochen, haben fremde Viehzüchter nun vor, Bürger unserer Kolonien zu werden.</German>
 		<Russian>Милорд, мы построили Большую скотоводческую ферму раньше, чем любая другая колониальная держава. Как и предполагалось, некоторые иностранные владельцы ранчо теперь хотят стать гражданами наших колоний.</Russian>
+		<Hungarian>Uram, te előbb építettél meg egy Központi Ló és Marhapiacot, mint bármely más gyarmat. Ahogy ígértük, néhány külföldi állattenyésztő most a mi gyarmataink polgáraivá akar válni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_HORSE_MARKET</Tag>
@@ -4278,30 +4295,34 @@
 		<French>Sire, le gouverneur d'une autre colonie a construit avant vous une grande halle aux bestiaux. Vous avez laissé passer l'occasion de faire venir des éleveurs.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Großen Viehmarkt errichten. Dadurch habt Ihr die Chance vertan, weitere Rancher zu erwerben.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил Большую скотоводческую ферму раньше нас. Мы упустили шанс получить больше скотоводов.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója egy Központi Ló és Marhapiacot épített előtted. Elszalasztottad az esélyt, hogy még több állattenyésztőt szerezz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_HORSE_MARKET</Tag>
-		<English>We will build a Grand Horse and Cattle Market to dominate the trade with horses and cattle.</English>
+		<English>We will build a Grand Horse and Cattle Market to dominate the trade in horses and cattle.</English>
 		<Portuguese>Construiremos um Grande Mercado de Cavalos e Gado para dominar o comércio de cavalos e gado.</Portuguese>
 		<French>Nous construirons une grande halle aux bestiaux pour dominer le marché des chevaux et des boeufs.</French>
 		<German>Wir werden einen Großen Viehmarkt errichten, um das Geschäft mit Pferden und Rindern zu beherrschen.</German>
 		<Russian>Мы построим Большую скотоводческую ферму, чтобы доминировать в торговле лошадьми и крупным рогатым скотом.</Russian>
+		<Hungarian>Egy Központi Ló és Marhapiacot fogunk építeni, hogy uraljuk a ló- és marhakereskedelmet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_HORSE_MARKET_DONE_1</Tag>
-		<English>These new ranchers are welcome, of course. They'll bring more business to our newly built Grand Horse and Cattle Market.</English>
+		<English>These extra ranchers are indeed welcome. They'll bring more business to our new Grand Horse and Cattle Market.</English>
 		<Portuguese>Esses novos vaqueiros são bem-vindos, é claro. Eles trarão mais negócios para nosso recém-construído Grande Mercado de Cavalos e Gado.</Portuguese>
 		<French>Ces nouveaux éleveurs sont les bienvenys. Ils amèneront plus de commerce dans cette nouvelle grande halle aux bestiaux.</French>
 		<German>Die neuen Züchter sind gerne gesehen. Sie werden sicherlich für noch mehr Geschäft auf unserem neuen Großen Viehmarkt sorgen.</German>
 		<Russian>Мы приветствуем новых владельцев ранчо. Они принесут еще больше прибыли нашеей недавно построенной Большой скотоводческой ферме.</Russian>
+		<Hungarian>Ezeket az új állattenyésztőket természetesen szívesen látjuk. Nagyobb bevételt hoznak az újonnan épült Központi Ló és Marhapiacunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_PUBLISHING</Tag>
-		<English>Milord, many of our literate citizens are unhappy. Most cities don't have enough newspapers to read. That means many educated people don't want to come to our colonies. We should build a Colonial Publisher. That will convince educated people from Europe to migrate to our colony.</English>
+		<English>Milord, many of our literate citizens are disgruntled. Most cities don't have enough newspapers to read. That means many educated people won't come to our colonies. We should build a Colonial Publisher. That way educated people from Europe will migrate to our colony.</English>
 		<Portuguese>Milorde, muitos dos nossos cidadãos alfabetizados estão infelizes. A maioria das cidades não tem jornais suficientes para ler. Isso significa que muitas pessoas instruídas não querem vir para as nossas colônias. Devíamos construir uma Editora Colonial. Isso convencerá as pessoas instruídas da Europa a migrar para a nossa colônia.</Portuguese>
 		<French>Sire, beaucoup de nos citoyens lettrés sont mécontents. La plupart des villes n'ont pas assez de journaux à lire. Ceci signifie que les gens éduqués ne voudront pas venir. Nous devrions construire une imprimerie coloniale. Ca devrait convaincre les gens éduqués d'émigrer de l'Europe vers notre colonie.</French>
 		<German>Milord, viele unser Bürger, die des Lesens mächtig sind, beschweren sich, dass es nicht genug Zeitungen in useren Städten gibt. Die sorgt auch dafür, dass viele Gebildete nicht in die Kolonien auswandern wollten. Wir sollten einen Kolonialen Zeitungverlag bauen, um diese Situation zu ändern und mehr Gebildete aus Europa zu überzeugen, in die Kolonien auszuwandern.</German>
 		<Russian>Милорд, многие из наших грамотных граждан несчастливы. В большинстве городов нет достаточного количества газет для чтения. А это значит, что многие образованные люди не хотят приезжать в наши колонии. Мы должны построить колониальное издательство. Это убедит образованных людей из Европы мигрировать в нашу колонию.</Russian>
+		<Hungarian>Uram, sok írástudó polgárunk boldogtalan. A legtöbb városban nincs elég újság, amit el lehetne olvasni. Ez azt jelenti, hogy sok művelt ember nem akar a gyarmatainkra jönni. Építenünk kellene egy Gyarmati Kiadót. Ez meggyőzné az európai művelt embereket, hogy vándoroljanak a gyarmatunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIRST_PUBLISHING_DONE</Tag>
@@ -4310,14 +4331,16 @@
 		<French>Sire, une autre nation a construit avant vous une imprimerie coloniale.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen einen Kolonialen Zeitungverlag errichten.</German>
 		<Russian>Колониальная нация построила Колониальное издательство.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amely megépítette a Gyarmati Kiadót.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIRST_PUBLISHING_DONE</Tag>
-		<English>Milord, you've built the Colonial Publisher before any other colony could. As promised more educated people from Europe now migrate to our colony.</English>
+		<English>Milord, you've built the Colonial Publisher ahead of every other colony. As promised educated people from Europe prefer to migrate here.</English>
 		<Portuguese>Milorde, você construiu a Editora Colonial antes de qualquer outra colônia. Tal como prometido, pessoas mais instruídas da Europa migram agora para a nossa colônia.</Portuguese>
 		<French>Sire, Vous avez construit avant tous les autres une imprimerie coloniale. Comme prévu, plus d'hommes éduqués émaigrent d'Europe vers nos colonies </French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen einen Kolonialen Zeitungverlag errichten. Wie versprochen wandern nun mehr Gebildete aus Europa in die Kolonien aus.</German>
 		<Russian>Милорд, мы построили Колониальное издательство раньше любой другой колониальной державы. Как мы и предполагали, теперь в нашу колонию мигрируют более образованные люди из Европы.</Russian>
+		<Hungarian>Uram, te építetted meg a Gyarmati Kiadót, mielőtt bármely más gyarmat megépíthette volna. Mostantól több művelt ember vándorol Európából a gyarmatunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIRST_PUBLISHING</Tag>
@@ -4326,6 +4349,7 @@
 		<French>Sire,Un  gouverneur d'une autre colonie a construit avant vous une imprimerie coloniale. Vous avez laisser passer l'occasion de faire immigrer plus d'hommes éduqués.  </French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch einen Kolonialen Zeitungverlag errichten. Dadurch habt Ihr die Chance vertan, mehr Gebildete aus Europe von einer Auswanderung zu überzeugen.</German>
 		<Russian>Милорд, губернатор другой колониальной нации построил Колониальное издательство раньше нас. Мы упустили шанс убедить эмигрировать к нам более образованных людей из Европы.</Russian>
+		<Hungarian>Uram, egy másik gyarmat kormányzója építette meg előtted a Gyarmati Kiadót. Elszalasztottad a lehetőséget, hogy több művelt embert győzz meg Európából a kivándorlásról.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_PUBLISHING</Tag>
@@ -4334,6 +4358,7 @@
 		<French>Nous construirons cette imprimerie coloniale et nous assurerons que les hommes éduquées aient toujours de quoi lire.</French>
 		<German>Wir werden einen Kolonialen Zeitungverlag errichten und sicherstellen, das gebildete Auswanderer genug zum Lesen finden.</German>
 		<Russian>Мы создадим Колониальное издательство и позаботимся о том, чтобы у образованных мигрантов было достаточно книг для чтения.</Russian>
+		<Hungarian>Felépítjük a Gyarmati Kiadót és biztosítjuk, hogy a képzett bevándorlóknak legyen elég olvasnivalójuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIRST_PUBLISHING_DONE_1</Tag>
@@ -4342,6 +4367,7 @@
 		<French>Très bien, mais assurez vous que ces intellectuels fassent aussi des choses utiles de leur temps.</French>
 		<German>Sehr gut, aber stellt sicher, dass diese gebildeten Migranten auch etwas sinnvolles mit ihrer Zeit anfangen und nicht nur Zeitung lesen.</German>
 		<Russian>Очень хорошо, но убедитесь, что эти образованные мигранты занимаются еще и чем-то полезным, а не просто читают газеты.</Russian>
+        <Hungarian>Nagyon jó, de gondoskodjunk arról, hogy ezek a képzett bevándorlók valami hasznosat csináljanak az idejükkel, ne csak újságot olvassanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST</Tag>
@@ -4350,6 +4376,7 @@
 		<French>Sire, Sa Majesté et la cour sont ravies de voir vos premiers navires de combat. Nous avons eu la promesse que si nous constituions une flotte de guerre de six grands navires de combat de classe frégate ou supérieure, sa Majesté nous livrera un de ses meilleurs [COLOR_HIGHLIGHT_TEXT]vaisseaux de guerre royaux[COLOR_REVERT] pour servir de navire-amiral.</French>
 		<German>Milord, Seine Majestät und der Hof sind hocherfreut über die ersten Kriegsschiffe, die wir erworben haben. Uns wurde versprochen, dass uns Seine Majestät, sobald wir eine Flotte von mindestens [COLOR_HIGHLIGHT_TEXT]sechs Kriegsschiffen (Fregatte oder größer)[COLOR_REVERT] haben, eines seiner [COLOR_HIGHLIGHT_TEXT]Königlichen Kriegsschiffe[COLOR_REVERT] als Flaggschiff unserer Flotte zur Verfügung stellen wird.</German>
 		<Russian>Милорд, Его Величество и Королевский двор поздравляют колониальную администрацию с приобретением первого боевого корабля. Нам пообещали, что как только у нас будет не менее [COLOR_HIGHLIGHT_TEXT]шести военных кораблей (фрегат или больше)[COLOR_REVERT], Его Величество отправит нам один из своих лучших [COLOR_HIGHLIGHT_TEXT]королевских кораблей[COLOR_REVERT] в качестве флагмана нашего флота.</Russian>
+		<Hungarian>Uram, Őfelsége és az udvar nagy örömmel fogadta első hadihajóink beszerzését. Megígérték nekünk, hogy amint legalább [COLOR_HIGHLIGHT_TEXT]hat hadihajóval (fregatt vagy nagyobb)[COLOR_REVERT] rendelkezünk, Őfelsége átadja nekünk egyik legkiválóbb [COLOR_HIGHLIGHT_TEXT]Királyi Csatahajóját[COLOR_REVERT], amely flottánk zászlóshajója lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE_WORLD</Tag>
@@ -4358,6 +4385,7 @@
 		<French>Sire, une autre nation coloniale a constitué une flotte de guerre de six grands navires de combats.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen eine Flotte von sechs Kriegsschiffen (Fregatte oder größer) aufbauen.</German>
 		<Russian>У одной из европейских колониальных наций есть военный флот, состоящий как минимум из шести военных кораблей (фрегат или больше).</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet az első, amelynek legalább hat hadihajóból (fregatt vagy nagyobb) álló hadiflottája van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SIX_WARSHIPS_QUEST_DONE</Tag>
@@ -4366,6 +4394,7 @@
 		<French>Sire, vous avez constitué avant tous les autres une flotte de guerre d'au moins six grands navires de combat. Sa Majesté nous envoie le navire-amiral promis. </French>
 		<German>Milord, die Küsten Eurer Kolonie werden nun von mindestens sechs Kriegsschiffen (Fregatte oder größer) geschützt. Damit seid ihr allen anderen Gouverneuren zuvorgekommen. Seine Majestät schickt uns das versprochene Flaggschiff.</German>
 		<Russian>Милорд, мы приобрели как минимум шесть боевых кораблей (фрегат или больше) раньше, чем любая другая колониальная нация. Его Величество уже отправил нам обещанный флагман.</Russian>
+		<Hungarian>Uram, legalább hat hadihajót (fregattot vagy nagyobbat) szereztél, mielőtt bármelyik másik kolónia megtehette volna. Őfelsége most elküldi nekünk az ígért zászlóshajót.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_SIX_WARSHIPS_QUEST</Tag>
@@ -4374,6 +4403,7 @@
 		<French>Sire, le gouverneur d'une autre nation a constitué avant vous une flotte de combat d'au moins six grands navires. Vous avez laissé passer l'occasion d'acquérir un navire-amiral de la Marine royale.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch sechs Kriegsschiffe (Fregatte oder größer) in Dienst stellen. Dadurch habt Ihr die Chance auf das Flaggschiff Seiner Majestät vertan.</German>
 		<Russian>Милорд, губернатор другой колониальной нации до нас приобрел шесть боевых кораблей (фрегат или больше). Мы упустили шанс получить один из флагманов флота Его Величества.</Russian>
+		<Hungarian>Uram, egy másik kolónia kormányzója hat hadihajót (fregattot vagy nagyobbat) szerzett meg előtted. Elszalasztottad a lehetőséget, hogy megszerezd Őfelsége haditengerészetének egyik zászlóshajóját.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SIX_WARSHIPS_QUEST</Tag>
@@ -4382,6 +4412,7 @@
 		<French>Nous bâtirons la plus grande flotte de combat sans les colonies, digne d'un vaisseau-amiral aussi glorieux.</French>
 		<German>Wir werden eine Kriegsflotte in den Kolonien aufbauen, die solch eines mächtigen Flaggsschiffes würdig ist!</German>
 		<Russian>Мы построим сильнейший военный флот в колониях, достойный флагмана из королевского флота!</Russian>
+		<Hungarian>A gyarmatok legerősebb hadiflottáját fogjuk felépíteni, amely méltó egy ilyen dicsőséges zászlóshajóhoz!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SIX_WARSHIPS_QUEST_DONE_1</Tag>
@@ -4390,6 +4421,7 @@
 		<French>Merveilleux ! Laissez-le entrer au port et saluez-le d'une salve.</French>
 		<German>Wundervoll, laßt es aus dem Hafen segeln und unserer Flotte Salut schießen.</German>
 		<Russian>Прекрасно! Прикажите кораблям салютовать двенадцатью пушечными выстрелами.</Russian>
+		<Hungarian>Csodálatos! Hadd hajózzon ki a kikötőből és adjon le egy tisztelgő lövéssorozatot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SIX_WARSHIPS_REWARD_SHIP_HELP</Tag>
@@ -4405,6 +4437,7 @@
 		<French>Sire, un petit repaire de boucaniers a été rasé récemment par la flotte d'une autre puissance coloniale. Les boucaniers réchappés souhaitent un nouveau lieu de vie. Ils jurent leur loyauté à la première nation qui constituera une flotte avec six navires cachant leur allégeance. Si nous les gagnons à notre cause, ils pourraient se montrer très utiles.</French>
 		<German>Milord, ein kleiner Außenposten von Bukanieren wurde kürzlich durch die Flotte einer anderen Kolonialmacht aufgerieben. Die überlebenden Bukaniere suchen nun nach einem neuen Platz zum leben und bieten ihre Loyalität der ersten Kolonialmacht an, die erfolgreich eine Flotte von [COLOR_HIGHLIGHT_TEXT]von sechs Schiffen mit versteckter Nationlität[COLOR_REVERT] aufbaut. Wenn wir sie für unsere Sache gewinnen, kann das sehr hilfreich sein.</German>
 		<Russian>Милорд, небольшой форпост пиратов недавно был уничтожен флотом другой колониальной державы. Выжившие пираты ищут новое место для жизни. Они предлагают свои лояльность и корабли первой колониальной державе, которая успешно построит флотилию из [COLOR_HIGHLIGHT_TEXT]шести кораблей со скрытой национальной принадлежностью[COLOR_REVERT]. Эти лихие парни могут быть очень полезными для нас.</Russian>
+		<Hungarian>Uram, egy kis kalózokból álló előőrsöt nemrég elpusztított egy másik gyarmati hatalom flottája. A túlélő kalózoknak új helyre van szükségük. Hűségüket annak a gyarmati nemzetnek ajánlják fel, amelyik elsőként épít fel egy [COLOR_HIGHLIGHT_TEXT]hat, rejtett nemzetiségű hajóból álló flottát[COLOR_REVERT]. Ha megnyerjük őket magunknak, nagyon hasznosak lehetnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SIX_PRIVATEERS_QUEST_DONE_WORLD</Tag>
@@ -4413,6 +4446,7 @@
 		<French>Sire, une autre nation coloniale a constitué une flotte de six navires cachant leurs couleurs.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen eine Flotte von sechs Schiffen mit versteckter Nationalität aufbauen.</German>
 		<Russian>У одной из европейских колониальных наций появился флот из шести кораблей со скрытой национальностью.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az első, amelyik hat, rejtett nemzetiségű hajóból álló flottával rendelkezik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SIX_PRIVATEERS_QUEST_DONE</Tag>
@@ -4421,6 +4455,7 @@
 		<French>Sire, vous avez acquis une flotte de six navires à la nationalité cachée avant tous les autres. Les boucaniers rentrent dans vos rangs.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen eine Flotte von sechs Schiffen mit versteckter Nationalität aufbauen. Die Bukaniere haben sich unserer Sache verschworen.</German>
 		<Russian>Милорд, флот из шести кораблей со скрытой национальностью появился у нас раньше, чем у любой другая колониальной нации. Буканьеры решили присоединиться к нашему делу.</Russian>
+		<Hungarian>Uram, hat, rejtett nemzetiségű hajóból álló flottát szereztél, mielőtt bármelyik másik kolónia megtehette volna. A kalózok csatlakoztak az ügyedhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_SIX_PRIVATEERS_QUEST</Tag>
@@ -4429,6 +4464,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a constitué une flotte de six navires à nationalité cachée avant vous. Vous avez laissé passer l'occasion de recruter les boucaniers.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch eine Flotte von sechs Schiffen mit versteckter Nationalität aufbauen. Dadurch habt Ihr die Chance vertan, die Bukaniere für Euch zu gewinnen.</German>
 		<Russian>Милорд, губернатор другой колониальной державы до нас построил флот из шести кораблей со скрытой национальной принадлежностью. У нас больше нет шансов привлечь пиратов на свою сторону.</Russian>
+		<Hungarian>Uram, egy másik kolónia kormányzója hat, rejtett nemzetiségű hajóból álló flottát szerzett. Már nincs esélyed megnyerni a kalózokat magadnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SIX_PRIVATEERS_QUEST</Tag>
@@ -4437,14 +4473,16 @@
 		<French>Nous constituerons cette flotte à nationalité cachée. Cette alliance avec les boucaniers peut se montrer précieuse.</French>
 		<German>Wir werden diese Flotte mit versteckter Nationalität erwerben. Diese Allianz mit den Bukanieren könnte wertvoll werden.</German>
 		<Russian>Мы создадим такую флотилию. Этот союз с пиратами может оказаться крайне полезным.</Russian>
+		<Hungarian>Elő fogjuk teremteni ezt a rejtett nemzetiségű flottát! Ez a szövetség a kalózokkal értékes lehet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SIX_PRIVATEERS_QUEST_DONE_1</Tag>
-		<English>That's great, but keep a good eye on them in case they cause trouble. Or better, send them to cause trouble for our enemies.</English>
+		<English>That's great, but keep a good eye on them in case they cause trouble. Or better, send them to cause trouble for our enemies!</English>
 		<Portuguese>Isso é ótimo, mas fique de olho neles caso causem problemas. Ou melhor, envie-os para causar problemas aos nossos inimigos.</Portuguese>
 		<French>C'est très bien mais gardez les à l'oeil au cas où ils causeraient des ennuis. Ou mieux, envoyez les causer des ennuis ailleurs, à nos ennemis.</French>
 		<German>Das ist großartig. Aber behaltet sie im Auge, so dass sie keinen Ärger verursachen. Oder noch besser, schickt sie los, um unseren Feinden Ärger zu verursachen.</German>
 		<Russian>Прекрасно, но внимательно следите за ними, чтобы они не доставили нам неприятности. А еще лучше отправьте их доставлять неприятности нашим врагам.</Russian>
+		<Hungarian>Ez remek, de azért tartsuk őket szemmel, hátha bajt okoznak. Vagy még jobb, ha elküldjük őket az ellenfeleinkhez, hogy ott okozzanak bajt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST</Tag>
@@ -4453,6 +4491,7 @@
 		<French>Sire, nos propriétaires de plantations dans les colonies sont très satisfaits des premiers esclaves importés dans nos colonies. Maintenant, ils voudraient se lancer dans le transport d'esclaves eux-même plutôt que de le laisser aux autres. Ils suggèrent d'acquérir [COLOR_HIGHLIGHT_TEXT]deux navires négriers[COLOR_REVERT] avant les autres colonies.[NEWLINE]Si nous sommes les premiers à le faire, ils promettent de recruter des [COLOR_HIGHLIGHT_TEXT]contre-maîtres d'esclaves[COLOR_REVERT] expérimentés. </French>
 		<German>Milord, unsere Plantagenbesitzer sind sehr zufrieden mit der Arbeitsleistung der ersten Sklaven, die in die Kolonien gebracht wurden. Nun wünschen sie, dass wir selbst in das profitable Geschäft des Sklavenhandels einsteigen, anstatt es anderen zu überlassen. Sie schlagen daher vor, dass wir umgehend [COLOR_HIGHLIGHT_TEXT]zwei Sklavenschiffe[COLOR_REVERT] erwerben, um den anderen Nationen zuvorzukommen.[NEWLINE]Sollte uns dies gelingen, versprechen sie sogar die Kosten für die Bezahlung erfahrener [COLOR_HIGHLIGHT_TEXT]Sklavenaufseher[COLOR_REVERT] zu übernehmen.</German>
 		<Russian>Милорд, наши плантаторы в колониях очень довольны тем, что мы привезли в Новый Свет первых рабов. И теперь они хотят, чтобы мы сами занялись таким прибыльным бизнесом, как работорговля, а не отдавали его на откуп другим. Они предлагают нам приобрести [COLOR_HIGHLIGHT_TEXT]два невольничьих барка[COLOR_REVERT] прежде, чем это сделает любая другая колониальная держава.[NEWLINE]Если мы будем первыми, плантаторы обещают оплатить услуги опытных [COLOR_HIGHLIGHT_TEXT]надсмоторщиков за рабами[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, a gyarmatokon élő ültetvényeseink nagyon örülnek annak, hogy elhoztuk az első rabszolgákat a gyarmatokra. Most azt szeretnék, ha mi magunk is belépnénk a jövedelmező rabszolga-kereskedelembe, ahelyett, hogy másokra hagyatkoznánk. Azt javasolják, hogy szerezzünk be [COLOR_HIGHLIGHT_TEXT]két rabszolgahajót[COLOR_REVERT] a többi gyarmati hatalom előtt. Ha mi leszünk az elsők, akkor megígérik, hogy fizetnek tapasztalt [COLOR_HIGHLIGHT_TEXT]rabszolgafelügyelőkért[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE_WORLD</Tag>
@@ -4461,6 +4500,7 @@
 		<French>Sire, une autre nation coloniale a acquis deux navires négrier avant nous.</French>
 		<German>Eine Kolonialmacht konnte vor allen anderen zwei Sklavenschiffe erwerben.</German>
 		<Russian>У одной из европейских колониальных наций есть два невольничьих барка.</Russian>
+		<Hungarian>Uram, egy másik gyarmati nemzet lett az első, amelyik két rabszolgahajót szerzett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SLAVE_TRADER_QUEST_DONE</Tag>
@@ -4469,6 +4509,7 @@
 		<French>Sire, nous avons acquis deux navires négriers avant les autres. Les propriétaires-planteurs ont tenu parole et recruté des contre-maîtres d'esclaves.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen zwei Sklavenschiffe erwerben. Die Plantagenbesitzer haben ihr Wort gehalten und Sklavenaufseher angeworben.</German>
 		<Russian>Милорд, мы приобрели два невольничьих барка раньше, чем любая другая колониальная держава. Плантаторы сдержали свое слово и наняли надсмотрщиков за рабами.</Russian>
+		<Hungarian>Uram, megszereztél két rabszolgahajót, mielőtt bármelyik másik kolónia megtehette volna ezt. A ültetvényesek megtartották a szavukat és rabszolgafelügyelőket fogadtak fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_SLAVE_TRADER_QUEST</Tag>
@@ -4477,6 +4518,7 @@
 		<French>Sire, le gouverneur d'une autre colonie a caquis des navires négriers avant vous. Vous avez laissé passer l'occasion de faire payer les planteurs pour les contre-maîtres.</French>
 		<German>Milord, der Gouverneur einer anderen Kolonie konnte vor Euch zwei Sklavenschiffe erwerben. Dadurch habt Ihr die Chance vertan, dass die Kosten für die Anwerbung von Sklavenaufsehern von den Plantagenbesitzern übernommen werden.</German>
 		<Russian>Милорд, губернатор другой колониальной нации раньше нас приобрел два невольничьих барка. Мы упустили шанс получить надзирателей за рабами за счет плантаторов.</Russian>
+		<Hungarian>Uram, egy másik kolónia kormányzója két rabszolgahajót szerzett meg előtted. Elszalasztottad a lehetőséget, hogy az ültetvénytulajdonosok fizessenek a rabszolgafelügyelőkért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SLAVE_TRADER_QUEST</Tag>
@@ -4485,6 +4527,7 @@
 		<French>Nous allons acquérir ces navires négriers et dominer ce marché si profitable</French>
 		<German>Wir werden die Sklavenschiffe erwerben und die beherrschende Macht in diesem profitablen Geschäft werden.</German>
 		<Russian>Мы приобретем эти невольничьи барки и станем единолично заправлять этим прибыльным делом.</Russian>
+		<Hungarian>Megszerezzük ezeket a rabszolgahajókat és mi leszünk a domináns erő ebben a jövedelmező üzletágban!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SLAVE_TRADER_QUEST_REFUSE</Tag>
@@ -4500,6 +4543,7 @@
 		<French>Merveilleux ! Dites aux contremaitres de faire attention à ne pas abîmer la « marchandise ».</French>
 		<German>Wundervoll, laßt den Sklavenaufsehern aber ausrichten, dass sie vorsichtig mit unserem Besitz sein sollen.</German>
 		<Russian>Замечательно! И передайте надсмотрщикам за рабами, чтобы они были аккуратны в отношении нашего имущества.</Russian>
+		<Hungarian>Csodálatos! Mondd meg a rabszolgafelügyelőknek, hogy vigyázzanak, ne tegyenek kárt a tulajdonunkban!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FOUR_TREASURES</Tag>
@@ -4508,6 +4552,7 @@
 		<French>Sa majesté est pronfondément déçu que tant de trésors ne soient pas envoyés en Europe en temps et en heure. Pour résoudre ce probème, Il nous propose un [COLOR_HIGHLIGHT_TEXT]Navire de transport de trésors[COLOR_REVERT] à un prix réduit.</French>
 		<German>Milord, Seine Majestät ist sehr unzufrieden, dass so viele Schätze nicht rechtzeitig nach Europa verschifft werden. Um das Problem zu lösen bietet man uns ein [COLOR_HIGHLIGHT_TEXT]Schatz-Transportschiff[COLOR_REVERT] zu einem vergünstigten Preis an.</German>
 		<Russian>Милорд, Его Величество крайне недоволен тем, что так много [COLOR_HIGHLIGHT_TEXT]сокровищ[COLOR_REVERT] не отправляется вовремя в Европу. Для решения этой проблемы Он предлагает нам [COLOR_HIGHLIGHT_TEXT]галеон[COLOR_REVERT] по сниженной цене.</Russian>
+		<Hungarian>Uram, Őfelsége mélységesen elégedetlen azzal, hogy oly sok kincs nem kerül időben Európába szállításra. A probléma megoldása érdekében kedvezményes áron felkínál nekünk egy [COLOR_HIGHLIGHT_TEXT]galleont[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_1</Tag>
@@ -4516,6 +4561,7 @@
 		<French>Nous devons hélas refuser cette offre pourtant généreuse. Nous avons besoin d'épargner l'argent à d'autres fins.</French>
 		<German>Wir müssen dieses großzügige Angebot ablehnen, aber im Moment benötigen wir das Geld anderweitig.</German>
 		<Russian>К сожалению, мы вынуждены отказаться от этого щедрого предложения. Мы должны сохранить наши деньги для других целей.</Russian>
+		<Hungarian>Sajnos el kell utasítanunk ezt a nagylelkű ajánlatot. Más célokra kell megtakarítanunk a pénzünket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_2</Tag>
@@ -4524,6 +4570,7 @@
 		<French>Une offre qu'on ne saurait réfuser ! Nous achetons volontiers le navire à ce prix.</French>
 		<German>Das ist ein hervorragendes Angebot! Wir kaufen das Schiff gerne zu diesem Preis.</German>
 		<Russian>Какое превосходное предложение! Мы с радостью купим галеон за эту цену.</Russian>
+		<Hungarian>Ez egy kiváló ajánlat! Örömmel megvásároljuk a galleont ezen az áron.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_REWARD_SHIP_HELP</Tag>
@@ -4542,21 +4589,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FOUR_TREASURES_RETURN</Tag>
-		<English>The envoys of your king return, reminding you of the transport ship you previously declined to purchase. Now that your treasury has recovered, they demand a final decision.</English>
+		<English>The envoys of your King return, reminding you of the transport ship you previously declined to purchase. Now that your treasury has recovered, they demand a final decision.</English>
 		<Portuguese>Os enviados do seu rei retornam, lembrando-lhe do navio de transporte que você anteriormente recusou comprar. Agora que o seu tesouro se recuperou, exigem uma decisão final.</Portuguese>
 		<German>Die Gesandten Eures Königs kehren zurück und erinnern Euch an das Transportschiff, dessen Kauf Ihr zuvor aufgeschoben habt. Nun, da sich Eure Schatzkammer erholt hat, verlangen sie eine endgültige Entscheidung.</German>
 		<Russian>Посланники вашего Короля вернулись и напомнили о галеоне, покупку которого вы ранее отложили. Теперь, когда ваша казна восстановилась, они требуют окончательного решения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOUR_TREASURES_RETURN</Tag>
-		<English>The king's envoys return. Now that your treasury has recovered, they once again demand a final answer regarding the purchase of the transport ship.</English>
+		<English>The King's envoys return. Now that your treasury has recovered, they once again demand a final answer regarding the purchase of the transport ship.</English>
 		<Portuguese>Os enviados do rei retornam. Agora que o seu tesouro se recuperou, exigem mais uma vez uma resposta final quanto à compra do navio de transporte.</Portuguese>
 		<German>Die Gesandten des Königs kehren zurück. Da sich Eure Schatzkammer erholt hat, verlangen sie nun erneut eine endgültige Entscheidung über den Kauf des Transportschiffes.</German>
 		<Russian>Королевские посланники вернулись. Теперь, когда ваша казна восстановилась, они требуют окончательного решения относительно покупки галеона.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_RETURN_1</Tag>
-		<English>Very well. We shall honor our obligation to the Crown and purchase the transport ship.</English>
+		<English>Very well. We shall honour our obligation to the Crown and purchase the transport ship.</English>
 		<Portuguese>Muito bem. Honraremos a nossa obrigação para com a Coroa e compraremos o navio de transporte.</Portuguese>
 		<German>Sehr wohl. Wir werden unserer Verpflichtung gegenüber der Krone nachkommen und das Transportschiff kaufen.</German>
 		<Russian>Конечно, мы выполним свои обязательства перед Короной и купим этот галеон.</Russian>
@@ -4570,21 +4617,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_RETURN_1_HELP</Tag>
-		<English>You pay %d1 gold to fulfill your obligation to the Crown. A %s3 will be arriving in the coastal city %s2, and your standing with the king improves.</English>
+		<English>You pay %d1 gold to fulfill your obligation to the Crown. A %s3 will be arriving in the coastal city %s2, and your standing with the King improves.</English>
 		<Portuguese>Você paga %d1 ouro para cumprir sua obrigação com a Coroa. Um %s3 chegará à cidade costeira %s2 e sua posição perante o rei melhorará.</Portuguese>
 		<German>Ihr zahlt %d1 Gold, um Eurer Verpflichtung gegenüber der Krone nachzukommen. Eine %s3 wird in der Küstenstadt %s2 anlanden, und Eure Stellung beim König verbessert sich.</German>
 		<Russian>Во исполнение обязательств перед Короной из вашей казны будет вычтено %d1 золота. Галеон будет прибудет в порт города %s2, а ваше положение у Короля улучшиться.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_RETURN_2_HELP</Tag>
-		<English>You refuse the Crown's request once and for all. The king will not look kindly upon your defiance.</English>
+		<English>You refuse the Crown's request once and for all. The King will not look kindly upon your defiance.</English>
 		<Portuguese>Você recusa o pedido da Coroa de uma vez por todas. O rei não verá com bons olhos o seu desafio.</Portuguese>
 		<German>Ihr verweigert die Forderung der Krone endgültig. Der König wird Euren Ungehorsam nicht wohlwollend aufnehmen.</German>
 		<Russian>Вы отказываетесь от королевского предложения. Его Величество будет крайне недоволен.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_DELAY_HELP</Tag>
-		<English>Selecting this option will postpone the offer. An envoy from the king will contact you again later, provided you have enough gold by then.</English>
+		<English>Selecting this option will postpone the offer. An envoy from the King will contact you again later, provided you have enough gold by then.</English>
 		<Portuguese>Selecionar esta opção adiará a oferta. Um enviado do rei entrará em contato com você novamente mais tarde, desde que você tenha ouro suficiente até então.</Portuguese>
 		<French/>
 		<German>Diese Wahl vertagt das Angebot. Ein Gesandter des Königs wird sich später erneut bei euch melden, sofern Ihr wieder genug Gold habt.</German>
@@ -4592,19 +4639,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THREE_GALLEONS</Tag>
-		<English>Milord, His Majesty is worried that our treasure fleet needs better protection. To ensure safe passage His Majesty offers us a mighty [COLOR_HIGHLIGHT_TEXT]war ship[COLOR_REVERT] for a discounted price.</English>
+		<English>Milord, His Majesty is worried that our treasure fleet needs better protection. To ensure safe passage His Majesty offers us a mighty [COLOR_HIGHLIGHT_TEXT]warship[COLOR_REVERT] for a discounted price.</English>
 		<Portuguese>Milord, Sua Majestade está preocupado que a nossa frota de tesouros precise de melhor proteção. Para garantir uma passagem segura, Sua Majestade nos oferece um poderoso [COLOR_HIGHLIGHT_TEXT]navio de guerra[COLOR_REVERT] por um preço com desconto.</Portuguese>
 		<French>Sire, sa Majesté est inquiète car notre convoi de trésor a besoin de plus protection. Pour assurer l'arrivée à bon port du convoi, sa majesté nous propose une puissante [COLOR_HIGHLIGHT_TEXT]frégate royale[COLOR_REVERT] à bas prix.</French>
 		<German>Milord, Seine Majestät ist besorgt, dass unsere Schatzflotte nicht genug geschützt ist. Daher bietet uns Seine Majestät ein mächtiges [COLOR_HIGHLIGHT_TEXT]Kriegsschiff[COLOR_REVERT] zu einem günstigen Preis an, um eine sichere Überfahrt zu gewährleisten.</German>
 		<Russian>Милорд, Его Величество обеспокоен тем, что наши корабли, перевозящие сокровища, не защищены в должной мере. Для обеспечения безопасности транспортировки Его Величество предлагает нам отличный [COLOR_HIGHLIGHT_TEXT]королевский фрегат[COLOR_REVERT] по сниженной цене.</Russian>
+		<Hungarian>Uram, Őfelsége nyugtalan a kincses flottánk gyenge védelme miatt. A biztonságos áthaladás érdekében Őfelsége kedvezményes áron felajánl nekünk egy hatalmas [COLOR_HIGHLIGHT_TEXT]királyi fregattot[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THREE_GALLEONS_1</Tag>
-		<English>We regretfully refuse this offer. We do not require another war ship to protect our treasure fleet.</English>
+		<English>We regretfully refuse this offer. We do not require another warship to protect our treasure fleet.</English>
 		<Portuguese>Lamentavelmente recusamos esta oferta. Não precisamos de outro navio de guerra para proteger a nossa frota de tesouros.</Portuguese>
 		<French>Hélas, nous refusons. Nous n'avons pas beoin d'un autre navire de guerre pour protéger notre convoi de trésor.</French>
 		<German>Wir lehnen höflichst ab. Wir benötigen kein weiteres Kriegsschiff zum Schutz unserer Schatzflotte.</German>
 		<Russian>Мы с большим сожалением вынуждены отказаться от этого щедрого предложения. Колонии пока не располагают достаточными средствами для этого.</Russian>
+		<Hungarian>Sajnálattal elutasítjuk ezt az ajánlatot. Nincs szükségünk újabb hadihajóra a kincses flottánk védelméhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THREE_GALLEONS_2</Tag>
