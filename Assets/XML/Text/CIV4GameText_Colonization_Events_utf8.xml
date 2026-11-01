@@ -5217,6 +5217,7 @@
 		<French>Seigneur, les financiers privés ont maintenant converti leurs navires pirates en navires commerciaux qui ne feront plus de raids sur notre flotte marchande.</French>
 		<German>Milord, die Eigner der Freibeuter, deren Kaperbriefe wir eingezogen haben, haben ihre Schiff zu Handelsschiffen umgerüstet, die nun unsere Handelsflotte verstärken werden.</German>
 		<Russian>Милорд, частные финансисты превратили свои пиратские корабли в торговые суда, которые больше не будут совершать набеги на наш торговый флот.</Russian>
+		<Hungarian>Uram, a magánbefektetők átalakították kalózhajóikat kereskedelmi hajókká, amik többé nem fogják megtámadni a kereskedelmi flottánkat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRIVATEER_3</Tag>
@@ -5225,6 +5226,7 @@
 		<French>Les corsaires seront impitoyablement chassés.</French>
 		<German>Freibeuter werden gnadenlos gejagt.</German>
 		<Russian>На каперов начнут безжалостную охоту.</Russian>
+		<Hungarian>A kalózokat könyörtelenül üldözni fogjuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRIVATEER_3</Tag>
@@ -5233,6 +5235,7 @@
 		<French>Seigneur, un de nos nouveaux corsaires a été capturé par la marine de notre voisin. Les flibustiers ont tous été pendus.</French>
 		<German>Milord, der Freibeuter, den wir kürzlich mit einem neuen Kaperbrief ausstatteten, wurde von der Marine unserer Konkurenten aufgebracht und die Besatzung wegen Piraterie gehängt.</German>
 		<Russian>Милорд, один из наших новых каперов был захвачен флотом нашего соседа. Весь экипаж был повешен...</Russian>
+		<Hungarian>Uram, az egyik új kalózhajónkat elfogta a szomszédos haditengerészet. A kalózokat mind felakasztották.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRIVATEER_REWARD_SHIP_HELP</Tag>
@@ -5248,6 +5251,7 @@
 		<French>Un indigène d'une tribu voisine souhaite rejoindre notre colonie.</French>
 		<German>Ein Ureinwohner möchte sich Euch schließen.</German>
 		<Russian>Индеец ушёл из племени, чтобы присоединиться к колонистам.</Russian>
+		<Hungarian>Egy közeli törzsből származó Indián szeretne csatlakozni a kolóniánkhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_TOWNHALL_1</Tag>
@@ -5256,6 +5260,7 @@
 		<French>Sire, un autochtone effrayé attend docielemnt dans le quartier des serviteurs. Sa tribu l'a banni car il a fui au lieu de sa battre quand des conquistadores ont attaqué son village. Il demande pitié et une nouvelle chance.</French>
 		<German>Milord, ein eingeschüchterter Indianer steht demütig in Eurer Gesindestube. Sein Stamm habe ihn verstoßen, weil er bei einem Überfall von Konquistadoren auf sein Dorf geflohen war, statt zu kämpfen. Er bittet um Eure Gnade und eine neue Chance.</German>
 		<Russian>Милорд, напуганный туземец смиренно ждет в покоях вашей прислуги. Его племя отреклось от него, потому что он бежал вместо того, чтобы сражаться, когда конкистадоры совершили набег на его деревню. Он умоляет сжалиться над ним и дать шанс проявить себя.</Russian>
+		<Hungarian>Uram, egy megrémült Indián alázatosan a szolgáid szállásán vár. A törzse kitagadta, mert harc helyett elmenekült, amikor a konkvisztádorok megtámadták a faluját. Kegyelemért és egy új esélyért könyörög.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_DOCK</Tag>
@@ -5264,6 +5269,7 @@
 		<French>Un indigène converti rejoint votre colonie.</French>
 		<German>Ein Konvertierter Ureinwohner schließt sich Eurer Kolonie an.</German>
 		<Russian>Крещённый индеец присоединяется к нашей колонии.</Russian>
+		<Hungarian>Egy megtért Indián csatlakozik a kolóniádhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_DOCK_1</Tag>
@@ -5272,6 +5278,7 @@
 		<French>Sire, un missionnaire se déplace dans nos colonies. Son servitreur indigène veut le quitter, lassé par les avances indécentes de son maître.</French>
 		<German>Milord, ein Missionar reist derzeit durch unsere Kolonien. Sein indianischer Diener will ihn verlassen, weil er die unsittlichen Annäherungen seines Herrn satt hat.</German>
 		<Russian>Милорд, в настоящее время известный миссионер путешествует по нашим колониям. Его слуга-туземец хочет его покинуть. Ему надоели непристойные ухаживания хозяина.</Russian>
+		<Hungarian>Uram, egy misszionárius éppen a gyarmatainkon keresztül utazik. Az Indián szolgája el akarja hagyni őt. A szolgának elege van gazdája illetlen közeledéséből.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_CHAPEL</Tag>
@@ -5280,6 +5287,7 @@
 		<French>Un indigène converti vous rejoint .</French>
 		<German>Ein Konvertierter Ureinwohner schließt sich Euch an.</German>
 		<Russian>Крещённый индеец присоединяется к нам.</Russian>
+		<Hungarian>Egy megtért Indián csatlakozik hozzád.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_1</Tag>
@@ -5288,6 +5296,7 @@
 		<French>Sire, le prêtre de la paroisse demande s'il peut prendre soin d'un graçon indigène. Il a perdu père et mère suite à la variole, et il est seul au monde.</French>
 		<German>Milord, der Gemeindepfarrer fragt, ob Ihr Euch eines Indianerjünglings annehmen könnt. Er habe Vater und Mutter durch die Blattern verloren und stehe jetzt ganz alleine da.</German>
 		<Russian>Милорд, приходской священник спрашивает, можете ли вы позаботиться о мальчике-туземце. Он потерял отца и мать из-за оспы и теперь совсем один.</Russian>
+		<Hungarian>Uram, a plébános azt kérdezi, hogy gondját tudnád-e vállalni egy Indián fiúnak. A fiú apját és anyját elvitte a himlő és most teljesen egyedül maradt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_2</Tag>
@@ -5296,6 +5305,7 @@
 		<French>Sire, un indigène a été pris en train de voler le calice d'argent à l'église. Le vaurien se repent et demande à faire pénitence en payant ses dettes.</French>
 		<German>Milord, ein Indianer wurde in Eurem Gotteshaus bei dem Versuch erwischt, den silbernen Messkelch zu stehlen. Die Rothaut ist reuig und möchte ihre Schuld durch tätige Buße begleichen.</German>
 		<Russian>Милорд, индеец был пойман при попытке украсть серебряную чашу из церкви. Негодяй раскаивается и желает оплатить свой долг активным покаянием.</Russian>
+		<Hungarian>Uram, egy Indiánt elfogtak miközben megpróbálta ellopni az ezüstkehelyt a templomból. A gazember megbánta tettét és tevékeny vezekléssel kívánja megfizetni adósságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_3</Tag>
@@ -5304,6 +5314,7 @@
 		<French>Sire, au confessionnal le prtêtre de la paroisse a persuadé un indigène que sa nature sauvage était désagréable à Dieu, et qu'il devait la soumettre en travaillant très dur sous vos ordres.</French>
 		<German>Milord, der Gemeindepfarrer konnte im Beichtstuhl eine Rothaut davon überzeugen, dass seine halbwilde Natur nicht gottgefällig ist und nur durch harte Arbeit unter Eurem strengen Kommando gezügelt werden könne.</German>
 		<Russian>Милорд, в исповедальне приходской священник убедил индейца в том, что его дикая природа неугодна Богу и может быть обуздана только упорным трудом под вашим строгим руководством.</Russian>
+		<Hungarian>Uram, a gyóntatószékben a plébános meggyőzött egy Indiánt arról, hogy a vad természete nem tetszik Istennek és hogy kemény munkával, a te szigorú parancsaid alatt kell megszelídülnie.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_4</Tag>
@@ -5312,6 +5323,7 @@
 		<French>Sire, un indigène de passage a été inspiré par les vitraux de notre lieu de prière. Il dit que la lueur du matin à travers eux a illuminé son âme, et il veut vivre avec nous.</French>
 		<German>Milord, ein vorbeiziehender Indianer hat der Anblick der bunten Glasfenster in Eurem Gotteshaus bezaubert. Er sah das Morgenlicht durch sie hindurch in seine Seele leuchten, meint er. Nun möchte er unter uns Weißen leben.</German>
 		<Russian>Милорд, туземец, проходивший мимо церкви вдохновился её витражами. Он говорит, что утренний свет проник сквозь них прямо в его душу. Теперь он хочет среди нас.</Russian>
+		<Hungarian>Uram, egy arra járó Indiánt megihlettek a templomunk ólomüveg ablakai. Azt mondja, hogy a reggeli fény átsütött rajtuk és egyenesen a lelkébe hatolt. Most velünk akar élni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_5</Tag>
@@ -5320,6 +5332,7 @@
 		<French>Sire, un indigène a eu une vision durant l'office à l'église. Il a vu le Sauveur a l'autel muni d'une épée flamboyante, et la tête tranchée d'un loup en main gauche. Cet indigène est maintenant pressé de rejoindre notre combat.</French>
 		<German>Milord, ein Indianer erlebte beim zufälligen Besuch unseres Gottesdienstes eine Vision. Er sah den Heiland mit einem Flammenschwerte am Altar stehen, in der Linken trug er den abgeschlagenen Kopf eines Wolfes. Ehrfürchtig möchte sich die Rothaut nun unserem Kampfe anschließen.</German>
 		<Russian>Милорд, индейцу во время нашей церковной службы было видение. Он увидел Спасителя, стоящего у алтаря с пламенным мечом в правой руке и с отрубленной головой волка в левой руке. Теперь этот туземец хочет присоединиться к нашей борьбе со злом.</Russian>
+		<Hungarian>Uram, egy Indián látomásban részesült a gyülekezeti istentiszteletünk alatt. Látta, hogy a Megváltó lángoló karddal áll az oltárnál, bal kezében egy farkas levágott fejével. Ez az Indián most alig várja, hogy csatlakozhasson a harcunkhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_6</Tag>
@@ -5328,6 +5341,7 @@
 		<French>Sire, un jeune indigène vous demande de lui apprendre à lire pour qu'il puisse étudier les Saintes Écritures. En retour, il propose d'aider où que ce sera nécessaire.</French>
 		<German>Milord, ein junger Indianer bittet Euch, ihm das Lesen beizubringen, damit er in unserem Gotteshaus die Heilige Schrift studieren kann. Im Gegenzug bietet er an, überall anzupacken, wo Not am Mann ist.</German>
 		<Russian>Милорд, молодой индеец просит вас научить его читать, чтобы он мог изучать Священное Писание. Взамен он предлагает свою помощь везде, где будет потребность.</Russian>
+		<Hungarian>Uram, egy fiatal Indián kéri, hogy tanítsuk meg olvasni, hogy tanulmányozhassa a Szentírást. Cserébe felajánlja, hogy segít, ahol csak szükség van rá.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_7</Tag>
@@ -5336,6 +5350,7 @@
 		<French>Sire, un indigène est prêt à renoncer à ses croyances au Manitou pour servir le Seigneur Jésus-Christ.</French>
 		<German>Milord, eine Rothaut möchte Manitou abschwören und stattdessen unserem Herrn Jesus Christus dienen.</German>
 		<Russian>Милорд, туземец готов отказаться от Маниту и вместо этого служить Господу нашему Иисусу Христу.</Russian>
+		<Hungarian>Uram, egy Indián készen áll arra, hogy lemondjon a Manituról és helyette Urunk Jézus Krisztust szolgálja.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_8</Tag>
@@ -5344,6 +5359,7 @@
 		<French>Sire, un jeune indigène est tombé amoureux de la Bienheureuse Vierge Marie représentée dans notre église. il veut vivre dans notre paroisse pour toujoiurs être auprès d'elle.</French>
 		<German>Milord, ein Indianerjüngling hat sich in die Statue der Heiligen Jungfrau Maria verliebt, die in unserem Gotteshaus steht. Er möchte nun in unserer Gemeinde leben, um stets in ihrer Nähe zu sein.</German>
 		<Russian>Милорд, местный юноша влюбился в статую Пресвятой Девы Марии, которая находится в нашем храме. Он теперь хочет жить в нашем приходе, чтобы всегда быть рядом с ней.</Russian>
+		<Hungarian>Uram, egy Indián fiatalember szerelmes lett a szentélyünkben álló Szűz Mária szoborba. Most a plébániánkon szeretne élni, hogy mindig közel lehessen hozzá.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONVERTED_CHAPEL_9</Tag>
@@ -5352,6 +5368,7 @@
 		<French>Sire, nous avons pris sur le fait un jeune indigène qui a dévalisé la cave de notre église et y a bu tout un tonnelet du vin de messe. Il s'en repent et souhaite réparer sa faute en nous servant.</French>
 		<German>Milord, wir haben eine Rothaut erwischt, die in den Keller unseres Gotteshauses eingebrochen und ein ganzes Fässchen unseres Messweines ausgesoffen hat. Der Bursche ist reuig und will seine Schuld durch Dienste abtragen.</German>
 		<Russian>Милорд, мы поймали молодого туземца, который пробрался в подвал нашей церкви и выпил целый бочонок вина для причастия. Мальчик раскаивается и хочет отдать свой долг служением.</Russian>
+		<Hungarian>Uram, elkaptunk egy fiatal Indiánt, aki betört a templomunk pincéjébe és megivott egy egész hordó misebort. A fiú megbánta tettét és szolgálattal akarja megfizetni adósságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_3</Tag>
@@ -5362,6 +5379,7 @@
 		<Italian>Un incendio forestale, causato da un fulmine, ha devastato il territorio vicino a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Italian>
 		<Spanish>Un incendio forestal causado por un rayo ha asolado las tierras aledañas a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</Spanish>
 		<Russian>Возле [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] бушует лесной пожар, вызванный ударом молнии.</Russian>
+		<Hungarian>A villámcsapás által okozott erdőtűz tombolt [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] közelében fekvő területeken.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CONIFEROUS_FIRE_1</Tag>
@@ -5372,6 +5390,7 @@
 		<Italian>Signore, un giovane di [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] e la sua innamorata vogliono sposarsi, ma i loro padri sono carbonari rivali che si odiano. I vecchi testardi si rifiutano di dare la loro benedizione. Ora la coppia disperata minaccia di dare fuoco alla foresta per ricattare i vecchi. I cittadini sanno che un incendio nella foresta potrebbe devastare l'intera zona. Vi chiedono di intervenire.</Italian>
 		<Spanish>Excelencia, un joven de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] y su novia desean casarse, pero sus padres son carboneros rivales que se odian. Los testarudos se niegan a dar su bendición. Ahora la desesperada pareja amenaza con incendiar el bosque para chantajear a los ancianos. Los ciudadanos saben que un incendio forestal podría devastar toda la zona. Les piden que intervengan.</Spanish>
 		<Russian>Милорд, молодой человек из [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] и его возлюбленная хотят пожениться, но их отцы - соперничающие угольщики, которые ненавидят друг друга. Упрямые старикашки отказываются дать свое благословение. Теперь отчаявшаяся парочка, шантажируя стариков, угрожает поджечь лес. Наши горожане знают, что лесной пожар может опустошить всю местность в округе. Они просят вас вмешаться.</Russian>
+		<Hungarian>Uram, [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egy ifjúja és kedvese össze akarnak házasodni, de az apáik rivális faszénégetők, akik gyűlölik egymást. A makacs vénemberek nem adják áldásukat rájuk. Most a kétségbeesett pár azzal fenyegetőzik, hogy felgyújtják az erdőt, hogy ezzel zsarolják az öregeket. Lakosaink tudják, hogy egy erdőtűz az egész területet elpusztíthatja. Arra kérnek téged, hogy avatkozz be.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_JUNGLE_FIRE_1</Tag>
@@ -5382,6 +5401,7 @@
 		<Italian>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], alcuni ragazzi di grande spirito hanno convinto lo scemo del villaggio che un lupo mannaro si aggira nella foresta vicina, intenzionato a colpirlo personalmente. Allora l'idiota spaventato appiccò un fuoco nella foresta per bruciare la bestia. Il vento dell'est ha alimentato le fiamme, e un rullo infuocato sta correndo attraverso la terra. Il calore della morte minaccia di trasformare molti acri in cenere fuligginosa.</Italian>
 		<Spanish>En [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], unos cuantos muchachos de gran espíritu han convencido al tonto del pueblo de que un hombre lobo está vagando por el bosque cercano, con la intención de atacarlo personalmente. Entonces, el asustado zoquete prendió fuego al bosque para quemar a la bestia. El viento del este ha avivado las llamas, y un rodillo ardiente recorre la tierra. El calor de la muerte amenaza con convertir muchas hectáreas en cenizas de hollín.</Spanish>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пара шутников рассказала деревенскому идиоту, что в ближайшем лесу поселился оборотень, который будет на него охотится. И дурачок не придумал ничего лучше, как поджечь лес, чтобы уничтожить нечисть. Восточный ветер раздувает пламя, разгоняя по земле стену огня и превращая бесчисленные акры в пепел.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] néhány csínytevője azt mondta a falu bolondjának, hogy a közeli erdőben egy vérfarkas vadászik rá. A bolond természetesen felgyújtotta az erdőt, hogy elhamvassza a szörnyet. A keleti szél fújja a lángokat, tűzfalat vetve a földre és számtalan hektárt hamuvá változtatva.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ADMIRAL_1</Tag>
@@ -5390,6 +5410,7 @@
 		<French>Le bruit court qu'à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] un amiral paresseux mange le gouverneur à domicile.</French>
 		<German>Man munkelt, dass ein untätiger Admiral durch seine Gelage in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] dem örtlichen Statthalter die Haare vom Kompf frisst.</German>
 		<Russian>Ходят слухи, что в городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] распутный адмирал своими запоями довел местного мэра до приступов мигрени.</Russian>
+		<Hungarian>Azt mondják, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kikötőjében egy lusta admirális felemészti a kormányzó vagyonát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ADMIRAL_1</Tag>
@@ -5398,6 +5419,7 @@
 		<French>Seigneur, le nouvel amiral mange et boit constamment et passe plus de temps avec les femmes qu'avec les nouvelles recrues. Ses banquets sont le sujet de conversation de la ville. Nous devons faire quelque chose pour l'arrêter.</French>
 		<German>Milord, einer unserer neu bestallten Admiräle feiert lieber und labt sich an Wein und Frauen, als dass er unseren jungen Matrosen Seemannschaft beibringt. Seine Gelage sind schon Stadtgespräch. Wir müssen etwas unternehmen, so etwas ist schlecht für die Moral.</German>
 		<Russian>Милорд, новый адмирал только и делает, что ест и пьет и проводит с женщинами больше времени, чем с новобранцами. О его банкетах судачат уже по всему городу. Мы должны что-то предпринять, чтобы остановить это.</Russian>
+		<Hungarian>Uram, az új admirális állandóan eszik és iszik, és több időt tölt nőkkel, mint az újoncokkal. A bankettjeiről az egész város beszél. Valamit tennünk kell, hogy ezt megakadályozzuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ADMIRAL_BORD</Tag>
@@ -5406,6 +5428,7 @@
 		<French>Dans [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] la marine a équipé un nouveau sloop. Il semble que l'Amiral recevra bientôt ses ordres de navigation.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] rüstet die Marine eine neue Sloop aus. Der Admiral wird wohl bald seine Segelorder erhalten.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] военно-морской флот снарядил для экспедиции новый шлюп. Похоже, адмирал скоро получит приказ о выходе в море.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haditengerészete új szlúpot szerzett be. Úgy tűnik, hogy az admirális hamarosan megkapja a hajózási parancsot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ADMIRAL_LAND</Tag>
@@ -5414,6 +5437,7 @@
 		<French>Mais il semble que le gouverneur de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] soit un homme généreux.</French>
 		<German>Aber der Statthalter in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist offenbar ein großzügiger Mann.</German>
 		<Russian>Но похоже, что мэр города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] великодушный человек.</Russian>
+		<Hungarian>De úgy tűnik, hogy [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kormányzója nagylelkű ember.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST</Tag>
@@ -5422,6 +5446,7 @@
 		<French>Vous avez construit votre premier train de chariots. Les commerçants de vos colonies vous incitent à en construire au moins cinq pour approvisionner les villes de l'intérieur afin que vos propres marchandises puissent dominer le commerce intérieur. Si vous êtes la première nation à le faire, ils vous offrent une récompense.</French>
 		<German>Ihr habt Euren ersten Wagenzug erworben, aber die Händler der Kolonien verlangen von Euch, dass Ihr mindestens fünf davon baut, um unsere Städte im Binnenland zu versorgen, und den heimischen Markt mit unseren eigenen Waren zu versorgen. Wenn Ihr die erste Nation seid, die dies erreicht, bieten sie eine Belohnung.</German>
 		<Russian>Вы построили свою первую повозку. Торговцы вместе с администрацией ваших колоний призывают построить не менее пяти таких транспортов для снабжения внутренних городов, чтобы ваши собственные товары могли доминировать на внутреннем рынке. Они предлагают  хорошее вознаграждени, если мы станем первой державой, которая сделает это.</Russian>
+		<Hungarian>Megépítetted az első ekhós szekeredet. A gyarmataid kereskedői arra ösztönöznek, hogy legalább ötöt építs, hogy elláthasd a belföldi városokat, így saját áruid uralhatják a belföldi kereskedelmet. Ha te vagy az első nemzet, amelyik ezt megteszi, jutalmat ajánlanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST</Tag>
@@ -5430,6 +5455,7 @@
 		<French>Nous ferons ce que les commerçants demandent. Nos trains de chariots parcourront les routes du Nouveau Monde, livrant des marchandises aux marchés de toutes les villes coloniales et à nos voisins autochtones.</French>
 		<German>Wir werden tun, wie es die Händler erbitten. Unsere Wagenzüge sollen alle Straßen und Länder der Neuen Welt befahren und Waren auf alle Märkte der Kolonien und an benachbarte Siedlungen der Ureinwohner liefern.</German>
 		<Russian>Мы сделаем так, как просят торговцы. Наши транспорты будут путешествовать по дорогам Нового Света, доставляя товары на рынки во все колониальные города и к нашим соседям-туземцам.</Russian>
+		<Hungarian>Azt fogjuk tenni, amit a kereskedők kérnek. Ekhós szekereink az Újvilág útjain fognak közlekedni, árukat szállítva az összes gyarmati város piacaira és az Indián szomszédainknak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_WAGON_TRAINS_QUEST</Tag>
@@ -5438,6 +5464,7 @@
 		<French>Pire que ça ! Un autre gouverneur a construit cinq trains de chariots avant nous. Oubliez les récompenses.</French>
 		<German>Schlechte Kunde, Milord! Einem anderen Gouverneur ist es als erstem gelungen, fünf Wagenzüge zu erwerben. Die Belohnung der Händler ist hinfällig.</German>
 		<Russian>Дьявол! Губернатор другой нации построил пять повозок раньше нас. Мы можем забыть о какой-либо награде.</Russian>
+		<Hungarian>Balszerencse! Egy másik kormányzó öt ekhós szekeret épített, mielőtt mi megtehettük volna. Felejtsük el a jutalmat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE_WORLD</Tag>
@@ -5446,6 +5473,7 @@
 		<French>Une nation coloniale a construit cinq trains de chariots.</French>
 		<German>Eine Kolonialmacht hat fünf Wagenzüge erworben.</German>
 		<Russian>Кто-то построил пять повозок.</Russian>
+		<Hungarian>Egy gyarmati nemzet öt ekhós szekeret épített.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_WAGON_TRAINS_QUEST_DONE</Tag>
@@ -5454,6 +5482,7 @@
 		<French>Félicitations, Milord ! Vous êtes le premier gouverneur avec cinq trains de chariots dans le Nouveau Monde. La bénédiction du Seigneur sera sur vous. Les commerçants sont d'humeur généreuse.</French>
 		<German>Glückwunsch, Milord! Ihr seid der erste Gouverneur in der Neuen Welt, der es geschafft hat, fünf Wagenzüge zu besitzen. Der Segen Gottes liegt auf Euch und die Händler sind in großzügiger Stimmung.</German>
 		<Russian>Поздравляю, Милорд! Вы первый губернатор с пятью повозками в Новом Свете. Благословение Господа с нами. Торговцы настроены щедро вознаградить нас, как и обещали.</Russian>
+		<Hungarian>Gratulálok, Uram! Te vagy az első kormányzó, akinek öt ekhós szekere van az Újvilágban. Az Úr áldása van rajtad. A kereskedők nagylelkű hangulatban vannak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_1</Tag>
@@ -5462,6 +5491,7 @@
 		<French>Les marchands doivent compenser une partie de nos dépenses par leurs revenus, qu'ils ont acquis avec nos trains de chariots.</French>
 		<German>Die Händer sollen einen Teil unseres Aufwands durch ihr Einkommen kompensieren, dass sie mit unseren Wagenzügen erworben haben.</German>
 		<Russian>В таком случае, пусть они возместят нам затраты на изготовление.</Russian>
+		<Hungarian>A kereskedők fizetnek nekünk az ekhós szekereink használatáért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_WAGON_TRAINS_QUEST_DONE_2</Tag>
