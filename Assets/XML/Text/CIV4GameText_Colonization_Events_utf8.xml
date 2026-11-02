@@ -5500,6 +5500,7 @@
 		<French>Maintenant que nous avons tant de nouveaux trains de chariots, nous avons également besoin de plus de pionniers pour construire des routes pour eux. Laissez les marchands les recruter pour nous.</French>
 		<German>Nun da wir so viele neue Wagenzüge haben, benötigen wir auch mehr Pioniere, um Straßen für sie zu bauen. Die Händler sollen diese für uns anwerben.</German>
 		<Russian>Теперь, когда у нас так много транспортов, нам нужно больше первопроходцев для строительства дорог.</Russian>
+		<Hungarian>Most, hogy már olyan sok ekhós szekerünk van, több utászra van szükségünk az utak megépítéséhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST</Tag>
@@ -5508,6 +5509,7 @@
 		<French>Nous avons un commerce de fourrure de base en cours mais Sa Majesté attend de nous que nous développions l'activité en engageant au moins cinq trappeurs de fourrure. Si nous sommes la première nation à le faire, Sa Majesté offre une récompense.</French>
 		<German>Wir haben einen grundlegenden aber florierenden Pelzhandel etabliert. Seine Majestät wünscht aber nun, dass wir den Pelzhandel deutlich ausweiten, indem wir mindestens fünf Trapper anwerben. Wenn wir dies als erste Nation schaffen, verspricht Seine Majestät uns eine Belohnung.</German>
 		<Russian>Мы наладили добычу меха, но Его Величество ожидает, что мы расширим бизнес, наняв по крайней мере пять охотников за пушным зверем. Если мы будем первой державой, которая сделает это, Его Величество обещает достойную награду.</Russian>
+		<Hungarian>Az alapvető prémkereskedelem már megindult, de Őfelsége elvárja tőlünk, hogy legalább öt prémvadászt vegyünk fel és bővítsük az üzletet. Ha mi vagyunk az első nemzet, amelyik ezt megteszi, Őfelsége jutalmat ígér.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_FUR_TRAPPERS_QUEST</Tag>
@@ -5516,6 +5518,7 @@
 		<French>Nous ferons ce que Sa Majesté nous ordonne. Notre nouvelle nation dominera le commerce de la fourrure dans le Nouveau Monde et nos citoyens jouiront d'une fourrure luxueuse.</French>
 		<German>Wir werden den Befehlen Seiner Majestät gehorchen. Unsere Nation wird den Pelzhandel der Neuen Welt dominieren und unser Heimatland wird in luxuriösen Pelzen schwelgen.</German>
 		<Russian>Мы сделаем так, как приказывает Его Величество. Наша новая нация будет доминировать в торговле мехом Нового Света и наши граждане будут наслаждаться роскошными мехами.</Russian>
+		<Hungarian>Meg fogjuk tenni, amit Őfelsége parancsol. Új nemzetünk uralni fogja az Újvilág prémkereskedelmét és lakosaink luxus prémekben fognak gyönyörködni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_FUR_TRAPPERS_QUEST</Tag>
@@ -5524,6 +5527,7 @@
 		<French>Pour l'amour de Dieu ! Une autre nation coloniale a réussi à acquérir cinq trappeurs de fourrure en premier et domine maintenant le marché de la fourrure.</French>
 		<German>Schlechte Kunde, Milord! Einer anderen Kolonialmacht ist es gelungen, als erstes fünf erfahrene Trapper zu anzuwerben, so daß sie nun den Pelzhandel dominiert.</German>
 		<Russian>Дьявол! Другой колониальной нации удалось первой приобрести пять охотников за пушным зверем и теперь она доминирует на меховом рынке.</Russian>
+		<Hungarian>Az isten szerelmére! Egy másik gyarmati nemzetnek sikerült öt prémvadászt megszereznie és most uralja a prémpiacot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST_DONE_WORLD</Tag>
@@ -5532,6 +5536,7 @@
 		<French>Une nation coloniale a cinq trappeurs de fourrure.</French>
 		<German>Eine Kolonialmacht hat fünf Trapper angeworben.</German>
 		<Russian>У колониальной нации есть пять охотников за пушным зверем.</Russian>
+		<Hungarian>Egy gyarmati nemzetnek öt prémvadásza van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FIVE_FUR_TRAPPERS_QUEST_DONE</Tag>
@@ -5540,6 +5545,7 @@
 		<French>Félicitations, Milord ! Vous êtes le premier gouverneur avec cinq trappeurs à fourrure dans le Nouveau Monde. La bénédiction du Seigneur est sur vous. Sa Majesté est ravie de la luxueuse fourrure et est d'humeur très généreuse.</French>
 		<German>Glückwunsch, Milord! Ihr seid der erste Gouverneur in der Neuen Welt, der es geschafft hat, fünf Trapper anzuwerben. Der Segen Gottes liegt auf euch. Seine Majestät ist von den luxuriösen Pelzen entzückt und in sehr großzügiger Stimmung.</German>
 		<Russian>Поздравляю, Милорд! Вы первый губернатор с пятью охотниками за пушным зверем в Новом Свете. Благословение Господа да пребудет с нами. Его Величество в восторге от роскошного меха и пребывает в очень чудесном настроении.</Russian>
+		<Hungarian>Gratulálok, Uram! Te vagy az első kormányzó, akinek öt prémvadásza van az Újvilágban. Az Úr áldása van rajtad. Őfelsége nagyon elégedett a luxus prémekkel és igen nagylelkű hangulatban van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_FUR_TRAPPERS_QUEST_DONE_1</Tag>
@@ -5548,6 +5554,7 @@
 		<French>Déclarer l'une de nos villes de commerce de fourrure comme étant le centre de collecte de fourrure de qualité. Les trappeurs recevront des services supplémentaires. Financez-le avec la récompense de Sa Majesté.</French>
 		<German>Benennt eine unsere Städte, die mit Pelzen handeln zum Zentralen Pelzhandelsplatz. Die Trapper sollen dort zusätzliche Dienstleistungen finden. Finanziert wird dies mit der Belohnung Seiner Majestät.</German>
 		<Russian>Объявите один из наших городов по добыче меха центром сбора премиального меха. Охотники за пушниной получат дополнительные преференции. Профинансируйте это из награды, полученной от Его Величества.</Russian>
+		<Hungarian>Hirdessük ki egyik prémkereskedelmi városunkat a prémium minőségű szőrmék begyűjtésének központi helyszínévé. A prémvadászok extra szolgáltatásokat kapnak. Finanszírozzuk ezt Őfelsége jutalmából.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FIVE_FUR_TRAPPERS_QUEST_DONE_2</Tag>
@@ -5556,6 +5563,7 @@
 		<French>Utiliser la récompense de Sa Majesté pour attirer les commerçants de fourrure de l'Ancien Monde afin de produire plus de manteaux de fourrure dans nos colonies.</French>
 		<German>Nutzt die Belohnung Seiner Majestät, um weitere Pelzhändler für die Neue Welt anzuheuern, um so die Fertigung von Pelzmäntel steigern zu können.</German>
 		<Russian>Используйте награду Его Величества, чтобы завлечь скорняков из Старого Света для производства большего количества шуб в наших колониях.</Russian>
+		<Hungarian>Használjuk Őfelsége jutalmát arra, hogy az Óvilágból prémkereskedőket csábítsunk ide, hogy több kabátot állítsanak elő gyarmatainkon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST</Tag>
@@ -5564,6 +5572,7 @@
 		<French>Nous avons acheté nos premiers esclaves. Les propriétaires de plantations sont très heureux d'avoir cette main-d'œuvre supplémentaire et promettent une récompense si nous pouvons être la première nation coloniale à posséder au moins six esclaves autochtones ou africains.</French>
 		<German>Ihr habt Eure ersten Sklaven erworben. Die Plantagenbesitzer der Kolonien fordern jedoch noch mehr. Wenn ihr als erste Nation mindestens sechs Ureinwohnersklaven oder Sklaven aus Afrika besitzt, versprechen sie einen Belohnung.</German>
 		<Russian>Мы приобрели наших первых рабов. Владельцы плантаций очень рады иметь эту дополнительную рабочую силу и обещают вознаграждение, если мы сможем стать первой колониальной нацией, владеющей по крайней мере шестью туземными или африканскими рабами.</Russian>
+		<Hungarian>Megvettük az első rabszolgáinkat. Az ültetvényesek nagyon örülnek a plusz munkaerőnek és jutalmat ígérnek, ha mi leszünk az első gyarmati nemzet, amelyik legalább hat Indián vagy Afrikai rabszolgát tart.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST</Tag>
@@ -5572,6 +5581,7 @@
 		<French>Nous ferons ce que les propriétaires de plantations demandent. Nos plantations auront tous les travailleurs dont elles ont besoin.</French>
 		<German>Wir werden den Wünschen der Plantagenbesitzer entsprechen. Unsere Plantagen werden die Arbeitskräfte bekommen, die sie brauchen.</German>
 		<Russian>Мы сделаем так, как просят владельцы плантаций. Наши плантации получат необходимых рабочих.</Russian>
+		<Hungarian>Meg fogjuk tenni, amit az ültetvénytulajdonosok kérnek. Ültetvényeink megkapják az összes szükséges munkást.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_MANY_SLAVES_QUEST</Tag>
@@ -5580,6 +5590,7 @@
 		<French>Mauvaises nouvelles, Milord ! Un autre gouverneur a été le premier à acquérir six esclaves. La récompense du propriétaire de la plantation n'est plus valable.</French>
 		<German>Schlechte Kunde, Milord! Einem anderen Gouverneur ist es als Erstem gelungen, sechs Sklaven zu erwerben. Die Belohnung der Plantagenbesitzer ist hinfällig.</German>
 		<Russian>Плохие новости, милорд! Другой губернатор купил более шести рабов раньше, чем мы. О награде можно забыть.</Russian>
+		<Hungarian>Rossz hír, uram! Egy másik kormányzó megelőzött minket és hat rabszolgát vásárolt meg. Elfelejthetjük el a jutalmat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST_DONE_WORLD</Tag>
@@ -5588,6 +5599,7 @@
 		<French>Une nation coloniale a acquis six esclaves.</French>
 		<German>Eine Kolonialmacht hat sechs Sklaven erworben.</German>
 		<Russian>Колониальная нация приобрела шесть рабов.</Russian>
+		<Hungarian>Egy gyarmati nemzet hat rabszolgát szerzett meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MANY_SLAVES_QUEST_DONE</Tag>
@@ -5596,6 +5608,7 @@
 		<French>Félicitations, Milord ! Vous êtes le premier gouverneur du Nouveau Monde à acquérir six esclaves. La bénédiction de Dieu est sur vous et les propriétaires des plantations ont l'esprit généreux.</French>
 		<German>Glückwunsch, Milord! Ihr seid der erste Gouverneur in der Neuen Welt, der es geschafft hat, sechs Sklaven zu erwerben. Der Segen Gottes liegt auf Euch und die Plantagenbesitzer sind in großzügiger Stimmung.</German>
 		<Russian>Поздравляю, Милорд! Вы первый правитель Нового Света, которому удалось заполучить шесть рабов. Сам Господь благословил наши колонии. Владельцы плантаций предлагают обещанную награду.</Russian>
+		<Hungarian>Gratulálok, uram! Te vagy az első kormányzó az Újvilágban, akinek sikerült hat rabszolgát szereznie. Az Úr áldása van rajtad. A ültetvényesek nagylelkű hangulatban vannak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST_DONE_1</Tag>
@@ -5604,6 +5617,7 @@
 		<French>Les propriétaires des plantations récompenseront nos efforts maintenant qu'ils obtiennent des revenus supplémentaires grâce à la main-d'œuvre plus nombreuse que nous avons fournie.</French>
 		<German>Die Plantagenbesitzer sollen einen Teil unseres Aufwands durch ihr Einkommen kompensieren, dass sie dank der von uns gelieferten zusätzlichen Arbeitskräfte erworben haben.</German>
 		<Russian>Теперь владельцы плантаций должны вознаградить наши усилия, когда они получают дополнительный доход от большего количества рабочей силы, которую мы им предоставили.</Russian>
+		<Hungarian>Az ültetvénytulajdonosok meg fogják jutalmazni erőfeszítéseinket, mivel most, hogy nagyobb munkaerőt biztosítottunk nekik, extra bevételhez jutnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MANY_SLAVES_QUEST_DONE_2</Tag>
@@ -5612,6 +5626,7 @@
 		<French>Maintenant que nous avons tant d'esclaves dans les colonies, nous avons besoin de gardes pour les empêcher de s'échapper. Les propriétaires de plantations devraient au moins recruter une milice coloniale pour nous.</French>
 		<German>Nun, da wir so viele Sklaven in den Kolonien haben, benötigen wir auch mehr Wachen, um sie an der Flucht zu hindern. Die Plantagenbesitzer sollen zumindest ein paar Kolonialmilizen für uns anwerben.</German>
 		<Russian>Теперь, когда в колониях так много рабов, нам нужна охрана, чтобы не дать им сбежать. Владельцы плантаций должны обеспечить наём колониального ополчения.</Russian>
+		<Hungarian>Most, hogy olyan sok rabszolga van a gyarmatokon, őrökre van szükségünk, hogy megakadályozzuk a szökésüket. A ültetvényeseknek legalább néhány nemzetőrt kellene toborozniuk számunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST</Tag>
@@ -5620,6 +5635,7 @@
 		<French>De petits navires côtiers relient désormais nos villes portuaires. Les commerçants veulent que nous développions le service côtier. Si nous sommes les premiers à avoir trois petits navires côtiers, les commerçants nous donneront une récompense.</French>
 		<German>Wir haben mit einer ersten Transportroute für Küstentransportschiffe den Küstenhandel zwischen unseren Kolonien etabliert. Unsere Händler bitten jedoch darum, diesen zu erweitern. Wenn wir die erste Nation sind, die mindestens drei kleine Küstentransportschiffe hat, bieten sie uns eine Belohnung an.</German>
 		<Russian>Небольшие каботажные суда теперь связывают наши портовые города. Торговцы хотят, чтобы мы расширили флот малых кораблей. Если мы первыми получим три малых прибрежных корабля, торговцы щедро вознаградяд нас.</Russian>
+		<Hungarian>Kis part menti hajók kötik össze a tengeri kikötővárosainkat. A kereskedők azt szeretnék, ha bővítenénk a part menti szolgáltatásokat. Ha mi leszünk az elsők, akiknek három kis part menti hajójuk van, a kereskedők jutalmat adnak nekünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST</Tag>
@@ -5628,6 +5644,7 @@
 		<French>Nous ferons ce que les marchands demandent. Une plus grande capacité de transport grâce à un plus grand nombre de navires côtiers nous permettra de transporter les marchandises plus efficacement.</French>
 		<German>Wir werden tun, was die Händler erbitten. Eine größere Transportkapazität durch mehr Küstenschiffe wird es uns erlauben, Gütertransporte effizienter zu gestalten.</German>
 		<Russian>Мы сделаем так, как просят торговцы. Увеличение количества кораблей позволит более эффективно перевозить товары.</Russian>
+		<Hungarian>A kereskedők kérésének eleget fogunk tenni. A nagyobb parti szállítási kapacitás hatékonyabbá teszi az áruk szállítását.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_THREE_SMALL_COASTAL_SHIPS_QUEST</Tag>
@@ -5636,6 +5653,7 @@
 		<French>Nom du Ciel ! Le gouverneur d'une autre puissance coloniale nous a devancé en mettant en place un commerce côtier avec trois petits navires de transport côtier. La récompense du commerçant est annulée.</French>
 		<German>Schlechte Kunde, Milord! Der Gouverneur einer anderen Kolonialmacht ist uns zuvorgekommen, indem er einen Küstenhandel mit drei kleinen Küstentransportschiffen aufgebaut hat. Die Belohnung der Händler ist hinfällig.</German>
 		<Russian>Дьявол! Другой колониальной нации удалось получить три малых прибрежных корабля раньше нас. Награду мы теперь не получим.</Russian>
+		<Hungarian>A kereskedők kérésének eleget fogunk tenni. A nagyobb parti szállítási kapacitás hatékonyabbá teszi az áruk szállítását.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_WORLD</Tag>
@@ -5644,6 +5662,7 @@
 		<French>Une nation coloniale a acquis trois petits navires côtiers.</French>
 		<German>Eine Kolonialmacht hat drei kleine Küstentransportschiffe erworben.</German>
 		<Russian>Колониальная нация приобрела три малых прибрежных корабля.</Russian>
+		<Hungarian>Egy gyarmati nemzet három kis part menti hajót szerzett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE</Tag>
@@ -5652,6 +5671,7 @@
 		<French>Félicitations, Milord ! Vous êtes le premier gouverneur du Nouveau Monde à développer votre commerce côtier sur trois petits navires de transport côtier. La bénédiction de Dieu est sur vous. Les marchands sont d'humeur très généreuse.</French>
 		<German>Glückwunsch, Milord! Ihr seid der erste Gouverneur in der Neuen Welt, der seinen Küstenhandel auf drei kleine Küstentransportschiffe ausgebaut hat. Der Segen Gottes liegt auf Euch. Die Händler sind in sehr großzügiger Stimmung.</German>
 		<Russian>Поздравляю, Милорд! Вы первый губернатор Нового Света с тремя малыми прибрежными кораблями. Господь благословит наши дела. Торговцы в восторге и даже помнят про обещанную награду.</Russian>
+		<Hungarian>Gratulálok, Uram! Te vagy az első kormányzó az Újvilágban, aki három kis part menti hajóval rendelkezik. Az Úr áldása van rajtad. A kereskedők örülnek és igen nagylelkű hangulatban vannak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_1</Tag>
@@ -5660,6 +5680,7 @@
 		<French>Désignez l'une de nos villes portuaires comme plaque tournante pour le sel acquis par les commerçants lors de leurs voyages le long de la côte. Les navires de transport côtier y trouveront des services supplémentaires. Ceci est financé par la récompense des commerçants.</French>
 		<German>Benennt eine unserer Hafenstädte als zentrale Drehscheibe für Salz, dass die Händler während ihrer Fahrten entlang der Küste erworben haben. Die Küstentransportschiffe sollen dort zusätzliche Dienstleistungen vorfinden. Finanziert wird dies mit der Belohnung der Händler.</German>
 		<Russian>Объявите один из наших портовых городов центром сбора дополнительной соли от береговой торговли. Обслуживание каботажников должно быть улучшено. Профинансируйте это за счет вознаграждения торговцев.</Russian>
+		<Hungarian>Hirdessük ki egyik kikötővárosunkat a kereskedelemből származó további só gyűjtésének központi helyszínévé. A part menti szolgáltatások javulni fognak. A finanszírozást a kereskedők jutalmából fedezzük.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_QUEST_DONE_2</Tag>
@@ -5668,6 +5689,7 @@
 		<French>Utilisez une partie de la récompense de nos marchands pour construire un plus grand navire de transport côtier, tout en gardant le reste pour d'autres dépenses.</French>
 		<German>Nutzt einen Teil der Belohnung unserer Händler, um ein größeres Küstentransportschiff zu bauen, während der Rest für andere Ausgaben zurückbehalten werden soll.</German>
 		<Russian>Используйте небольшую часть вознаграждения торговцев, чтобы построить один большой прибрежный корабль. Остальное оставьте на текущие расходы.</Russian>
+		<Hungarian>A kereskedők jutalmának egy kis részét használjuk fel egy nagy part menti hajó építésére. A többit tartalékoljuk kiadásokra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_THREE_SMALL_COASTAL_SHIPS_REWARD_SHIP_HELP</Tag>
@@ -5683,22 +5705,25 @@
 		<French>Un esclave autochtone a été accusé de négliger ses devoirs.</French>
 		<German>Ein Ureinwohnersklave wurde angeklagt, seine Pflichten vernachlässigt zu haben.</German>
 		<Russian>Туземного раба обвинили в отлынивании от своих обязанностей.</Russian>
+		<Hungarian>Egy Indián rabszolgát megvádoltak kötelességei elmulasztásával.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SELL_NATIVE_SLAVE</Tag>
-		<English>Milord, a Native slave is before the court. The master, a wealthy gentleman, accuses him of neglecting his duties and "carrying on in an insolent manner". The gentleman argues therefore the term of indenture should be extended 90 years as is customary in such cases. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of Native slaves.</English>
+		<English>Milord, a Native slave is before the court. The master, a wealthy gentleman, accuses him of neglecting his duties and "carrying on in an insolent manner". The gentleman argues that one hundred lashes is the Biblical punishment. Perhaps we should take this opportunity to establish some legal boundaries regarding the treatment of Native slaves.</English>
 		<Portuguese>Milorde, um escravo nativo está perante o tribunal. O mestre, um cavalheiro rico, acusa-o de negligenciar os seus deveres e de “agir de forma insolente”. O cavalheiro argumenta, portanto, que o prazo da escritura deveria ser prorrogado por 90 anos, como é habitual nesses casos. Talvez devêssemos aproveitar esta oportunidade para estabelecer alguns limites legais relativos ao tratamento dos escravos nativos.</Portuguese>
 		<French>Seigneur, un esclave indigène est devant la cour. Le maître, un riche gentleman, l'accuse de négliger ses devoirs et de "se comporter de manière insolente". Le gentilhomme soutient que la durée de l'engagement devrait être prolongée de 90 ans, comme il est d'usage dans de tels cas. Nous devrions peut-être profiter de cette occasion pour établir certaines limites juridiques concernant le traitement des esclaves autochtones.</French>
 		<German>Milord, ein Ureinwohnersklave wurde ins Gericht gebracht. Sein Besitzer, ein wohlhabender Gentleman, erklärte, dass er mehrere Verbrechen begannen hat, wie seine Pflichten zu vernachlässigen und auch aufrührerisches Verhalten. Der Gentleman verlangt daher, dass die Bedingungen des Sklavenvertrages auf 90 Jahre festgelegt werden, wie es in solchen Fällen üblich ist. Wir sollten diesen Fall als Gelegenheit sehen, die Rahmenbedingungen der Haltung von Ureinwohnersklaven zu klären.</German>
 		<Russian>Милорд, туземный раб предстал перед судом. Хозяин, состоятельный джентльмен, обвиняет его в том, что он пренебрегает своими обязанностями и "нагло себя ведет". В связи с этим джентльмен требует, чтобы срок контракта должен быть продлен на 90 лет, как это принято в таких случаях. Возможно, нам следует воспользоваться этой возможностью, чтобы установить некоторые юридические границы в отношении обращения с рабами из числа коренных народов.</Russian>
+		<Hungarian>Uram, egy Indián rabszolga áll a bíróság előtt. Gazdag ura azzal vádolja, hogy elhanyagolta kötelességeit és "pimasz módon viselkedett". Az úr ezért azt állítja, hogy a szerződéses időszakot 90 évvel meg kell hosszabbítani, ahogy az ilyen esetekben szokás. Talán meg kellene ragadnunk ezt az alkalmat, hogy jogi kereteket állapítsunk meg az Indián rabszolgák kezelésére vonatkozóan.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_KEEP</Tag>
-		<English>The honourable gentleman is correct. The law permits extending the term of indenture when a crime has been committed.</English>
+		<English>The honourable gentleman is correct. The law permits flogging when a crime has been committed.</English>
 		<Portuguese>O honorável cavalheiro está correto. A lei permite prorrogar o prazo da escritura quando um crime for cometido.</Portuguese>
 		<French>L'honorable gentleman a raison. La loi permet de prolonger la durée de l'engagement lorsqu'un crime a été commis.</French>
 		<German>Der ehrenwerte Gentleman ist absolut im Recht. Ein Sklavenvertrag soll bei solchen schwerwiegenden Vergehen immer auf 90 Jahre festgeschrieben werden.</German>
 		<Russian>Достопочтенный джентльмен прав. Закон допускает продление срока заключения в случае совершения преступления.</Russian>
+		<Hungarian>A tiszteletben álló úrnak igaza van. A törvény lehetővé teszi a szerződéses szolgálati idő meghosszabbítását, ha bűncselekményt követtek el.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_FREE</Tag>
@@ -5707,6 +5732,7 @@
 		<French>Nous devrions réécrire la loi pour protéger les autochtones de ce genre d'exploitation. Libérer l'esclave et payer le propriétaire pour sa perte.</French>
 		<German>Wir müssen das Recht umschreiben, um die Ureinwohner vor solcherlei Ausbeutung zu schützen. Befreit den Sklaven, entschädigt jedoch seinen Besitzer.</German>
 		<Russian>Мы должны переписать закон, чтобы защитить коренных жителей Нового Света от такого рода эксплуатации. Освободите раба и выплатите его хозяину компенсацию за потерю работника.</Russian>
+		<Hungarian>Át kell írni a törvényt, hogy megvédjük az Indiánokat az ilyenfajta kizsákmányolástól. Szabadítsuk fel a rabszolgát és fizessünk kártérítést a tulajdonosnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SELL_NATIVE_SLAVE_SELL</Tag>
@@ -5715,6 +5741,7 @@
 		<French>Toutes ces lois sont dépassées. Arrêtez juste l'esclave pour sédition. Puis à la prochaine occasion, vendez-le à un navire d'esclaves en partance.</French>
 		<German>Diese ganzen Gesetze sind veraltet. Verhaftet den Sklaven einfach wegen Aufrührerei. Bei nächster Gelegenheit verkauft ihn dann an ein auslaufendes Sklavenschiff. Aber ich will meinen Anteil an dem Geschäft.</German>
 		<Russian>Я нахожу эти судебные разбирательства утомительными. Закуйте этого раба в кандалы за невыполнение служебных обязанностей и продайте на ближайший невольничьеский корабль.</Russian>
+		<Hungarian>Unalmasnak találom ezeket a jogi eljárásokat. Tartsuk őrizetben ezt a rabszolgát kötelességmulasztásért! Adjuk el a következő induló rabszolgahajóra!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SELL_AFRICAN_SLAVE</Tag>
@@ -5723,6 +5750,7 @@
 		<French>Un propriétaire de plantation décédé a libéré ses esclaves africains.</French>
 		<German>Ein im Sterben liegender Plantagenbesitzer hat seine schwarzen Sklaven aus der Sklaverei entlassen.</German>
 		<Russian>Владелец плантации перед смертью освободил своих африканских рабов.</Russian>
+		<Hungarian>Egy elhunyt ültetvénytulajdonos felszabadította Afrikai rabszolgáit.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SELL_AFRICAN_SLAVE</Tag>
@@ -5731,6 +5759,7 @@
 		<French>Seigneur, un propriétaire de plantation récemment décédé, a laissé un testament dans lequel il souhaite que tous ses esclaves africains soient libérés. A peine est-il décédé qu'une bande de chasseurs de primes arrive et enchaîne les pauvres gens. Ils disent que le planteur délirait de la fièvre. Ils ont l'intention de vendre les esclaves au plus offrant. Devons-nous intervenir ? Soyez avertis ! Libérer les esclaves sera impopulaire auprès des colons européens.</French>
 		<German>Milord, ein im Sterben liegender Plantagenbesitzer hat in seinem letzten Willen verfügt, dass seine schwarzen Sklaven aus der Sklaverei entlassen werden sollen. Kurz nachdem er verstarb, sind jedoch Sklaveneintreiber erschienen und haben seine Sklaven in Ketten gelegt. Sie behaupten, dass der alte Mann nicht mehr Herr seiner Sinne gewesen sei und wollen die Sklaven an den Höchstbietenden verkaufen. Sollen wir hier eingreifen?</German>
 		<Russian>Милорд, недавно умерший владелец плантации оставил завещание, в котором желает, чтобы все его африканские рабы были освобождены. Едва он скончался, как прибыла банда охотников за головами и заковала несчастных в цепи. Говорят, плантатор был в бреду от лихорадки. Они намерены продать рабов тому, кто предложит самую высокую цену. Должны ли мы вмешаться? Однако, имейте в виду - освобождение рабов не понравится европейским поселенцам!</Russian>
+		<Hungarian>Uram, egy nemrég elhunyt ültetvényes hagyatékában azt kívánta, hogy minden Afrikai rabszolgáját szabadítsák fel. Alighogy elhunyt, egy csapat fejvadász érkezett és láncra verte a szegény embereket. Azt mondják, hogy az ültetvényes félrebeszélt a láztól. A rabszolgákat a legmagasabb ajánlatot tevőnek akarják eladni. Beavatkozzunk? Vigyázat! A rabszolgák felszabadítása nem fog tetszeni az európai telepeseknek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_FREE</Tag>
@@ -5739,6 +5768,7 @@
 		<French>Nous nous conformerons aux souhaits de l'homme.</French>
 		<German>Wir werden den letzten Willen dieses Mannes respektieren.</German>
 		<Russian>Мы выполним желание усопшего.</Russian>
+		<Hungarian>Tiszteletben tartjuk a férfi kívánságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_KEEP</Tag>
@@ -5747,6 +5777,7 @@
 		<French>Si nous les laissons libres, tous nos esclaves s'attendront à la même chose. Ils doivent être maintenus en esclavage.</French>
 		<German>Die Sklaven müssen weiterhin in Ketten bleiben. Würden wir sie befreien, so würde dies andere Sklaven aufstacheln, ihre Freiheit zu fordern.</German>
 		<Russian>Если мы отпустим их на свободу, все наши рабы начнут ожидать того же. Они должны остаться рабами.</Russian>
+		<Hungarian>Ha szabadon engedjük őket, akkor minden rabszolgánk ugyanezt fogja követelni. Rabszolgaságban kell tartani őket!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SELL_AFRICAN_SLAVE_SELL</Tag>
@@ -5755,6 +5786,7 @@
 		<French>Autorisez la vente, mais vendez-les à une plantation étrangère pour éviter tout autre incident.</French>
 		<German>Weist die Sklaveneintreiber an, die schwarzen Sklaven an eine Plantage einer anderen Nation zu verkaufen. Aber ich will meinen Anteil an dem Geschäft.</German>
 		<Russian>Разрешить продажу, но только на иностранную плантацию, чтобы избежать дальнейших инцидентов.</Russian>
+		<Hungarian>Engedélyezzük az eladást, de adják el őket egy külföldi ültetvénynek, hogy elkerüljük a további incidenseket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SOLDIERS_SON_IN_FORT</Tag>
@@ -5763,6 +5795,7 @@
 		<French>Un soldat a élevé en cachette son fils dans un fort</French>
 		<German>Ein Soldat hat im Geheimen seinen Sohn aufgezogen.</German>
 		<Russian>Сын солдата был тайно воспитан в форте.</Russian>
+		<Hungarian>Egy katona fiát titokban egy erődben nevelték fel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SOLDIERS_SON_IN_FORT</Tag>
@@ -5771,6 +5804,7 @@
 		<French>Sire, pendant une inspection de routine d'un de nos forts, un officier découvrit qu'un des soldats y avait élevé son fils en cachette après la mort de la mère. Le jeune garçon a maintenant quinze ans, et il est devenu un brave gars, surtout si on considère son éducation à la dure.</French>
 		<German>Milord, während einer der regulären Inspektionen in einem unserer Forts, fand einer der Offiziere heraus, dass einer der Soldaten heimlich seinen Sohn im Fort aufzog, nachdem die Mutter des Kindes gestorben war. Der junge Mann ist nun 15 Jahre alt und scheint trotz der schwierigen Bedingungen für ein Kind ein anständiges Wesen zu haben.</German>
 		<Russian>Милорд, во время обычного осмотра одного из наших фортов офицер узнал, что один из солдат тайно воспитывал там своего сына после того, как мать ребенка умерла. Молодому человеку сейчас пятнадцать лет и он вырос хорошим парнем, особенно если учесть, насколько тяжелыми для него были эти годы.</Russian>
+		<Hungarian>Uram, egyik erődünk rutinellenőrzése során egy tiszt megtudta, hogy az egyik katona titokban ott nevelte fiát, miután a gyermek anyja meghalt. A fiatalember most tizenöt éves és remek fiúvá cseperedett, különösen figyelembe véve, milyen nehéz lehetett ez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SOLDIERS_SON_IN_FORT_1</Tag>
@@ -5779,6 +5813,7 @@
 		<French>Ce jeune homme a du surement apprendre deux-t^rois choses dans sa jeunesee au fort. Faites en sorte qu'il finisse ses classes dans la milice, équipez le et mettez le au service.</French>
 		<German>Der junge Mann wird sicher etwas während seiner Zeit im Fort gelernt haben. Stellt sicher, dass er zumindest eine grundlegende Ausbildung in der Miliz bekommt, gebt ihm Waffen und lasst ihn in unsere Dienste treten.</German>
 		<Russian>Парень наверняка чему-то научился за время своего пребывания в форте. Позаботьтесь о том, чтобы он закончил базовую подготовку в ополчении, вооружите и назначьте на службу.</Russian>
+		<Hungarian>A fiatalember biztosan tanult valamit a erődben töltött idő alatt. Gondoskodjunk róla, hogy befejezze az alapkiképzést a polgárőrségnél, fegyverezzük fel és állítsuk szolgálatba!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SOLDIERS_SON_IN_FORT_2</Tag>
@@ -5787,6 +5822,7 @@
 		<French>Nous devons donner à ce jeune homme une chance pour une vie normale, et le laisser prendre des décision une fois adulte. Donnez lui des vêtements civils et envoyez le dans une de nos villes, ou il pourra choisir une profession à son goût.</French>
 		<German>Wir sollten dem jungen Mann eine Chance auf ein normales Leben geben und darauf, seine eigenen Entscheidungen zu treffen. Gebt ihm saubere Kleidung, sendet ihn in eine unserer Städte und lasst ihn selbst einen Beruf wählen.</German>
 		<Russian>Мы должны дать юноше шанс на нормальную жизнь и позволить ему принимать решения самостоятельно, когда он достигнет совершеннолетия. Дайте ему приличную одежду и отправьте в один из наших городов, где он сможет выбрать себе профессию по душе.</Russian>
+		<Hungarian>Adjunk a fiatalembernek esélyt egy normális életre és hagyjuk, hogy meghozza saját döntéseit, miután nagykorúvá vált. Adjunk neki megfelelő ruhákat és küldjük el az egyik városunkba, ahol kedvére válogathat a szakmák közül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RABBLE</Tag>
@@ -5795,6 +5831,7 @@
 		<French>Des rumeurs indiquent que des hors-la-loi parcourent les colonies et attaquent les trains de chariots des marchands. Prenez garde !</French>
 		<German>Es gibt Gerüchte, dass in den Kolonien Straßenräuber ihr Unwesen treiben und die Wagenkolonnen der Händler überfallen. Hütet Euch!</German>
 		<Russian>Ходят слухи, что по колониям бродят преступники и нападают на торговые обозы. Остерегайтесь!</Russian>
+		<Hungarian>Pletykák keringenek arról, hogy banditák kóborolnak a gyarmatokon és megtámadják a kereskedők ekhós szekereit. Legyünk óvatosak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RABBLE_1</Tag>
@@ -5803,6 +5840,7 @@
 		<French>Des bandits ont attaqué un convoi de chariots et forcé les cochers à remettre l'argent. Vous devez mieux protéger votre colonie, Milord !</French>
 		<German>Straßenräuber haben einen Wagenzug überfallen und die Kutscher zur Übergabe der Kasse gezwungen. Ihr müsst Eure Kolonie besser schützen, Milord!</German>
 		<Russian>Бандиты напали на обоз и заставили кучера отдать наличные. Вы должны лучше защищать свои колонии, милорд!</Russian>
+		<Hungarian>Banditák támadtak meg egy ekhós szekeret  és arra kényszerítették a kocsisokat, hogy adják át a készpénzt. Jobban kellene vigyáznunk a gyarmatunkra, Uram!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RABBLE_2</Tag>
@@ -5811,6 +5849,7 @@
 		<French>Vos colonies sont prospères. Malheureusement, il attire aussi des contemporains pas très sympathiques. Des bandits de grand chemin ont attaqué un train de chariots et exigé des péages au cocher !</French>
 		<German>Eure Kolonien entwickeln sich prächtig. Leider zieht das auch weniger freundliche Zeitgenossen an. Wegelagerer haben einen Wagenzug überfallen und Wegzoll vom Kutscher gefordert!</German>
 		<Russian>Наши колонии развиваются и богатеют. К сожалению, это также привлекает всякий сброд. Разбойники напали на обоз, требуя от кучера пошлины за проезд!</Russian>
+		<Hungarian>A kolóniáid csodálatosan fejlődnek. Sajnos ez veszélyes bűnözőket is vonz. Útonállók támadtak meg egy ekhós szekeret és útdíjat követeltek a kocsisoktól!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT</Tag>
@@ -5819,6 +5858,7 @@
 		<French>Une société commerciale dispose d'un emplacement stratégique pour un nouveau fort !</French>
 		<German>Eine Handelsgesellschaft ist drauf und dran, an einer strategisch günstigen Stelle ein neues Handelsfort zu errichten!</German>
 		<Russian>Торговая компания нашла отличное место для нового форта!</Russian>
+		<Hungarian>Egy kereskedelmi vállalat stratégiai helyszínt kínál egy új erőd építéséhez!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_1</Tag>
@@ -5827,6 +5867,7 @@
 		<French>Seigneur, des commerçants ont choisi un bon emplacement pour un fort. Il est stratégiquement placé pour protéger nos intérêts commerciaux dans la région. Voulons-nous soutenir la construction ?</French>
 		<German>Milord, einige Händler habe eine günstige Stelle für einen Handelsposten gefunden. Er liegt strategisch günstig, um unsere Handelsinteressen in der Region auszubauen. Wollen wir den Bau unterstützen und uns so einen Vorteil verschaffen?</German>
 		<Russian>Милорд, несколько торговцев нашли хорошее место для строительства форта. Он будет стоять на стратегически важном месте для защиты наших коммерческих интересов в регионе. Что скажете?</Russian>
+		<Hungarian>Uram, néhány kereskedő kiváló helyszínt választott egy erőd építéséhez. Stratégiailag kedvező helyen fekszik, hogy megvédje kereskedelmi érdekeinket a régióban. Támogatni szeretnénk az építkezést?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT_2</Tag>
@@ -5835,6 +5876,7 @@
 		<French>Seigneur, un messager est arrivé. Une de nos compagnies commerciales veut installer un fort à la frontière. Cela nous serait bénéfique, mais provoquerait la colère de nos voisins. Que devons-nous faire ?</French>
 		<German>Milord, ein Bote ist angekommen. Eine unserer Handelsgesellschaften möchte an der Grenze ein Handelsfort errichten. Dies würde uns nützen, aber unsere Nachbarn erzürnen. Was sollen wir tun?</German>
 		<Russian>Милорд, прибыл посыльный. Одна из наших торговых компаний хочет построить форт рядом с границей. Это пойдет на пользу нам, но вызовет гнев у наших соседей. Что будем делать?</Russian>
+		<Hungarian>Uram, egy hírnök érkezett. Az egyik kereskedelmi társaságunk erődöt akar építeni a határon. Ez nekünk előnyös lenne, de felbosszantaná szomszédainkat. Mit tegyünk?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT2</Tag>
@@ -5843,6 +5885,7 @@
 		<French>Un fort de commerce fait des affaires qui pourraient déranger les colons voisins.</French>
 		<German>Ein Handelsfort erregt die Gemüter benachbarter Siedler!</German>
 		<Russian>Торговый форт занимается делами, которые могут беспокоить близлежащих поселенцев.</Russian>
+		<Hungarian>A kereskedelmi erőd olyan üzleti tevékenységet folytat, ami zavarhatja a közeli lakosokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT2_1</Tag>
@@ -5851,6 +5894,7 @@
 		<French>Seigneur, ce n'était peut-être pas une si bonne idée de construire le nouveau fort commercial sur cette frontière après tout. Nos voisins l'ont vraiment mal pris.</French>
 		<German>Milord, es war vielleicht doch keine so gute Idee, das neue Handelsfort an dieser Grenze zu errichten. Unsere Nachbarn nehmen es uns wirklich übel.</German>
 		<Russian>Милорд, возможно, строить новый торговый форт на границе все-таки было не такой уж хорошей идеей. Нашим соседям это очень не нравится.</Russian>
+		<Hungarian>Uram, talán nem volt olyan jó ötlet az új kereskedelmi erődöt a határra építeni. A szomszédaink nagyon neheztelnek ránk emiatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT2_2</Tag>
@@ -5859,6 +5903,7 @@
 		<French>Seigneur, un messager est arrivé. Nos voisins exigent que nous démolissions immédiatement le nouveau fort commercial. Ils sont très mécontents.</French>
 		<German>Milord, ein Bote ist angekommen. Unsere Nachbarn verlangen, dass wir das neue Handelsfort umgehend wieder abreißen. Sie sind wirklich ungehalten.</German>
 		<Russian>Милорд, прибыл посыльный. Наши соседи требуют, чтобы мы немедленно разобрали новый торговый форт. Они в ярости.</Russian>
+		<Hungarian>Uram, egy hírnök érkezett. A szomszédaink követelik, hogy azonnal bontsuk le az új kereskedelmi erődöt. Dühösek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADEFORT3</Tag>
