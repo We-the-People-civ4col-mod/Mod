@@ -5912,6 +5912,7 @@
 		<French>La Couronne exprime son mécontentement face à vos actions hautaines !</French>
 		<German>Die Krone bringt ihr Missfallen über Euer eigenmächtiges Handeln zum Ausdruck!</German>
 		<Russian>Король выражает свое неодобрение вашим безрассудными действиям!</Russian>
+		<Hungarian>A Korona nem ért egyet önkényes intézkedéseiddel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADEFORT3</Tag>
@@ -5920,6 +5921,7 @@
 		<French>Seigneur, Sa Majesté a entendu dire que vous avez démoli le fort de la Royal Trading Company juste pour vous attirer les bonnes grâces de vos voisins.</French>
 		<German>Milord, Seiner Majestät ist zu Ohren gekommen, dass Ihr ein Fort der königlichen Handelsgesellschaft zerstört habt, nur um Euch bei Euren Nachbarn lieb Kind zu machen.</German>
 		<Russian>Милорд, Его Величество слышал, что вы разрушили форт Королевской торговой компании только для того, чтобы снискать расположение соседей.</Russian>
+		<Hungarian>Uram, Őfelsége hallotta, hogy leromboltad a Királyi Kereskedelmi Társaság erődjét, csak hogy a szomszédaiddal jó viszonyba kerülj.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_RIVER_FISHING_1</Tag>
@@ -5928,14 +5930,16 @@
 		<French>Un batelier a découvert un vaste banc de poissons dans l'une des grandes rivières !</French>
 		<German>Ein Flußschiffer hat einen mächtigen Fischschwarm in einem der großen Ströme entdeckt!</German>
 		<Russian>Лодочник обнаружил огромный косяк рыбы в одной из больших рек!</Russian>
+		<Hungarian>Egy révész hatalmas halrajt fedezett fel az egyik nagy folyóban!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RIVER_FISHING_1</Tag>
-		<English>"[COLOR_SELECTED_TEXT]Captain, look! The river is so full of fish that they jump out of the water. If only they would jump into our nets, we would be rich men![COLOR_REVERT]"</English>
+		<English>"[COLOR_SELECTED_TEXT]Captain, look! The river is so full of fish that everywhere they jump out of the water. If only they would jump into our nets, we would be rich men![COLOR_REVERT]"</English>
 		<Portuguese>"[COLOR_SELECTED_TEXT]Capitão, olhe! O rio está tão cheio de peixes que eles saltam da água. Se ao menos eles pulassem em nossas redes, seríamos homens ricos![COLOR_REVERT]"</Portuguese>
 		<French>"[COLOR_SELECTED_TEXT]Capitaine, regardez ! La rivière est si pleine de poissons qu'ils sautent hors de l'eau. Si seulement ils sautaient dans nos filets, nous serions des hommes riches ![COLOR_REVERT]"</French>
 		<German>"[COLOR_SELECTED_TEXT]Kapitän, schaut nur! Der Fluss ist so voller Fische, dass sie sogar aus dem Wasser springen. Wenn sie uns nur auch so in die Netze springen, sind wir gemachte Leute![COLOR_REVERT]"</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Капитан, смотрите! В реке столько рыбы, что они выпрыгивают из воды. Если бы они прыгали в наши сети, мы были бы богатыми людьми![COLOR_REVERT]"</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kapitány, nézze! A folyó tele van halakkal, amelyek kiugranak a vízből. Ha a hálóinkba ugranának, gazdag emberek lennénk![COLOR_REVERT]"</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_LOST_SHIP_1</Tag>
@@ -5944,6 +5948,7 @@
 		<French>Un navire s'est échoué par mauvaise visibilité.</French>
 		<German>Ein Schiff ist bei schlechter Sicht auf Grund gelaufen!</German>
 		<Russian>В тумане корабль сел на мель.</Russian>
+		<Hungarian>Egy hajó zátonyra futott a ködben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_LOST_SHIP_1</Tag>
@@ -5952,6 +5957,7 @@
 		<French>"[COLOR_SELECTED_TEXT]Capitaine, le navire coule ! Nous prenons l'eau là où les planches se sont brisées. Le maître d'équipage n'arrive pas à colmater la fuite. Donnez l'ordre d'abandonner le navire ou nous périrons ![COLOR_REVERT]"</French>
 		<German>"[COLOR_SELECTED_TEXT]Kapitän, unser Schiff sinkt! In der Bilge steht das Wasser schon mehrere Fuß hoch, weil mehrere Planken eingedrückt wurden. Der Bootsmann kann das Leck nicht abdichten. Gebt den Befehl "Alle Mann von Bord" oder wir gehen alle drauf![COLOR_REVERT]"</German>
 		<Russian>"[COLOR_SELECTED_TEXT]Капитан, корабль тонет! Мы набираем воду там, где сломались доски. Боцман доложил, что они не могут устранить течь. Отдайте приказ покинуть корабль или мы все погибнем![COLOR_REVERT]"</Russian>
+		<Hungarian>"[COLOR_SELECTED_TEXT]Kapitány, a hajó süllyed! A törött deszkák között víz szivárog be. A fedélzetmester nem tudja elzárni a szivárgást. Adja ki a parancsot a hajó elhagyására, különben meghalunk![COLOR_REVERT]"</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_START</Tag>
@@ -5960,6 +5966,7 @@
 		<French>Nous suivrons les ordres de sa Majesté!</French>
 		<German>Wir werden den Wünschen Seiner Majestät nachkommen!</German>
 		<Russian>Мы выполним приказ Его Величества!</Russian>
+		<Hungarian>Teljesítjük Őfelsége parancsát!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE</Tag>
@@ -5968,6 +5975,7 @@
 		<French>Pour la gloire et la fortune de notre patrie !</French>
 		<German>Für Ruhm und Reichtum des Heimatlandes!</German>
 		<Russian>Во имя славы и богатства Родины!</Russian>
+		<Hungarian>A szülőföldünk dicsőségéért és gazdagságáért!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_COLONIES</Tag>
@@ -5976,6 +5984,7 @@
 		<French>Pour la gloire et la fortune des colonies!</French>
 		<German>Für Ruhm und Reichtum der Kolonien!</German>
 		<Russian>Во имя славы и богатства колоний!</Russian>
+		<Hungarian>A gyarmatok dicsőségéért és gazdagságáért!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_1</Tag>
@@ -5984,14 +5993,16 @@
 		<French>Pour la gloire et la fortune de la patrie! Des prix plus élevés sont toujours les bienvenus</French>
 		<German>Für Ruhm und Reichtum des Heimatlandes! Höhere Verkaufspreise sind immer willkommen!</German>
 		<Russian>Да здравствует Король! Всегда готовы выполнить любой приказ Вашего Величества!</Russian>
+		<Hungarian>A gyarmatok dicsőségéért és gazdagságáért!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_2</Tag>
-		<English>Is it good to have so many criminals? It doesn't matter, as long as they have strong backs!</English>
+		<English>Is it wise to have so many criminals? No matter, as long as they have strong backs!</English>
 		<Portuguese>É bom ter tantos criminosos? Não importa, desde que tenham costas fortes!</Portuguese>
 		<French>Est-ce une bonne chose d'avoir tant de bagnards ? Peu importe, tant qu'ils ont les reins solides !</French>
 		<German>Ob so viele Kriminelle gut sind? Naja egal, Hauptsache sie können gut zupacken!</German>
 		<Russian>Каторжники? Отлично, берем! Нам как раз не хватает грубой рабочей силы.</Russian>
+		<Hungarian>Jó dolog, hogy ennyi bűnöző van? Nem számít, ha terhelhetők!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_3</Tag>
@@ -6000,6 +6011,7 @@
 		<French>Des domestiques sous contrats ont l'habitude du travail. Nous pouvons en employer quelques un de plus.</French>
 		<German>Leibeigene sind wenigstens das Arbeiten gewöhnt. Aber es könnten gerne ein paar mehr sein...</German>
 		<Russian>В колониях нехватка хороших слуг. Еще парочка нам бы не помешала...</Russian>
+		<Hungarian>A szerződéses szolgák legalább hozzászoktak a munkához. Jól jönne még néhány...</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_4</Tag>
@@ -6016,6 +6028,7 @@
 		<French>Les spécialistes sont toujours les bienvenus. Il produisent autant que plusieurs employés non qualifiés.</French>
 		<German>Spezialisten sind immer gerne gesehen! Die verrichten schließlich Arbeit für mehrere unausgebildete.</German>
 		<Russian>Всегда рады специалистам. Они производят столько же, сколько несколько необученных рабочих!</Russian>
+		<Hungarian>A szakemberek mindig szívesen látottak. Annyi munkát végeznek egymaguk, mint több képzetlen munkás együtt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_6</Tag>
@@ -6024,38 +6037,43 @@
 		<French>Les spécialistes sont toujours les bienvenus. Il produisent autant que plusieurs employés non qualifiés.</French>
 		<German>Spezialisten sind immer gerne gesehen! Die verrichten schließlich Arbeit für mehrere unausgebildete.</German>
 		<Russian>Всегда рады специалистам. Они производят столько же, сколько несколько необученных рабочих!</Russian>
+		<Hungarian>A szakemberek mindig szívesen látottak. Annyi munkát végeznek egymaguk, mint több képzetlen munkás együtt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_7</Tag>
-		<English>Fortunately, all the building materials have been delivered. That quantity would hopelessly overburden our trading fleet.</English>
+		<English>Fortunately all the building materials have been delivered. That quantity would overwhelm our trading fleet.</English>
 		<Portuguese>Felizmente, todos os materiais de construção foram entregues. Essa quantidade sobrecarregaria irremediavelmente a nossa frota comercial.</Portuguese>
 		<French>Heureusement, tous les matériaux de constructions ont été livrés. Cette quantité aurait surchargé sans merci notre flotte marchande.</French>
 		<German>Zum Glück werden die ganzen Baumaterialien geliefert! Unsere Handelsflotte wäre damit heillos überfordert.</German>
 		<Russian>К счастью, все стройматериалы доставлены. Такое количество безнадежно перегрузит наш торговый флот.</Russian>
+		<Hungarian>Szerencsére az összes építőanyagot leszállították. Az a mennyiség reménytelenül túlterhelné kereskedelmi flottánkat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_8</Tag>
-		<English>Well, well! Our request to lower the selling price was heard!</English>
+		<English>Well, well! Our request to lower the selling price has been heard!</English>
 		<Portuguese>Bem, bem! Nosso pedido de redução do preço de venda foi atendido!</Portuguese>
 		<French>Voyez vous ça! Notre requête de baisser les prix a été entendue !</French>
 		<German>Sieh an, sieh an! Unsere Bitte um Senkung des Verkaufspreises wurde erhört!</German>
 		<Russian>Так, так! Наша просьба снизить закупочную цену была услышана!</Russian>
+		<Hungarian>Lám-lám! Meghallgatták az eladási ár csökkentésére irányuló kérésünket!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_9</Tag>
-		<English>You can never have enough free colonists: Welcome to our prosperous colony!</English>
+		<English>You can never have too many free colonists: Welcome to our prosperous colony!</English>
 		<Portuguese>Você nunca terá colonos livres suficientes: Bem-vindo à nossa próspera colônia!</Portuguese>
 		<French>On n'a jamais assez de colons libres : Bienvenue dans notre colonie si prospère.</French>
 		<German>Freie Kolonisten kann man nie genug haben: Willkommen in unserer aufstrebenden Kolonie!</German>
 		<Russian>Свободных колонистов никогда не бывает много: добро пожаловать в нашу процветающую колонию!</Russian>
+		<Hungarian>Soha nem lehet elég szabad gyarmatosító: Üdvözöljük virágzó kolóniánkon!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_10</Tag>
-		<English>Each additional merchant ship shows how our colonies flourish!</English>
+		<English>Each additional merchant ship demonstrates how our colonies flourish!</English>
 		<Portuguese>Cada navio mercante adicional mostra como nossas colônias florescem!</Portuguese>
 		<French>Chaque navire marchand de plus montre que nos colonies sont florissantes !</French>
 		<German>Jedes weiter Handelsschiff trägt zum Erblühen unserer Kolonien bei!</German>
 		<Russian>Каждое дополнительное торговое судно показывает, насколько процветают наши колонии!</Russian>
+		<Hungarian>Minden további kereskedelmi hajó azt mutatja, hogy gyarmataink virágoznak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_REWARD_SHIP_HELP</Tag>
@@ -6066,11 +6084,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_11</Tag>
-		<English>It is only a small warship, but it should be enough to protect our merchant fleet.</English>
+		<English>It's only a small warship, but it should be enough to protect our merchant fleet.</English>
 		<Portuguese>É apenas um pequeno navio de guerra, mas deverá ser suficiente para proteger a nossa frota mercante.</Portuguese>
 		<French>C'est seulement un petit navire de guerre, mais il devrait suffire pour protéger notre flotte marchande.</French>
 		<German>Es ist zwar nur ein kleines Kriegsschiff, aber für den Schutz unserer Handelsflotte sollte es allemal genügen!</German>
 		<Russian>Это всего лишь небольшой военный корабль, но его должно хватить для защиты нашего торгового флота.</Russian>
+		<Hungarian>Csak egy kis hadihajó, de elegendőnek kell lennie a kereskedelmi flottánk védelméhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_12</Tag>
@@ -6079,6 +6098,7 @@
 		<French>Des combattants courageux sont essentiels pour défendre nos frontières !</French>
 		<German>Tapfere Kämpfer sind für den Schutz unserer Grenzen unabdingbar!</German>
 		<Russian>Для защиты наших границ нам просто необходимы храбрые бойцы!</Russian>
+		<Hungarian>Bátor harcosok elengedhetetlenek határaink védelméhez!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_13</Tag>
@@ -6087,6 +6107,7 @@
 		<French>Pour la gloire et la richesse de nos colonies! Des prix plus élevés sont toujours bons à prendre.</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
 		<Russian>Во славу и богатство наших колоний! Более высокие рыночные цены всегда приветствуются!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! A magasabb piaci árak mindig szívesen látottak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_14</Tag>
@@ -6095,6 +6116,7 @@
 		<French>Pour la gloire et la richesse de nos colonies! Des prix plus élevés sont toujours bons à prendre.</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Höhere Verkaufspreise sind immer willkommen!</German>
 		<Russian>Во славу и богатство наших колоний! Более высокие рыночные цены всегда приветствуются!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! A magasabb piaci árak mindig szívesen látottak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
@@ -6103,6 +6125,7 @@
 		<French>Échangez cette quantité de biens avec l'Europe [COLOR_FONT_GOLD]avant toute autre nation [COLOR_REVERT]can :[NEWLINE]%D1_amount %F2_yield </French>
 		<German>Liefert die folgende Warenmenge nach Europa, [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
 		<Russian>Продайте товар в указанном количестве в Европе [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
+		<Hungarian>Kereskedj ennyi áruval Európával [COLOR_FONT_GOLD]mielőtt bármely más nemzet [COLOR_REVERT]megtehetné :[NEWLINE]%D1_amount %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_HEADER</Tag>
@@ -6181,6 +6204,7 @@
 		<French>Acheminez d'Europe vers vos colonies cette quantité de biens [COLOR_FONT_GOLD]avant toute autre nation [COLOR_REVERT]: %D1_amount %F2_yield</French>
 		<German>Liefert die folgende Warenmenge aus Europa in die Kolonien, [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
 		<Russian>Продайте товар в указанном количестве из Европы в колонии [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
+		<Hungarian>Hozzál ennyi árut Európából a gyarmatokra [COLOR_FONT_GOLD]mielőtt bármely más nemzet[COLOR_REVERT] megtehetné: [NEWLINE]%D1_amount %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
@@ -6189,6 +6213,7 @@
 		<French>La qualité de nos biens a impressionné nos concitoyens restés au pays.[NEWLINE] Sa Majesté est ravie. La demande de biens coloniaux est en hausse.</French>
 		<German>Die Bürger des Heimatlandes sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Seine Majestät ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
 		<Russian>Качество наших товаров произвело впечатление на жителей метрополии.[NEWLINE]Его Величество в восторге. Спрос на колониальные товары растет.</Russian>
+		<Hungarian>Termékeink minősége lenyűgözte az otthon élőket.[NEWLINE]Őfelsége nagyon elégedett. A gyarmati áruk iránti kereslet növekszik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_AFRICA_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
@@ -6197,6 +6222,7 @@
 		<French>La qualité de nos biens a impressionné les peuples d'Afrique.[NEWLINE] Sa Majesté est ravie. La demande de biens coloniaux est en hausse.</French>
 		<German>Die Menschen in Afrika sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Seine Majestät ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
 		<Russian>Качество наших товаров произвело впечатление на жителей Африки.[NEWLINE]Его Величество в восторге. Спрос на колониальные товары растет.</Russian>
+		<Hungarian>Termékeink minősége lenyűgözte az Afrikaiakat.[NEWLINE]Őfelsége nagyon elégedett. A gyarmati áruk iránti kereslet növekszik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_START</Tag>
@@ -6205,6 +6231,7 @@
 		<French>Nous répondrons à la demande du conseil des capitaines!</French>
 		<German>Wir werden der Aufforderung des Kapitänsrates nachkommen!</German>
 		<Russian>Мы выполним просьбу Совета капитанов!</Russian>
+		<Hungarian>Teljesítjük a Kapitányok Tanácsának kérését!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_1</Tag>
@@ -6213,6 +6240,7 @@
 		<French>Le conseil des capitaines peut surement exiger des prix plus élévés</French>
 		<German>Der Kapitänsrat kann sicherlich höhere Verkaufspreise durchsetzten!</German>
 		<Russian>Мы сильно рискуем! Совет капитанов должен поднять цены!</Russian>
+		<Hungarian>A Kapitányok Tanácsa biztosan magasabb árakat tud érvényesíteni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_2</Tag>
@@ -6221,6 +6249,7 @@
 		<French>Pour la gloire et la richesse de nos colonies! Que la contrebande vers Port Royal prospère! Sa Majesté n'en sera pas heureuse:</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Möge der Schmuggel aus Port Royal erblühen! Allerdings wird Seine Majestät darüber nicht sehr erfreut sein!</German>
 		<Russian>Пусть контрабанда с Порт Ройалом процветает! Однако Его Величеству это может не понравится...</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Virágozzon a Port Royal-i csempészet! Azonban Őfelsége nem lesz elégedett!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_3</Tag>
@@ -6229,6 +6258,7 @@
 		<French>Pour la gloire et la richesse de nos colonies! La mort et le pillage attendent les navires marchands étrangers !</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Tod und verderben den fremden Handelsflotten!</German>
 		<Russian>Во славу и богатство наших колоний! Иностранные торговые флоты отправятся на морское дно!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Halál és pusztulás a külföldi kereskedelmi flottákra!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_REWARD_SHIP_HELP</Tag>
@@ -6246,27 +6276,30 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4</Tag>
-		<English>For the glory and wealth of our colonies! Let's sink the enemy fleets!</English>
+		<English>For the glory and wealth of our colonies! Sink the enemy fleets!</English>
 		<Portuguese>Pela glória e riqueza de nossas colônias! Vamos afundar as frotas inimigas!</Portuguese>
 		<French>Pour la gloire et la richesse de nos colonies ! Coulons les flottes ennemies.</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Lasst uns die gegnerischen Flotten versenken!</German>
 		<Russian>Во славу и богатство наших колоний! Давайте потопим вражеские флоты!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Süllyesszük el az ellenséges flottákat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_5</Tag>
-		<English>For the glory and wealth of our colonies! Let's hope the mercenaries don't turn against us!</English>
+		<English>For the glory and wealth of our colonies! Just hope the mercenaries don't turn against us!</English>
 		<Portuguese>Pela glória e riqueza de nossas colônias! Esperemos que os mercenários não se voltem contra nós!</Portuguese>
 		<French>Pour la gloire et la richesse de nos colonies !Espérons que les mercenaires ne se retournent pas contre nous.</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Hoffentlich wenden sich die Söldner nicht gegen uns!</German>
 		<Russian>Во славу и богатство наших колоний! Будем надеяться, что наемники не повернутся против нас!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Reméljük, hogy a zsoldosok nem fordulnak ellenünk!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_6</Tag>
-		<English>For the glory and wealth of our colonies! The Natives have skillful hands!</English>
+		<English>For the glory and wealth of our colonies! The Natives have skilful hands!</English>
 		<Portuguese>Pela glória e riqueza de nossas colônias! Os nativos têm mãos habilidosas!</Portuguese>
 		<French>Pour la gloire et la richesse de nos colonies ! Les indigènes sont doués!</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Die Ureinwohner scheinen geschickte Hände zu haben!</German>
 		<Russian>Нам бы пригодились работники, которых к ним привозят из ближайших индейских поселений.</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Az Indiánok ügyes kezekkel rendelkeznek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_7</Tag>
@@ -6275,6 +6308,7 @@
 		<French>Pour la gloire et la richesse de nos colonies! Les métis ? Ils travaiilent dur, pour sur!</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Mestizen? Die können bestimmt auch gut zupacken!</German>
 		<Russian>Говорят, метисы будут повыносливее индейцев. Пожалуй, мы бы приняли в дар нескольких из них.</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Meszticek? Ők bizony keményen dolgoznak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_8</Tag>
@@ -6283,6 +6317,7 @@
 		<French>Pour la gloire et la richesse de nos colonies ! Enfin nous pouvons transporter les spécialistes de Port Royal </French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Jetzt können wir endlich auch Spezialisten in Port Royal anwerben!</German>
 		<Russian>Во славу и богатство наших колоний! Наконец-то мы можем перевести специалистов из Порт Ройала!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Végre el tudjuk szállítani a szakembereket Port Royalból!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_9</Tag>
