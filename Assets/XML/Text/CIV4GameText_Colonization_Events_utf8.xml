@@ -6751,11 +6751,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_3</Tag>
-		<English>Yes, well, ...agreed. But I do not trust this peace. Let's share part of the costs and give them a few horses. When the Natives leave, send scouts quietly after them to explore their villages.</English>
+		<English>Yes, well, ...agreed. But I do not trust this peace. Let's share part of the costs and give them a few horses. When the Natives leave, send scouts quietly after them to watch their villages.</English>
 		<Portuguese>Sim, bem, ...concordo. Mas não confio nesta paz. Vamos dividir parte dos custos e dar-lhes alguns cavalos. Quando os nativos partirem, envie batedores silenciosamente atrás deles para explorar suas aldeias.</Portuguese>
 		<French>Et bien, .. d'accord. Mais je ne crois pas dans cette paix. On va se répartir les coûts et leur faire don de quelques chevaux. Quand les Indiens partiront, on enverra des éclaireurs les pister pour ecplorer leurs villages.</French>
 		<German>Ja, gut,... einverstanden. Ich traue dem Frieden aber nicht. Beteiligen wir uns mit einem Teil der Kosten und schenken ihnen ein paar Pferde. Wenn die Wilden wieder abziehen, schickt Ihnen Kundschafter hinterher, um ihre Dörfer zu erkunden.</German>
 		<Russian>Что же, это.. интересно. Давайте покроем часть расходов на организацию и задобрим краснокожих, подарив им несколько лошадей. А когда дикари уйдут, отправьте за ними разведчиков, чтобы они обследовали их деревни.</Russian>
+		<Hungarian>Igen, nos... egyetértek. De nem bízom a békében. Osszuk meg a költségeket és adományozzunk nekik néhány lovat. Amikor az Indiánok elmennek, küldjünk utánuk felderítőket, hogy felderítsék a falvaikat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_UPGRADE_HELP</Tag>
@@ -6766,11 +6767,12 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP</Tag>
-		<English>[ICON_BULLET]The Natives are furious. A trader has lost his scalp.</English>
+		<English>[ICON_BULLET]The Natives are furious. A trader has been scalped.</English>
 		<Portuguese>[ICON_BULLET]Os nativos estão furiosos. Um comerciante perdeu o couro cabeludo.</Portuguese>
 		<French>[ICON_BULLET]Les indigènes furieux décident de scalper quelques marchands.</French>
 		<German>[ICON_BULLET]Die Ureinwohner sind wütend und skalpieren einige Händler.</German>
 		<Russian>[ICON_BULLET]Разъяренные индейцы решают снять скальпы с некоторых торговцев.</Russian>
+		<Hungarian>[ICON_BULLET]Az Indiánok dühösek. Egy kereskedőt megskalpoltak.</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
@@ -6779,6 +6781,7 @@
 		<French>Votre éclaireur est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
 		<German>Euer Scout hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
 		<Russian>Наш разведчик обнаружил деревню индейцев, о которой раньше никто не сообщал. Туземцы не предпринимают никаких действий, заняв выжидательную позицию. Что будем делать?</Russian>
+		<Hungarian>A felderítőd egy eddig ismeretlen Indián faluba érkezett. Az ott élők várakozással tekintenek rá. Mit tegyen?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
@@ -6787,6 +6790,7 @@
 		<French>Votre scout est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Ils vous regardent avec méfiance mais sans hostilité. Le village se prépare à une fête, vouslez vous rester? </French>
 		<German>Euer Scout ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Das Dorf bereitet sich auf ein Fest vor, wollt ihr bleiben?</German>
 		<Russian>Наш разведчик забрел в индейский лагерь, в котором ведётся поготовка к какому-то празднеству. Не смотря на то, что его никто не приглашал, туземцы не выглядят враждебными. Останемся посмотреть на церемонию?</Russian>
+		<Hungarian>A felderítőd egy nagy Indián táborba tévedt. Úgy érzi, hogy betolakodó. Az Indiánok gyanakodva, de ellenségeskedés nélkül néznek rá. A falu ünnepségre készül. Ott maradjon?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
@@ -6795,6 +6799,7 @@
 		<French>Votre éclaireur a découvert un village d'Indiens. Ils vous observent depuis un moment et pourraient vous abattre facilement. Comment vous tenez-vous ?</French>
 		<German>Euer Scout hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
 		<Russian>Наш разведчик набрёл на одну деревню индейцев. Однако те уже давно наблюдают за ним и готовы атаковать. Как нам поступить?</Russian>
+		<Hungarian>A felderítőd egy Indián falut fedezett fel. Jól álcázott fiatal férfiak őrzik a területet. Meglátták őt és könnyedén elkaphatják. Hogyan viselkedjen?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1</Tag>
@@ -6803,6 +6808,7 @@
 		<French>Nous restons là un moment pour nous faire des amis et nous rechauffer auprès du feu.</French>
 		<German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen.</German>
 		<Russian>Остаемся здесь на некоторое время, чтобы погреться у костра и попробовать подружиться с туземцами.</Russian>
+		<Hungarian>Egy ideig itt maradunk, hogy megnyugtassuk az Indiánokat és átmelegedjünk a tábortüzüknél.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2</Tag>
@@ -6811,6 +6817,7 @@
 		<French>Nous ne sommes pas là pour nous faire des amis. Demandez leur des trésors dont nous pouvons les soulager.</French>
 		<German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können.</German>
 		<Russian>Мы здесь не для того, чтобы заводить друзей. Попросим их показать свои сокровища. Может быть, удастся выменять их на какую-нибудь безделушку.</Russian>
+		<Hungarian>Nem azért vagyunk itt, hogy barátokat szerezzünk. Kérjünk olyan kincseket, amiket eladhatunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3</Tag>
@@ -6819,6 +6826,7 @@
 		<French>Nous sommes hélas pressés. Les indigènes n'ont pas l'air dd pouvoir nous être utiles.</French>
 		<German>Wir haben es leider sehr eilig. Die Ureinwohner sehen auch nicht so aus, als könnten Sie uns von Nutzen sein.</German>
 		<Russian>Нам некогда разглядывать еще одно стойбище этих дикарей. Поторопимся, впереди еще много более важных дел.</Russian>
+		<Hungarian>Sajnos sietünk. Ezek az értéktelen Indiánok csak időpazarlásnak tűnnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_NATIVE_CITY_HELP_RELATION</Tag>
@@ -6848,6 +6856,7 @@
 		<French>Votre marchand expérimenté est entré dans un village indigène ignoré jusqu'à présent. Les habitants vous regardent dans l'expectative. Que faites-vous? </French>
 		<German>Euer couragierter Händler hat ein bisher unbeachtet gebliebenes Dorf der Ureinwohner betreten. Die Ureinwohner blicken Euch erwartungsvoll an. Was wollt Ihr tun?</German>
 		<Russian>Наш отважный торговец нашёл ранее незамеченную индейскую деревню. Её жители с интересом наблюдают за тем, что мы будем делать.</Russian>
+		<Hungarian>A tapasztalt kereskedőd egy ismeretlen Indián faluba érkezett. Az emberek várakozással tekintenek rá. Mit tegyen?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_2</Tag>
@@ -6856,14 +6865,16 @@
 		<French>Votre marchand expérimenté est entré dans un camp des Indiens. Ils vous prennent pour un intrus. Ils vous regardent avec méfiance mais sans hostilité. Les indigènes sont intéressés par vos biens, voulez vous rester et faire échange? </French>
 		<German>Euer couragierter Ureinwohnerhändler ist unversehens in ein Lager der Ureinwohner gestolpert. Hier seid Ihr offenbar der Eindringling. Man blickt Euch skeptisch, aber nicht feindlich an. Die Einwohner sind offenbar an Euren Waren interessiert. Wollt ihr bleiben und handeln?</German>
 		<Russian>Наш отважный торговец неожиданно наткнулся на лагерь индейцев. Они смотрят не враждебно и, кажется, даже готовы вести торговлю. Задержимся здесь ненадолго?</Russian>
+		<Hungarian>A tapasztalt kereskedőd véletlenül egy Indián táborba tévedt. Betolakodónak érzi magát. Az Indiánok gyanakodva, de ellenségeskedés nélkül néznek rá. Az emberek nyilvánvalóan érdeklődnek az árui iránt. Maradjon és kereskedjen?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_3</Tag>
-		<English>Your expert trader has discovered a Native village. Their guards have been watching him for quite a while and could easily take him down. How should he behave?</English>
+		<English>Your expert trader has discovered a Native village. Their guards have been watching him and can easily take him down. How should he behave?</English>
 		<Portuguese>Seu comerciante especialista descobriu uma aldeia nativa. Seus guardas o observam há um bom tempo e podem facilmente derrubá-lo. Como ele deveria se comportar?</Portuguese>
 		<French>Votre marchand expérimenté a découvert un village indien. Mais les indigènes vous observent depuis longtemps et peuvent vous abattre sans coup férir. Comment vous tenez-vous ? </French>
 		<German>Euer couragierter Ureinwohnerhändler hat ein Dorf der Ureinwohner entdeckt. Die Ureinwohner beobachten Euch allerdings schon eine ganze Weile und könnten Euch mühelos überwältigen. Wie verhaltet Ihr Euch?</German>
 		<Russian>Наш отважный торговец обнаружил деревню индейцев. Жители уже довольно давно наблюдают за ним и могли бы без труда с ним расправиться, если бы захотели. Как ему следует вести себя?</Russian>
+		<Hungarian>A tapasztalt kereskedőd felfedezett egy Indián falut. Az őrök már egy ideje figyelik őt és könnyedén elkaphatják. Hogyan viselkedjen?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_1_News</Tag>
@@ -6872,6 +6883,7 @@
 		<French>Nos éclaireurs et les indigènes ont fait une fête réussie - les relations s'améliorent.</French>
 		<German>Unsere Kundschafter und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
 		<Russian>Наш разведчик улучшил отношения с племенем, приняв участие в одном из их празднеств.</Russian>
+		<Hungarian>Felderítőink és az Indiánok vidám ünnepséget rendeznek – a kapcsolatok javulnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_2_News</Tag>
@@ -6880,6 +6892,7 @@
 		<French>Nos éclaireurs sont couverts de cadeaux. Tous les Indiens n'aiment pas ça.</French>
 		<German>Unsere Kundschafter werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
 		<Russian>Наш разведчик получил богатые дары от вождей племени. Но не всем индийцам это понравилось.</Russian>
+		<Hungarian>Felderítőink gazdag ajándékokat kapnak. Nem minden Indián helyesli ezt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_SCOUT_NATIVE_CITY_3News</Tag>
@@ -6888,6 +6901,7 @@
 		<French>Nos éclaireurs ne rentrent pas dans un certain village indigène.</French>
 		<German>Unsere Kundschafter lassen ein Indianer-Dorf links liegen.</German>
 		<Russian>Наш разведчик не стал заходить в лагерь туземцев.</Russian>
+		<Hungarian>Felderítőink egy bizonyos Indián falut elkerülnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1</Tag>
@@ -6896,6 +6910,7 @@
 		<French>Nous resterons là quelque temps pour nous faire des amis auprès des indigènes et nous rechauffer auprès de leurs feux de camp.</French>
 		<German>Wir bleiben eine Weile hier, um mit den Ureinwohnern Freundschaft zu schließen und uns an deren Lagerfeuern zu wärmen. Eine gute Grundlage für zukünftigen Handel.</German>
 		<Russian>Мы остаемся здесь на некоторое время, чтобы подружиться с туземцами и погреться у их костров.</Russian>
+		<Hungarian>Egy ideig itt maradunk, hogy barátságot kössünk az Indiánokkal és felmelegedjünk a tábortűzüknél.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2</Tag>
@@ -6904,6 +6919,7 @@
 		<French>Nous ne sommes pas là pour nous faire des amis. Demandons leur des trésors dont nous pouvons les soulager.</French>
 		 <German>Wir sind nicht hier um Freundschaft zu schließen. Fragen wir nach Schätzen, von denen wir sie erlösen können. Wir versprechen Ihnen Waren dafür.</German>
 		<Russian>Мы здесь не для того, чтобы заводить друзей. Попросим их показать свои товары. Может быть, удастся наладить выгодный обмен.</Russian>
+		<Hungarian>Nem azért vagyunk itt, hogy új barátokat szerezzünk. Keressünk valami értékeset, amit eladhatunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3</Tag>
@@ -6912,6 +6928,7 @@
 		<French>Nous devrions poursuivre. Ces indigènes n'ont l'air de nous être d'aucune utilité.</French>
 		<German>Wir sollten weiterziehen. Die Ureinwohner sehen nicht so aus, als könnten Sie uns von Nutzen sein.</German>
 		<Russian>Идём дальше, вид этой деревни не внушает доверия.</Russian>
+		<Hungarian>Tovább kell mennünk! Ezeknek az Indiánoknak úgy tűnik, nincs semmijük.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_1_News</Tag>
@@ -6920,6 +6937,7 @@
 		<French>Nos marchands et les indiens font la fête - les relations s'améliorent.</French>
 		<German>Unsere Händler und die Wilden feiern ein rauschendes Fest - die Beziehungen verbessern sich.</German>
 		<Russian>Наш отважный торговец улучшил отношения с племенем, приняв участие в одном из их празднеств.</Russian>
+		<Hungarian>Kereskedőink és az Indiánok vidám ünnepséget rendeznek – a kapcsolatok javulnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_2_News</Tag>
@@ -6928,6 +6946,7 @@
 		<French>Nos marchands sont couverts de cadeaux. Mais tous les Indiens n'aiment pas ça.</French>
 		<German>Unsere Händler werden reich beschenkt. Aber nicht allen Indianern gfällt das.</German>
 		<Russian>Наш торговец получил богатые подарки от вождей племени. Но не всем индейцам это понравилось.</Russian>
+		<Hungarian>Kereskedőink gazdag ajándékokat kapnak. Nem minden Indiánnak tetszik ez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_NATIVE_CITY_3_News</Tag>
@@ -6936,6 +6955,7 @@
 		<French>Nos marchands trouvent que ce village indigène mérite un large détour, pour l'éviter.</French>
 		<German>Um dieses Indianer-Dorf machen unsere Händler lieber einen Bogen.</German>
 		<Russian>Наши торговцы предпочитают обходить эту деревню индейцев стороной.</Russian>
+		<Hungarian>Kereskedőink inkább messziről elkerülik ezt a bizonyos Indián falut.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_1</Tag>
@@ -6944,6 +6964,7 @@
 		<French>Sire, nos voisins espèrent que nous commmercerons avec eux. Nous devrions vraiment envoyer un chariot pour commencer les relations commerciales.</French>
 		<German>Milord, unsere Nachbarn warten darauf, dass wir mit Ihnen handeln. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen.</German>
 		<Russian>Милорд, наши соседи ждут, когда мы начнем с нами торговать. Нам обязательно надо отправить к ним обоз и завязать торговые отношения.</Russian>
+		<Hungarian>Uram, szomszédaink arra várnak, hogy kereskedjünk velük. Küldjünk egy oda ekhós szekeret, hogy kereskedelmi kapcsolatokat létesítsünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
@@ -6952,6 +6973,7 @@
 		<French>Un chariot [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] traverse les terres sauvages pour affaires.</French>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
 		<Russian>Караван [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в торговое путешествие.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ekhós szekér indul el a vadonba kereskedni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADE_WAGON_HELP</Tag>
@@ -6959,21 +6981,24 @@
 		<Portuguese>Envie uma unidade [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] para a aldeia nativa vizinha em [COLOR_HIGHLIGHT_TEXT]%d3 rodadas[COLOR_REVERT]. Pegue [COLOR_HIGHLIGHT_TEXT]%d4 produtos comerciais da Europa [COLOR_REVERT]e venda-os ou doe-os para a aldeia nativa.</Portuguese>
 		<German>Schickt innerhalb von [COLOR_HIGHLIGHT_TEXT]%d3 Runden[COLOR_REVERT] eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treiben möchte. Nehmt [COLOR_HIGHLIGHT_TEXT]%d4 Handelswaren aus Europa[COLOR_REVERT] mit und verkauft oder schenkt sie dem Dorf.</German>
 		<Russian>В течение %d3 ходов отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в индейскую деревню, где находится торговец, организовавший торговлю.</Russian>
+		<Hungarian>Küldj egy [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] egységet %d3 körön belül az Indián faluba, ahol az üzletet kötő kereskedő található.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_NATIVE_TRADE_WAGON</Tag>
-		<English>Unfortunately the trade is no longer happening. We've waited too long. Conditions have changed. The wagon train is now available for other uses.</English>
+		<English>Unfortunately the deal has fallen through. We've waited too long. Conditions have changed. The wagon train is now available for other uses.</English>
 		<Portuguese>Infelizmente o comércio não está mais acontecendo. Esperamos muito. As condições mudaram. A carroça agora está disponível para outros usos.</Portuguese>
 		<French>Hélas, l'affaire a fait long feu. Vous avez trop attendu, les conditions ont changé. Vous pouvez utiliser le chariot à d'autres fins.</French>
 		<German>Leider kann der Handel nicht mehr stattfinden. Ihr habt zulange gewartet. Die Bedingungen haben sich geändert. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, торговля больше невозможна. Вы слишком долго ждали. Теперь вы можете использовать ваш транспорт по своему усмотрению.</Russian>
+		<Hungarian>Sajnos az üzlet már nem jön össze. Túl sokáig vártunk. A körülmények megváltoztak. Az ekhós szekér most már más célra használható.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_TRADE_WAGON_DONE</Tag>
-		<English>Milord, our wagon train has reached the Native village and traded the goods. How shall we proceed?</English>
+		<English>Milord, our wagon train has reached the Native village and shown them the goods. How shall we proceed?</English>
 		<Portuguese>Milorde, nosso comboio chegou à aldeia nativa e negociou as mercadorias. Como devemos proceder?</Portuguese>
 		<German>Milord, unser Wagenzug hat das Indianer-Dorf erreicht und die Waren getauscht. Wie geht es weiter? </German>
 		<Russian>Милорд, наш торговый обоз достиг индейской деревни. Какую сделку нам следует заключить?</Russian>
+		<Hungarian>Uram, az ekhós szekerünk elérte az Indián falut. Milyen üzletet kössünk?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_DAUGHTER</Tag>
@@ -6982,14 +7007,16 @@
 		<French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] des trappeurs ont ramené à un marchand ruiné sa fille ravie par des peaux-rouges.</French>
 		<German>In [COLOR_REVERT]%s2_city[COLOR_REVERT] haben Waldläufer einem gescheiterten Ureinwohnerhändler seine von Rothäuten entführte Tochter wieder zurückgebracht.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] зверолов вернул неудачливому торговцу его дочь, похищенную краснокожими.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egyik lakóépületében a prémvadászok megtalálták egy csődbe ment kereskedő lányát és visszavitték az apjához. A lányt ellenséges Indiánok rabolták el.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_DAUGHTER</Tag>
-		<English>Milord, some trappers have brought back the daughter of a trader. She was kidnapped by hostile Natives when she travelled with him through the wilderness. He returned to the colony alone and in despair. Needless to say he's delighted and is now recovering mentally.</English>
+		<English>Milord, some trappers have brought back the daughter of a trader. She was kidnapped by hostile Natives when she travelled with him through the wilderness. He returned to the colony alone and in despair. Needless to say he's delighted and has started to recover mentally.</English>
 		<Portuguese>Milorde, alguns caçadores trouxeram de volta a filha de um comerciante. Ela foi sequestrada por nativos hostis quando viajou com ele pela selva. Ele voltou para a colônia sozinho e desesperado. Escusado será dizer que ele está encantado e agora está se recuperando mentalmente.</Portuguese>
 		<French>Sire, des trappeurs ont ramené à un marchand ruiné sa fille. Des Peaux-rouges l'ont ravie alors que père et fille faisait route en nature et il est revenu seul et désespéré. Il a récupéré physiquement et moralement depuis.</French>
 		<German>Milord, einige Waldläufer haben einem Händler seine Tochter wiedergebracht. Sie war auf der Reise durch die Wildnis von Rothäuten entführt worden und er kehrte allein und verzweifelt in die Kolonie zurück. Jetzt hat er sich natürlich erholt ist auch geistig wieder genesen.</German>
 		<Russian>Милорд, какой-то зверолов вернул торговцу его дочь, похищенную краснокожими во время путешествия по дикой местности. Тогда он вернулся в колонию один, убитый горем и отрешился от всего. Сейчас же лицо светится от счастья.</Russian>
+		<Hungarian>Uram, néhány prémvadász visszahozta egy kereskedő lányát. Ellenséges Indiánok rabolták el, amikor apjával a vadonban utazott. Az apa egyedül és kétségbeesve tért vissza a településre. Mondani sem kell, hogy most nagyon boldog és lelkileg is kezd megnyugodni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_1</Tag>
@@ -6998,6 +7025,7 @@
 		<French>Il devrait passer ses dernières années en paix. Nous lui paierons des tournées de rhum à l'auberge. Ses aventures inspireront peut-être d'autres marchands.</French>
 		 <German>Er soll seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis anderen Händlern nützlich sein.</German>
 		<Russian>Нужно отпразновать это чудесное событие. Купим ему рома для вечерних посиделок в таверне. Возможно, его рассказы о дикой природе окажутся полезными для других торговцев.</Russian>
+		<Hungarian>Megérdemli, hogy utolsó éveit békében töltse. Rumot veszünk neki, hogy esténként a fogadóban iszogathasson. Talán a vadonról szóló történetei hasznosak lehetnek más kereskedőknek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_2</Tag>
@@ -7006,6 +7034,7 @@
 		<French>C'est bien qu'il puisse à nouveau travailler. Mais nous ne pouvons pas le renvoyer dans la nature. Qu'il ouvre boutique ici.</French>
 		<German>Schön, dass er seine Arbeitskraft wieder in den Dienst der Kolonie stellen kann. Aber wir sollten ihn nicht da raus in die Wildnis schicken. Soll er lieber hier ein Geschäft eröffnen.</German>
 		<Russian>Отлино, теперь он снова сможет приносить пользу колонии. Но больше не следует посылать его в пустошь. Вместо этого пусть займётся чем-то в поселении.</Russian>
+		<Hungarian>Megérdemli, hogy utolsó éveit békében töltse. Rumot veszünk neki, hogy esténként a fogadóban iszogathasson. Talán a vadonról szóló történetei hasznosak lehetnek más kereskedőknek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_TRADER_DAUGHTER_3</Tag>
@@ -7014,6 +7043,7 @@
 		<French>À ce qu'il parait, La jeune fille devrait en avoir appris beaucoup sur les plantes et herbes médicinales. Nous devrions en tirer profit. Embauchez-la. Elle pourra travailler dans une plantation.</French>
 		<German>Wie man hört, soll die Tochter ja da draußen einiges über Pflanzen und Heilkräuter gelernt haben. Das sollsten wir uns zu nutze machen. Stellt sie ein. Sie kann auf einer der Plantagen arbeiten.</German>
 		<Russian>Судя по слухам, его дочь многое узнала о местных растениях. Мы должны этим воспользоваться - найдите ей работу на подходящей плантации.</Russian>
+		<Hungarian>Abból, amit hallottunk, a lánya elég sokat tanult a gyógynövényekről. Ezt ki kellene használnunk. Fogadjunk fel! Dolgozhat az egyik ültetvényen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FAILED_TRADER_REVENGE</Tag>
@@ -7022,6 +7052,7 @@
 		<French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] un marchand ruiné répand des rumeurs sur les horreurs sauvages.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] verbreitet ein gescheiterter Ureinwohnerhändler Gerüchte über die Schrecken der Wildnis.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] неудачливый торговец распространяет слухи об ужасах дикой природы.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lakói között egy bukott kereskedő rémhíreket terjeszt a vadon borzalmairól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAILED_TRADER_REVENGE</Tag>
@@ -7030,6 +7061,7 @@
 		<French>Sire, un marchand qui avait perdu la raison devant les horreurs qu'il a vécu chez les sauvages, a recouvré la mémoire et veut en découdre avec les Peaux-Rouges. Sa carrière en tant que marchand prend fin.</French>
 		<German>Milord, ein Händler, der, aufgrund der Schrecken, die er in der Wildnis erlebt zu haben scheint, geistig verwirrt war, hat sich dieser wieder erinnert und ist nun gewillt, gegen die Rothäute ins Feld zu ziehen. Seine Zeit als Händler ist offenbar endgültig vorbei.</German>
 		<Russian>Милорд, неудачливый торговец, на себе испытавший весь ужас нападения индейцев, воспрял духом и желает посвятить себя борьбе с ними. Кажется, мы потеряли торговца...</Russian>
+		<Hungarian>Milord, egy kereskedőt, akit a vadonban átélt borzalmak megőrjítettek, a szenvedései megváltoztatták. Most már csak az Indiánok elleni harcban akar részt venni. Kereskedői karrierje egyértelműen véget ért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_1</Tag>
@@ -7038,6 +7070,7 @@
 		<French>Pourtant, il va passer ses dernières années en paix. Nous lui paierons les tournées de rhum pour ses soirées d'histoires à l'auberge. Ses aventures chez les sauvages peuvent peut-être inspirer nos milices un peu vertes.</French>
 		 <German>Er sollte dennoch seine letzten Jahre in Frieden verbringen. Wir spendieren ihm den Rum für abendliche Zusammenkünfte im Wirtshaus. Vielleicht können seine Erzählungen über die Wildnis unserer unerfahrenen Miliz nützlich sein.</German>
 		<Russian>Этот старик уже не боец. Но вот его рассказы о дикой местности могут быть полезны нашему неопытному ополчению. Купите ему рома, чтобы не пересохло в горле.</Russian>
+		<Hungarian>Mindazonáltal utolsó éveit békében kellene töltenie. Rumot fogunk vásárolni neki a kocsmában az estékre. Talán a vadonról szóló történetei tanulságosak lesznek tapasztalatlan nemzetőreink számára.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_2</Tag>
@@ -7046,6 +7079,7 @@
 		<French>Nous avons bien besoins de colons qui en veulent, même si leurs motifs ne sont pas des plus nobles. Mais je ne lui fais pas confiance, nous ne devrions pas l'armer. Il peut travailler comme artificier.</French>
 		<German>Hervorragend, wir brauchen Siedler, die anpacken wollen - mögen ihre Motive auch zweifelhaft erscheinen. Aber ich traue ihm nicht, wir sollten ihm keine Waffen in die Hand geben. Er kann als Feuerwerker arbeiten.</German>
 		<Russian>Отлично, нам нужны мотивированные поселенцы. Однако, не стоит доверять ему оружие. Но он может работать на производстве пороха.</Russian>
+		<Hungarian>Kiváló! Szükségünk van olyan telepesekre, akik részt akarnak venni a munkában, még ha motivációjuk kétes is. De nem bízom benne. Nem szabad fegyvert adni a kezébe. Készíthet puskaport.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_TRADER_REVENGE_3</Tag>
@@ -7054,6 +7088,7 @@
 		<French>Et bien, si vous vendez des armes, vous pouvez apprendre à les fabriquer. Là, au moins, il pourra faire toutes les armes qu'il souhaite.</French>
 		<German>Nun gut, wer mit Waffen handeln kann, kann auch lernen sie herzustellen. Schicken wir ihn ins Magazin. Da kann er jedenfalls die Waffen herstellen, die er so sehr begehrt.</German>
 		<Russian>Что ж, если раньше он торговал оружием, мы можем обучить и создавать его. Давайте отправим его на военный склад. Там он сможет изготовить то оружие, которое ему хочется.</Russian>
+		<Hungarian>Ha fegyverekkel akarsz kereskedni, meg kell tanulnod, hogyan kell őket gyártani. Küldjük el a fegyvertárba! Ott elkészítheti a fegyvereket, amelyeket annyira szeretne.</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FAILED_MISSIONARY_1</Tag>
@@ -7062,6 +7097,7 @@
 		<French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] un missionnaire est arrivé en attente de nouveaux ordres.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ist ein Missionar angekommen, der nach neuen Aufgaben sucht.</German>
 		<Russian>В [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] прибыл миссионер, который ищет новые задания.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] lakóihoz egy misszionárius érkezett, aki új feladatokat keres.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FAILED_MISSIONARY_1</Tag>
@@ -7070,6 +7106,7 @@
 		<French>Sire, un missionnaire que nous avons envoyé chez les Indiens il ya longtemps nous est revenu, sans succès notable. Il ne fait plus l'affaire en tant que missionnaire, mais peut-être pourrions-nous l'employer à autre chose ? </French>
 		 <German>Milord, ein Missionar, den wir vor längerer Zeit zu den Wilden geschickt haben, ist unverrichteter Dinge wieder zurückgekehrt. Als Missionar taugt er nicht mehr, aber vielleicht können wir etwas anderes mit ihm anfangen?</German>
 		<Russian>Милорд, миссионер, которого мы давным-давно отправили к индейцам, вернулся, ничего не добившись. Миссионером ему уже не быть, но, может, мы сможем найти ему какое-нибудь занятие?</Russian>
+		<Hungarian>Uram, egy misszionárius, akit régen az Indiánokhoz küldtünk, visszatért anélkül, hogy bármit is elért volna. Nincs jövője misszionáriusként. Van valami más, amit tehetünk vele?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_1</Tag>
@@ -7078,6 +7115,7 @@
 		<French>L'église a aussi besoin de clercs pour son administration. Il peut nous être utile ainsi.</French>
 		 <German>Auch die Kirche braucht Geistliche, die sich um die Verwaltung kümmern. Da kann er uns noch nützlich sein.</German>
 		<Russian>Церкви нужны священнослужители, которые будут заниматься управлением. Он может пригодиться там.</Russian>
+		<Hungarian>Az Egyháznak szüksége van papokra, akik gondoskodnak az adminisztrációról. Ott még hasznos lehet számunkra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_2</Tag>
@@ -7086,6 +7124,7 @@
 		<French>Même s'il n'a pas sur convertir les Indiens, pour les fidèles ses prêches feront l'affaire. Il peut travailler comme prêtre en église.</French>
 		<German>Auch wenn er die Indianer nicht bekehren konnte, für die Gläubigen in den Kolonien sollten seine Predigten noch reichen. Er kann als Gemeindepfarrer arbeiten.</German>
 		<Russian>Настоятель нашей церкви как-то говорил, что не отказался бы от помощника. Отправим миссионера к нему.</Russian>
+		<Hungarian>Bár nem sikerült megtérítenie az Indiánokat, a gyarmatokon élő hívők számára prédikációi elegendőek lehetnek. Egyházi lelkészként dolgozhat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_3</Tag>
@@ -7094,6 +7133,7 @@
 		<French>Un pélerinage à rome le remettreait sur le droit chemin et renouvellerait sa foi. Nous avancerons les fonds pour un voyage à Rome.</French>
 		<German>Eine Pilgereise nach Rom könnte ihn wieder auf den rechten Weg bringen und seinen Glauben erneuern. Wir werden ihm das Geld für eine Reise nach Rom vorstrecken.</German>
 		<Russian>Паломничество в Рим могло бы помочь ему укрепить свою веру и наполнить духовными силами. Мы оплатим эту поездку.</Russian>
+		<Hungarian>A vallási szent helyekhez való zarándoklat visszavezetheti őt a helyes útra és megújíthatja hitét. Előre adunk neki pénzt, hogy visszatérhessen az Óhazába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_4</Tag>
@@ -7102,10 +7142,11 @@
 		<French>Le pêtre revient de son pélerinage fin prêt pour retourner en nature.</French>
 		<German>Der Priester ist gerade von seiner Pilgerreise zurück und bereit wieder in die Wildnis zu ziehen.</German>
 		<Russian>[COLOR_SELECTED_TEXT]Священник вернулся из паломничества[COLOR_REVERT] и готов нести Слово Божье дикарям.</Russian>
+		<Hungarian>A pap visszatért zarándoklatáról és készen áll arra, hogy újra nekivágjon a vadonnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_5</Tag>
-		<English>Leave me alone with that sort of thing; I’ve got other things on my mind at the moment.</English>
+		<English>Don't bother me with that sort of thing. I’ve got too much on my mind right now.</English>
 		<Portuguese>Deixa-me em paz com esse tipo de coisas; tenho outras coisas em que pensar neste momento.</Portuguese>
 		<German>Lasst mich mit sowas in Ruhe, ich habe gerade andere Sorgen.</German>
 		<Russian>Не тратьте моё время по пустякам, пусть служители Церкви разбираются с этим неудачником сами.</Russian>
@@ -7132,6 +7173,7 @@
 		<French>Sire, dans le port de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], est amarré un de nos navires corsaires. Le capitaine s'y est brisé le cou ivre mort dans la caine de poupe. L'équopage entend son fantôme gueuler sans cesse dans la nuit : « Tout le rhum en poupe, Darby!» L'équipage refuse d'entrer dans la cabine et de quitter le port. Qu'allons nous faire ?   </French>
 		 <German>Milord, im Hafen von [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] liegt eines unserer Kaperschiffe vor Anker. Der Kapitän hat sich jüngst in der Achterkajüte im Suff das Genick gebrochen. Nun hört die Crew bei Nacht dessen Geist unablässig rufen "Bring den Rum, Darby!" Die Crew weigert sich, die Kajüte zu betreten oder auszulaufen. Was wollt Ihr unternehmen?</German>
 		<Russian>Милорд, в порту [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] на якоре стоит один из наших каперов. Капитан недавно сломал себе шею, напившись в каюте. Теперь команда слышит, как его призрак непрерывно кричит по ночам: "Принеси ром, Дарби!" Экипаж отказывается входить в каюту, а также покидать порт. Что будем делать?</Russian>
+		<Hungarian>Uram, az egyik kalózhajónk a [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kikötőjében horgonyoz. A kapitány nemrég nyakát törte, amikor részegen elesett a hátsó kabinban. A legénység egész éjjel hallja a szellemének kiáltását: "Hozz rumot, Darby!" A legénység nem merészkedik be a kabinba. Nem hajlandók elhagyni a kikötőt. Mit fogsz tenni?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_1</Tag>
@@ -7140,6 +7182,7 @@
 		<French>Des pirates superstitieux, qui a vu une chose pareille ! Avec la mort qui rôde autour d'eux, on pourrait les penser plus endurcis. Laissez leur bateau pourrir à quai. Personne ne respecte ou craint un équipage pareil.</French>
 		 <German>Abergläubische Piraten, wo gibt es denn sowas! Bei all den Toten, die sie umgeben, sollte man doch meinen, dass sie hartgesottener sind. Soll das Schiff doch an der Pier vermodern. Vor so einer Crew hat sowieso keiner mehr Respekt oder gar Angst.</German>
 		<Russian>Суеверные пираты, где же такое видано! Учитывая всех мертвецов, которых им довелось повидать, можно было бы подумать, что они окажутся более закаленными. Пусть корабль гниет у причала. Никто не будет уважать и даже бояться такой команды.</Russian>
+		<Hungarian>Babonás kalózok! Hogy lehet ez egyáltalán? Annyi a halott körülöttük, azt gondolná az ember, hogy megedződtek. Hadd rohadjon a hajó a kikötőben. Egy ilyen legénységtől úgysem fél senki.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_2</Tag>
@@ -7148,14 +7191,16 @@
 		<French>Oh oui, c'est un vrai problème ça. On va donner à l'équipage le rhum que leur capitaine exige, et une bouteille de bière de racine, au cas où. Après que tout le monde s'est levé la soif, le navire devrait être paré à l'action, non ?</French>
 		<German>Oh ja, das ist wirklich ein Problem. Geben wir der Crew den Rum, nach dem der Kapitän verlangt. Nachdem sich alle gestärkt haben, sollte das Schiff wieder einsatzbereit sein, meint Ihr nicht auch?</German>
 		<Russian>Хм, разве это проблема? Давайте дадим экипажу ром, который "требует капитан". Думаю, после этого корабль снова будет готов выйти в море, даже с мёртвым капитаном на борту.</Russian>
+		<Hungarian>Ez tényleg probléma. Adjuk a legénységnek a kapitány által kért rumot és egy üveg gyömbérsört, minden esetre. Miután mindenki megpihent, a hajó újra bevethető lesz, nem igaz?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SUPERSTITIOUS_PIRATES_3</Tag>
-		<English>Get a priest immediately. He can perform an exorcism and prevent the captain's ghost from haunting the harbour district! Just to be safe, we should also burn the ship. The crew can stay ashore until we capture or build a new ship for them.</English>
+		<English>Get a priest immediately! He can perform an exorcism and prevent the captain's ghost from haunting the harbour district. Just to be safe, we should also burn the ship. The crew can stay ashore until we capture a new ship for them.</English>
 		<Portuguese>Chame um padre imediatamente. Ele pode realizar um exorcismo e impedir que o fantasma do capitão assombre o distrito portuário! Só por segurança, também deveríamos queimar o navio. A tripulação pode ficar em terra até capturarmos ou construirmos um novo navio para eles.</Portuguese>
 		<French>Amenez un prêtre immédiatement, qu'il lance un exorcisme afin qu'il empêche le fantôme du capitaine de hanter le port. Pour être sûr, nous devrions aussi brûler le navire. L'équipage peut rester à quai le temps que nous leur trouvions ou construisions un nouveau navire.</French>
 		<German>Holt sofort einen Priester, damit er einen Exorzismus vornehmen kann und der Geist des Kapitäns nicht im Hafenviertel weiterspukt! Sicherheitshalber sollten wir das Schiff aber auch noch verbrennen. Die Crew kann erst einmal an Land bleiben, bis wir ein neues Schiff für sie gefunden oder gebaut haben.</German>
 		<Russian>Немедленно найдите священника, который сможет провести обряд и изгонит призрак капитана! А корабль следует сжечь, на всякий случай. Экипаж может остаться на берегу, пока мы не найдем другой корабль или не построим для них новый.</Russian>
+		<Hungarian>Azonnal hívjatok papot! Ő elvégezheti az ördögűzést és megakadályozhatja, hogy a kapitány szelleme kísértsen a kikötő környékén! A biztonság kedvéért a hajót is el kellene égetnünk. A legénység addig a parton maradhat, amíg nem szerzünk vagy építünk nekik új hajót.</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_START</Tag>
@@ -7163,6 +7208,7 @@
 		<Portuguese>Uma expedição inexperiente está prestes a partir para o deserto.</Portuguese>
 		<German>Eine unerfahrene Expedition ist im Begriff in die Wildniss aufzubrechen.</German>
 		<Russian>Экспедиция неопытных энтузиастов в дикие земли</Russian>
+		<Hungarian>Egy tapasztalatlan felfedezőcsapat útnak indul a vadonba.</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_1</Tag>
