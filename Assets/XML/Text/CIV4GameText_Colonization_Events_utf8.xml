@@ -6326,6 +6326,7 @@
 		<French>Pour la gloire et la richesse de nos colonies ! Ces spécialistes travailleront ici et seulement ici !</French>
 		<German>Für Ruhm und Reichtum unserer Kolonien! Solche Spezialisten können wir nur hier - und nirgendwo anders - anwerben!</German>
 		<Russian>Во славу и богатство наших колоний! Эти специалисты будут здесь и только здесь!</Russian>
+		<Hungarian>Gyarmataink dicsőségéért és gazdagságáért! Ezek a szakemberek itt lesznek, és csak itt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP</Tag>
@@ -6334,6 +6335,7 @@
 		<French>Échangez avec Port Royal cette quantité de biens [COLOR_FONT_GOLD]avant toute autre nation [COLOR_REVERT] :[NEWLINE]%D1_amount %F2_yield</French>
 		<German>Liefert die folgende Warenmenge nach Port Royal, [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
 		<Russian>Продайте товар в указанном количестве в Порт Ройале [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
+		<Hungarian>Kereskedj ennyi áruval Port Royal-lal [COLOR_FONT_GOLD], mielőtt bármely más nemzet [COLOR_REVERT]megtehetné: [NEWLINE]%D1_amount %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
@@ -6342,6 +6344,7 @@
 		<French>Acheminez de Port Royal vers vos colonies cette quantité de biens [COLOR_FONT_GOLD]avant toute autre nation [COLOR_REVERT] :[NEWLINE]%D1_amount %F2_yield</French>
 		<German>Liefert die folgende Warenmenge aus Port Royal in die Kolonien, [COLOR_FONT_GOLD]bevor es eine andere Nation [COLOR_REVERT]tut :[NEWLINE]%D1_amount %F2_yield</German>
 		<Russian>Продайте товар в указанном количестве из Порт Ройала в колонии [COLOR_FONT_GOLD]прежде, чем другая нация сможет это [COLOR_REVERT]сделать первой :[NEWLINE]%D1_amount %F2_yield</Russian>
+		<Hungarian>Hozzál ennyi árut Port Royal-ból [COLOR_FONT_GOLD]mielőtt bármely más nemzet[COLOR_REVERT] megtehetné: [NEWLINE]%D1_amount %F2_yield</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_PRICE_AND_ATTITUDE_HELP</Tag>
@@ -6350,6 +6353,7 @@
 		<French>La qualité de nos bien a fait forte impression auprès des citoyens de Port Royal.[NEWLINE]Le conseil des capitaines s'en rejouit. La demande pour les biens coloniaux est en hausse.</French>
 		<German>Die Bürger in Port Royal sind von der Qualität unsere Kolonialwaren begeistert.[NEWLINE]Der Kapitänsrat ist hocherfreut. Die Nachfrage nach unseren Waren steigt.</German>
 		<Russian>Качество наших товаров произвело впечатление на жителей Порт Ройала.[NEWLINE]Совет капитанов в восторге. Спрос на колониальные товары растет.</Russian>
+		<Hungarian>Termékeink minősége lenyűgözte Port Royal lakóit.[NEWLINE]A Kapitányok Tanácsa örül ennek. A gyarmati áruk iránti kereslet növekszik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ECCENTRIC_ARCHITECT</Tag>
@@ -6358,6 +6362,7 @@
 		<French>Il paraitrait que sa Majesté a envoyé un architecte expérimenté dans vos colonies afin d'aider à les bâtir.</French>
 		<German>Es heißt, der König habe zur Förderung der Entwicklung seiner Kolonien in der Neuen Welt einen Architekten nach [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] entsandt.</German>
 		<Russian>Ходят слухи об отправке в колонии опытного архитектора, чтобы поддержать их развитие.</Russian>
+		<Hungarian>Pletykák szerint Őfelsége egy tapasztalt építészt küldött a gyarmatainkra, hogy támogassa azok fejlődését.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ECCENTRIC_ARCHITECT_1</Tag>
@@ -6366,6 +6371,7 @@
 		<French>Sire, le nombre de colonies que vous gérez dans le nouveau monde croît à allure régulière, mais le bâtiment ne suit pas assez vite. Sa Majesté a donc décidé de vous envoyer un architecte très expérimenté et jouissant de la meilleure réputation pour aider à la construction au sein des colonies. </French>
 		<German>Sir, die Anzahl der Kolonien in der Neuen Welt wächst stetig, aber der Aufbau geht nicht schnell genug voran. Seine Majestät hat daher entschieden, einen erfahrenen Architekten mit höchstem Ansehen in die Kolonien zu entsenden, um den Aufbau voranzutreiben.</German>
 		<Russian>Милорд, количество управляемых вами колоний в Новом Свете неуклонно растёт, но строительство идёт недостаточно быстро. Поэтому Его Величество решил прислать к нам опытного архитектора с самой высокой репутацией для поддержки строительных работ в колониях.</Russian>
+		<Hungarian>Uram, az Újvilágban az általad irányított kolóniák száma folyamatosan növekszik, de az építkezés nem halad elég gyorsan. Ezért Őfelsége úgy döntött, hogy egy nagyon tapasztalt, kiváló hírű építészt küld a gyarmatokra, hogy támogassa az építési munkákat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ECCENTRIC_ARCHITECT_2</Tag>
@@ -6388,6 +6394,7 @@
 		<French>Une rumeur veut que des huissiers venus d'Europe sont à la recherche d'un architecte perclus de dettes.</French>
 		<German>Es heißt die Büttel sind in den Kolonien auf der Suche nach einem verschuldeten Architekten.</German>
 		<Russian>Ходят слухи, что судебные приставы объявили в розыск архитектора-должника.</Russian>
+		<Hungarian>Egy pletyka terjed, miszerint a végrehajtók a gyarmatokon keresnek egy adósságba keveredett építészt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_1</Tag>
@@ -6396,6 +6403,7 @@
 		<French>Sire, l'architecte que nous avons accueilli récemment fait du très bon travail. Hélas, il est venu avec des ennuis. Apparemment il s'est fait des ennemis en Europe et s'est retrouvé lourdement endetté. Les huissiers ont entendu qu'il travaille pour notre compte et passent nos colonies au peigne fin du nord au sud. Ils exigent que nous payions immédiatement toute sa dette, sinon ils ramènent l'homme pieds et poings liés en Europe pour y faite de la prison pour dettes.</French>
 		<German>Milord, der Architekt, den wir kürzlich in unsere Kolonie aufgenommen haben, leistet gute Arbeit. Leider hat das Ganze auch einen Haken. Offenbar hat er sich in der Alten Welt Feinde gemacht und sich hoch verschuldet. Die Büttel haben gehört, dass er für uns arbeitet und durchsuchen unsere Kolonien von Nord nach Süd. Sie verlangen, dass wir die ganze Summe sogleich bezahlen, ansonsten droht dem Mann der Schuldturm und man wird ihn in Schande nach Europa zurückbringen.</German>
 		<Russian>Милорд, архитектор, который недавно принехал к нам, хорошо справляется со своей работой. Однако, есть одна проблема: он по уши в долгах, с которыми не может расплатиться. Приставы прослышали, что он работает на нас и теперь прочесывают наши колонии вдоль и поперёк. Они требуют, чтобы мы незамедлительно выплатили всю сумму долга, иначе мужчине грозит долговая тюрьма и его с позором вернут в Европу, как только найдут.</Russian>
+		<Hungarian>Uram, az építész, akit nemrég befogadtunk a kolóniánkba, jó munkát végez. Sajnos van egy bökkenő. Úgy tűnik, ellenségeket szerzett magának Európában és súlyos adósságokat halmozott fel. A végrehajtók megtudták, hogy nálunk dolgozik és most átfésülik a kolóniáinkat északról délre. Azt követelik, hogy azonnal fizessük ki a teljes összeget, különben a férfi adósok börtönébe kerül és szégyenszemre visszaviszik Európába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_COMMIT</Tag>
@@ -6418,6 +6426,7 @@
 		<French>Misère de misère, je savais qu'il y avait un os avec lui. La lettre de recommandation était trop fleurie pour être honnête. On ne peut pourtant pas le laisser tomber. Payez les huissiers et espérons que de l'eau coule sous les ponts. Restez discrets, le roi ne doit rien savoir à ce sujet.</French>
 		<German>Verflixt und zugenäht, ich wusste da war ein Haken, als wir ihn aufnahmen. Das Empfehlungsschreiben war allzu großzügig abgefasst. Dennoch, wir können ihn nicht hängen lassen. Bezahlt die Büttel und dann wächst hoffentlich Gras über die Sache. Aber schweigt darüber, der König sollte nicht erfahren, dass wir dem Mann geholfen haben.</German>
 		<Russian>Три тысячи чертей, я чувствовал, что здесь что-то не чисто, когда мы его брали! Рекомендательные письма были слишком хороши! Тем не менее, мы не можем лишиться такого ценного сотрудника. Заплатите судебным приставам и будем надеяться, что об этом скоро забудут. Но прошу вас - никому не слова. И уж тем более Король не должен знать, что мы помогли этому человеку.</Russian>
+		<Hungarian>A fenébe, tudtam, hogy lesz valami buktató, amikor befogadtuk. Az ajánlólevél túl nagylelkűen volt megfogalmazva. De nem hagyhatjuk cserben. Fizessük ki a végrehajtókat és remélhetőleg el fog felejtődni az ügy. De ne beszéljünk róla, a Király nem tudhatja meg, hogy segítettünk a férfinak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_NEGOTIATE</Tag>
@@ -6426,6 +6435,7 @@
 		<French>Jarnicoton. Essayions de négocier avec les huissiers. Offrons-leur la moitié de ce que doit cet architecte</French>
 		<German>Verd...ach, man soll ja nicht fluchen. Aber es ist doch wirklich zum verrückt werden. Versuchen wir erst einmal mit den Halunken zu verhandeln. Bieten wir ihnen die Hälfte von dem was der Architekt ihnen schuldet.</German>
 		<Russian>Дьявол... Что же, давайте попробуем договориться с судебными приставами. Предложите им половину того, что должен архитектор и будем надеяться, их аппетиты не вырастут.</Russian>
+		<Hungarian>Ez tényleg őrjítő! Próbáljunk meg először tárgyalni a végrehajtókkal. Ajánljuk fel nekik az építész tartozásának felét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_REFUSE</Tag>
@@ -6434,6 +6444,7 @@
 		<French>C'était donc trop beau pour être vrai. Mais nous sommes une colonie libre et tout le monde doit être heureux ici - ses écarts passés doivent être pardonnés. Appelez la garde et virez-moi ces chiens. Nous ne leur livrerons pas notre fidèle serviteur dans le progrès sur un coup de tête.</French>
 		<German>Aha, wäre ja auch zu schön gewesen. Aber dies ist eine freie Kolonie und jeder soll hier glücklich werden - seine Altlasten seien ihm vergeben. Ruft die Wache und verscheucht dieses Pack. Wir liefern diesen treuen Diener unseres Fortschritts nicht einfach so aus.</German>
 		<Russian>Я так и знал, что этот старый прохвост доставит нам хлопот. Но в Новом Свете мы строим новое общество и ошибки прошлого должны быть забыты. Прикажите охране вышвырнуть этих ищеек с нашей территории. Мы никому не отдадим верного слугу нашего прогресса.</Russian>
+		<Hungarian>Aha, túl szép lett volna, hogy igaz legyen. De ez egy szabad kolónia és itt mindenkinek boldognak kell lennie – a régi vétségeit meg kell bocsátani! Hívd az őrt és ijesszétek el ezt a csőcseléket! Nem adjuk át csak úgy a haladásunk hűséges szolgáját.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_HELP</Tag>
@@ -6442,6 +6453,7 @@
 		<French>[ICON_BULLET]Les huissiers vont fouiller la ville de fond en comble ! Aux armes!</French>
 		<German>[ICON_BULLET]Die Büttel werden unsere Stadt durchsuchen! Zu den Waffen!</German>
 		<Russian>[ICON_BULLET]Приставы вооружены и готовы к перестрелке! Тревога!!!</Russian>
+		<Hungarian>[ICON_BULLET]A végrehajtók átfésülik a városunkat! Fegyverbe!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINAL</Tag>
@@ -6450,6 +6462,7 @@
 		<French>Les huissiers veulent leurs sous.</French>
 		<German>Es heißt die Büttel wollen mehr Geld.</German>
 		<Russian>Приставы недовольны выплатой только части долга</Russian>
+		<Hungarian>A végrehajtók pénzt akarnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF_FINALLY</Tag>
@@ -6458,14 +6471,16 @@
 		<French>Sire, esquiver en payant la moitié de la dette aux huissiers n'a pas suffi. Ils reviennent à la charge et veulent le reste. Que faire ?</French>
 		<German>Milord, es hat nichts genutzt, dass wir die Büttel mit der Hälfte der Schulden abgespeist haben. Sie sind wieder da und wollen den Rest der Schulden eintreiben. Was machen wir jetzt?</German>
 		<Russian>То, что мы отдали приставам половину долга, не помогло. Они хотят получить оставшуюся часть денег. Что будем делать, Милорд?</Russian>
+		<Hungarian>Uram, nem segített, hogy a végrehajtókat a tartozás felével elhajtottuk. Visszajöttek és a tartozás többi részét is be akarják szedni. Most mit tegyünk?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_PAY</Tag>
-		<English>All right, pay up and maybe they'll finally give it a rest. People are already talking on the streets. Pay the money and then chase them away.</English>
+		<English>All right, pay up and maybe they'll finally give it a rest. On the streets people are already talking. Pay the money and then chase them away.</English>
 		<Portuguese>Tudo bem, pague e talvez eles finalmente dêem um descanso. As pessoas já estão falando nas ruas. Pague o dinheiro e depois afaste-os.</Portuguese>
 		<French>Très bien, dans ce cas ils laisseront en paix. Ca commence déjà à jaser dans les rues. Payons leur le reste et chassez-les de chez nous.</French>
 		<German>Also gut, dann geben sie vielleicht endlich Ruhe. Auf der Straße wird schon geredet. Zahlt das Geld aus und dann jagt sie fort.</German>
 		<Russian>Вот негодяи, мы же договорились!.. Ай, чего уж там, отдайте им недостающую сумму и проследите, чтобы они как можно скорее покинули колонии.</Russian>
+		<Hungarian>Rendben, akkor fizessünk és talán végre békén hagynak minket. Az emberek már az utcán is erről beszélnek. Fizessük ki a pénzt és küldjük el őket!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_FINAL_REFUSE</Tag>
@@ -6474,22 +6489,25 @@
 		<French>C'est de la folie, cette histoire. On va essayer de négocier avec les huissiers. On va leur offrir la moitié de ce que l'architecte leur doit.</French>
 		<German>Jetzt reicht es uns aber. Noch mehr bekommen sie nicht! Unser Geldbeutel bleibt geschlossen. Mobilisiert die Milz!</German>
 		<Russian>Ах вот как?! Они не получат ни цента! Надо проучить этих наглецов - соберите ополченцев!</Russian>
+		<Hungarian>Ez tényleg őrjítő! Próbáljunk meg először tárgyalni a végrehajtókkal. Ajánljuk fel nekik az építész tartozásának felét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE</Tag>
-		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an offier intends to duel with another gentleman.</English>
+		<English>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] an officer has challenged another gentleman to a duel.</English>
 		<Portuguese>Em [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] um oficial pretende duelar com outro cavalheiro.</Portuguese>
 		<French>Un officier a l'intention de provoquer en duel un autre gentilhomme à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] will sich ein Offizier mit einen anderen Ehrenmann duellieren.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2[COLOR_REVERT] офицер вызвал на дуэль горожанина.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egyik tisztje párbajozni akar egy másik nemesemberrel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE</Tag>
-		<English>The wife of one of our officers has apparently cheated on her husband, who says this can be solved only in one way. He has challenged his rival to a duel of honour.</English>
+		<English>The wife of one of our officers has apparently cheated on her husband, who says this can be solved in only one way. His honour dictates that he challenge his rival to a duel.</English>
 		<Portuguese>A esposa de um de nossos policiais aparentemente traiu o marido, que diz que isso só pode ser resolvido de uma maneira. Ele desafiou seu rival para um duelo de honra.</Portuguese>
 		<French>La femme d'un officier a décidé de batifoler avec un autre une fois de trop. Le mari - un officier de notre garnison - pense qu'il n'y a plus qu'une solution. Il a provoqué l'autre homme d'honneur en duel</French>
 		<German>Milord, die Ehefrau eines Offiziers hat offenbar einmal zu viel mit einem anderen angebandelt. Der Ehemann - ein Offizier unserer Garnison - meint, dass kann nur auf eine Weise aus der Welt geschafft werden. Er hat den anderen Ehrenmann zum Duell gefordert.</German>
 		<Russian>В одной из наших колоний молодой офицер уличил свою жену в неверности и считает, что решить эту проблему можно только одним способом - дуэль чести!</Russian>
+		<Hungarian>Egy tisztünk felesége nyilvánvalóan megcsalta férjét. A férj – a helyőrségünk tisztje – úgy gondolja, hogy ezt csak egy módon lehet megoldani. Párbajra hívta ki a másik férfit.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_1</Tag>
@@ -6498,22 +6516,25 @@
 		<French>Un duel ? Merveilleux, on n'en a pas eu depuis longtemps ! Je vais servir de témoins.</French>
 		<German>Ein Duell? Wie wunderbar, das hatten wir schon lange nicht mehr! Ich werde sekundieren.</German>
 		<Russian>Дуэль? Как здорово, давно у нас такого не было! Я буду секундантом.</Russian>
+		<Hungarian>Párbaj? Milyen csodálatos, már régóta nem volt ilyen! Én leszek a kísérő.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_2</Tag>
-		<English>Lord in heaven! Duels are forbidden in this colony.</English>
+		<English>Lord in heaven! Duels are forbidden in this colony, and rightly so.</English>
 		<Portuguese>Senhor no céu! Os duelos são proibidos nesta colônia.</Portuguese>
 		<French>Dieu du ciel ! Les duels sont prohibés.</French>
 		<German>Herr im Himmel! Duelle sind auch hier zulande verboten.</German>
 		<Russian>Господи! Какая дуэль? Они же запрещены!</Russian>
+		<Hungarian>Uram az égben! A párbajok a gyarmatokon is tilosak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICER_DUEL_HELP</Tag>
-		<English>[ICON_BULLET]The duelists are terrible shots and accidentally injure two spectators.</English>
+		<English>[ICON_BULLET]The duelists are such terrible shots they accidentally injure two spectators.</English>
 		<Portuguese>[ICON_BULLET]Os duelistas acertam péssimos e ferem acidentalmente dois espectadores.</Portuguese>
 		<French>[ICON_BULLET]Les duellistes tirent à tout-va. Il y a des blessés dans la foule.</French>
 		<German>[ICON_BULLET]Die Duellanten schießen wild um sich. Es gibt Verletzte unter den Zuschauern.</German>
 		<Russian>[ICON_BULLET]Беспорядочная стрельба дуэлянтов. Есть пострадавшие среди зрителей.</Russian>
+		<Hungarian>[ICON_BULLET]A párbajozók vadul lövöldöznek. A nézők között sérültek vannak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICER_NODUEL_HELP</Tag>
@@ -6522,6 +6543,7 @@
 		<French>[ICON_BULLET]Les gens sont déçus de rater un tel spectacle</French>
 		<German>[ICON_BULLET]Die Bevölkerung ist wütend um so ein Spektakel gebracht zu werden.</German>
 		<Russian>[ICON_BULLET]Люди расстроены тем, что пропустили такое зрелище.</Russian>
+		<Hungarian>[ICON_BULLET]Az emberek csalódottak, hogy lemaradnak egy ilyen látványosságról.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_AFTERDUEL</Tag>
@@ -6530,22 +6552,25 @@
 		<French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] les gens touchés par les balles perdues du duel ont récupéré.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] haben sich die Verletzten von dem Duell erholt.</German>
 		<Russian>В [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] раненые оправились от последствий дуэли.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]  sérültjei felépültek a párbaj során szerzett sérüléseikből.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_AFTERDUEL</Tag>
-		<English>Milord, now that the bullet wounds from the duel have been patched up the doctor can redirect his full attention to the usual infirmities and diseases of the colony.</English>
+		<English>Milord, the bullet wounds from the duel have finally been patched up. Now the doctor can direct his full attention to the usual infirmities and diseases of the colony.</English>
 		<Portuguese>Milorde, agora que os ferimentos de bala do duelo foram curados, o médico pode redirecionar toda a sua atenção para as enfermidades e doenças habituais da colônia.</Portuguese>
 		<French>Sire, les blessés suite au duel ont guéri de leurs blessures par balle. Le docteur qui les soignait peut se consacrer à nouveau aux maladies et tracas du quotiden de la colonie.</French>
 		<German>Milord, nachdem sich die Verletzten von dem Duell erholt haben und die Schusswunden verheilt sind, kann sich der Arzt nun wieder vollständig den normalen Gebrechen und Krankheiten der Kolonie widmen.</German>
 		<Russian>Милорд. Теперь, когда раненые оправились от ран, полученных на дуэли, доктор снова может полностью посвятить себя лечению обычных недугов и болезней колонии.</Russian>
+		<Hungarian>Uram, most, hogy a sebesültek felépültek a párbaj során szerzett sérüléseikből és a lőtt sebek begyógyultak, az orvos ismét teljes figyelmét a kolónia szokásos betegségeire és bajaira fordíthatja.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_AFTERDUEL</Tag>
-		<English>Thank you for the message. Finally everything is back to normal.</English>
+		<English>Thank you for the message. At last everything is back to normal.</English>
 		<Portuguese>Obrigado pela mensagem. Finalmente tudo voltou ao normal.</Portuguese>
 		<French>Merci pour le message. Tout rentre à la normale.</French>
 		<German>Ich danke Euch für die Nachricht. Endlich kehrt wieder Normalität ein.</German>
 		<Russian>Благодарю вас. Наконец-то всё вернулось на круги своя.</Russian>
+		<Hungarian>Köszönöm az üzenetet! Végre minden visszatért a normális kerékvágásba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ASSIGNMENT</Tag>
@@ -6554,14 +6579,16 @@
 		<French>À [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] un officier a été réassigné loin de la ville.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde ein Offizier in die Wildnis versetzt.</German>
 		<Russian>Офицера города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] отправили служить в отдалённый форт.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] egyik tisztjét áthelyezték a vadonba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ASSIGNMENT</Tag>
-		<English>Milord, there is unrest in the city because you have forbidden the duel. The situation will not calm down until you transfer the officer and his wayward wife to a quiet outpost.</English>
+		<English>Milord, there is unrest in the city because you have forbidden the duel. Things won't calm down until you transfer the officer and his wayward wife to a quiet outpost.</English>
 		<Portuguese>Milorde, há agitação na cidade porque você proibiu o duelo. A situação não se acalmará até que você transfira o oficial e sua esposa rebelde para um posto avançado tranquilo.</Portuguese>
 		<French>Sire, il y a de l'agitation en ville suite à l'interdiction du duel. La situation ne se tassera pas tant que vous n'écarterez pas cet officier et sa femme insatiable dans un poste reculé.</French>
 		<German>Milord, es gibt Unruhen in der Stadt, weil ihr das Duell verboten habt. Die Lage wird sich erst beruhigen, wenn ihr den Offizier samt seiner umtriebigen Ehefrau zu einem ruhigen Außenposten versetzt.</German>
 		<Russian>Милорд, в городе беспорядки после запрещения дуэлей. Для спокойствия горожан есть смысл отправить офицера вместе с его похотливой жёнушкой на одну из наших отдалённых застав.</Russian>
+		<Hungarian>Uram, zavargások törtek ki a városban, mert betiltottad a párbajt. A helyzet addig nem fog megnyugodni, amíg át nem helyezed a tisztet és a kéjsóvár feleségét egy csendes helyőrségbe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ASSIGNMENT</Tag>
@@ -6570,21 +6597,23 @@
 		<French>Je confirme. J'espère que l'officier trouvera assez de temps pour s'occuper de sa mission et de son épouse.</French>
 		<German>Ja, es lässt sich wohl nicht ändern. Der Offizier hat dann hoffentlich genug Zeit, sich um seinen Dienst und seine Frau zu kümmern.</German>
 		<Russian>Согласен. Для всех нас это будет благом.</Russian>
+		<Hungarian>Rendben! Remélhetőleg a tisztnek így elegendő ideje lesz, hogy gondoskodjon a szolgálatáról és a feleségéről is.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ASSIGNMENT_HELP</Tag>
-		<English>[ICON_BULLET]The officer is being assigned to a small outpost. Send him to a small fort. If you haven't built a fort yet, transfer him there as soon as you have.</English>
+		<English>[ICON_BULLET]The officer is being assigned to a small outpost. Send him to a small fort. If you haven't built a fort yet, transfer him there as soon as you do.</English>
 		<Portuguese>[ICON_BULLET]O oficial está sendo designado para um pequeno posto avançado. Envie-o para um pequeno forte. Se você ainda não construiu um forte, transfira-o para lá assim que o fizer.</Portuguese>
 		<German>[ICON_BULLET]Der Offizier wird auf einen kleinen Außenposten versetzt. Schickt ihn in ein kleines Fort. Wenn ihr noch kein Fort errichtet habt, versetzt ihn umgehend sobald ihr es errichtet habt.</German>
 		<Russian>[ICON_BULLET]Офицера был отправлен нести службу на делёком аванпосту. Отправьте его в небольшой форт. Если вы ещё не построили форт, переведите офицера туда сразу же после окончания строительства.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
-		<English>An officer has arrived at his new post at the fort.</English>
+		<English>An officer has taken up his new post at the fort.</English>
 		<Portuguese>Um oficial chegou ao seu novo posto no forte.</Portuguese>
 		<French>L'officier est arrivé à son nouveau poste au fort</French>
 		<German>Ein Offizier ist auf seinem neuen Posten im Fort eingetroffen.</German>
 		<Russian>Офицер прибыл на своё новое место службы.</Russian>
+		<Hungarian>Egy tiszt megérkezett új posztjára az erődben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
@@ -6593,37 +6622,42 @@
 		<French>Sire, nous avons reçu une lettre selon laquelle l'officier que vous avez muté suite aux aventure de sa femme est arrivé sain et sauf au fort. Il peut prendre son service immédiatement.</French>
 		<German>Milord, wir haben Nachricht erhalten, dass der Offizier, den ihr wg. seiner umtriebigen Ehefrau versetzt habt, wohlbehalten im Fort angekommen ist. Er kann dort gleich seinen Dienst antreten.</German>
 		<Russian>Милорд, мы получили сообщение, что офицер, которого вы перевели из-за скандальной дуэли в отдалённый форт, прибыл на место.</Russian>
+		<Hungarian>Uram, üzenetet kaptunk, hogy az a tiszt, akit a kéjsóvár felesége miatt áthelyeztél, épségben megérkezett az erődbe. Azonnal megkezdheti ott a szolgálatát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ARRIVAL</Tag>
-		<English>Thank you. That should get him and his troublesome wife out of the way. Hopefully he won't try to fight duels with all the other officers.</English>
+		<English>Thank you. That gets him and his troublesome wife out of the way. Let's hope he won't try to fight duels with all the other officers.</English>
 		<Portuguese>Obrigado. Isso deveria tirar ele e sua esposa problemática do caminho. Espero que ele não tente duelar com todos os outros oficiais.</Portuguese>
 		<French>$Merci. J'espère que cela évitera des tentations à lui et et à sa femme, et qu'il ne provoquera pas en duel tous les autres officiers.</French>
 		<German>Ich danke Euch. Das wird ihm und seiner Frau hoffentlich die Flausen austreiben. Hoffentlich duelliert er sich nicht mit sämtlichen anderen Offizieren. Die Herren Offiziere sind da ja sehr speziell.</German>
 		<Russian>Спасибо. Будем надеяться, что это избавит его и его похотливую жену от неприятностей.</Russian>
+		<Hungarian>Köszönöm! Remélhetőleg ez megszabadítja őt és a buja feleségét a bajtól. És remélhetőleg nem fog párbajozni az összes többi tiszttel.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_ARRIVAL_HELP</Tag>
-		<English>[ICON_BULLET]The officer will get straight to work and work hard. Leave him at the fort and wait a while!</English>
+		<English>[ICON_BULLET]The officer will get straight to work, and work hard. Leave him at the fort. Give it time.</English>
 		<Portuguese>[ICON_BULLET]O oficial irá direto ao trabalho e trabalhará duro. Deixe-o no forte e espere um pouco!</Portuguese>
 		<German>[ICON_BULLET]Der Offizier wird umgehend an die Arbeit gehen und hart arbeiten. Lasst ihn im Fort stehen und wartet einige Zeit ab!</German>
 		<Russian>Офицер немедленно приступит к работе и будет усердно трудиться. Оставьте его в форте и немного подождите!</Russian>
+		<Hungarian>[ICON_BULLET]A tiszt felveszi a szolgálatot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
-		<English>Through hard work and good service, the pioneers have upgraded the fort.</English>
+		<English>With hard work and dedicated service the pioneers have upgraded the fort.</English>
 		<Portuguese>Através de muito trabalho e bons serviços, os pioneiros melhoraram o forte.</Portuguese>
 		<French>Les pionniers améliorent le fort en se livrant à la tâche avec zèle et ardeur.</French>
 		<German>Durch harte Arbeit und guten Dienst haben die Pioniere ein Fort ausgebaut.</German>
 		<Russian>Благодаря упорному труду и хорошей службе Первопроходцы улучшили форт.</Russian>
+		<Hungarian>Kemény munkával és jó szolgálattal az utászok felfejlesztették az erődöt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_OFFICERS_WIFE_UPGRADE</Tag>
-		<English>My lord, it seems we made the right decision. The officer - you remember, the one with the wayward wife - is doing an excellent job seeing that the fort expands with better defences.</English>
+		<English>My lord, it seems we made the right decision. The officer - you remember, the one with the wayward wife - is doing an excellent job seeing that the fort improves its defences.</English>
 		<Portuguese>Meu senhor, parece que tomamos a decisão certa. O oficial - você lembra, aquele com a esposa rebelde - está fazendo um excelente trabalho ao ver que o forte se expande com melhores defesas.</Portuguese>
 		<French>Sire, nous avons pris la bonne décision. L'officier - vous savez, celui avec l'épouse insatiable - fait un excellent travail et s'assure que le fort est agrandi et renforcé.</French>
 		<German>Milord, es scheint wir haben die richtige Entscheidung getroffen. Der Offizier - ihr erinnert euch, der mit der umtriebigen Ehefrau - leistet hervorragende Arbeit und hat dafür gesorgt, dass das Fort ausgebaut und besser befestigt wurde.</German>
 		<Russian>Милорд, кажется, мы приняли правильное решение. Офицер, помните тот, у которого была похотливая жёнушка, отлично справляется со своей работой и позаботился о том, чтобы форт был расширен и лучше укреплен.</Russian>
+		<Hungarian>Uram, úgy tűnik, helyes döntést hoztunk. Az a tiszt – emlékszik, akinek a felesége olyan buja – kiváló munkát végez és gondoskodott arról, hogy az erődöt kibővítsék és jobban megerősítsék.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_OFFICERS_WIFE_UPGRADE</Tag>
@@ -6632,14 +6666,16 @@
 		<French>On dirait que cet homme deviendra un bon offcier après tout. Je l'ai toujours dit : la nature sauvage forme de vrais hommes de nos recrues.</French>
 		<German>Es scheint, als würde aus dem Mann doch noch ein guter Offizier werden. Ich sage es ja immer: Die Wildniss macht aus den Jungens echte Kerle.</German>
 		<Russian>Похоже, из этого парня выйдет хороший офицер. Я всегда говорил: дикая природа делает из мальчиков настоящих мужчин.</Russian>
+		<Hungarian>A férfi végül is jó tiszt lesz. Mindig is mondtam: a vadon igazi férfivá teszi a fiúkat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CHEESE_MAKER</Tag>
-		<English>One of the new master cheese makers complains about the inadequate working conditions. He says we would produce far more for the domestic market if we expand production or hire a new milkmaid.</English>
+		<English>One of the new master cheese makers complains about the inadequate work situation. He says we would produce far more for the domestic market if we expand production or hire a new milkmaid.</English>
 		<Portuguese>Um dos novos mestres queijeiros queixa-se das condições de trabalho inadequadas. Ele diz que produziríamos muito mais para o mercado interno se expandíssemos a produção ou contratássemos uma nova leiteira.</Portuguese>
 		<French>Un de nos nouveaux maitres fromagers se plaint de ses conditions de travail inadaptées. Il pense que nous produirions bien davantage pour le marché local si nous élargissions la fromagerie ou embauchons une laitière.</French>
 		<German>Einer der neuen Meister-Käsemacher beschwert sich über die unzureichenden Arbeitsbedingungen. Er meint wir könnten noch weit mehr für den heimischen Markt produzieren, wenn wir die Produktion ausweiten oder neue Milchmägde einstellen würden.</German>
 		<Russian>Один из новых мастеров-сыроделов жалуется на неудовлетворительные условия труда. Он считает, что мы могли бы производить гораздо больше для внутреннего рынка, если расширим производство, ну или наймем доярку.</Russian>
+		<Hungarian>Az egyik új sajtkészítő mester panaszkodik a nem megfelelő munkakörülményekre. Úgy véli, hogy sokkal többet tudnánk termelni a hazai piacra, ha bővítenénk a termelést vagy felvennénk egy új fejőnőt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CHEESE_MAKER_1</Tag>
@@ -6648,6 +6684,7 @@
 		<French>Il aura une laitière comme compagne. Mais le premier enfant devra porter mon nom.</French>
 		<German>Er soll seine Magd haben. Aber das erste Kind wird nach mir benannt.</German>
 		<Russian>Хорошо, у него будет своя прислуга. Но первого ребенка назовут в мою честь.</Russian>
+		<Hungarian>Munkatársat vagy feleséget keres? Megkapja a fejőnőt. Ha úgy dönt, hogy hozzá megy feleségül, az első gyermeket rólam fogják elnevezni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CHEESE_MAKER_2</Tag>
@@ -6656,6 +6693,7 @@
 		<French>Il n'a pas tort. Nous produisons bien trop peu pour nos habitants. Nous achèterons une nouvelle marmite de caillage.</French>
 		<German>Er hat nicht unrecht. Wir produzieren bisher viel zu wenig für unsere Einwohner. Wir kaufen einen neuen Käsebottich.</German>
 		<Russian>Действительно, пока мы производим слишком мало для наших жителей. Надо купить новый сырный чан.</Russian>
+		<Hungarian>Ez igaz. Eddig túl keveset termeltünk a lakosainknak. Veszünk egy új sajtkádat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CHEESE_MAKER_3</Tag>
@@ -6664,6 +6702,7 @@
 		<French>Nous produisons assez de fromage, mais nous manquons de lait. Achetons des seaux, des tabourets de traits et des vaches.</French>
 		<German>Käse können wir genug herstellen, aber wir brauchen unbedingt noch mehr Milch. Kaufen wir Eimer, Melkschemel und ein paar neue Kühe.</German>
 		<Russian>Мы можем производить достаточно сыра, но нам определенно нужно больше молока. Давайте купим ведра, табуретки для дойки и несколько новых коров.</Russian>
+		<Hungarian>Elég sajtot tudunk készíteni, de tényleg több tejre van szükségünk. Vegyünk vödröket, fejőszékeket és néhány új tehenet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CHEESE_MAKER_4</Tag>
@@ -6672,6 +6711,7 @@
 		<French>C'est quoi ces histoires ? Dois-je vraiment m'occuper de ce genre de chose par dessus le marché ? Qu'il se débrouille tout seul. C'est de tabac, de whisky et de viande dont nous avons besoin.</French>
 		<German>Was soll denn der Quatsch. Muss ich mich jetzt auch noch um sowas kümmern? Er soll selber sehen wie er klarkommt. Was wir brauchen ist mehr Tabak, Whiskey und Fleisch.</German>
 		<Russian>Что за ерунда? Почему я должен заботиться о такой ерунде? А вот что нам сейчас действительно нужно, так это больше табака, виски и мяса.</Russian>
+		<Hungarian>Mi ez a hülyeség? Most már ilyenekkel is foglalkoznom kell? Majd kitalálja hogyan boldogul. Nekünk több dohányra, whiskyre és húsra van szükségünk!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEASONED_TRADER_MEETING</Tag>
@@ -6680,6 +6720,7 @@
 		<French>Les marchands et les indigènes organisent une grande fête de commerce et d'amitié à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</French>
 		<German>Händler und Ureinwohner veranstalten in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] ein großes Palaver und Rendezvous für Freundschaft und Handel.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] индейцы и купцы устраивают грандиозный праздник торговли и дружбы.</Russian>
+		<Hungarian>A kereskedők és az Indiánok nagy ünnepséget és találkozót tartanak a barátság és a kereskedelem jegyében [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] főterén.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_MEETING</Tag>
@@ -6688,22 +6729,25 @@
 		<French>Sire, de nombreux marchands, chasseurs et indigènes se sont rassemblés à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] pour une foire commerciale très festive. Tout le monde y va de très bon coeur.</French>
 		 <German>Milord, viele Händler, Trapper und Ureinwohner sind in in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] zusammengekommen um Waren auszutauschen, freundschaftliche Bande zu knüpfen und um zu feiern. Es geht hoch her bei diesen rauen Gesellen und den Wilden.</German>
 		<Russian>Милорд, множество торговцев, охотников и туземцев из далёких стойбищ собрались в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT], чтобы обменяться товарами, завязать дружеские связи и пировать. Все едут туда с большим энтузиазмом.</Russian>
+		<Hungarian>Uram, sok kereskedő, prémvadász és Indián gyűlt össze [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] főterén, hogy árukat cseréljenek, baráti kapcsolatokat ápoljanak és ünnepeljenek. Ezek a durva fickók és az Indiánok között néha elég vadul alakulhatnak a dolgok.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_1</Tag>
-		<English>That is very welcome. Let them feast until they drop. We can bear the festivity costs and promise the Natives new profitable trade. We need to send out more traders soon. We should also recruit a few Native scouts.</English>
+		<English>That is welcome news. Let them feast until they drop. We will bear all festivity costs and promise the Natives profitable trade. We need to send out more traders soon. We should also recruit a few Native scouts.</English>
 		<Portuguese>Isso é muito bem-vindo. Deixe-os festejar até cair. Podemos arcar com os custos da festividade e prometer aos nativos um novo comércio lucrativo. Precisamos enviar mais comerciantes em breve. Devemos também recrutar alguns nativos batedores.</Portuguese>
 		<French>Que c'est bienvenu. Laissez les faire une fête à tout casser. Nous paierons la note pour ces réjouissances et promettrons aux Indiens de nouveaux échanges profitables. Nous leur enverrons de nouveaux marchands d'ici peu. Nous recruterons au passage quelques éclaireurs Indiens.</French>
 		<German>Das ist sehr zu begrüßen. Sollen sie ruhig feiern bis zum Umfallen. Wir übernehmen die Kosten für das Fest und versprechen den Indianern neuen, ertragreichen Handel. Wir müssen dann bald neue Händler aussenden. Wir sollten auch ein paar indianische Scouts anwerben.</German>
 		<Russian>Отличная новость. Мы можем извлечь из этого выгоду. Давайте возьмем на себя расходы по организации праздника и пообещаем индейцам расширить торговлю. В ближайшее время мы отправим к ним новых торговцев. Кстати, было бы неплохо нанять индейских разведчиков.</Russian>
+		<Hungarian>Ez nagyon örvendetes. Hadd lakomáznak, amíg el nem ájulnak. Mi viseljük az ünnepség költségeit és új, jövedelmező kereskedelmet ígérünk az Indiánoknak. Rövid időn belül új kereskedőket kell kiküldenünk. Néhány Indián felderítőt is toboroznunk kellene.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_2</Tag>
-		<English>Go ahead and get the Indians drunk. Steal their goods, jewels and women and send them back to where they came from.</English>
+		<English>Go ahead and get the Indians drunk. Steal their goods, jewels and women and send them back where they came from.</English>
 		<Portuguese>Vá em frente e embebede os índios. Roube seus bens, joias e mulheres e mande-os de volta para o lugar de onde vieram.</Portuguese>
 		<French>Allez-y et énivrez les Indiens. Et après faites main basse sur leurs biens, leurs bijoux, leurs femmes et renvoyez-les chez eux.</French>
 		<German>Macht die Wilden ordentlich besoffen. Danach stehlt ihnen ihre Waren, den Schmuck und die Frauen und schickt sie hin wo sie hergekommen sind.</German>
 		<Russian>Эти дикари у меня уже в печёнках сидят. Но давайте развлечёмся - напоите краснокожих, отберите у них все, что найдёте и выкиньте их из города. Пусть убираются в свои дебри.</Russian>
+		<Hungarian>Gyerünk, itassátok le az Indiánokat! Aztán lopjátok el az áruikat, ékszereiket és nőiket, és küldjétek őket vissza oda, ahonnan jöttek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_3</Tag>
