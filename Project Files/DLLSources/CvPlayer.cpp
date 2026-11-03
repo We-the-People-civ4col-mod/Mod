@@ -19658,8 +19658,14 @@ void CvPlayer::setDiploYieldAmount(YieldTypes eYield, int iAmount)
 		return;
 	}
 
+	if (iAmount >= 0 && !gDLL->isDiplomacy() && !gDLL->isMPDiplomacyScreenUp())
+	{
+		m_em_iDiploYieldAmount.set(eYield, DIPLO_YIELD_AMOUNT_UNSET);
+		return;
+	}
+
 	m_em_iDiploYieldAmount.set(eYield, iAmount);
-	if (iAmount >= 0)
+	if (iAmount >= 0 && gDLL->isDiplomacy())
 	{
 		gDLL->updateDiplomacyAttitude(true);
 	}
@@ -19673,6 +19679,11 @@ void CvPlayer::clearDiploYieldAmounts()
 void CvPlayer::tryLaunchDiploYieldAmountPopup(YieldTypes eYield, const IDInfo& kTransport)
 {
 	if (eYield == NO_YIELD)
+	{
+		return;
+	}
+
+	if (!gDLL->isDiplomacy() && !gDLL->isMPDiplomacyScreenUp())
 	{
 		return;
 	}
