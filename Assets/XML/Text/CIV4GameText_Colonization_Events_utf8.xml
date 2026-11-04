@@ -7216,6 +7216,7 @@
 		<Portuguese>Milord, você planeja explorar o Novo Mundo com uma expedição inexperiente. Esses aventureiros não têm ideia das dificuldades e perigos que os aguardam. Dê-lhes alguns companheiros de viagem experientes!</Portuguese>
 		<German>Milord, Ihr seid im Begriff mit einer unerfahrenen Expedition die Neue Welt zu erkunden. Aber seid Euch darüber gewahr, dass diese Abenteurer keine Ahnung haben, was für Strapazen und Gefahren auf sie warten. Ihr solltet sie dazu ermutigen noch ein paar Reisegefährten anzuheuern!</German>
 		<Russian>Милорд, вы собираетесь начать исследование Нового Света. Но вы даже не догадываетесь, какие трудности и опасности могут вас поджидать. Нашей эспедиции не хватает опытных людей!</Russian>
+		<Hungarian>Uram, tapasztalatlan felfedezőkkel tervezed megismerni az Újvilágot. Ezeknek a kalandoroknak fogalmuk sincs, milyen nehézségek és veszélyek várnak rájuk. Adj nekik néhány hozzáértő útitársat!</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_2</Tag>
@@ -7223,6 +7224,7 @@
 		<Portuguese>Milorde, alguns aventureiros inexperientes conseguiram atravessar o grande mar até as costas desta terra desconhecida. Certamente você quer que eles descubram o que há além da praia, não é? Quem seria o melhor para acompanhar a expedição?</Portuguese>
 		<German>Milord, einige unerfahrene Abenteurer haben es über das große Meer hierher an die Küsten dieses unbekannten Landes geschafft. Nun wollt Ihr doch sicher auch, dass sie erfolgreich sind und sehen was sich hinter dem Strand befindet, oder? Wen wollt Ihr der Expedition als Begleitung mitgeben?</German>
 		<Russian>Милорд, вы пересекли великое море и достигли берегов этой неведомой доселе земли. Вам наверняка захочется посмотреть, что находится за пляжем, не так ли? Но у нас так мало опытных людей. Давайте потратим немного денег и наймем их.</Russian>
+		<Hungarian>Uram, tapasztalatlan felfedezőkkel tervezed megismerni az Újvilágot. Ezeknek a kalandoroknak fogalmuk sincs, milyen nehézségek és veszélyek várnak rájuk. Adj nekik néhány hozzáértő útitársat!</Hungarian>
 	</TEXT>
    <TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_START_3</Tag>
@@ -7230,13 +7232,15 @@
 		<Portuguese>Milord, explorar o continente e retornar vivo será um grande desafio para aventureiros inexperientes. Nenhum deles sabe o que há além da praia. Eles não deveriam receber um pouco de ajuda?</Portuguese>
 		<German>Milord, den Kontinent zu entdecken und wieder lebend hierher zurückzukehren wird eine große Herausforderung für diese unerfahrenen Abenteurer werden. Keiner von denen weiß, was hinter dem Strand verborgen liegt. Sollten sie nicht ein wenig Beistand erhalten?</German>
 		<Russian>Милорд, исследовать континент и вернуться на побережье живым будет непростой задачей. Никто из нас не знает, что находится за теми холмами. Нам стоит заручиться поддержкой опытных исследователей.</Russian>
+		<Hungarian>Uram, a kontinens felfedezése és az életben maradás nagy kihívás lesz a tapasztalatlan kalandorok számára. Egyikük sem tudja, mi vár rájuk a parton túl. Nem kellene nekik egy kis segítséget nyújtani?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_1</Tag>
-		<English>You are right. They need strong and adventurous fellows who will lead them into hell and back. The prospect of adventure and gold should attract exactly the men we need, in return for a small share.</English>
+		<English>You are right. They need strong and adventurous fellows who will lead them into hell and back. The prospect of adventure and gold should attract exactly the men we need, as long as they can get a small share.</English>
 		<Portuguese>Você está certo. Eles precisam de companheiros fortes e aventureiros que os levem ao inferno e voltem. A perspectiva de aventura e ouro deveria atrair exatamente os homens de que necessitamos, em troca de uma pequena parte.</Portuguese>
 		 <German>Ihr habt Recht. Sie brauchen kampfkräftige und abenteuerlustige Begleiter, die ihnen bis in die Hölle folgen und wieder zurück. Die Aussicht auf Abenteuer und Gold sollte auch für ein kleines Handgeld genau die Männer anlocken, die wir brauchen.</German>
 		<Russian>Да, нам нужны сильные и храбрые люди, которые готовы совершить рисковую прогулку даже в ад. Жажда наживы и приключений всегда привлекает таких смельчаков, даже за небольшой барыш.</Russian>
+		<Hungarian>Jól van. Erős és kalandvágyó emberekre van szükségük, akik elvezetik őket a pokolba és vissza. A kaland és az arany ígérete pontosan azokat a férfiakat vonzza, akikre szükségünk van, cserébe egy kis részesedésért.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_2</Tag>
@@ -7244,6 +7248,7 @@
 		<Portuguese>Você está certo. Mas a fé inabalável é muito mais importante que a espada. Precisamos de missionários conosco proclamando a palavra de Deus aos pagãos que encontramos ao longo do caminho. A mão poderosa de Deus nos protegerá.</Portuguese>
 		<German>Ihr habt Recht. Aber noch wichtiger als das Schwert ist der unterschütterliche Glaube. Sie sollten Missionare auf die Reise mitnehmen, die das Wort Gottes allen Heiden verkünden können, denen sie unterwegs begegnen werden. Gott wird damit seine schützende Hand über sie legen.</German>
 		<Russian>В тяжёлых странствиях важен не только добрый меч, но и сильный дух. Возьмём с собой миссионеров. Своими молитвами они помогут нам пережить невзгоды, а дикарей обратят в Истинную Веру. Господь всемогущий да пребудет с нами!</Russian>
+		<Hungarian>Így van. De a rendíthetetlen hit sokkal fontosabb, mint a kard. Szükségünk van misszionáriusokra, akik hirdetik Isten szavát azoknak a pogányoknak, akikkel útközben találkozunk. Isten hatalmas keze meg fog védeni minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_3</Tag>
@@ -7251,6 +7256,7 @@
 		<Portuguese>Você está certo. Mas em vez de virem para este Novo Mundo para saquear e assassinar, eles esperam negociar com os habitantes desta bela terra. O lucro entusiasma os comerciantes. Contrate comerciantes.</Portuguese>
 		<German>Ihr habt Recht. Aber sie sind nicht in diese Neue Welt gekommen um zu plündern und zu morden. Sie wollen Handel mit den Bewohnern dieses schönen Landes treiben. Die Aussicht auf Profit wird die Händler begeistern. Heuert ein paar Händler an.</German>
 		<Russian>Мы пришли сюда не грабить и убивать, а преумножить наше состояние. Перспектива большой прибыли должна привлечь множество торговцев. Наймите кого-нибудь из них.</Russian>
+		<Hungarian>Rendben van. De ahelyett, hogy rabolni és gyilkolni jönnének ebbe az Újvilágba, inkább a kereskedelemre vágyakoznak. A profit izgatja a kereskedőket. Fogadjunk fel kereskedőket!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_4</Tag>
@@ -7258,10 +7264,11 @@
 		<Portuguese>Você está certo. Não espero resistência dos nativos. A curiosidade guiará sua natureza simples. Tudo o que nossos exploradores precisam fazer é recolher os tesouros ou persuadir os proprietários ignorantes a entregá-los para nós. O que precisamos é de uma carroça para transportar tesouros e suprimentos.</Portuguese>
 		<German>Ihr habt Recht. Aber ich erwarte keine Gegenwehr von den Ureinwohnern. Die Neugier wird diese einfachen Naturen leiten. Sie brauchen die Schätze nur aufzusammeln oder sie ihnen abzuschwatzen. Sie sollen einen Wagen mitnehmen, mit dem sie die Schätze und das Gepäck transportieren können.</German>
 		<Russian>Ну какие опасности? Посмотрите на этих милых дикарей - они словно любопытные дети. Все, что нам нужно сделать, это уговорить их расстаться со своими сокровищами, цену которым они даже не представляют. Нам нужна повозка, чтобы мы смогли собрать как можно больше подарков в деревнях индейцев.</Russian>
+		<Hungarian>Oké. Nem számítok ellenállásra az Indiánoktól. A kíváncsiság fogja vezérelni őket. A felfedezőinknek csak annyit kell tenniük, hogy összeszedik a kincseket, vagy rábeszélik a tudatlan indiánokat, hogy adják oda nekik. Szükségünk van egy szekérre, amivel elvihetjük a kincseket és az ellátmányt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_5</Tag>
-		<English>Well, the king will appreciate it if we show restraint and try it on our own.</English>
+		<English>Well, the King will appreciate it if we show restraint and try it on our own.</English>
 		<Portuguese>Bem, o rei apreciará se mostrarmos moderação e tentarmos por conta própria.</Portuguese>
 		<German>Nun, der König wird es zu schätzen wissen, wenn wir uns in Zurückhaltung üben und es auf eigene Faust versuchen.</German>
 		<Russian>Его Величество оценит по достоинству, если мы проявим выдержку и попробуем сделать это самостоятельно.</Russian>
@@ -7272,6 +7279,7 @@
 		<Portuguese>[ICON_BULLET]Conquistadores montados juntam-se à expedição.</Portuguese>
 		<German>[ICON_BULLET]Berittene Konquistadoren schließen sich der Expedition an.</German>
 		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Конные конкистадоры[COLOR_REVERT] присоединяются к нашей экспедиции.</Russian>
+		<Hungarian>[ICON_BULLET]Lovas Konkvisztádorok csatlakoznak az expedícióhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_MISSIONARY_HELP</Tag>
@@ -7279,6 +7287,7 @@
 		<Portuguese>[ICON_BULLET]Missionários juntam-se à expedição.</Portuguese>
 		<German>[ICON_BULLET]Missionare schließen sich der Expedition an.</German>
 		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Миссионеры[COLOR_REVERT] присоединяются к нашей экспедиции.</Russian>
+		<Hungarian>[ICON_BULLET]Misszionáriusok csatlakoznak az expedícióhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_SEASONED_TRADER_HELP</Tag>
@@ -7286,6 +7295,7 @@
 		<Portuguese>[ICON_BULLET]Um corajoso comerciante nativo se junta à expedição.</Portuguese>
 		<German>[ICON_BULLET]Couragierte Ureinwohnerhändler schließen sich der Expedition an.</German>
 		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Отважный торговец с индейцами[COLOR_REVERT] присоединяется к нашей экспедиции.</Russian>
+		<Hungarian>[ICON_BULLET]Egy bátor helyi kereskedő csatlakozik az expedícióhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_Oxcart_HELP</Tag>
@@ -7293,17 +7303,18 @@
 		<Portuguese>[ICON_BULLET]Um carro de boi se junta à expedição.</Portuguese>
 		<German>[ICON_BULLET]Ein Oxenkarren schließt sich der Expedition an.</German>
 		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]Воловья упряж[COLOR_REVERT] присоединяется к нашей экспедиции.</Russian>
+		<Hungarian>[ICON_BULLET]Egy ökrösszekér csatlakozik az expedícióhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_LEGENDARY_SCOUT</Tag>
-		<English>After many months in the untamed wilderness, one of your scouts has become a figure of rare skill and renown.</English>
+		<English>After many months in the untamed wilderness, one of your scouts has become renowned for wisdom and rare skill.</English>
 		<Portuguese>Depois de muitos meses na selva indomada, um de seus batedores tornou-se uma figura de rara habilidade e renome.</Portuguese>
 		<German>Nach vielen Monaten in der ungezähmten Wildnis ist einer Eurer Kundschafter zu einer Gestalt von seltener Kunst und großem Ruf geworden.</German>
 		<Russian>После многих месяцев, проведенных в дикой местности, один из ваших разведчиков стал человеком исключительного мастерства и приобрёл большую известность.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LEGENDARY_SCOUT</Tag>
-		<English>Far from hearth and settlement, your scout has learned to read the land, endure privation and move where lesser men would perish. His long wandering has made him a legend among your people.</English>
+		<English>Far from hearth and settlement, your scout can read the land, endure privation and travel where lesser men would perish. His far wandering makes him a legend among your people.</English>
 		<Portuguese>Longe do lar e das colônias, seu batedor aprendeu a ler a terra, suportar privações e se mudar para onde homens inferiores morreriam. Sua longa peregrinação fez dele uma lenda entre seu povo.</Portuguese>
 		<German>Fern von Herd und Siedlung hat Euer Kundschafter gelernt, das Land zu lesen, Entbehrung zu ertragen und sich dort zu bewegen, wo andere Männer zugrunde gingen. Sein langes Wandern hat ihn unter Eurem Volk zu einer Legende gemacht.</German>
 		<Russian>Вдали от европейских поселений ваш разведчик научился понимать местность, переносить лишения и выживать там, где менее выносливые люди погибли бы. Его долгие странствия сделали его легендой среди вашего народа.</Russian>
@@ -7317,7 +7328,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_LEGENDARY_SCOUT_XP_HELP</Tag>
-		<English>This scout has spent about %d1 turns in the wilderness outside your territory and has thereby become a Legendary Scout, gaining roughly 15 to 20 Experience.</English>
+		<English>This scout has spent about %d1 turns in the wilderness outside your territory and has thereby become a Legendary Scout, gaining 15 to 20 Experience.</English>
 		<Portuguese>Este batedor passou cerca de %d1 turnos na selva fora do seu território e, portanto, tornou-se um Batedor Lendário, ganhando cerca de 15 a 20 de Experiência.</Portuguese>
 		<German>Dieser Kundschafter hat etwa %d1 Runden in der Wildnis außerhalb Eures Territoriums verbracht und ist dadurch zu einem Legendären Kundschafter geworden. Er erhält dabei etwa 15 bis 20 Erfahrung.</German>
 		<Russian>Этот разведчик провел примерно %d1 ходов в дикой местности за пределами вашей территории и, таким образом, стал Легендарным разведчиком, получив примерно от 15 до 20 очков опыта.</Russian>
@@ -7338,7 +7349,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEGENDARY_SCOUT_HELP</Tag>
-		<English>This scout has spent a long time in the wilderness beyond the safety of your colonies, surviving hardship and mastering the land. His experience and reputation have become the stuff of legend.</English>
+		<English>This scout has lived a long time in the wilderness far from the safety of your colonies, surviving hardship and mastering the land. His reputation is now the stuff of legend.</English>
 		<Portuguese>Este batedor passou muito tempo na selva, além da segurança de suas colônias, sobrevivendo às adversidades e dominando a terra. Sua experiência e reputação se tornaram lendas.</Portuguese>
 		<German>Dieser Kundschafter hat lange Zeit in der Wildnis jenseits der Sicherheit Eurer Kolonien verbracht, Entbehrungen überstanden und das Land gemeistert. Seine Erfahrung und sein Ruf sind zur Legende geworden.</German>
 		<Russian>Этот разведчик долгое время провел в дикой местности за пределами безопасных ваших поселений, преодолевая трудности и осваивая местность. Его опыт и репутация стали легендой.</Russian>
@@ -7349,6 +7360,7 @@
 		<Portuguese>Uma expedição foi tomada por uma febre.</Portuguese>
 		<German>Eine Expedition wurde vom Fieber gepackt.</German>
 		<Russian>Экспедицию охватила лихорадка.</Russian>
+		<Hungarian>Az egyik expedíciót magas láz sújtja.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
@@ -7356,6 +7368,7 @@
 		<Portuguese>Milorde, a nossa expedição alcançou uma selva impenetrável. Os mosquitos zumbem em volta das cabeças dos homens e picam como pequenas flechas. Os pântanos aqui têm ar ruim, o que eles chamam de [COLOR_HIGHLIGHT_TEXT]febre do pântano[COLOR_REVERT]. Nossos homens e até mesmo os animais foram enfraquecidos. Precisamos de descanso frequente.</Portuguese>
 		<German>Milord, unsere Expedition hat sumpfigen, undurchdringlichen Urwald erreicht. Die Mücken schwirren nur so um die Köpfe der Männer herum und sie stechen wie Pfeile. Man nennt es wohl [COLOR_HIGHLIGHT_TEXT]Sumpffieber[COLOR_REVERT]. Die Männer und sogar die Tiere sind geschwächt und müssen sich eine Weile ausruhen.</German>
 		<Russian>Милорд, наша экспедиция достигла непроходимых, болотистых джунглей. Тучи комаров жужжат над головами людей и жалят, как стрелы. Люди и даже животные ослаблены, а у некоторых сильный жар. Кажется, это называется малярией. Нам всем нужен отдых.</Russian>
+		<Hungarian>Uram, expedíciónk elért egy áthatolhatatlan dzsungelt. A moszkitók az emberek feje körül zümmögnek és apró nyilakként csípnek. A mocsarakban rossz a levegő, amit az olaszok [COLOR_HIGHLIGHT_TEXT]maláriának[COLOR_REVERT] neveznek. Embereink és még az állatok is legyengültek. Gyakran meg kell pihennünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FEVER</Tag>
@@ -7363,6 +7376,7 @@
 		<Portuguese>Bem, não temos escolha. Monte um acampamento improvisado e tente conseguir água fresca e frutas para os homens. Isso é tudo que podemos fazer no momento.</Portuguese>
 		 <German>Nun gut, wir haben keine Wahl. Errichtet ein provisorisches Lager und versucht den Männern frisches Wasser und ein paar Früchte zu beschaffen. Mehr können wir derzeit nicht unternehmen.</German>
 		<Russian>Что ж, у нас нет выбора. Разбейте временный лагерь и выдайте всем по двойной порции рома. Тем, у кого жар, дайте порошок из коры, что подарили нам индейцы. Это все, что мы можем для них сейчас сделать.</Russian>
+		<Hungarian>Nos, nincs más választásunk. Állítsunk fel egy ideiglenes tábort és próbáljunk friss vizet és gyümölcsöt szerezni az embereknek. Jelenleg csak ennyit tehetünk.</Hungarian>
 	</TEXT>
 	 <TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_FEVER_RESULT</Tag>
@@ -7398,20 +7412,23 @@
 		<Portuguese>Uma expedição atravessa um deserto.</Portuguese>
 		<German>Eine Expedition durchquert eine Wüste.</German>
 		<Russian>Экспедиция пересекает пустыню.</Russian>
+		<Hungarian>Egy expedíció átkel a sivatagon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
-		<English>Milord, our expedition has ventured deep into the barren wastes. The scorching sun, endless dunes, and lack of water are taking a heavy toll on the men. The expedition is making slow progress and the animals need to rest.</English>
+		<English>Milord, our expedition is now deep into the barren wastes. Scorching sun, endless dunes, and lack of water are taking a heavy toll on the men. The expedition is making slow progress. The animals need to rest.</English>
 		<Portuguese>Milorde, nossa expedição se aventurou profundamente nas terras áridas. O sol escaldante, as dunas intermináveis e a falta de água estão afetando fortemente os homens. A expedição avança lentamente e os animais precisam descansar.</Portuguese>
 		<German>Milord, unsere Expedition ist tief in die kargen Ödlande vorgedrungen. Die sengende Sonne, endlose Dünen und [COLOR_HIGHLIGHT_TEXT]Wassermangel [COLOR_REVERT]fordern ihren Tribut von den Männern und die Tiere müssen geschont werden.</German>
 		<Russian>Милорд, наша экспедиция углубилась в бесплодные пустоши. Палящее солнце, бескрайние дюны и нехватка воды сильно истощают силы. Нам нужно поберечь животных и сбавить темп.</Russian>
+		<Hungarian>Uram, expedíciónk elért egy sivatagot. Csak kevés vizünk van, amelynek nagy részét az állatoknak kell adnunk. Az expedíció lassan halad előre.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_DESERT</Tag>
-		<English>Well, we have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out across the area and look for a [COLOR_HIGHLIGHT_TEXT]watering hole[COLOR_REVERT].</English>
+		<English>We have no choice. Drink as little as possible and give the rest to the horses. We're lost without them. Spread out across the area and look for a [COLOR_HIGHLIGHT_TEXT]watering hole[COLOR_REVERT].</English>
 		<Portuguese>Bem, não temos escolha. Beba o mínimo possível e dê o resto aos cavalos. Estamos perdidos sem eles. Espalhe-se pela área e procure por um [COLOR_HIGHLIGHT_TEXT]poço de água[COLOR_REVERT].</Portuguese>
 		 <German>Nun gut, wir haben keine Wahl. Trinkt so wenig wie möglich und gebt den Rest den Pferden. Ohne sie sind wir verloren. Schwärmt aus und sucht nach einer [COLOR_HIGHLIGHT_TEXT]Wasserstelle[COLOR_REVERT].</German>
 		<Russian>Что ж, у нас нет выбора. Пейте как можно меньше, а остальное отдайте лошадям. Без них мы пропадём. И отправьте разведчиков на поиски водоёма.</Russian>
+		<Hungarian>Nos, nincs más választásunk. Igyunk minél kevesebbet és a többit adjuk a lovaknak. Nélkülük végünk van. Szóródjunk szét a környéken és keressünk egy [COLOR_HIGHLIGHT_TEXT]víznyelőt[COLOR_REVERT]!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_DESERT_HELP</Tag>
@@ -7429,10 +7446,11 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACKED</Tag>
-		<English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition has been attacked and murdered by hostile Natives.</English>
+		<English>There's a rumour that a [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedition has been attacked and slaughtered by hostile Natives.</English>
 		<Portuguese>Há um boato de que uma expedição [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] foi atacada e assassinada por nativos hostis.</Portuguese>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition wurde von Ureinwohnern angegriffen und abgeschlachtet.</German>
 		<Russian>Ходят слухи, что экспедиция [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] подверглась нападению враждебно настроенных туземцев.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedíciót állítólag ellenséges Indiánok támadtak és gyilkoltak meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACKED_1</Tag>
@@ -7440,6 +7458,7 @@
 		<Portuguese>Milorde, nossa expedição está sendo [COLOR_HIGHLIGHT_TEXT]emboscada[COLOR_REVERT] por nativos hostis! Por todo este vasto e novo continente eles nos atacam onde quer que procuremos acampamentos.</Portuguese>
 		<German>Milord, unsere Epedition wurde auf dem Weg durch diesen riesigen neuen Kontinent auf der Suche nach einem Lagerplatz aus dem [COLOR_HIGHLIGHT_TEXT]Hinterhalt[COLOR_REVERT] von Wilden angegriffen!</German>
 		<Russian>Милорд, наша экспедиция попала в засаду враждебно настроенных индейцев!</Russian>
+		<Hungarian>Uram, expedíciónkon ellenséges indiánok [COLOR_HIGHLIGHT_TEXT]ütöttek rajta[COLOR_REVERT]! Ezen a hatalmas új kontinensen mindenhol megtámadnak minket, ahol táborhelyet keresünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACKED_1</Tag>
@@ -7447,10 +7466,11 @@
 		<Portuguese>Pelo amor de Deus! Que país sem Deus é este!</Portuguese>
 		<German>Um Himmels willen! Was ist das nur für ein gottloses Land!</German>
 		<Russian>Господь всемогущий! Помоги своим праведным детям!</Russian>
+		<Hungarian>Az ég szerelmére! Micsoda istentelen ország ez!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACKED_HELP</Tag>
-		<English>Hostile Natives attack the expedition from ambush.</English>
+		<English>From ambush hostile Natives attack the expedition.</English>
 		<Portuguese>Nativos hostis atacam a expedição em uma emboscada.</Portuguese>
 		<German>Feindliche Ureinwohner greifen die Expedition aus dem Hinterhalt an.</German>
 		<Russian>Враждебно настроенные индейцы нападают на экспедицию из засады.</Russian>
@@ -7461,6 +7481,7 @@
 		<Portuguese>Um boato está se espalhando: uma coluna de tesouro [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] foi atacada por um bando itinerante. Os milicianos podem defendê-lo?</Portuguese>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Schatzkolonne wurde von einer vagabundierenden Bande angegriffen. Ob die Miliz ihn verteidigen kann?</German>
 		<Russian>Ходят слухи, что обоз с сокровищами, принадлежащий [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], подвергся нападению бродячей банды. Смогли ли ополченцы защитить его?</Russian>
+		<Hungarian>Egy pletyka terjed: egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kincses menetoszlopot megtámadott egy vándorló banda. Meg tudják védeni a nemzetőrök?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
@@ -7468,6 +7489,7 @@
 		<Portuguese>Atraídos pela promessa de lucros ricos, um bando de bandidos atacou uma [COLOR_HIGHLIGHT_TEXT]coluna do tesouro[COLOR_REVERT]. Eles estão famintos e desesperados - e por isso querem o nosso ouro - a menos que os detenhamos!</Portuguese>
 		<German>Angelockt von den Aussichten auf reiche Beute hat eine Bande umherstreifender Abenteurer eine [COLOR_HIGHLIGHT_TEXT]Schatzkolonne[COLOR_REVERT] angegriffen. Die Banditen sind arm und es fehlt ihnen an allem - und daher wollen sie unser Gold - wenn wir es nicht verhindern können!</German>
 		<Russian>Соблазненная перспективой богатой добычи, группа искателей приключений напала на [COLOR_HIGHLIGHT_TEXT]обоз с сокровищами[COLOR_REVERT]. У этих нищих бродяг за душой ни гроша и поэтому они ни перед чем не остановятся, чтобы заполучить наше золото, если мы не остановим их!</Russian>
+		<Hungarian>A gazdag zsákmány ígéretének csábítására egy bandita csoport megtámadta a [COLOR_HIGHLIGHT_TEXT]kincses menetoszlopot[COLOR_REVERT]. Éheznek és kétségbeesettek – ezért akarják az aranyunkat – hacsak nem állítjuk meg őket!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
@@ -7475,13 +7497,15 @@
 		<Portuguese>Não vamos desistir sem lutar!</Portuguese>
 		<German>Wir werden den Schatz beschützen!</German>
 		<Russian>Мы ни за что не сдадимся без боя!</Russian>
+		<Hungarian>Nem adjuk fel harc nélkül!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_ATTACK_TREASURE_2</Tag>
-		<English>Let them take a share without a fight. Maybe they'll let us keep the rest!</English>
+		<English>They can have a share without a fight. Maybe they'll let us keep the rest!</English>
 		<Portuguese>Deixe-os participar sem lutar. Talvez eles nos deixem ficar com o resto!</Portuguese>
 		<German>Gebt ihnen kampflos einen Anteil, dann lassen Sie uns vielleicht mit dem Rest weiterziehen!</German>
 		<Russian>Давайте дадим этим бедолагам небольшую часть сокровищ и будем надеяться, что они позволят нам уйти с оставшимися.</Russian>
+		<Hungarian>Hadd vigyék el a részüket harc nélkül. Talán megengedik, hogy megtartsuk a többit!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_TREASURE_ATTACK_HELP</Tag>
@@ -7489,6 +7513,7 @@
 		<Portuguese>Um bando de aventureiros itinerantes ataca a coluna do tesouro. Alguns bravos cocheiros e guardas o defendem.</Portuguese>
 		<German>Eine Bande umherstreifender Abenteurer greift die Schatzkolonne an. Ein paar mutige Wagenlenker und Wachen verteidigen ihn.</German>
 		<Russian>Группа бродячих искателей приключений нападает на обоз с сокровищами. Его защищают несколько храбрых ополченцев и охранников.</Russian>
+		<Hungarian>Egy csapat vándorló kalandor támadja meg a kincses menetoszlopot. Néhány bátor nemzetőr és védi meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_MUTINY</Tag>
@@ -7496,6 +7521,7 @@
 		<Portuguese>Ouvimos dizer que os amotinados encerraram a expedição [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Portuguese>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Expedition wird durch eine Meuterei aufgehalten.</German>
 		<Russian>Ходят слухи, что в экспедиции [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] назревает мятеж.</Russian>
+		<Hungarian>Hallottuk, hogy a lázadók véget vetettek egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] expedíciónak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_MUTINY</Tag>
@@ -7503,6 +7529,7 @@
 		<Portuguese>Milorde, os nossos homens estão exaustos e a sua disciplina está vacilante. Eles suportaram longas dificuldades e agora estão à beira de um motim.</Portuguese>
 		<German>Milord, unsere Männer sind erschöpft und ihre Disziplin beginnt zu wanken. Sie haben lange Entbehrungen ertragen und stehen nun am Rande der Meuterei.</German>
 		<Russian>Милорд, среди разведчиков ходят слухи, что вы не желаете делиться будущей добычей. Некоторые открыто предлагают забрать то, что уже было найдено. Назревает мятеж!</Russian>
+		<Hungarian>Uram, embereink kezdenek megőrülni. Kimerültek.  Napok óta nem imádkoztak. A lázadás szélén állnak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_1</Tag>
@@ -7510,6 +7537,7 @@
 		<Portuguese>Droga, o diabo os leve. E o diabo sou eu. Chame às armas!</Portuguese>
 		<German>Verdammt noch mal, der Teufel soll sie holen. Und der Teufel bin ich. Zu den Waffen!</German>
 		<Russian>Дьявол их побери, устроим им показательную порку! К оружию!</Russian>
+		<Hungarian>A fenébe, az ördög vigye el őket! És ez az ördög én vagyok. Fegyverbe!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_2</Tag>
@@ -7517,6 +7545,7 @@
 		<Portuguese>Dificilmente posso culpá-los. Os homens já sofreram o suficiente. Pague-lhes seus salários imediatamente e restaure a ordem antes que o pior nos aconteça.</Portuguese>
 		<German>Ich kann es ihnen kaum verdenken. Die Männer haben genug gelitten. Zahlt ihnen unverzüglich ihren Sold und stellt die Ordnung wieder her, ehe uns Schlimmeres widerfährt.</German>
 		<Russian>Я едва ли могу их винить. Люди и так достаточно настрадались. Немедленно выплатите им жалование и восстановите порядок, прежде чем нас постигнет худшее.</Russian>
+		<Hungarian>Nos, megértem. Sokan közülük csak a zsákmány miatt vannak itt. A természet szépsége? Nem érdekli őket. Kifizetjük a bérüket. Meglátjuk, hogy ez megnyugtatja-e őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_HELP_FIGHT</Tag>
@@ -7524,6 +7553,7 @@
 		<Portuguese>[ICON_BULLET]Alguns de nossos homens [COLOR_HIGHLIGHT_TEXT]se amotinarão[COLOR_REVERT] e lutarão contra nós! A unidade não poderá se mover por um turno.</Portuguese>
 		<German>[ICON_BULLET]Einige unserer Männer werden [COLOR_HIGHLIGHT_TEXT]meutern[COLOR_REVERT] und gegen uns kämpfen! Die Einheit ist eine Runde lang unbeweglich.</German>
 		<Russian>[ICON_BULLET]Некоторые из наших людей взбунтуются и будут сражаться против нас!</Russian>
+		<Hungarian>[ICON_BULLET]Néhány emberünk [COLOR_HIGHLIGHT_TEXT]lázadni fog[COLOR_REVERT] és ellenünk fordul!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_MUTINY_HELP_PAY</Tag>
@@ -7538,6 +7568,7 @@
 		<Portuguese>Sua expedição entrou em uma aldeia indígena. Os nativos ficam emocionados com suas estranhas vestimentas e com as histórias das aventuras que vivenciaram. Alguns guerreiros querem se juntar à sua expedição. O que você faria?</Portuguese>
 		<German>Euere Expedition hat ein Dorf der Ureinwohner betreten. Die Ureinwohner sind begeistert von Euren fremdartigen Gewändern und Geschichten von den erlebten Abenteuern. Einige Krieger wollen sich Euch anschließen. Was wollt Ihr tun?</German>
 		<Russian>Ваша экспедиция вошла в деревню индейцев. Туземцы в восторге от странных одежд и рассказов о приключениях, которые пережили их гости. Некоторые воины жаждут приключений и хотят присоединиться к экспедиции. Как нам поступить?</Russian>
+		<Hungarian>Az expedíciód egy Indián faluba érkezett. Az indiánok izgatottan figyelik furcsa ruháidat és kalandjaidról szóló történeteidet. Néhány harcos csatlakozni szeretne az expedíciódhoz. Mit teszel?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1</Tag>
@@ -7545,6 +7576,7 @@
 		<Portuguese>Aceitaremos os guerreiros em nossas fileiras. Podemos fazer bom uso deles. Dê-lhes algumas de nossas roupas distintas como símbolo de amizade.</Portuguese>
 		<German>Wir werden die Krieger in unsere Reihen aufnehmen. Wir können sie gut gebrauchen. Gebt Ihnen einige unserer Kleider als Zeichen der Freundschaft.</German>
 		<Russian>Мы примем их в наши ряды. Думаю, они могут нам пригодится. Подарите индейцам что-нибудь из нашей одежды в знак дружбы.</Russian>
+		<Hungarian>Befogadjuk a harcosokat a sorainkba. Hasznosak lehetnek számunkra. Adjunk nekik néhány jellegzetes ruhadarabot a barátság jelképeként.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_1_News</Tag>
@@ -7552,6 +7584,7 @@
 		<Portuguese>Alguns guerreiros se juntaram à sua expedição.</Portuguese>
 		<German>Einige Krieger haben sich Eurer expedition angeschlossen.</German>
 		<Russian>Несколько индейцев присоединились к вашей экспедиции, организовав еще один отряд разведчиков.</Russian>
+		<Hungarian>Néhány harcos csatlakozott az expedícióhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_HELP_1</Tag>
@@ -7594,6 +7627,7 @@
 		<Portuguese>Diga-lhes que a oferta nos honra, mas é melhor que fiquem em casa e protejam a aldeia. Eles podem nos ajudar com conselhos sobre esta área?</Portuguese>
 		<German>Sagt Ihnen das Angebot ehrt uns, aber sie sollten lieber zuhause bleiben und ihr Dorf beschützen. Vielleicht können sie uns aber etwas hilfreiches über die Gegend hier berichten?</German>
 		<Russian>Скажите вождю, что мы высоко ценим их предложение, но воинам лучше остаться дома и защищать свою деревню. Но, может быть, они смогут рассказать нам что-нибудь полезное об окружающей местности?</Russian>
+		<Hungarian>Mondjuk meg nekik, hogy az ajánlat megtisztelő számunkra, de jobb, ha otthon maradnak és megvédik a falujukat. Tudnak erről a területről információval segíteni nekünk?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3_News</Tag>
@@ -7601,6 +7635,7 @@
 		<Portuguese>Uma expedição faz amizade com nativos locais.</Portuguese>
 		<German>Eine Expedition freundet sich mit einigen Ureinwohnern an.</German>
 		<Russian>Экспедиция заводит дружбу с индейцами.</Russian>
+		<Hungarian>Egy expedíció barátságot kötött a helyi Indiánokkal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_HELP_3</Tag>
