@@ -14132,7 +14132,7 @@
 		<German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] unterlag im Kampf gegen eine feindliche Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Möge der Herr ihren Seelen gnädig sein.</German>
 		<Italian>La tua unità di %s1_UnitName è [NUM1:morto:morta] attaccando %s2_EnUName!</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] muerto intentando atacar a [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
-		<Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был побежден вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]. Упокой Господь их души...</Russian>
+		<Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был побежден вражеским [COLOR_SELECTED_TEXT]%s2_EnUName[COLOR_REVERT]. Упокой Господь их души...</Russian>
 		<Hungarian>[COLOR_WARNING_TEXT]Vereség, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed vereséget szenvedett csatában egy ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] egységtől. Az Úr legyen irgalmas a lelkükhöz.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14143,7 +14143,7 @@
 		<German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat sich erfolgreich gegen feindliche %s3_owner_adjective [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] gewehrt. Wacker gekämpft!</German>
 		<Italian>Difendendo, la tua unità %s1_UnitName ha ucciso l'unità nemica %s2_EnUName (%s3_owner_adjective)!</Italian>
 		<Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha:ha:han:han] acabado con [NUM2:un:una:unos:unas] %s2_EnUName (%s3_owner_adjective).</Spanish>
-		<Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] успешно отбился от [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT]. Славная была битва!</Russian>
+		<Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] успешно отбился от [COLOR_SELECTED_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT]. Славная была битва!</Russian>
 		<Hungarian>[COLOR_POSITIVE_TEXT]Győzelem, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed sikeresen megküzdött az ellenséges [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] egységgel. Bátran harcolt!</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14154,7 +14154,7 @@
 		<German>[COLOR_POSITIVE_TEXT]Sieg, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat eine feindliche Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] besiegt!</German>
 		<Italian>La tua unità %s1_UnitName ha distrutto l'unità nemica %s2_EnUName!</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName [NUM1:ha:ha:han:han] destruido [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
-		<Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] победил вражеского [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]!</Russian>
+		<Russian>[COLOR_POSITIVE_TEXT]Победа, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] победил вражеского [COLOR_SELECTED_TEXT]%s2_EnUName[COLOR_REVERT]!</Russian>
 		<Hungarian>[COLOR_POSITIVE_TEXT]Győzelem, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed legyőzte az ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] egységet!</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14165,7 +14165,7 @@
 		<German>[COLOR_WARNING_TEXT]Niederlage, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] wurde von einer [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] angegriffen und vernichtet.</German>
 		<Italian>Difendendo, la tua unità %s1_UnitName è stata distrutta dall'unità nemica %s2_EnUName (%s3_owner_adjective)!</Italian>
 		<Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] por [NUM2:un:una:unos:unas] %s2_EnUName (%s3_owner_adjective).</Spanish>
-		<Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был атакован и уничтожен [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT].</Russian>
+		<Russian>[COLOR_WARNING_TEXT]Поражение, Милорд! [COLOR_REVERT]Наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был атакован и уничтожен [COLOR_SELECTED_TEXT]%s2_EnUName[COLOR_REVERT] [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT].</Russian>
 		<Hungarian>[COLOR_WARNING_TEXT]Vereség, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységedet megtámadta és legyőzte egy [COLOR_HIGHLIGHT_TEXT]%s3_owner_adjective[COLOR_REVERT] [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14176,7 +14176,7 @@
 		<German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] wurde von einer feindlichen Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] angegriffen und bei der Verteidigung vernichtet!</German>
 		<Italian>Difendendo, la tua unità %s1_UnitName è stata distrutta dall'unità nemica %s2_EnUName!</Italian>
 		<Spanish>Mientras se [NUM1:defendía:defendía:defendían:defendían], [NUM1:vuestro:vuestra:vuestros:vuestras] %s1_UnitName [NUM1:ha sido destruido:ha sido destruida:han sido destruidos:han sido destruidas] por [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
-		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Наш оборонявшийся [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был уничтожен вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT]!</Russian>
+		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Наш оборонявшийся [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] был уничтожен вражеским [COLOR_SELECTED_TEXT]%s2_EnUName[COLOR_REVERT]!</Russian>
 		<Hungarian>[COLOR_WARNING_TEXT]Rossz hírek, Uram! [COLOR_REVERT]Védekezés közben [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységedet egy ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] megsemmisítette!</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14187,7 +14187,7 @@
 		<German>[COLOR_WARNING_TEXT]Schlechte Nachrichten, Milord! [COLOR_REVERT]Eure Einheit [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] hat im Kampf gegen eine feindliche Einheit [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] sicherheitshalber den Rückzug angetreten.</German>
 		<Italian>La tua unità %s1_UnitName si è ritirata dal combattimento contro l'unità nemica %s2_EnUName!</Italian>
 		<Spanish>[NUM1:Vuestro:Vuestra:Vuestros:Vuestras] %s1_UnitName se [NUM1:ha:ha:han:han] retirado del combate contra [NUM2:un:una:unos:unas] %s2_EnUName.</Spanish>
-		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Чтобы не быть уничтоженым, наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] вышел из боя с вражеским [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT].</Russian>
+		<Russian>[COLOR_WARNING_TEXT]Плохие новости, Милорд! [COLOR_REVERT]Чтобы не быть уничтоженым, наш [COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] вышел из боя с вражеским [COLOR_SELECTED_TEXT]%s2_EnUName[COLOR_REVERT].</Russian>
 		<Hungarian>[COLOR_WARNING_TEXT]Rossz hírek, Uram! [COLOR_REVERT][COLOR_UNIT_TEXT]%s1_UnitName[COLOR_REVERT] egységed a biztonság kedvéért visszavonult az ellenséges [COLOR_WARNING_TEXT]%s2_EnUName[COLOR_REVERT] ellen folytatott harcból.</Hungarian>
 	</TEXT>
 	<TEXT>
@@ -14198,7 +14198,7 @@
 		<German>[COLOR_POSITIVE_TEXT]Frohe Kunde, Milord! [COLOR_REVERT]Eine feindliche Einheit [COLOR_WARNING_TEXT]%s1_EnUName[COLOR_REVERT] hat im Kampf gegen Eure Einheit [COLOR_UNIT_TEXT]%s2_UnitName[COLOR_REVERT] den Rückzug angetreten. Welch feige Hasenfüße!</German>
 		<Italian>L'unità nemica %s1_EnUName si è ritirata dal combattimento contro l'unità nemica %s2_UnitName!</Italian>
 		<Spanish>[NUM1:Un:Una:Unos:Unas] %s1_EnUName se [NUM1:ha:ha:han:han] retirado del combate contra [NUM2:vuestro:vuestra:vuestros:vuestras] %s2_UnitName.</Spanish>
-		<Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Вражеский [COLOR_WARNING_TEXT]%s1_EnUName[COLOR_REVERT] вышел из боя с нашим [COLOR_UNIT_TEXT]%s2_UnitName[COLOR_REVERT]. Они бежали, как трусливые зайцы!</Russian>
+		<Russian>[COLOR_POSITIVE_TEXT]Хорошие новости, Милорд! [COLOR_REVERT]Вражеский [COLOR_SELECTED_TEXT]%s1_EnUName[COLOR_REVERT] вышел из боя с нашим [COLOR_UNIT_TEXT]%s2_UnitName[COLOR_REVERT]. Они бежали, как трусливые зайцы!</Russian>
 		<Hungarian>[COLOR_WARNING_TEXT]Jó hírek, Uram! [COLOR_REVERT]Egy ellenséges [COLOR_WARNING_TEXT]%s1_EnUName[COLOR_REVERT] visszavonult a bátor [COLOR_UNIT_TEXT]%s2_UnitName[COLOR_REVERT] elleni harcból. Úgy futott, mint a nyúl!</Hungarian>
 	</TEXT>
 	<TEXT>
