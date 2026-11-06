@@ -7657,6 +7657,7 @@
 		<Portuguese>Um comerciante nativo fracassado encontrou o caminho de volta à civilização vindo do deserto.</Portuguese>
 		<German>Ein gescheiterter Ureinwohnerhändler hat aus der Wildnis zurück in die Zivilisation gefunden.</German>
 		<Russian>Неудачливый торговец с индейцами нашел путь обратно к цивилизации из дикой местности.</Russian>
+		<Hungarian>Egy bukott Indián kereskedő visszatalált a civilizációba a vadonból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
@@ -7664,13 +7665,15 @@
 		<Portuguese>Milord, um [COLOR_HIGHLIGHT_TEXT]comerciante nativo fracassado[COLOR_REVERT] retornou recentemente do deserto para nossas colônias. Que bênção! Mesmo assim, agora que está recuperado, está ansioso para voltar para o meio dos nativos. Negociar deve estar em seu sangue.</Portuguese>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Ureinwohnerhändler[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Handel liegt ihm einfach im Blut.</German>
 		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый торговец с индейцами[COLOR_REVERT] вернулся из пустошей в колонию. Какое счастье. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам. Он не может жить без торговли, она у него в крови.</Russian>
+		<Hungarian>Uram, egy [COLOR_HIGHLIGHT_TEXT]bukott Indián kereskedő[COLOR_REVERT] nemrég tért vissza a vadonból a gyarmatainkra. Micsoda áldás! Ennek ellenére, most, hogy felépült, alig várja, hogy visszatérhessen az Indianok közé. A kereskedés minden bizonnyal a vérében van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER_1</Tag>
-		<English>Excellent, that makes me happy. Let's equip him with new goods and then send him off again. Hopefully he'll be more successful this time.</English>
+		<English>Excellent, that makes me happy. Let's supply him with new goods and send him off again. Hopefully he'll be more successful this time.</English>
 		<Portuguese>Excelente, isso me deixa feliz. Vamos equipá-lo com novos produtos e depois mandá-lo embora novamente. Esperamos que ele tenha mais sucesso desta vez.</Portuguese>
 		<German>Hervorragend, das freut mich. Statten wir ihn mit neuen Waren aus und senden ihn dann wieder los. Hoffentlich ist der dieses Mal erfolgreicher.</German>
 		<Russian>Превосходно, это меня радует. Давайте снабдим его новыми товарами и снова отправим к индейцам. Надеюсь, в этот раз он добьётся большего успеха.</Russian>
+		<Hungarian>Kiváló, ez örömet okoz nekem. Lássuk el új áruval és küldjük el újra! Remélhetőleg ezúttal sikeresebb lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER_2</Tag>
@@ -7678,6 +7681,7 @@
 		<Portuguese>Isso é inútil. Não deveríamos desperdiçar dinheiro com isso. Coloque-o em algum lugar da colônia.</Portuguese>
 		<German>Das ist doch sinnlos. Dafür sollten wir kein Geld verschwenden. Bringt ihn irgendwo in der Kolonie unter.</German>
 		<Russian>Что за вздор?! Прошлого раза ему было недостаточно? Дайте ему какую-нибудь работу в колонии.</Russian>
+		<Hungarian>Felesleges. Nem szabad erre pénzt pazarolnunk. Helyezzük el valahol a településen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FAILED_TRADER_CHANGE_HELP</Tag>
@@ -7706,6 +7710,7 @@
 		<Portuguese>Um missionário fracassado encontrou o caminho de volta à civilização vindo do deserto.</Portuguese>
 		<German>Ein gescheiterter Missionar hat aus der Wildnis zurück in die Zivilisation gefunden.</German>
 		<Russian>Неудачливый миссионер нашел путь обратно к цивилизации из дикой местности.</Russian>
+		<Hungarian>Egy bukott misszionárius visszatalált a civilizációba a vadonból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
@@ -7713,6 +7718,7 @@
 		<Portuguese>Milord, um [COLOR_HIGHLIGHT_TEXT]missionário fracassado[COLOR_REVERT] recentemente voltou do deserto. Que bênção! Agora ele está recuperado e quer voltar para os Nativos. Pregar a palavra de Deus deve estar em seu sangue.</Portuguese>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Missionar[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Das Wort Gottes zu verkünden liegt ihm einfach im Blut.</German>
 		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый миссионер[COLOR_REVERT] вернулся из пустошей в колонию. Господь был милостив к нему. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам и с новыми силами нести Слово Божье заблудшим душам.</Russian>
+		<Hungarian>Uram, egy [COLOR_HIGHLIGHT_TEXT]bukott misszionárius[COLOR_REVERT] nemrég tért vissza a vadonból. Micsoda áldás! Most már felépült és vissza akar térni az Indiánokhoz. Isten igéjének hirdetése minden bizonnyal a vérében van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY_1</Tag>
@@ -7720,6 +7726,7 @@
 		<Portuguese>Excelente, isso me deixa feliz. Vamos equipá-lo com roupas e suprimentos novos e depois mandá-lo embora novamente. Esperamos que ele tenha mais sucesso desta vez.</Portuguese>
 		<German>Hervorragend, das freut mich. Statten wir ihn mit neuen Gewändern und Vorräten aus und senden ihn dann wieder los. Hoffentlich ist der dieses Mal erfolgreicher.</German>
 		<Russian>Господь да укрепит дух его. Помогите ему с провиантом и одеждой. Надеюсь, в этот раз он встретит более дружелюбных индейцев.</Russian>
+		<Hungarian>Kiváló, ez örömet okoz nekem. Adjunk neki új ruhákat és felszerelést, majd küldjük el újra! Remélhetőleg ezúttal sikeresebb lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY_2</Tag>
@@ -7727,6 +7734,7 @@
 		<Portuguese>Isso é inútil. Não deveríamos desperdiçar dinheiro com isso. Coloque-o em algum lugar da colônia.</Portuguese>
 		<German>Das ist doch sinnlos. Dafür sollten wir kein Geld verschwenden. Bringt ihn irgendwo in der Kolonie unter.</German>
 		<Russian>Ни в коем случае! Такому набожному человеку не место среди дикарей. Найдите ему работу в колонии.</Russian>
+		<Hungarian>Felesleges. Ne pazaroljunk erre pénzt! Helyezzük el valahol a kolónián.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FAILED_MISSIONARY_CHANGE_HELP</Tag>
@@ -7734,6 +7742,7 @@
 		<Portuguese>[ICON_BULLET]Um missionário fracassado se torna um missionário cristão novamente.[NEWLINE]Sua experiência e [COLOR_POSITIVE_TEXT]promoções serão retidas.[COLOR_REVERT] A chance deste evento ocorrer novamente é [COLOR_NEGATIVE_TEXT]significativamente reduzida nos próximos %D1 turnos.[COLOR_REVERT]</Portuguese>
 		<German>[ICON_BULLET]Ein gescheiterter Missionar wird wieder zu einem erfahrenen Missionar.[NEWLINE]Seine Erfahrung und seine Beförderungen bleiben [COLOR_POSITIVE_TEXT]erhalten.[COLOR_REVERT] Die Wahrscheinlichkeit, dass dieses Ereignis erneut eintritt, ist [COLOR_NEGATIVE_TEXT]für die nächsten %D1 Runden deutlich verringert.[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Разочаровавшийся миссионер снова становится христианским миссионером.[NEWLINE]Его опыт и повышения будут сохранены.</Russian>
+		<Hungarian>[ICON_BULLET]Egy bukott misszionárius újra Keresztény misszionárius lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FAILED_MISSIONARY_CHANGE_DECLINE_HELP</Tag>
@@ -7748,13 +7757,15 @@
 		<Portuguese>Notícias perturbam o público</Portuguese>
 		<German>Nachrichten stacheln die Bevölkerung auf.</German>
 		<Russian>Новости тревожат общественность</Russian>
+		<Hungarian>A hírek nyugtalanítják a lakosságot</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
-		<English>Milord, newspapers are rolling off the printing presses in more and more cities. More than a few have seditious horror stories about the King. The Crown demands that we intervene!</English>
+		<English>Milord, newspapers are rolling off the printing presses in more and more cities. More than a few have seditious criticisms of the King. The Crown demands that we intervene!</English>
 		<Portuguese>Milorde, os jornais estão saindo das impressoras em cada vez mais cidades. Muitos contam histórias de terror sediciosas sobre o rei. A Coroa exige que intervenhamos!</Portuguese>
 		<German>Milord, in immer mehr Städten eröffnen Zeitungen und Druckerpressen. Darunter mischen sich aber auch immer mehr aufrührerische Schriften, die wahre Schauermärchen über den König verbreiten. Die Krone verlangt, dass wir einschreiten!</German>
 		<Russian>Милорд, во все большем количестве городов открываются печатные станки и типографии. Прекрасно, не правда ли? Однако все чаще среди публикуемого стали встречаться статьи, распространяющие ужасные истории о нашем Короле. Корона требует, чтобы мы вмешались!</Russian>
+		<Hungarian>Uram, egyre több városban jelennek meg újságok. Nem kevés közülük felforgató, rémisztő történeteket közöl a Királyról. A Korona beavatkozást követel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_1</Tag>
@@ -7762,6 +7773,7 @@
 		<Portuguese>Apoiamos a revolução. Os rabiscadores podem fazer o que querem. Deixe-os agitar um pouco o ar.</Portuguese>
 		<German>Wir unterstützen die Revolution. Lasst die Schreiberlinge gewähren. Sollen sie die Stimmung ruhig ein wenig anheizen.</German>
 		<Russian>К чёрту короля с его запретами - не препятствовать выпуску этих статей. Нашему обществу давно пора проснуться.</Russian>
+		<Hungarian>Támogatjuk a forradalmat. Az írók tegyenek, amit akarnak. Hadd kavarják fel egy kicsit a levegőt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_2</Tag>
@@ -7769,6 +7781,7 @@
 		<Portuguese>Excelente! É isso que as pessoas gostam de ler. Mas não devemos mostrar o nosso apoio de forma muito clara – ainda não.</Portuguese>
 		<German>Hervorragend, sowas lesen die Leute eben gerne. Aber zeigen wir unsere Unterstützung mal lieber nicht zu deutlich - noch nicht.</German>
 		<Russian>Отлично, люди любят читать такие новости. Но давайте не будем слишком явно демонстрировать нашу поддержку – пока.</Russian>
+		<Hungarian>Kiváló! Az emberek szeretik ezt olvasni. De még nem szabad túl egyértelműen kimutatnunk a támogatásunkat – még nem.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_3</Tag>
@@ -7776,6 +7789,7 @@
 		<Portuguese>Isso é alta traição! Viva o Rei! Alinhe a milícia! Precisamos manter a ordem! Prender os líderes e restringir os jornais a notícias locais não políticas.</Portuguese>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und sorgen dafür, dass die Zeitungen nur noch unpolitische Lokalnachrichten drucken. Mobilisiert die Miliz!</German>
 		<Russian>Это же государственная измена! Да здравствует Король! Прикажите ополчению арестовать зачинщиков и навести порядок. И распорядитесь, чтобы газеты печатали только местные неполитические новости.</Russian>
+		<Hungarian>Ez árulás! Éljen a Király! Sorakozzon fel a nemzetőrség! Rendet kell tartanunk! Tartsuk őrizetben a felbujtókat és korlátozzuk az újságokat a nem politikai helyi hírekre.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_FAKE_NEWS_4</Tag>
@@ -7783,6 +7797,7 @@
 		<Portuguese>Isso é alta traição! Viva o Rei. Prenda os líderes. Encerre o jornal em [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT] como exemplo. Isso mostrará aos outros que estamos falando sério.</Portuguese>
 		<German>Das ist Hochverrat! Verhaften wir die Rädelsführer und schließen wir jedenfalls das Zeitungshaus in [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Das wird den anderen eine Lehre sein.</German>
 		<Russian>Арестовать негодяев, распространяющих эти лживые новости про нашего обожаемого Короля, да благословит его Господь, и закрыть их мерзкую газетёнку в [COLOR_SELECTED_TEXT]%s1_city[COLOR_REVERT]. Это послужит хорошим уроком для всех остальных.</Russian>
+		<Hungarian>Ez árulás! Éljen a Király! Tartsuk őrizetben a felbujtókat! Zárjuk be példaként [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] nyomdáját! Ezzel megmutatjuk mindenkinek, hogy komolyan gondoljuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES</Tag>
@@ -7790,6 +7805,7 @@
 		<Portuguese>No [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] império, tavernas e cervejarias estão se transformando em pontos de encontro conspiratórios.</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonialreich werden die Taveren und Spelunken zu konspirativen Orten.</German>
 		<Russian>В колониях [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] таверны и кабаки становятся местами заговора.</Russian>
+		<Hungarian>A lázongó [COLOR_HIGHLIGHT_TEXT]%s2_civ_adjective[COLOR_REVERT] birodalomban a kocsmák és sörözők összeesküvések színhelyévé válnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
@@ -7797,6 +7813,7 @@
 		<Portuguese>Milorde, o álcool torna as pessoas descuidadas. Nas tabernas, os discursos abertamente hostis sobre o Rei são cada vez mais frequentes.</Portuguese>
 		<German>Milord, Alkohol macht die Leute redselig und leichtsinnig. In Schenken und Spelunken werden immer häufiger äußerst kritische Reden über den König geschwungen.</German>
 		<Russian>Милорд, алкоголь делает людей чересчур разговорчивыми и беспечными. В кабаках и тавернах все чаще можно услышать что-то нелицеприятное в адрес Короля.</Russian>
+		<Hungarian>Uram, az alkohol gondatlanságra készteti az embereket. A kocsmákban egyre gyakrabban hallani nyíltan ellenséges beszédeket a Királyról.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_1</Tag>
@@ -7804,6 +7821,7 @@
 		<Portuguese>Sim, eu também notei isso. Na verdade, eu mesmo ouvi isso. E daí, desde que seja só conversa e a bebida não os impeça de trabalhar. Deixe-os falar! Falando nisso, por que não vamos tomar uma bebida?</Portuguese>
 		<German>Ja, das ist mir auch schon aufgefallen, ähm ich meine, es ist mir zu Ohren gekommen. Na und, solange die Leute nur so daherreden und sie das Trinken nicht von der Arbeit abhält, lasst die Leute doch reden. Ich schlage vor, wir genehmigen uns auch erst mal einen guten Tropfen.</German>
 		<Russian>Да, я тоже это заметил, то есть даже сам слышал. Ничего страшного - пока подобные высказвания и выпивка им не мешает работать, пусть болтают. Надо же им где-то выпускать пар. Кстати, а почему бы и нам не опрокинуть по стаканчику?</Russian>
+		<Hungarian>Igen, ezt én is észrevettem. Valójában én magam hallottam is. Na és, ha csak beszélgetnek és az ivás nem akadályozza őket a munkában. Hadd beszéljenek! Ha már itt tartunk, miért nem megyünk inni valamit?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_2</Tag>
@@ -7811,6 +7829,7 @@
 		<Portuguese>Sim, mas o que devemos fazer? Se proibirmos as pessoas de se prostituírem e beberem, haverá uma revolução no local. Nós simplesmente não podemos deixar isso sair do controle. Vamos adiantar o toque de recolher em uma hora.</Portuguese>
 		<German>Ja, nur was sollen wir tun. Wenn wir den Leuten das Huren und Trinken verbieten, haben wir auf der Stelle eine Revolution. Sorgen wir aber dafür, dass es nicht zu sehr ausartet und verlegen wir die Sperrstunde um eine Stunde nach vorne.</German>
 		<Russian>Да, но что нам делать? Если мы закроем трактиры, нас тут же поднимут на вилы. Но чтобы хоть как-то обезопаситься и держать ситуацию под контролем, давайте введём комендантский час.</Russian>
+		<Hungarian>Igen, de mit tegyünk? Ha megtiltjuk az embereknek a bordélyozást és az ivást, azonnal forradalom tör ki. Csak nem hagyhatjuk, hogy a dolgok túlságosan elfajuljanak. Toljuk előre egy órával a kijárási tilalmat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_3</Tag>
@@ -7818,6 +7837,7 @@
 		<Portuguese>Pelo amor de Deus, nada mais é sagrado? As pessoas deveriam se divertir nos bares e não falar sobre política. Nós absolutamente temos que fechar pelo menos um pub e expulsar as prostitutas para que possamos dizer que estamos reprimindo. Certifique-se de que o pub que fechamos esteja longe da prefeitura.</Portuguese>
 		<German>Um Himmels Willen, ist denn gar nichts mehr heilig. Im Wirtshaus soll man sich amüsieren und nicht über Politik reden. Wir müssen unbedingt mindestens ein Wirtshaus schließen und die Huren verjagen, damit wir sagen können wir greifen hart durch. Aber schließen wir bitte ein Wirtshaus weit weg vom Rathaus.</German>
 		<Russian>Да что они себе позволяют? В кабаках люди должны отдыхать, а не говорить о политике. Давайте закроем один салун и прогоним всех шлюх, чтобы можно было сказать, что мы ужесточаем меры и к нам не было бы претензий от метрополии. Но только давайте закроем какое-нибудь заведение подальше от ратуши.</Russian>
+		<Hungarian>Az ég szerelmére, már semmi sem szent? Az embereknek szórakozniuk kell a kocsmákban és nem politikáról beszélni. Feltétlenül be kell zárnunk legalább egy kocsmát és el kell űznünk a szajhákat, hogy azt mondhassuk, keményen fellépünk. Gondoskodjunk róla, hogy a bezárt kocsma a városházától távol legyen!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DRUNKEN_SPEECHES_4</Tag>
@@ -7825,6 +7845,7 @@
 		<Portuguese>Isso é traição, claro! Os líderes dos Filhos da Liberdade se reúnem nas tavernas. Isso é o que eu ouvi. Envie as tropas reais para prendê-los. Eles merecem ser enforcados!</Portuguese>
 		<German>Das ist natürlich Hochverrat! In den Spelunken treffen sich die Rädelsführer der Söhne der Freiheit, soweit ich gehört habe. Lasst die Königlichen Truppen antreten und sie dingfest machen! Sie werden hängen.</German>
 		<Russian>Господь всемогущий, да это же измена! Насколько я слышал, главари этих так называемых "Сынов свободы" встречаются в тавернах. Отправить туда королевские войска и арестовать их! Скоро они все будут раскачиваться в петле.</Russian>
+		<Hungarian>Ez természetesen árulás! A Szabadság Fiai vezető tagjai a kocsmákban találkoznak. Ezt magam is hallottam. Küldjétek oda a királyi csapatokat, hogy tartóztassák le őket! Akasztást érdemelnek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY</Tag>
@@ -7832,6 +7853,7 @@
 		<Portuguese>Uma unidade de elite das tropas revolucionárias do Império [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] desertou!</Portuguese>
 		<German>Bei den Revolutionstruppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs ist eine Eliteeinheit desertiert!</German>
 		<Russian>Элитное подразделение революционных войск [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Империи дезертировало!</Russian>
+		<Hungarian>A forrongó [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Birodalom csapatainak egyik elit egysége dezertált!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
@@ -7839,6 +7861,7 @@
 		<Portuguese>Milorde, a deserção está se espalhando. Algumas das nossas melhores tropas voltaram-se contra a nossa gloriosa causa. É um motim! Depois de confiscar o tesouro do regimento, eles estão se reunindo nas proximidades.</Portuguese>
 		<German>Milord, Desertion greift um sich. Einige unserer besten Truppen haben sich gegen die glorreiche Sache und für die Meuterei entschieden. Sie sind mit der Regimentskasse abgehauen und sammeln sich in der Umgebung.</German>
 		<Russian>Милорд, в войсках распространяется дезертирство. Несколько из наших лучших солдат подняли мятеж! Они сбежали с полковой казной и собираются в отряды.</Russian>
+		<Hungarian>Uram, a dezertálás terjed. Néhányan a legjobb katonáink közül a dicső ügyünk ellen fordultak. Ez lázadás! Miután elfoglalták az ezred kincstárát, a közelben gyülekeznek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_1</Tag>
@@ -7846,6 +7869,7 @@
 		<Portuguese>É inacreditável. Na nossa hora mais sombria, eles nos decepcionaram. Às armas! Mostraremos a esses traidores chumbo quente e aço frio!</Portuguese>
 		<German>Es ist unfassbar. In unserer schwersten Stunde lassen sie uns im Stich. Zu den Waffen, mit diesen Verrätern werden wir auch noch fertig!</German>
 		<Russian>Мерзавцы, они предали всех, кто сражался с ними плечом к плечу! К оружию, разберёмся с этими предателями!</Russian>
+		<Hungarian>Uram, a dezertálás terjed. Néhányan a legjobb katonáink közül a dicső ügyünk ellen fordultak. Ez lázadás! Miután elfoglalták az ezred kincstárát, a közelben gyülekeznek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_2</Tag>
@@ -7853,6 +7877,7 @@
 		<Portuguese>Subornaremos o comandante. Todo mundo tem seu preço. Tenho certeza de que ele pode mudar a opinião de seus homens.</Portuguese>
 		<German>Wir werden den Kommandeur bestechen. Jeder hat seinen Preis. Er kann seine Männer bestimmt umstimmen.</German>
 		<Russian>Давайте подкупим командира. У всего есть своя цена. Я уверен, что он способен изменить мнение своих людей в нужную нам сторону.</Russian>
+		<Hungarian>Megvesztegetjük a parancsnokot. Mindenkinek megvan a maga ára. Biztos vagyok benne, hogy meg tudja győzni az embereit.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_MUTINY_INFANTRY_3</Tag>
@@ -7860,6 +7885,7 @@
 		<Portuguese>Deixe-os ir. Nós os encontraremos novamente no inferno. A luta pela liberdade tem que vir em primeiro lugar.</Portuguese>
 		<German>Lasst sie ziehen, wir werden sie in der Hölle wiedersehen. Der Kampf für die Freiheit geht vor.</German>
 		<Russian>Не будем отвлекаться на этих трусов, мы спросим с них за всё потом. Борьба за нашу свободу должна быть на первом месте.</Russian>
+		<Hungarian>Hadd menjenek! A pokolban újra találkozunk velük. A szabadságért folytatott küzdelemnek elsőbbséget kell élveznie.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INFANTRY_MUTINY_HELP</Tag>
@@ -7867,13 +7893,15 @@
 		<Portuguese>[ICON_BULLET]Os desertores estão se reunindo nas proximidades. Eles estão se preparando para nos atacar.</Portuguese>
 		<German>[ICON_BULLET]Die Deserteure werden sich in der Nähe sammeln und uns vermutlich angreifen.</German>
 		<Russian>[ICON_BULLET]Дезертиры соберутся в отряд неподалеку и, вероятно, нападут на нас.</Russian>
+		<Hungarian>A dezertőrök a közelben gyülekeznek. Felkészülnek, hogy megtámadjanak minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH</Tag>
-		<English>In the colonies of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire, an enthusiastic speaker fires up crowds with talk of revolution.</English>
+		<English>In the colonies of the [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] empire, a charismatic speaker fires up crowds with talk of revolution.</English>
 		<Portuguese>Nas colônias do império [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT], um orador entusiasmado anima multidões com conversas sobre revolução.</Portuguese>
 		<German>In den Kolonien des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs befeuert ein begeisterter Redner die Idee der Revolution.</German>
 		<Russian>В колониях империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] оратор-энтузиаст разжигает идею революции в умах людей.</Russian>
+		<Hungarian>A forrongó [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] birodalom gyarmatain egy lelkes szónok forradalomról szóló beszédével lázba hozza a tömegeket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
@@ -7881,13 +7909,15 @@
 		<Portuguese>Milord, um conhecido advogado, defensor da revolução, fez um discurso inspirador no Congresso. Ele literalmente disse "...dê-me a liberdade ou dê-me a morte!" Suas palavras foram dirigidas ao rei. Temos que dizer algo antes que invadam o nosso palácio. Já consigo ver as tochas ao longe!</Portuguese>
 		<German>Milord, ein bekannter Anwalt und Verfechter der Revolution hat im Kongress eine ergreifende und begeisternde Rede gehalten. Er sagte wörtlich "...geben Sie mir die Freiheit oder den Tod!" Damit meint er den König. Wir müssen uns dazu äußern, sonst stürmen sie noch den Palast. Ich sehe schon die Fackeln in der Ferne!</German>
 		<Russian>Милорд, известный юрист и защитник революции выступил с вдохновляющей речью в Конгрессе. Он сказал буквально следующее: "...дайте мне свободу или дайте мне смерть!" Он обращался к Королю. Мы срочно должны как-то ответить, иначе толпа возьмёт наш дворец штурмом. Я уже вижу вдалеке факелы!</Russian>
+		<Hungarian>Uram, egy jól ismert ügyvéd, a forradalom szószólója, inspiráló beszédet tartott a Kongresszusban. Szó szerint azt mondta: "...szabadságot vagy halált!" Szavai a Királyhoz szóltak. Valamit mondanunk kell, mielőtt megrohamozzák a palotánkat. Már látom a távolban a fáklyákat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_1</Tag>
-		<English>Yes, of course! Topple the king's statue from its pedestal and burn his flag. We are free and we will fight for it!</English>
+		<English>Yes, of course! Topple the king's statue from its pedestal and burn his flag. We are free and we will fight!</English>
 		<Portuguese>Sim, claro! Derrube a estátua do rei do pedestal e queime sua bandeira. Somos livres e lutaremos por isso!</Portuguese>
 		<German>Ja, aber natürlich! Stürzt die Statue des Königs vom Sockel und verbrennt seine Fahne. Wir sind frei und dafür werden wir kämpfen!</German>
 		<Russian>И мы согласны с ним! Свергните статую короля с постамента и сожгите его флаг. Мы свободные люди и мы будем бороться за свою свободу!</Russian>
+		<Hungarian>Igen, persze! Döntsétek le a Király szobrát a talapzatáról és égessétek el a zászlaját! Szabadok vagyunk és harcolni fogunk érte!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_LIBERTY_OR_DEATH_2</Tag>
@@ -7895,13 +7925,15 @@
 		<Portuguese>Estamos todos loucos? Não podemos entrar em guerra com o nosso Rei. Somos profundamente leais ao nosso monarca! Mas você está certo, talvez devêssemos sair por uma entrada lateral até que as coisas se acalmem um pouco. Dessa forma podemos conversar com pessoas influentes e começar a controlar a situação.</Portuguese>
 		<German>Ja sind denn alle des Wahnsinns? Wir können uns nicht mit unserem König in einen Krieg stürzen. Wir müssen loyal zu unserem Monarchen bleiben! Aber ihr habt Recht, vielleicht sollten wir uns lieber durch einen Seiteneingang verdrücken, bis sich die Lage etwas beruhigt hat. Danach müssen wir mit den einflussreichsten Leuten sprechen, um die Lage in den Griff zu bekommen.</German>
 		<Russian>Они в своём уме? Мы не можем воевать с нашим Королем. Мы должны сохранять верность нашему монарху! Но ты прав, наверное нам стоит покинуть дворец через боковой вход и подождать, пока всё немного успокоится. И нам срочно нужно поговорить с наиболее влиятельными людьми города, чтобы взять ситуацию под контроль.</Russian>
+		<Hungarian>Megőrültünk mindannyian? Nem háborúzhatunk a Királyunkkal! Mélyen hűségesek vagyunk uralkodónkhoz! De jól mondod, talán el kellene mennünk egy oldalsó kijáraton, amíg a helyzet kissé lecsillapodik. Így beszélhetünk befolyásos emberekkel és elkezdhetjük rendezni a helyzetet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_KING_MAD_HELP</Tag>
-		<English>His Majesty is beside himself at these protests. They sound like treason!</English>
+		<English>His Majesty is beside himself over these protests. They sound like treason!</English>
 		<Portuguese>Sua Majestade está fora de si com esses protestos. Eles parecem traição!</Portuguese>
 		<German>Seine Majestät ist über diese Reaktion wie von Sinnen. Das klingt wie Hochverrat!</German>
 		<Russian>Его Величество вне себя от такой реакции. Он расценивает это, как предательство!</Russian>
+		<Hungarian>Őfelsége teljesen ki van borulva ezek miatt a tiltakozások miatt. Ezek árulásnak tűnnek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTION_1_HELP</Tag>
@@ -7909,6 +7941,7 @@
 		<Portuguese>[COLOR_FONT_GOLD]A reação de Sua Majestade foi feroz. Na verdade, ele fez buracos em seu retrato.[COLOR_REVERT]</Portuguese>
 		<German>[COLOR_FONT_GOLD]Eure Antwort wurde Seiner Majestät zugetragen. Der König ist fuchsteufelswild. Kammerdiener berichten, dass er auf ein Porträt von Euch geschossen haben soll.[COLOR_REVERT]</German>
 		<Russian>[COLOR_FONT_GOLD]Его Величества в бешенстве. Ходят слухи, что Он расстрелял ваш портрет.[COLOR_REVERT]</Russian>
+		<Hungarian>[COLOR_FONT_GOLD]Őfelsége hevesen reagált. Lövésekkel átlyukasztotta a róled készült festményt.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_START_EVENT_HELP</Tag>
@@ -7916,6 +7949,7 @@
 		<Portuguese>Envie uma unidade [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] para o porto de [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] em %d3 rodadas.</Portuguese>
 		<German>Schickt innerhalb von %d3 Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zum Hafen in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT].</German>
 		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в порт города [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] в течение %d3 ходов.</Russian>
+		<Hungarian>Küldj egy [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] egységet [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kikötőjébe %d3 körön belül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
@@ -7923,6 +7957,7 @@
 		<Portuguese>Comerciantes influentes sugerem enviar um [COLOR_UNIT_TEXT]enviado[COLOR_REVERT] à Europa para negociar com o rei sobre a situação tensa nas colônias.</Portuguese>
 		<German>Einflussreiche Kaufleute schlagen vor, einen [COLOR_UNIT_TEXT]Gesandten[COLOR_REVERT] nach Europa zu schicken, um mit dem König über die angespannte Situation in den Kolonien zu verhandeln.</German>
 		<Russian>Торговцы предлагают провести переговоры с Королём о напряжённой ситуации в колониях.</Russian>
+		<Hungarian>Befolyásos kereskedők azt javasolják, hogy küldjünk egy [COLOR_UNIT_TEXT]követet[COLOR_REVERT] Európába, hogy tárgyaljon a Királlyal a gyarmatok feszült helyzetéről.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
@@ -7930,6 +7965,7 @@
 		<Portuguese>O enviado está pronto para embarcar para a Europa.</Portuguese>
 		<German>Der Gesandte ist zur Überfahrt bereit.</German>
 		<Russian>Посланец готов к отбытию.</Russian>
+		<Hungarian>A követ készen áll az Európába való indulásra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START</Tag>
@@ -7937,6 +7973,7 @@
 		<Portuguese>Milorde, deveríamos definitivamente enviar um enviado à Europa para falar diretamente com o Rei sobre a nossa situação, de preferência um nobre que saiba como falar com um Rei. No mínimo, precisamos de benefícios fiscais.</Portuguese>
 		<German>Milord, wir sollten unbedingt einen Gesandten nach Europa schicken, der direkt mit dem König über die Situation sprechen kann. Schickt am besten einen [COLOR_UNIT_TEXT]Adligen[COLOR_REVERT], der weiß wie man mit einem König spricht. Vielleicht können wir wenigstens Steuererleichterungen herausschlagen.</German>
 		<Russian>Влиятельные торговцы предлагают отправить [COLOR_UNIT_TEXT]посланника[COLOR_REVERT] в Европу для переговоров с Королём о напряжённой ситуации в колониях. Милорд, нам определенно стоит хорошенько подумать над этим предложением. И если уж кого и отправлять, то пусть это будет дворянин, который знает, как правильно разговаривать с монархом. Возможно, нам даже удастся договориться о налоговых льготах.</Russian>
+		<Hungarian>Uram, mindenképpen küldjünk követet Európába, hogy közvetlenül beszéljen a Királlyal a helyzetünkről, lehetőleg egy nemest, aki tudja, hogyan kell beszélni egy Királlyal. Legalább adókedvezményekre lenne szükségünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_START_DONE</Tag>
@@ -7944,6 +7981,7 @@
 		<Portuguese>Milorde, o nobre está agora no porto, pronto para navegar para a Europa. Será que realmente ousamos fazer exigências ao Rei ou será melhor sermos súditos humildes e obedientes? A timidez provavelmente levará à inquietação.</Portuguese>
 		<German>Milord, der Adlige steht nun am Hafen und ist bereit zur Überfahrt nach Europa. Sollen wir es wirklich wagen, dem König durch einen Gesandten Forderungen zu stellen oder wollen wir doch lieber die treuen Untertanen bleiben? Das könnte allerdings zu Unruhen führen.</German>
 		<Russian>Милорд, дворянин сейчас находится в гавани и готов отплыть в Европу. Действительно ли мы готовы предъявлять требования Королю или нам лучше остаться верными подданными Его Величества? Боюсь, однако, в любом случае нам надо быть готовыми к народным волнениям.</Russian>
+		<Hungarian>Uram, a nemesember már a kikötőben van, készen arra, hogy Európába hajózzon. Tényleg merünk követeléseket támasztani a Királlyal szemben, vagy jobb, ha alázatos és engedelmes alattvalók maradunk? A félénkség valószínűleg zavargásokhoz vezet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_1</Tag>
@@ -7951,6 +7989,7 @@
 		<Portuguese>Veremos. Os comerciantes estão principalmente preocupados com os seus lucros. Quanto a mim, ainda sirvo ao Rei. Deixe-me pensar sobre isso. A agitação aqui não é boa para ninguém.</Portuguese>
 		<German>Wir werden sehen. Die Handelsherren sind doch nur um ihren Profit besorgt. Ich stehe immer noch im Dienste des Königs. Aber gut, ich werde darüber nachdenken. Es nützt niemandem, wenn in den Kolonien Unruhen herrschen.</German>
 		<Russian>Да, непростой вопрос. Торговцы озабочены только своей прибылью... А я все еще на службе у Короля... Думаю, никому не будет никакой пользы, если в колониях начнутся волнения.</Russian>
+		<Hungarian>Majd meglátjuk. A kereskedők elsősorban a profitjukat tartják szem előtt. Ami engem illet, én továbbra is a Királyt szolgálom. Hadd gondolkozzak rajta. A zavargások itt senkinek sem jók.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_START_FAIL</Tag>
@@ -7958,6 +7997,7 @@
 		<Portuguese>Milorde, você esperou demais - ou simplesmente não queria enviar um enviado para a Europa? Sua hesitação pode nos custar caro. Em meio à agitação nas colônias, você ainda é visto como leal ao rei. Pense bem no que você fará a seguir!</Portuguese>
 		<German>Milord, Ihr habt zu lange gewartet - oder wolltet Ihr gar keinen Gesandten nach Europa schicken? Das wird uns vielleicht noch teuer zu stehen kommen. In den Kolonien gibt es immer mehr Unruhen und man wird Euch als königstreu ansehen. Überlegt gut, was Ihr als nächstes tut!</German>
 		<Russian>Милорд, вы слишком долго ждали – или вы вообще не хотели отправлять посланника в Европу? Это может стоить нам очень дорого. В колониях растут беспорядки и вас будут считать лояльным Королю. Хорошенько подумайте, что нам делать дальше!</Russian>
+		<Hungarian>Majd meglátjuk. A kereskedők elsősorban a profitjukat tartják szem előtt. Ami engem illet, én továbbra is a Királyt szolgálom. Hadd gondolkozzak rajta. A zavargások itt senkinek sem jók.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_1</Tag>
@@ -7965,6 +8005,7 @@
 		<Portuguese>Sim, definitivamente. Mas não podemos fazer as coisas pela metade. O Rei tem que levar a sério as nossas preocupações. O enviado não deve ser melindroso. Vimos o que o tesouro do Rei quer de nós. Se necessário, estamos prontos para lutar!</Portuguese>
 		<German>Ja, auf jeden Fall. aber wir machen keine halben Sachen. Es wird Zeit, dass der König unsere Sorgen ernst nimmt. Der Gesandte soll nicht zimperlich sein. Wir wissen, was der König und die Staatskasse an uns haben. Wenn nötig gehen wir nun auf Konfrontation!</German>
 		<Russian>Да, конечно. Но мы не делаем дела наполовину. Пришло время Королю серьёзно отнестись к нашим опасениям. Посланник не должен быть слабовольным. Мы знаем, что готовят нам Король и Парламент. Если нас вынудят, теперь мы пойдем на конфронтацию!</Russian>
+		<Hungarian>Igen, mindenképpen. De nem csinálhatjuk félgőzzel. A Királynak komolyan kell vennie az aggályainkat. A követnek nem szabad finnyásnak lennie. Láttuk, mit akar tőlünk a Királyi Kincstár. Ha szükséges, készek vagyunk harcolni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1</Tag>
@@ -7972,6 +8013,7 @@
 		<Portuguese>Um enviado foi incumbido da delicada tarefa de arrancar concessões fiscais do rei sem ofendê-lo.</Portuguese>
 		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, dem König Steuererleichterungen abzuringen und ihn dabei möglichst nicht zu beleidigen.</German>
 		<Russian>На посланника была возложена деликатная задача — добиться от Короля налоговых уступок, не оскорбив Его Величества.</Russian>
+		<Hungarian>Egy követet bíztak meg azzal a kényes feladattal, hogy adókedvezményeket csikarjon ki a Királytól anélkül, hogy megsértené őt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_2</Tag>
@@ -7979,6 +8021,7 @@
 		<Portuguese>Sim, mande o nobre para a Europa. Não temos intenção de provocar o Rei. Tudo o que queremos é criar uma boa atmosfera, assegurar a nossa lealdade ao Rei e depois fazer lobby a favor do comércio e da redução de impostos. Isso será suficiente.</Portuguese>
 		<German>Ja, verschifft den Adligen nach Europa. Aber wir wollen den König auf keinen Fall provozieren. Der Gesandte soll nur ein wenig für gute Stimmung sorgen, dem König unsere Treue versichern und sich für den Handel und dann erst für Steuererleichterungen einsetzen. Dies muss reichen!</German>
 		<Russian>Да, отправьте дворянина в Европу. Но мы, конечно, не хотим провоцировать Короля. Нам нужно, чтобы посланник создал хорошую атмосферу на приёме, заверил Его Величество в нашей лояльности, а затем добился торговых и налоговых льгот. Этого должно быть достаточно для процветания колоний.</Russian>
+		<Hungarian>Igen, küldjük a nemest Európába! Nem áll szándékunkban provokálni a Királyt. Csak jó légkört szeretnénk teremteni és biztosítani a Királyt hűségünkről, majd lobbizni a kereskedelem és az adókedvezmények érdekében. Ez elég lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2</Tag>
@@ -7986,6 +8029,7 @@
 		<Portuguese>Um enviado foi incumbido da delicada tarefa de falar com o Rei sobre as nossas condições para o comércio ultramarino, ao mesmo tempo que se esforça ao máximo para não ofender Sua Majestade de forma alguma.</Portuguese>
 		<German>Ein Gesandter wurde mit der heiklen Aufgabe betraut, mit dem König über die Bedingungen für den Überseehandel zu sprechen und ihn dabei möglichst nicht zu beleidigen.</German>
 		<Russian>На посланника была возложена деликатная задача переговорить с Королем об условиях заграничной торговли и, по возможности, при этом не обидеть Его Величество.</Russian>
+		<Hungarian>Egy követet bíztak meg azzal a kényes feladattal, hogy tárgyaljon a Királlyal a tengerentúli kereskedelem feltételeiről, ugyanakkor nagy gondot fordítva arra, hogy semmilyen módon ne sértse meg Őfelségét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_DONE_3</Tag>
@@ -7993,6 +8037,7 @@
 		<Portuguese>Não vou me tornar ainda mais impopular junto ao Rei! O nobre pode voltar a passar um tempo com sua amante. Viva Sua Majestade! Continuarei a afirmar o poder do Rei aqui.</Portuguese>
 		<German>Von wegen, ich mache mich beim König doch nicht noch unbeliebter! Der Adlige soll sich zu seiner Mätresse scheren. Es lebe der König! Ich werde die Macht des Königs hier weiter durchsetzen.</German>
 		<Russian>Я не собираюсь делать себя посмешищем в глазах Короля! Дворянин может отправиться к своей любовнице или куда пожелает его деятельная натура. Да здравствует Король! А я продолжу укреплять здесь королевскую власть.</Russian>
+		<Hungarian>Nem fogom még népszerűtlenebbé tenni magam a Király előtt! A nemesember visszatérhet szeretőjéhez. Éljen Őfelsége! Továbbra is érvényesíteni fogom a Király hatalmát itt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_3</Tag>
@@ -8000,20 +8045,23 @@
 		<Portuguese>Foi decidido não enviar um enviado à Europa. Isto irá inflamar ainda mais o clima contra o rei e os seus leais nas colônias. Quem sabe o que acontece agora?</Portuguese>
 		<German>Es wurde darauf verzichtet einen Gesandten nach Europa zu senden. Dies wird die Stimmung gegen den König und seine Getreuen in den Kolonien noch weiter anheizen. Wer weiß was jetzt passiert.</German>
 		<Russian>Было решено не отправлять посланника в Европу. Это спровоцирует еще больше беспорядков против Короля и его сторонников в колониях. Кто знает, что произойдет дальше...</Russian>
+		<Hungarian>Az a döntés született, hogy nem megy a követ Európába. Ez tovább fogja fokozni a Király és hívei elleni hangulatot a gyarmatokon. Ki tudja, mi fog most történni?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1A</Tag>
-		<English>The envoy is back from Europe and has made himself very unpopular. The King is even angrier and says He'll continue to raise taxes. Unrest will only get worse.</English>
+		<English>The envoy is back from Europe and has made himself very unpopular. The King says all the taxes we pay he spends on us. He'll raise taxes if we know what's good for us. Unrest will only get worse.</English>
 		<Portuguese>O enviado regressou da Europa e tornou-se muito impopular. O rei fica ainda mais irritado e diz que continuará a aumentar os impostos. A agitação só vai piorar.</Portuguese>
 		<German>Der Gesandte ist aus Europa zurück und hat sich mächtig unbeliebt gemacht. Der König ist noch wütender geworden und wird die Steuern weiter erhöhen. Das wird zu mehr Unruhen führen.</German>
 		<Russian>Посол вернулся из Европы и стал крайне непопулярным. Король разозлился еще больше и пригрозил продолжать повышать налоги. Это приведёт к еще большим беспорядкам в колониях.</Russian>
+		<Hungarian>A követ visszatért Európából és nagyon népszerűtlen lett. A Király még dühösebb és azt mondja, hogy tovább fogja emelni az adókat. A zavargások egyre csak rosszabbak lesznek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_1B</Tag>
-		<English>The envoy is back from Europe. Even though he managed to calm things down a little, the King will continue to raise taxes. In effect the trip has simply solidified His position.</English>
+		<English>The envoy is back from Europe. Even though he managed to calm things down a little, the King will continue to raise taxes. He says we must continue to pay our own way.</English>
 		<Portuguese>O enviado voltou da Europa. Mesmo tendo conseguido acalmar um pouco as coisas, o Rei continuará aumentando os impostos. Na verdade, a viagem simplesmente solidificou Sua posição.</Portuguese>
 		<German>Der Gesandte ist aus Europa zurück und konnte die Wogen ein wenig glätten. Aber der König ist trotzdem mehr verärgert als je zuvor und wird die Steuern weiter erhöhen. Die Reise hat also nichts gebracht, außer die Standtpunkte zu festigen.</German>
 		<Russian>Посол вернулся из Европы и сумел немного разрядить обстановку. Но король по-прежнему раздражен и продолжит повышать налоги. Так что поездка не принесла ничего, кроме укрепления его позиций.</Russian>
+		<Hungarian>A követ visszatért Európából. Annak ellenére, hogy sikerült kissé rendeznie a helyzetet, a Király továbbra is emelni fogja az adókat. Valójában az út csak megerősítette a Király pozícióját.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2A</Tag>
@@ -8021,13 +8069,15 @@
 		<Portuguese>O enviado voltou da Europa e conseguiu negociar algo para os mercadores. Isto irá satisfazer os comerciantes, mas não as pessoas comuns. O clima continuará a piorar. Pelo menos os impostos não serão aumentados.</Portuguese>
 		<German>Der Gesandte ist aus Europa zurück und konnte für die Händler etwas herausschlagen. Das wird zwar die Händler, aber nicht das gemeine Volk zufriedenstellen. Die Stimmung wird weiter sinken. Immerhin werden die Steuern nicht erhöht.</German>
 		<Russian>Посланник вернулся из Европы и смог договориться о послаблениях для торговцев. Однако для простого народа ничего не изменилось. Обстановка в колониях будет продалжать накаляться. Ну хотя бы налоги не будут увеличены.</Russian>
+		<Hungarian>A követ visszatért Európából és sikerült valamit kialkudnia a kereskedők számára. Ez a kereskedőket kielégíti, de a köznépet nem. A hangulat tovább romlik. Legalább az adók nem emelkednek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_EVENTS_DONE_2B</Tag>
-		<English>The envoy is back from Europe and has really managed to get something for the traders. That will satisfy the traders and even the population for a while. We'll see how things develop.</English>
+		<English>The envoy is back from Europe and has really managed to get a good deal for the traders. That will satisfy the traders and even the population for a while. We'll see how things develop.</English>
 		<Portuguese>O enviado voltou da Europa e realmente conseguiu algo para os comerciantes. Isso irá satisfazer os comerciantes e até a população por um tempo. Veremos como as coisas se desenvolvem.</Portuguese>
 		<German>Der Gesandte ist aus Europa zurück und konnte für die Händler wirklich etwas herausschlagen. Das wird für eine Weile die Händler und sogar die Bevölkerung zufriedenstellen. Wir werden sehen wie es sich entwickelt.</German>
 		<Russian>Посланник вернулся из Европы и смог договориться о некоторых послаблениях. На какое-то время это удовлетворит торговцев и даже население. Посмотрим, как дальше будут развиваться события.</Russian>
+		<Hungarian>A követ visszatért Európából és valóban sikerült valamit elérnie a kereskedők számára. Ez egy időre kielégíti a kereskedőket és még a lakosságot is. Meglátjuk, hogyan alakulnak a dolgok.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS</Tag>
@@ -8035,6 +8085,7 @@
 		<Portuguese>Os cidadãos reclamam do número de tropas do império [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] nas colônias.</Portuguese>
 		<German>Bürger beschweren sich über die vielen Truppen des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs in den Kolonien.</German>
 		<Russian>Граждане жалуются на количество войск [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] империи в колониях.</Russian>
+		<Hungarian>A lakosok panaszkodnak a számos [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] katona jelenlétéről a gyarmatokon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
@@ -8042,13 +8093,15 @@
 		<Portuguese>Milorde, os cidadãos queixam-se de que têm de alimentar e suportar demasiados soldados europeus. As tropas parecem estar por toda parte em nossas colônias. Temos que fazer algo sobre isso.</Portuguese>
 		<German>Milord, die Bürger beschweren sich, dass sie so viele Truppen aus Europa durchfüttern und erdulden müssen. Die Truppen machen sich in den Kolonien breit. Wir sollten etwas unternehmen.</German>
 		<Russian>Милорд, граждане жалуются, что им приходится кормить и обустраивать такое большое количество войск из Европы, которые были расквартированы в колониях. Мы должны что-то делать с этим.</Russian>
+		<Hungarian>Uram, a polgárok panaszkodnak, hogy túl sok európai katonát kell etetniük és elviselniük. A csapatok mindenütt jelen vannak a gyarmatainkon. Valamit tennünk kell ez ügyben!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_1</Tag>
-		<English>Yes, it seems that way to me too. We should ask the commander to send some troops back to Europe. The King won't like that, but it will calm the citizens down.</English>
+		<English>Yes, it seems that way to me too. We should ask the commander to send some of the troops back to Europe. The King won't like that, but it will calm the citizens down.</English>
 		<Portuguese>Sim, também me parece assim. Devíamos pedir ao comandante que enviasse algumas tropas de volta para a Europa. O Rei não vai gostar disso, mas vai acalmar os cidadãos.</Portuguese>
 		<German>Ja, scheint mir auch so. Wir sollten den Kommandeur bitten, einige Truppen nach Europa zurückzuschicken. Das wird zwar dem König nicht gefallen, aber die Bürger etwas beruhigen.</German>
 		<Russian>Да, мне тоже так кажется. Мы должны попросить командующего отправить часть войск обратно в Европу. Королю это точно не понравится, но зато немного успокоит наших граждан.</Russian>
+		<Hungarian>Igen, nekem is úgy tűnik. Meg kellene kérnünk a parancsnokot, hogy küldjön vissza néhány csapatot Európába. A Királynak ez nem fog tetszeni, de megnyugtatja a lakosságot.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_2</Tag>
@@ -8056,20 +8109,23 @@
 		<Portuguese>A protecção das colônias e a expansão do império exigem sacrifícios. As tropas ficam onde estão. Meus próprios cofres cobrirão o pagamento deles.</Portuguese>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich bin gerne bereit etwas aus meiner Schatulle zur Versorgung der Truppen beizusteuern.</German>
 		<Russian>Защита колоний и расширение империи требуют жертв. Войска останутся там, где они есть. Я с удовольствием пожертвую небольшую часть средств из своей казны на снабжение войск.</Russian>
+		<Hungarian>A gyarmatok védelme és a birodalom terjeszkedése áldozatokat követel. A csapatok maradnak, ahol vannak. A fizetésüket az én kincstáram fedezi.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_EVENTS_ROYAL_TROOPS_3</Tag>
-		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are, but I can understand people's concerns. We will provision the army generously and compensate for any damage caused by our troops.</English>
+		<English>The protection of the colonies and the expansion of the empire require sacrifices. The troops stay where they are, but I can understand people's concerns. We will provision the army generously and pay for any damage caused by our troops.</English>
 		<Portuguese>A protecção das colônias e a expansão do império exigem sacrifícios. As tropas permanecem onde estão, mas posso compreender as preocupações das pessoas. Forneceremos generosamente o exército e compensaremos qualquer dano causado pelas nossas tropas.</Portuguese>
 		<German>Der Schutz der Kolonien und die Erweiterung des Reiches erfordern nun mal Opfer. Die Truppen bleiben wo sie sind. Aber ich kann die Sorgen der Leute verstehen. Wir werden uns großzügig an der Verproviantierung beteiligen und etwaige Schäden ersetzen, die in den Kolonien durch die Truppen verursacht werden.</German>
 		<Russian>Я понимаю обеспокоенность людей, но эти войска здесь для нашей же защиты. Мы будем компенсировать обеспечение солдат продовольствием, а также возмещать любой ущерб, причиненный войсками.</Russian>
+		<Hungarian>A gyarmatok védelme és a birodalom terjeszkedése áldozatokat követel. A csapatok maradnak, ahol vannak, de megértem az emberek aggodalmát. A hadsereget bőségesen ellátjuk és minden, a csapataink által okozott kárt megtérítünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_1</Tag>
-		<English>Milord, a neighbouring Native village sees mutual benefit in trading with us for. We should send them a wagon train to start trading relations. That can only be beneficial.</English>
+		<English>Milord, a neighbouring Native village sees mutual benefit in trading with us. We should send them a wagon train with goods they might appreciate. That can only be beneficial.</English>
 		<Portuguese>Milord, uma aldeia nativa vizinha vê benefícios mútuos em negociar conosco. Devíamos enviar-lhes um comboio para iniciar relações comerciais. Isso só pode ser benéfico.</Portuguese>
 		<German>Milord, ein benachbartes Indianerdorf möchte zum gegenseitigen Vorteil Handel mit uns treiben. Wir sollten unbedingt einen Wagenzug entsenden und Handelsbeziehungen beginnen. Das kann nur von Vorteil sein.</German>
 		<Russian>Милорд, индейцы из соседней деревни хотят торговать с нами, обещая взаимную выгоду. Нам обязательно следует отправить к ним обоз и начать торговлю. Это предприятие сулит хорошую прибыль.</Russian>
+		<Hungarian>Uram, a szomszédos Indián faluban kölcsönös előnyöket látnak a velünk való kereskedelemben. Küldjünk nekik egy ekhós szekeret, hogy megkezdjük a kereskedelmi kapcsolatokat. Ez csak előnyös lehet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE</Tag>
@@ -8077,6 +8133,7 @@
 		<Portuguese>Uma carroça de [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] parte para o deserto para fazer comércio.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Wagenzug bricht zum Handel in die Wildnis auf.</German>
 		<Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в дикую местность для торговли с туземцами.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ekhós szekér indult el a vadonba kereskedni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_HELP</Tag>
@@ -8084,6 +8141,7 @@
 		<Portuguese>Envie uma unidade [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] para a aldeia nativa vizinha em [COLOR_HIGHLIGHT_TEXT]%d3 rodadas[COLOR_REVERT]. Pegue [COLOR_HIGHLIGHT_TEXT]%d4 produtos comerciais da Europa [COLOR_REVERT]e venda-os ou doe-os para a aldeia nativa.</Portuguese>
 		<German>Schickt innerhalb von [COLOR_HIGHLIGHT_TEXT]%d3 Runden[COLOR_REVERT] eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf, das mit Euch Handel treiben möchte. Nehmt [COLOR_HIGHLIGHT_TEXT]%d4 Handelswaren aus Europa[COLOR_REVERT] mit und verkauft oder schenkt sie dem Dorf.</German>
 		<Russian>Отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в соседнюю деревню индейцев, которые хотят торговать с вами, в течение %d3 ходов. Можете взять с собой [COLOR_SELECTED_TEXT]мануфактуру[COLOR_REVERT] из Европы или другие товары, которые вы произвели в своих поселениях. Чем вы будете торговать, зависит только от вас.</Russian>
+		<Hungarian>Küldj egy [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] egységet  a szomszédos Indián faluba  %d3 körön belül.  Vigyél magaddal európai árukat vagy bármi mást, helyit vagy importáltat.  Te döntesz, mivel akarsz kereskedni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS</Tag>
@@ -8091,6 +8149,7 @@
 		<Portuguese>Infelizmente você esperou muito. A aldeia nativa não está mais disposta a negociar com você neste momento. A boa notícia é que a carroça agora está disponível para outros usos.</Portuguese>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Wagenzug nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
+		<Hungarian>Sajnos túl sokáig vártál. Az Indián falu már nem hajlandó veled kereskedni. A jó hír az, hogy az ekhós szekér most más célokra is felhasználható.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE</Tag>
@@ -8098,6 +8157,7 @@
 		<Portuguese>Milorde, nosso comboio chegou à aldeia nativa e negociou as mercadorias. O que acontece a seguir?</Portuguese>
 		<German>Milord, unser Wagenzug hat das Indianer-Dorf erreicht und die Handelswaren gehandelt. Wie geht es weiter?</German>
 		<Russian>Милорд, наш транспорт добрался до деревни индейцев. Что будем делать дальше?</Russian>
+		<Hungarian>Uram, az ekhós szekerünk elérte az Indián falut. Mi legyen ezután?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_1</Tag>
@@ -8105,20 +8165,23 @@
 		<Portuguese>Deveríamos aproveitar esta oportunidade. Se o comércio correr bem, poderemos ganhar aliados que nos darão uma vantagem na competição com os nossos rivais europeus.</Portuguese>
 		<German>Diese Gelegenheit sollten wir nutzen. Wenn der Handel gut läuft, dann könnten wir damit Verbündete gewinnen, die uns im Wettstreit mit unseren europäischen Konkurrenten einen Vorteil verschaffen.</German>
 		<Russian>Нам необходимо воспользоваться этой возможностью. Если торговля пойдёт хорошо, мы сможем обрести союзников, которые дадут нам преимущество в конкурентной борьбе с нашими европейскими соперниками.</Russian>
+		<Hungarian>Meg kell ragadnunk ezt a lehetőséget! Ha a kereskedelem jól alakul, olyan szövetségeseket szerezhetünk, akik előnyt biztosítanak számunkra az európai riválisainkkal folytatott versenyben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_1</Tag>
-		<English>We shouldn't pressue our new Native friends with hard bargaining right from the first trade. Establishing trade relations matters more to me than the gold.</English>
+		<English>We shouldn't pressure our new Native friends with hard bargaining right off the top. Establishing durable trade relations matters more to me than the money.</English>
 		<Portuguese>Não deveríamos pressionar nossos novos amigos nativos com negociações difíceis desde o primeiro comércio. Estabelecer relações comerciais é mais importante para mim do que o ouro.</Portuguese>
 		<German>Wir sollten die Indianer nicht gleich beim ersten Handel übervorteilen. Der Aufbau der Handelsbeziehungen ist mir gegenwärtig wichtiger als das Gold für unsere Waren.</German>
 		<Russian>Мы не должны требовать больших скидок от индейцев с первой же сделки. Установление хороших торговых отношений сейчас для нас важнее, чем золото.</Russian>
+		<Hungarian>Nem szabad az első kereskedés során kemény alkudozással nyomást gyakorolnunk új Indián barátainkra. A kereskedelmi kapcsolatok kiépítése számomra fontosabb, mint az arany.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2</Tag>
-		<English>We can negotiate with the Natives, but we have to be fair. We should stay in the village for a while and see how we can negotiate a bit more.</English>
+		<English>We can negotiate with the Natives, but we have to be fair. We should stay in the village for a while and see if we can figure out a win-win deal.</English>
 		<Portuguese>Podemos negociar com os nativos, mas temos de ser justos. Devíamos ficar na aldeia por um tempo e ver como podemos negociar um pouco mais.</Portuguese>
 		<German>Wir können ruhig kräftig mit den Indianern verhandeln, sollten aber fair bleiben. Wir sollten eine Weile in dem Dorf bleiben und sehen, ob wir nicht noch etwas mehr herausschlagen können.</German>
 		<Russian>Нам нужно вести торговые переговоры с индейцами, но мы должны оставаться справедливыми. И предлагаю остаться в деревне на какое-то время и посмотреть, сможем ли мы договориться ещё о чем-нибудь.</Russian>
+		<Hungarian>Tárgyalhatunk az Indiánokkal, de tisztességesnek kell lennünk. Maradnunk kell egy ideig a faluban és meg kell néznünk, hogyan tudunk még egy kicsit alkudni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_3</Tag>
@@ -8126,6 +8189,7 @@
 		<Portuguese>Obtenha o máximo que puder! Foram os nativos que queriam esse comércio. Mostre-lhes como os europeus conseguem um acordo difícil!</Portuguese>
 		<German>Holt alles raus, was ihr könnt. Immerhin wollten ja die Indianer diesen Handel. Nun sollen sie mal sehen, wie Europäer verhandeln!</German>
 		<Russian>Забирайте всё, что сможете. В конце концов, индейцы сами хотели этой торговли. Сейчас мы им покажем, как нужно вести переговоры по-европейски!</Russian>
+		<Hungarian>A lehető legtöbbet hozzuk ki belőle! Az Indiánok kezdeményezték a kereskedést. Mutassuk meg nekik, hogy az európaiak milyen keményen alkudoznak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_4</Tag>
@@ -8133,6 +8197,7 @@
 		<Portuguese>O comércio [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] com os nativos foi bem-sucedido.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war von Erfolg gekrönt!</German>
 		<Russian>Торговля [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] с индейцами прошла успешно.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kereskedelmi üzlet sikeres volt az Indiánokkal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_5</Tag>
@@ -8144,13 +8209,15 @@
 		<Portuguese>O comércio [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] com os nativos foi, em última análise, muito agressivo. Seus comerciantes estão mais do que um pouco descontentes!</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war letztlich zu agressiv. Die Indianer sind etwas verstimmt!</German>
 		<Russian>Индейцы крайне недовольны агрессивными методами ведения торговли со стороны [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]!</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kereskedelmi üzlet az Indiánokkal túlságosan agresszív volt. Kereskedőik nagyon elégedetlenek!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2_1</Tag>
-		<English>Milord, a neighbouring Native village seeks mutual benefit. We should send a trek to develop trade. That can only be beneficial.</English>
+		<English>Milord, a neighbouring Native village is looking for mutual benefit. We should send a trek to develop trade. That can only be beneficial.</English>
 		<Portuguese>Milord, uma aldeia nativa vizinha busca benefício mútuo. Deveríamos enviar uma jornada para desenvolver o comércio. Isso só pode ser benéfico.</Portuguese>
 		<German>Milord, ein benachbartes Indianerdorf möchte zum gegenseitigen Vorteil Handel mit uns treiben. Wir sollten unbedingt einen Treck entsenden und die Handelsbeziehungen weiter ausbauen. Das kann nur von Vorteil sein.</German>
 		<Russian>Милорд, индейцы из соседней деревни хотят торговать с нами, обещая взаимную выгоду. Нам обязательно следует отправить к ним обоз и начать торговлю. Это предприятие сулит хорошую прибыль.</Russian>
+		<Hungarian>Uram, a szomszédos Indián falu kölcsönös üzletet szeretne kötni. Küldjünk oda egy expedíciót, hogy kereskedelmi kapcsolatokat építsünk ki! Ez csak előnyös lehet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2_DONE</Tag>
@@ -8158,6 +8225,7 @@
 		<Portuguese>Uma jornada [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] parte para o deserto para negociar.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Treck bricht zum Handel in die Wildnis auf.</German>
 		<Russian>Торговый обоз [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправляется в дикую местность для торговли с туземцами.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] trekk kereskedni indul a vadonba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2</Tag>
@@ -8165,6 +8233,7 @@
 		<Portuguese>Infelizmente você esperou muito. A aldeia nativa não está mais disposta a negociar com você neste momento. A boa notícia é que a caminhada fica disponível para outros usos.</Portuguese>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Treck nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
+		<Hungarian>Sajnos túl sokáig vártál. Az Indián falu már nem hajlandó veled kereskedni. A jó hír az, hogy a trekk más célra is felhasználhatóvá válik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2_DONE</Tag>
@@ -8172,27 +8241,31 @@
 		<Portuguese>Milorde, nossa jornada chegou à aldeia nativa. O que acontece a seguir?</Portuguese>
 		<German>Milord, unser Treck hat das Indianer-Dorf erreicht. Wie geht es weiter?</German>
 		<Russian>Милорд, наш транспорт добрался до деревни индейцев. Что будем делать дальше?</Russian>
+		<Hungarian>Uram, a trekkünk elérte az Indián falut. Mi legyen most?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_2_1</Tag>
-		<English>We should seize this opportunity. If trade goes well, we might gain allies who will give us an advantage in the competition with our European rivals.</English>
+		<English>We should seize this opportunity. If trade goes well, we might gain allies who will give us the advantage in competition with our European rivals.</English>
 		<Portuguese>Deveríamos aproveitar esta oportunidade. Se o comércio correr bem, poderemos ganhar aliados que nos darão uma vantagem na competição com os nossos rivais europeus.</Portuguese>
 		<German>Diese Gelegenheit sollten wir nutzen. Wenn der Handel auch dieses Mal wieder gut läuft, dann könnten wir damit Verbündete gewinnen, die uns im Wettstreit mit unseren europäischen Konkurrenten einen Vorteil verschaffen.</German>
 		<Russian>Нам необходимо воспользоваться этой возможностью. Если торговля пойдёт хорошо, мы сможем обрести союзников, которые дадут нам преимущество в конкурентной борьбе с нашими европейскими соперниками.</Russian>
+		<Hungarian>Meg kell ragadnunk ezt a lehetőséget! Ha a kereskedelem jól alakul, olyan szövetségeseket szerezhetünk, akik előnyt biztosítanak számunkra az európai riválisainkkal folytatott versenyben.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_1</Tag>
-		<English>That was an excellent deal between neighbours, but we must always keep in mind the importance of good neighbourly relations.</English>
+		<English>That was an excellent deal, but we must never forget the importance of good neighbourly relations.</English>
 		<Portuguese>Foi um excelente acordo entre vizinhos, mas devemos ter sempre presente a importância das boas relações de vizinhança.</Portuguese>
 		<German>Das war ein vortrefflicher Handel unter Nachbarn. Aber wir sollten die gute nachbarschaftlichen Beziehungen weiter in den Vordergrund stellen.</German>
 		<Russian>Мы не должны требовать больших скидок от индейцев с первой же сделки. Установление хороших торговых отношений сейчас для нас важнее, чем золото.</Russian>
+		<Hungarian>A kereskedelem legutóbb nagyon jól alakult, de mindig szem előtt kell tartanunk a jószomszédi kapcsolatok fontosságát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_2</Tag>
-		<English>We can negotiate with the Natives, but we have to be fair. We should stay in the village for a while and see whether we can negotiate a bit more.</English>
+		<English>We can negotiate with the Natives, but we have to be fair. We should stay in the village for a while and see whether we can add in a few extras.</English>
 		<Portuguese>Podemos negociar com os nativos, mas temos de ser justos. Deveríamos ficar na aldeia por um tempo e ver se podemos negociar um pouco mais.</Portuguese>
 		<German>Wir können ruhig kräftig mit den Indianern verhandeln, sollten aber fair bleiben. Wir sollten eine Weile in dem Dorf bleiben und sehen, ob wir nicht noch etwas mehr herausschlagen können.</German>
 		<Russian>Нам нужно вести торговые переговоры с индейцами, но мы должны оставаться справедливыми. И предлагаю остаться в деревне на какое-то время и посмотреть, сможем ли мы договориться ещё о чем-нибудь.</Russian>
+		<Hungarian>Tárgyalhatunk az Indiánokkal, de tisztességesnek kell lennünk. Maradnunk kellene egy ideig a faluban és meg kellene nézni, hogy tudunk-e még egy kicsit tárgyalni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_3</Tag>
@@ -8200,6 +8273,7 @@
 		<Portuguese>Obtenha o máximo que puder! Foram os nativos que queriam esse comércio. Mostre-lhes que os europeus sabem como negociar duramente!</Portuguese>
 		<German>Holt alles raus, was ihr könnt. Immerhin wollten ja die Indianer diesen Handel. Nun sollen sie mal sehen, wie Europäer verhandeln!</German>
 		<Russian>Забирайте всё, что сможете. В конце концов, индейцы сами хотели этой торговли. Сейчас мы им покажем, как нужно вести переговоры по-европейски!</Russian>
+		<Hungarian>Szerezzünk meg annyit, amennyit csak lehet! Az Indiánok akarták ezt a kereskedelmet. Mutassuk meg nekik, hogy az európaiak tudnak keményen alkudni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2_4</Tag>
@@ -8207,6 +8281,7 @@
 		<Portuguese>O comércio [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] com os nativos foi bem-sucedido.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war von Erfolg gekrönt!</German>
 		<Russian>Торговля [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] с индейцами прошла успешно.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kereskedelmi üzlet sikeres volt az Indiánokkal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FRIENDLY_TRADE_WITH_NATIVE_NEIGHBORS_DONE_2</Tag>
@@ -8218,6 +8293,7 @@
 		<Portuguese>O comércio [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] com os nativos foi, em última análise, muito agressivo. O líder e seus guerreiros estão com raiva! Eles podem nos atacar no caminho de volta.</Portuguese>
 		<German>Der [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Handel mit den Ureinwohnern war letztlich zu agressiv. Der Anführer und seine Krieger sind sauer! Sie werden uns vielleicht auf dem Rückweg angreifen.</German>
 		<Russian>Индейцы крайне недовольны агрессивными методами ведения торговли со стороны [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT]!</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kereskedelmi üzlet az Indiánokkal túlságosan agresszív volt. A főnök és a harcosai dühösek! Lehet, hogy visszafelé megtámadnak minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_INITIAL_TRADE_WITH_NATIVES_1</Tag>
@@ -8225,6 +8301,7 @@
 		<Portuguese>As mulheres de uma aldeia indígena próxima ouviram falar dos nossos cobertores, potes e contas. Agora eles enviaram seus homens para trazer essas coisas lindas. Os homens não têm nada de valor, apenas um pouco de comida para trocar.</Portuguese>
 		<German>Die Ureinwohner-Frauen eines nahegelegenen Dorfes haben von unserem Angebot an Decken, Töpfen, Perlen und derlei gehört. Nun haben sie ihre Männer losgeschickt, ihnen diese schönen Dinge zu beschaffen. Die Männer haben keine Reichtümer mitgebracht, versprechen uns aber ein wenig Nahrung als Tauschware.</German>
 		<Russian>Индейские женщины из соседней деревни узнали, что к нам прибыла большая партия товаров для обмена (одеяла, горшки, бусы и много всего остального) и отправили своих мужчин за этими прекрасными вещами. Те не привезли с собой никаких богатств, но обещают нам взамен немного еды.</Russian>
+		<Hungarian>A közeli Indián falu női lakói hallottak a takaróinkról, edényeinkről és gyöngyeinkről. Most elküldték a férfiakat, hogy hozzák el nekik ezeket a gyönyörű tárgyakat. A férfiaknak nincs semmi értékes dolguk, csak egy kis élelmük, amit cserébe adhatnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_INITIAL_TRADE_WITH_NATIVES</Tag>
@@ -8232,6 +8309,7 @@
 		<Portuguese>Os nativos vêm para as cidades do império [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] para comércio.</Portuguese>
 		<German>Ureinwohner kommen zum Handeln in die Städte des [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreichs.</German>
 		<Russian>Индейцы приезжают в города империи [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] для торговли.</Russian>
+		<Hungarian>Az Indiánok a baráti [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] birodalom városaiba érkeznek kereskedni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_1</Tag>
@@ -8239,20 +8317,23 @@
 		<Portuguese>Eles podem manter seus suprimentos. Dê a eles algumas caixas de mercadorias comerciais. Isso é dinheiro bem gasto.</Portuguese>
 		<German>Sie können ihre Vorräte behalten. Gebt ihnen ruhig einige Kisten mit Handelswaren. Das ist gut investiertes Geld.</German>
 		<Russian>Пусть оставят еду своим детям. Дайте им несколько ящиков с товарами. Это хорошая инвестиция в наши соседские отношения.</Russian>
+		<Hungarian>Megtarthatják az ellátmányukat. Adjunk nekik néhány ládányi bizsut. Ez jól befektetett pénz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_2</Tag>
-		<English>They have to offer us more than just some corn and berries. Send them away. Tell them to come back when they have something worthwhile to offer us.</English>
+		<English>They have to offer us more than just corn and berries. Send them away. Tell them to come back when they have something worthwhile to offer us.</English>
 		<Portuguese>Eles têm para nos oferecer mais do que apenas milho e frutas vermelhas. Mande-os embora. Diga-lhes para voltarem quando tiverem algo que valha a pena nos oferecer.</Portuguese>
 		<German>Da müssen sie uns schon mehr bieten als das bischen Mais und Beeren. Schickt sie weg. Sie sollen erst wiederkommen, wenn sie etwas anbieten können, das sich für uns lohnt.</German>
 		<Russian>Они должны предложить нам нечто большее, чем просто немного кукурузы и ягод. Гоните их прочь и пусть возвращаются только тогда, когда они смогут предложить нам что-то более стоящее.</Russian>
+		<Hungarian>Többet kell kínálniuk nekünk, mint csak kukoricát és bogyókat. Küldjük el őket! Mondjuk meg nekik, hogy jöjjenek vissza, ha van valami érdemleges, amit fel tudnak kínálni nekünk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_INITIAL_TRADE_WITH_NATIVES_3</Tag>
-		<English>Yes, of course. Give them whatever they want in exchange for the food. When the Native women are happy, the warriors are happy too. We shouldn't have to worry too much about raids for a little while.</English>
+		<English>Yes, of course. Give them whatever they want in exchange for the food. When the Native women are happy, the warriors are happy too. We shouldn't have to worry about raids for a little while.</English>
 		<Portuguese>Sim, claro. Dê-lhes o que quiserem em troca da comida. Quando as mulheres nativas estão felizes, os guerreiros também ficam felizes. Não deveríamos ter que nos preocupar muito com ataques por enquanto.</Portuguese>
 		<German>Ja, natürlich. Gebt Ihnen im Tausch für die Nahrung reichlich von allem, was sie haben möchten. Sind die Indianer-Frauen glücklich, sind es die Männer auch und wir müssen uns erst einmal keine großen Sorgen um Überfälle machen.</German>
 		<Russian>Это не проблема. Дайте им все, что они хотят, в обмен на еду. Если женщины индейцев будут счастливы, то и их мужчины тоже будут счастливы и в ближайшее время нам не придется беспокоиться о набегах.</Russian>
+		<Hungarian>Igen, persze. Adjuk meg nekik, amit csak akarnak, cserébe az élelemért. Ha az Indián nők boldogok, a harcosok is boldogok. Egy darabig nem kell aggódnunk a portyák miatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADE_WITH_NATIVES_BETRAYAL_1</Tag>
@@ -8260,6 +8341,7 @@
 		<Portuguese>As mulheres de uma aldeia indígena próxima ouviram falar dos nossos cobertores, potes e contas. Agora eles enviaram seus homens para trazer essas coisas lindas. Os homens não têm nada de valor, apenas um pouco de comida para trocar.</Portuguese>
 		<German>Milord, Krieger eines nahegelegenen Dorfes sind zu uns gekommen und möchten wieder mit uns handeln. Ihre Frauen verlangen nach den üblichen Handelswaren. Insbesondere Decken für den kalten Winter sind dieses Jahr sehr gefragt.</German>
 		<Russian>Милорд, воины из соседней деревни индейцев пришли к нам и хотели бы снова торговать с нами. Их жены требуют еще украшений и одеял для предстоящей зимы.</Russian>
+		<Hungarian>A közeli Indián faluban élő nők hallottak a takaróinkról, edényeinkről és gyöngyeinkről. Most elküldték a férfiakat, hogy hozzák el nekik ezeket a gyönyörű tárgyakat. A férfiaknak nincs semmi értékes dolguk, csak egy kis élelmük, amit cserébe adhatnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL</Tag>
@@ -8267,6 +8349,7 @@
 		<Portuguese>Os nativos de uma aldeia vizinha querem negociar com o império [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Portuguese>
 		<German>Ureinwohner eines benachbarten Dorfes wollen wieder mit dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich handeln.</German>
 		<Russian>Индейцы снова приезжают в города империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] для торговли.</Russian>
+		<Hungarian>A szomszédos falu Indiánjai kereskedni akarnak a velük baráti [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] birodalommal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVE_BETRAYAL_INTRO_HELP</Tag>
@@ -8288,6 +8371,7 @@
 		<Portuguese>Dentro de [COLOR_HIGHLIGHT_TEXT]%d3[COLOR_REVERT] turnos, envie uma unidade [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] para a aldeia nativa vizinha [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT] que deseja negociar com você e vender ou doar [COLOR_HIGHLIGHT_TEXT]%d4 mercadorias comerciais da Europa[COLOR_REVERT].[NEWLINE]Fique atento! Parece que os comerciantes estão tramando alguma coisa. Verifique as mercadorias com antecedência. Se vendermos produtos de má qualidade aos nativos, eles tornarão as nossas vidas muito desagradáveis.</Portuguese>
 		<German>Schickt innerhalb von [COLOR_HIGHLIGHT_TEXT]%d3[COLOR_REVERT] Runden eine Einheit [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] zu dem benachbarten Indianer-Dorf [COLOR_HIGHLIGHT_TEXT]%s2[COLOR_REVERT], das mit Euch Handel treiben möchte und verkauft oder verschenkt [COLOR_HIGHLIGHT_TEXT]%d4 Handelswaren aus Europa [COLOR_REVERT] an das Dorf. [NEWLINE]Aber seid gewarnt, die Händler führen etwas im Schilde. Kontrolliert die Waren vorher noch einmal. Verkauft ihr den Ureinwohnern schlechte Waren, werden sie wütend werden.</German>
 		<Russian>В течение %d3 ходов отправьте [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] в деревню индейцев, которые хотят торговать с вами. Но будьте осторожны: торговец что-то замышляет. Проверьте повозки перед отправкой. Если вы продадите туземцам плохой товар, они разозлятся.</Russian>
+		<Hungarian>%d3 körön belül küldj egy [COLOR_UNIT_TEXT]%s1:1_unit[COLOR_REVERT] egységet a szomszédos Indián faluba, amely kereskedni akar veled. Légy óvatos! Úgy tűnik, a kereskedők valami cselt forralnak. Előtte alaposan ellenőrizd az árukat. Ha silány árukat adunk el az Indiánoknak, akkor nagyon megnehezítik az életünket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TRADE_WITH_NATIVES_BETRAYAL_2</Tag>
@@ -8295,6 +8379,7 @@
 		<Portuguese>Milorde, recebemos a notícia de que nossos comerciantes chegaram aas aldeias nativas. O comboio pode partir agora.</Portuguese>
 		<German>Milord, wir erhielten Nachricht, dass unsere Händler die Dörfer der Ureinwohner erreicht haben. Die Wagenkolonne kann sich nun auf den Weg machen.</German>
 		<Russian>Милорд, мы получили известие, что наши торговцы добрались до поселений индейцев. Теперь мы можем отправить к ним большой обоз(?).</Russian>
+		<Hungarian>Uram, értesítést kaptunk, hogy kereskedőink megérkeztek az Indián településekre. A konvoj most már indulhat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_2_1</Tag>
@@ -8302,6 +8387,7 @@
 		<Portuguese>Os nativos de uma aldeia vizinha querem negociar connosco.</Portuguese>
 		<German>Ureinwohner eines benachbarten Dorfes wollen wieder mit uns handeln.</German>
 		<Russian>Индейцы снова приезжают в города империи [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] для торговли.</Russian>
+		<Hungarian>A szomszédos falu Indiánjai kereskedni akarnak a velük baráti [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] birodalommal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_TRADE_WITH_NATIVES_BETRAYAL_2</Tag>
@@ -8309,13 +8395,15 @@
 		<Portuguese>Infelizmente você esperou muito. A Aldeia Nativa não está mais disposta a negociar com você no momento. A boa notícia é que a caminhada já está disponível para outros trabalhos.</Portuguese>
 		<German>Ihr habt leider zulange gewartet. Das Indianerdorf kann oder möchte gegenwärtig keinen Handel mit Euch treiben. Ihr könnt den Treck nun wieder anderweitig verwenden.</German>
 		<Russian>К сожалению, вы слишком долго ждали. В данный момент индейцы не могут или не хотят торговать с вами. Вы можете перенаправить транспорт на другие торговые маршруты.</Russian>
+		<Hungarian>Sajnos túl sokáig vártál. Az Indián falu jelenleg nem hajlandó veled kereskedni. A jó hír az, hogy a trekk most más feladatokhoz is használható.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL_2_DONE</Tag>
-		<English>The treacherous traders reached the Native villages.</English>
+		<English>The treacherous traders reach the Native villages.</English>
 		<Portuguese>Os comerciantes traiçoeiros chegaram às aldeias indígenas.</Portuguese>
 		<German>Verschlagene Händler erreichen die Indianerdörfer.</German>
 		<Russian>Коварные торговцы добрались до деревень индейцев.</Russian>
+		<Hungarian>Az áruló kereskedők elérték az Indián falvakat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_2_DONE_1</Tag>
@@ -8323,27 +8411,31 @@
 		<Portuguese>Milorde, o comboio chegou à aldeia indígena, mas algo parece errado. Os comerciantes evitam contato visual com os moradores que aguardam ansiosamente suas mercadorias.[NEWLINE][NEWLINE]De repente você percebe: as mercadorias devem estar estragadas, os cobertores mofados, talvez até infectados com varíola.[NEWLINE]É tarde demais para fazer qualquer coisa. A ganância dos comerciantes venceu.</Portuguese>
 		<German>Milord, die Wagenkolonne hat das Indianerdorf erreicht. Aber irgend etwas stimmt hier nicht. Die Händler blicken verschlagen zu den Indianern herüber, die begierig den Waren entgegensehen.[NEWLINE][NEWLINE]Jetzt geht Euch ein Licht auf - die Waren sind verdorben und die Decken verschimmelt, vielleicht sogar mit Pocken infiziert. Aber ihr könnt nichts mehr tun, die Gier auf Seiten der Händler hat gesiegt. Ihr solltet machen, dass ihr da wegkommt!</German>
 		<Russian>Милорд, обоз прибыл в деревню индейцев. Но что-то здесь не так... Торговцы хитро поглядывают на индейцев, с нетерпением ожидающих товар. Теперь до вас доходит — товар испорчен, а одеяла заплесневели, а возможно, даже заражены оспой! Но теперь уже ничего не исправить, жадность торговцев взяла верх. Надо уходить оттуда как можно скорее!</Russian>
+		<Hungarian>Uram, az ekhós szekér elérte az Indián falut, de valami nem stimmel. A kereskedők kerülik a szemkontaktust a falubeliekkel, akik alig várják az árukat. [NEWLINE]Hirtelen rájössz: az áruk biztosan romlottak, a takarók penészesek, talán még himlővel is fertőzöttek. [NEWLINE]Már késő bármit is tenni. A kereskedők kapzsisága győzött.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_2_DONE</Tag>
-		<English>Greedy traders sell spoiled and mouldy goods to the Natives.</English>
+		<English>Greedy traders sell spoiled goods to the Natives.</English>
 		<Portuguese>Comerciantes gananciosos vendem produtos estragados e mofados aos nativos.</Portuguese>
 		<German>Gierige Händler verkaufen den Ureinwohnern verdorbene und verschimmelte Waren.</German>
 		<Russian>Жадные торговцы продают туземцам испорченные и заплесневелые товары.</Russian>
+		<Hungarian>Kapzsi kereskedők romlott és penészes árukat adnak el az Indiánoknak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_TRADE_WITH_NATIVES_BETRAYAL_3</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]Natives are bitterly disappointed[COLOR_REVERT] by Europeans and their fraudulent trading.</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]Natives are bitterly disappointed[COLOR_REVERT] by Europeans and their dishonest trading.</English>
 		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Os nativos estão profundamente desapontados[COLOR_REVERT] com os europeus e com o seu comércio fraudulento.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Ureinwohner sind zutiefst[COLOR_REVERT] enttäuscht von den Europäern und ihrem Betrug mit gehandelten Waren.</German>
 		<Russian>Индейцы сильно разочарованы европейцами и их мошенничеством с товарами для торговли.</Russian>
+		<Hungarian>Az Indiánok keserűen csalódtak az európaikban és azok csalárd kereskedelmében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_3</Tag>
-		<English>What have the traders done? Traded away all our trust for one wagonload. The Natives will certainly take revenge when their women, children and warriors die from tainted goods. We must get ready for the worst!</English>
+		<English>What have the traders done? Traded away all our trust for one wagonload. The Natives will certainly take revenge when their women, children and warriors die from tainted goods. We must prepare for the worst!</English>
 		<Portuguese>O que os comerciantes fizeram? Trocamos toda a nossa confiança por uma carroça. Os nativos certamente se vingarão quando suas mulheres, crianças e guerreiros morrerem por causa de produtos contaminados. Devemos nos preparar para o pior!</Portuguese>
 		<German>Was haben die Händler getan! Mit einer Wagenladung alles Vertrauen verspielt. Die Ureinwohner werden sich rächen, nachdem viele ihrer Frauen, Kinder und Krieger an den Folgen der verdorbenen Waren umgekommen sind. Wir müssen uns wapnen!</German>
 		<Russian>Что же натворили эти торговцы! Все доверие потеряно из-за одного обоза с плохим товаром. Туземцы будут мстить после того, как многие из их женщин, детей и воинов погибнут из-за тех одеял. Нам нужно готовиться к нападению!</Russian>
+		<Hungarian>Mit tettek a kereskedők? Eladták az összes hitelünket egy szekérnyi áruért. Az Indiánok biztosan bosszút fognak állni, amikor nőik, gyermekeik és harcosaik meghalnak a szennyezett áruk miatt. Fel kell készülnünk a legrosszabbra!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_INITIAL_1</Tag>
@@ -8351,6 +8443,7 @@
 		<Portuguese>Milorde, alguns nativos de aldeias próximas estão [COLOR_HIGHLIGHT_TEXT]reclamando[COLOR_REVERT] em voz alta sobre todos os [COLOR_HIGHLIGHT_TEXT]soldados[COLOR_REVERT] estacionados em nossas colônias. Sentem-se ameaçados e exigem que enviemos alguns deles de volta através das grandes águas - o que significa voltar para a Europa.</Portuguese>
 		<German>Milord, einige Indianer aus den nahegelegenen Dörfern [COLOR_HIGHLIGHT_TEXT]beschweren[COLOR_REVERT] sich immer häufiger über die vielen [COLOR_HIGHLIGHT_TEXT]Soldaten[COLOR_REVERT], die in unseren Kolonien stationiert sind. Sie fühlen sich bedroht und verlangen, dass wir einige von Ihnen zurück über das große Wasser schicken - zurück nach Europa also.</German>
 		<Russian>Милорд, некоторые индейцы из близлежащих деревень все чаще [COLOR_HIGHLIGHT_TEXT]жалуются[COLOR_REVERT] на множество [COLOR_HIGHLIGHT_TEXT]солдат[COLOR_REVERT], дислоцированных в наших колониях. Они чувствуют угрозу и требуют, чтобы мы отправили некоторых из них обратно через большую воду, то есть в Европу.</Russian>
+		<Hungarian>Uram, a közeli falvakból néhány Indián hangosan [COLOR_HIGHLIGHT_TEXT]panaszkodik[COLOR_REVERT] a gyarmatainkon állomásozó [COLOR_HIGHLIGHT_TEXT]katonákra[COLOR_REVERT]. Fenyegetve érzik magukat és azt követelik, hogy néhányukat küldjük vissza a nagy víz túloldalára – vagyis vissza Európába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_INITIAL_1</Tag>
@@ -8358,6 +8451,7 @@
 		<Portuguese>Então, eles fazem isso? Bem, como estes nativos apontam com razão, temos muitos soldados aqui. Não temos nada a temer dos nativos. Diga a eles... então... hum, diga a eles o que você gosta. As tropas vão ficar!</Portuguese>
 		<German>So, tun sie das? Nun, wie die Indianer richtig bemerken, haben wir hier viele Soldaten. Wir haben die Indianer also nicht zu fürchten. Sagt Ihnen....also...ähm, ach sagt ihnen doch was Ihr wollt. Die Truppen bleiben jedenfalls hier.</German>
 		<Russian>Серьёзно? Ну, как они справедливо заметили, солдат у нас здесь много, да. Так что нам не нужно бояться индейцев. Скажите им... эм... хм.. да всё, что угодно. В любом случае, войска останутся здесь.</Russian>
+		<Hungarian>Tényleg? Nos, ahogy ezek az Indiánok helyesen rámutatnak, itt sok katonánk van. Nincs miért félnünk az Indiánoktól. Mondjuk meg nekik... szóval... mondjuk meg nekik, ami tetszik. A csapatok maradnak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_STIRRED_UP_NATIVES_INITIAL</Tag>
@@ -8365,6 +8459,7 @@
 		<Portuguese>Alguns nativos estão descontentes com todos os soldados do império [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT].</Portuguese>
 		<German>Einige Ureinwohner sind verstimmt über die vielen Soldaten im Dienste des [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Königreichs.</German>
 		<Russian>Некоторые индейцы недовольны множеству солдат империи [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] рядом со своими деревнями.</Russian>
+		<Hungarian>Néhány Indián elégedetlen a közeli [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] birodalom katonáival.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_HORSES_1</Tag>
@@ -8372,6 +8467,7 @@
 		<Portuguese>Milorde, alguns nativos de uma aldeia próxima [COLOR_HIGHLIGHT_TEXT]estão preocupados[COLOR_REVERT], mas ao mesmo tempo fascinados por nossas tropas montadas. Eles querem que você mande os soldados embora. Porém, eles obviamente admiram os [COLOR_HIGHLIGHT_TEXT]cavalos[COLOR_REVERT] e os exigem como presente.</Portuguese>
 		<German>Milord, einige Indianer aus einem nahegelegenen Dorf [COLOR_HIGHLIGHT_TEXT]sind besorgt[COLOR_REVERT] und gleichzeitig fasziniert von unseren berittenen Truppen. Sie möchten, dass ihr die Soldaten wegschickt. Allerdings finden sie offenbar großen Gefallen an den [COLOR_HIGHLIGHT_TEXT]Pferden [COLOR_REVERT] und "verlangen" sie als Geschenk.</German>
 		<Russian>Милорд, некоторые индейцы из соседней деревни [COLOR_HIGHLIGHT_TEXT]обеспокоены[COLOR_REVERT] и в то же время очарованы нашими конными войсками. Они хотят, чтобы вы отослали солдат подальше от деревни. Однако им очень понравились [COLOR_HIGHLIGHT_TEXT]лошади[COLOR_REVERT] и вожди требуют подарить их племени.</Russian>
+		<Hungarian>Uram, a közeli falu néhány indiánja [COLOR_HIGHLIGHT_TEXT]aggódik[COLOR_REVERT], ugyanakkor lenyűgözi őket a lovas csapatunk. Azt szeretnék, ha elküldenénk a katonákat. Ugyanakkor nyilvánvalóan csodálják a [COLOR_HIGHLIGHT_TEXT]lovakat[COLOR_REVERT] és ajándékba kérik őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_1</Tag>
@@ -8393,6 +8489,7 @@
 		<Portuguese>Então. Tudo bem, admito que é uma [COLOR_HIGHLIGHT_TEXT]situação séria[COLOR_REVERT]. Mas não podemos simplesmente dar-lhes todos os cavalos. É ridículo. Eles vão rir de nós. As tropas ficam onde estão e os nativos terão que partir sem elas.</Portuguese>
 		<German>Soso. Nun gut, eine [COLOR_HIGHLIGHT_TEXT]ernste Situation[COLOR_REVERT]. Aber wir können Ihnen ja nicht einfach die ganzen Pferde überlassen. Man würde über uns spotten. Die Truppe bleibt wo sie ist und die Indianer sollen ohne sie abziehen.</German>
 		<Russian>Что же, надо признать, [COLOR_HIGHLIGHT_TEXT]ситуация серьёзная[COLOR_REVERT]. Но мы не можем просто отдать им всех лошадей. Это нелепо. Все, кому не лень, будут смеяться над нами. Войска останутся на своих местах, а индейцам придется уйти на своих двоих.</Russian>
+		<Hungarian>Rendben. Elismerem, hogy ez egy komoly helyzet. De nem adhatjuk oda nekik az összes lovat. Ez nevetséges. Ki fognak röhögni minket. A csapatok maradnak, ahol vannak! Az Indiánoknak nélkülük kell távozniuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_HORSES_DONE</Tag>
@@ -8470,6 +8567,7 @@
 		<Portuguese>Milorde, alguns nativos de uma aldeia próxima [COLOR_HIGHLIGHT_TEXT]estão preocupados[COLOR_REVERT], mas ao mesmo tempo fascinados por nossas tropas de infantaria com seus mosquetes. Eles querem que você mande os soldados embora. No entanto, eles são obviamente tentados pelos [COLOR_HIGHLIGHT_TEXT]mosquetes [COLOR_REVERT] e os exigem como presente.</Portuguese>
 		<German>Milord, einige Indianer aus einem nahegelegenen Dorf [COLOR_HIGHLIGHT_TEXT]sind besorgt[COLOR_REVERT] und gleichzeitig fasziniert von unseren Infanterietruppen mit ihren Musketen. Sie möchten, dass ihr die Soldaten wegschickt. Allerdings finden sie offenbar großen Gefallen an den [COLOR_HIGHLIGHT_TEXT]Musketen [COLOR_REVERT] und "verlangen" sie als Geschenk.</German>
 		<Russian>Милорд, некоторые индейцы из соседней деревни [COLOR_HIGHLIGHT_TEXT]обеспокоены[COLOR_REVERT] большим количеством войск в наших городах. Они хотят, чтобы вы отослали солдат подальше от деревни. Однако им очень понравились [COLOR_HIGHLIGHT_TEXT]мушкеты[COLOR_REVERT] и вожди требуют подарить их племени.</Russian>
+		<Hungarian>Uram, a közeli falu néhány Indiánja [COLOR_HIGHLIGHT_TEXT]aggódik[COLOR_REVERT], ugyanakkor lenyűgözi őket a puskákkal felszerelt gyalogságunk. Azt szeretnék, ha elküldenénk a katonákat. Ugyanakkor nyilvánvalóan vonzódnak a [COLOR_HIGHLIGHT_TEXT]puskákhoz [COLOR_REVERT] és ajándékba kérik őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_1</Tag>
@@ -8512,6 +8610,7 @@
 		<Portuguese>A atmosfera entre o império [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] e alguns dos nativos está se deteriorando significativamente.</Portuguese>
 		<German>Die Stimmung zwischen dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich und einigen Ureinwohnern verschlechtert sich erheblich.</German>
 		<Russian>Отношения между империей [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] и некоторыми индейцами ухудшаются.</Russian>
+		<Hungarian>A katonailag jól felszerelt [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] birodalom és néhány Indián közötti viszony egyre romlik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_MUSKETS_DONE</Tag>
@@ -8578,7 +8677,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_LAND_RETURN_2</Tag>
-		<English>Milord, envoys from a neighboring Native tribe have come bearing grave complaints. They speak of ancestral hunting grounds and sacred places now lying within our borders, and ask whether we intend to rule as [COLOR_HIGHLIGHT_TEXT]neighbors in peace[COLOR_REVERT] or as conquerors without restraint.</English>
+		<English>Milord, envoys from a neighbouring Native tribe have come bearing grave complaints. They speak of ancestral hunting grounds and sacred places now lying within our borders, and ask whether we intend to rule as [COLOR_HIGHLIGHT_TEXT]neighbours in peace[COLOR_REVERT] or as conquerors without restraint.</English>
 		<Portuguese>Milorde, enviados de uma tribo nativa vizinha vieram com graves queixas. Eles falam de áreas de caça ancestrais e lugares sagrados que agora se encontram dentro das nossas fronteiras e perguntam se pretendemos governar como [COLOR_HIGHLIGHT_TEXT]vizinhos em paz[COLOR_REVERT] ou como conquistadores sem restrições.</Portuguese>
 		<German>Milord, Gesandte eines benachbarten Indianerstammes klagen über Landraub. Sie sprechen von angestammten Jagdgründen und heiligen Orten, die nun innerhalb unserer Grenzen liegen, und fragen, ob wir als [COLOR_HIGHLIGHT_TEXT]friedliche Nachbarn[COLOR_REVERT] herrschen wollen — oder als Eroberer ohne Maß und Mäßigung.</German>
 		<Russian>Милорд, посланники из соседнего индейского племени прибыли с серьёзными жалобами. Они говорят о родовых охотничьих угодьях и священных местах, которые теперь находятся в пределах наших границ и спрашивают, намерены ли мы править как [COLOR_HIGHLIGHT_TEXT]мирные соседи[COLOR_REVERT] или как завоеватели.</Russian>
@@ -8613,14 +8712,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_WN_1</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] have returned contested lands to a neighboring tribe, greatly improving relations.</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] have returned contested lands to a neighbouring tribe, greatly improving relations.</English>
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] devolveram terras contestadas a uma tribo vizinha, melhorando muito as relações.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat umstrittenes Land an einen benachbarten Stamm zurückgegeben und dadurch die Beziehungen deutlich verbessert.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] вернули спорные земли соседнему племени, значительно улучшив отношения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_WN_2</Tag>
-		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] have compensated a neighboring tribe with gold, but resentment over the lost lands remains.</English>
+		<English>The [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] have compensated a neighbouring tribe with gold, but resentment over the lost lands remains.</English>
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] compensaram uma tribo vizinha com ouro, mas o ressentimento pelas terras perdidas permanece.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat einen benachbarten Stamm mit Gold entschädigt, doch der Groll über das verlorene Land bleibt bestehen.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] выплатили соседнему племени компенсацию золотом, но обида из-за утраченных земель у индейцев осталась.</Russian>
@@ -8666,6 +8765,7 @@
 		<Portuguese>Milorde, alguns nativos de uma aldeia próxima [COLOR_HIGHLIGHT_TEXT]estão furiosos[COLOR_REVERT], dizendo que estamos roubando e explorando suas terras. Eles declaram que a terra deveria pertencer a todos. Eles exigem que [COLOR_HIGHLIGHT_TEXT]devolvamos[COLOR_REVERT], pelo menos em parte.</Portuguese>
 		<German>Milord, einige Indianer aus einem nahegelegenen Dorf [COLOR_HIGHLIGHT_TEXT]sind wütend[COLOR_REVERT] darüber, wie sehr wir ihr Land rauben und ausbeuten. Sie meinen das Land sollte allen gehören und verlangen, dass wir es zumindest teilweise wieder [COLOR_HIGHLIGHT_TEXT]räumen und zurückgeben[COLOR_REVERT].</German>
 		<Russian>Милорд, некоторые индейцы из соседней деревни [COLOR_HIGHLIGHT_TEXT]недовольны[COLOR_REVERT] тем, что наши люди самовольно расселяются по округе. Они считают эту землю своей и требуют, чтобы мы [COLOR_HIGHLIGHT_TEXT]отозвали[COLOR_REVERT] поселенцев и уничтожили все возведённые постройки.</Russian>
+		<Hungarian>Uram, néhány közeli falu indiánjai [COLOR_HIGHLIGHT_TEXT]dühösek[COLOR_REVERT], mert szerintük ellopjuk és kizsákmányoljuk a földjüket. Azt állítják, hogy a föld mindenkié. Azt követelik, hogy [COLOR_HIGHLIGHT_TEXT]adjuk vissza[COLOR_REVERT], vagy legalábbis egy részét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_LANDGRABBING_1</Tag>
@@ -8673,6 +8773,7 @@
 		<Portuguese>Não aceitaremos ordens de alguns nativos. Peguem em armas! Proteja as colônias! Responda-lhes com chumbo!</Portuguese>
 		<German>Wir lassen uns doch von so ein paar Indianern nichts befehlen. Zu den Waffen, schützt die Kolonien! Antwortet ihnen mit Blei!</German>
 		<Russian>Мы не позволим каким-то дикарям диктовать нам свои условия. К оружию, братья, защитим наши колонии!</Russian>
+		<Hungarian>Nem fogadunk el parancsokat néhány Indiántól. Fegyverbe! Védjétek a kolóniákat! Válaszoljatok nekik ólommal!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_LANDGRABBING_LN_1</Tag>
@@ -8680,13 +8781,15 @@
 		<Portuguese>A atmosfera entre o império [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] e alguns dos nativos está se deteriorando rapidamente.</Portuguese>
 		<German>Die Stimmung zwischen dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich und einigen Ureinwohnern verschlechtert sich erheblich.</German>
 		<Russian>Отношения между империей [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] и некоторыми индейцами значительно ухудшаются.</Russian>
+		<Hungarian>A katonailag jól felszerelt [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] birodalom és néhány Indián közötti viszony gyorsan romlik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_LANDGRABBING_2</Tag>
-		<English>Yes, the Natives are correct. Our colonies are springing up like mushrooms as we spread out further and further. As a sign of peace, we should demolish some of the buildings in at least one colony. That should appease them.</English>
+		<English>Yes, the Natives are correct. Our colonies are springing up like mushrooms. As a sign of peace, we should demolish some buildings in at least one colony. That should appease them.</English>
 		<Portuguese>Sim, os nativos estão corretos. Nossas colônias estão surgindo como cogumelos à medida que nos espalhamos cada vez mais. Como sinal de paz, deveríamos demolir alguns dos edifícios de pelo menos uma colônia. Isso deveria acalmá-los.</Portuguese>
 		<German>Ja, das haben die Indianer nicht unrecht. Unsere Kolonien schießen wie Pilze aus dem Boden und wir breiten uns immer weiter aus. Als Zeichen des Friedens sollten wir zumindest in einer Kolonie einige Bauten wieder abreißen. Das sollte sie besänftigen.</German>
 		<Russian>Индейцев можно понять. Наши колонии растут, как грибы и поселенцы отходят все дальше и дальше от побережья. В знак нашего уважения к туземцам и для поддержания мира нам следует снести некоторые здания хотя бы в одной колонии. Это должно их успокоить.</Russian>
+		<Hungarian>Igen, az Indiánoknak igazuk van. A gyarmataink úgy szaporodnak, mint a gomba, ahogy egyre tovább terjeszkedünk. A béke jeleként legalább egy gyarmatunkban le kellene bontani néhány épületet. Ez megnyugtatná őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_LANDGRABBING_LN_2</Tag>
@@ -8694,13 +8797,15 @@
 		<Portuguese>Nas colônias [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT], um acordo é alcançado com alguns líderes nativos sobre a apropriação de terras em andamento.</Portuguese>
 		<German>In den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien einigt man sich mit einigen Indianern wg. des fortschreitenden Landraubs.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] договорились с некоторыми индейцами о не распространении колоний на земли туземцев.</Russian>
+		<Hungarian>A békülékeny [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] kolóniákban megállapodás született néhány Indián főnökkel a földek megszerzéséről.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_LANDGRABBING_3</Tag>
-		<English>The settlers remember how they worked hard to build everything. They can't understand why we want to tear it down. Maybe we can pay off the Indians with gold. We'll get it back again when they buy goods from us.</English>
+		<English>The settlers remember how hard they worked to build everything. They can't understand why we'd want to tear it down. Maybe we can pay off the Indians with gold. We'll get the money back when they buy our goods.</English>
 		<Portuguese>Os colonos lembram como trabalharam duro para construir tudo. Eles não conseguem entender por que queremos derrubá-lo. Talvez possamos pagar aos índios com ouro. Nós o recuperaremos quando eles comprarem produtos nossos.</Portuguese>
 		<German>Nun ja, die Siedler haben alles mit harter Arbeit aufgebaut. Sie würden es nicht verstehen, wenn wir es jetzt niederreißen. Aber ich schlage vor, dass wir die Indianer mit Gold entschädigen. Damit können sie dann bei uns gleich wieder Waren kaufen!</German>
 		<Russian>Эти здания плод тяжёлого труда множества поселенцев. Они бы не поняли, если бы мы начали их разрушать и как бы дело не дошло до мятежа. Давайте предложим индейцам в качестве компенсации золото. Тем более, потом они смогут его потратить на покупку у нас различных товаров!</Russian>
+		<Hungarian>A lakosok emlékeznek arra, hogy milyen keményen dolgoztak, hogy mindent felépítsenek. Nem értik, miért akarjuk lebontani. Talán arannyal fizethetnénk ki az Indiánokat. Majd visszakapjuk, amikor tőlünk vásárolnak árukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_LANDGRABBING_LN_3</Tag>
@@ -8708,6 +8813,7 @@
 		<Portuguese>A atmosfera entre o império [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] e alguns dos nativos melhorou.</Portuguese>
 		<German>Die Stimmung zwischen dem [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich und einigen Ureinwohnern hat sich verbessert.</German>
 		<Russian>Отношения между империей [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] и некоторыми индейцами улучшаются.</Russian>
+		<Hungarian>A baráti gesztusokat tevő [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] birodalom és néhány Indián közötti légkör javult.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_SACRED_GROUNDS_1</Tag>
@@ -8806,20 +8912,23 @@
 		<Portuguese>Os nativos irão [COLOR_FONT_GOLD]atacar[COLOR_REVERT] a colônia. Recomendado apenas se o espaço ao redor da colônia não estiver ocupado por nenhuma unidade.</Portuguese>
 		<German>Die Indianer werden die Siedlung [COLOR_FONT_GOLD]angreifen[COLOR_REVERT]. Nur zu empfehlen, wenn der Platz rund um die Kolonie nicht von irgendeiner Einheit besetzt ist.</German>
 		<Russian>Индейцы [COLOR_FONT_GOLD]нападут[COLOR_REVERT] на колонию. Рекомендуется только в том случае, если пространство вокруг колонии не занято никаким юнитом.</Russian>
+		<Hungarian>Az Indiánok [COLOR_FONT_GOLD]megtámadják[COLOR_REVERT] a kolóniát. Csak akkor ajánlott, ha a kolónia körüli területen nincs semmilyen egység.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALING_TRIP_1</Tag>
-		<English>Milord, the crew on one of our fishing boats claims to have seen a huge white whale at sea, the biggest whale ever. That's something we have to see!.</English>
+		<English>Milord, the crew on one of our fishing boats claims to have spotted a huge white whale at sea, the biggest whale ever. We have to see this!</English>
 		<Portuguese>Milorde, a tripulação de um dos nossos barcos de pesca afirma ter visto uma enorme baleia branca no mar, a maior baleia de sempre. Isso é algo que temos que ver!</Portuguese>
 		<German>Milord, die Besatung eines unserer Fischerboote behauptet, sie habe auf dem Meer einen gewaltigen weißen Wal gesehen, so groß wie noch nie ein Wal zuvor gewesen sei. Das sollten wir uns nicht entgehen lassen.</German>
 		<Russian>Милорд, команда одной из наших рыбацких лодок утверждает, что видела в море огромного белого кита! Самого большого кита, которого они когда-либо видели. Мы не должны упустить такой шанс!</Russian>
+		<Hungarian>Uram, az egyik halászhajónk legénysége azt állítja, hogy hatalmas fehér bálnát látott a tengeren, a legnagyobb bálnát, amivel valaha találkoztak. Ezt látnunk kell!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_1</Tag>
-		<English>At the very least the whalers should take a look. Where there's one whale, there's bound to be more.</English>
+		<English>At the very least the whalers should go and take a look. Where there's one whale, there's bound to be more.</English>
 		<Portuguese>No mínimo, os baleeiros deveriam dar uma olhada. Onde há uma baleia, certamente haverá mais.</Portuguese>
 		<German>Auf jeden Fall sollten sich die Walfänger das mal ansehen. Wo ein Wal ist, sind bestimmt noch mehr zu finden. Ich wittere reiche Beute.</German>
 		<Russian>Да, китобоям стоит обратить на это внимание. Там, где есть один кит, обязательно появится и другой. Я чую богатую добычу.</Russian>
+		<Hungarian>A bálnavadászoknak legalább meg kellene nézniük. Ha van egy bálna, akkor biztosan több is van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_WHALING_TRIP</Tag>
@@ -8827,6 +8936,7 @@
 		<Portuguese>Infelizmente, seus baleeiros não conseguiram rastrear a lendária baleia branca.</Portuguese>
 		<German>Eure Walfänger haben den legendären weißen Wal leider nicht aufstöbern können.</German>
 		<Russian>К сожалению, вашим китобоям не удалось выследить легендарного белого кита.</Russian>
+		<Hungarian>Sajnos a bálnavadászok nem találták meg a legendás fehér bálnát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_HELP</Tag>
@@ -8834,6 +8944,7 @@
 		<Portuguese>[ICON_BULLET] Dentro de [COLOR_UNIT_TEXT]30[COLOR_REVERT] turnos, envie uma unidade do [COLOR_UNIT_TEXT]barco baleeiro[COLOR_REVERT] para a posição no mar onde a tripulação do barco pesqueiro afirma ter visto a baleia branca.</Portuguese>
 		<German>[ICON_BULLET] Schickt innerhalb von [COLOR_UNIT_TEXT]30[COLOR_REVERT] Runden eine Einheit [COLOR_UNIT_TEXT]Walfänger[COLOR_REVERT] zu der Position auf See, wo die Besatzung des Fischerboots den weißen Wal gesehen haben will.</German>
 		<Russian>[ICON_BULLET] В течении [COLOR_UNIT_TEXT]30 ходов[COLOR_REVERT] отправьте [COLOR_UNIT_TEXT]китобойное судно[COLOR_REVERT] к месту в море, где рыбаки видели кита.</Russian>
+		<Hungarian>[ICON_BULLET] [COLOR_UNIT_TEXT]30[COLOR_REVERT] körön belül küldj egy [COLOR_UNIT_TEXT]Bálnavadász Hajót[COLOR_REVERT] arra a tengeri pozícióra, ahol a halászhajó legénysége állítólag látta a fehér bálnát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_PYTHON</Tag>
@@ -8841,6 +8952,7 @@
 		<Portuguese>[ICON_BULLET] [COLOR_UNIT_TEXT]Baleias jubarte[COLOR_REVERT] podem ser muito perigosas. Fique alerta caso eles ataquem.</Portuguese>
 		<German>[ICON_BULLET] Die [COLOR_UNIT_TEXT]Buckelwale[COLOR_REVERT] in der Nähe sind gefährlich. Seid gewarnt, sie werden Euch vermutlich angreifen!</German>
 		<Russian>[ICON_BULLET] [COLOR_UNIT_TEXT]Горбатые киты[COLOR_REVERT] могут быть очень опасны. Будьте осторожны, они могут напасть на судно!</Russian>
+		<Hungarian>[ICON_BULLET] A [COLOR_UNIT_TEXT]Púpos Bálnák[COLOR_REVERT] nagyon veszélyesek lehetnek. Legyünk óvatosak, hátha támadnak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_WHALING_TRIP_DONE</Tag>
@@ -8848,27 +8960,31 @@
 		<Portuguese>Um barco baleeiro [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] zarpa em busca da lendária baleia branca.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Walfänger ist in See gestochen, um den legendären weißen Wal zu finden.</German>
 		<Russian>Китобои [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправились на поиски легендарного белого кита.</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] bálnavadász hajó indul útnak, hogy megtalálja a legendás fehér bálnát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_1</Tag>
-		<English>Milord, our very best lookout couldn't find the great white whale. We did see [COLOR_HIGHLIGHT_TEXT]plenty of whales[COLOR_REVERT] in the area. It seems the fishermen were right about that at least. If we stay around here for a while maybe we'll find the whale - or it will find us.</English>
+		<English>Milord, our sharpest lookout couldn't find the great white whale. We did see [COLOR_HIGHLIGHT_TEXT]plenty of whales[COLOR_REVERT] in the area. It seems the fishermen were right about that at least. If we stay around here for a while maybe we'll find the whale - or it will find us.</English>
 		<Portuguese>Milorde, o nosso melhor vigia não conseguiu encontrar a grande baleia branca. Vimos [COLOR_HIGHLIGHT_TEXT]muitas baleias[COLOR_REVERT] na área. Parece que os pescadores estavam certos, pelo menos nisso. Se ficarmos por aqui por um tempo, talvez encontremos a baleia – ou ela nos encontre.</Portuguese>
 		<German>Milord, unsere Männer haben den besten Ausguck an Bord, konnten den großen weißen Wal aber nicht finden. Trotzdem gibt es in dem Gebiet [COLOR_HIGHLIGHT_TEXT]reichlich Wale[COLOR_REVERT]. Es scheint, als hätten die Fischer wenigstens damit Recht gehabt. Wir bleiben eine Weile in der Nähe, vielleicht finden wir den Wal noch - oder er uns.</German>
 		<Russian>Милорд, на борту китобоя хорошие наблюдатели, но они не смогли найти большого белого кита. Тем не менее, в этом районе водится множество других [COLOR_HIGHLIGHT_TEXT]китов[COLOR_REVERT]. Хотя бы в этом рыбаки были правы. Побудем некоторое время неподалеку, может быть, найдем кита – или он найдет нас.</Russian>
+		<Hungarian>Uram, a legjobb figyelőnk sem találta meg a nagy fehér bálnát. De [COLOR_HIGHLIGHT_TEXT]rengeteg bálnát[COLOR_REVERT] láttunk a környéken. Úgy tűnik, a halászoknak legalább ebben igazuk volt. Ha egy ideig itt maradunk, talán megtaláljuk a bálnát – vagy ő talál meg minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_2</Tag>
-		<English>Milord, the whalers can't find any whales at this position. But there are [COLOR_HIGHLIGHT_TEXT]plenty of fish[COLOR_REVERT]. The fishermen were probably just drunk and mistook a school of fish for a whale. We should report that and send another fishing boat here.</English>
+		<English>Milord, the whalers can't find any whales at this location. But there are [COLOR_HIGHLIGHT_TEXT]plenty of fish[COLOR_REVERT]. The fishermen were probably just drunk and mistook a school of fish for a whale. It is worth your while to send another fishing boat here.</English>
 		<Portuguese>Milorde, os baleeiros não conseguem encontrar nenhuma baleia nesta posição. Mas há [COLOR_HIGHLIGHT_TEXT]muitos peixes[COLOR_REVERT]. Os pescadores provavelmente estavam bêbados e confundiram um cardume de peixes com uma baleia. Devíamos reportar isso e enviar outro barco de pesca para cá.</Portuguese>
 		<German>Milord, die Walfänger können keine Wale auf dieser Position finden. Aber [COLOR_HIGHLIGHT_TEXT]jede Menge Fischschwärme[COLOR_REVERT]. Wahrscheinlich waren die Fischer nur betrunken und haben einen Fischschwarm für einen Wal gehalten. Wir sollten das berichten und noch einen Fischkutter hierher schicken.</German>
 		<Russian>Милорд, китобои не могут найти китов в указанном месте. Но они обнаружили множество [COLOR_HIGHLIGHT_TEXT]косяков рыб[COLOR_REVERT]. Вероятно, те рыбаки были просто пьяны и приняли косяк рыбы за кита. Нам следует сообщить об этом и послать сюда еще несколько рыбацких лодок.</Russian>
+		<Hungarian>Uram, a bálnavadászok nem találnak bálnákat ezen a helyen. De [COLOR_HIGHLIGHT_TEXT]rengeteg hal[COLOR_REVERT] van. A halászok valószínűleg csak részegek voltak és egy halrajt bálnának nézték. Jelentsük ezt és küldjünk ide egy másik halászhajót.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_3</Tag>
-		<English>[COLOR_HIGHLIGHT_TEXT]There he blows![COLOR_REVERT] Oh my God, look at him! What a giant! None of the whalers have ever seen a whale like this before. We have to kill it or come back with reinforcements if he escapes. Let's go hunting!</English>
+		<English>[COLOR_HIGHLIGHT_TEXT]There he blows![COLOR_REVERT] Oh my God, look at him! What a giant! No whaler has ever seen anything like this before! We have to kill this whale, or return with reinforcements if he escapes. Let's go hunting!</English>
 		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Lá ele sopra![COLOR_REVERT] Oh meu Deus, olhe para ele! Que gigante! Nenhum dos baleeiros jamais viu uma baleia assim antes. Temos que matá-lo ou voltar com reforços se ele escapar. Vamos caçar!</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]Da bläst er![COLOR_REVERT] Oh mein Gott, seht ihn Euch an! Was für ein Riese! So einen Wal hat keiner der Walfänger je zuvor gesehen. Wir müssen ihn erlegen oder unbedingt mit Verstärkung wiederkommen, wenn er uns entwischt. Auf zur Jagd!</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Я вижу кита!!![COLOR_REVERT] Боже мой, посмотрите на него! Какой гигант! Никто из китобоев никогда раньше не видел такого огромного кита. Мы непременно должны убить его или вернуться с подкреплением, если он ускользнет от нас. Начинаем охоту!</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]Ott fúj![COLOR_REVERT] Ó, istenem, nézzétek! Micsoda óriás! Egyik bálnavadász sem látott még ilyen bálnát. Meg kell ölnünk vagy erősítéssel kell visszajönnünk, ha elmenekül. Induljunk vadászni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WHALING_TRIP_DONE_1</Tag>
@@ -8876,6 +8992,7 @@
 		<Portuguese>Nenhuma baleia branca foi encontrada, mas outro cardume de baleias foi encontrado. Vamos caçar!</Portuguese>
 		<German>Es wurde kein weißer Wal gefunden, dafür aber eine andere Walschule. Auf zur Jagd!</German>
 		<Russian>Белый кит не был найден, но была обнаружена стая других китов. Охота началась!</Russian>
+		<Hungarian>Fehér bálnát nem találtak, de egy másik bálnacsapatot igen. Induljunk vadászni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WHALING_TRIP_DONE_2</Tag>
@@ -8883,6 +9000,7 @@
 		<Portuguese>Um baleeiro encontrou um cardume de peixes, mas nenhuma baleia.</Portuguese>
 		<German>Ein Walfänger hat einen Schwarm Fische gefunden, aber keine Wale.</German>
 		<Russian>Китобой нашел косяк рыб, но не китов.</Russian>
+		<Hungarian>Egy bálnavadász hajó egy halrajt talált, de bálnákat nem.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_WHALING_TRIP_DONE_3</Tag>
@@ -8890,6 +9008,7 @@
 		<Portuguese>Um baleeiro encontrou uma lendária baleia branca!</Portuguese>
 		<German>Ein Walfänger hat einen legendären weißen Wal gefunden!</German>
 		<Russian>Китобой нашел легендарного белого кита!</Russian>
+		<Hungarian>Egy bálnavadász hajó megtalálta a legendás fehér bálnát!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_4</Tag>
@@ -8897,13 +9016,15 @@
 		<Portuguese>Um baleeiro expulsou algumas grandes baleias jubarte.</Portuguese>
 		<German>Ein Walfänger hat einige große Buckelwale aufgescheucht.</German>
 		<Russian>Китобои поймали несколько крупных горбатых китов</Russian>
+		<Hungarian>Egy bálnavadász hajó néhány nagy púpos bálnát talált.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_5</Tag>
-		<English>Milord, a fishing boat is equipped to explore the new fishing grounds.</English>
+		<English>Milord, a fishing boat has been fitted out to explore the new fishing grounds.</English>
 		<Portuguese>Milord, um barco de pesca está equipado para explorar os novos pesqueiros.</Portuguese>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]Fischerboot[COLOR_REVERT] wird ausgerüstet, um die neuen Fischgründe zu erkunden.</German>
 		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]рыбацкая лодка[COLOR_REVERT] для исследования новых рыболовных мест готова.</Russian>
+		<Hungarian>Uram, egy halászhajó fel van szerelve az új halászterületek felfedezésére.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_WHALING_TRIP_DONE_6</Tag>
@@ -8911,6 +9032,7 @@
 		<Portuguese>Milorde, outro barco baleeiro está pronto para trabalhar.</Portuguese>
 		<German>Milord, ein weiteres [COLOR_HIGHLIGHT_TEXT]Walfangschiff[COLOR_REVERT] wurde erworben und ausgerüstet.</German>
 		<Russian>Милорд, еще одно [COLOR_HIGHLIGHT_TEXT]китобойное судно[COLOR_REVERT] приобретено и готово к отплытию.</Russian>
+		<Hungarian>Uram, egy újabb bálnavadász hajó készen áll a munkára.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_NEW_MOUNTED_CONQUISTADOR_HELP</Tag>
@@ -8918,6 +9040,7 @@
 		<Portuguese>[ICON_BULLET]Conquistadores montados juntam-se a um de seus transportes de tesouro.</Portuguese>
 		<German>[ICON_BULLET]Berittene Konquistadoren machen sich auf den Weg und beschützen Euer Gold.</German>
 		<Russian>[ICON_BULLET]Конные конкистадоры присоединяются к одному из ваших транспортов с сокровищами.</Russian>
+		<Hungarian>[ICON_BULLET]A lovas konkvisztádorok csatlakoznak az egyik kincsszállítmányodhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_NEW_MILITIA_HELP</Tag>
@@ -8925,6 +9048,7 @@
 		<Portuguese>[ICON_BULLET]Tropas montadas e mestres de carroças no transporte de tesouros se armam para formar uma milícia.</Portuguese>
 		<German>[ICON_BULLET]Einige Wagenlenker und Begleiter eines Schatztransports bewaffnen sich und bilden eine Miliz.</German>
 		<Russian>[ICON_BULLET]Некоторые возничие и сопровождающие транспорт с сокровищами вооружаются и формируют ополчение.</Russian>
+		<Hungarian>[ICON_BULLET]Kincsszállító lovasok és kocsisok fegyverkeznek fel, hogy nemzetőrséget alkossanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TREASURE_PROTECTION</Tag>
@@ -8932,6 +9056,7 @@
 		<Portuguese>Milorde, muitos dos nossos [COLOR_HIGHLIGHT_TEXT]tesouros[COLOR_REVERT] estão desprotegidos no deserto. Por uma mesada, poderíamos recrutar aventureiros dispostos a escoltá-los em segurança até a colônia mais próxima.</Portuguese>
 		<German>Milord, viele unserer [COLOR_HIGHLIGHT_TEXT]Schätze[COLOR_REVERT] sind in der Wildnis ungeschützt unterwegs. Einige Abenteurer würden sich gegen ein Handgeld auf den Weg machen und sie sicher in die nächste Kolonie geleiten.</German>
 		<Russian>Милорд, многие из наших [COLOR_HIGHLIGHT_TEXT]сокровищ[COLOR_REVERT] находятся в глуши без защиты. Некоторые искатели приключений готовы отправиться туда и сопроводить их до ближайшей колонии.</Russian>
+		<Hungarian>Uram, sok [COLOR_HIGHLIGHT_TEXT]kincsünk[COLOR_REVERT] védelem nélkül van a vadonban. Kis pénzért felvehetnénk kalandorokat, akik hajlandóak lennének biztonságban elkísérni őket a legközelebbi kolóniába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_1</Tag>
@@ -8939,6 +9064,7 @@
 		<Portuguese>Certo, vamos contratar alguns [COLOR_HIGHLIGHT_TEXT]conquistadores montados[COLOR_REVERT]. Eles vão selar e seguir seu caminho.</Portuguese>
 		<German>Sehr schön, wir sollten unbedingt ein paar [COLOR_HIGHLIGHT_TEXT]Berittene Konquistadoren[COLOR_REVERT] anheuern und sie sollten sich gleich auf den Weg machen.</German>
 		<Russian>Что же, нам определенно следует нанять несколько [COLOR_HIGHLIGHT_TEXT]конных конкистадоров[COLOR_REVERT]. И прикажите им отправляться как можно скорее!</Russian>
+		<Hungarian>Rendben, fel fogunk fogadni néhány [COLOR_HIGHLIGHT_TEXT]lovas konkvisztádort[COLOR_REVERT]. Felnyergelik a lovakat és már indulhatnak is.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_2</Tag>
@@ -8946,6 +9072,7 @@
 		<Portuguese>Entendo o problema, mas acredito que armar alguns trabalhadores para formar uma [COLOR_HIGHLIGHT_TEXT]milícia[COLOR_REVERT] deveria ser suficiente.</Portuguese>
 		<German>Ich sehe das Problem, aber es reicht vollkommen aus, wenn wir ein paar Arbeiter bewaffnen und vorübergehend eine [COLOR_HIGHLIGHT_TEXT]Miliz[COLOR_REVERT] bilden lassen.</German>
 		<Russian>Да, это проблема, но вооружить нескольких рабочих, сформировав временное [COLOR_HIGHLIGHT_TEXT]ополчение[COLOR_REVERT], будет вполне достаточно.</Russian>
+		<Hungarian>Értem a problémát, de szerintem elegendő lenne néhány munkást felfegyverezni, hogy [COLOR_HIGHLIGHT_TEXT]nemzetőrséget[COLOR_REVERT] alkossanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_3</Tag>
@@ -8953,13 +9080,15 @@
 		<Portuguese>As carroças terão que chegar lá sozinhos. Não posso dispensar homens ou dinheiro para isso.</Portuguese>
 		<German>Ach was, die Wagen müssen sich so durchschlagen. Dafür kann ich keinen Mann und kein Goldstück entbehren.</German>
 		<Russian>Как не прискорбно, но сейчас у нас нет ни людей, ни золота. Перевозчиками придётся полагаться только на свои силы.</Russian>
+		<Hungarian>A kocsiknak saját erejükből kell odaérniük. Erre nem tudok embert és pénzt áldozni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_1_News</Tag>
-		<English>Some [COLOR_HIGHLIGHT_TEXT]Mounted Conquistadors[COLOR_REVERT] now escort your treasures safely to the colonies.</English>
+		<English>Some [COLOR_HIGHLIGHT_TEXT]mounted conquistadors[COLOR_REVERT] now escort your treasures safely to the colonies.</English>
 		<Portuguese>Alguns [COLOR_HIGHLIGHT_TEXT]Conquistadores Montados[COLOR_REVERT] agora escoltam seus tesouros com segurança até as colônias.</Portuguese>
 		<German>Einige [COLOR_HIGHLIGHT_TEXT]Berittene Konquistadoren[COLOR_REVERT] begleiten Eure Schätze nun sicher in die Kolonien.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]Конные конкистадоры[COLOR_REVERT] займутся охраной ваших сокровищ в пути.</Russian>
+		<Hungarian>Néhány [COLOR_HIGHLIGHT_TEXT]lovas konkvisztádor[COLOR_REVERT] mostantól biztonságban kíséri a kincseinket a kolóniákba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_2_News</Tag>
@@ -8967,6 +9096,7 @@
 		<Portuguese>[COLOR_HIGHLIGHT_TEXT]Milícias[COLOR_REVERT] agora escoltam seus tesouros com segurança até as colônias.</Portuguese>
 		<German>Einige [COLOR_HIGHLIGHT_TEXT]Milizionäre[COLOR_REVERT] begleiten Eure Schätze nun sicher in die Kolonien.</German>
 		<Russian>Сокровища направляются в колонии под охраной [COLOR_HIGHLIGHT_TEXT]ополченцев[COLOR_REVERT].</Russian>
+		<Hungarian>A [COLOR_HIGHLIGHT_TEXT]Nemzetőrök[COLOR_REVERT] mostantól biztonságban elkísérik kincseinket a kolóniákba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_3_News</Tag>
@@ -8974,6 +9104,7 @@
 		<Portuguese>Alguns de seus tesouros precisam percorrer o deserto sem proteção.</Portuguese>
 		<German>Einige Eurer Schätze müssen sich schutzlos durch die Wildnis einen Weg bahnen.</German>
 		<Russian>Некоторым из ваших сокровищ придется пробираться через дикую местность без какой-либо защиты.</Russian>
+		<Hungarian>Néhány kincsünknek védelem nélkül kell átkelnie a vadonon.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TREASURE_PROTECTION_RULES_HELP</Tag>
@@ -8988,6 +9119,7 @@
 		<Portuguese>Milorde, alguns de nossos [COLOR_HIGHLIGHT_TEXT]missionários[COLOR_REVERT] devem ter se perdido no deserto. Já faz muito tempo que ninguém ouviu falar deles. Seria mais sensato estabelecer um [COLOR_HIGHLIGHT_TEXT]mosteiro[COLOR_REVERT] aqui em vez de fazer com que os missionários desaparecessem no deserto.</Portuguese>
 		<German>Milord, einige unserer [COLOR_HIGHLIGHT_TEXT]Missionare[COLOR_REVERT] haben sich offenbar in der Wildnis verirrt, jedenfalls hat niemand mehr etwas von ihnen gehört. Wir sollten lieber eine [COLOR_HIGHLIGHT_TEXT]Missionsstation[COLOR_REVERT] errichten, statt die Missionare in der Wildnis zu verlieren.</German>
 		<Russian>Милорд, некоторые из наших [COLOR_HIGHLIGHT_TEXT]миссионеров[COLOR_REVERT], кажется, заблудились в глуши. Хорошо бы нам основать [COLOR_HIGHLIGHT_TEXT]монастырь[COLOR_REVERT], чтобы не терять миссионеров в этих диких местах.</Russian>
+		<Hungarian>Uram, néhány [COLOR_HIGHLIGHT_TEXT]misszionáriusunk[COLOR_REVERT] biztosan eltévedt a vadonban. Már régóta nincs hír róluk. Bölcsebb lenne, ha itt egy [COLOR_HIGHLIGHT_TEXT]kolostort[COLOR_REVERT] alapítanánk, mintsem hogy a misszionáriusok eltűnjenek a vadonban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BUILD_MONASTERY_DONE</Tag>
@@ -8995,6 +9127,7 @@
 		<Portuguese>Uma colônia criou um novo [COLOR_HIGHLIGHT_TEXT]mosteiro[COLOR_REVERT] para converter os nativos à fé cristã.</Portuguese>
 		<German>Eine Kolonie hat eine neue [COLOR_HIGHLIGHT_TEXT]Missionstation[COLOR_REVERT] errichtet, um die Wilden zum christlichen Gott zu bekehren.</German>
 		<Russian>Европейцы основали [COLOR_HIGHLIGHT_TEXT]монастырь[COLOR_REVERT], чтобы обращать туземцев в христианскую веру.</Russian>
+		<Hungarian>Egy kolónia új [COLOR_HIGHLIGHT_TEXT]kolostort[COLOR_REVERT] alapított, hogy az indiánokat a keresztény hitre térítse.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BUILD_MONASTERY_DONE</Tag>
@@ -9002,6 +9135,7 @@
 		<Portuguese>Milorde, finalmente concluímos o mosteiro. Os [COLOR_HIGHLIGHT_TEXT]missionários[COLOR_REVERT] podem começar seu trabalho.</Portuguese>
 		<German>Milord, wir haben endlich die Missionsstation fertiggestellt. Die [COLOR_HIGHLIGHT_TEXT]Missionare[COLOR_REVERT] können mit ihrer Arbeit beginnen.</German>
 		<Russian>Милорд, мы наконец-то закончили строительство монастыря. [COLOR_HIGHLIGHT_TEXT]Миссионеры[COLOR_REVERT] могут приступить к работе.</Russian>
+		<Hungarian>Uram, végre elkészült a kolostor. A [COLOR_HIGHLIGHT_TEXT]misszionáriusok[COLOR_REVERT] megkezdhetik munkájukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BUILD_MONASTERY_START</Tag>
@@ -9009,6 +9143,7 @@
 		<Portuguese>Sim, absolutamente. Forneceremos o dinheiro necessário. Temos que começar a construir imediatamente.</Portuguese>
 		<German>Ja, unbedingt. Wir werden das nötige Kleingeld zur Verfügung stellen. Wir müssen den Bau sofort beginnen.</German>
 		<Russian>Да, конечно. Мы выделим необходимые средства на строительство. И начинайте работы без промедлений.</Russian>
+		<Hungarian>Igen, feltétlenül. Mi biztosítjuk a szükséges pénzt. Azonnal meg kell kezdenünk az építkezést!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_BUILD_MONASTERY</Tag>
@@ -9016,6 +9151,7 @@
 		<Portuguese>Milorde, não conseguimos terminar a construção a tempo. O dinheiro e os materiais de construção do mosteiro foram perdidos.</Portuguese>
 		<German>Milord, wir konnten den Bau nicht rechtzeitig fertigstellen. Das Geld und das Baumaterial für die Missionsstation sind verloren.</German>
 		<Russian>Милорд, мы не смогли закончить строительство вовремя. Деньги и строительные материалы для монастыря были потеряны...</Russian>
+		<Hungarian>Uram, nem tudtuk időben befejezni az építkezést. A kolostorhoz szükséges pénz és építőanyagok elvesztek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BUILD_MONASTERY_DECLINE</Tag>
@@ -9023,6 +9159,7 @@
 		<Portuguese>Não penso muito nos esforços da igreja para impor a nossa fé ao povo nativo. Em vez de apoiar essa construção, deveríamos usar o dinheiro noutro lado.</Portuguese>
 		<German>Ich halte nicht viel von den Bemühungen der Kirche, den Ureinwohnern unseren Glauben aufzuzwingen. Wir werden den Bau nicht unterstützen und das Geld anderweitig verwenden.</German>
 		<Russian>Не думаю, что индейцы будут в восторге еще от одной постройки на их земле. Мы не будем поддерживать строительство и направим деньги на что-нибудь более важное.</Russian>
+		<Hungarian>Nem tartom sokra az Egyház erőfeszítéseit, hogy hitünket rákényszerítsük az indiánokra. Ahelyett, hogy ezt a munkát támogatnánk, a pénzt másra kellene fordítanunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BUILD_MONASTERY_DONE_1</Tag>
@@ -9030,6 +9167,7 @@
 		<Portuguese>É excelente termos terminado a construção a tempo. Isso nos garante o apoio da igreja que nunca é demais, especialmente porque a igreja tem influência sobre o Rei.</Portuguese>
 		<German>Hervorragend, dass wir den Bau rechtzeitig fertigstellen konnten, wird uns die Unterstützung der Kirche für einige Zeit sichern. Das kann auf keinen Fall schaden, die Kirche hat Einfluss auf den König.</German>
 		<Russian>Прекрасно, мы смогли закончить строительство вовремя и это обеспечит нам поддержку церкви. А это всегда полезно, ибо церковь имеет влияние на Короля.</Russian>
+		<Hungarian>Nagyszerű, hogy időben befejeztük az épületet. Ez garantálja számunkra az Egyház támogatását, ami sosem árt, különösen mivel az Egyháznak hatalma van a Király felett.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BUILD_MONASTERY_DONE_2</Tag>
@@ -9037,6 +9175,7 @@
 		<Portuguese>Excelente. Como concluímos a construção a tempo, esperamos que a igreja fique motivada a enviar novos missionários ansiosos para as colônias.</Portuguese>
 		<German>Hervorragend. Da wir den Bau rechtzeitig fertigstellen konnten, wird die Kirche hoffentlich ermuntern, neue und motivierte Missionare in die Kolonien zu entsenden.</German>
 		<Russian>Превосходно. Поскольку нам удалось завершить строительство вовремя, мы надеемся, что церковь продолжит отправлять в колонии своих миссионеров.</Russian>
+		<Hungarian>Kiváló! Mivel az épületet időben befejeztük, remélhetőleg az Egyház új misszionáriusokat fog küldeni a gyarmatokra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_BUILD_MONASTERY_HELP</Tag>
@@ -9044,6 +9183,7 @@
 		<Portuguese>[ICON_BULLET] Dentro de [COLOR_UNIT_TEXT]40[COLOR_REVERT] turnos, construa um [COLOR_UNIT_TEXT]mosteiro[COLOR_REVERT] na colônia para apoiar os esforços missionários da igreja nesta região. A igreja irá recompensá-lo.</Portuguese>
 		<German>[ICON_BULLET] Errichtet innerhalb von [COLOR_UNIT_TEXT]40[COLOR_REVERT] Runden ein [COLOR_UNIT_TEXT]Kloster[COLOR_REVERT] in der Kolonie, um die Missionierungsversuche der Kirche in dieser Region zu unterstützen. Die Kirche wird es Euch danken.</German>
 		<Russian>[ICON_BULLET] В течении [COLOR_UNIT_TEXT]40[COLOR_REVERT] ходов постройте [COLOR_UNIT_TEXT]монастырь[COLOR_REVERT] в указанном месте, чтобы поддержать миссионеров этого региона. Церковь вознаградит вас.</Russian>
+		<Hungarian>[ICON_BULLET] [COLOR_UNIT_TEXT]40[COLOR_REVERT] körön belül építs egy [COLOR_UNIT_TEXT]kolostort[COLOR_REVERT] a kolóniában, hogy támogasd az egyház missziós tevékenységét ebben a régióban. Az Egyház megjutalmaz téged.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DRAGOONS_TO_FRONTIER_START</Tag>
@@ -9051,6 +9191,7 @@
 		<Portuguese>Milorde, a população local está muito preocupada. Temos muitos [COLOR_HIGHLIGHT_TEXT]escravos[COLOR_REVERT] na colônia sem tropas montadas que possam recapturá-los rapidamente. Deveríamos estacionar uma companhia de [COLOR_HIGHLIGHT_TEXT]dragões veteranos[COLOR_REVERT] ou [COLOR_HIGHLIGHT_TEXT]cavalaria veterana[COLOR_REVERT] lá.</Portuguese>
 		<German>Milord, die örtliche Bevölkerung ist in großer Sorge. Es sind viele [COLOR_HIGHLIGHT_TEXT]Sklaven[COLOR_REVERT] in der Kolonie und keine Berittenen sind in der Kolonie stationiert, um sie notfalls einfangen zu können und mehr Sicherheit zu bieten. Wir sollten lieber eine Einheit [COLOR_HIGHLIGHT_TEXT]erfahrene Dragoner[COLOR_REVERT] oder [COLOR_HIGHLIGHT_TEXT]erfahrene Kavallerie[COLOR_REVERT] dort stationieren.</German>
 		<Russian>Милорд, местное население в большой тревоге. В колонии много [COLOR_HIGHLIGHT_TEXT]рабов[COLOR_REVERT] и нет конных войск, которые могли бы быстро поймать беглецов или усмирить мятежников. Хорошо было бы разместить там отряд [COLOR_HIGHLIGHT_TEXT]драгун[COLOR_REVERT] или [COLOR_HIGHLIGHT_TEXT]кавалерии[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, a helyi lakosság nagyon aggódik. Sok [COLOR_HIGHLIGHT_TEXT]rabszolgánk[COLOR_REVERT] van a kolóniában és nincs lovas csapatunk, ami gyorsan elfoglalhatná őket. Egy [COLOR_HIGHLIGHT_TEXT]Dragonyos[COLOR_REVERT] vagy [COLOR_HIGHLIGHT_TEXT]Lovasság[COLOR_REVERT] századot kellene ott állomásoztatnunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DRAGOONS_TO_FRONTIER_DONE</Tag>
@@ -9058,6 +9199,7 @@
 		<Portuguese>Uma [COLOR_HIGHLIGHT_TEXT]companhia montada[COLOR_REVERT] foi estacionada na colônia para maior segurança.</Portuguese>
 		<German>In einer Kolonie wurde eine Einheit [COLOR_HIGHLIGHT_TEXT]Berittene[COLOR_REVERT] stationiert, um mehr Sicherheit zu gewährleisten.</German>
 		<Russian>Для обеспечения большей безопасности в колонии был размещен [COLOR_HIGHLIGHT_TEXT]конный отряд[COLOR_REVERT].</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]lovas csapat[COLOR_REVERT] a biztonság növelése érdekében a kolóniában állomásozik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DRAGOONS_TO_FRONTIER_DONE</Tag>
@@ -9065,6 +9207,7 @@
 		<Portuguese>Milorde, estacionamos uma unidade montada na colônia. A população agora pode se sentir segura novamente.</Portuguese>
 		<German>Milord, wir haben eine Einheit Betittene in der Kolonie stationert. Die Bevölkerung kann sich nun wieder sicher fühlen.</German>
 		<Russian>Милорд, мы разместили в колонии конный отряд. Население теперь может снова чувствовать себя в безопасности.</Russian>
+		<Hungarian>Uram, lovas egységet állítottunk fel a kolóniában. A lakosság most már újra biztonságban érezheti magát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DRAGOONS_TO_FRONTIER_START</Tag>
@@ -9072,6 +9215,7 @@
 		<Portuguese>Sim, absolutamente. Forneceremos o dinheiro necessário para equipar as tropas. Temos que provar ao povo que a situação está sob controle.</Portuguese>
 		<German>Ja, unbedingt. Wir werden das nötige Kleingeld zur Verfügung stellen, um die Truppe auszurüsten. Wir müssen der Bevölkerung zeigen, dass wir die Lage im Griff haben.</German>
 		<Russian>Конечно. Мы предоставим необходимые средства для оснащения войск. Мы должны показать людям, что ситуация под контролем.</Russian>
+		<Hungarian>Igen, feltétlenül. Biztosítjuk a szükséges pénzt a csapatok felszerelésére. Be kell bizonyítanunk az embereknek, hogy a helyzet a kezünkben van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_DRAGOONS_TO_FRONTIER</Tag>
@@ -9079,6 +9223,7 @@
 		<Portuguese>Milorde, não conseguimos enviar as tropas a tempo. A população não ficará feliz.</Portuguese>
 		<German>Milord, wir konnten die Truppen nicht rechtzeit entsenden. Die Bevölkerung wird nicht begeistert sein.</German>
 		<Russian>Милорд, мы не смогли вовремя отправить войска. Население будет недовольно...</Russian>
+		<Hungarian>Uram, nem tudtuk időben elküldeni a csapatokat. A lakosság nem lesz boldog.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DRAGOONS_TO_FRONTIER_DECLINE</Tag>
@@ -9086,6 +9231,7 @@
 		<Portuguese>Como servos reais, deveríamos ficar fora disso. Deixe que os proprietários de terras evitem que seus escravos escapem ou causem problemas.</Portuguese>
 		<German>Nein, wir als königliche Beamte sollten uns da raushalten. Sollen die Großgrundbesitzer selbst sehen, wie sie ihre Sklaven davon abhalten zu fliehen oder Ärger zu machen.</German>
 		<Russian>Солдаты Короля воины, а не надсмотрщики. Пусть землевладельцы сами решают, как не дать своим рабам сбежать и уж тем более бунтовать.</Russian>
+		<Hungarian>A királyi szolgáiként nem kell beleavatkozniuk. Hagyjuk, hogy a földbirtokosok gondoskodjanak arról, hogy rabszolgáik ne szökjenek meg és ne okozzanak bajt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DRAGOONS_TO_FRONTIER_DONE_1</Tag>
@@ -9093,6 +9239,7 @@
 		<Portuguese>Que bom que conseguimos proteger a colônia. Isto mostrará aos bons cidadãos que levamos a sério as suas preocupações e que uma forte força colonial os protegerá.</Portuguese>
 		<German>Hervorragend, dass wir die Kolonie sichern konnten. Das wird den braven Bürgern zeigen, dass wir ihre Sorgen ernst nehmen und und eine starke Kolonialtruppe sie schützt.</German>
 		<Russian>Отлично, нам удалось обезопасить колонию. Это покажет добропорядочным гражданам, что мы серьезно относимся к их проблемам и что колониальные войска готовы защищать их от любых напастей.</Russian>
+		<Hungarian>Kiváló, hogy sikerült biztosítanunk a kolóniát! Ez megmutatja a jó polgároknak, hogy komolyan vesszük az aggodalmaikat és hogy egy erős kolóniai erő fogja őket védeni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DRAGOONS_TO_FRONTIER_DONE_2</Tag>
@@ -9100,6 +9247,7 @@
 		<Portuguese>Excelente. Mas ainda precisamos de fazer mais, como contratar supervisores de escravos adicionais. As tropas coloniais têm outras tarefas a cumprir.</Portuguese>
 		<German>Hervorragend. Aber wir sollten noch mehr tun und einige neue Sklavenaufseher anheuern. Die kolonialen Truppen haben auf Dauer andere Aufgaben zu erfüllen.</German>
 		<Russian>Замечательно. Но нам следует сделать больше и нанять новых надсмотрщиков. У колониальных войск в долгосрочной перспективе будут и другие задачи.</Russian>
+		<Hungarian>Kiváló! De még többet kell tennünk, például további rabszolgafelügyelőket kell felvennünk. A gyarmati csapatoknak más feladatokat is el kell látniuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DRAGOONS_TO_FRONTIER_HELP</Tag>
@@ -9107,59 +9255,60 @@
 		<Portuguese>[ICON_BULLET] Dentro de [COLOR_UNIT_TEXT]10[COLOR_REVERT] turnos, envie uma unidade de [COLOR_UNIT_TEXT]Dragões Veteranos[COLOR_REVERT] ou [COLOR_UNIT_TEXT]Cavalaria Veterana[COLOR_REVERT] para a colônia para proteger os cidadãos e proteger os escravos. Isso deixará os bons cidadãos felizes.</Portuguese>
 		<German>[ICON_BULLET] Entsendet innerhalb von [COLOR_UNIT_TEXT]10[COLOR_REVERT] Runden eine Einheit [COLOR_UNIT_TEXT]erfahrene Dragooner[COLOR_REVERT] oder [COLOR_UNIT_TEXT]erfahrene Kavallerie[COLOR_REVERT] in die Kolonie, um die Bürger zu schützen und die Sklaven zu bewachen. Das wird die braven Bürger glücklich machen.</German>
 		<Russian>[ICON_BULLET] В течение [COLOR_UNIT_TEXT]10[COLOR_REVERT] ходов отправьте отряд [COLOR_UNIT_TEXT]Ветеран драгун[COLOR_REVERT] или [COLOR_UNIT_TEXT]Ветеран кавалерии[COLOR_REVERT] в колонию для охраны. Это сделает колонистов счастливыми.</Russian>
+		<Hungarian>[ICON_BULLET] [COLOR_UNIT_TEXT]10[COLOR_REVERT] körön belül küldj egy [COLOR_UNIT_TEXT]Veterán Dragonyost[COLOR_REVERT] vagy [COLOR_UNIT_TEXT]Veterán Lovasságot[COLOR_REVERT] a kolóniába, hogy megvédjék a polgárokat és őrizzék a rabszolgákat. Ez boldoggá teszi majd őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FOUNTAIN_OF_YOUTH</Tag>
-		<English>Scouts from a European country have discovered a spot in the wilderness so beautiful that it resembles a [COLOR_HIGHLIGHT_TEXT]Garden of Eden[COLOR_REVERT].</English>
+		<English>Scouts from a European country have discovered a place in the wilderness so beautiful it could be the [COLOR_HIGHLIGHT_TEXT]Garden of Eden[COLOR_REVERT].</English>
 		<Portuguese>Batedores de um país europeu descobriram um local no deserto tão bonito que lembra um [COLOR_HIGHLIGHT_TEXT]Jardim do Éden[COLOR_REVERT].</Portuguese>
 		<German>Die Scouts eines europäischen Landes haben einen Ort in der Wildnis von solcher Schönheit entdeckt, dass er einem [COLOR_HIGHLIGHT_TEXT]Garten Eden[COLOR_REVERT] gleichkommt.</German>
 		<Russian>Разведчики из одной европейской страны обнаружили в дикой местности такое прекрасное место, что оно напоминает [COLOR_HIGHLIGHT_TEXT]Райский сад[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOUNTAIN_OF_YOUTH</Tag>
-		<English>My lord, it is incredible! Our scouts are dazzled by such beauty in the middle of the wilderness. A Garden of Eden! [COLOR_HIGHLIGHT_TEXT]A fountain of youth![COLOR_REVERT] People will flock to the wilderness to see this place. Word will spread as far as Europe. We are blessed.</English>
+		<English>My lord, it is incredible! Our scouts are dazzled by such beauty in the midst of the wilderness. A Garden of Eden! [COLOR_HIGHLIGHT_TEXT]A fountain of youth![COLOR_REVERT] People will flock here to be in this place. Word will quickly spread throughout Europe. We are blessed.</English>
 		<Portuguese>Meu senhor, é incrível! Nossos batedores ficam deslumbrados com tamanha beleza em meio ao sertão. Um Jardim do Éden! [COLOR_HIGHLIGHT_TEXT]Uma fonte de juventude![COLOR_REVERT] As pessoas irão para o deserto para ver este lugar. A notícia se espalhará até a Europa. Somos abençoados.</Portuguese>
 		<German>Milord, es ist unglaublich! Unsere Scouts sind geblendet von solcher Schönheit mitten in der Wildnis. Ein Garten Eden! [COLOR_HIGHLIGHT_TEXT]Ein Jungbrunnen![COLOR_REVERT] Die Menschen werden in die Wildnis strömen, um diesen Ort zu sehen. Es wird sich bis nach Europa herumsprechen. Wir sind gesegnet.</German>
 		<Russian>Милорд, это невероятно! Наши разведчики ослеплены такой красотой посреди дикой местности. Райский сад! Источник вечной молодости! Люди будут стремиться в эту пустыню, чтобы увидеть это место. Весть распространится до самой Европы. Нам сказочно повезло.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT</Tag>
-		<English>Scouts come across rumours in the wilderness about the [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT]!</English>
+		<English>Distant scouts are hearing rumours about how close they are to the [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT]!</English>
 		<Portuguese>Batedores se depara com rumores no deserto sobre as [COLOR_HIGHLIGHT_TEXT]Sete Cidades de Cibola[COLOR_REVERT]!</Portuguese>
 		<German>Kundschafter stoßen in der Wildnis auf Gerüchte über die [COLOR_HIGHLIGHT_TEXT]Sieben Städte von Cibola[COLOR_REVERT]!</German>
 		<Russian>Разведчики натыкаются в дикой местности на слухи о [COLOR_HIGHLIGHT_TEXT]Семи городах Сиболы[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT</Tag>
-		<English>As our scouts made their way through the desolate wilderness, far from the known colonies, they came across a group of weather-beaten conquistadors. The men recount tales told by the Indians of magnificent cities brimming with gold, silver and ancient treasures. Many may dismiss such tales as figments of the imagination, born of thirst and deprivation, yet the men swear on their honour that these are the legendary [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT!</English>
+		<English>As our scouts made their way through the desolate wilderness, far from the known colonies, they came across a group of weather-beaten conquistadors. The men recount tales told by the Natives of magnificent cities brimming with gold, silver and ancient treasures. It's easy to dismiss such tales as figments of the imagination, born out of thirst and deprivation, yet the men swear on their honour that these are the legendary [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT!</English>
 		<Portuguese>Enquanto nossos batedores avançavam pela região selvagem desolada, longe das colônias conhecidas, eles se depararam com um grupo de conquistadores castigados pelo tempo. Os homens contam histórias contadas pelos índios sobre cidades magníficas repletas de ouro, prata e tesouros antigos. Muitos podem considerar tais histórias como fruto da imaginação, nascidas da sede e da privação, mas os homens juram pela sua honra que estas são as lendárias [COLOR_HIGHLIGHT_TEXT]Sete Cidades de Cibola[COLOR_REVERT!</Portuguese>
 		<German>Während unsere Kundschafter fernab der bekannten Kolonien durch die trostlose Wildnis zogen, trafen sie auf eine Gruppe verwitterter Konquistadoren. Die Männer berichten von Erzählungen der Indios über prächtige Städte voller Gold, Silber und uralter Schätze. Viele mögen solche Geschichten für Hirngespinste halten, geboren aus Durst und Entbehrung, doch die Männer schwören bei ihrer Ehre, dass es sich um die sagenhaften [COLOR_HIGHLIGHT_TEXT]Sieben Städte von Cibola handelt[COLOR_REVERT]!</German>
 		<Russian>Пробираясь сквозь безлюдную пустыню, вдали от известных поселений, наши разведчики наткнулись на группу закаленных жизнью конкистадоров. Мужчины рассказывали истории, поведанные индейцами, о великолепных городах, полных золота, серебра и древних сокровищ. Многие могут посчитать такие рассказы плодом воображения, порожденным жаждой и лишениями, однако мужчины клянутся своей честью, что это легендарные [COLOR_HIGHLIGHT_TEXT]Семь городов Сиболы[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_DONE</Tag>
-		<English>Rumours are spreading. A group of conquistadors has returned from the wilderness and has some truly incredible stories to tell.</English>
+		<English>Rumours are spreading. A group of conquistadors has returned from the wilderness with truly incredible stories to tell.</English>
 		<Portuguese>Os rumores estão se espalhando. Um grupo de conquistadores retornou do deserto e tem histórias verdadeiramente incríveis para contar.</Portuguese>
 		<German>Gerüchte verbreiten sich. Eine Gruppe Konquistadoren ist aus der Wildnis heimgekehrt und hat wahrlich sagenhaftes zu berichten.</German>
 		<Russian>Распространяются слухи о группа конкистадоров, вернувшейся из дикой местности. Они рассказывают поистине невероятные истории.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_DONE</Tag>
-		<English>Mylord, a party of conquistadors has returned and brought back incredible news. Indians from various tribes are said to have spoken of the [COLOR_HIGHLIGHT_TEXT]treasure of all treasures[COLOR_REVERT]; indeed, entire cities made of gold are said to be hidden in the great canyons to the west. Everything we have always suspected may well be within our grasp!</English>
+		<English>Milord, a party of conquistadors has returned with incredible news. Natives from distant tribes speak of the [COLOR_HIGHLIGHT_TEXT]treasure of all treasures[COLOR_REVERT]; entire cities of gold, hidden in the great canyons to the west. Everything we have always suspected may now be within our grasp!</English>
 		<Portuguese>Meu senhor, um grupo de conquistadores regressou e trouxe notícias incríveis. Diz-se que índios de várias tribos falaram do [COLOR_HIGHLIGHT_TEXT]tesouro de todos os tesouros[COLOR_REVERT]; na verdade, diz-se que cidades inteiras feitas de ouro estão escondidas nos grandes desfiladeiros a oeste. Tudo o que sempre suspeitamos pode estar ao nosso alcance!</Portuguese>
 		<German>Milord, ein Trupp Konquistadoren ist heimgekehrt und hat sagenhafte Neuigkeiten mitgebracht. Indios unterschiedlicher Stämme berichten angeblich über den [COLOR_HIGHLIGHT_TEXT]Schatz aller Schätze[COLOR_REVERT], ja ganze Städte aus Gold sollen in den großen Canyons im Westen verborgen sein. All das, was wir immer vermuteten, ist womöglich in greifbarer Nähe!</German>
 		<Russian>Милорд, отряд конкистадоров вернулся из странствий и привёз невероятные новости. Говорят, индейцы из разных племён рассказывали о [COLOR_HIGHLIGHT_TEXT]сокровище всех сокровищ[COLOR_REVERT]! Более того, говорят, что целые города из золота спрятаны в больших каньонах на западе. Всё, что мы всегда подозревали, вполне может оказаться в пределах нашей досягаемости!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_PREPARATION_DONE</Tag>
-		<English>The colony is abuzz; one of the greatest expeditions of our time regarding the discovery of the Seven Cities of Cibolais about to begin.</English>
+		<English>The colony is abuzz! A great expedition to discover the Seven Cities of Cibolais is about to begin.</English>
 		<Portuguese>A colônia está agitada; uma das maiores expedições do nosso tempo referente à descoberta das Sete Cidades de Cibolais está prestes a começar.</Portuguese>
 		<German>Eine Kolonie ist in Aufregung, eine der größten Expeditionen unserer Zeit zur Entdeckung der Sieben Städte von Cibola ist im Begriff zu beginnen.</German>
 		<Russian>В колонии царит оживление; вот-вот начнется одна из величайших экспедиций нашего времени, посвященная открытию Семи городов Сиболы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_PREPARATION_DONE</Tag>
-		<English>Mylord, our men have been hard at work gathering enormous supplies and assembling the troops, and we have the pay ready too. We can soon set off and find the treasure of all treasures.</English>
+		<English>Milord, our men have been hard at work gathering enormous supplies and assembling the troops, and we have the money in hand. We're ready to set out to find the treasure of all treasures.</English>
 		<Portuguese>Meu senhor, nossos homens têm trabalhado arduamente reunindo enormes suprimentos e reunindo as tropas, e também temos o pagamento pronto. Em breve poderemos partir e encontrar o tesouro de todos os tesouros.</Portuguese>
 		<German>Milord, unsere Männer waren fleißig und haben enorme Ausrüstung und Truppen zusammengestellt und den Sold haben wir auch beisammen. Wir können bald aufbrechen und den Schatz aller Schätze finden.</German>
 		<Russian>Милорд, наши люди усердно трудились, собирая огромные запасы и формируя войска. Средства на выплату жалования тоже готовы. Скоро мы сможем отправиться на поиски сокровища всех сокровищ.</Russian>
@@ -9173,7 +9322,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_START</Tag>
-		<English>Mylord, the scouts are riding ahead and we’re setting off now. If we keep up the pace, we’ll reach our destination within the next few weeks and return home in a golden carriage.</English>
+		<English>Milord, scouts are riding ahead and we’re setting off now. If we keep a steady pace, we can reach our destination within the next few weeks and ride back in a golden carriage.</English>
 		<Portuguese>Meu senhor, os batedores estão na frente e estamos partindo agora. Se mantivermos o ritmo, chegaremos ao nosso destino nas próximas semanas e voltaremos para casa numa carruagem dourada.</Portuguese>
 		<German>Milord, die Kundschafter reiten voraus und es geht jetzt los. Wenn wir uns ranhalten, werden wir in den nächsten Wochen bereits am Ziel sein und in einer goldenen Kutsche heimkehren.</German>
 		<Russian>Милорд, разведчики уже выдвинулись вперёд и мы отправляемся в путь. Если мы сохраним темп, то достигнем места назначения в течение следующих нескольких недель и вернемся домой с кучей золота.</Russian>
@@ -9187,21 +9336,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_1_DONE</Tag>
-		<English>My lord, we’ve been on the road for a while now, but we haven’t found anything. Now we’ve come across these two half-starved and confused figures. What should we do? The men are getting impatient.</English>
+		<English>Milord, we’ve been on the road for a while now, but we still haven’t found anything. Today we’ve come across two half-starved and confused figures. What should we do? Our men are getting impatient.</English>
 		<Portuguese>Meu senhor, já estamos na estrada há algum tempo, mas não encontramos nada. Agora nos deparamos com essas duas figuras meio famintas e confusas. O que devemos fazer? Os homens estão ficando impacientes.</Portuguese>
 		<German>Milord, wir sind nun schon eine Weile unterwegs, haben aber nichts finden können. Jetzt laufen uns diese beiden halb verhungerten und verwirrten Gestalten über den Weg. Was sollen wir tun? Die Männer sind ungeduldig.</German>
 		<Russian>Милорд, мы уже довольно давно в пути, но ничего так и не нашли. Наткнулись только на двух полуголодных и растерянных людей. Что нам делать? Люди начинают терять терпение.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_2_DONE</Tag>
-		<English>A group of explorers ventured further in their search for the Seven Cities of Cibola and were attacked by angry Indians!</English>
+		<English>A group of explorers ventured further in their search for the Seven Cities of Cibola, only to be attacked by hostile Natives!</English>
 		<Portuguese>Um grupo de exploradores aventurou-se ainda mais na busca pelas Sete Cidades de Cibola e foi atacado por índios furiosos!</Portuguese>
 		<German>Eine Nation ist bei der Suche auf die Sieben Städte von Cibola weiter vorgedrungen und wurde von wütenden Ureinwohnern attackiert!</German>
 		<Russian>Группа исследователей отправилась дальше в поисках Семи городов Сиболы и подверглась нападению разгневанных индейцев!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_2_DONE</Tag>
-		<English>My lord, the search is not proving very encouraging; there isn’t even the slightest sign of a golden city on the horizon, and there seem to be some Indians hiding in the thicket ahead of us – be careful!</English>
+		<English>Milord, the search is not proving very encouraging; there isn’t even the slightest sign of a golden city on the horizon, and that could easily be a Native ambush in the thicket just ahead of us – be on your guard!</English>
 		<Portuguese>Meu senhor, a busca não está sendo muito encorajadora; não há o menor sinal de uma cidade dourada no horizonte, e parece haver alguns índios escondidos no matagal à nossa frente – cuidado!</Portuguese>
 		<German>Milord, die Suche ist wenig erquicklich, es hat derzeit noch nicht mal den Anschein einer goldenen Stadt am Horizont und im Dickicht vor uns scheinen sich einige Indianer zu verstecken - Vorsicht!</German>
 		<Russian>Милорд, поиски не приносят особых результатов; на горизонте нет даже малейшего признака Золотого города и, кажется, впереди в зарослях прячутся какие-то индейцы – будьте осторожны!</Russian>
@@ -9215,7 +9364,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_3_DONE</Tag>
-		<English>My lord, it’s hard to believe – look there! That must be it! After all our hardships, we’ve actually found a huge Indian settlement. Let’s go and look for the gold!</English>
+		<English>Milord, it’s hard to believe – look there! That must be it! After all our hardships, we’ve actually found a huge Native city. Let’s go and look for the gold!</English>
 		<Portuguese>Meu senhor, é difícil de acreditar – olhe lá! Deve ser isso! Depois de todas as nossas dificuldades, encontramos um enorme aldeia indígena. Vamos procurar o ouro!</Portuguese>
 		<German>Milord, es ist kaum zu glauben - seht mal, da! Das muss sie sein! Wir haben doch wahrlich nach all diesen Strapazen und Verlusten an Mensch und Material eine riesige Stadt der Indianer gefunden. Lasst uns das Gold suchen!</German>
 		<Russian>Милорд, невероятно – посмотрите! Должно быть, это оно! После всех наших трудностей мы наконец-то нашли огромное индейское поселение. Пойдемте поищем золото!</Russian>
@@ -9229,91 +9378,91 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_HOME_DONE</Tag>
-		<English>My lord, we are truly blessed. We have indeed managed to bring the treasure to the colonies without suffering any major losses. The whole colony is already in an uproar. The king will be delighted. This expedition will go down in history.</English>
+		<English>Milord, we are truly blessed. We have indeed managed to bring the treasure back to the colonies without suffering major losses. The entire colony is in an uproar. The King will be delighted. This expedition will go down in history.</English>
 		<Portuguese>Meu senhor, somos verdadeiramente abençoados. De fato, conseguimos levar o tesouro para as colônias sem sofrer grandes perdas. A colônia inteira já está em alvoroço. O rei ficará encantado. Esta expedição ficará para a história.</Portuguese>
 		<German>Milord, wir sind wahrlich gesegnet. Wir konnten den Schatz tatsächlich ohne größere Verluste in die Kolonien bringen. Die ganze Kolonie ist bereits in Aufruhr. Der König wird begeistert sein. Diese Expedition wird zur Legende werden.</German>
 		<Russian>Милорд, нам поистине повезло! Нам удалось доставить сокровища в колонии без значительных потерь. Все жители в полном восторге. Король будет безумно рад! Эта экспедиция войдет в историю!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ZEALOUS_MISSIONARY</Tag>
-		<English>Reports arrive from one mission concerning remarkable success among the natives. They seem to be easily swayed.</English>
+		<English>Reports arrive from one mission concerning remarkable success among the Natives. They seem to be easily swayed.</English>
 		<Portuguese>Chegam relatórios de uma missão sobre notável sucesso entre os nativos. Eles parecem ser facilmente influenciados.</Portuguese>
 		<German>Berichte aus einer Mission künden von außergewöhnlichen Erfolgen unter den Eingeborenen. Sie lassen sich offenbar leicht verführen.</German>
 		<Russian>В отчетах одной миссии говорится о необычайных успехах среди туземцев. По всей видимости, ими легко можно управлять.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ZEALOUS_MISSIONARY</Tag>
-		<English>Mylord, we have received some encouraging news from one of our missions. The missionary working there reports that more and more local people are voluntarily listening to his sermons and seeking his advice on both worldly and spiritual matters.</English>
+		<English>Milord, we have received encouraging news from one of our missions. That missionary reports more and more local people are carefully listening to his sermons and seeking his advice on both worldly and spiritual matters.</English>
 		<Portuguese>Meu senhor, recebemos algumas notícias encorajadoras de uma de nossas missões. O missionário que trabalha lá relata que cada vez mais pessoas locais ouvem voluntariamente os seus sermões e procuram o seu conselho tanto sobre assuntos mundanos como espirituais.</Portuguese>
 		<German>Milord, aus einer unserer Missionen erreicht uns eine erfreuliche Nachricht. Der dort tätige Missionar berichtet, dass immer mehr Eingeborene freiwillig seinen Predigten lauschen und seinen Rat sowohl in weltlichen als auch in geistlichen Angelegenheiten suchen.</German>
 		<Russian>Милорд, мы получили обнадеживающие новости от одной из наших миссий. Работающий там миссионер сообщает, что все больше туземцев добровольно слушают его проповеди и обращаются к нему за советом как по мирским, так и по духовным вопросам.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BURNING_MISSION</Tag>
-		<English>Disturbing news is reaching the civilised world from a mission among the natives.</English>
+		<English>Disturbing news is reaching the civilised world from a mission among the Natives.</English>
 		<Portuguese>Notícias perturbadoras chegam ao mundo civilizado a partir de uma missão entre os nativos.</Portuguese>
 		<German>Beunruhigende Nachrichten erreichen die zivilisierte Welt aus einer Mission unter den Eingeborenen.</German>
 		<Russian>Тревожные новости поступают в цивилизованный мир из миссии среди туземного населения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BURNING_MISSION</Tag>
-		<English>Some of our missionaries have gone a bit overboard in their zeal. The Indians feel that they and their own gods have been insulted, and have promptly set fire to the mission. They want to see whether our God can protect the house of God from the flames.</English>
+		<English>Some of our missionaries have gone overboard in their zeal. The Indians feel that they and their own gods have been insulted, and have promptly set fire to the mission. They want to see whether our God can protect his own House of God from the flames.</English>
 		<Portuguese>Alguns de nossos missionários exageraram um pouco em seu zelo. Os índios sentem que eles e seus próprios deuses foram insultados e prontamente incendiaram a missão. Eles querem ver se o nosso Deus pode proteger a casa de Deus das chamas.</Portuguese>
 		<German>Einige unserer Missionare haben es mit ihrem Eifer übertrieben. Die Indianer fühlen sich und ihre eigenen Götter beleidigt und haben kurzerhand die Mission angezündet. Sie wollen sehen, ob unser Gott das Haus Gottes vor Feuer schützen kann.</German>
 		<Russian>Некоторые из наших миссионеров немного переборщили в своем рвении. Индейцы почувствовали, что их самих и их богов оскорбили, и тут же подожгли миссию. Они хотят проверить, сможет ли наш Бог защитить дом Божий от огня.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRESSED_NATIVE_VILLAGE</Tag>
-		<English>An native settlement is on the verge of collapsing under the cultural pressure exerted by its European neighbours.</English>
+		<English>A Native settlement is on the verge of collapsing under the cultural pressure exerted by its European neighbours.</English>
 		<Portuguese>Uma aldeia nativa está à beira do colapso sob a pressão cultural exercida pelos seus vizinhos europeus.</Portuguese>
 		<German>Eine Siedlung der Ureinwohner steht kurz davor, an dem kulturellen Druck europäischer Nachbarn zu zerbrechen.</German>
 		<Russian>Поселение туземцев находится на грани краха под культурным давлением со стороны европейских соседей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_1</Tag>
-		<English>Mylord, our settlement is spreading ever further. The settlers have taken almost all the land from the natives and driven them back considerably. One of their settlements is on the verge of being destroyed. Shall we put a stop to this?</English>
+		<English>Milord, our settlement is spreading ever farther. Settlers have taken almost all the land from the Natives and driven them back considerably. One of their settlements is on the verge of being destroyed. Shall we put a stop to this?</English>
 		<Portuguese>Meu senhor, nossa colônia está se espalhando cada vez mais. Os colonos tomaram quase todas as terras dos nativos e os expulsaram consideravelmente. Um de suas colônias está prestes a ser destruído. Vamos acabar com isso?</Portuguese>
 		<German>Milord, unsere Siedlung breitet sich immer weiter aus. Siedler haben den Ureinwohnern fast all ihr Land abgenommen und sie stark zurückgedrängt. Eine ihrer Siedlungen steht kurz davor zerstört zu werden. Sollen wir dem Einhalt gebieten?</German>
 		<Russian>Милорд, наше поселение разрастается всё дальше. Поселенцы отняли у индейцев почти все земли и значительно оттеснили их назад. Одна из их деревень находится на грани разрушения. Должны ли мы положить этому конец?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_2</Tag>
-		<English>Mylord, a number of chiefs are gathered at our gates and are very angry – more and more settlers are coming into their country and encroaching on their hunting grounds and farmland. Their settlement is on the brink of destruction. They are demanding compensation</English>
+		<English>Milord, a number of chiefs are gathered at our gates. They are very angry. More and more settlers come into their country, encroaching on their hunting grounds and farmland. Their settlement is on the brink of destruction. They demand compensation</English>
 		<Portuguese>Meu Senhor, vários chefes estão reunidos às nossas portas e estão muito zangados – cada vez mais colonos estão a entrar no seu país e a invadir os seus campos de caça e terras agrícolas. A sua colônia está à beira da destruição. Eles estão exigindo indenização</Portuguese>
 		<German>Milord, einige Häuptlinge stehen vor unseren Toren und sind sehr wütend - immer mehr Siedler kommen in ihr Land und rauben ihre Jagdgebiete und Ackerflächen. Ihre Siedlung steht kurz vor der Zerstörung. Sie verlangen Wiedergutmachung.</German>
 		<Russian>Милорд, несколько разгневанных вождей стоят у наших ворот – всё больше и больше поселенцев вторгаются на их территорию, посягая на их охотничьи и сельскохозяйственные угодья. Их поселение находится на грани уничтожения. Они требуют компенсации.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_3</Tag>
-		<English>My lord, a nearby native settlement is about to be destroyed – our settlers have effectively taken over the entire area. The natives are demanding that we withdraw or compensate them.</English>
+		<English>Milord, a nearby Native settlement is about to be destroyed – our settlers have effectively taken over the entire area. The Natives are demanding either that we withdraw, or that we compensate them.</English>
 		<Portuguese>Meu senhor, uma aldeia nativa próximo está prestes a ser destruído – nossos colonos efetivamente assumiram o controle de toda a área. Os nativos exigem que os retiremos ou os compensemos.</Portuguese>
 		<German>Milord, eine nahegelegene Siedlung der Ureinwohner wird bald zerstört werden - unsere Siedler haben praktisch das ganze Land in Besitz genommen. Die Ureinwohner verlangen, dass wir uns zurückziehen oder sie entschädigen.</German>
 		<Russian>Милорд, расположенное неподалеку поселение индейцев вот-вот будет разрушено – наши поселенцы фактически захватили всю территорию. Туземцы требуют, чтобы мы ушли или выплатили им компенсацию.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_GIFT_OF_NATIVE_KNOWLEDGE</Tag>
-		<English>Rumours are circulating that Native Americans and Europeans are working closely together on the farm. The harvests in this colony are exceptionally good.</English>
+		<English>Rumours are circulating that Natives and Europeans are working closely together on the farms. Harvests in this colony are exceptionally good.</English>
 		<Portuguese>Circulam rumores de que nativos americanos e europeus estão trabalhando juntos na fazenda. As colheitas nesta colônia são excepcionalmente boas.</Portuguese>
 		<German>Gerüchte verbreiten sich, dass Indianer und Europäer beim Ackerbau eng zusammenarbeiten. Die Erträge in dieser Kolonie sind außergewöhnlich gut.</German>
 		<Russian>Ходят слухи, что индейцы и европейцы тесно сотрудничают в сельском хозяйстве. Урожайность в этой колонии исключительно высока.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_GIFT_OF_NATIVE_KNOWLEDGE</Tag>
-		<English>For generations, the inhabitants of a neighbouring Native American village have farmed this land and know its plants, animals and soils better than almost anyone else. Impressed by the friendship between our peoples, they have offered to share their knowledge with us.</English>
+		<English>For generations, the inhabitants of a neighbouring Native village have farmed this land and know its plants, animals and soils better than anyone else. Impressed by the growing friendship between our peoples, they offer to share their knowledge with us.</English>
 		<Portuguese>Durante gerações, os habitantes de uma aldeia vizinha de nativos americanos cultivaram esta terra e conhecem as suas plantas, animais e solos melhor do que quase ninguém. Impressionados com a amizade entre os nossos povos, ofereceram-se para partilhar connosco os seus conhecimentos.</Portuguese>
 		<German>Seit Generationen bewirtschaften die Bewohner eines benachbarten Indianerdorfes dieses Land und kennen seine Pflanzen, Tiere und Böden wie kaum jemand sonst. Beeindruckt von der Freundschaft zwischen unseren Völkern bieten sie an, ihr Wissen mit uns zu teilen.</German>
 		<Russian>На протяжении многих поколений жители соседней индейской деревни обрабатывали эту землю и знают ее растения, животных и почву лучше, чем кто-либо другой. Впечатленные дружбой между нашими народами, они предложили поделиться с нами своими знаниями.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MIXED_SETTLEMENT</Tag>
-		<English>Rumours are circulating that Native Americans and Europeans are living together on more than friendly terms in a colony.</English>
+		<English>We now have a colony where Natives and Europeans live together on more than friendly terms.</English>
 		<Portuguese>Circulam rumores de que nativos americanos e europeus vivem juntos em termos mais do que amigáveis numa colônia.</Portuguese>
 		<German>Gerüchte verbreiten sich, dass Indianer und Europäer in einer Kolonie mehr als freundschaftlich zusammenleben.</German>
 		<Russian>Ходят слухи, что туземцы и европейцы живут в колонии более чем в дружеских отношениях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MIXED_SETTLEMENT</Tag>
-		<English>Mylord, in one of our colonies it appears that the Native Americans and European settlers have been getting on more than just as friends for some time now. We have received reports that many mestizos are being born there. The Church is not pleased with this immoral behaviour.</English>
+		<English>Milord, in one of our colonies it appears that the Natives and European settlers have been more than just as friends for some time now. Many mestizos are being born there. The Church is not pleased with this immoral behaviour.</English>
 		<Portuguese>Meu senhor, em uma de nossas colônias parece que os nativos americanos e os colonos europeus já há algum tempo se dão mais do que apenas como amigos. Recebemos relatos de que muitos mestiços estão nascendo ali. A Igreja não está satisfeita com este comportamento imoral.</Portuguese>
 		<German>Milord, in einer unserer Kolonien haben sich Indianer und Europäer offenbar seit einiger Zeit mehr als freundschaftlich angenähert. Wir erhielten Berichte, dass dort viele Mestizen gebohren werden. Die Kirche ist nicht erfreut über da unzüchtige Treiben.</German>
 		<Russian>Милорд, похоже, в одной из наших колоний туземцы и европейские поселенцы уже некоторое время живут не просто как друзья. Мы получили сообщения о том, что там рождается много метисов. Церковь недовольна таким аморальным поведением.</Russian>
@@ -9327,7 +9476,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_WEAPONS_RAID</Tag>
-		<English>Mylord, under cover of darkness, some warriors slipped past the guards and reached the storehouses. Before the alarm could be raised in earnest, they vanished into the wilderness with valuable weapons.</English>
+		<English>Milord, under cover of darkness warriors slipped past our guards and reached the storehouses. Before the alarm could be raised, with our valuable weapons they vanished back into the wilderness.</English>
 		<Portuguese>Meu senhor, sob o manto da escuridão, alguns guerreiros passaram pelos guardas e chegaram aos armazéns. Antes que o alarme pudesse ser dado a sério, eles desapareceram no deserto com armas valiosas.</Portuguese>
 		<German>Milord, im Schutz der Dunkelheit schlichen sich Krieger an den Wachen von vorbei und erreichten die Lagerhäuser. Noch bevor ernsthaft Alarm geschlagen werden konnte, verschwanden sie mit erbeuteten Musketen in der Wildnis.</German>
 		<Russian>Милорд, под покровом темноты несколько индейских воинов проскользнули мимо стражи и добрались до складов. Прежде чем успели поднять тревогу, они скрылись в пустоши с ценным оружием.</Russian>
@@ -9341,35 +9490,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_HORSES_RAID</Tag>
-		<English>Mylord, under cover of darkness, some warriors slipped past the guards and reached the horse stables. Before the alarm could be raised in earnest, they vanished into the wilderness with valuable horses.</English>
+		<English>Milord, under cover of darkness warriors slipped past the guards and reached the stables. Before the alarm could be raised, they vanished back into the wilderness with valuable horses.</English>
 		<Portuguese>Meu senhor, sob o manto da escuridão, alguns guerreiros passaram pelos guardas e chegaram aos estábulos. Antes que o alarme pudesse ser dado a sério, eles desapareceram no deserto com cavalos valiosos.</Portuguese>
 		<German>Milord, im Schutz der Dunkelheit schlichen sich Krieger an den Wachen von vorbei und erreichten die Pferdeställe. Noch bevor ernsthaft Alarm geschlagen werden konnte, verschwanden sie mit erbeuteten Pferden in der Wildnis.</German>
 		<Russian>Милорд, под покровом темноты несколько индейских воинов проскользнули мимо стражи и добрались до конюшен. Прежде чем успели поднять тревогу, они скрылись в пустоши вместе с лошадьми.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_FOOD_RAID</Tag>
-		<English>Rumours are spreading throughout the colonies that an Indian tribe is waging war against the Europeans by raiding their storehouses and stealing large quantities of food.</English>
+		<English>Rumours are spreading throughout the colonies that a Native tribe is waging war against the Europeans by raiding their storehouses and stealing large quantities of food.</English>
 		<Portuguese>Rumores estão se espalhando pelas colônias de que uma tribo indígena está travando uma guerra contra os europeus, invadindo seus armazéns e roubando grandes quantidades de alimentos.</Portuguese>
 		<German>In den Kolonien verbreiten sich Gerüchte, dass ein Indianerstamm den Kampf gegen die Europäer führt, in dem er ihre Lagerhäuser um sehr viel Nahrung erleichtert.</German>
 		<Russian>По колониям распространяются слухи о том, что индейское племя ведет войну против европейцев, совершая набеги на их склады и похищая большое количество продовольствия.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_FOOD_RAID</Tag>
-		<English>Scouts report that warriors from a neighboring tribe have raided colonial storehouses and carried off large quantities of provisions.</English>
+		<English>Scouts report that warriors from a neighbouring tribe have raided colonial storehouses and carried off large quantities of provisions.</English>
 		<Portuguese>Batedores relatam que guerreiros de uma tribo vizinha invadiram armazéns coloniais e levaram grandes quantidades de provisões.</Portuguese>
 		<German>Kundschafter berichten, dass Krieger eines benachbarten Stammes koloniale Vorratslager geplündert und große Mengen an Lebensmitteln fortgeschafft haben.</German>
 		<Russian>По колониям распространяются слухи о том, что индейское племя ведет войну против европейцев, совершая набеги на их склады и похищая большое количество продовольствия.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_CONVERTED_RETURN</Tag>
-		<English>A convert can no longer stand living amongst Europeans and wants to return to his own people.</English>
+		<English>A Native convert can no longer stand living amongst Europeans. He wants to return to his own people.</English>
 		<Portuguese>Um convertido já não suporta viver entre os europeus e quer regressar ao seu próprio povo.</Portuguese>
 		<German>Ein Konvertit hält es unter Europäern nicht mehr aus und will wieder zurück zu seinem Volk.</German>
 		<Russian>Обращенный в христианство туземец больше не может терпеть жизнь среди европейцев и хочет вернуться к своему народу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_CONVERTED_RETURN</Tag>
-		<English>A native living amongst your settlers has asked to be allowed to return to his people. Deeply shaken by the Europeans’ way of life, he explains that the missionaries’ words had led him astray.</English>
+		<English>A Native living amongst your settlers has asked to be allowed to return to his people. Deeply shaken by the Europeans’ way of life, he explains that the missionaries’ words led him astray.</English>
 		<Portuguese>Um nativo que vive entre os seus colonos pediu permissão para retornar ao seu povo. Profundamente abalado pelo modo de vida dos europeus, ele explica que as palavras dos missionários o desencaminharam.</Portuguese>
 		<German>Ein Eingeborener, der unter euren Siedlern lebt, bittet darum, zu seinem Volk zurückkehren zu dürfen. Erschüttert von der Lebensweise der Europäer erklärt er, die Worte der Missionare hätten ihn irregeleitet.</German>
 		<Russian>Обращённый в христианство индеец, проживающий среди ваших поселенцев, просит разрешения вернуться к своему народу. Потрясенный европейским образом жизни, он объясняет, что слова миссионеров сбили его с толку.</Russian>
@@ -9383,7 +9532,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_CUSTOMS</Tag>
-		<English>Customs officials have stopped a foreign trading party in %s2_city and demanded payment of the required duties. The traders claim to be under the protection of a European colonial power, but are unable to pay the fees demanded.</English>
+		<English>Customs officials have stopped a foreign trading party in %s2_city and demanded payment of the required duties. The traders claim to be under the protection of a European colonial power, and are also unable to pay the fees demanded.</English>
 		<Portuguese>Os funcionários aduaneiros detiveram um grupo comercial estrangeiro em %s2_city e exigiram o pagamento dos direitos exigidos. Os comerciantes afirmam estar sob a protecção de uma potência colonial europeia, mas não conseguem pagar as taxas exigidas.</Portuguese>
 		<German>Zollbeamte haben in %s2_city einen fremden Handelstreck aufgehalten und die Zahlung ordnungsgemäßer Abgaben verlangt. Die Händler berufen sich auf den Schutz einer europäischen Kolonialmacht, können die geforderten Gebühren jedoch nicht entrichten.</German>
 		<Russian>Таможенники задержали иностранных купцов в городе %s2_city и потребовали уплаты необходимых пошлин. Торговцы не желают оплачивать требуемые сборы, заявляя, что находятся под защитой другой европейской колониальной державы.</Russian>
@@ -9404,14 +9553,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_MILITARY_AID</Tag>
-		<English>Mylord, another colonial power has become embroiled in a war with a native tribe and is in need of support. They are asking for firearms and horses. This could lay the foundation for good relations.</English>
+		<English>Milord, another colonial power has become embroiled in a war with a Native tribe and needs our support. They are asking for firearms and horses. This could lay the foundation for good relations.</English>
 		<Portuguese>Meu senhor, outra potência colonial envolveu-se numa guerra com uma tribo nativa e precisa de apoio. Eles estão pedindo armas de fogo e cavalos. Isto poderia estabelecer as bases para boas relações.</Portuguese>
 		<German>Milord, eine andere Kolonialmacht ist in einen Krieg mit einem Ureinwohner-Stamm verwickelt worden und braucht Unterstützung. Man frage nach Schusswaffen und Pferden. Dies könnte der Grundstein für gute Beziehungen sein.</German>
 		<Russian>Милорд, другая колониальная держава ввязалась в войну с туземным племенем и нуждается в поддержке. Они просят огнестрельное оружие и лошадей. Это могло бы заложить основу для хороших отношений.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EVENTTRIGGER_REF_NAVY_MODERNIZATION</Tag>
-		<English>The high admiralty has commissioned a new generation of warships and transports. Older vessels are being withdrawn from service and replaced by more modern designs.</English>
+		<English>The High Admiralty has commissioned a new generation of warships and transports. Older vessels are being withdrawn from service and replaced by more modern designs.</English>
 		<Portuguese>O alto almirantado encomendou uma nova geração de navios de guerra e transportes. Navios mais antigos estão sendo retirados de serviço e substituídos por projetos mais modernos.</Portuguese>
 		<German>Die hohe Admiralität hat entschieden, eine neue Generation von Kriegsschiffen und Transportschiffen in Dienst zu stellen. Veraltete Schiffe werden nach und nach ausgemustert und durch moderne Neubauten ersetzt.</German>
 		<Russian>Адмиралтейство приняло решение о введении в строй нового поколения военных и транспортных кораблей. Устаревшие суда будут постепенно выводиться из эксплуатации и заменяться новыми современными кораблями.</Russian>
