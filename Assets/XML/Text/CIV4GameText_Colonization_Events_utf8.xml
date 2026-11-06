@@ -9259,56 +9259,56 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FOUNTAIN_OF_YOUTH</Tag>
-		<English>Scouts from a European country have discovered a spot in the wilderness so beautiful that it resembles a [COLOR_HIGHLIGHT_TEXT]Garden of Eden[COLOR_REVERT].</English>
+		<English>Scouts from a European country have discovered a place in the wilderness so beautiful it could be the [COLOR_HIGHLIGHT_TEXT]Garden of Eden[COLOR_REVERT].</English>
 		<Portuguese>Batedores de um país europeu descobriram um local no deserto tão bonito que lembra um [COLOR_HIGHLIGHT_TEXT]Jardim do Éden[COLOR_REVERT].</Portuguese>
 		<German>Die Scouts eines europäischen Landes haben einen Ort in der Wildnis von solcher Schönheit entdeckt, dass er einem [COLOR_HIGHLIGHT_TEXT]Garten Eden[COLOR_REVERT] gleichkommt.</German>
 		<Russian>Разведчики из одной европейской страны обнаружили в дикой местности такое прекрасное место, что оно напоминает [COLOR_HIGHLIGHT_TEXT]Райский сад[COLOR_REVERT].</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOUNTAIN_OF_YOUTH</Tag>
-		<English>My lord, it is incredible! Our scouts are dazzled by such beauty in the middle of the wilderness. A Garden of Eden! [COLOR_HIGHLIGHT_TEXT]A fountain of youth![COLOR_REVERT] People will flock to the wilderness to see this place. Word will spread as far as Europe. We are blessed.</English>
+		<English>My lord, it is incredible! Our scouts are dazzled by such beauty in the midst of the wilderness. A Garden of Eden! [COLOR_HIGHLIGHT_TEXT]A fountain of youth![COLOR_REVERT] People will flock here to be in this place. Word will quickly spread throughout Europe. We are blessed.</English>
 		<Portuguese>Meu senhor, é incrível! Nossos batedores ficam deslumbrados com tamanha beleza em meio ao sertão. Um Jardim do Éden! [COLOR_HIGHLIGHT_TEXT]Uma fonte de juventude![COLOR_REVERT] As pessoas irão para o deserto para ver este lugar. A notícia se espalhará até a Europa. Somos abençoados.</Portuguese>
 		<German>Milord, es ist unglaublich! Unsere Scouts sind geblendet von solcher Schönheit mitten in der Wildnis. Ein Garten Eden! [COLOR_HIGHLIGHT_TEXT]Ein Jungbrunnen![COLOR_REVERT] Die Menschen werden in die Wildnis strömen, um diesen Ort zu sehen. Es wird sich bis nach Europa herumsprechen. Wir sind gesegnet.</German>
 		<Russian>Милорд, это невероятно! Наши разведчики ослеплены такой красотой посреди дикой местности. Райский сад! Источник вечной молодости! Люди будут стремиться в эту пустыню, чтобы увидеть это место. Весть распространится до самой Европы. Нам сказочно повезло.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT</Tag>
-		<English>Scouts come across rumours in the wilderness about the [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT]!</English>
+		<English>Distant scouts are hearing rumours about how close they are to the [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT]!</English>
 		<Portuguese>Batedores se depara com rumores no deserto sobre as [COLOR_HIGHLIGHT_TEXT]Sete Cidades de Cibola[COLOR_REVERT]!</Portuguese>
 		<German>Kundschafter stoßen in der Wildnis auf Gerüchte über die [COLOR_HIGHLIGHT_TEXT]Sieben Städte von Cibola[COLOR_REVERT]!</German>
 		<Russian>Разведчики натыкаются в дикой местности на слухи о [COLOR_HIGHLIGHT_TEXT]Семи городах Сиболы[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT</Tag>
-		<English>As our scouts made their way through the desolate wilderness, far from the known colonies, they came across a group of weather-beaten conquistadors. The men recount tales told by the Indians of magnificent cities brimming with gold, silver and ancient treasures. Many may dismiss such tales as figments of the imagination, born of thirst and deprivation, yet the men swear on their honour that these are the legendary [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT!</English>
+		<English>As our scouts made their way through the desolate wilderness, far from the known colonies, they came across a group of weather-beaten conquistadors. The men recount tales told by the Natives of magnificent cities brimming with gold, silver and ancient treasures. It's easy to dismiss such tales as figments of the imagination, born out of thirst and deprivation, yet the men swear on their honour that these are the legendary [COLOR_HIGHLIGHT_TEXT]Seven Cities of Cibola[COLOR_REVERT!</English>
 		<Portuguese>Enquanto nossos batedores avançavam pela região selvagem desolada, longe das colônias conhecidas, eles se depararam com um grupo de conquistadores castigados pelo tempo. Os homens contam histórias contadas pelos índios sobre cidades magníficas repletas de ouro, prata e tesouros antigos. Muitos podem considerar tais histórias como fruto da imaginação, nascidas da sede e da privação, mas os homens juram pela sua honra que estas são as lendárias [COLOR_HIGHLIGHT_TEXT]Sete Cidades de Cibola[COLOR_REVERT!</Portuguese>
 		<German>Während unsere Kundschafter fernab der bekannten Kolonien durch die trostlose Wildnis zogen, trafen sie auf eine Gruppe verwitterter Konquistadoren. Die Männer berichten von Erzählungen der Indios über prächtige Städte voller Gold, Silber und uralter Schätze. Viele mögen solche Geschichten für Hirngespinste halten, geboren aus Durst und Entbehrung, doch die Männer schwören bei ihrer Ehre, dass es sich um die sagenhaften [COLOR_HIGHLIGHT_TEXT]Sieben Städte von Cibola handelt[COLOR_REVERT]!</German>
 		<Russian>Пробираясь сквозь безлюдную пустыню, вдали от известных поселений, наши разведчики наткнулись на группу закаленных жизнью конкистадоров. Мужчины рассказывали истории, поведанные индейцами, о великолепных городах, полных золота, серебра и древних сокровищ. Многие могут посчитать такие рассказы плодом воображения, порожденным жаждой и лишениями, однако мужчины клянутся своей честью, что это легендарные [COLOR_HIGHLIGHT_TEXT]Семь городов Сиболы[COLOR_REVERT]!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_DONE</Tag>
-		<English>Rumours are spreading. A group of conquistadors has returned from the wilderness and has some truly incredible stories to tell.</English>
+		<English>Rumours are spreading. A group of conquistadors has returned from the wilderness with truly incredible stories to tell.</English>
 		<Portuguese>Os rumores estão se espalhando. Um grupo de conquistadores retornou do deserto e tem histórias verdadeiramente incríveis para contar.</Portuguese>
 		<German>Gerüchte verbreiten sich. Eine Gruppe Konquistadoren ist aus der Wildnis heimgekehrt und hat wahrlich sagenhaftes zu berichten.</German>
 		<Russian>Распространяются слухи о группа конкистадоров, вернувшейся из дикой местности. Они рассказывают поистине невероятные истории.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_DONE</Tag>
-		<English>Mylord, a party of conquistadors has returned and brought back incredible news. Indians from various tribes are said to have spoken of the [COLOR_HIGHLIGHT_TEXT]treasure of all treasures[COLOR_REVERT]; indeed, entire cities made of gold are said to be hidden in the great canyons to the west. Everything we have always suspected may well be within our grasp!</English>
+		<English>Milord, a party of conquistadors has returned with incredible news. Natives from distant tribes speak of the [COLOR_HIGHLIGHT_TEXT]treasure of all treasures[COLOR_REVERT]; entire cities of gold, hidden in the great canyons to the west. Everything we have always suspected may now be within our grasp!</English>
 		<Portuguese>Meu senhor, um grupo de conquistadores regressou e trouxe notícias incríveis. Diz-se que índios de várias tribos falaram do [COLOR_HIGHLIGHT_TEXT]tesouro de todos os tesouros[COLOR_REVERT]; na verdade, diz-se que cidades inteiras feitas de ouro estão escondidas nos grandes desfiladeiros a oeste. Tudo o que sempre suspeitamos pode estar ao nosso alcance!</Portuguese>
 		<German>Milord, ein Trupp Konquistadoren ist heimgekehrt und hat sagenhafte Neuigkeiten mitgebracht. Indios unterschiedlicher Stämme berichten angeblich über den [COLOR_HIGHLIGHT_TEXT]Schatz aller Schätze[COLOR_REVERT], ja ganze Städte aus Gold sollen in den großen Canyons im Westen verborgen sein. All das, was wir immer vermuteten, ist womöglich in greifbarer Nähe!</German>
 		<Russian>Милорд, отряд конкистадоров вернулся из странствий и привёз невероятные новости. Говорят, индейцы из разных племён рассказывали о [COLOR_HIGHLIGHT_TEXT]сокровище всех сокровищ[COLOR_REVERT]! Более того, говорят, что целые города из золота спрятаны в больших каньонах на западе. Всё, что мы всегда подозревали, вполне может оказаться в пределах нашей досягаемости!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_PREPARATION_DONE</Tag>
-		<English>The colony is abuzz; one of the greatest expeditions of our time regarding the discovery of the Seven Cities of Cibolais about to begin.</English>
+		<English>The colony is abuzz! A great expedition to discover the Seven Cities of Cibolais is about to begin.</English>
 		<Portuguese>A colônia está agitada; uma das maiores expedições do nosso tempo referente à descoberta das Sete Cidades de Cibolais está prestes a começar.</Portuguese>
 		<German>Eine Kolonie ist in Aufregung, eine der größten Expeditionen unserer Zeit zur Entdeckung der Sieben Städte von Cibola ist im Begriff zu beginnen.</German>
 		<Russian>В колонии царит оживление; вот-вот начнется одна из величайших экспедиций нашего времени, посвященная открытию Семи городов Сиболы.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_PREPARATION_DONE</Tag>
-		<English>Mylord, our men have been hard at work gathering enormous supplies and assembling the troops, and we have the pay ready too. We can soon set off and find the treasure of all treasures.</English>
+		<English>Milord, our men have been hard at work gathering enormous supplies and assembling the troops, and we have the money in hand. We're ready to set out to find the treasure of all treasures.</English>
 		<Portuguese>Meu senhor, nossos homens têm trabalhado arduamente reunindo enormes suprimentos e reunindo as tropas, e também temos o pagamento pronto. Em breve poderemos partir e encontrar o tesouro de todos os tesouros.</Portuguese>
 		<German>Milord, unsere Männer waren fleißig und haben enorme Ausrüstung und Truppen zusammengestellt und den Sold haben wir auch beisammen. Wir können bald aufbrechen und den Schatz aller Schätze finden.</German>
 		<Russian>Милорд, наши люди усердно трудились, собирая огромные запасы и формируя войска. Средства на выплату жалования тоже готовы. Скоро мы сможем отправиться на поиски сокровища всех сокровищ.</Russian>
@@ -9322,7 +9322,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_START</Tag>
-		<English>Mylord, the scouts are riding ahead and we’re setting off now. If we keep up the pace, we’ll reach our destination within the next few weeks and return home in a golden carriage.</English>
+		<English>Milord, scouts are riding ahead and we’re setting off now. If we keep a steady pace, we can reach our destination within the next few weeks and ride back in a golden carriage.</English>
 		<Portuguese>Meu senhor, os batedores estão na frente e estamos partindo agora. Se mantivermos o ritmo, chegaremos ao nosso destino nas próximas semanas e voltaremos para casa numa carruagem dourada.</Portuguese>
 		<German>Milord, die Kundschafter reiten voraus und es geht jetzt los. Wenn wir uns ranhalten, werden wir in den nächsten Wochen bereits am Ziel sein und in einer goldenen Kutsche heimkehren.</German>
 		<Russian>Милорд, разведчики уже выдвинулись вперёд и мы отправляемся в путь. Если мы сохраним темп, то достигнем места назначения в течение следующих нескольких недель и вернемся домой с кучей золота.</Russian>
@@ -9336,21 +9336,21 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_1_DONE</Tag>
-		<English>My lord, we’ve been on the road for a while now, but we haven’t found anything. Now we’ve come across these two half-starved and confused figures. What should we do? The men are getting impatient.</English>
+		<English>Milord, we’ve been on the road for a while now, but we still haven’t found anything. Today we’ve come across two half-starved and confused figures. What should we do? Our men are getting impatient.</English>
 		<Portuguese>Meu senhor, já estamos na estrada há algum tempo, mas não encontramos nada. Agora nos deparamos com essas duas figuras meio famintas e confusas. O que devemos fazer? Os homens estão ficando impacientes.</Portuguese>
 		<German>Milord, wir sind nun schon eine Weile unterwegs, haben aber nichts finden können. Jetzt laufen uns diese beiden halb verhungerten und verwirrten Gestalten über den Weg. Was sollen wir tun? Die Männer sind ungeduldig.</German>
 		<Russian>Милорд, мы уже довольно давно в пути, но ничего так и не нашли. Наткнулись только на двух полуголодных и растерянных людей. Что нам делать? Люди начинают терять терпение.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_2_DONE</Tag>
-		<English>A group of explorers ventured further in their search for the Seven Cities of Cibola and were attacked by angry Indians!</English>
+		<English>A group of explorers ventured further in their search for the Seven Cities of Cibola, only to be attacked by hostile Natives!</English>
 		<Portuguese>Um grupo de exploradores aventurou-se ainda mais na busca pelas Sete Cidades de Cibola e foi atacado por índios furiosos!</Portuguese>
 		<German>Eine Nation ist bei der Suche auf die Sieben Städte von Cibola weiter vorgedrungen und wurde von wütenden Ureinwohnern attackiert!</German>
 		<Russian>Группа исследователей отправилась дальше в поисках Семи городов Сиболы и подверглась нападению разгневанных индейцев!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_2_DONE</Tag>
-		<English>My lord, the search is not proving very encouraging; there isn’t even the slightest sign of a golden city on the horizon, and there seem to be some Indians hiding in the thicket ahead of us – be careful!</English>
+		<English>Milord, the search is not proving very encouraging; there isn’t even the slightest sign of a golden city on the horizon, and that could easily be a Native ambush in the thicket just ahead of us – be on your guard!</English>
 		<Portuguese>Meu senhor, a busca não está sendo muito encorajadora; não há o menor sinal de uma cidade dourada no horizonte, e parece haver alguns índios escondidos no matagal à nossa frente – cuidado!</Portuguese>
 		<German>Milord, die Suche ist wenig erquicklich, es hat derzeit noch nicht mal den Anschein einer goldenen Stadt am Horizont und im Dickicht vor uns scheinen sich einige Indianer zu verstecken - Vorsicht!</German>
 		<Russian>Милорд, поиски не приносят особых результатов; на горизонте нет даже малейшего признака Золотого города и, кажется, впереди в зарослях прячутся какие-то индейцы – будьте осторожны!</Russian>
@@ -9364,7 +9364,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_3_DONE</Tag>
-		<English>My lord, it’s hard to believe – look there! That must be it! After all our hardships, we’ve actually found a huge Indian settlement. Let’s go and look for the gold!</English>
+		<English>Milord, it’s hard to believe – look there! That must be it! After all our hardships, we’ve actually found a huge Native city. Let’s go and look for the gold!</English>
 		<Portuguese>Meu senhor, é difícil de acreditar – olhe lá! Deve ser isso! Depois de todas as nossas dificuldades, encontramos um enorme aldeia indígena. Vamos procurar o ouro!</Portuguese>
 		<German>Milord, es ist kaum zu glauben - seht mal, da! Das muss sie sein! Wir haben doch wahrlich nach all diesen Strapazen und Verlusten an Mensch und Material eine riesige Stadt der Indianer gefunden. Lasst uns das Gold suchen!</German>
 		<Russian>Милорд, невероятно – посмотрите! Должно быть, это оно! После всех наших трудностей мы наконец-то нашли огромное индейское поселение. Пойдемте поищем золото!</Russian>
@@ -9378,91 +9378,91 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_HOME_DONE</Tag>
-		<English>My lord, we are truly blessed. We have indeed managed to bring the treasure to the colonies without suffering any major losses. The whole colony is already in an uproar. The king will be delighted. This expedition will go down in history.</English>
+		<English>Milord, we are truly blessed. We have indeed managed to bring the treasure back to the colonies without suffering major losses. The entire colony is in an uproar. The King will be delighted. This expedition will go down in history.</English>
 		<Portuguese>Meu senhor, somos verdadeiramente abençoados. De fato, conseguimos levar o tesouro para as colônias sem sofrer grandes perdas. A colônia inteira já está em alvoroço. O rei ficará encantado. Esta expedição ficará para a história.</Portuguese>
 		<German>Milord, wir sind wahrlich gesegnet. Wir konnten den Schatz tatsächlich ohne größere Verluste in die Kolonien bringen. Die ganze Kolonie ist bereits in Aufruhr. Der König wird begeistert sein. Diese Expedition wird zur Legende werden.</German>
 		<Russian>Милорд, нам поистине повезло! Нам удалось доставить сокровища в колонии без значительных потерь. Все жители в полном восторге. Король будет безумно рад! Эта экспедиция войдет в историю!</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ZEALOUS_MISSIONARY</Tag>
-		<English>Reports arrive from one mission concerning remarkable success among the natives. They seem to be easily swayed.</English>
+		<English>Reports arrive from one mission concerning remarkable success among the Natives. They seem to be easily swayed.</English>
 		<Portuguese>Chegam relatórios de uma missão sobre notável sucesso entre os nativos. Eles parecem ser facilmente influenciados.</Portuguese>
 		<German>Berichte aus einer Mission künden von außergewöhnlichen Erfolgen unter den Eingeborenen. Sie lassen sich offenbar leicht verführen.</German>
 		<Russian>В отчетах одной миссии говорится о необычайных успехах среди туземцев. По всей видимости, ими легко можно управлять.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ZEALOUS_MISSIONARY</Tag>
-		<English>Mylord, we have received some encouraging news from one of our missions. The missionary working there reports that more and more local people are voluntarily listening to his sermons and seeking his advice on both worldly and spiritual matters.</English>
+		<English>Milord, we have received encouraging news from one of our missions. That missionary reports more and more local people are carefully listening to his sermons and seeking his advice on both worldly and spiritual matters.</English>
 		<Portuguese>Meu senhor, recebemos algumas notícias encorajadoras de uma de nossas missões. O missionário que trabalha lá relata que cada vez mais pessoas locais ouvem voluntariamente os seus sermões e procuram o seu conselho tanto sobre assuntos mundanos como espirituais.</Portuguese>
 		<German>Milord, aus einer unserer Missionen erreicht uns eine erfreuliche Nachricht. Der dort tätige Missionar berichtet, dass immer mehr Eingeborene freiwillig seinen Predigten lauschen und seinen Rat sowohl in weltlichen als auch in geistlichen Angelegenheiten suchen.</German>
 		<Russian>Милорд, мы получили обнадеживающие новости от одной из наших миссий. Работающий там миссионер сообщает, что все больше туземцев добровольно слушают его проповеди и обращаются к нему за советом как по мирским, так и по духовным вопросам.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BURNING_MISSION</Tag>
-		<English>Disturbing news is reaching the civilised world from a mission among the natives.</English>
+		<English>Disturbing news is reaching the civilised world from a mission among the Natives.</English>
 		<Portuguese>Notícias perturbadoras chegam ao mundo civilizado a partir de uma missão entre os nativos.</Portuguese>
 		<German>Beunruhigende Nachrichten erreichen die zivilisierte Welt aus einer Mission unter den Eingeborenen.</German>
 		<Russian>Тревожные новости поступают в цивилизованный мир из миссии среди туземного населения.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BURNING_MISSION</Tag>
-		<English>Some of our missionaries have gone a bit overboard in their zeal. The Indians feel that they and their own gods have been insulted, and have promptly set fire to the mission. They want to see whether our God can protect the house of God from the flames.</English>
+		<English>Some of our missionaries have gone overboard in their zeal. The Indians feel that they and their own gods have been insulted, and have promptly set fire to the mission. They want to see whether our God can protect his own House of God from the flames.</English>
 		<Portuguese>Alguns de nossos missionários exageraram um pouco em seu zelo. Os índios sentem que eles e seus próprios deuses foram insultados e prontamente incendiaram a missão. Eles querem ver se o nosso Deus pode proteger a casa de Deus das chamas.</Portuguese>
 		<German>Einige unserer Missionare haben es mit ihrem Eifer übertrieben. Die Indianer fühlen sich und ihre eigenen Götter beleidigt und haben kurzerhand die Mission angezündet. Sie wollen sehen, ob unser Gott das Haus Gottes vor Feuer schützen kann.</German>
 		<Russian>Некоторые из наших миссионеров немного переборщили в своем рвении. Индейцы почувствовали, что их самих и их богов оскорбили, и тут же подожгли миссию. Они хотят проверить, сможет ли наш Бог защитить дом Божий от огня.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRESSED_NATIVE_VILLAGE</Tag>
-		<English>An native settlement is on the verge of collapsing under the cultural pressure exerted by its European neighbours.</English>
+		<English>A Native settlement is on the verge of collapsing under the cultural pressure exerted by its European neighbours.</English>
 		<Portuguese>Uma aldeia nativa está à beira do colapso sob a pressão cultural exercida pelos seus vizinhos europeus.</Portuguese>
 		<German>Eine Siedlung der Ureinwohner steht kurz davor, an dem kulturellen Druck europäischer Nachbarn zu zerbrechen.</German>
 		<Russian>Поселение туземцев находится на грани краха под культурным давлением со стороны европейских соседей.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_1</Tag>
-		<English>Mylord, our settlement is spreading ever further. The settlers have taken almost all the land from the natives and driven them back considerably. One of their settlements is on the verge of being destroyed. Shall we put a stop to this?</English>
+		<English>Milord, our settlement is spreading ever farther. Settlers have taken almost all the land from the Natives and driven them back considerably. One of their settlements is on the verge of being destroyed. Shall we put a stop to this?</English>
 		<Portuguese>Meu senhor, nossa colônia está se espalhando cada vez mais. Os colonos tomaram quase todas as terras dos nativos e os expulsaram consideravelmente. Um de suas colônias está prestes a ser destruído. Vamos acabar com isso?</Portuguese>
 		<German>Milord, unsere Siedlung breitet sich immer weiter aus. Siedler haben den Ureinwohnern fast all ihr Land abgenommen und sie stark zurückgedrängt. Eine ihrer Siedlungen steht kurz davor zerstört zu werden. Sollen wir dem Einhalt gebieten?</German>
 		<Russian>Милорд, наше поселение разрастается всё дальше. Поселенцы отняли у индейцев почти все земли и значительно оттеснили их назад. Одна из их деревень находится на грани разрушения. Должны ли мы положить этому конец?</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_2</Tag>
-		<English>Mylord, a number of chiefs are gathered at our gates and are very angry – more and more settlers are coming into their country and encroaching on their hunting grounds and farmland. Their settlement is on the brink of destruction. They are demanding compensation</English>
+		<English>Milord, a number of chiefs are gathered at our gates. They are very angry. More and more settlers come into their country, encroaching on their hunting grounds and farmland. Their settlement is on the brink of destruction. They demand compensation</English>
 		<Portuguese>Meu Senhor, vários chefes estão reunidos às nossas portas e estão muito zangados – cada vez mais colonos estão a entrar no seu país e a invadir os seus campos de caça e terras agrícolas. A sua colônia está à beira da destruição. Eles estão exigindo indenização</Portuguese>
 		<German>Milord, einige Häuptlinge stehen vor unseren Toren und sind sehr wütend - immer mehr Siedler kommen in ihr Land und rauben ihre Jagdgebiete und Ackerflächen. Ihre Siedlung steht kurz vor der Zerstörung. Sie verlangen Wiedergutmachung.</German>
 		<Russian>Милорд, несколько разгневанных вождей стоят у наших ворот – всё больше и больше поселенцев вторгаются на их территорию, посягая на их охотничьи и сельскохозяйственные угодья. Их поселение находится на грани уничтожения. Они требуют компенсации.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_3</Tag>
-		<English>My lord, a nearby native settlement is about to be destroyed – our settlers have effectively taken over the entire area. The natives are demanding that we withdraw or compensate them.</English>
+		<English>Milord, a nearby Native settlement is about to be destroyed – our settlers have effectively taken over the entire area. The Natives are demanding either that we withdraw, or that we compensate them.</English>
 		<Portuguese>Meu senhor, uma aldeia nativa próximo está prestes a ser destruído – nossos colonos efetivamente assumiram o controle de toda a área. Os nativos exigem que os retiremos ou os compensemos.</Portuguese>
 		<German>Milord, eine nahegelegene Siedlung der Ureinwohner wird bald zerstört werden - unsere Siedler haben praktisch das ganze Land in Besitz genommen. Die Ureinwohner verlangen, dass wir uns zurückziehen oder sie entschädigen.</German>
 		<Russian>Милорд, расположенное неподалеку поселение индейцев вот-вот будет разрушено – наши поселенцы фактически захватили всю территорию. Туземцы требуют, чтобы мы ушли или выплатили им компенсацию.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_GIFT_OF_NATIVE_KNOWLEDGE</Tag>
-		<English>Rumours are circulating that Native Americans and Europeans are working closely together on the farm. The harvests in this colony are exceptionally good.</English>
+		<English>Rumours are circulating that Natives and Europeans are working closely together on the farms. Harvests in this colony are exceptionally good.</English>
 		<Portuguese>Circulam rumores de que nativos americanos e europeus estão trabalhando juntos na fazenda. As colheitas nesta colônia são excepcionalmente boas.</Portuguese>
 		<German>Gerüchte verbreiten sich, dass Indianer und Europäer beim Ackerbau eng zusammenarbeiten. Die Erträge in dieser Kolonie sind außergewöhnlich gut.</German>
 		<Russian>Ходят слухи, что индейцы и европейцы тесно сотрудничают в сельском хозяйстве. Урожайность в этой колонии исключительно высока.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_GIFT_OF_NATIVE_KNOWLEDGE</Tag>
-		<English>For generations, the inhabitants of a neighbouring Native American village have farmed this land and know its plants, animals and soils better than almost anyone else. Impressed by the friendship between our peoples, they have offered to share their knowledge with us.</English>
+		<English>For generations, the inhabitants of a neighbouring Native village have farmed this land and know its plants, animals and soils better than anyone else. Impressed by the growing friendship between our peoples, they offer to share their knowledge with us.</English>
 		<Portuguese>Durante gerações, os habitantes de uma aldeia vizinha de nativos americanos cultivaram esta terra e conhecem as suas plantas, animais e solos melhor do que quase ninguém. Impressionados com a amizade entre os nossos povos, ofereceram-se para partilhar connosco os seus conhecimentos.</Portuguese>
 		<German>Seit Generationen bewirtschaften die Bewohner eines benachbarten Indianerdorfes dieses Land und kennen seine Pflanzen, Tiere und Böden wie kaum jemand sonst. Beeindruckt von der Freundschaft zwischen unseren Völkern bieten sie an, ihr Wissen mit uns zu teilen.</German>
 		<Russian>На протяжении многих поколений жители соседней индейской деревни обрабатывали эту землю и знают ее растения, животных и почву лучше, чем кто-либо другой. Впечатленные дружбой между нашими народами, они предложили поделиться с нами своими знаниями.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MIXED_SETTLEMENT</Tag>
-		<English>Rumours are circulating that Native Americans and Europeans are living together on more than friendly terms in a colony.</English>
+		<English>We now have a colony where Natives and Europeans live together on more than friendly terms.</English>
 		<Portuguese>Circulam rumores de que nativos americanos e europeus vivem juntos em termos mais do que amigáveis numa colônia.</Portuguese>
 		<German>Gerüchte verbreiten sich, dass Indianer und Europäer in einer Kolonie mehr als freundschaftlich zusammenleben.</German>
 		<Russian>Ходят слухи, что туземцы и европейцы живут в колонии более чем в дружеских отношениях.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MIXED_SETTLEMENT</Tag>
-		<English>Mylord, in one of our colonies it appears that the Native Americans and European settlers have been getting on more than just as friends for some time now. We have received reports that many mestizos are being born there. The Church is not pleased with this immoral behaviour.</English>
+		<English>Milord, in one of our colonies it appears that the Natives and European settlers have been more than just as friends for some time now. Many mestizos are being born there. The Church is not pleased with this immoral behaviour.</English>
 		<Portuguese>Meu senhor, em uma de nossas colônias parece que os nativos americanos e os colonos europeus já há algum tempo se dão mais do que apenas como amigos. Recebemos relatos de que muitos mestiços estão nascendo ali. A Igreja não está satisfeita com este comportamento imoral.</Portuguese>
 		<German>Milord, in einer unserer Kolonien haben sich Indianer und Europäer offenbar seit einiger Zeit mehr als freundschaftlich angenähert. Wir erhielten Berichte, dass dort viele Mestizen gebohren werden. Die Kirche ist nicht erfreut über da unzüchtige Treiben.</German>
 		<Russian>Милорд, похоже, в одной из наших колоний туземцы и европейские поселенцы уже некоторое время живут не просто как друзья. Мы получили сообщения о том, что там рождается много метисов. Церковь недовольна таким аморальным поведением.</Russian>
@@ -9476,7 +9476,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_WEAPONS_RAID</Tag>
-		<English>Mylord, under cover of darkness, some warriors slipped past the guards and reached the storehouses. Before the alarm could be raised in earnest, they vanished into the wilderness with valuable weapons.</English>
+		<English>Milord, under cover of darkness warriors slipped past our guards and reached the storehouses. Before the alarm could be raised, with our valuable weapons they vanished back into the wilderness.</English>
 		<Portuguese>Meu senhor, sob o manto da escuridão, alguns guerreiros passaram pelos guardas e chegaram aos armazéns. Antes que o alarme pudesse ser dado a sério, eles desapareceram no deserto com armas valiosas.</Portuguese>
 		<German>Milord, im Schutz der Dunkelheit schlichen sich Krieger an den Wachen von vorbei und erreichten die Lagerhäuser. Noch bevor ernsthaft Alarm geschlagen werden konnte, verschwanden sie mit erbeuteten Musketen in der Wildnis.</German>
 		<Russian>Милорд, под покровом темноты несколько индейских воинов проскользнули мимо стражи и добрались до складов. Прежде чем успели поднять тревогу, они скрылись в пустоши с ценным оружием.</Russian>
@@ -9490,35 +9490,35 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_HORSES_RAID</Tag>
-		<English>Mylord, under cover of darkness, some warriors slipped past the guards and reached the horse stables. Before the alarm could be raised in earnest, they vanished into the wilderness with valuable horses.</English>
+		<English>Milord, under cover of darkness warriors slipped past the guards and reached the stables. Before the alarm could be raised, they vanished back into the wilderness with valuable horses.</English>
 		<Portuguese>Meu senhor, sob o manto da escuridão, alguns guerreiros passaram pelos guardas e chegaram aos estábulos. Antes que o alarme pudesse ser dado a sério, eles desapareceram no deserto com cavalos valiosos.</Portuguese>
 		<German>Milord, im Schutz der Dunkelheit schlichen sich Krieger an den Wachen von vorbei und erreichten die Pferdeställe. Noch bevor ernsthaft Alarm geschlagen werden konnte, verschwanden sie mit erbeuteten Pferden in der Wildnis.</German>
 		<Russian>Милорд, под покровом темноты несколько индейских воинов проскользнули мимо стражи и добрались до конюшен. Прежде чем успели поднять тревогу, они скрылись в пустоши вместе с лошадьми.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_FOOD_RAID</Tag>
-		<English>Rumours are spreading throughout the colonies that an Indian tribe is waging war against the Europeans by raiding their storehouses and stealing large quantities of food.</English>
+		<English>Rumours are spreading throughout the colonies that a Native tribe is waging war against the Europeans by raiding their storehouses and stealing large quantities of food.</English>
 		<Portuguese>Rumores estão se espalhando pelas colônias de que uma tribo indígena está travando uma guerra contra os europeus, invadindo seus armazéns e roubando grandes quantidades de alimentos.</Portuguese>
 		<German>In den Kolonien verbreiten sich Gerüchte, dass ein Indianerstamm den Kampf gegen die Europäer führt, in dem er ihre Lagerhäuser um sehr viel Nahrung erleichtert.</German>
 		<Russian>По колониям распространяются слухи о том, что индейское племя ведет войну против европейцев, совершая набеги на их склады и похищая большое количество продовольствия.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_FOOD_RAID</Tag>
-		<English>Scouts report that warriors from a neighboring tribe have raided colonial storehouses and carried off large quantities of provisions.</English>
+		<English>Scouts report that warriors from a neighbouring tribe have raided colonial storehouses and carried off large quantities of provisions.</English>
 		<Portuguese>Batedores relatam que guerreiros de uma tribo vizinha invadiram armazéns coloniais e levaram grandes quantidades de provisões.</Portuguese>
 		<German>Kundschafter berichten, dass Krieger eines benachbarten Stammes koloniale Vorratslager geplündert und große Mengen an Lebensmitteln fortgeschafft haben.</German>
 		<Russian>По колониям распространяются слухи о том, что индейское племя ведет войну против европейцев, совершая набеги на их склады и похищая большое количество продовольствия.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_CONVERTED_RETURN</Tag>
-		<English>A convert can no longer stand living amongst Europeans and wants to return to his own people.</English>
+		<English>A Native convert can no longer stand living amongst Europeans. He wants to return to his own people.</English>
 		<Portuguese>Um convertido já não suporta viver entre os europeus e quer regressar ao seu próprio povo.</Portuguese>
 		<German>Ein Konvertit hält es unter Europäern nicht mehr aus und will wieder zurück zu seinem Volk.</German>
 		<Russian>Обращенный в христианство туземец больше не может терпеть жизнь среди европейцев и хочет вернуться к своему народу.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_CONVERTED_RETURN</Tag>
-		<English>A native living amongst your settlers has asked to be allowed to return to his people. Deeply shaken by the Europeans’ way of life, he explains that the missionaries’ words had led him astray.</English>
+		<English>A Native living amongst your settlers has asked to be allowed to return to his people. Deeply shaken by the Europeans’ way of life, he explains that the missionaries’ words led him astray.</English>
 		<Portuguese>Um nativo que vive entre os seus colonos pediu permissão para retornar ao seu povo. Profundamente abalado pelo modo de vida dos europeus, ele explica que as palavras dos missionários o desencaminharam.</Portuguese>
 		<German>Ein Eingeborener, der unter euren Siedlern lebt, bittet darum, zu seinem Volk zurückkehren zu dürfen. Erschüttert von der Lebensweise der Europäer erklärt er, die Worte der Missionare hätten ihn irregeleitet.</German>
 		<Russian>Обращённый в христианство индеец, проживающий среди ваших поселенцев, просит разрешения вернуться к своему народу. Потрясенный европейским образом жизни, он объясняет, что слова миссионеров сбили его с толку.</Russian>
@@ -9532,7 +9532,7 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_CUSTOMS</Tag>
-		<English>Customs officials have stopped a foreign trading party in %s2_city and demanded payment of the required duties. The traders claim to be under the protection of a European colonial power, but are unable to pay the fees demanded.</English>
+		<English>Customs officials have stopped a foreign trading party in %s2_city and demanded payment of the required duties. The traders claim to be under the protection of a European colonial power, and are also unable to pay the fees demanded.</English>
 		<Portuguese>Os funcionários aduaneiros detiveram um grupo comercial estrangeiro em %s2_city e exigiram o pagamento dos direitos exigidos. Os comerciantes afirmam estar sob a protecção de uma potência colonial europeia, mas não conseguem pagar as taxas exigidas.</Portuguese>
 		<German>Zollbeamte haben in %s2_city einen fremden Handelstreck aufgehalten und die Zahlung ordnungsgemäßer Abgaben verlangt. Die Händler berufen sich auf den Schutz einer europäischen Kolonialmacht, können die geforderten Gebühren jedoch nicht entrichten.</German>
 		<Russian>Таможенники задержали иностранных купцов в городе %s2_city и потребовали уплаты необходимых пошлин. Торговцы не желают оплачивать требуемые сборы, заявляя, что находятся под защитой другой европейской колониальной державы.</Russian>
@@ -9553,14 +9553,14 @@
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_MILITARY_AID</Tag>
-		<English>Mylord, another colonial power has become embroiled in a war with a native tribe and is in need of support. They are asking for firearms and horses. This could lay the foundation for good relations.</English>
+		<English>Milord, another colonial power has become embroiled in a war with a Native tribe and needs our support. They are asking for firearms and horses. This could lay the foundation for good relations.</English>
 		<Portuguese>Meu senhor, outra potência colonial envolveu-se numa guerra com uma tribo nativa e precisa de apoio. Eles estão pedindo armas de fogo e cavalos. Isto poderia estabelecer as bases para boas relações.</Portuguese>
 		<German>Milord, eine andere Kolonialmacht ist in einen Krieg mit einem Ureinwohner-Stamm verwickelt worden und braucht Unterstützung. Man frage nach Schusswaffen und Pferden. Dies könnte der Grundstein für gute Beziehungen sein.</German>
 		<Russian>Милорд, другая колониальная держава ввязалась в войну с туземным племенем и нуждается в поддержке. Они просят огнестрельное оружие и лошадей. Это могло бы заложить основу для хороших отношений.</Russian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EVENTTRIGGER_REF_NAVY_MODERNIZATION</Tag>
-		<English>The high admiralty has commissioned a new generation of warships and transports. Older vessels are being withdrawn from service and replaced by more modern designs.</English>
+		<English>The High Admiralty has commissioned a new generation of warships and transports. Older vessels are being withdrawn from service and replaced by more modern designs.</English>
 		<Portuguese>O alto almirantado encomendou uma nova geração de navios de guerra e transportes. Navios mais antigos estão sendo retirados de serviço e substituídos por projetos mais modernos.</Portuguese>
 		<German>Die hohe Admiralität hat entschieden, eine neue Generation von Kriegsschiffen und Transportschiffen in Dienst zu stellen. Veraltete Schiffe werden nach und nach ausgemustert und durch moderne Neubauten ersetzt.</German>
 		<Russian>Адмиралтейство приняло решение о введении в строй нового поколения военных и транспортных кораблей. Устаревшие суда будут постепенно выводиться из эксплуатации и заменяться новыми современными кораблями.</Russian>
