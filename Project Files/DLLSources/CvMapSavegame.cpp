@@ -71,6 +71,10 @@ void CvMap::resetSavedData()
 	m_iTopLatitude      = defaultTopLatitude;
 	m_iBottomLatitude   = defaultBottomLatitude;
 	m_iNextRiverID      = defaultNextRiverID;
+	m_iGlobeviewPadX    = 0;
+	m_iGlobeviewPadY    = 0;
+	m_iGlobeviewPadWest = 0;
+	m_iGlobeviewPadSouth = 0;
 	m_bWrapX            = defaultWrapX;
 	m_bWrapY            = defaultWrapY;
 	m_bHasStream		= defaultHasStream;
@@ -126,6 +130,9 @@ void CvMap::read(CvSavegameReader reader)
 		case Save_Plots:
 		{
 			FAssertMsg(m_pMapPlots == NULL, "Memory leak");
+			// 1. do not applyGlobeviewSafeDimensions here. We-The-People Americas
+			//    Gigantic 136x256 saves abort the EXE if we grow the plot array during load.
+			//    pad only on new games (CvMap::init). already-padded 177-wide saves load as-is.
 			const int iNumPlots = numPlotsINLINE();
 			m_pMapPlots = new CvPlot[iNumPlots];
 			for (int iI = 0; iI < iNumPlots; ++iI)
@@ -160,6 +167,10 @@ void CvMap::read(CvSavegameReader reader)
 			if (eBonus != NO_BONUS || eImprovement != NO_IMPROVEMENT)
 			{
 				CvArea* pArea = getArea(kPlot.getArea());
+				if (pArea == NULL)
+				{
+					continue;
+				}
 				if (eBonus != NO_BONUS)
 				{
 					pArea->changeNumBonuses(eBonus, 1);

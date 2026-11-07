@@ -1429,6 +1429,31 @@ class CvWBDesc:
 		print("WBSave done\n")
 		return 0	# success
 
+	def applyGlobeviewPadOffset(self):
+		iWest = CyMap().getGlobeviewPadWest()
+		iSouth = CyMap().getGlobeviewPadSouth()
+		if iWest == 0 and iSouth == 0:
+			return
+		if self.plotDesc != None:
+			for pDesc in self.plotDesc:
+				pDesc.iX = pDesc.iX + iWest
+				pDesc.iY = pDesc.iY + iSouth
+				if pDesc.cityDesc != None:
+					pDesc.cityDesc.plotX = pDesc.cityDesc.plotX + iWest
+					pDesc.cityDesc.plotY = pDesc.cityDesc.plotY + iSouth
+				for u in pDesc.unitDescs:
+					u.plotX = u.plotX + iWest
+					u.plotY = u.plotY + iSouth
+		if self.signDesc != None:
+			for pDesc in self.signDesc:
+				pDesc.iPlotX = pDesc.iPlotX + iWest
+				pDesc.iPlotY = pDesc.iPlotY + iSouth
+		if self.playersDesc != None:
+			for pWBPlayer in self.playersDesc:
+				if pWBPlayer != None and pWBPlayer.iStartingX != -1:
+					pWBPlayer.iStartingX = pWBPlayer.iStartingX + iWest
+					pWBPlayer.iStartingY = pWBPlayer.iStartingY + iSouth
+
 	def applyMap(self):
 		"after reading setup the map"
 
@@ -1439,6 +1464,10 @@ class CvWBDesc:
 		climateType = CvUtil.findInfoTypeNum(self.mapDesc.climate)
 		seaLevelType = CvUtil.findInfoTypeNum(self.mapDesc.seaLevel)
 		CyMap().rebuild(self.mapDesc.iGridW, self.mapDesc.iGridH, self.mapDesc.iTopLatitude, self.mapDesc.iBottomLatitude, self.mapDesc.bWrapX, self.mapDesc.bWrapY, WorldSizeTypes(worldSizeType), ClimateTypes(climateType), SeaLevelTypes(seaLevelType), 0, None)
+
+		# 1. globe pad splits extra ocean west/east. WB coords are the file's
+		#    original x,y so shift them onto the interior after rebuild.
+		self.applyGlobeviewPadOffset()
 
 		# update the city catchment radius
 		CyMap().setCityCatchmentRadiusNoMapMaker(self.mapDesc.iCityRadius)
