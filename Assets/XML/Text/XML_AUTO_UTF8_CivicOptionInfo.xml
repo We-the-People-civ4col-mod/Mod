@@ -26,6 +26,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Позиция по выборам</Russian>
+		<Hungarian>Álláspont a Választásokról</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_NATIVES</Tag>
@@ -53,6 +54,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Позиция в отношении индейцев</Russian>
+		<Hungarian>Álláspont az Indiánokról</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_RELIGION</Tag>
@@ -80,6 +82,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Позиция в отношении религии</Russian>
+		<Hungarian>Álláspont a Vallásról</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_SECURITY</Tag>
@@ -107,6 +110,7 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Позиция по безопасности</Russian>
+		<Hungarian>Álláspont a Földvédelemről</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_CIVICOPTION_SLAVERY</Tag>
@@ -134,5 +138,6 @@
 			<Plural>0</Plural>
 		</Spanish>
 		<Russian>Позиция в отношении рабства</Russian>
+		<Hungarian>Álláspont a Rabszolgaságról</Hungarian>
 	</TEXT>
 </Civ4GameText>
