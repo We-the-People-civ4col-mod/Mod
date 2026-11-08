@@ -9,6 +9,7 @@
 		<Italian>Minuscolo</Italian>
 		<Spanish>Diminuto</Spanish>
 		<Russian>Крошечный</Russian>
+		<Hungarian>Apró</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_TINY_HELP</Tag>
@@ -23,6 +24,7 @@
 		<Italian>Piccolo</Italian>
 		<Spanish>Pequeño</Spanish>
 		<Russian>Маленький</Russian>
+		<Hungarian>Kicsi</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_SMALL_HELP</Tag>
@@ -37,6 +39,7 @@
 		<Italian>Normale</Italian>
 		<Spanish>Estándar</Spanish>
 		<Russian>Стандартный</Russian>
+		<Hungarian>Kicsi</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_STANDARD_HELP</Tag>
@@ -51,6 +54,7 @@
 		<Italian>Grande</Italian>
 		<Spanish>Grande</Spanish>
 		<Russian>Большой</Russian>
+		<Hungarian>Nagy</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_LARGE_HELP</Tag>
@@ -65,6 +69,7 @@
 		<Italian>Enorme</Italian>
 		<Spanish>Enorme</Spanish>
 		<Russian>Огромный</Russian>
+		<Hungarian>Hatalmas</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_HUGE_HELP</Tag>
@@ -79,6 +84,7 @@
 		<Italian>Massicce</Italian>
 		<Spanish>Masivo</Spanish>
 		<Russian>Массивный</Russian>
+		<Hungarian>Masszív</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_MASSIVE_HELP</Tag>
@@ -93,6 +99,7 @@
 		<Italian>Gigantesco</Italian>
 		<Spanish>Gigantesco</Spanish>
 		<Russian>Гигантский</Russian>
+		<Hungarian>Gigantikus</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_WORLDSIZE_GIGANTIC_HELP</Tag>
