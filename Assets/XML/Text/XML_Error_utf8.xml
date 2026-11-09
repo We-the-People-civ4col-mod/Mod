@@ -5,6 +5,7 @@
 		<Tag>TXT_KEY_ERROR_XML_TITLE</Tag>
 		<English>XML LOAD ERROR</English>
 		<Russian>ОШИБКА ЗАГРУЗКИ XML</Russian>
+		<Hungarian>XML TÖLTÉSI HIBA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_ERROR_XML_WRONG_TYPE_STRING</Tag>
@@ -17,6 +18,7 @@ Expected string of type %s4</English>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_TITLE</Tag>
 		<English>EVENT TRIGGER MISCONFIGURED</English>
 		<Russian>ТРИГГЕР СОБЫТИЯ НАСТРОЕН НЕПРАВИЛЬНО</Russian>
+		<Hungarian>ESEMÉNY INDÍTÓ ROSSZUL KONFIGURÁLVA</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR</Tag>
@@ -28,45 +30,57 @@ Expected string of type %s4</English>
 %s1
 %s2
 %s3</Russian>
+<Hungarian>Az Eseményindítónak van egy olyan követelménye, ami nem indíthatja el.
+%s1
+%s2
+%s3</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_GRAPHICAL_ONLY</Tag>
 		<English>Can't require graphical only entries</English>
 		<Russian>Не могут требоваться только графические записи</Russian>
+		<Hungarian>Nem igényelhet csak grafikus bejegyzéseket</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_PLOT_TYPE</Tag>
 		<English>Can't be used with required PlotType</English>
 		<Russian>Невозможно использовать с требуемым PlotType.</Russian>
+		<Hungarian>Nem használható a szükséges PlotType-típussal együtt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN</Tag>
 		<English>Can't be used with any of the required terrains</English>
 		<Russian>Не может использоваться ни с одним из требуемых ландшафтов.</Russian>
+		<Hungarian>Nem használható a szükséges terepek egyikével sem.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE</Tag>
 		<English>Can't be used with any of the required features</English>
 		<Russian>Невозможно использовать ни с одной из необходимых функций.</Russian>
+		<Hungarian>Nem használható a szükséges funkciók egyikével sem</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_IMPROVEMENT</Tag>
 		<English>Can't be used with any of the required improvements</English>
 		<Russian>Невозможно использовать ни с одним из необходимых улучшений.</Russian>
+		<Hungarian>Nem használható a szükséges fejlesztések egyikével sem.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_ROUTE</Tag>
 		<English>Can't be used with any of the required routes</English>
 		<Russian>Невозможно использовать ни с одним из требуемых маршрутов.</Russian>
+		<Hungarian>Nem használható a szükséges útvonalak egyikével sem.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_TERRAIN_PLOT_TYPE</Tag>
 		<English>None of the terrains required by the feature allows the PlotType required</English>
 		<Russian>Ни один из ландшафтов, требуемых для этого объекта, не позволяет использовать требуемый PlotType.</Russian>
+		<Hungarian>A funkció által igényelt terepek egyike sem teszi lehetővé a szükséges PlotType-típust.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ERROR_NO_FEATURE_TERRAIN</Tag>
 		<English>None of the features required by the improvement can be placed on any of the required terrains</English>
 		<Russian>Ни один из объектов, требуемых улучшением, не может быть размещен ни на одном из требуемых ландшафтов.</Russian>
+		<Hungarian>A fejlesztéshez szükséges funkciók egyike sem helyezhető el a szükséges terepek egyikén sem.</Hungarian>
 	</TEXT>
 </Civ4GameText>
