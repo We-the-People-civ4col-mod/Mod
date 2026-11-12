@@ -928,6 +928,7 @@
 		<Portuguese>A agitação na Europa está a levar a um aumento no número de emigrantes.</Portuguese>
 		<German>Unruhen in Europa führen zu einem Anstieg von Auswanderern.</German>
 		<Russian>Волнения в Европе приводят к увеличению числа эмигрантов.</Russian>
+		<Hungarian>Az Európában tapasztalható zavargások a kivándorlók számának növekedéséhez vezetnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PEASANT_WARPREP_EMIGRANT</Tag>
@@ -935,6 +936,7 @@
 		<Portuguese>A agitação entre a população rural fez com que mais emigrantes esperassem nas docas europeias para zarpar para o Novo Mundo.</Portuguese>
 		<German>Die Unruhen unter der Landbevölkerung haben dazu geführt, dass mehr Auswanderer an den europäischen Docks warten, um ihre Reise in die neue Welt anzutreten.</German>
 		<Russian>Волнения среди крестьян привели к увеличению числа эмигрантов, ожидающих в европейских портах отправления в Новый Свет.</Russian>
+		<Hungarian>A vidéki lakosság körében kialakult nyugtalanság miatt egyre több kivándorló vár az európai kikötőkben, hogy hajóra szálljon az Újvilág felé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PEASANT_WARPREP_EMIGRANT</Tag>
@@ -942,6 +944,7 @@
 		<Portuguese>Ruim para a Europa, mas bom para nós. Traga-os e dê-lhes trabalho!</Portuguese>
 		<German>Schlecht für Europa, aber gut für uns. Holt sie herüber und gebt ihnen Arbeit!</German>
 		<Russian>Беда Европы дает нам уникальный шанс! Привозите всех к нам и дайте им работу!</Russian>
+		<Hungarian>Európának rossz, de nekünk jó. Hozzuk ide őket, és adjunk nekik munkát!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PEASANT_WARPREP_WAREND_HELP</Tag>
@@ -949,6 +952,7 @@
 		<Portuguese>Vários colonos livres estavam nas docas da Europa, esperando para zarpar para o Novo Mundo!</Portuguese>
 		<German>Einige freie Kolonisten waren an den Docks in Europa auf Ihre Überfahrt in die Neue Welt!</German>
 		<Russian>В Европе на пристани находится множество свободных колонистов, ожидающих отплытия в Новый Свет!</Russian>
+		<Hungarian>Számos szabad gyarmatosító tartózkodik az európai kikötőkben, arra várva, hogy kihajózzon az Újvilágba!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TAX_INCREASE</Tag>
@@ -1047,8 +1051,8 @@
 		<French>[ICON_BULLET]Le prix augmente de [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] pour %F2_yield en Afrique</French>
 		<German>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Verkaufspreis für %F2_yield in Afrika</German>
 		<Russian>[ICON_BULLET][COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] цена на %F2_yield в Африке</Russian>
-	</TEXT>
 		<Hungarian>[ICON_BULLET]%F2_yield ára [COLOR_POSITIVE_TEXT]%D1[COLOR_REVERT] Afrikában</Hungarian>
+	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PRICE_DECREASE_AFRICA</Tag>
 		<English>[ICON_BULLET][COLOR_NEGATIVE_TEXT]%D1[COLOR_REVERT] price for %F2_yield in Africa</English>
@@ -1305,6 +1309,7 @@
 		<Portuguese>Pague aos canalhas e evite derramamento de sangue.</Portuguese>
 		<German>Zahlt den Halunken und vermeidet Blutvergießen.</German>
 		<Russian>Заплатить негодяям, чтобы избежать кровопролития.</Russian>
+		<Hungarian>Fizessünk a gazfickóknak, hogy ne legyen vérontás.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_HIGHWAYMAN_ATTACK_HELP</Tag>
@@ -1321,6 +1326,7 @@
 		<Portuguese>Você paga %D1 [ICON_GOLD] aos bandidos e eles deixam você passar.</Portuguese>
 		<German>Ihr zahlt %D1 [ICON_GOLD] an die Wegelagerer und dürft passieren.</German>
 		<Russian>Вы платите %D1 [ICON_GOLD] разбойникам и они пропускают вас.</Russian>
+		<Hungarian>%D1 [ICON_GOLD]-t fizetsz az útonállóknak, és ők átengednek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_LANDTRANSPORT_ATTACK</Tag>
@@ -1409,6 +1415,7 @@
 		<Portuguese>Não queremos problemas na cidade. Deveríamos tentar chegar a um acordo amigável com a família da jovem.</Portuguese>
 		<German>Wir wollen keinen Aufruhr in der Stadt. Wir sollten versuchen uns mit der Familie des Mädchens gütlich zu einigen.</German>
 		<Russian>Нам не нужны проблем в городе. Следует попытаться достичь мирного урегулирования с семьей молодой женщины.</Russian>
+		<Hungarian>Nem akarunk bajt a városban. Meg kellene próbálnunk békés megoldást találni a fiatal hölgy családjával.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_MILKMAID_IN_NEED_HELP</Tag>
@@ -1506,6 +1513,7 @@
 		<Portuguese>Os bravos defensores correm para proteger a estação da balsa e enfrentar os bandidos! Eles podem defender a estação da balsa?</Portuguese>
 		<German>Die mutigen Verteidiger eilen herbei, um die Fährstation zu sichern und sich den Banditen entgegenzustellen! Können Sie die Fähre vor der Zerstörung bewahren?</German>
 		<Russian>Отважные защитники спешат на защиту паромной станции и дать отпор бандитам! Смогут ли они отстоять паромную переправу?</Russian>
+		<Hungarian>A bátor védők sietnek, hogy megvédjék a kompállomást és szembeszálljanak a banditákkal! Sikerül-e megvédeniük?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FERRY_STATION_ROBBERS_DESTROY_CHOICE</Tag>
@@ -1513,6 +1521,7 @@
 		<Portuguese>Os bandidos invadem a estação da balsa e começam a saqueá-la e destruí-la!</Portuguese>
 		<German>Die Banditen überwältigen die Fährstation und beginnen sie zu plündern und zu zerstören!</German>
 		<Russian>Бандиты захватили паромную станцию и начали грабить и разрушать её!</Russian>
+		<Hungarian>A banditák elfoglalták a kompállomást, és elkezdték kifosztani és lerombolni!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER</Tag>
@@ -1521,6 +1530,7 @@
 		<French>Selon une rumeur, la fille d'un riche planteur [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] est tombé amouruese d'un esclave.</French>
 		<German>Ein Gerücht macht die Runde: Eine [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Tocher eines Plantagenbesitzers hat sich in einen Sklaven verliebt.</German>
 		<Russian>Ходят слухи, что дочь [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] плантатора влюбилась в раба.</Russian>
+		<Hungarian>Egy pletyka terjed, miszerint egy [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] ültetvénytulajdonos lánya beleszeretett egy rabszolgába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SLAVE_AND_PLANATION_OWNER_DAUGHTER_1</Tag>
@@ -1645,6 +1655,7 @@
 		<Portuguese>Os corajosos habitantes de %s1 tentaram resistir, mas não conseguiram impedir que os bandidos saqueassem a cidade.</Portuguese>
 		<German>Die tapferen Bürger von %s1 versuchten sich zu wehren, konnten aber nicht verhindern, dass die Banditen die Stadt plünderten.</German>
 		<Russian>Отважные жители города %s1 пытались оказать сопротивление, но не смогли помешать бандитам разграбить город.</Russian>
+		<Hungarian>%s1 bátor lakói megpróbáltak ellenállni, de nem tudták megakadályozni, hogy a rablók kifosszák a várost.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_DIRECT_RAID_GOLD</Tag>
@@ -1652,6 +1663,7 @@
 		<Portuguese>Os defensores em %s1_city não conseguiram evitar o roubo. Os criminosos saquearam a colônia e levaram %d2 ouro.</Portuguese>
 		<German>Die Kriminellen in %s1_city plünderten die Siedlung und schafften %d2 Gold fort.</German>
 		<Russian>Защитники города %s1_city не смогли предотвратить кражу. Преступники разграбили поселение и увезли %d2 золота.</Russian>
+		<Hungarian>%s1_city védői nem tudták megakadályozni a rablást. A bűnözők kifosztották a települést, és %d2 aranyat vittek el.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_DIRECT_RAID_GOODS</Tag>
@@ -1659,6 +1671,7 @@
 		<Portuguese>Não havia defensores em %s1_city. Os criminosos saquearam a colônia e levaram %d2 %s3.</Portuguese>
 		<German>Die Kriminellen plünderten die Siedlung und schafften %d2 %s3 fort.</German>
 		<Russian>В городе %s1_city не было защитников. Преступники разграбили поселение и похитили %d2 %s3.</Russian>
+		<Hungarian>%s1_city területén nem voltak védők. A bűnözők kifosztották a települést, és %d2 %s3 árut elvittek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_DIRECT_RAID_NOTHING</Tag>
@@ -1666,6 +1679,7 @@
 		<Portuguese>Não havia defensores em %s1_city. Os criminosos invadiram a colônia, mas encontraram pouca coisa que valesse a pena levar.</Portuguese>
 		<German>Die Kriminellen überrannten die Siedlung, fanden jedoch kaum etwas, das den Abtransport lohnte.</German>
 		<Russian>В городе %s1_city не было защитников. Преступники захватили поселение, но не нашли там ничего, что могло бы их заинтересовать.</Russian>
+		<Hungarian>%s1_city területén nem voltak védők. A bűnözők elfoglalták a települést, de alig találtak ott elvihető értéket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_DEFENDED_ABORTED</Tag>
@@ -1673,6 +1687,7 @@
 		<Portuguese>Os bandidos foram confrontados pelos habitantes locais em %s1 e abandonaram o ataque.</Portuguese>
 		<German>Die Banditen wurden in %s1 von der örtlichen Stadtbevölkerung gestellt und brachen ihren Angriff ab.</German>
 		<Russian>В городе %s1 бандиты столкнулись с яростным отпором местных жителей и прекратили нападение.</Russian>
+		<Hungarian>%s1 helyi lakosai szembeszálltak a banditákkal, akik ennek következtében visszavonultak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CRIMINALS_BLACKMAIL_CITY_REFUSE_HELP</Tag>
@@ -1680,6 +1695,7 @@
 		<Portuguese>[ICON_BULLET]Recusar suas demandas provocará um [COLOR_HIGHLIGHT_TEXT]ataque imediato[COLOR_REVERT]. Se os atacantes tiverem sucesso, eles poderão [COLOR_HIGHLIGHT_TEXT]saquear [COLOR_REVERT]ouro, mercadorias ou armas, mas não poderão capturar a cidade.</Portuguese>
 		<German>[ICON_BULLET]Wenn ihre Forderungen zurückgewiesen werden, [COLOR_HIGHLIGHT_TEXT]wird die Stadt überfallen[COLOR_REVERT]. Falls die Banditen Erfolg haben, können sie Gold, Waren oder Waffen [COLOR_HIGHLIGHT_TEXT]plündern[COLOR_REVERT], die Stadt jedoch nicht einnehmen.</German>
 		<Russian>[ICON_BULLET]Отказ от их требований спровоцирует [COLOR_HIGHLIGHT_TEXT]немедленное нападение[COLOR_REVERT]. Если атакующие добьются успеха, они могут завладеть золотом, товарами или оружием, но не смогут захватить город.</Russian>
+		<Hungarian>[ICON_BULLET]Ha elutasítod a követeléseiket, az [COLOR_HIGHLIGHT_TEXT]azonnali támadást[COLOR_REVERT] vált ki. Ha a támadók sikerrel járnak, [COLOR_HIGHLIGHT_TEXT]aranyat, árukat vagy fegyvereket zsákmányolhatnak [COLOR_REVERT], de a várost nem tudják elfoglalni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_INDENTURED_SERVANT_STEALS_FROM_EMPLOYER</Tag>
@@ -1732,6 +1748,7 @@
 		<Portuguese>[ICON_BULLET]O servo contratado é resgatado e se torna um colono livre.</Portuguese>
 		<German>[ICON_BULLET]Der Schuldknecht wird freigekauft und zu einem freien Kolonisten.</German>
 		<Russian>[ICON_BULLET]Кабального слугу выкупают и он становится свободным колонистом.</Russian>
+		<Hungarian>[ICON_BULLET]A szerződéses szolgát megváltják, és szabad telepessé válik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PREACHER_AND_HARLOT</Tag>
@@ -1901,6 +1918,7 @@
 		<Portuguese>Vários estudiosos na Europa declaram que a Terra é um globo. Aventureiros e exploradores de todos os cantos do globo partem para circunavegar o mundo na direção oposta. A Europa tem de estar mais uma vez para além da China!</Portuguese>
 		<German>Die Erde sei eine Kugel, behaupten einige Gelehrte in Europa. Abenteurer und Forscher aus den verschiedensten Nationen brechen auf, um jetzt auch die Welt in der anderen Richtung zu umrunden. Hinter China muss wieder Europa liegen!</German>
 		<Russian>Некоторые ученые в Европе утверждают, что Земля — это шар. Путешественники и исследователи со всех уголков земного шара отправляются в кругосветное путешествие в обратном направлении. После Китая снова должна оказаться Европа!</Russian>
+		<Hungarian>Európában számos tudós állítja, hogy a Föld gömb alakú. A világ minden tájáról érkező kalandorok és felfedezők indulnak útnak, hogy a világot ellenkező irányban körbejárják. Európa tehát ismét Kínán túl kell, hogy feküdjön!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_ATLANTIC</Tag>
@@ -1908,6 +1926,7 @@
 		<Portuguese>Exploradores estrangeiros descobriram e mapearam um oceano no leste do Novo Mundo que sem dúvida leva à Europa na outra direção.</Portuguese>
 		<German>Fremde Forscher sind uns zuvorgekommen! Sie haben im Osten dieser Neuen Welt ein weites Meer kartographiert, hinter dessen Horizont unzweifelhaft wieder Europa liegt.</German>
 		<Russian>Иностранные исследователи обнаружили и нанесли на карту океан на востоке Нового Света, на другом берегу которого, несомненно, будет находится Европа.</Russian>
+		<Hungarian>Külföldi felfedezők rátaláltak és feltérképeztek az Újvilág keleti részén egy óceánt, amely kétségtelenül a másik irányba Európába vezet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ATLANTIC_HELP</Tag>
@@ -1915,6 +1934,7 @@
 		<Portuguese>Seja o primeiro a explorar a rota oriental para a Europa. Glória e riqueza serão suas!</Portuguese>
 		<German>Entdeckt als Erster die östliche Seeroute nach Europa. Ruhm und Reichtümer werden Euch sicher sein.</German>
 		<Russian>Станьте первым, кто откроет восточный путь в Европу. Слава и богатство будут вашими!</Russian>
+		<Hungarian>Fedezd fel elsőként a keleti útvonalat Európába! Dicsőség és gazdagság vár rád!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_TRADER_ATTACK_HELP</Tag>
@@ -1967,6 +1987,7 @@
 		<Portuguese>Um aventureiro [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] foi o primeiro a descobrir a rota oriental para a Europa na outra direção.</Portuguese>
 		<German>Ein [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] Abenteurer hat als Erster die Ostküste erkundet und eine Passage in der anderen Richtung nach Europa gefunden.</German>
 		<Russian>Первым, кто открыл восточный маршрут в Европу в обратном направлении, был искатель приключений [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT].</Russian>
+		<Hungarian>Egy [COLOR_HIGHLIGHT_TEXT]%s1:4_civ_adjective[COLOR_REVERT] kalandor fedezte fel elsőként a keleti útvonalat Európába, az ellenkező irányban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ATLANTIC_DONE</Tag>
@@ -1974,6 +1995,7 @@
 		<Portuguese>Que triunfo! Um dos nossos exploradores descobriu e mapeou um oceano no leste do Novo Mundo que sem dúvida leva à Europa.</Portuguese>
 		<German>Welch Triumph! Einer unserer Entdecker hat im Osten dieser Neuen Welt ein weites Meer kartographiert, hinter dessen Horizont unzweifelhaft wieder Europa liegt. Der Wettlauf um die Entdeckung der östlichen Seeroute nach Europa ist entschieden.</German>
 		<Russian>Какой триумф! Один из наших исследователей обнаружил и нанёс на карту океан на востоке Нового Света, который, несомненно, ведёт в Европу.</Russian>
+		<Hungarian>Micsoda diadal! Az egyik felfedezőnk rátalált és feltérképezett az Újvilág keleti részén egy óceánt, amely kétségtelenül Európába vezet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_POPUP_SELECT_EVENT</Tag>
@@ -2188,6 +2210,7 @@
 		<French>Les colons [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] ont découvert une nouvelle espèce de cacaoyer particulièrement fertile.</French>
 		<German>In den [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Kolonien wurde eine neue Sorte ertragreicher Kakaobäume entdeckt.</German>
 		<Russian>Жители [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] колоний обнаружили новый вид исключительно плодовитых растений какао.</Russian>
+		<Hungarian>A kisérletező [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] gyarmatok lakói felfedeztek egy új, rendkívül termékeny kakaónövény fajt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CACAO_BONUS_1</Tag>
@@ -2307,6 +2330,7 @@
 		<Portuguese>Aceite a perda, mas insista em uma compensação justa.</Portuguese>
 		<German>Den Verlust hinnehmen, aber auf angemessene Entschädigung bestehen.</German>
 		<Russian>Лошадей уже не вернуть, но эти дикари должны выплатить нам компенсацию.</Russian>
+		<Hungarian>Elfogadod a veszteséget, de igazságos kompenzációt követelsz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_RUNAWAY_3_HELP</Tag>
@@ -2314,6 +2338,7 @@
 		<Portuguese>[ICON_BULLET]Receba %d1[ICON_GOLD] em compensação.</Portuguese>
 		<German>[ICON_BULLET]Erhaltet %d1[ICON_GOLD] als Entschädigung.</German>
 		<Russian>[ICON_BULLET]Получите %d1[ICON_GOLD] в качестве компенсации.</Russian>
+		<Hungarian>[ICON_BULLET]%d1[ICON_GOLD] kártérítést kapsz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_TERRAX_1</Tag>
@@ -2665,6 +2690,7 @@
 		<French>Un entrepôt à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a été dévalisé.</French>
 		<German>Ein Lagerhaus in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] wurde überfallen.</German>
 		<Russian>Склад в [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] подвергся налету.</Russian>
+		<Hungarian>Rajtaütöttek [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] raktárán.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_RUM_BLOSSOM_1</Tag>
@@ -8676,6 +8702,7 @@
 		<Portuguese>Diga a eles que entregaremos [COLOR_HIGHLIGHT_TEXT]mosquetes[COLOR_REVERT] em suas aldeias como prova de nossa boa fé. Deixe-os ver que a força de nossas armas pode servir não apenas à guerra, mas também à [COLOR_HIGHLIGHT_TEXT]paz e à amizade[COLOR_REVERT].</Portuguese>
 		<German>Sagt ihnen, dass wir ihrem Dorf [COLOR_HIGHLIGHT_TEXT]Musketen[COLOR_REVERT] als Zeichen unseres guten Willens liefern werden. Sie sollen erkennen, dass die Stärke unserer Waffen nicht nur dem Krieg, sondern auch [COLOR_HIGHLIGHT_TEXT]Frieden und Freundschaft[COLOR_REVERT] dienen kann.</German>
 		<Russian>Скажите им, что мы доставим [COLOR_HIGHLIGHT_TEXT]мушкеты[COLOR_REVERT] в их деревню в знак нашей доброй воли. Пусть они увидят, что сила нашего оружия может служить не только войне, но и [COLOR_HIGHLIGHT_TEXT]миру и дружбе[COLOR_REVERT].</Russian>
+		<Hungarian>Mondjuk meg nekik, hogy [COLOR_HIGHLIGHT_TEXT]puskákat[COLOR_REVERT] szállítunk a falujukba jó szándékunk jeléül. Hadd lássák, hogy fegyvereink ereje nem csupán a háború, hanem a [COLOR_HIGHLIGHT_TEXT]béke és a barátság[COLOR_REVERT] szolgálatára is áll.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_WN_1</Tag>
@@ -8683,6 +8710,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] prometeram entregar mosquetes a uma aldeia indígena próxima.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat zugesagt, Musketen an ein nahegelegenes Indianerdorf zu liefern.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] пообещали доставить мушкеты в расположенную неподалеку деревню туземцев.</Russian>
+		<Hungarian>A haszonleső [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] nép megígérte, hogy puskákat szállít egy közeli Indián faluba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_2</Tag>
@@ -8690,6 +8718,7 @@
 		<Portuguese>Dê a eles um [COLOR_HIGHLIGHT_TEXT]presente menor [COLOR_REVERT]do nosso próprio depósito imediatamente. Não é tudo o que eles pediram, mas deve [COLOR_HIGHLIGHT_TEXT]acalmá-los[COLOR_REVERT] por enquanto.</Portuguese>
 		<German>Gebt ihnen sofort ein [COLOR_HIGHLIGHT_TEXT]kleineres Geschenk[COLOR_REVERT] aus unseren eigenem Magazin. Es ist nicht alles, was sie verlangt haben, aber es sollte sie fürs Erste [COLOR_HIGHLIGHT_TEXT]beruhigen[COLOR_REVERT].</German>
 		<Russian>Передайте им [COLOR_HIGHLIGHT_TEXT]небольшой подарок [COLOR_REVERT]с нашего склада. Это не всё, что они просили, но это должно [COLOR_HIGHLIGHT_TEXT]успокоить[COLOR_REVERT] их на какое-то время.</Russian>
+		<Hungarian>Adjunk nekik azonnal egy [COLOR_HIGHLIGHT_TEXT]kisebb ajándékot[COLOR_REVERT] a saját készletünkből. Ez ugyan nem minden, amit kértek, de egyelőre [COLOR_HIGHLIGHT_TEXT]megnyugtatja[COLOR_REVERT] őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_WN_2</Tag>
@@ -8697,6 +8726,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] enviaram um presente menor em cavalos para acalmar uma aldeia nativa próxima, embora não sem algum ressentimento.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat ein kleineres Geschenk an Musketen geschickt, um ein nahegelegenes Indianerdorf zu beruhigen, wenn auch nicht ohne Verstimmung.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправили небольшой подарок в виде мушкетов, чтобы успокоить расположенную неподалеку индейскую деревню, хотя и не без некоторого недовольства со стороны колонистов.</Russian>
+		<Hungarian>A kereskedő [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] gyarmatok egy kisebb mennyiségű lovat ajándékoztak a közeli Indián falunak, hogy megnyugtassák őket, bár ez némi ellenérzést váltott ki.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_3</Tag>
@@ -8704,6 +8734,7 @@
 		<Portuguese>Esta exigência é escandalosa. Não entregaremos nossos mosquetes para satisfazer tribos assustadas. Deixe-os voltar para casa de mãos vazias.</Portuguese>
 		<German>Diese Forderung ist ungeheuerlich. Wir werden unsere Musketen nicht herausgeben, nur um ängstliche Stammeskrieger zu besänftigen. Sie sollen mit leeren Händen heimkehren.</German>
 		<Russian>Это требование возмутительно. Мы не отдадим наши мушкеты, чтобы угодить каким-то дикарям. Пусть возвращаются домой с пустыми руками.</Russian>
+		<Hungarian>Ez a követelés felháborító. Nem adjuk át a puskáinkat a megrémült Indiánoknak. Térjenek haza üres kézzel!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_WN_3</Tag>
@@ -8719,6 +8750,7 @@
 		<Portuguese>Os mosquetes solicitados chegaram à aldeia indígena.</Portuguese>
 		<German>Die geforderten Musketen haben das Indianerdorf erreicht.</German>
 		<Russian>Запрошенные мушкеты доставлены в деревню туземцев.</Russian>
+		<Hungarian>A kért puskák megérkeztek az Indián faluba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_DONE</Tag>
@@ -8726,6 +8758,7 @@
 		<Portuguese>A tribo aceita com gratidão os mosquetes. O seu medo desaparece e o respeito pela nossa generosidade aumenta.</Portuguese>
 		<German>Der Stamm nimmt die Musketen dankbar an. Seine Sorge weicht, und der Respekt für unsere Großzügigkeit wächst.</German>
 		<Russian>Племя с благодарностью принимает мушкеты. Их страхи рассеиваются и уважение к нам от нашей щедрости возрастает.</Russian>
+		<Hungarian>A törzs hálásan fogadja a puskákat. Félelmük alábbhagy, és egyre nagyobb tiszteletet éreznek nagylelkűségünk iránt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_WN_DONE</Tag>
@@ -8733,6 +8766,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] entregaram mosquetes a uma tribo nativa próxima, melhorando as relações.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat einem benachbarten Indianerstamm Musketen übergeben und dadurch die Beziehungen verbessert.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправили мушкеты соседнему индейскому племени, улучшив отношения.</Russian>
+		<Hungarian>A kereskedő [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] gyarmatok puskákat szállítottak egy közeli Indián törzsnek, ezzel javítva a kapcsolatukat velük.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_STIRRED_UP_NATIVES_MUSKETS</Tag>
@@ -8740,6 +8774,7 @@
 		<Portuguese>Os mosquetes prometidos nunca foram entregues. A tribo se sente enganada e irritada.</Portuguese>
 		<German>Die versprochenen Musketen wurden niemals geliefert. Der Stamm fühlt sich getäuscht und ist erzürnt.</German>
 		<Russian>Обещанные мушкеты так и не были доставлены. Племя чувствует себя обманутым и разгневанным.</Russian>
+		<Hungarian>Az ígért puskákat soha nem szállították le. A törzs csalódott és dühös.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_QUEST_HELP</Tag>
@@ -8747,6 +8782,7 @@
 		<Portuguese>Entregue [COLOR_HIGHLIGHT_TEXT]%d1 mosquetes em %d2 turnos[COLOR_REVERT] à aldeia nativa selecionada [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT].</Portuguese>
 		<German>Liefert [COLOR_HIGHLIGHT_TEXT]innerhalb von %d2 Runden %d1 Musketen[COLOR_REVERT] in das ausgewählte Indianerdorf [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT].</German>
 		<Russian>Доставить [COLOR_HIGHLIGHT_TEXT]%d1 мушкетов в течение %d2 ходов[COLOR_REVERT] в деревню индейцев [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT].</Russian>
+		<Hungarian>Szállítsd le [COLOR_HIGHLIGHT_TEXT]%d1 Puskát %d2 körön belül[COLOR_REVERT] a kiválasztott [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT] Indián faluba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_IMMEDIATE_HELP</Tag>
@@ -8754,6 +8790,7 @@
 		<Portuguese>[COLOR_HIGHLIGHT_TEXT]%d1 Mosquetes[COLOR_REVERT] serão imediatamente retirados de [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]%d1 Musketen[COLOR_REVERT] werden sofort aus [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] entnommen.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%d1 Мушкеты[COLOR_REVERT] будут немедленно взяты со склада города [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT].</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%d1 Puskát[COLOR_REVERT] azonnal elvisznek [COLOR_HIGHLIGHT_TEXT]%s2_city[COLOR_REVERT] raktárából.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_DONE_HELP</Tag>
@@ -8761,6 +8798,7 @@
 		<Portuguese>As relações com a tribo melhoram em [COLOR_POSITIVE_TEXT]+%d1[COLOR_REVERT].</Portuguese>
 		<German>Die Beziehungen zu diesem Stamm verbessern sich um [COLOR_POSITIVE_TEXT]+%d1[COLOR_REVERT].</German>
 		<Russian>Отношения с племенем улучшаются на [COLOR_POSITIVE_TEXT]+%d1[COLOR_REVERT].</Russian>
+		<Hungarian>A törzzsel való kapcsolat javul: [COLOR_POSITIVE_TEXT]+%d1[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_MUSKETS_TARGET_MARKER</Tag>
@@ -8768,6 +8806,7 @@
 		<Portuguese>Os mosquetes solicitados devem ser entregues em %s1_city.</Portuguese>
 		<German>Die geforderten Musketen müssen nach %s1_city geliefert werden.</German>
 		<Russian>Запрошенные мушкеты должны быть доставлены в  деревню туземцев %s1_city.</Russian>
+		<Hungarian>A kért puskákat %s1_city lakóinak kell szállítani.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_LAND_RETURN</Tag>
@@ -8775,6 +8814,7 @@
 		<Portuguese>Milorde, emissários de uma aldeia nativa próxima vieram até nós com uma raiva crescente. Eles afirmam que nossas colônias têm engolido constantemente terras que sua tribo caçou, cultivou e chamou de lar por gerações. Eles agora exigem [COLOR_HIGHLIGHT_TEXT]justiça para suas terras perdidas[COLOR_REVERT].</Portuguese>
 		<German>Milord, Abgesandte eines nahen Indianerdorfes sind empört. Sie beklagen, dass wir Land besetzen, auf denen ihr Stamm seit Generationen jagt, lebt und Felder bestellt. Nun fordern sie [COLOR_HIGHLIGHT_TEXT]Gerechtigkeit für ihr verlorenes Land[COLOR_REVERT].</German>
 		<Russian>Милорд, к нам явились гневные посланники из соседней индейской деревни. Они утверждают, что наши поселения постепенно поглощают земли, на которых их племя охотилось, обрабатывало поля и которые считало своим домом на протяжении многих поколений. Они требуют [COLOR_HIGHLIGHT_TEXT]справедливой платы за утраченные земли[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, a közeli Indián falu küldöttsége megdühödve jelent meg előttünk. Azt állítják, hogy településeink folyamatosan elfoglalják a földeket, amelyeken törzsük generációk óta vadászik, gazdálkodik, és amelyeket otthonának tekint. Most [COLOR_HIGHLIGHT_TEXT]igazságot követelnek az elvesztett földjeikért[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_LAND_RETURN_2</Tag>
@@ -8782,6 +8822,7 @@
 		<Portuguese>Milorde, enviados de uma tribo nativa vizinha vieram com graves queixas. Eles falam de áreas de caça ancestrais e lugares sagrados que agora se encontram dentro das nossas fronteiras e perguntam se pretendemos governar como [COLOR_HIGHLIGHT_TEXT]vizinhos em paz[COLOR_REVERT] ou como conquistadores sem restrições.</Portuguese>
 		<German>Milord, Gesandte eines benachbarten Indianerstammes klagen über Landraub. Sie sprechen von angestammten Jagdgründen und heiligen Orten, die nun innerhalb unserer Grenzen liegen, und fragen, ob wir als [COLOR_HIGHLIGHT_TEXT]friedliche Nachbarn[COLOR_REVERT] herrschen wollen — oder als Eroberer ohne Maß und Mäßigung.</German>
 		<Russian>Милорд, посланники из соседнего индейского племени прибыли с серьёзными жалобами. Они говорят о родовых охотничьих угодьях и священных местах, которые теперь находятся в пределах наших границ и спрашивают, намерены ли мы править как [COLOR_HIGHLIGHT_TEXT]мирные соседи[COLOR_REVERT] или как завоеватели.</Russian>
+		<Hungarian>Uram, egy szomszédos Indián törzs küldöttsége érkezett, súlyos panaszokkal. Ősi vadászterületekről és szent helyekről beszélnek, amelyek jelenleg a határainkon belül fekszenek, és azt kérdezik, hogy [COLOR_HIGHLIGHT_TEXT]békés szomszédként[COLOR_REVERT] vagy gátlástalan hódítókként kívánunk-e uralkodni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_LAND_RETURN_3</Tag>
@@ -8789,6 +8830,7 @@
 		<Portuguese>Milorde, vozes furiosas surgem de uma aldeia nativa próxima. Eles acusam os nossos colonos de tomarem mais terras a cada estação — campos, florestas e rios que o seu povo há muito chama de seus — e agora exigem [COLOR_HIGHLIGHT_TEXT]restituição pelo que foi confiscado[COLOR_REVERT].</Portuguese>
 		<German>Milord, zornige Stimmen erheben sich aus einem nahegelegenen Indianerdorf. Sie werfen unseren Siedlern vor, mit jeder Jahreszeit mehr Land an sich zu reißen — Felder, Wälder und Flüsse, die ihr Volk seit jeher als die seinen betrachtet — und fordern nun [COLOR_HIGHLIGHT_TEXT]Wiedergutmachung für das Genommene[COLOR_REVERT].</German>
 		<Russian>Милорд, гневные голоса доносятся из расположенной неподалеку индейской деревни. Они обвиняют наших поселенцев в том, что с каждым сезоном они захватывают все больше земли — поля, леса и реки, которые их народ всегда считал своими, и [COLOR_HIGHLIGHT_TEXT]требуют возмещения за то, что было отнято[COLOR_REVERT].</Russian>
+		<Hungarian>Uram, a közeli Indián falu felől dühös hangok hallatszanak. Azzal vádolják a telepeseinket, hogy évről évre egyre több földet foglalnak el – olyan mezőket, erdőket és folyókat, amelyeket népük régóta a sajátjuknak tekint – és most [COLOR_HIGHLIGHT_TEXT]az elvett területek visszaadását[COLOR_REVERT] követelik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_1</Tag>
@@ -8796,6 +8838,7 @@
 		<Portuguese>Eles têm motivos para serem amargos. Devolva parte das terras disputadas à tribo em sinal de boa vontade. Melhor uma fronteira menor do que uma guerra maior.</Portuguese>
 		<German>Ihr Zorn ist verständlich. Gebt dem Stamm einen Teil des umstrittenen Landes zurück, als Zeichen unseres guten Willens. Besser eine kleinere Grenze als ein größerer Krieg.</German>
 		<Russian>Их гнев понятен. Верните племени часть спорной земли в знак нашей доброй воли. Маленькая протяжённость границы лучше, чем масштабная война с туземцами.</Russian>
+		<Hungarian>Van okuk a keserűségre. A jó szándék jeléül adjuk vissza a vitatott terület egy részét a törzsnek. Jobb egy szűkebb határ, mint egy nagyobb háború.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_2</Tag>
@@ -8803,6 +8846,7 @@
 		<Portuguese>Manteremos a terra, mas ofereceremos uma compensação generosa. O ouro pode aliviar feridas onde as fronteiras não podem ser redesenhadas.</Portuguese>
 		<German>Wir behalten das Land, doch bieten großzügige Entschädigung an. Gold mag Wunden lindern, wo Grenzen nicht neu gezogen werden können.</German>
 		<Russian>Мы сохраним землю, но предложим щедрую компенсацию. Золото может залечить раны там, где границы невозможно перекроить.</Russian>
+		<Hungarian>Megtartjuk a földet, de nagylelkű kártérítést kínálunk. Az arany talán enyhíti a sebeket ott, ahol a határokat nem lehet újrarajzolni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_3</Tag>
@@ -8810,6 +8854,7 @@
 		<Portuguese>A terra é nossa por direito de trabalho, sangue e colônia. Não cederemos nada a estas exigências.</Portuguese>
 		<German>Dieses Land gehört uns durch Mühe, Blut und Besiedlung. Wir werden ihren Forderungen keinen Zollbreit nachgeben.</German>
 		<Russian>Эта земля принадлежит нам благодаря труду, крови и заселению. Мы не уступим ни пяди их требованиям.</Russian>
+		<Hungarian>Ez a föld a kemény munkánk, a véráldozatunk és a letelepedésünk révén a miénk. Ezeknek a követeléseknek semmiben sem fogunk engedni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_WN_1</Tag>
@@ -8817,6 +8862,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] devolveram terras contestadas a uma tribo vizinha, melhorando muito as relações.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat umstrittenes Land an einen benachbarten Stamm zurückgegeben und dadurch die Beziehungen deutlich verbessert.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] вернули спорные земли соседнему племени, значительно улучшив отношения.</Russian>
+		<Hungarian>A barátkozó [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] gyarmatok visszaadták a vitatott területeket egy szomszédos törzsnek, ami jelentősen javította a kapcsolatukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_WN_2</Tag>
@@ -8824,6 +8870,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] compensaram uma tribo vizinha com ouro, mas o ressentimento pelas terras perdidas permanece.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat einen benachbarten Stamm mit Gold entschädigt, doch der Groll über das verlorene Land bleibt bestehen.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] выплатили соседнему племени компенсацию золотом, но обида из-за утраченных земель у индейцев осталась.</Russian>
+		<Hungarian>A nagylelkű [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] nép arannyal kárpótolta a szomszédos törzset, de az elvesztett területek miatti harag továbbra is fennáll.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_WN_3</Tag>
@@ -8831,6 +8878,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] recusaram as exigências dos nativos de restituição, piorando drasticamente as relações.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat die Forderungen der Indianer nach Wiedergutmachung zurückgewiesen, wodurch sich die Beziehungen deutlich verschlechtern.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отказались удовлетворить требования индейцев о реституции, что резко ухудшило отношения.</Russian>
+		<Hungarian>A keményszívű [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] nép elutasította az Indiánok kárpótlási követeléseit, ami jelentősen rontotta a két fél közötti kapcsolatokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_HELP_PLOTS</Tag>
@@ -8838,6 +8886,7 @@
 		<Portuguese>[COLOR_POSITIVE_TEXT]%d1 terrenos[COLOR_REVERT] serão devolvidos à tribo nativa.</Portuguese>
 		<German>[COLOR_POSITIVE_TEXT]%d1 Landfelder[COLOR_REVERT] werden an den Indianerstamm zurückgegeben.</German>
 		<Russian>[COLOR_POSITIVE_TEXT]%d1 земельных участков[COLOR_REVERT] будут возвращены туземному племени.</Russian>
+		<Hungarian>[COLOR_POSITIVE_TEXT]%d1 mező[COLOR_REVERT] kerül visszaadásra az Indián törzsnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_HELP_REFUSE</Tag>
@@ -8845,6 +8894,7 @@
 		<Portuguese>As relações com a tribo pioram em [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT].</Portuguese>
 		<German>Die Beziehungen zu diesem Stamm verschlechtern sich um [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT].</German>
 		<Russian>Отношения с племенем ухудшаются на [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT].</Russian>
+		<Hungarian>A törzzsel való kapcsolatok romlanak: [COLOR_NEGATIVE_TEXT]-%d1[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_PLOTS_RETURNED</Tag>
@@ -8852,6 +8902,7 @@
 		<Portuguese>[ICON_BULLET]%d1 terrenos disputados foram devolvidos ao %s2. Assim que os colonos partem, os índios queimam tudo.</Portuguese>
 		<German>[ICON_BULLET]%d1 umstrittene Landfelder wurden an die %s2 zurückgegeben. Kaum sind die Siedler abgezogen brennen die Indianer alles nieder.</German>
 		<Russian>[ICON_BULLET]%d1 спорных земельных участков было возвращено %s2. Не успели поселенцы уйти, как индейцы сожгли всё дотла.</Russian>
+		<Hungarian>[ICON_BULLET]%d1 vitatott mezőt adtak vissza a kérelmező %s2 részére. Alig távoztak a telepesek, az Indiánok máris mindent porig égettek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_LAND_RETURN_MAINTAIN</Tag>
@@ -8859,6 +8910,7 @@
 		<Portuguese>As relações com %s1 pioraram porque as terras devolvidas foram recuperadas.</Portuguese>
 		<German>Die Beziehungen zu %s1 haben sich verschlechtert, weil das zurückgegebene Land wieder beansprucht wurde.</German>
 		<Russian>Отношения с %s1 ухудшились, поскольку возвращённые земли были рекультивированы.</Russian>
+		<Hungarian>A közeli %s1 néppel fennálló kapcsolatok megromlottak, mivel a visszaadott földet visszafoglalták.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_LANDGRABBING_1</Tag>
@@ -8922,6 +8974,7 @@
 		<Portuguese>Os anciões de uma tribo próxima declaram que um dos seus territórios recém-reivindicados está em solo sagrado. Exigem que o local seja respeitado e devolvido à tribo.</Portuguese>
 		<German>Die Ältesten eines nahegelegenen Stammes erklären, dass eines Eurer neu beanspruchten Gebiete auf heiligem Boden liegt. Sie verlangen, dass dieser Ort geachtet und dem Stamm zurückgegeben wird.</German>
 		<Russian>Старейшины соседнего племени заявляют, что одна из наших недавно захваченных территорий находится на их священной земле. Они требуют, чтобы это место вернули племени из уважения к их предкам.</Russian>
+		<Hungarian>A közeli törzs vénei kijelentik, hogy az egyik újonnan elfoglalt területed szent földön fekszik. Követelik, hogy tiszteld azt a helyet, és add vissza a törzsnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_1</Tag>
@@ -8929,6 +8982,7 @@
 		<Portuguese>Devolva o solo sagrado por um tempo e honre suas tradições. Isso ajudará nosso relacionamento. </Portuguese>
 		<German>Gebt den heiligen Boden den Indianern zurück und achtet ihre Bräuche. Das wird unseren Beziehungen helfen.</German>
 		<Russian>Проявим почтение их традициям и вернём им их священную землю. Это укрепит наши отношения.</Russian>
+		<Hungarian>Adjuk vissza egy időre a szent helyet, és tartjuk tiszteletben hagyományaikat. Ez elősegíti majd a kapcsolatunkat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_2</Tag>
@@ -8936,6 +8990,7 @@
 		<Portuguese>Pelo amor de Deus, pague alguma compensação aos selvagens e destrua nossos edifícios. Mas então deve haver paz.</Portuguese>
 		<German>Zahlt den Wilden um Himmels Willen eine Entschädigung und entfernt unsere Bauten. Dann muss aber Ruhe sein.</German>
 		<Russian>Ради всего святого, выплатите этим дикарям компенсацию и разберите наши постройки. Надеюсь, тогда наступят мир и покой.</Russian>
+		<Hungarian>Az ég szerelmére, fizessetek kártérítést azoknak a barbároknak, és bontsátok le az épületeinket! De utána békének kell lennie.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_3</Tag>
@@ -8943,6 +8998,7 @@
 		<Portuguese>Recuse sua reivindicação. A terra agora serve à colônia. Além disso, todos os túmulos e memoriais já foram destruídos.</Portuguese>
 		<German>Weist ihren Anspruch zurück. Das Land dient nun der Kolonie. Außerdem wurden bereits alle Gräber und Gedenkstätten zerstört.</German>
 		<Russian>Отклоните их претензии. Теперь эта земля принадлежит колонии. Тем более, все могилы и памятники уже разрушены.</Russian>
+		<Hungarian>Elutasítjuk a követelésüket. A terület jelenleg a kolónia szolgálatában áll. Ráadásul az összes sírt és emlékművet már megsemmisítették.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_LN_1</Tag>
@@ -8950,6 +9006,7 @@
 		<Portuguese>A terra sagrada foi devolvida à tribo próxima. Um cemitério é estabelecido lá e [COLOR_HIGHLIGHT_TEXT]as relações melhoram[COLOR_REVERT] por um tempo.</Portuguese>
 		<German>Heiliger Boden wurde an den nahegelegenen Stamm zurückgegeben. Dort wurde eine Begräbnisstätte wiedererrichtet, und die [COLOR_HIGHLIGHT_TEXT]Beziehungen verbessern sich[COLOR_REVERT].</German>
 		<Russian>Священная земля была возвращена соседнему племени. Разрушенные места захоронений были восстановлены и [COLOR_HIGHLIGHT_TEXT]отношения на некоторое время улучшаются.[COLOR_REVERT]</Russian>
+		<Hungarian>A szent földet visszaadták a közeli törzsnek. Ott temetőt alakítottak ki, és [COLOR_HIGHLIGHT_TEXT]a kapcsolatok egy időre javultak[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_LN_2</Tag>
@@ -8957,6 +9014,7 @@
 		<Portuguese>Foi oferecida compensação à tribo próxima por se estabelecer em terras sagradas. O local está limpo, mas as relações continuam tensas.</Portuguese>
 		<German>Dem nahegelegenen Stamm wurde für die Besiedlung heiligen Landes eine Entschädigung angeboten. Der Ort wurde geräumt, doch die Beziehungen bleiben belastet.</German>
 		<Russian>Соседнему племени была предложена компенсация за заселение священной земли. Территория очищена от колониальных построек и насаждений, но отношения остаются напряженными.</Russian>
+		<Hungarian>A közeli törzsnek kártérítést ajánlottak fel azért, mert szent földjükre telepedtek le. A területet már megtisztították, de a kapcsolatok továbbra is feszültek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_LN_3</Tag>
@@ -8964,6 +9022,7 @@
 		<Portuguese>As exigências da tribo próxima foram recusadas. [COLOR_HIGHLIGHT_TEXT]As tensões aumentam[COLOR_REVERT] e segue-se o conflito aberto.</Portuguese>
 		<German>Die Forderungen des nahegelegenen Stammes wurden zurückgewiesen. Die [COLOR_HIGHLIGHT_TEXT]Spannungen nehmen zu[COLOR_REVERT], und offener Krieg droht.</German>
 		<Russian>Требования соседнего племени были отклонены. [COLOR_HIGHLIGHT_TEXT]Напряжение нарастает[COLOR_REVERT] и следует ожидать начала войны.</Russian>
+		<Hungarian>A közeli törzs követeléseit elutasították. [COLOR_HIGHLIGHT_TEXT]A feszültség fokozódik[COLOR_REVERT], és nyílt konfliktus alakul ki.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_RETURN_HELP</Tag>
@@ -8971,6 +9030,7 @@
 		<Portuguese>[ICON_BULLET]Um lote sagrado é devolvido aos nativos por [COLOR_HIGHLIGHT_TEXT]%d1 turnos[COLOR_REVERT]. As relações melhoram e você ganha [COLOR_HIGHLIGHT_TEXT]%d2 pontos religiosos de Pai Fundador[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Ein heiliger Plot wird für [COLOR_HIGHLIGHT_TEXT]%d1 Runden[COLOR_REVERT] an die Ureinwohner zurückgegeben. Die Beziehungen verbessern sich und Ihr erhaltet [COLOR_HIGHLIGHT_TEXT]%d2 Religions-Gründerväterpunkte[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET]Священный участок возвращается индейцам на [COLOR_HIGHLIGHT_TEXT]%d1 ходов[COLOR_REVERT]. Отношения улучшаются и вы получаете [COLOR_HIGHLIGHT_TEXT]%d2 очков религиозного Отца основателя[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]Egy szent hely visszakerül az Indiánokhoz [COLOR_HIGHLIGHT_TEXT]%d1 körre[COLOR_REVERT]. A kapcsolatok javulnak, és [COLOR_HIGHLIGHT_TEXT]%d2 Vallási Alapító Atya pontot kapsz[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_COMPENSATION_HELP</Tag>
@@ -8978,6 +9038,7 @@
 		<Portuguese>[ICON_BULLET]Se uma melhoria estiver em solo sagrado, ela será destruída.</Portuguese>
 		<German>[ICON_BULLET]Falls auf dem heiligen Boden eine Modernisierung steht, wird sie zerstört.</German>
 		<Russian>[ICON_BULLET]Если сооружение стоит на священной земле, оно будет разрушено.</Russian>
+		<Hungarian>[ICON_BULLET]Ha egy fejlesztés a szent földön áll, megsemmisül.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_REFUSE_HELP</Tag>
@@ -8985,6 +9046,7 @@
 		<Portuguese>[ICON_BULLET]Nativos hostis atacarão a colônia escolhido imediatamente.</Portuguese>
 		<German>[ICON_BULLET]Feindliche Ureinwohner greifen die ausgewählte Siedlung sofort an.</German>
 		<Russian>[ICON_BULLET]Враждебно настроенные туземцы немедленно нападут на выбранное поселение.</Russian>
+		<Hungarian>[ICON_BULLET]Az ellenséges Indiánok azonnal megtámadják a kiválasztott települést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_MAINTAIN</Tag>
@@ -8992,6 +9054,7 @@
 		<Portuguese>Manutenção dos Solos Sagrados Nativos</Portuguese>
 		<German>Heiliger Boden der Ureinwohner Verwaltung</German>
 		<Russian>Защита Священной земли племени</Russian>
+		<Hungarian>Indián Szent Helyek Megőrzése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_SACRED_GROUNDS_MAINTAIN</Tag>
@@ -8999,6 +9062,7 @@
 		<Portuguese>Manutenção dos Solos Sagrados Nativos</Portuguese>
 		<German>Heiliger Boden der Ureinwohner Verwaltung</German>
 		<Russian>Защита Священной земли племени</Russian>
+		<Hungarian>Indián Szent Helyek Megőrzése</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVE_SACRED_GROUNDS_RELATIONS_WORSEN</Tag>
@@ -9006,6 +9070,7 @@
 		<Portuguese>Embora a paz tenha sido feita por um tempo, o povo de %s1 não esqueceu a profanação de suas terras sagradas. Velhas queixas agora despertam novos ressentimentos.</Portuguese>
 		<German>Obwohl für eine Zeit Frieden herrschte, hat das Volk von %s1 die Entweihung seines heiligen Landes nicht vergessen. Alte Kränkungen nähren nun neuen Groll.</German>
 		<Russian>Хотя на некоторое время был заключен мир, жители деревни %s1 не забыли осквернение своих священных земель. Старые обиды теперь порождают новую неприязнь.</Russian>
+		<Hungarian>Bár egy időre béke köttetett, %s1 lakói nem felejtették el szent földjeik meggyalázását. A régi sérelmek most új haragot szítanak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_NATIVES_ATTACK_HELP</Tag>
@@ -9213,6 +9278,7 @@
 		<Portuguese>Este evento se aplica apenas a comboios de tesouros desprotegidos na natureza. Quanto mais longe eles estiverem do seu próprio território, maior será a probabilidade de esse evento ocorrer. O evento pode ocorrer novamente no futuro.</Portuguese>
 		<German>Das Ereignis berücksichtigt nur ungeschützte Schatzkolonnen in der Wildnis. Je weiter sie von deinem eigenen Gebiet entfernt sind, desto wahrscheinlicher wird dieses Ereignis. Das Ereignis kann in Zukunft wieder auftreten.</German>
 		<Russian>Это событие относится только к незащищенным конвоям с сокровищами в дикой местности. Чем дальше они находятся от вашей территории, тем выше вероятность его возникновения. Событие может повторяться в будущем.</Russian>
+		<Hungarian>Ez az esemény kizárólag a vadonban közlekedő, védelem nélküli kincsekre vonatkozik. Minél távolabb vannak a saját területedtől, annál nagyobb az esélye, hogy ez az esemény bekövetkezik. Az esemény a jövőben ismét előfordulhat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BUILD_MONASTERY_START</Tag>
@@ -9364,6 +9430,7 @@
 		<Portuguese>Batedores de um país europeu descobriram um local no deserto tão bonito que lembra um [COLOR_HIGHLIGHT_TEXT]Jardim do Éden[COLOR_REVERT].</Portuguese>
 		<German>Die Scouts eines europäischen Landes haben einen Ort in der Wildnis von solcher Schönheit entdeckt, dass er einem [COLOR_HIGHLIGHT_TEXT]Garten Eden[COLOR_REVERT] gleichkommt.</German>
 		<Russian>Разведчики из одной европейской страны обнаружили в дикой местности такое прекрасное место, что оно напоминает [COLOR_HIGHLIGHT_TEXT]Райский сад[COLOR_REVERT].</Russian>
+		<Hungarian>Egy európai ország Felderítői felfedeztek egy olyan gyönyörű helyet a vadonban, amely akár az [COLOR_HIGHLIGHT_TEXT]Édenkert[COLOR_REVERT] is lehetne.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOUNTAIN_OF_YOUTH</Tag>
@@ -9371,6 +9438,7 @@
 		<Portuguese>Meu senhor, é incrível! Nossos batedores ficam deslumbrados com tamanha beleza em meio ao sertão. Um Jardim do Éden! [COLOR_HIGHLIGHT_TEXT]Uma fonte de juventude![COLOR_REVERT] As pessoas irão para o deserto para ver este lugar. A notícia se espalhará até a Europa. Somos abençoados.</Portuguese>
 		<German>Milord, es ist unglaublich! Unsere Scouts sind geblendet von solcher Schönheit mitten in der Wildnis. Ein Garten Eden! [COLOR_HIGHLIGHT_TEXT]Ein Jungbrunnen![COLOR_REVERT] Die Menschen werden in die Wildnis strömen, um diesen Ort zu sehen. Es wird sich bis nach Europa herumsprechen. Wir sind gesegnet.</German>
 		<Russian>Милорд, это невероятно! Наши разведчики ослеплены такой красотой посреди дикой местности. Райский сад! Источник вечной молодости! Люди будут стремиться в эту пустыню, чтобы увидеть это место. Весть распространится до самой Европы. Нам сказочно повезло.</Russian>
+		<Hungarian>Uram, ez hihetetlen! A felderítőinket elkápráztatja ez a szépség a vadon közepén. Egy Édenkert! [COLOR_HIGHLIGHT_TEXT]Az örök fiatalság forrása![COLOR_REVERT] Az emberek tömegesen fognak ide özönleni, hogy itt lehessenek. A hír gyorsan elterjed majd egész Európában. Áldottak vagyunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT</Tag>
@@ -9378,6 +9446,7 @@
 		<Portuguese>Batedores se depara com rumores no deserto sobre as [COLOR_HIGHLIGHT_TEXT]Sete Cidades de Cibola[COLOR_REVERT]!</Portuguese>
 		<German>Kundschafter stoßen in der Wildnis auf Gerüchte über die [COLOR_HIGHLIGHT_TEXT]Sieben Städte von Cibola[COLOR_REVERT]!</German>
 		<Russian>Разведчики натыкаются в дикой местности на слухи о [COLOR_HIGHLIGHT_TEXT]Семи городах Сиболы[COLOR_REVERT]!</Russian>
+		<Hungarian>A távoli felderítők pletykákat hallanak arról, hogy milyen közel vannak a [COLOR_HIGHLIGHT_TEXT]Cibola Hét Városához[COLOR_REVERT]!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT</Tag>
@@ -9385,6 +9454,7 @@
 		<Portuguese>Enquanto nossos batedores avançavam pela região selvagem desolada, longe das colônias conhecidas, eles se depararam com um grupo de conquistadores castigados pelo tempo. Os homens contam histórias contadas pelos índios sobre cidades magníficas repletas de ouro, prata e tesouros antigos. Muitos podem considerar tais histórias como fruto da imaginação, nascidas da sede e da privação, mas os homens juram pela sua honra que estas são as lendárias [COLOR_HIGHLIGHT_TEXT]Sete Cidades de Cibola[COLOR_REVERT!</Portuguese>
 		<German>Während unsere Kundschafter fernab der bekannten Kolonien durch die trostlose Wildnis zogen, trafen sie auf eine Gruppe verwitterter Konquistadoren. Die Männer berichten von Erzählungen der Indios über prächtige Städte voller Gold, Silber und uralter Schätze. Viele mögen solche Geschichten für Hirngespinste halten, geboren aus Durst und Entbehrung, doch die Männer schwören bei ihrer Ehre, dass es sich um die sagenhaften [COLOR_HIGHLIGHT_TEXT]Sieben Städte von Cibola handelt[COLOR_REVERT]!</German>
 		<Russian>Пробираясь сквозь безлюдную пустыню, вдали от известных поселений, наши разведчики наткнулись на группу закаленных жизнью конкистадоров. Мужчины рассказывали истории, поведанные индейцами, о великолепных городах, полных золота, серебра и древних сокровищ. Многие могут посчитать такие рассказы плодом воображения, порожденным жаждой и лишениями, однако мужчины клянутся своей честью, что это легендарные [COLOR_HIGHLIGHT_TEXT]Семь городов Сиболы[COLOR_REVERT]!</Russian>
+		<Hungarian>Amint felderítőink az ismert kolóniáktól távol, a kietlen vadonon haladtak át, egy csapat, az időjárástól megviselt konkvisztádorral találkoztak. A férfiak az Indiánok által elmesélt történeteket idézték fel, amelyek aranyból, ezüstből és ősi kincsekből duzzadó, csodálatos városokról szóltak. Könnyű lenne ezeket a történeteket a képzelet szüleményének tekinteni, melyeket a szomjúság és a nélkülözés szült, ám a férfiak becsületükre esküsznek, hogy ez a legendás [COLOR_HIGHLIGHT_TEXT]Cibola Hét Városa[COLOR_REVERT!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_DONE</Tag>
@@ -9392,6 +9462,7 @@
 		<Portuguese>Os rumores estão se espalhando. Um grupo de conquistadores retornou do deserto e tem histórias verdadeiramente incríveis para contar.</Portuguese>
 		<German>Gerüchte verbreiten sich. Eine Gruppe Konquistadoren ist aus der Wildnis heimgekehrt und hat wahrlich sagenhaftes zu berichten.</German>
 		<Russian>Распространяются слухи о группа конкистадоров, вернувшейся из дикой местности. Они рассказывают поистине невероятные истории.</Russian>
+		<Hungarian>Pletykák terjednek. Egy csapat konkvisztádor visszatért a vadonból, és valóban hihetetlen történeteket mesélnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_INITIAL_EVENT_DONE</Tag>
@@ -9399,6 +9470,7 @@
 		<Portuguese>Meu senhor, um grupo de conquistadores regressou e trouxe notícias incríveis. Diz-se que índios de várias tribos falaram do [COLOR_HIGHLIGHT_TEXT]tesouro de todos os tesouros[COLOR_REVERT]; na verdade, diz-se que cidades inteiras feitas de ouro estão escondidas nos grandes desfiladeiros a oeste. Tudo o que sempre suspeitamos pode estar ao nosso alcance!</Portuguese>
 		<German>Milord, ein Trupp Konquistadoren ist heimgekehrt und hat sagenhafte Neuigkeiten mitgebracht. Indios unterschiedlicher Stämme berichten angeblich über den [COLOR_HIGHLIGHT_TEXT]Schatz aller Schätze[COLOR_REVERT], ja ganze Städte aus Gold sollen in den großen Canyons im Westen verborgen sein. All das, was wir immer vermuteten, ist womöglich in greifbarer Nähe!</German>
 		<Russian>Милорд, отряд конкистадоров вернулся из странствий и привёз невероятные новости. Говорят, индейцы из разных племён рассказывали о [COLOR_HIGHLIGHT_TEXT]сокровище всех сокровищ[COLOR_REVERT]! Более того, говорят, что целые города из золота спрятаны в больших каньонах на западе. Всё, что мы всегда подозревали, вполне может оказаться в пределах нашей досягаемости!</Russian>
+		<Hungarian>Uram, egy konkvisztádorokból álló csapat hihetetlen hírekkel tért vissza. Távoli törzsek Indiánjai a [COLOR_HIGHLIGHT_TEXT]kincsek kincséről[COLOR_REVERT] beszélnek; egész városok aranyból, amelyek a nyugati nagy kanyonokban vannak elrejtve. Minden, amit mindig is sejtettünk, most talán már a kezünkben van!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_PREPARATION_DONE</Tag>
@@ -9406,6 +9478,7 @@
 		<Portuguese>A colônia está agitada; uma das maiores expedições do nosso tempo referente à descoberta das Sete Cidades de Cibolais está prestes a começar.</Portuguese>
 		<German>Eine Kolonie ist in Aufregung, eine der größten Expeditionen unserer Zeit zur Entdeckung der Sieben Städte von Cibola ist im Begriff zu beginnen.</German>
 		<Russian>В колонии царит оживление; вот-вот начнется одна из величайших экспедиций нашего времени, посвященная открытию Семи городов Сиболы.</Russian>
+		<Hungarian>A kolónia nyüzsög! Hamarosan kezdetét veszi a Cibola Hét Városának felfedezésére indított nagy expedíció.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_PREPARATION_DONE</Tag>
@@ -9413,6 +9486,7 @@
 		<Portuguese>Meu senhor, nossos homens têm trabalhado arduamente reunindo enormes suprimentos e reunindo as tropas, e também temos o pagamento pronto. Em breve poderemos partir e encontrar o tesouro de todos os tesouros.</Portuguese>
 		<German>Milord, unsere Männer waren fleißig und haben enorme Ausrüstung und Truppen zusammengestellt und den Sold haben wir auch beisammen. Wir können bald aufbrechen und den Schatz aller Schätze finden.</German>
 		<Russian>Милорд, наши люди усердно трудились, собирая огромные запасы и формируя войска. Средства на выплату жалования тоже готовы. Скоро мы сможем отправиться на поиски сокровища всех сокровищ.</Russian>
+		<Hungarian>Uram, embereink keményen dolgoztak, hogy hatalmas mennyiségű ellátmányt gyűjtsenek össze és a csapatokat összeállítsák, és a pénz is már a rendelkezésünkre áll. Készen állunk arra, hogy elinduljunk a kincsek kincse után.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_START</Tag>
@@ -9420,6 +9494,7 @@
 		<Portuguese>Uma nação lançou uma expedição ao deserto para descobrir as Sete Cidades de Cibola.</Portuguese>
 		<German>Eine Nation hat eine Expedition in die Wildnis zur Entdeckung der Sieben Städte von Cibola gestartet.</German>
 		<Russian>Одна страна организовала экспедицию в дикую местность для исследования Семи городов Сиболы.</Russian>
+		<Hungarian>Egy nemzet expedíciót indított a vadonba, hogy megtalálja Cibola Hét Városát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_START</Tag>
@@ -9427,6 +9502,7 @@
 		<Portuguese>Meu senhor, os batedores estão na frente e estamos partindo agora. Se mantivermos o ritmo, chegaremos ao nosso destino nas próximas semanas e voltaremos para casa numa carruagem dourada.</Portuguese>
 		<German>Milord, die Kundschafter reiten voraus und es geht jetzt los. Wenn wir uns ranhalten, werden wir in den nächsten Wochen bereits am Ziel sein und in einer goldenen Kutsche heimkehren.</German>
 		<Russian>Милорд, разведчики уже выдвинулись вперёд и мы отправляемся в путь. Если мы сохраним темп, то достигнем места назначения в течение следующих нескольких недель и вернемся домой с кучей золота.</Russian>
+		<Hungarian>Uram, a felderítők már előre lovagoltnak, mi pedig most indulunk. Ha egyenletes tempót tartunk, a következő néhány héten belül elérhetjük a célunkat, és aranykocsiban térhetünk vissza.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_1_DONE</Tag>
@@ -9434,6 +9510,7 @@
 		<Portuguese>Outra nação se aventurou ainda mais e encontrou novas pistas para as Sete Cidades de Cibola!</Portuguese>
 		<German>Eine Nation ist weiter vorgedrungen und hat neue Hinweise auf die Sieben Städte von Cibola gefunden!</German>
 		<Russian>Другая нация продвинулась дальше и обнаружила новые подсказки о Семи городах Сиболы!</Russian>
+		<Hungarian>Egy másik ország még mélyebbre merészkedett, és új nyomokra bukkant a Cibola Hét Városával kapcsolatban!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_1_DONE</Tag>
@@ -9441,6 +9518,7 @@
 		<Portuguese>Meu senhor, já estamos na estrada há algum tempo, mas não encontramos nada. Agora nos deparamos com essas duas figuras meio famintas e confusas. O que devemos fazer? Os homens estão ficando impacientes.</Portuguese>
 		<German>Milord, wir sind nun schon eine Weile unterwegs, haben aber nichts finden können. Jetzt laufen uns diese beiden halb verhungerten und verwirrten Gestalten über den Weg. Was sollen wir tun? Die Männer sind ungeduldig.</German>
 		<Russian>Милорд, мы уже довольно давно в пути, но ничего так и не нашли. Наткнулись только на двух полуголодных и растерянных людей. Что нам делать? Люди начинают терять терпение.</Russian>
+		<Hungarian>Uram, már egy ideje úton vagyunk, de még mindig nem találtunk semmit. Ma két éhező és zavart alakba botlottunk. Mit tegyünk? Az embereink egyre türelmetlenebbek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_2_DONE</Tag>
@@ -9448,6 +9526,7 @@
 		<Portuguese>Um grupo de exploradores aventurou-se ainda mais na busca pelas Sete Cidades de Cibola e foi atacado por índios furiosos!</Portuguese>
 		<German>Eine Nation ist bei der Suche auf die Sieben Städte von Cibola weiter vorgedrungen und wurde von wütenden Ureinwohnern attackiert!</German>
 		<Russian>Группа исследователей отправилась дальше в поисках Семи городов Сиболы и подверглась нападению разгневанных индейцев!</Russian>
+		<Hungarian>Egy felfedezőcsoport még mélyebbre merészkedett a Cibola Hét Városának felkutatásában, csakhogy ellenséges Indiánok támadták meg őket!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_2_DONE</Tag>
@@ -9455,6 +9534,7 @@
 		<Portuguese>Meu senhor, a busca não está sendo muito encorajadora; não há o menor sinal de uma cidade dourada no horizonte, e parece haver alguns índios escondidos no matagal à nossa frente – cuidado!</Portuguese>
 		<German>Milord, die Suche ist wenig erquicklich, es hat derzeit noch nicht mal den Anschein einer goldenen Stadt am Horizont und im Dickicht vor uns scheinen sich einige Indianer zu verstecken - Vorsicht!</German>
 		<Russian>Милорд, поиски не приносят особых результатов; на горизонте нет даже малейшего признака Золотого города и, кажется, впереди в зарослях прячутся какие-то индейцы – будьте осторожны!</Russian>
+		<Hungarian>Uram, a kutatás nem túl biztató; a láthatáron még a legcsekélyebb jelét sem látni az aranyvárosnak, és az előttünk lévő sűrű bozótban könnyen lehet, hogy Indiánok leselkednek ránk – legyünk óvatosak!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_3_DONE</Tag>
@@ -9462,6 +9542,7 @@
 		<Portuguese>Uma nação encontrou um tesouro enquanto procurava pelas Sete Cidades de Cibola!</Portuguese>
 		<German>Eine Nation ist seiner Suche nach den Sieben Städten von Cibola auf einen Schatz gestoßen!</German>
 		<Russian>Одна страна нашла сокровище, разыскивая Семь городов Сиболы!</Russian>
+		<Hungarian>Egy nemzet Cibola Hét Városát keresve rábukkant egy kincsre!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_POINT_3_DONE</Tag>
@@ -9469,6 +9550,7 @@
 		<Portuguese>Meu senhor, é difícil de acreditar – olhe lá! Deve ser isso! Depois de todas as nossas dificuldades, encontramos um enorme aldeia indígena. Vamos procurar o ouro!</Portuguese>
 		<German>Milord, es ist kaum zu glauben - seht mal, da! Das muss sie sein! Wir haben doch wahrlich nach all diesen Strapazen und Verlusten an Mensch und Material eine riesige Stadt der Indianer gefunden. Lasst uns das Gold suchen!</German>
 		<Russian>Милорд, невероятно – посмотрите! Должно быть, это оно! После всех наших трудностей мы наконец-то нашли огромное индейское поселение. Пойдемте поищем золото!</Russian>
+		<Hungarian>Uram, alig hiszem el – nézze csak! Biztosan az! Annyi megpróbáltatás után végre rátaláltunk egy hatalmas Indián városra. Menjünk, keressük meg az aranyat!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_HOME_DONE</Tag>
@@ -9476,6 +9558,7 @@
 		<Portuguese>Uma nação teve sucesso na lendária busca pelas Sete Cidades de Cibola!</Portuguese>
 		<German>Eine Nation war bei der sagenhaften Suche nach den Sieben Städten von Cibola erfolgreich!</German>
 		<Russian>Одной стране удалось найти легендарные Семь городов Сиболы!</Russian>
+		<Hungarian>Egy nemzetnek sikerült a legendás Cibola Hét Városát megtalálnia!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEVEN_CITIES_OF_CIBOLA_EXPEDITION_HOME_DONE</Tag>
@@ -9483,6 +9566,7 @@
 		<Portuguese>Meu senhor, somos verdadeiramente abençoados. De fato, conseguimos levar o tesouro para as colônias sem sofrer grandes perdas. A colônia inteira já está em alvoroço. O rei ficará encantado. Esta expedição ficará para a história.</Portuguese>
 		<German>Milord, wir sind wahrlich gesegnet. Wir konnten den Schatz tatsächlich ohne größere Verluste in die Kolonien bringen. Die ganze Kolonie ist bereits in Aufruhr. Der König wird begeistert sein. Diese Expedition wird zur Legende werden.</German>
 		<Russian>Милорд, нам поистине повезло! Нам удалось доставить сокровища в колонии без значительных потерь. Все жители в полном восторге. Король будет безумно рад! Эта экспедиция войдет в историю!</Russian>
+		<Hungarian>Uram, igazán szerencsések vagyunk. Valóban sikerült a kincset jelentős veszteségek nélkül visszahoznunk a gyarmatokra. Az egész gyarmat felbolydult. A Király örülni fog. Ez a expedíció be fog kerülni a történelem könyvekbe.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_ZEALOUS_MISSIONARY</Tag>
@@ -9490,6 +9574,7 @@
 		<Portuguese>Chegam relatórios de uma missão sobre notável sucesso entre os nativos. Eles parecem ser facilmente influenciados.</Portuguese>
 		<German>Berichte aus einer Mission künden von außergewöhnlichen Erfolgen unter den Eingeborenen. Sie lassen sich offenbar leicht verführen.</German>
 		<Russian>В отчетах одной миссии говорится о необычайных успехах среди туземцев. По всей видимости, ими легко можно управлять.</Russian>
+		<Hungarian>Egy misszióból jelentések érkeznek az Indiánok körében elért figyelemre méltó sikerekről. Úgy tűnik, könnyen befolyásolhatók.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ZEALOUS_MISSIONARY</Tag>
@@ -9497,6 +9582,7 @@
 		<Portuguese>Meu senhor, recebemos algumas notícias encorajadoras de uma de nossas missões. O missionário que trabalha lá relata que cada vez mais pessoas locais ouvem voluntariamente os seus sermões e procuram o seu conselho tanto sobre assuntos mundanos como espirituais.</Portuguese>
 		<German>Milord, aus einer unserer Missionen erreicht uns eine erfreuliche Nachricht. Der dort tätige Missionar berichtet, dass immer mehr Eingeborene freiwillig seinen Predigten lauschen und seinen Rat sowohl in weltlichen als auch in geistlichen Angelegenheiten suchen.</German>
 		<Russian>Милорд, мы получили обнадеживающие новости от одной из наших миссий. Работающий там миссионер сообщает, что все больше туземцев добровольно слушают его проповеди и обращаются к нему за советом как по мирским, так и по духовным вопросам.</Russian>
+		<Hungarian>Uram, biztató híreket kaptunk az egyik missziónktól. Az ottani misszionárius arról számol be, hogy egyre több helyi lakos figyelmesen hallgatja a prédikációit, és mind világi, mind lelki ügyekben tanácsát kéri.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BURNING_MISSION</Tag>
@@ -9504,6 +9590,7 @@
 		<Portuguese>Notícias perturbadoras chegam ao mundo civilizado a partir de uma missão entre os nativos.</Portuguese>
 		<German>Beunruhigende Nachrichten erreichen die zivilisierte Welt aus einer Mission unter den Eingeborenen.</German>
 		<Russian>Тревожные новости поступают в цивилизованный мир из миссии среди туземного населения.</Russian>
+		<Hungarian>Az Indiánoknál végzett misszióból nyugtalanító hírek érkeznek a civilizált világba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BURNING_MISSION</Tag>
@@ -9511,6 +9598,7 @@
 		<Portuguese>Alguns de nossos missionários exageraram um pouco em seu zelo. Os índios sentem que eles e seus próprios deuses foram insultados e prontamente incendiaram a missão. Eles querem ver se o nosso Deus pode proteger a casa de Deus das chamas.</Portuguese>
 		<German>Einige unserer Missionare haben es mit ihrem Eifer übertrieben. Die Indianer fühlen sich und ihre eigenen Götter beleidigt und haben kurzerhand die Mission angezündet. Sie wollen sehen, ob unser Gott das Haus Gottes vor Feuer schützen kann.</German>
 		<Russian>Некоторые из наших миссионеров немного переборщили в своем рвении. Индейцы почувствовали, что их самих и их богов оскорбили, и тут же подожгли миссию. Они хотят проверить, сможет ли наш Бог защитить дом Божий от огня.</Russian>
+		<Hungarian>Néhány misszionáriusunk túlságosan elragadtatta magát a buzgalmában. Az Indiánok úgy érzik, hogy őket és saját isteneiket megsértették, ezért azonnal felgyújtották a missziót. Meg akarják nézni, hogy a mi Istenünk képes-e megvédeni saját templomát a lángoktól.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_PRESSED_NATIVE_VILLAGE</Tag>
@@ -9518,6 +9606,7 @@
 		<Portuguese>Uma aldeia nativa está à beira do colapso sob a pressão cultural exercida pelos seus vizinhos europeus.</Portuguese>
 		<German>Eine Siedlung der Ureinwohner steht kurz davor, an dem kulturellen Druck europäischer Nachbarn zu zerbrechen.</German>
 		<Russian>Поселение туземцев находится на грани краха под культурным давлением со стороны европейских соседей.</Russian>
+		<Hungarian>Egy Indián település az európai szomszédok kulturális nyomása alatt a összeomlás szélén áll.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_1</Tag>
@@ -9525,6 +9614,7 @@
 		<Portuguese>Meu senhor, nossa colônia está se espalhando cada vez mais. Os colonos tomaram quase todas as terras dos nativos e os expulsaram consideravelmente. Um de suas colônias está prestes a ser destruído. Vamos acabar com isso?</Portuguese>
 		<German>Milord, unsere Siedlung breitet sich immer weiter aus. Siedler haben den Ureinwohnern fast all ihr Land abgenommen und sie stark zurückgedrängt. Eine ihrer Siedlungen steht kurz davor zerstört zu werden. Sollen wir dem Einhalt gebieten?</German>
 		<Russian>Милорд, наше поселение разрастается всё дальше. Поселенцы отняли у индейцев почти все земли и значительно оттеснили их назад. Одна из их деревень находится на грани разрушения. Должны ли мы положить этому конец?</Russian>
+		<Hungarian>Uram, a településünk egyre nagyobb területre kiterjed. A telepesek szinte az összes földet elvették az Indiánoktól, és jelentősen visszaszorították őket. Az egyik településük a pusztulás szélén áll. Megállítsuk mindezt?</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_2</Tag>
@@ -9532,6 +9622,7 @@
 		<Portuguese>Meu Senhor, vários chefes estão reunidos às nossas portas e estão muito zangados – cada vez mais colonos estão a entrar no seu país e a invadir os seus campos de caça e terras agrícolas. A sua colônia está à beira da destruição. Eles estão exigindo indenização</Portuguese>
 		<German>Milord, einige Häuptlinge stehen vor unseren Toren und sind sehr wütend - immer mehr Siedler kommen in ihr Land und rauben ihre Jagdgebiete und Ackerflächen. Ihre Siedlung steht kurz vor der Zerstörung. Sie verlangen Wiedergutmachung.</German>
 		<Russian>Милорд, несколько разгневанных вождей стоят у наших ворот – всё больше и больше поселенцев вторгаются на их территорию, посягая на их охотничьи и сельскохозяйственные угодья. Их поселение находится на грани уничтожения. Они требуют компенсации.</Russian>
+		<Hungarian>Uram, számos törzsfőnök gyűlt össze a kapuink előtt. Nagyon dühösek. Egyre több telepes érkezik a területükre, és behatolnak a vadászterületeikre és a termőföldjeikre. Településük a pusztulás szélén áll. Kártérítést követelnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_PRESSED_NATIVE_VILLAGE_3</Tag>
@@ -9539,6 +9630,7 @@
 		<Portuguese>Meu senhor, uma aldeia nativa próximo está prestes a ser destruído – nossos colonos efetivamente assumiram o controle de toda a área. Os nativos exigem que os retiremos ou os compensemos.</Portuguese>
 		<German>Milord, eine nahegelegene Siedlung der Ureinwohner wird bald zerstört werden - unsere Siedler haben praktisch das ganze Land in Besitz genommen. Die Ureinwohner verlangen, dass wir uns zurückziehen oder sie entschädigen.</German>
 		<Russian>Милорд, расположенное неподалеку поселение индейцев вот-вот будет разрушено – наши поселенцы фактически захватили всю территорию. Туземцы требуют, чтобы мы ушли или выплатили им компенсацию.</Russian>
+		<Hungarian>Uram, egy közeli Indián település hamarosan megsemmisül – telepeseink gyakorlatilag az egész területet elfoglalták. Az Indiánok azt követelik, hogy vagy vonuljunk vissza, vagy fizessünk nekik kártérítést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_GIFT_OF_NATIVE_KNOWLEDGE</Tag>
@@ -9546,6 +9638,7 @@
 		<Portuguese>Circulam rumores de que nativos americanos e europeus estão trabalhando juntos na fazenda. As colheitas nesta colônia são excepcionalmente boas.</Portuguese>
 		<German>Gerüchte verbreiten sich, dass Indianer und Europäer beim Ackerbau eng zusammenarbeiten. Die Erträge in dieser Kolonie sind außergewöhnlich gut.</German>
 		<Russian>Ходят слухи, что индейцы и европейцы тесно сотрудничают в сельском хозяйстве. Урожайность в этой колонии исключительно высока.</Russian>
+		<Hungarian>Pletykák keringenek arról, hogy az Indiánok és az európaiak szorosan együttműködnek a farmokon. A termés ebben a kolóniában kivételesen jó.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_GIFT_OF_NATIVE_KNOWLEDGE</Tag>
@@ -9553,6 +9646,7 @@
 		<Portuguese>Durante gerações, os habitantes de uma aldeia vizinha de nativos americanos cultivaram esta terra e conhecem as suas plantas, animais e solos melhor do que quase ninguém. Impressionados com a amizade entre os nossos povos, ofereceram-se para partilhar connosco os seus conhecimentos.</Portuguese>
 		<German>Seit Generationen bewirtschaften die Bewohner eines benachbarten Indianerdorfes dieses Land und kennen seine Pflanzen, Tiere und Böden wie kaum jemand sonst. Beeindruckt von der Freundschaft zwischen unseren Völkern bieten sie an, ihr Wissen mit uns zu teilen.</German>
 		<Russian>На протяжении многих поколений жители соседней индейской деревни обрабатывали эту землю и знают ее растения, животных и почву лучше, чем кто-либо другой. Впечатленные дружбой между нашими народами, они предложили поделиться с нами своими знаниями.</Russian>
+		<Hungarian>Generációk óta a szomszédos Indián falu lakói művelik ezt a földet, és jobban ismerik a növényeket, állatokat és a talajt, mint bárki más. A népeink között egyre szorosabbá váló barátság hatására felajánlják, hogy megosztják velünk tudásukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MIXED_SETTLEMENT</Tag>
@@ -9560,6 +9654,7 @@
 		<Portuguese>Circulam rumores de que nativos americanos e europeus vivem juntos em termos mais do que amigáveis numa colônia.</Portuguese>
 		<German>Gerüchte verbreiten sich, dass Indianer und Europäer in einer Kolonie mehr als freundschaftlich zusammenleben.</German>
 		<Russian>Ходят слухи, что туземцы и европейцы живут в колонии более чем в дружеских отношениях.</Russian>
+		<Hungarian>Most már van egy településünk, ahol az Indiánok és az európaiak több mint baráti viszonyban élnek együtt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_MIXED_SETTLEMENT</Tag>
@@ -9567,6 +9662,7 @@
 		<Portuguese>Meu senhor, em uma de nossas colônias parece que os nativos americanos e os colonos europeus já há algum tempo se dão mais do que apenas como amigos. Recebemos relatos de que muitos mestiços estão nascendo ali. A Igreja não está satisfeita com este comportamento imoral.</Portuguese>
 		<German>Milord, in einer unserer Kolonien haben sich Indianer und Europäer offenbar seit einiger Zeit mehr als freundschaftlich angenähert. Wir erhielten Berichte, dass dort viele Mestizen gebohren werden. Die Kirche ist nicht erfreut über da unzüchtige Treiben.</German>
 		<Russian>Милорд, похоже, в одной из наших колоний туземцы и европейские поселенцы уже некоторое время живут не просто как друзья. Мы получили сообщения о том, что там рождается много метисов. Церковь недовольна таким аморальным поведением.</Russian>
+		<Hungarian>Uram, úgy tűnik, hogy az egyik gyarmatunkon az Indiánok és az európai telepesek már egy ideje nem csupán baráti viszonyban élnek egymással. Számos mesztic születik ott. Az Egyház nem nézi jó szemmel ezt az erkölcstelen viselkedést.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_WEAPONS_RAID</Tag>
@@ -9574,6 +9670,7 @@
 		<Portuguese>Guerreiros nativos realizaram um ataque ousado a uma colônia colonial.</Portuguese>
 		<German>Indianische Krieger haben einen kühnen Überfall auf eine koloniale Siedlung durchgeführt.</German>
 		<Russian>Туземные воины совершили дерзкий набег на колониальное поселение.</Russian>
+		<Hungarian>Indián harcosok merész rajtaütést hajtottak végre egy gyarmati településen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_WEAPONS_RAID</Tag>
@@ -9581,6 +9678,7 @@
 		<Portuguese>Meu senhor, sob o manto da escuridão, alguns guerreiros passaram pelos guardas e chegaram aos armazéns. Antes que o alarme pudesse ser dado a sério, eles desapareceram no deserto com armas valiosas.</Portuguese>
 		<German>Milord, im Schutz der Dunkelheit schlichen sich Krieger an den Wachen von vorbei und erreichten die Lagerhäuser. Noch bevor ernsthaft Alarm geschlagen werden konnte, verschwanden sie mit erbeuteten Musketen in der Wildnis.</German>
 		<Russian>Милорд, под покровом темноты несколько индейских воинов проскользнули мимо стражи и добрались до складов. Прежде чем успели поднять тревогу, они скрылись в пустоши с ценным оружием.</Russian>
+		<Hungarian>Uram, az éj leple alatt harcosok átosontak az őreink mellett, és eljutottak a raktárakig. Mielőtt riasztást adhattak volna, értékes fegyvereinkkel együtt eltűntek a vadonban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_HORSES_RAID</Tag>
@@ -9588,6 +9686,7 @@
 		<Portuguese>Guerreiros nativos realizaram um ataque ousado a uma colônia colonial.</Portuguese>
 		<German>Indianische Krieger haben einen kühnen Überfall auf eine koloniale Siedlung durchgeführt.</German>
 		<Russian>Туземные воины совершили дерзкий набег на колониальное поселение.</Russian>
+		<Hungarian>Indián harcosok merész rajtaütést hajtottak végre egy gyarmati településen.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_HORSES_RAID</Tag>
@@ -9595,6 +9694,7 @@
 		<Portuguese>Meu senhor, sob o manto da escuridão, alguns guerreiros passaram pelos guardas e chegaram aos estábulos. Antes que o alarme pudesse ser dado a sério, eles desapareceram no deserto com cavalos valiosos.</Portuguese>
 		<German>Milord, im Schutz der Dunkelheit schlichen sich Krieger an den Wachen von vorbei und erreichten die Pferdeställe. Noch bevor ernsthaft Alarm geschlagen werden konnte, verschwanden sie mit erbeuteten Pferden in der Wildnis.</German>
 		<Russian>Милорд, под покровом темноты несколько индейских воинов проскользнули мимо стражи и добрались до конюшен. Прежде чем успели поднять тревогу, они скрылись в пустоши вместе с лошадьми.</Russian>
+		<Hungarian>Uram, a sötétség leple alatt a harcosok megkerülték az őröket, és eljutottak az istállókig. Mielőtt riasztást adhattak volna, már eltűntek a vadonban az értékes lovakkal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_FOOD_RAID</Tag>
@@ -9602,6 +9702,7 @@
 		<Portuguese>Rumores estão se espalhando pelas colônias de que uma tribo indígena está travando uma guerra contra os europeus, invadindo seus armazéns e roubando grandes quantidades de alimentos.</Portuguese>
 		<German>In den Kolonien verbreiten sich Gerüchte, dass ein Indianerstamm den Kampf gegen die Europäer führt, in dem er ihre Lagerhäuser um sehr viel Nahrung erleichtert.</German>
 		<Russian>По колониям распространяются слухи о том, что индейское племя ведет войну против европейцев, совершая набеги на их склады и похищая большое количество продовольствия.</Russian>
+		<Hungarian>A gyarmatokon terjed a pletyka, miszerint egy Indián törzs háborút folytat az európaiak ellen azzal, hogy rajtaüt a raktáraikon, és nagy mennyiségű élelmiszert lop el.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_FOOD_RAID</Tag>
@@ -9609,6 +9710,7 @@
 		<Portuguese>Batedores relatam que guerreiros de uma tribo vizinha invadiram armazéns coloniais e levaram grandes quantidades de provisões.</Portuguese>
 		<German>Kundschafter berichten, dass Krieger eines benachbarten Stammes koloniale Vorratslager geplündert und große Mengen an Lebensmitteln fortgeschafft haben.</German>
 		<Russian>По колониям распространяются слухи о том, что индейское племя ведет войну против европейцев, совершая набеги на их склады и похищая большое количество продовольствия.</Russian>
+		<Hungarian>A felderítők jelentése szerint egy szomszédos törzs harcosai rajtaütöttek a gyarmati raktárakon, és nagy mennyiségű élelmiszert vittek el.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_NATIVE_CONVERTED_RETURN</Tag>
@@ -9616,6 +9718,7 @@
 		<Portuguese>Um convertido já não suporta viver entre os europeus e quer regressar ao seu próprio povo.</Portuguese>
 		<German>Ein Konvertit hält es unter Europäern nicht mehr aus und will wieder zurück zu seinem Volk.</German>
 		<Russian>Обращенный в христианство туземец больше не может терпеть жизнь среди европейцев и хочет вернуться к своему народу.</Russian>
+		<Hungarian>Egy megtért Indián már nem bír tovább az európaiak között élni. Vissza akar térni a saját népéhez.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_NATIVE_CONVERTED_RETURN</Tag>
@@ -9623,6 +9726,7 @@
 		<Portuguese>Um nativo que vive entre os seus colonos pediu permissão para retornar ao seu povo. Profundamente abalado pelo modo de vida dos europeus, ele explica que as palavras dos missionários o desencaminharam.</Portuguese>
 		<German>Ein Eingeborener, der unter euren Siedlern lebt, bittet darum, zu seinem Volk zurückkehren zu dürfen. Erschüttert von der Lebensweise der Europäer erklärt er, die Worte der Missionare hätten ihn irregeleitet.</German>
 		<Russian>Обращённый в христианство индеец, проживающий среди ваших поселенцев, просит разрешения вернуться к своему народу. Потрясенный европейским образом жизни, он объясняет, что слова миссионеров сбили его с толку.</Russian>
+		<Hungarian>Egy, a telepeseitek között élő Indián azt kérte, hogy hadd térhessen vissza a népéhez. Az európaiak életmódja mélyen megrázta, és elmondta, hogy a misszionárius szavai tévútra vezették.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_EUROPEAN_EVENTS_CUSTOMS</Tag>
@@ -9630,6 +9734,7 @@
 		<Portuguese>Surgiu uma disputa alfandegária com uma potência europeia.</Portuguese>
 		<German>Ein Zollstreit mit einer europäischen Macht ist entbrannt.</German>
 		<Russian>Таможенный спор между двумя европейскими державами.</Russian>
+		<Hungarian>Vámvitában vita alakult ki egy európai nagyhatalommal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_CUSTOMS</Tag>
@@ -9637,6 +9742,7 @@
 		<Portuguese>Os funcionários aduaneiros detiveram um grupo comercial estrangeiro em %s2_city e exigiram o pagamento dos direitos exigidos. Os comerciantes afirmam estar sob a protecção de uma potência colonial europeia, mas não conseguem pagar as taxas exigidas.</Portuguese>
 		<German>Zollbeamte haben in %s2_city einen fremden Handelstreck aufgehalten und die Zahlung ordnungsgemäßer Abgaben verlangt. Die Händler berufen sich auf den Schutz einer europäischen Kolonialmacht, können die geforderten Gebühren jedoch nicht entrichten.</German>
 		<Russian>Таможенники задержали иностранных купцов в городе %s2_city и потребовали уплаты необходимых пошлин. Торговцы не желают оплачивать требуемые сборы, заявляя, что находятся под защитой другой европейской колониальной державы.</Russian>
+		<Hungarian>%s2_city vámtisztviselői feltartóztattak egy külföldi kereskedőcsoportot, és felszólították őket a szükséges vámok megfizetésére. A kereskedők azt állítják, hogy egy európai gyarmattartó hatalom védelme alatt állnak, és emellett nem is tudják kifizetni a követelt összeget.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_EUROPEAN_EVENTS_BORDER_DISPUTE</Tag>
@@ -9644,6 +9750,7 @@
 		<Portuguese>Duas colônias estão envolvidas em uma disputa diplomática sobre questões fronteiriças.</Portuguese>
 		<German>Zwei Kolonien befinden sich aufgrund von Grenzstreitigkeiten im diplomatischen Disput.</German>
 		<Russian>Две колонии вовлечены в дипломатический спор по поводу пограничных вопросов.</Russian>
+		<Hungarian>Két kolónia diplomáciai vitába keveredett határkérdések miatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_BORDER_DISPUTE</Tag>
@@ -9651,6 +9758,7 @@
 		<Portuguese>Mensageiros de uma colônia %s1_civ chegaram com um protesto formal. Eles acusam os nossos colonos de invadir terras que consideram a sua legítima esfera de influência e exigem a evacuação imediata da disputada região fronteiriça.</Portuguese>
 		<German>Gesandte einer %s1_civ Kolonie sind mit einer formellen Beschwerde eingetroffen. Sie werfen unseren Siedlern vor, in Gebiete vorzudringen, die sie als ihren rechtmäßigen Einflussbereich betrachten, und fordern die unverzügliche Räumung der umstrittenen Grenzregion.</German>
 		<Russian>Представители одной из колоний %s1_civ прибыли с официальным протестом. Они обвиняют наших поселенцев в посягательстве на земли, которые те считают своей законной сферой влияния и требуют немедленной эвакуации из спорного приграничного региона.</Russian>
+		<Hungarian>%s1_civ követei hivatalos tiltakozással érkeztek. Azzal vádolják telepeseinket, hogy behatolnak az általuk jogos befolyási övezetüknek tartott területekre, és követelik a vitatott határvidék azonnali kiürítését.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EUROPEAN_EVENTS_MILITARY_AID</Tag>
@@ -9658,6 +9766,7 @@
 		<Portuguese>Meu senhor, outra potência colonial envolveu-se numa guerra com uma tribo nativa e precisa de apoio. Eles estão pedindo armas de fogo e cavalos. Isto poderia estabelecer as bases para boas relações.</Portuguese>
 		<German>Milord, eine andere Kolonialmacht ist in einen Krieg mit einem Ureinwohner-Stamm verwickelt worden und braucht Unterstützung. Man frage nach Schusswaffen und Pferden. Dies könnte der Grundstein für gute Beziehungen sein.</German>
 		<Russian>Милорд, другая колониальная держава ввязалась в войну с туземным племенем и нуждается в поддержке. Они просят огнестрельное оружие и лошадей. Это могло бы заложить основу для хороших отношений.</Russian>
+		<Hungarian>Uram, egy újabb gyarmati hatalom háborúba keveredett egy Indián törzzsel és támogatásunkra szorul. Lőfegyvereket és lovakat kérnek tőlünk. Ez erős alapot teremthet a jövőbeli jó kapcsolatokhoz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_EVENTTRIGGER_REF_NAVY_MODERNIZATION</Tag>
@@ -9665,5 +9774,6 @@
 		<Portuguese>O alto almirantado encomendou uma nova geração de navios de guerra e transportes. Navios mais antigos estão sendo retirados de serviço e substituídos por projetos mais modernos.</Portuguese>
 		<German>Die hohe Admiralität hat entschieden, eine neue Generation von Kriegsschiffen und Transportschiffen in Dienst zu stellen. Veraltete Schiffe werden nach und nach ausgemustert und durch moderne Neubauten ersetzt.</German>
 		<Russian>Адмиралтейство приняло решение о введении в строй нового поколения военных и транспортных кораблей. Устаревшие суда будут постепенно выводиться из эксплуатации и заменяться новыми современными кораблями.</Russian>
+		<Hungarian>A Haditengerészeti Főparancsnokság új generációs hadihajók és szállítóhajók építését rendelte meg. A régebbi hajókat kivonják a szolgálatból, és modernebb típusokkal váltják fel őket.</Hungarian>
 	</TEXT>
 </Civ4GameText>
