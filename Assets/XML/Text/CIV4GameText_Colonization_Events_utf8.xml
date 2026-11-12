@@ -2762,6 +2762,7 @@
 		<Portuguese>No império colonial [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT], estadistas governamentais corruptos foram apanhados a jogar num bar.</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Kolonialreich wurden korrupte Staatsbeamte beim Glückspiel in einer Spelunke erwischt.</German>
 		<Russian>В колониальной империи [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] коррумпированные государственные служащие были пойманы на азартных играх в захудалом баре.</Russian>
+		<Hungarian>Korrupt [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT]  államférfiakat kaptak rajta, amint egy kocsmában szerencsejátékot űztek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_CORRUPT_STATESMAN</Tag>
@@ -2769,6 +2770,7 @@
 		<Portuguese>Meu Senhor! Vários funcionários reais foram pegos jogando em um mergulho, e dizem que mulheres de virtudes fáceis também estavam presentes. Se você não fizer nada, isso trará descrédito à Coroa e ao seu cargo.</Portuguese>
 		<German>Milord! man hat einige königliche Verwaltungsbeamte beim Glückspiel in einer Spelunke erwischt und leichte Mädchen sollen auch dabei gewesen sein. Das Ansehen der Krone und auch Euer Amt werden dadurch beschmutzt, wenn Ihr nichts tut.</German>
 		<Russian>Милорд! Несколько королевских чиновников были пойманы за азартными играми в подпольном заведении и, говорят, что там также присутствовали женщины легкого поведения. Если вы ничего не предпримете, это опозорит Корону и Вашу должность.</Russian>
+		<Hungarian>Uram! Több királyi tisztviselőt is rajtakaptak, amint egy kocsmában szerencsejátékot űztek, és úgy hírlik, hogy könnyűvérű nők is jelen voltak. Ha nem tesz semmit, ez rossz hírbe hozza a Koronát és a hivatalát.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CORRUPT_STATESMAN_1</Tag>
@@ -2776,6 +2778,7 @@
 		<Portuguese>É muito simples! Suborne o estalajadeiro e as prostitutas e deixe o assunto passar. Suspeito que essa não seja a única coisa que nossos funcionários reais fazem, mas estamos presos a eles.</Portuguese>
 		<German>Das ist doch ganz einfach! Bestecht den Wirt und die Huren und lasst Gras über die Sache wachsen. Ich vermute das ist nicht das Einzige, was unsere könglichen Beamten so treiben, aber wir sind auf sie angewiesen.</German>
 		<Russian>Давайте уладим это дело по-тихому. Нужно подкупить трактирщика с проститутками и пусть дело само по себе затихнет. Подозреваю, что это не единственное, чем занимаются наши королевские чиновники, но что поделать, приходится с этим смириться.</Russian>
+		<Hungarian>Ez gyerekjáték! Megvesztegetjük a fogadósot és a szajhákat. Hagyjuk, hogy az ügy elcsituljon. Nem csak ezzel foglalkoznak a királyi tisztviselőink, de nincs más választásunk, mint hogy elviseljük őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CORRUPT_STATESMAN_2</Tag>
@@ -2783,6 +2786,7 @@
 		<Portuguese>Você está certo, devemos absolutamente fazer algo a respeito e enviar uma mensagem clara. Vamos prendê-los e fazer deles um exemplo. Pelo menos um deles terá que ser enforcado para manter a ordem.</Portuguese>
 		<German>Ihr habt Recht, wir müssen unbedingt etwas dagegen unternehmen und ein Zeichen setzen. Wir verhaften sie und statuieren ein Exempel. Mindestens einer von Ihnen wird hängen müssen, um die Ordnung zu wahren.</German>
 		<Russian>Вы правы, не стоит смотреть на это сквозь пальцы. Мы арестуем их и устроим показательный суд. Как минимум одного из них придётся повесить, чтобы сохранить порядок в колониях.</Russian>
+		<Hungarian>Igazad van! Mindenképpen tennünk kell valamit ez ügyben, hogy egyértelmű üzenetet küldjünk. Letartóztatjuk őket, és példát statuálunk velük. Legalább egyet felakasztunk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CORRUPT_STATESMAN_3</Tag>
@@ -2790,6 +2794,7 @@
 		<Portuguese>Ah, vamos lá, você não deve levar tudo tão a sério. Em primeiro lugar, são estadistas reais – tal como nós. E em segundo lugar, não há nada de errado com um pouco de diversão. Vamos esquecer isso.</Portuguese>
 		<German>Ach was, ihr dürft das alles nicht so eng sehen. Erstens sind es königliche Beamte - wie wir auch. Und zweitens ist doch nichts gegen ein wenig Amüsement zu sagen. Vergessen wir die Sache.</German>
 		<Russian>Ну что вы, не стоит воспринимать всё это так серьёзно. Во-первых, они — королевские государственные деятели, такие же, как и мы. А во-вторых, в веселье нет ничего дурного. Не стоит беспокоить меня по таким пустякам.</Russian>
+		<Hungarian>Ugyan már, nem szabad mindent ennyire komolyan venni. Először is, ők királyi államférfiak – pont mint mi. Másodszor pedig nincs abban semmi rossz, ha kicsit szórakoznak. Felejtsük el az egészet!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_CORRUPT_STATESMAN_REMOVE_ONE_STATESMAN</Tag>
@@ -2797,6 +2802,7 @@
 		<Portuguese>[ICON_BULLET]Um estadista desaparecerá da cidade.</Portuguese>
 		<German>[ICON_BULLET]Ein Staatsmann wird aus der Stadt entfernt.</German>
 		<Russian>[ICON_BULLET]Один государственный деятель исчезнет из города.</Russian>
+		<Hungarian>[ICON_BULLET]Egy államférfi eltűnik a városból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_REVOLUTIONARY_MOVEMENT</Tag>
@@ -2804,6 +2810,7 @@
 		<Portuguese>No império colonial [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT], o sentimento revolucionário está em ascensão. As pessoas parecem estar muito insatisfeitas com o rei.</Portuguese>
 		<German>Im [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] Kolonialreich steigen die revolutionären Tendenzen erheblich an. Man ist offenbar mit dem König sehr unzufrieden.</German>
 		<Russian>В колониальной империи [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] растут революционные настроения. Похоже, люди очень недовольны Королем.</Russian>
+		<Hungarian>A lázongó [COLOR_HIGHLIGHT_TEXT]%s1:3_civ_adjective[COLOR_REVERT] gyarmatbirodalomban egyre erősödik a forradalmi hangulat. Úgy tűnik, az emberek nagyon elégedetlenek a királlyal.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_MOVEMENT</Tag>
@@ -2811,6 +2818,7 @@
 		<Portuguese>Meu senhor! A insatisfação está crescendo rapidamente em nossas colônias. Temos de fazer algo sobre isto a todo o custo, antes que um dia a multidão arranque as estátuas do Rei dos seus pedestais – e nós juntamente com eles, sem dúvida.</Portuguese>
 		<German>Milord! In unseren Kolonien steigt die Unzufriedenheit erheblich an. Wir müssen unbedingt etwas dagegen tun, bevor der Mob eines Tages die Statuen des Königs vom Sockel reißt und uns wahrscheinlich gleich mit.</German>
 		<Russian>Милорд! Недовольство в наших колониях стремительно растёт. Мы должны сделать с этим что-то любой ценой, прежде чем однажды толпа скинет статуи Короля с постаментов, а потом вцепится в нас.</Russian>
+		<Hungarian>Uram! A gyarmatainkon gyorsan növekszik az elégedetlenség. Minden áron tennünk kell valamit ez ellen, mielőtt a tömeg egy napon ledönti a király szobrait az alapzatokról – és minket is velük együtt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_MOVEMENT_1</Tag>
@@ -2818,6 +2826,7 @@
 		<Portuguese>Bem, no que você acha que estamos trabalhando aqui? Já há algum tempo que apoiamos este movimento e continuaremos a fazê-lo. Também deveríamos fazer uma doação para o fundo de guerra imediatamente. Mas, pelo amor de Deus, o rei não deve descobrir isso.</Portuguese>
 		<German>Ja was glaubt ihr denn worauf wir hier hinarbeiten? Wir unterstützen diese Bewegung schon länger und werden das auch weiterhin tun. Wir sollten auch gleich noch was in die Kriegskasse spenden. Der König darf davon aber um himmels Willen nichts erfahren.</German>
 		<Russian>Что Вы так распереживались? Мы поддерживаем это движение уже довольно давно и будем продолжать это делать. Однако также нам следует немедленно сделать хорошее пожертвование в военный фонд этих прекрасных людей. Но ради Бога, Король ни в коем случае не должен узнать об этом.</Russian>
+		<Hungarian>Nos, szerinted mi a célunk ezzel? Már egy ideje támogatjuk ezt a mozgalmat, és továbbra is támogatni fogjuk. Azonnal adományt is kellene adnunk a hadi kincstárba. De az ég szerelmére, a királynak semmiképp sem szabad erről tudomást szereznie!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_MOVEMENT_2</Tag>
@@ -2825,6 +2834,7 @@
 		<Portuguese>Você está certo, devemos absolutamente fazer algo a respeito e enviar uma mensagem clara. Vamos prender três dos seus líderes e enforcá-los em público por sedição. Caso contrário, um dia seremos nós quem o rei prenderá.</Portuguese>
 		<German>Ihr habt Recht, wir müssen unbedingt etwas dagegen unternehmen und ein Zeichen setzen. Verhaften wir drei ihrer Rädelsführer und hängen sie wegen Aufrührerei öffentlich auf. Sonst werden wir es eines Tages sein, die der König verhaftet.</German>
 		<Russian>Вы правы, мы обязательно должны что-то предпринять дабы показать этим бунтовщикам, кто здесь настоящий хозяин. Нужно арестовать их главарей и публично повесить их за подстрекательство к мятежу. Иначе Король может заставить болтаться на веревке нас.</Russian>
+		<Hungarian>Igazad van, feltétlenül tennünk kell valamit ez ügyben, és egyértelmű üzenetet kell küldenünk. Tartóztassuk le a vezetőik közül hármat, és akasszuk fel őket nyilvánosan lázadás vádjával! Különben egy napon mi leszünk azok, akiket a király letartóztat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_REVOLUTIONARY_MOVEMENT_3</Tag>
@@ -2832,6 +2842,7 @@
 		<Portuguese>Ah, você acha? Vamos deixar as coisas seguirem seu curso por um tempo e ver aonde isso nos leva. As pessoas tendem a conversar muito enquanto tomam uma cerveja na taberna. Não vejo necessidade de intervir ainda. Isso só causará problemas.</Portuguese>
 		<German>Ach, meint Ihr? Lassen wir den Dingen doch einfach noch ein wenig ihren Lauf und sehen wohin es uns führt. Die Leute reden doch viel bei einem Bier in der Taverne. Ich sehe da noch keine Notwendigkeit einzugreifen. Das gibt nur Ärger.</German>
 		<Russian>Ну-ну, неужели всё так плохо? Предлагаю не торопить события и дать им развиваться своим чередом. Уверен, ничего страшного не произойдет. В таверне за кружкой пива люди много болтают всякой чепухи. Пока не вижу необходимости вмешиваться. Это может только создать проблемы.</Russian>
+		<Hungarian>Ó, tényleg így gondolod? Hagyjuk egyelőre, hogy a dolgok a maguk útján haladjanak, és meglátjuk, hová jutunk. Az emberek a kocsmában egy sör mellett általában sokat beszélgetnek. Egyelőre nem látom szükségét, hogy beavatkozzak. Az csak bajt okozna.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THE_ROYALS</Tag>
@@ -2985,6 +2996,7 @@
 		<Portuguese>Se este tesouro ainda estiver no porto após %d1 [NUM1:turno:turnos], os piratas irão roubá-lo. Se você afastá-lo a tempo, um Cúter Pirata aparecerá na costa.</Portuguese>
 		<German>Wenn sich dieser Schatz nach %d1 [NUM1:Runde:Runden] noch immer im Hafen befindet, werden die Piraten ihn stehlen. Bringst du ihn rechtzeitig fort, werden die Piraten vor der Küste lauern.</German>
 		<Russian>Если через %d1 [NUM1:ход:ходов] это Сокровище будет находиться в гавани, его украдут пираты. Если же вы успеете его убрать, у берегов появится Пиратский катер.</Russian>
+		<Hungarian>Ha ez a kincs %d1 [NUM1:kör:kör] után is a kikötőben marad, a kalózok ellopják. Ha időben elviszed onnan, akkor egy kalóz Kutter jelenik meg a part közelében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_4_FOLLOWUP_HELP</Tag>
@@ -2992,6 +3004,7 @@
 		<Portuguese>[ICON_BULLET]%d1%% de chance, em %d2 [NUM2:turno:turnos], de receber um [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>[ICON_BULLET]%d1%% Wahrscheinlichkeit, in %d2 [NUM2:Runde:Runden] ein bzw. eine [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] in einer unserer Kolonien zu erhalten.</German>
 		<Russian>[ICON_BULLET]%d1%% шанс через %d2 [NUM2:ход:ходов] получить [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] в одной из наших колоний.</Russian>
+		<Hungarian>[ICON_BULLET]%d1%% esély van arra, hogy %d2 [NUM2:kör:kör] múlva valamelyik kolóniánkba egy [COLOR_HIGHLIGHT_TEXT]%s3[COLOR_REVERT] érkezik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1a</Tag>
@@ -2999,6 +3012,7 @@
 		<Portuguese>Piratas vigiam o porto.</Portuguese>
 		<German>Piraten beobachten den Hafen.</German>
 		<Russian>Пираты наблюдают за гаванью.</Russian>
+		<Hungarian>A kalózok a kikötőt figyelik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1A_STOLEN</Tag>
@@ -3006,6 +3020,7 @@
 		<Portuguese>Os piratas roubaram o tesouro do porto de %s1!</Portuguese>
 		<German>Die Piraten haben den Schatz im Hafen von %s1 gestohlen!</German>
 		<Russian>Пираты украли Сокровище из гавани города %s1!</Russian>
+		<Hungarian>A kalózok kincset loptak %s1 kikötőjéből!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PIRATES_1A_CUTTER</Tag>
@@ -3013,6 +3028,7 @@
 		<Portuguese>Um Cúter Pirata apareceu na costa de %s1!</Portuguese>
 		<German>Vor der Küste von %s1 ist ein Piratenkutter aufgetaucht!</German>
 		<Russian>У берегов города %s1 появился Пиратский катер!</Russian>
+		<Hungarian>Egy kalóz Kutter bukkant fel %s1 partjainál!</Hungarian>
 	</TEXT>
 	<!--RaR Events -->
 	<TEXT>
@@ -3606,6 +3622,7 @@
 		<Portuguese>[ICON_BULLET]Um [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] aparece no forte.</Portuguese>
 		<German>[ICON_BULLET]Im Fort erscheint eine Einheit [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET][COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] появляется в форте.</Russian>
+		<Hungarian>[ICON_BULLET]Egy [COLOR_SELECTED_TEXT]%s1[COLOR_REVERT] jelenik meg az erődnél.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_MONASTERY_TRADING_FOOD</Tag>
@@ -3739,6 +3756,7 @@
 		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] em uma de nossas colônias costeiras.</Portuguese>
 		<German>Wir erhalten eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Küstenkolonien.</German>
 		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в одной из наших прибрежных колоний.</Russian>
+		<Hungarian>Az egyik part menti kolóniánkban egy [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] fog megjelenni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FIVE_MARKETS</Tag>
@@ -3801,6 +3819,7 @@
 		<French>Sire, vous avez construit les cimetières dans cinq villes avant tous les autres. L'Église nous envoie les prêtres promis.</French>
 		<German>Milord, Eure Kolonie konnte vor allen anderen in 5 Städten Friedhöfe errichten. Die Kirche schickt nun wie versprochen die Priester.</German>
 		<Russian>Милорд, мы построили кладбища в пяти городах раньше, чем любая другая колониальная нация. Церковь уже отправила священников, как и обещалось.</Russian>
+		<Hungarian>Uram, öt városban is megépítette a temetőket, még mielőtt bármelyik másik kolónia megtehette volna. Az Egyház most, ahogy megígérte, elküldi a papokat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_FIVE_GRAVEYARDS</Tag>
@@ -4429,6 +4448,7 @@
 		<Portuguese>[NEWLINE][ICON_BULLET]A Coroa recompensará as colônias com um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</Portuguese>
 		<German>[NEWLINE][ICON_BULLET]Die Krone belohnt die Kolonien mit mit einer [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</German>
 		<Russian>[NEWLINE][ICON_BULLET]Корона наградит колонии [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</Russian>
+		<Hungarian>[NEWLINE][ICON_BULLET]A Korona a gyarmatoknak jutalmat ad: [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SIX_PRIVATEERS_QUEST</Tag>
@@ -4535,6 +4555,7 @@
 		<Portuguese>Ah, não, não vamos. Não ganharemos dinheiro com esse comércio ímpio. Viemos para o Novo Mundo para sermos livres. Não ganharemos nosso dinheiro com o comércio de escravos.</Portuguese>
 		<German>Oh nein, das werden wir nicht. Wir werden nicht an diesem gottlosen Geschäft verdienen. Wir sind in die Neue Welt gekommen, um frei zu sein. Da werden wir nicht mit Sklavenhandel unser Geld verdienen.</German>
 		<Russian>Нет, нет, нет. Мы приехали в Новый Свет, чтобы быть свободными от всех грязных европейских дел и не станем зарабатывать деньги на этой безбожной торговле рабами.</Russian>
+		<Hungarian>Jaj, nem, azt nem fogjuk! Nem fogunk pénzt keresni azzal az istentelen kereskedelemmel. Az Újvilágba azért jöttünk, hogy szabadok legyünk. Nem fogjuk rabszolga kereskedelemből szerezni a pénzünket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SLAVE_TRADER_QUEST_DONE_1</Tag>
@@ -4578,6 +4599,7 @@
 		<Portuguese>A Coroa nos fornecerá um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] para transportar os tesouros.</Portuguese>
 		<German>Die Krone stellt uns eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] zur Verfügung, um die Schätze zu transportieren.</German>
 		<Russian>Корона предоставит нам [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] для транспортировки сокровищ.</Russian>
+		<Hungarian>A Korona biztosít számunkra egy [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]t a kincsek szállításához.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_3</Tag>
@@ -4586,6 +4608,7 @@
 		<French/>
 		<German>Wir würden Eurer Majestät gern zu Diensten sein, doch im Augenblick fehlen uns die Mittel. Gebt uns noch etwas Zeit, Sir.</German>
 		<Russian>Мы всегда рады служить Вашему Величеству, но в данный момент не располагаем нужными средствами. Смиренно просим Его Величество дать нам еще немного времени.</Russian>
+		<Hungarian>Örömmel állnánk Felséged szolgálatára, de jelenleg nincs rá pénzünk. Adjon nekünk még egy kis időt, Felség.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_FOUR_TREASURES_RETURN</Tag>
@@ -4593,6 +4616,7 @@
 		<Portuguese>Os enviados do seu rei retornam, lembrando-lhe do navio de transporte que você anteriormente recusou comprar. Agora que o seu tesouro se recuperou, exigem uma decisão final.</Portuguese>
 		<German>Die Gesandten Eures Königs kehren zurück und erinnern Euch an das Transportschiff, dessen Kauf Ihr zuvor aufgeschoben habt. Nun, da sich Eure Schatzkammer erholt hat, verlangen sie eine endgültige Entscheidung.</German>
 		<Russian>Посланники вашего Короля вернулись и напомнили о галеоне, покупку которого вы ранее отложили. Теперь, когда ваша казна восстановилась, они требуют окончательного решения.</Russian>
+		<Hungarian>A Királyod követei visszatértek, és emlékeztetnek téged arra a szállítóhajóra, amelynek megvásárlását korábban elutasítottad. Most, hogy a kincstárad újra megtelt, végleges döntést követelnek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_FOUR_TREASURES_RETURN</Tag>
@@ -4600,6 +4624,7 @@
 		<Portuguese>Os enviados do rei retornam. Agora que o seu tesouro se recuperou, exigem mais uma vez uma resposta final quanto à compra do navio de transporte.</Portuguese>
 		<German>Die Gesandten des Königs kehren zurück. Da sich Eure Schatzkammer erholt hat, verlangen sie nun erneut eine endgültige Entscheidung über den Kauf des Transportschiffes.</German>
 		<Russian>Королевские посланники вернулись. Теперь, когда ваша казна восстановилась, они требуют окончательного решения относительно покупки галеона.</Russian>
+		<Hungarian>Visszatértek a Király követei. Most, hogy a kincstárad újra megtelt, végleges választ követelnek a szállítóhajó megvásárlásával kapcsolatban.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_RETURN_1</Tag>
@@ -4607,6 +4632,7 @@
 		<Portuguese>Muito bem. Honraremos a nossa obrigação para com a Coroa e compraremos o navio de transporte.</Portuguese>
 		<German>Sehr wohl. Wir werden unserer Verpflichtung gegenüber der Krone nachkommen und das Transportschiff kaufen.</German>
 		<Russian>Конечно, мы выполним свои обязательства перед Короной и купим этот галеон.</Russian>
+		<Hungarian>Rendben. Teljesítjük a Korona iránti kötelezettségünket, és megvásároljuk a szállítóhajót.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_RETURN_2</Tag>
@@ -4614,6 +4640,7 @@
 		<Portuguese>Não. Negaremos o pedido da Coroa de uma vez por todas.</Portuguese>
 		<German>Nein. Wir werden die Forderung der Krone ein für alle Mal verweigern.</German>
 		<Russian>Корона рано или поздно получит свои сокровища. Деньги нужны на развитие колоний.</Russian>
+		<Hungarian>Nem. A Korona kérelmét egyszer és mindenkorra elutasítjuk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_RETURN_1_HELP</Tag>
@@ -4621,6 +4648,7 @@
 		<Portuguese>Você paga %d1 ouro para cumprir sua obrigação com a Coroa. Um %s3 chegará à cidade costeira %s2 e sua posição perante o rei melhorará.</Portuguese>
 		<German>Ihr zahlt %d1 Gold, um Eurer Verpflichtung gegenüber der Krone nachzukommen. Eine %s3 wird in der Küstenstadt %s2 anlanden, und Eure Stellung beim König verbessert sich.</German>
 		<Russian>Во исполнение обязательств перед Короной из вашей казны будет вычтено %d1 золота. Галеон будет прибудет в порт города %s2, а ваше положение у Короля улучшиться.</Russian>
+		<Hungarian>%d1 aranyat fizetsz, hogy teljesítsd a Korona iránti kötelezettségedet. Egy %s3 érkezik a part menti %s2 kikötőjébe és javul a Királlyal való kapcsolatod.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_RETURN_2_HELP</Tag>
@@ -4628,6 +4656,7 @@
 		<Portuguese>Você recusa o pedido da Coroa de uma vez por todas. O rei não verá com bons olhos o seu desafio.</Portuguese>
 		<German>Ihr verweigert die Forderung der Krone endgültig. Der König wird Euren Ungehorsam nicht wohlwollend aufnehmen.</German>
 		<Russian>Вы отказываетесь от королевского предложения. Его Величество будет крайне недоволен.</Russian>
+		<Hungarian>Egyszer és mindenkorra elutasítod a Korona kérését. A Király nem fogja jó szemmel nézni a szembeszegülésedet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FOUR_TREASURES_DELAY_HELP</Tag>
@@ -4636,6 +4665,7 @@
 		<French/>
 		<German>Diese Wahl vertagt das Angebot. Ein Gesandter des Königs wird sich später erneut bei euch melden, sofern Ihr wieder genug Gold habt.</German>
 		<Russian>Выбор этого варианта отложит предложение. Посланник Короля свяжется с вами позже, при условии, что к тому времени у вас будет достаточно золота.</Russian>
+		<Hungarian>Ha ezt a lehetőséget választod, az ajánlat elhalasztásra kerül. A Király követe később újra felveszi veled a kapcsolatot, feltéve, hogy addigra elegendő aranyad lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_THREE_GALLEONS</Tag>
@@ -4670,6 +4700,7 @@
 		<Portuguese>[NEWLINE][ICON_BULLET]A Coroa nos concederá um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</Portuguese>
 		<German>[NEWLINE][ICON_BULLET]Die Krone wird uns eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] schicken.</German>
 		<Russian>[NEWLINE][ICON_BULLET]Король пришлёт нам [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT].</Russian>
+		<Hungarian>[NEWLINE][ICON_BULLET]A Korona egy [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT]t fog nekünk adományozni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_BURNING_CORN_CHAMBER</Tag>
@@ -4678,7 +4709,7 @@
 		<French>Un grenier à grain à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] a pris feu.</French>
 		<German>Eine Getreidekammer in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat Feuer gefangen.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] загорелся амбар.</Russian>
-		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] városában a kukoricatároló kigyulladt. Bár a tüzet eloltották és a kukorica nagy részét megmentették, az épület súlyosan megrongálódott és javításra szorul, különben összeomlik.</Hungarian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] városában a kukoricatároló kigyulladt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_BURNING_CORN_CHAMBER</Tag>
@@ -4687,6 +4718,7 @@
 		<French>Un grenier à grain a pris feu à [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT]. Même si le feu a pu être éteint, la récolte de grain n'a pas pu être sauvée, le bâtiment est très endommagé et a besoin de réparation pour ne pas s'écrouler.</French>
 		<German>Eine Getreidekammer in [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat Feuer gefangen. Obwohl das Feuer gelöscht werden konnte, so daß das meiste Getreide gerettet wurde, muss das Gebäude wieder repariert werden, denn es wird sonst bald zusammenfallen.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] загорелся амбар. И хотя пожар был потушен и большая часть кукурузы спасена, здание сильно повреждено и требует ремонта, иначе оно может рухнуть.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] területén kigyulladt a kukoricatároló. Bár a tüzet eloltották, és a kukorica nagy részét megmentették, az épület súlyosan megrongálódott, és javításra szorul, különben összeomlik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CONTAMINATED_WELL</Tag>
@@ -5243,6 +5275,7 @@
 		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>Wir erhalten eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
 		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в одной из наших колоний.</Russian>
+		<Hungarian>Az egyik kolóniánkban egy [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] fog megjelenni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_CONVERTED_TOWNHALL</Tag>
@@ -5697,6 +5730,7 @@
 		<Portuguese>[ICON_BULLET]Receberemos um %s1.</Portuguese>
 		<German>[ICON_BULLET]Wir erhalten ein %s1.</German>
 		<Russian>[ICON_BULLET]Мы получим %s1.</Russian>
+		<Hungarian>[ICON_BULLET]Egy %s1 fog érkezni hozzánk.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SELL_NATIVE_SLAVE</Tag>
@@ -6020,6 +6054,7 @@
 		<French>Les spécialistes sont toujours les bienvenus. Il produisent autant que plusieurs employés non qualifiés!</French>
 		<German>Spezialisten sind immer gerne gesehen! Die verrichten schließlich Arbeit für mehrere unausgebildete.</German>
 		<Russian>Всегда рады специалистам. Они производят столько же, сколько несколько необученных рабочих!</Russian>
+		<Hungarian>A szakemberek mindig szívesen látottak. Annyi munkát végeznek egymaguk, mint több képzetlen munkás együtt!</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_5</Tag>
@@ -6081,6 +6116,7 @@
 		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>Wir erhalten eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
 		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в одной из наших колоний.</Russian>
+		<Hungarian>Az egyik kolóniánkban egy [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] fog megjelenni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_QUEST_DONE_11</Tag>
@@ -6133,6 +6169,7 @@
 		<French>[NEWLINE]Livraisons jusqu'ici :</French>
 		<German>[NEWLINE]Bisher geliefert:</German>
 		<Russian>[NEWLINE]Поставки на данный момент:</Russian>
+		<Hungarian>[NEWLINE]Eddigi szállítások:</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU</Tag>
@@ -6140,6 +6177,7 @@
 		<French>[NEWLINE]Vous : %d1</French>
 		<German>[NEWLINE]Ihr: %d1</German>
 		<Russian>[NEWLINE]Вы: %d1</Russian>
+		<Hungarian>[NEWLINE]Te: %d1</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_YOU_LEAD</Tag>
@@ -6147,6 +6185,7 @@
 		<French>[NEWLINE]Vous : %d1 [COLOR_FONT_GOLD](en tête)[COLOR_REVERT]</French>
 		<German>[NEWLINE]Ihr: %d1 [COLOR_FONT_GOLD](führt)[COLOR_REVERT]</German>
 		<Russian>[NEWLINE]Вы: %d1 [COLOR_FONT_GOLD](лидер)[COLOR_REVERT]</Russian>
+		<Hungarian>[NEWLINE]Te: %d1 [COLOR_FONT_GOLD](vezetsz)[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LINE</Tag>
@@ -6154,6 +6193,7 @@
 		<French>[NEWLINE]%s1 : %d2</French>
 		<German>[NEWLINE]%s1: %d2</German>
 		<Russian>[NEWLINE]%s1: %d2</Russian>
+		<Hungarian>[NEWLINE]%s1: %d2</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_STANDINGS_LEAD</Tag>
@@ -6161,6 +6201,7 @@
 		<French>[NEWLINE]%s1 : %d2 [COLOR_FONT_GOLD](en tête)[COLOR_REVERT]</French>
 		<German>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](führt)[COLOR_REVERT]</German>
 		<Russian>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](лидер)[COLOR_REVERT]</Russian>
+		<Hungarian>[NEWLINE]%s1: %d2 [COLOR_FONT_GOLD](vezetsz)[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LOCATION_EUROPE</Tag>
@@ -6168,6 +6209,7 @@
 		<French>Europe</French>
 		<German>Europa</German>
 		<Russian>Европа</Russian>
+		<Hungarian>Európa</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LOCATION_AFRICA</Tag>
@@ -6175,6 +6217,7 @@
 		<French>Afrique</French>
 		<German>Afrika</German>
 		<Russian>Африка</Russian>
+		<Hungarian>Afrika</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LOCATION_PORT_ROYAL</Tag>
@@ -6182,6 +6225,7 @@
 		<French>Port Royal</French>
 		<German>Port Royal</German>
 		<Russian>Порт-Ройал</Russian>
+		<Hungarian>Port Royal</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LEADER_YOU</Tag>
@@ -6189,6 +6233,7 @@
 		<French>Nouveau chef de file pour %F1_yield (%s2) : vous êtes maintenant en tête avec %d3.</French>
 		<German>Neue Führung bei %F1_yield (%s2): Ihr führt nun mit %d3.</German>
 		<Russian>Новый лидер по поставкам %F1_yield (%s2): теперь лидируете вы с количеством %d3.</Russian>
+		<Hungarian>Új vezető %F1_yield (%s2) terméknél: az előnyöd %d3.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_QUEST_LEADER_OTHER</Tag>
@@ -6196,6 +6241,7 @@
 		<French>Nouveau chef de file pour %F1_yield (%s2) : %s3 est maintenant en tête avec %d4.</French>
 		<German>Neue Führung bei %F1_yield (%s2): %s3 führt nun mit %d4.</German>
 		<Russian>Новый лидер по поставкам %F1_yield (%s2): теперь лидирует %s3 с количеством %d4.</Russian>
+		<Hungarian>Új vezető %F1_yield (%s2): %s3 az előnye %d4.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_EUROPE_TRADE_YIELD_AND_TARGET_AMOUNT_HELP_BUY</Tag>
@@ -6266,6 +6312,7 @@
 		<Portuguese>Receberemos um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] em uma de nossas colônias.</Portuguese>
 		<German>Wir erhalten ein bzw. eine [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] in einer unserer Kolonien.</German>
 		<Russian>Мы получим [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] в одной из наших колоний.</Russian>
+		<Hungarian>Az egyik kolóniánkban egy [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] fog megjelenni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_REWARD_TWO_SHIPS_HELP</Tag>
@@ -6273,6 +6320,7 @@
 		<Portuguese>Receberemos duas unidades %s1.</Portuguese>
 		<German>Wir erhalten zwei Einheiten %s1.</German>
 		<Russian>Мы получим два юнита %s1.</Russian>
+		<Hungarian>Két %s1 egységet fogunk kapni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_PORTROYAL_TRADE_QUEST_DONE_4</Tag>
@@ -6379,6 +6427,7 @@
 		<Portuguese>Senhor, o Rei está bastante satisfeito com a evolução nas colônias. No entanto, as coisas poderão avançar ainda mais rapidamente – temos de estar um passo à frente das outras potências europeias. O Rei está inclinado a enviar outro arquitecto bem treinado para as colônias – desde que você cubra os custos.</Portuguese>
 		<German>Sir, der König ist recht erfreut über die Entwicklung in den Kolonien. Gleichwohl könnte es noch schneller gehen - man müsse den anderen europäischen Mächten zuvorkommen. Der König ist geneigt einen weiteren gut ausgebildeten Architekten in die Kolonien zu senden - wenn ihr die Kosten dafür tragt.</German>
 		<Russian>Милорд, Король очень доволен развитием Его колоний. Однако дела должны продвигаться еще быстрее – нам необходимо опередить другие европейские державы. Король подумывает направить к нам ещё одного хорошо подготовленного архитектора при условии, что вы покроете транспортные расходы.</Russian>
+		<Hungarian>Uram, a Király nagyon elégedett a gyarmatokon zajló fejleményekkel. Mindazonáltal a dolgok még gyorsabban is haladhatnának – egy lépéssel a többi európai hatalom előtt kell járnunk. A Király hajlandó lenne egy újabb jól képzett építészt küldeni a gyarmatokra – feltéve, hogy mi fedezzük a költségeket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ECCENTRIC_ARCHITECT_3</Tag>
@@ -6386,6 +6435,7 @@
 		<Portuguese>Senhor, a Coroa aprecia muito os seus esforços, mas é necessário mais e, acima de tudo, deve ser feito mais rapidamente. Oficinas, fortes e, sobretudo, edifícios residenciais devem ser construídos em abundância. A Coroa está disposta a lhe enviar outro especialista da Europa, desde que você pague pela passagem.</Portuguese>
 		<German>Sir, die Krone weiß Eure Antrengungen durchaus zu schätzen, aber man verlangt noch mehr und vor allem schneller. Es müssen Werkstätten, Forts und vor allem Wohnhäuser in Hülle und Fülle errichtet werden. Die Krone will euch einen weiteren Spezialisten aus Europa herüberschicken, wenn ihr die Überfahrt zahlt.</German>
 		<Russian>Милорд, Корона высоко ценит ваши усилия по развитию колоний, но требует увеличить количество разных зданий и скорость их возведения. В ещё большем количестве нужны мастерские, форты и, главное, жилые дома. Его Величество готов направить к нам ещё одного специалиста из Европы при условии, что вы оплатите проезд.</Russian>
+		<Hungarian>Uram, a Korona nagyra értékeli erőfeszítéseit, de ennél többre van szükség, és mindenekelőtt gyorsabban kell cselekedni. Rengeteg műhelyt, erődöt és mindenekelőtt lakóépületet kell építeni. A Korona hajlandó küldeni egy újabb szakértőt Európából, feltéve, hogy mi álljuk az utazási költségeket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_ARCHITECT_BAILIFF</Tag>
@@ -6411,6 +6461,7 @@
 		<Portuguese>É claro que a justiça deve ser mantida. Pode atrasar o desenvolvimento da colônia, mas não devemos violar as leis do rei.</Portuguese>
 		<German>Selbstverständlich, dem Recht muss zum Siege verholfen werden. Es wirft den Ausbau der Kolonie zwar zurück, aber wir dürfen nicht gegen königliche Gesetze verstoßen.</German>
 		<Russian>Конечно, справедливость должна восторжествовать. Это может затормозить развитие колонии, но мы не должны нарушать Королевские законы.</Russian>
+		<Hungarian>Természetesen az igazságosságot tiszteletben kell tartani. Lehet, hogy ez visszaveti a kolónia fejlődését, de nem szeghetjük meg a Király törvényeit.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_COMMIT_HELP</Tag>
@@ -6418,6 +6469,7 @@
 		<Portuguese>[ICON_BULLET]Um [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] é preso e levado de volta para a Europa.</Portuguese>
 		<German>[ICON_BULLET]Ein [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] wird festgenommen und nach Europa zurückgebracht.</German>
 		<Russian>[ICON_BULLET][COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] арестован и доставлен обратно в Европу.</Russian>
+		<Hungarian>[ICON_BULLET]Egy [COLOR_HIGHLIGHT_TEXT]%s1[COLOR_REVERT] letartóztatásra kerül és visszaviszik Európába.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_ARCHITECT_BAILIFF_PAY</Tag>
@@ -6605,6 +6657,7 @@
 		<Portuguese>[ICON_BULLET]O oficial está sendo designado para um pequeno posto avançado. Envie-o para um pequeno forte. Se você ainda não construiu um forte, transfira-o para lá assim que o fizer.</Portuguese>
 		<German>[ICON_BULLET]Der Offizier wird auf einen kleinen Außenposten versetzt. Schickt ihn in ein kleines Fort. Wenn ihr noch kein Fort errichtet habt, versetzt ihn umgehend sobald ihr es errichtet habt.</German>
 		<Russian>[ICON_BULLET]Офицера был отправлен нести службу на делёком аванпосту. Отправьте его в небольшой форт. Если вы ещё не построили форт, переведите офицера туда сразу же после окончания строительства.</Russian>
+		<Hungarian>[ICON_BULLET]A tisztet egy kis előőrsre osztják be. Egy kis erődbe küldd el! Ha még nem építettél erődöt, akkor amint megépíted, azonnal helyezd át oda.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_OFFICERS_WIFE_ARRIVAL</Tag>
@@ -6764,6 +6817,7 @@
 		<Portuguese>[ICON_BULLET]O trader nativo especialista se torna um trader nativo corajoso.</Portuguese>
 		<German>[ICON_BULLET]Der erfahrene Ureinwohnerhändler wird zu einem couragierten Ureinwohnerhändler.</German>
 		<Russian>[ICON_BULLET]Опытный торговец с индейцами становится Отважным торговцем с индейцами.</Russian>
+		<Hungarian>[ICON_BULLET]A tapasztalt indián kereskedőből bátor indián kereskedő lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_TRADER_MEETING_HELP</Tag>
@@ -6834,6 +6888,7 @@
 		<Portuguese>[ICON_BULLET]As relações com %s1 mudam em %s2.</Portuguese>
 		<German>[ICON_BULLET]Die Beziehungen zu den %s1 verändern sich um %s2.</German>
 		<Russian>[ICON_BULLET]Отношения с туземцами меняются с %s1 на %s2.</Russian>
+		<Hungarian>[ICON_BULLET]A kapcsolatod %s1 felé %s2 lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_NATIVE_CITY_HELP_ANGRY_ATTACK</Tag>
@@ -6841,6 +6896,7 @@
 		<Portuguese>[ICON_BULLET]Alguns nativos do %s1 estão com raiva ao ver seu chefe lhe dando um presente tão rico. Guerreiro hostil irá [COLOR_NEGATIVE_TEXT]atacar[COLOR_REVERT] você.</Portuguese>
 		<German>[ICON_BULLET]Einige Krieger der %s1 sind wütend und nicht damit einverstanden, dass ihr Häuptling Euch so reich beschenkt. Krieger werden Euch [COLOR_NEGATIVE_TEXT]angreifen[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET]Некоторые индейцы %s1 разгневаны, увидев, как их вождь дарит вам такой богатый подарок. Один из воинов [COLOR_NEGATIVE_TEXT]нападет[COLOR_REVERT] на вас.</Russian>
+		<Hungarian>[ICON_BULLET]Néhányan az indián %s1 népből dühösek, mert látják, hogy a főnökük ilyen értékes ajándékot ad neked. Egy ellenséges harcos [COLOR_NEGATIVE_TEXT]megtámad[COLOR_REVERT] téged.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_SEASONED_NATIVE_CITY_HELP_UNPLEASED</Tag>
@@ -6848,6 +6904,7 @@
 		<Portuguese>[ICON_BULLET]Os %s1 estão [COLOR_NEGATIVE_TEXT] descontentes[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Die %s1 sind [COLOR_NEGATIVE_TEXT] verärgert[COLOR_REVERT]. Sie hatten sich mehr von Eurem Besuch versprochen. Das wird nicht so schnell vergessen.</German>
 		<Russian>[ICON_BULLET]%s1 ожидали большего от вашего визита и выглядят [COLOR_NEGATIVE_TEXT]недовольными[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]%s1 [COLOR_NEGATIVE_TEXT] elégedetlenek[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SEASONED_TRADER_NATIVE_CITY_1</Tag>
@@ -7150,6 +7207,7 @@
 		<Portuguese>Deixa-me em paz com esse tipo de coisas; tenho outras coisas em que pensar neste momento.</Portuguese>
 		<German>Lasst mich mit sowas in Ruhe, ich habe gerade andere Sorgen.</German>
 		<Russian>Не тратьте моё время по пустякам, пусть служители Церкви разбираются с этим неудачником сами.</Russian>
+		<Hungarian>Ne zavarj ilyen dolgokkal! Most túl sok minden jár a fejemben.</Hungarian>
 	</TEXT>
  	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAILED_MISSIONARY_CLASSIC_COOLDOWN_HELP</Tag>
@@ -7157,6 +7215,7 @@
 		<Portuguese>[ICON_BULLET]A chance deste evento ocorrer novamente é [COLOR_NEGATIVE_TEXT]após este evento significativamente reduzida por %d1 turnos.[COLOR_REVERT]</Portuguese>
 		<German>[ICON_BULLET]Die Wahrscheinlichkeit, dass dieses Ereignis erneut eintritt, ist [COLOR_NEGATIVE_TEXT]danach für %d1 Runden deutlich verringert.[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Вероятность повторения этого события [COLOR_NEGATIVE_TEXT]значительно снижается в течение последующих %d1 ходов[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]Az esemény ismételt bekövetkezésének esélye [COLOR_NEGATIVE_TEXT]ezután %d1 körig jelentősen csökken.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_SUPERSTITIOUS_PIRATES</Tag>
@@ -7165,6 +7224,7 @@
 		<French>Dans [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] l'équipage pirate entend le fantôme de leur capitaine mort.</French>
 		<German>In [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] hat eine Piratencrew den Geist ihres toten Kapitäns gehört.</German>
 		<Russian>В городе [COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] пираты услышали голос своего мертвого капитана.</Russian>
+		<Hungarian>[COLOR_SELECTED_TEXT]%s2_city[COLOR_REVERT] kikötőjében egy kalózcsapatot meglátogatott elhunyt kapitányuk szelleme.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_SUPERSTITIOUS_PIRATES</Tag>
@@ -7272,6 +7332,7 @@
 		<Portuguese>Bem, o rei apreciará se mostrarmos moderação e tentarmos por conta própria.</Portuguese>
 		<German>Nun, der König wird es zu schätzen wissen, wenn wir uns in Zurückhaltung üben und es auf eigene Faust versuchen.</German>
 		<Russian>Его Величество оценит по достоинству, если мы проявим выдержку и попробуем сделать это самостоятельно.</Russian>
+		<Hungarian>Nos, a Király hálás lesz, ha visszafogottságot tanúsítunk, és saját erőből próbáljuk meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_START_CONQUISTADOR_HELP</Tag>
@@ -7311,6 +7372,7 @@
 		<Portuguese>Depois de muitos meses na selva indomada, um de seus batedores tornou-se uma figura de rara habilidade e renome.</Portuguese>
 		<German>Nach vielen Monaten in der ungezähmten Wildnis ist einer Eurer Kundschafter zu einer Gestalt von seltener Kunst und großem Ruf geworden.</German>
 		<Russian>После многих месяцев, проведенных в дикой местности, один из ваших разведчиков стал человеком исключительного мастерства и приобрёл большую известность.</Russian>
+		<Hungarian>A vadonban töltött hosszú hónapok után az egyik felderítőd bölcsességéről és kivételes képességeiről vált híressé.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_LEGENDARY_SCOUT</Tag>
@@ -7318,6 +7380,7 @@
 		<Portuguese>Longe do lar e das colônias, seu batedor aprendeu a ler a terra, suportar privações e se mudar para onde homens inferiores morreriam. Sua longa peregrinação fez dele uma lenda entre seu povo.</Portuguese>
 		<German>Fern von Herd und Siedlung hat Euer Kundschafter gelernt, das Land zu lesen, Entbehrung zu ertragen und sich dort zu bewegen, wo andere Männer zugrunde gingen. Sein langes Wandern hat ihn unter Eurem Volk zu einer Legende gemacht.</German>
 		<Russian>Вдали от европейских поселений ваш разведчик научился понимать местность, переносить лишения и выживать там, где менее выносливые люди погибли бы. Его долгие странствия сделали его легендой среди вашего народа.</Russian>
+		<Hungarian>Távol az otthontól és a településektől a felderítőd képes olvasni a tájban, elviselni a nélkülözést, és olyan helyekre eljutni, ahol a gyengébbek elpusztulnának. Távoli vándorlásai miatt legendává vált a néped körében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_LEGENDARY_SCOUT_1</Tag>
@@ -7325,6 +7388,7 @@
 		<Portuguese>Sua sabedoria arduamente conquistada servirá à colônia.</Portuguese>
 		<German>Seine mühsam errungene Erfahrung soll der Kolonie dienen.</German>
 		<Russian>Его ценный опыт должен принести пользу колонии.</Russian>
+		<Hungarian>A nehezen megszerzett bölcsessége a gyarmatok előnyére válik majd.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_LEGENDARY_SCOUT_XP_HELP</Tag>
@@ -7332,6 +7396,7 @@
 		<Portuguese>Este batedor passou cerca de %d1 turnos na selva fora do seu território e, portanto, tornou-se um Batedor Lendário, ganhando cerca de 15 a 20 de Experiência.</Portuguese>
 		<German>Dieser Kundschafter hat etwa %d1 Runden in der Wildnis außerhalb Eures Territoriums verbracht und ist dadurch zu einem Legendären Kundschafter geworden. Er erhält dabei etwa 15 bis 20 Erfahrung.</German>
 		<Russian>Этот разведчик провел примерно %d1 ходов в дикой местности за пределами вашей территории и, таким образом, стал Легендарным разведчиком, получив примерно от 15 до 20 очков опыта.</Russian>
+		<Hungarian>Ez a felderítő körülbelül %d1 körig a területed határain kívüli vadonban tartózkodott, és ezzel Legendás Felderítővé vált, 15–20 Tapasztalati pontot szerezve.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_LEGENDARY_SCOUT_XP_RESULT</Tag>
@@ -7339,6 +7404,7 @@
 		<Portuguese>Seu batedor ganha [COLOR_SELECTED_TEXT]%d1 Experiência[COLOR_REVERT] e se torna um [COLOR_SELECTED_TEXT]Lendário Batedor[COLOR_REVERT].</Portuguese>
 		<German>Euer Kundschafter erhält [COLOR_SELECTED_TEXT]%d1 Erfahrung[COLOR_REVERT] und wird zu einem [COLOR_SELECTED_TEXT]Legendären Kundschafter[COLOR_REVERT].</German>
 		<Russian>Ваш разведчик получает [COLOR_SELECTED_TEXT]%d1 опыта[COLOR_REVERT] и становится [COLOR_SELECTED_TEXT]Легендарным разведчиком[COLOR_REVERT].</Russian>
+		<Hungarian>A felderítőd [COLOR_SELECTED_TEXT]%d1 Tapasztalati Pontot szerez[COLOR_REVERT], és [COLOR_SELECTED_TEXT]Legendás Felderítővé[COLOR_REVERT] válik.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEGENDARY_SCOUT</Tag>
@@ -7346,6 +7412,7 @@
 		<Portuguese>Lendário Batedor</Portuguese>
 		<German>Legendärer Kundschafter</German>
 		<Russian>Легендарный разведчик</Russian>
+		<Hungarian>Legendás Felderítő</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_LEGENDARY_SCOUT_HELP</Tag>
@@ -7353,6 +7420,7 @@
 		<Portuguese>Este batedor passou muito tempo na selva, além da segurança de suas colônias, sobrevivendo às adversidades e dominando a terra. Sua experiência e reputação se tornaram lendas.</Portuguese>
 		<German>Dieser Kundschafter hat lange Zeit in der Wildnis jenseits der Sicherheit Eurer Kolonien verbracht, Entbehrungen überstanden und das Land gemeistert. Seine Erfahrung und sein Ruf sind zur Legende geworden.</German>
 		<Russian>Этот разведчик долгое время провел в дикой местности за пределами безопасных ваших поселений, преодолевая трудности и осваивая местность. Его опыт и репутация стали легендой.</Russian>
+		<Hungarian>Ez a felderítő hosszú ideje a vadonban él, távol a kolóniák biztonságától, túlélve a nehézségeket és megismerve a vidéket. Hírneve mára már legendássá vált.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_FEVER</Tag>
@@ -7384,6 +7452,7 @@
 		<Portuguese>A unidade %s1 foi atingida pela febre! Ele perde %d2%% de vida e fica imobilizado por %d3 turnos.</Portuguese>
 		<German>Die Einheit %s1 wurde von Fieber heimgesucht! Sie verliert %d2%% Gesundheit und ist für %d3 Runden kampfunfähig.</German>
 		<Russian>Юнит %s1 поражен лихорадкой! Он теряет %d2%% здоровья и не сможет действовать в течении %d3 ходов.</Russian>
+		<Hungarian>A lebetegedett %s1 egységet láz támadta meg! %d2%% életerőt veszít, és %d3 körig mozgásképtelen lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_FEVER_HELP</Tag>
@@ -7391,6 +7460,7 @@
 		<Portuguese>Uma febre tropical atinge a expedição. A unidade fica imobilizada por [COLOR_HIGHLIGHT_TEXT]%d1 a %d2 rodadas[COLOR_REVERT] e sofre de [COLOR_HIGHLIGHT_TEXT]%d3 a %d4[COLOR_REVERT] de dano. As unidades sobreviventes tornam-se imunes a mais febre.</Portuguese>
 		<German>Ein tropisches Fieber befällt die Expedition. Die Einheit wird für [COLOR_HIGHLIGHT_TEXT]%d1 bis %d2 Runden[COLOR_REVERT] bewegungsunfähig und erleidet [COLOR_HIGHLIGHT_TEXT]%d3 bis %d4[COLOR_REVERT] Schaden. Überlebende Einheiten werden immun gegen weiteres Fieber.</German>
 		<Russian>Экспедиция поражена тропической лихорадкой. Юнит получает от [COLOR_HIGHLIGHT_TEXT]%d3 до %d4 урона[COLOR_REVERT] и будет обездвижен от [COLOR_HIGHLIGHT_TEXT]%d1 до %d2[COLOR_REVERT] ходов. Выжившие юниты становятся невосприимчивы к дальнейшему заражению лихорадкой.</Russian>
+		<Hungarian>Trópusi láz tör ki az expedícióban. Az egység [COLOR_HIGHLIGHT_TEXT]%d1–%d2 körig[COLOR_REVERT] mozgásképtelenné válik, és [COLOR_HIGHLIGHT_TEXT]%d3–%d4[COLOR_REVERT] életerőt veszít. A túlélő egységek immúnisak lesznek a további lázra.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FEVER_IMMUNE</Tag>
@@ -7398,6 +7468,7 @@
 		<Portuguese>Sobrevivente de uma febre tropical (imune à febre tropical)</Portuguese>
 		<German>Fieberüberlebender (immun gegen tropisches Fieber)</German>
 		<Russian>Переживший тропическую лихорадку (имеет иммунитет к тропической лихорадке).</Russian>
+		<Hungarian>Trópusi láz túlélője (immunis a trópusi lázra)</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_PROMOTION_FEVER_IMMUNE_HELP</Tag>
@@ -7405,6 +7476,7 @@
 		<Portuguese>Esta unidade sobreviveu à febre tropical e agora está imune a ela.</Portuguese>
 		<German>Diese Einheit hat tropisches Fieber überstanden und ist dagegen immun.</German>
 		<Russian>Этот юнит пережил тропическую лихорадку и обладает иммунитетом к ней.</Russian>
+		<Hungarian>Ez az egység túlélte a trópusi lázat, és most már immunis rá.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_DESERT</Tag>
@@ -7436,6 +7508,7 @@
 		<Portuguese>A unidade pode ficar [COLOR_HIGHLIGHT_TEXT]imobilizada por %d1 a %d2 turnos[COLOR_REVERT] e sofrer de [COLOR_HIGHLIGHT_TEXT]%d3%% a %d4%% danos[COLOR_REVERT] devido ao calor extremo e exaustão.</Portuguese>
 		<German>Die Einheit kann durch extreme Hitze und [COLOR_HIGHLIGHT_TEXT]Erschöpfung für %d1 bis %d2 Runden bewegungsunfähig[COLOR_REVERT] werden und [COLOR_HIGHLIGHT_TEXT]%d3%% bis %d4%% Schaden[COLOR_REVERT] erleiden.</German>
 		<Russian>Юнит может быть обездвижен на %d1 – %d2 ходов и получить %d3%% - %d4%% повреждений из-за сильного перегрева и истощения.</Russian>
+		<Hungarian>Az egység [COLOR_HIGHLIGHT_TEXT]%d1–%d2 körre mozgásképtelenné válhat[COLOR_REVERT], és [COLOR_HIGHLIGHT_TEXT]%d3%%–%d4%% életerőt veszíthet[COLOR_REVERT] a rendkívüli hőség és a kimerültség miatt.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_DESERT_RESULT</Tag>
@@ -7443,6 +7516,7 @@
 		<Portuguese>O deserto implacável enfraquece %s1. Os homens sofrem %d2%% de dano e são atrasados por %d3 turnos.</Portuguese>
 		<German>Die erbarmungslose Wüste schwächt %s1. Die Männer erleiden %d2%% Schaden und werden für %d3 Runden aufgehalten.</German>
 		<Russian>Юнит %s1 истощён пустыней. Он теряет %d2%% здоровья и будет обездвижен на %d3 хода.</Russian>
+		<Hungarian>A kegyetlen sivatag legyengíti az ott lévő %s1 egységet. A férfiak %d2%% életerőt veszítenek, és %d3 körig nem tudnak továbbhaladni.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACKED</Tag>
@@ -7474,6 +7548,7 @@
 		<Portuguese>Nativos hostis atacam a expedição em uma emboscada.</Portuguese>
 		<German>Feindliche Ureinwohner greifen die Expedition aus dem Hinterhalt an.</German>
 		<Russian>Враждебно настроенные индейцы нападают на экспедицию из засады.</Russian>
+		<Hungarian>Az ellenséges Indiánok lesből támadják meg az expedíciót.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_ATTACK_TREASURE_1</Tag>
@@ -7561,6 +7636,7 @@
 		<Portuguese>Você acalma os homens inquietos de %s1 pagando 500 ouro. A ordem é restaurada e a unidade ganha movimento adicional neste turno.</Portuguese>
 		<German>Ihr beruhigt die unruhigen Männer von %s1, indem Ihr 500 Gold zahlt. Die Ordnung wird wiederhergestellt und die Einheit erhält für diese Runde zusätzliche Bewegung.</German>
 		<Russian>Вы успокаиваете возбуждённых %s1, заплатив им 500 золотых. Порядок восстанавливается и отряд получает дополнительное перемещение в этом ходу.</Russian>
+		<Hungarian>500 arany kifizetésével megnyugtatod %s1 nyugtalan katonáit. A rend helyreáll, és az egység ebben a körben további mozgáspontot kap.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_BRAVE_FELLOWS</Tag>
@@ -7592,6 +7668,7 @@
 		<Portuguese>[ICON_BULLET]Alguns nativos [COLOR_POSITIVE_TEXT]se juntarão[COLOR_REVERT] à sua expedição, permitindo que você divida sua expedição. As relações com a tribo melhoram em [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]. A unidade fica [COLOR_NEGATIVE_TEXT]imóvel por 2 turnos[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Einige Ureinwohner werden sich Eurer Expedition [COLOR_POSITIVE_TEXT]anschließen[COLOR_REVERT], wodurch Ihr die Expedition aufteilen könnt. Die Beziehungen zu dem Stamm verbessern sich um [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]. Die Einheit ist für [COLOR_NEGATIVE_TEXT]2 Runden bewegungsunfähig[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET]Несколько индейцев присоединятся к вашей экспедиции. Отношения с племенем улучшатся на [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]. Юнит [COLOR_NEGATIVE_TEXT]не сможет действовать[COLOR_REVERT] в течении [COLOR_NEGATIVE_TEXT]2 ходов[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]Néhány Indián [COLOR_POSITIVE_TEXT]csatlakozik[COLOR_REVERT] az expedíciódhoz, így lehetőséged nyílik annak felosztására. A törzzsel való kapcsolat [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT] ponttal javul. Az egység [COLOR_NEGATIVE_TEXT]2 körre mozgásképtelenné válik[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2</Tag>
@@ -7599,6 +7676,7 @@
 		<Portuguese>Agradecemos aos guerreiros desta corajosa tribo. Já seria suficiente se você nos familiarizasse com a área ao redor de sua aldeia.</Portuguese>
 		<German>Wir danken den Kriegern dieses tapferen Stammes. Es würde schon reichen, wenn Sie uns eine Karte von der Umgebung zeichnen würden.</German>
 		<Russian>Мы благодарны воинам этого храброго племени. Но мы хотели бы попросить их нарисовать нам карту этой местности.</Russian>
+		<Hungarian>Köszönetet mondunk e bátor törzs harcosainak. Már az is elég lenne, ha megismertetnétek velünk a falutok környékét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_2_News</Tag>
@@ -7606,6 +7684,7 @@
 		<Portuguese>Uma expedição aprende sobre uma aldeia nativa americana e seus arredores.</Portuguese>
 		<German>Eine Expedition lernt etwas über ein Indianerdorf und seine Umgebung.</German>
 		<Russian>Участники экспедиции узнают подробности о деревне туземцев и её окрестностях.</Russian>
+		<Hungarian>Egy expedíció megismer egy Amerikai Indián falut és annak környékét.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_HELP_2</Tag>
@@ -7613,6 +7692,7 @@
 		<Portuguese>[ICON_BULLET]Pague %d1[ICON_GOLD] para revelar uma área %d2 x %d3 ao redor da aldeia e melhorar as relações com a tribo em [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Zahle %d1[ICON_GOLD], um ein Gebiet von %d2 x %d3 Feldern um das Dorf aufzudecken und die Beziehungen zu dem Stamm um [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT] zu verbessern.</German>
 		<Russian>[ICON_BULLET]Заплатите индейцам %d1[ICON_GOLD], чтобы открыть область %d2 x %d3 вокруг деревни и улучшить отношения с племенем на [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]Fizetsz %d1[ICON_GOLD]-t, hogy feltárd a falu körüli %d2 x %d3 méretű területet, és [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]-gyel javítsd a törzzsel való kapcsolatodat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_HELP_2_FRIENDLY</Tag>
@@ -7620,6 +7700,7 @@
 		<Portuguese>[ICON_BULLET]Pague %d1[ICON_GOLD] para revelar uma área %d2 x %d3 ao redor da aldeia e melhorar as relações com a tribo em [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]. À medida que a tribo tem grande consideração por você, eles revelam ainda mais sobre as terras vizinhas.</Portuguese>
 		<German>[ICON_BULLET]Zahle %d1[ICON_GOLD], um ein Gebiet von %d2 x %d3 Feldern um das Dorf aufzudecken und die Beziehungen zu dem Stamm um [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT] zu verbessern. Da der Stamm Euch wohlgesinnt ist, offenbart er Euch ein größeres Gebiet der Umgebung.</German>
 		<Russian>[ICON_BULLET]Заплатите индейцам %d1[ICON_GOLD], чтобы открыть область %d2 x %d3 вокруг деревни и улучшить отношения с племенем на [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]. Поскольку племя относится к вам с большим уважением, оно откроет вам еще больше окружающих земель.</Russian>
+		<Hungarian>[ICON_BULLET]Fizetsz %d1[ICON_GOLD]-t, hogy feltárd a falu körüli %d2 x %d3 méretű területet, és [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]-gyel javítsd a törzzsel való kapcsolatodat. Mivel a törzs nagyra tart téged, még több környező területet mutat meg neked.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_3</Tag>
@@ -7643,6 +7724,7 @@
 		<Portuguese>[ICON_BULLET]Ganhe [COLOR_POSITIVE_TEXT]+3 Experiência[COLOR_REVERT], melhore as relações com a tribo em [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT], mas a unidade fica [COLOR_NEGATIVE_TEXT]imóvel por 2 turnos[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Erhalte [COLOR_POSITIVE_TEXT]+3 Erfahrung[COLOR_REVERT], verbessere die Beziehungen zu dem Stamm um [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT], aber die Einheit ist für [COLOR_NEGATIVE_TEXT]2 Runden bewegungsunfähig[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET]Получите [COLOR_POSITIVE_TEXT]+3 опыта[COLOR_REVERT], улучшите отношения с племенем на [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]. Юнит [COLOR_NEGATIVE_TEXT]не сможет действовать[COLOR_REVERT] в течении [COLOR_NEGATIVE_TEXT]2 ходов[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_POSITIVE_TEXT]+3 Tapasztalati Pontot kapsz[COLOR_REVERT], a törzzsel való kapcsolatod [COLOR_POSITIVE_TEXT]+1-gyel javul[COLOR_REVERT], de az egység 2 körre [COLOR_NEGATIVE_TEXT]mozgásképtelenné válik[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_BRAVE_FELLOWS_HELP_3_FRIENDLY</Tag>
@@ -7650,6 +7732,7 @@
 		<Portuguese>[ICON_BULLET]Ganhe [COLOR_POSITIVE_TEXT]+4 Experiência[COLOR_REVERT], melhore as relações com a tribo em [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT], mas a unidade fica [COLOR_NEGATIVE_TEXT]imóvel por 2 turnos[COLOR_REVERT]. A boa vontade da tribo concede conselhos especialmente valiosos.</Portuguese>
 		<German>[ICON_BULLET]Erhalte [COLOR_POSITIVE_TEXT]+4 Erfahrung[COLOR_REVERT], verbessere die Beziehungen zu dem Stamm um [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT], aber die Einheit ist für [COLOR_NEGATIVE_TEXT]2 Runden bewegungsunfähig[COLOR_REVERT]. Die Wohlgesonnenheit des Stammes macht ihren Rat besonders wertvoll.</German>
 		<Russian>[ICON_BULLET]Получите [COLOR_POSITIVE_TEXT]+4 опыта[COLOR_REVERT], улучшите отношения с племенем на [COLOR_POSITIVE_TEXT]+1[COLOR_REVERT]. Юнит [COLOR_NEGATIVE_TEXT]не сможет действовать[COLOR_REVERT] в течении [COLOR_NEGATIVE_TEXT]2 ходов[COLOR_REVERT]. Благодаря доброжелательности членов племени их советы особенно ценны.</Russian>
+		<Hungarian>[ICON_BULLET][COLOR_POSITIVE_TEXT]+4 Tapasztalati Pontot kapsz[COLOR_REVERT], a törzzsel való kapcsolatod [COLOR_POSITIVE_TEXT]+1-gyel javul[COLOR_REVERT], de az egység 2 körre [COLOR_NEGATIVE_TEXT]mozgásképtelenné válik[COLOR_REVERT]. A törzs jóindulata különösen értékes tanácsokat biztosít.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_TRADER</Tag>
@@ -7689,6 +7772,7 @@
 		<Portuguese>[ICON_BULLET]Por %D1 ouro, um trader nativo fracassado se torna um [COLOR_HIGHLIGHT_TEXT]comerciante nativo experiente[COLOR_REVERT] novamente. [ICON_BULLET]Sua experiência e promoções serão mantidas. [ICON_BULLET]Há uma %D2 chance de que ele se torne um [COLOR_POSITIVE_TEXT]comerciante experiente[COLOR_REVERT]. [ICON_BULLET]Depois disso, a chance deste evento ocorrer novamente é significativamente [COLOR_NEGATIVE_TEXT]reduzida em %D3 turnos[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Für %D1 Gold wird aus dem gescheiterten Ureinwohnerhändler wieder ein [COLOR_HIGHLIGHT_TEXT]erfahrener Ureinwohnerhändler[COLOR_REVERT]. [ICON_BULLET]Seine Erfahrung und seine Beförderungen bleiben erhalten. [ICON_BULLET]Mit einer Chance von %D2%% wird er stattdessen sogar zu einem [COLOR_POSITIVE_TEXT]altgedienten Ureinwohnerhändler[COLOR_REVERT]. [ICON_BULLET]Danach wird sich diese Wahrscheinlichkeit [COLOR_NEGATIVE_TEXT]für %D3 Runden deutlich verringern, dass das wieder passiert[COLOR_REVERT].</German>
 		<Russian>[ICON_BULLET]За %D1 золота Неудачливый торговец с индейцами снова становится [COLOR_HIGHLIGHT_TEXT]Опытным торговцем с индейцами[COLOR_REVERT].[NEWLINE][ICON_BULLET]Его опыт и повышения будут сохранены.[NEWLINE][ICON_BULLET]С вероятностью %D2%% вместо этого он станет [COLOR_POSITIVE_TEXT]Отважным торговцем с индейцами[COLOR_REVERT].[NEWLINE][ICON_BULLET]После этого такая возможность больше [COLOR_NEGATIVE_TEXT]не возникнет в течение %D3 ходов[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]%D1 aranyért cserébe a bukott indián kereskedő ismét [COLOR_HIGHLIGHT_TEXT]tapasztalt indián kereskedővé[COLOR_REVERT] válik. [ICON_BULLET]Tapasztalata és előléptetései megmaradnak. [ICON_BULLET]%D2 esély van arra, hogy ehelyett [COLOR_POSITIVE_TEXT]bátor kereskedővé[COLOR_REVERT] váljon. [ICON_BULLET]Ezt követően ennek az eseménynek a bekövetkezési esélye jelentősen [COLOR_NEGATIVE_TEXT]csökken %D3 körre[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FAILED_TRADER_CHANGE_DECLINE_HELP</Tag>
@@ -7696,6 +7780,7 @@
 		<Portuguese>[ICON_BULLET]O comerciante que falhou permanece inalterado. [ICON_BULLET]Depois disso, esta oportunidade [COLOR_NEGATIVE_TEXT]não surgirá novamente por pelo menos %D1 turnos[COLOR_REVERT].</Portuguese>
 		<German>[ICON_BULLET]Der gescheiterte Ureinwohnerhändler bleibt unverändert. [ICON_BULLET]Danach wird sich diese Gelegenheit für [COLOR_NEGATIVE_TEXT]mindestens %D1 Runden nicht erneut[COLOR_REVERT] ergeben.</German>
 		<Russian>[ICON_BULLET]Неудачливый торговец с индейцами остается самим собой.[NEWLINE][ICON_BULLET]В дальнейшем эта возможность [COLOR_NEGATIVE_TEXT]не возникнет снова как минимум в течение %D1 ходов[COLOR_REVERT].</Russian>
+		<Hungarian>[ICON_BULLET]A bukott kereskedő változatlan marad. [ICON_BULLET]Ezt követően ez a lehetőség [COLOR_NEGATIVE_TEXT]legalább %D1 körig nem fog ismét felmerülni[COLOR_REVERT].</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_FAILED_TRADER_SEASONED_RESULT</Tag>
@@ -7703,6 +7788,7 @@
 		<Portuguese>Contra todas as probabilidades, o homem retorna não apenas restaurado, mas endurecido pelas provações. O que antes era um comerciante fracassado agora está diante de você como um [COLOR_HIGHLIGHT_TEXT]comerciante nativo experiente[COLOR_REVERT], carregando um conhecimento das coisas selvagens que poucos possuem.</Portuguese>
 		<German>Wider aller Erwartungen hat sich der Mann nicht nur gut erholt, sondern ist gestählt durch seine Prüfungen. Was einst ein gescheiterter Händler war, steht nun als [COLOR_HIGHLIGHT_TEXT]couragierter Ureinwohnerhändler[COLOR_REVERT] vor Euch, im Besitz von Wissen über die Wildnis, das nur wenige besitzen.</German>
 		<Russian>Вопреки всему, этот человек возвращается не просто восстановившимся, но и закаленным испытаниями. Тот, кто когда-то был неудачливым торговцем, теперь предстает перед вами как [COLOR_HIGHLIGHT_TEXT]Отважный торговец с индейцами[COLOR_REVERT], обладающий знаниями о дикой местности, которыми мало кто может похвастаться.</Russian>
+		<Hungarian>Minden várakozás ellenére a férfi nem csupán felépülve tér vissza, hanem a megpróbáltatások által megedződve. Aki egykor bukott kereskedő volt, most [COLOR_HIGHLIGHT_TEXT]bátor indián kereskedőként[COLOR_REVERT] áll előtted, olyan ismeretekkel a vadonról, amellyel kevesen rendelkeznek.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENTTRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
@@ -7710,7 +7796,7 @@
 		<Portuguese>Um missionário fracassado encontrou o caminho de volta à civilização vindo do deserto.</Portuguese>
 		<German>Ein gescheiterter Missionar hat aus der Wildnis zurück in die Zivilisation gefunden.</German>
 		<Russian>Неудачливый миссионер нашел путь обратно к цивилизации из дикой местности.</Russian>
-		<Hungarian>Egy bukott misszionárius visszatalált a civilizációba a vadonból.</Hungarian>
+		<Hungarian>Egy hitehagyott misszionárius visszatalált a civilizációba a vadonból.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY</Tag>
@@ -7718,7 +7804,7 @@
 		<Portuguese>Milord, um [COLOR_HIGHLIGHT_TEXT]missionário fracassado[COLOR_REVERT] recentemente voltou do deserto. Que bênção! Agora ele está recuperado e quer voltar para os Nativos. Pregar a palavra de Deus deve estar em seu sangue.</Portuguese>
 		<German>Milord, ein [COLOR_HIGHLIGHT_TEXT]gescheiterter Missionar[COLOR_REVERT] hat aus der Wildnis zurück in die Kolonien gefunden. Welch ein Segen. Nachdem er sich erholt hat, ist er bereit nochmals zu den Ureinwohnern aufzubrechen. Das Wort Gottes zu verkünden liegt ihm einfach im Blut.</German>
 		<Russian>Милорд, [COLOR_HIGHLIGHT_TEXT]неудачливый миссионер[COLOR_REVERT] вернулся из пустошей в колонию. Господь был милостив к нему. И теперь, когда он поправил пошатнувшееся за время скитаний здоровье, он готов вернуться к аборигенам и с новыми силами нести Слово Божье заблудшим душам.</Russian>
-		<Hungarian>Uram, egy [COLOR_HIGHLIGHT_TEXT]bukott misszionárius[COLOR_REVERT] nemrég tért vissza a vadonból. Micsoda áldás! Most már felépült és vissza akar térni az Indiánokhoz. Isten igéjének hirdetése minden bizonnyal a vérében van.</Hungarian>
+		<Hungarian>Uram, egy [COLOR_HIGHLIGHT_TEXT]hitehagyott misszionárius[COLOR_REVERT] nemrég tért vissza a vadonból. Micsoda áldás! Most már felépült és vissza akar térni az Indiánokhoz. Isten igéjének hirdetése minden bizonnyal a vérében van.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_CHANGE_FAILED_MISSIONARY_1</Tag>
@@ -7742,7 +7828,7 @@
 		<Portuguese>[ICON_BULLET]Um missionário fracassado se torna um missionário cristão novamente.[NEWLINE]Sua experiência e [COLOR_POSITIVE_TEXT]promoções serão retidas.[COLOR_REVERT] A chance deste evento ocorrer novamente é [COLOR_NEGATIVE_TEXT]significativamente reduzida nos próximos %D1 turnos.[COLOR_REVERT]</Portuguese>
 		<German>[ICON_BULLET]Ein gescheiterter Missionar wird wieder zu einem erfahrenen Missionar.[NEWLINE]Seine Erfahrung und seine Beförderungen bleiben [COLOR_POSITIVE_TEXT]erhalten.[COLOR_REVERT] Die Wahrscheinlichkeit, dass dieses Ereignis erneut eintritt, ist [COLOR_NEGATIVE_TEXT]für die nächsten %D1 Runden deutlich verringert.[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Разочаровавшийся миссионер снова становится христианским миссионером.[NEWLINE]Его опыт и повышения будут сохранены.</Russian>
-		<Hungarian>[ICON_BULLET]Egy bukott misszionárius újra Keresztény misszionárius lesz.</Hungarian>
+		<Hungarian>[ICON_BULLET]Egy hitehagyott misszionárius újra Keresztény misszionárius lesz.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_DISCOVERY_EVENTS_FAILED_MISSIONARY_CHANGE_DECLINE_HELP</Tag>
@@ -7750,6 +7836,7 @@
 		<Portuguese>[ICON_BULLET]O missionário fracassado permanece inalterado. A chance deste evento ocorrer novamente é [COLOR_NEGATIVE_TEXT]reduzida significativamente nos próximos %D1 turnos.[COLOR_REVERT]</Portuguese>
 		<German>[ICON_BULLET]Der gescheiterte Missionar bleibt unverändert. Die Wahrscheinlichkeit, dass dieses Ereignis erneut eintritt, ist [COLOR_NEGATIVE_TEXT]für die nächsten %D1 Runden deutlich verringert.[COLOR_REVERT]</German>
 		<Russian>[ICON_BULLET]Неудачливый миссионер остаётся самим собой.</Russian>
+		<Hungarian>[ICON_BULLET]A hitehagyott misszionárius állapota változatlan marad. Ennek az eseménynek a bekövetkezési esélye a következő %D1 körben [COLOR_NEGATIVE_TEXT]jelentősen csökken.[COLOR_REVERT]</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_REVOLUTIONARY_EVENTS_FAKE_NEWS</Tag>
@@ -8357,6 +8444,7 @@
 		<Portuguese>Envie um [COLOR_HIGHLIGHT_TEXT]comerciante nativo especializado[COLOR_REVERT] para o %s1 para facilitar futuras negociações.</Portuguese>
 		<German>Schickt einen [COLOR_HIGHLIGHT_TEXT]erfahrenen Ureinwohnerhändler[COLOR_REVERT] zu den %s1, um weiteren Handel zu ermöglichen. </German>
 		<Russian>Отправьте [COLOR_HIGHLIGHT_TEXT]опытного трейдера [COLOR_REVERT] на %s1 для содействия дальнейшей торговле.</Russian>
+		<Hungarian>Küldj egy [COLOR_HIGHLIGHT_TEXT]szakértő indián kereskedőt[COLOR_REVERT] a távoli %s1 területére a további kereskedelem elősegítése érdekében.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVES_BETRAYAL_1</Tag>
@@ -8364,6 +8452,7 @@
 		<Portuguese>Eles podem manter seus suprimentos. Dê a eles algumas caixas de mercadorias comerciais. Isso é dinheiro bem gasto.</Portuguese>
 		<German>Wir handeln doch immer gerne. Sagt ihnen, dass wir bald Händler zu Ihnen schicken werden.</German>
 		<Russian>Мы с удовольствием будем развивать наше сотрудничество. Передайте индейцам, что мы скоро пришлем к ним торговцев.</Russian>
+		<Hungarian>Hadd tartsák meg az ellátmányukat. Adjunk nekik néhány ládányi dísztárgyat. Ez jó befektetés.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRADE_WITH_NATIVE_BETRAYAL_HELP</Tag>
@@ -8475,6 +8564,7 @@
 		<Portuguese>Diga a eles que entregaremos [COLOR_HIGHLIGHT_TEXT]cavalos[COLOR_REVERT] na aldeia deles. Se eles perceberem que nossa força também pode servir à [COLOR_HIGHLIGHT_TEXT]amizade[COLOR_REVERT], essa tensão ainda poderá ser resolvida pacificamente.</Portuguese>
 		<German>Sagt ihnen, dass wir [COLOR_HIGHLIGHT_TEXT]Pferde[COLOR_REVERT] in ihr Dorf liefern werden. Wenn sie sehen, dass unsere Stärke auch der [COLOR_HIGHLIGHT_TEXT]Freundschaft[COLOR_REVERT] dienen kann, lässt sich diese Spannung vielleicht noch friedlich beilegen.</German>
 		<Russian>Передайте им, что мы доставим [COLOR_HIGHLIGHT_TEXT]лошадей[COLOR_REVERT] в их деревню. Если они увидят, что наша сила может также служить [COLOR_HIGHLIGHT_TEXT]дружбе[COLOR_REVERT], возможно, эту напряженность ещё можно будет разрешить мирным путем.</Russian>
+		<Hungarian>Mondd meg nekik, hogy [COLOR_HIGHLIGHT_TEXT]lovakat[COLOR_REVERT] szállítunk a falujukba. Ha meglátják, hogy erőnk a [COLOR_HIGHLIGHT_TEXT]barátság[COLOR_REVERT] szolgálatára is állhat, akkor ez a feszültség még békésen rendeződhet.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_2</Tag>
@@ -8482,6 +8572,7 @@
 		<Portuguese>Dê a eles um [COLOR_HIGHLIGHT_TEXT]presente menor [COLOR_REVERT]de nossos estábulos imediatamente. Não é tudo o que eles pediram, mas deve [COLOR_HIGHLIGHT_TEXT]acalmá-los[COLOR_REVERT] por enquanto.</Portuguese>
 		<German>Gebt ihnen sofort ein [COLOR_HIGHLIGHT_TEXT]kleineres Geschenk[COLOR_REVERT] aus unseren eigenen Ställen. Es ist nicht alles, was sie verlangt haben, aber es sollte sie fürs Erste [COLOR_HIGHLIGHT_TEXT]beruhigen[COLOR_REVERT].</German>
 		<Russian>Передайте им [COLOR_HIGHLIGHT_TEXT]несколько лошадей в виде подарка[COLOR_REVERT] из наших конюшен. Это, конечно, не то, о чём они просили, но должно [COLOR_HIGHLIGHT_TEXT]успокоить[COLOR_REVERT] их на время.</Russian>
+		<Hungarian>Adjunk nekik azonnal egy [COLOR_HIGHLIGHT_TEXT]kisebb ajándékot [COLOR_REVERT] a saját készletünkből. Ez ugyan nem minden, amit kértek, de egyelőre [COLOR_HIGHLIGHT_TEXT]megnyugtatja[COLOR_REVERT] őket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_3</Tag>
@@ -8497,6 +8588,7 @@
 		<Portuguese>Os cavalos solicitados chegaram à aldeia indígena. Os chefes ficam satisfeitos e as relações com a tribo melhoram.</Portuguese>
 		<German>Die geforderten Pferde haben das Indianerdorf erreicht. Die Häuptlinge sind zufrieden, und die Beziehungen zu diesem Stamm verbessern sich.</German>
 		<Russian>Запрошенные лошади прибыли в деревню индейцев. Вожди довольны и отношения с племенем улучшаются.</Russian>
+		<Hungarian>A kért lovak megérkeztek az Indián faluba. A törzsfőnökök elégedettek, és a törzzsel való kapcsolat javul.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_DONE</Tag>
@@ -8504,6 +8596,7 @@
 		<Portuguese>Excelente, então todos podem relaxar novamente. Esperemos que os índios também demitam por enquanto.</Portuguese>
 		<German>Ausgezeichnet, dann können sich ja alle wieder beruhigen. Hoffen wir, dass auch die Indianer erst mal Ruhe geben.</German>
 		<Russian>Отлично, мы разрядили ситуацию и можем быть спокойны. Будем надеяться, что и индейцы тоже перестанут донимать наши поселения набегами.</Russian>
+		<Hungarian>Remek, akkor mindenki újra megnyugodhat. Reméljük, hogy az Indiánok is egyelőre békén hagynak minket.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_WN_1</Tag>
@@ -8511,6 +8604,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] prometeram entregar cavalos a uma aldeia indígena próxima.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat zugesagt, Pferde an ein nahegelegenes Indianerdorf zu liefern.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] пообещали доставить лошадей в расположенную неподалеку деревню туземцев.</Russian>
+		<Hungarian>A haszonleső [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] gyarmatok megígérték, hogy lovakat szállítanak egy közeli Indián faluba.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_WN_2</Tag>
@@ -8518,6 +8612,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] enviaram um presente menor em cavalos para acalmar uma aldeia nativa próxima, embora não sem algum ressentimento.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat ein kleineres Geschenk an Pferden geschickt, um ein nahegelegenes Indianerdorf zu beruhigen, wenn auch nicht ohne Verstimmung.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отправили небольшой подарок в виде лошадей, чтобы успокоить жителей расположенной неподалеку туземной деревни, хотя и не без некоторого недовольства среди колонистов.</Russian>
+		<Hungarian>A haszonleső [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] gyarmatok kisebb mennyiségű lovat ajándékoztak a közeli Indián falunak, hogy megnyugtassák őket, bár ez némi ellenérzést váltott ki.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_WN_3</Tag>
@@ -8525,6 +8620,7 @@
 		<Portuguese>Os [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] recusaram a demanda nativa por cavalos, piorando as relações com a tribo.</Portuguese>
 		<German>Das [COLOR_HIGHLIGHT_TEXT]%s1:2_civ_adjective[COLOR_REVERT] Königreich hat die Forderung der Indianer nach Pferden zurückgewiesen, wodurch sich die Beziehungen zu diesem Stamm verschlechtern.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] отказались выполнить требование индейцев о предоставлении лошадей, что ухудшило отношения с племенем.</Russian>
+		<Hungarian>A fukar [COLOR_HIGHLIGHT_TEXT]%s1_civ_adjective[COLOR_REVERT] gyarmatok elutasították az Indiánok ló iránti igényét, ami tovább rontotta a törzzsel való viszonyukat.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_WN_DONE</Tag>
@@ -8532,6 +8628,7 @@
 		<Portuguese>Os cavalos prometidos chegaram à aldeia indígena, aliviando as tensões com a tribo.</Portuguese>
 		<German>Die versprochenen Pferde sind im Indianerdorf angekommen und entspannen die Lage mit diesem Stamm.</German>
 		<Russian>Обещанные лошади прибыли в деревню индейцев, что ослабило напряженность в отношениях с племенем.</Russian>
+		<Hungarian>Az ígért lovak megérkeztek az Indián faluba, enyhítve ezzel a törzzsel fennálló feszültséget.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_QUEST_HELP</Tag>
@@ -8539,6 +8636,7 @@
 		<Portuguese>Entregue [COLOR_HIGHLIGHT_TEXT]%d1 cavalos em %d2 turnos[COLOR_REVERT] à aldeia nativa selecionada [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT].</Portuguese>
 		<German>Liefert [COLOR_HIGHLIGHT_TEXT]innerhalb von %d2 Runden %d1 Pferde[COLOR_REVERT] in das ausgewählte Indianerdorf [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT].</German>
 		<Russian>Доставить [COLOR_HIGHLIGHT_TEXT]%d1 лошадей в течение %d2 ходов[COLOR_REVERT] в выбранную деревню индейцев [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT].</Russian>
+		<Hungarian>Szállíts le [COLOR_HIGHLIGHT_TEXT]%d1 lovat %d2 körön belül[COLOR_REVERT] a kiválasztott Indián falu, [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT] lakóinak.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_IMMEDIATE_HELP</Tag>
@@ -8546,6 +8644,7 @@
 		<Portuguese>[COLOR_HIGHLIGHT_TEXT]%d1 cavalos[COLOR_REVERT] serão retirados do depósito em [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT] e entregues à aldeia nativa.</Portuguese>
 		<German>[COLOR_HIGHLIGHT_TEXT]%d1 Pferde[COLOR_REVERT] werden aus dem Lager in [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT] entnommen und dem Indianerdorf übergeben.</German>
 		<Russian>[COLOR_HIGHLIGHT_TEXT]%d1 лошадей[COLOR_REVERT] будут взяты со склада в городе [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT] и переданы в деревню индейцев.</Russian>
+		<Hungarian>[COLOR_HIGHLIGHT_TEXT]%d1 ló[COLOR_REVERT] kerül ki [COLOR_HIGHLIGHT_TEXT]%s3_city[COLOR_REVERT] raktárából, és átadásra kerül az Indián falu számára.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_STIRRED_UP_NATIVES_HORSES_TARGET_MARKER</Tag>
@@ -8553,6 +8652,7 @@
 		<Portuguese>Os cavalos solicitados devem ser entregues em [COLOR_HIGHLIGHT_TEXT]%s1_city[COLOR_REVERT].</Portuguese>
 		<German>Die geforderten Pferde müssen nach [COLOR_HIGHLIGHT_TEXT]%s1_city[COLOR_REVERT] geliefert werden.</German>
 		<Russian>Запрошенных лошадей необходимо доставить в [COLOR_HIGHLIGHT_TEXT]%s1_city[COLOR_REVERT].</Russian>
+		<Hungarian>A kért lovakat [COLOR_HIGHLIGHT_TEXT]%s1_city[COLOR_REVERT] lakóinak kell szállítani.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_FAIL_STIRRED_UP_NATIVES_HORSES</Tag>
@@ -8560,6 +8660,7 @@
 		<Portuguese>A entrega prometida do cavalo não foi concluída.</Portuguese>
 		<German>Die zugesagte Lieferung der Pferde wurde nicht abgeschlossen.</German>
 		<Russian>Обещанная поставка лошадей не была осуществлена.</Russian>
+		<Hungarian>Az ígért lószállítás nem valósult meg.</Hungarian>
 	</TEXT>
 	<TEXT>
 		<Tag>TXT_KEY_EVENT_TRIGGER_STIRRED_UP_NATIVES_MUSKETS_1</Tag>
